@@ -1,3 +1,4 @@
-*.csv
-/confidential/
+data/raw/confidential/
 .env
+__pycache__/
+*.pyc
