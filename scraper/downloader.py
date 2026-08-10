@@ -21,7 +21,7 @@ class DownloadResult:
 
 def download_html(url: str, max_retries: int = 3, delay_seconds: int = 2) -> DownloadResult:
     """
-    Download HTML from the given URL with retries.
+    Download HTML from the given URL with strict, policy-driven retries.
     """
     logger = get_logger()
     
@@ -30,6 +30,8 @@ def download_html(url: str, max_retries: int = 3, delay_seconds: int = 2) -> Dow
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.5",
     }
+    
+    NON_RETRY_STATUS = {400, 401, 403, 404, 405, 410, 422, 429}
     
     for attempt in range(max_retries):
         try:
@@ -43,7 +45,7 @@ def download_html(url: str, max_retries: int = 3, delay_seconds: int = 2) -> Dow
             # Check if it's actually HTML
             content_type = response.headers.get("Content-Type", "")
             if "text/html" not in content_type.lower():
-                return DownloadResult("", None, None, f"Not HTML content: {content_type}")
+                return DownloadResult("", None, None, "NON_HTML_CONTENT")
                 
             return DownloadResult(
                 html=response.text,
@@ -52,9 +54,30 @@ def download_html(url: str, max_retries: int = 3, delay_seconds: int = 2) -> Dow
                 error=None
             )
             
-        except requests.exceptions.RequestException as e:
-            logger.warning("Download attempt %d/%d failed for %s: %s", attempt + 1, max_retries, url, str(e))
+        except requests.exceptions.HTTPError as e:
+            status_code = e.response.status_code
+            if status_code in NON_RETRY_STATUS:
+                error_map = {
+                    403: "BLOCKED_403",
+                    404: "NOT_FOUND_404",
+                    429: "RATE_LIMIT_429"
+                }
+                error_reason = error_map.get(status_code, f"HTTP_ERROR_{status_code}")
+                logger.warning("Download aborted for %s: %s", url, error_reason)
+                return DownloadResult("", None, None, error_reason)
+            
+            logger.warning("Download HTTP error attempt %d/%d for %s: %s", attempt + 1, max_retries, url, str(e))
             if attempt == max_retries - 1:
-                return DownloadResult("", None, None, f"Failed after {max_retries} attempts: {str(e)}")
+                return DownloadResult("", None, None, f"SERVER_ERROR_{status_code}")
                 
-    return DownloadResult("", None, None, "Unknown error")
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            logger.warning("Download connection/timeout attempt %d/%d for %s: %s", attempt + 1, max_retries, url, str(e))
+            if attempt == max_retries - 1:
+                return DownloadResult("", None, None, "TIMEOUT_OR_CONNECTION_ERROR")
+                
+        except requests.exceptions.RequestException as e:
+            logger.warning("Download unknown error attempt %d/%d for %s: %s", attempt + 1, max_retries, url, str(e))
+            if attempt == max_retries - 1:
+                return DownloadResult("", None, None, "UNKNOWN_ERROR")
+                
+    return DownloadResult("", None, None, "UNKNOWN_ERROR")

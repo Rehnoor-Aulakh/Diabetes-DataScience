@@ -6,7 +6,7 @@
   "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
   "version": 2,
   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
-  "scraped_at": "2026-08-10T11:31:52.718578+00:00",
+  "scraped_at": "2026-08-10T12:13:47.409521+00:00",
   "word_count": 3204,
   "content_hash": "sha256:52a420f6339b78c612dda6fd2228d3626e7f2a5abd5051b809382787149c9295",
   "extractor": "trafilatura/bs4",

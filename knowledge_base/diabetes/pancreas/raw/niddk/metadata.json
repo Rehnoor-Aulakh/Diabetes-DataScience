@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000008",
+  "topic": "pancreas",
+  "topic_title": "Pancreas and Beta Cells",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
+  "scraped_at": "2026-08-10T12:16:23.579125+00:00",
+  "word_count": 3204,
+  "content_hash": "sha256:97c007ba5f7bd72017a3ed0ca2ca148d77f702a7de39b116a79e93ec99405b25",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

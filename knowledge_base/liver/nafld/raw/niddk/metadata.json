@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000037",
+  "topic": "nafld",
+  "topic_title": "NAFLD / MASLD and Diabetes",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+  "scraped_at": "2026-08-10T12:14:52.127183+00:00",
+  "word_count": 395,
+  "content_hash": "sha256:d2da588c2a6624047ab42f4dd2aeb19d6be25ff7ae4e4b492ce77769d8b76777",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

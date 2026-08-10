@@ -1,0 +1,918 @@
+[2026-08-10 12:13:43] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_121343.log
+[2026-08-10 12:13:43] [INFO   ] Starting Scraper CLI
+[2026-08-10 12:13:43] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 12:13:43] [INFO   ] Job queue: 299 jobs across 100 topics (filtered from manifest)
+[2026-08-10 12:13:43] [INFO   ] [KB-000001] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes
+[2026-08-10 12:13:43] [INFO   ] [KB-000001] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [ada] EXTRACTING
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [ada] CONVERTING
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [ada] VALIDATING
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [ada] COMPLETED — v1 (unchanged) words=559 duration=1.9s
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [cdc] SEARCHING — Query: About diabetes basics
+[2026-08-10 12:13:45] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=About+diabetes+basics
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:13:45] [INFO   ] [KB-000001] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:45] [INFO   ] [KB-000002] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/type-1
+[2026-08-10 12:13:45] [INFO   ] [KB-000002] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/type-1
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [ada] EXTRACTING
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [ada] CONVERTING
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [ada] VALIDATING
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [ada] COMPLETED — v1 (unchanged) words=1454 duration=1.3s
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes
+[2026-08-10 12:13:46] [INFO   ] [KB-000002] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes
+[2026-08-10 12:13:47] [INFO   ] [KB-000002] [niddk] EXTRACTING
+[2026-08-10 12:13:47] [INFO   ] [KB-000002] [niddk] CONVERTING
+[2026-08-10 12:13:47] [INFO   ] [KB-000002] [niddk] VALIDATING
+[2026-08-10 12:13:47] [INFO   ] [KB-000002] [niddk] COMPLETED — v2 (unchanged) words=3204 duration=0.4s
+[2026-08-10 12:13:47] [INFO   ] [KB-000003] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/type-2
+[2026-08-10 12:13:47] [INFO   ] [KB-000003] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/type-2
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [ada] EXTRACTING
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [ada] CONVERTING
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [ada] VALIDATING
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [ada] FAILED — Quality check failed: Word count too low (362 < 500), No markdown headings found
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [cdc] SEARCHING — Query: Type 2 diabetes basics
+[2026-08-10 12:13:48] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Type+2+diabetes+basics
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:13:48] [INFO   ] [KB-000003] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:48] [INFO   ] [KB-000004] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/prediabetes
+[2026-08-10 12:13:48] [INFO   ] [KB-000004] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/prediabetes
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [ada] EXTRACTING
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [ada] CONVERTING
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [ada] VALIDATING
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [ada] FAILED — Quality check failed: Word count too low (243 < 500), No markdown headings found
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [cdc] SEARCHING — Query: Prediabetes your chance to prevent type 2 diabetes
+[2026-08-10 12:13:49] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Prediabetes+your+chance+to+prevent+type+2+diabetes
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:13:49] [INFO   ] [KB-000004] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:49] [INFO   ] [KB-000006] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:49] [INFO   ] [KB-000006] [medlineplus] SEARCHING — Query: Insulin blood test
+[2026-08-10 12:13:50] [INFO   ] [KB-000006] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/igf-1-insulin-like-growth-factor-1-test/
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [medlineplus] EXTRACTING
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [medlineplus] CONVERTING
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [medlineplus] VALIDATING
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [medlineplus] COMPLETED — v2 (unchanged) words=1594 duration=1.9s
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [niddk] EXTRACTING
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [niddk] CONVERTING
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [niddk] VALIDATING
+[2026-08-10 12:13:51] [INFO   ] [KB-000006] [niddk] COMPLETED — v2 (unchanged) words=2479 duration=0.4s
+[2026-08-10 12:13:51] [INFO   ] [KB-000007] [ada] SEARCHING — Query: Insulin resistance
+[2026-08-10 12:13:53] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Insulin+resistance
+[2026-08-10 12:13:53] [INFO   ] [KB-000007] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:13:53] [INFO   ] [KB-000007] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:53] [INFO   ] [KB-000007] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance
+[2026-08-10 12:13:53] [INFO   ] [KB-000007] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance
+[2026-08-10 12:13:55] [INFO   ] [KB-000007] [niddk] EXTRACTING
+[2026-08-10 12:13:55] [INFO   ] [KB-000007] [niddk] CONVERTING
+[2026-08-10 12:13:55] [INFO   ] [KB-000007] [niddk] VALIDATING
+[2026-08-10 12:13:55] [INFO   ] [KB-000007] [niddk] COMPLETED — v3 (unchanged) words=2008 duration=1.8s
+[2026-08-10 12:13:55] [INFO   ] [KB-000009] [ada] SEARCHING — Query: Blood glucose management
+[2026-08-10 12:13:58] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Blood+glucose+management
+[2026-08-10 12:13:58] [INFO   ] [KB-000009] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:13:58] [INFO   ] [KB-000009] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:13:58] [INFO   ] [KB-000009] [niddk] SEARCHING — Query: How does the body regulate blood sugar
+[2026-08-10 12:13:59] [INFO   ] [KB-000009] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test-race-ethnicity
+[2026-08-10 12:14:00] [INFO   ] [KB-000009] [niddk] EXTRACTING
+[2026-08-10 12:14:00] [INFO   ] [KB-000009] [niddk] CONVERTING
+[2026-08-10 12:14:00] [INFO   ] [KB-000009] [niddk] VALIDATING
+[2026-08-10 12:14:00] [INFO   ] [KB-000009] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:14:00] [INFO   ] [KB-000009] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] EXTRACTING
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] CONVERTING
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] VALIDATING
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] EXTRACTING
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] CONVERTING
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] VALIDATING
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:14:01] [INFO   ] [KB-000009] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes
+[2026-08-10 12:14:02] [INFO   ] [KB-000009] [niddk] EXTRACTING
+[2026-08-10 12:14:02] [INFO   ] [KB-000009] [niddk] CONVERTING
+[2026-08-10 12:14:02] [INFO   ] [KB-000009] [niddk] VALIDATING
+[2026-08-10 12:14:02] [INFO   ] [KB-000009] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/a1c
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/a1c
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [ada] EXTRACTING
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [ada] CONVERTING
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [ada] VALIDATING
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [ada] COMPLETED — v5 (unchanged) words=836 duration=0.7s
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+[2026-08-10 12:14:02] [INFO   ] [KB-000010] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+[2026-08-10 12:14:03] [INFO   ] [KB-000010] [medlineplus] EXTRACTING
+[2026-08-10 12:14:03] [INFO   ] [KB-000010] [medlineplus] CONVERTING
+[2026-08-10 12:14:03] [INFO   ] [KB-000010] [medlineplus] VALIDATING
+[2026-08-10 12:14:03] [INFO   ] [KB-000010] [medlineplus] COMPLETED — v4 (unchanged) words=1542 duration=0.7s
+[2026-08-10 12:14:03] [INFO   ] [KB-000011] [ada] SEARCHING — Query: Estimated average glucose eAG
+[2026-08-10 12:14:05] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Estimated+average+glucose+eAG
+[2026-08-10 12:14:05] [INFO   ] [KB-000011] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:05] [INFO   ] [KB-000011] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:05] [INFO   ] [KB-000012] [ada] SEARCHING — Query: Fasting blood glucose test
+[2026-08-10 12:14:07] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Fasting+blood+glucose+test
+[2026-08-10 12:14:07] [INFO   ] [KB-000012] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:07] [INFO   ] [KB-000012] [cdc] SEARCHING — Query: Diabetes testing fasting blood sugar
+[2026-08-10 12:14:07] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+testing+fasting+blood+sugar
+[2026-08-10 12:14:07] [INFO   ] [KB-000012] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:07] [INFO   ] [KB-000012] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:07] [INFO   ] [KB-000013] [ada] SEARCHING — Query: Random blood glucose test diabetes
+[2026-08-10 12:14:10] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Random+blood+glucose+test+diabetes
+[2026-08-10 12:14:10] [INFO   ] [KB-000013] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:10] [INFO   ] [KB-000013] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:10] [INFO   ] [KB-000013] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/blood-glucose-test/
+[2026-08-10 12:14:10] [INFO   ] [KB-000013] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/blood-glucose-test/
+[2026-08-10 12:14:11] [INFO   ] [KB-000013] [medlineplus] EXTRACTING
+[2026-08-10 12:14:11] [INFO   ] [KB-000013] [medlineplus] CONVERTING
+[2026-08-10 12:14:11] [INFO   ] [KB-000013] [medlineplus] VALIDATING
+[2026-08-10 12:14:11] [INFO   ] [KB-000013] [medlineplus] COMPLETED — v2 (unchanged) words=2592 duration=1.0s
+[2026-08-10 12:14:11] [INFO   ] [KB-000014] [ada] SEARCHING — Query: Oral glucose tolerance test
+[2026-08-10 12:14:13] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Oral+glucose+tolerance+test
+[2026-08-10 12:14:13] [INFO   ] [KB-000014] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:13] [INFO   ] [KB-000014] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:13] [INFO   ] [KB-000014] [medlineplus] SEARCHING — Query: OGTT oral glucose tolerance test
+[2026-08-10 12:14:15] [INFO   ] [KB-000014] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/imagepages/19810.htm
+[2026-08-10 12:14:15] [INFO   ] [KB-000014] [medlineplus] EXTRACTING
+[2026-08-10 12:14:15] [INFO   ] [KB-000014] [medlineplus] CONVERTING
+[2026-08-10 12:14:15] [INFO   ] [KB-000014] [medlineplus] VALIDATING
+[2026-08-10 12:14:15] [INFO   ] [KB-000014] [medlineplus] FAILED — Quality check failed: Word count too low (135 < 180), No markdown headings found
+[2026-08-10 12:14:15] [INFO   ] [KB-000014] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003466.htm
+[2026-08-10 12:14:16] [INFO   ] [KB-000014] [medlineplus] EXTRACTING
+[2026-08-10 12:14:16] [INFO   ] [KB-000014] [medlineplus] CONVERTING
+[2026-08-10 12:14:16] [INFO   ] [KB-000014] [medlineplus] VALIDATING
+[2026-08-10 12:14:16] [INFO   ] [KB-000014] [medlineplus] COMPLETED — v1 (unchanged) words=1041 duration=3.4s
+[2026-08-10 12:14:16] [INFO   ] [KB-000016] [ada] SEARCHING — Query: Blood glucose monitoring
+[2026-08-10 12:14:18] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Blood+glucose+monitoring
+[2026-08-10 12:14:18] [INFO   ] [KB-000016] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:18] [INFO   ] [KB-000016] [cdc] SEARCHING — Query: Monitoring your blood sugar diabetes
+[2026-08-10 12:14:19] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Monitoring+your+blood+sugar+diabetes
+[2026-08-10 12:14:19] [INFO   ] [KB-000016] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:19] [INFO   ] [KB-000016] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:19] [INFO   ] [KB-000018] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:19] [INFO   ] [KB-000018] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:19] [INFO   ] [KB-000018] [niddk] SEARCHING — Query: Creatinine what is it kidney
+[2026-08-10 12:14:21] [INFO   ] [KB-000018] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/high-blood-pressure
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] EXTRACTING
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] CONVERTING
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] VALIDATING
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] EXTRACTING
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] CONVERTING
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] VALIDATING
+[2026-08-10 12:14:22] [INFO   ] [KB-000018] [niddk] COMPLETED — v4 (unchanged) words=791 duration=3.5s
+[2026-08-10 12:14:22] [INFO   ] [KB-000019] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:22] [INFO   ] [KB-000019] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:22] [INFO   ] [KB-000019] [niddk] SEARCHING — Query: Estimated GFR glomerular filtration rate
+[2026-08-10 12:14:24] [INFO   ] [KB-000019] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/laboratory-evaluation/estimated-gfr-calculators/previous
+[2026-08-10 12:14:26] [INFO   ] [KB-000019] [niddk] EXTRACTING
+[2026-08-10 12:14:26] [INFO   ] [KB-000019] [niddk] CONVERTING
+[2026-08-10 12:14:26] [INFO   ] [KB-000019] [niddk] VALIDATING
+[2026-08-10 12:14:26] [INFO   ] [KB-000019] [niddk] COMPLETED — v4 (new) words=238 duration=3.6s
+[2026-08-10 12:14:26] [INFO   ] [KB-000020] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:26] [INFO   ] [KB-000020] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:26] [INFO   ] [KB-000020] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/
+[2026-08-10 12:14:26] [INFO   ] [KB-000020] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/
+[2026-08-10 12:14:27] [INFO   ] [KB-000020] [medlineplus] EXTRACTING
+[2026-08-10 12:14:27] [INFO   ] [KB-000020] [medlineplus] CONVERTING
+[2026-08-10 12:14:27] [INFO   ] [KB-000020] [medlineplus] VALIDATING
+[2026-08-10 12:14:27] [INFO   ] [KB-000020] [medlineplus] COMPLETED — v1 (unchanged) words=1066 duration=0.8s
+[2026-08-10 12:14:27] [INFO   ] [KB-000023] [ada] SEARCHING — Query: Urine albumin test diabetes kidney
+[2026-08-10 12:14:29] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Urine+albumin+test+diabetes+kidney
+[2026-08-10 12:14:29] [INFO   ] [KB-000023] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:29] [INFO   ] [KB-000023] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:29] [INFO   ] [KB-000023] [niddk] SEARCHING — Query: Albuminuria albumin urine diabetes
+[2026-08-10 12:14:31] [INFO   ] [KB-000023] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis/albuminuria-albumin-urine
+[2026-08-10 12:14:31] [INFO   ] [KB-000023] [niddk] EXTRACTING
+[2026-08-10 12:14:31] [INFO   ] [KB-000023] [niddk] CONVERTING
+[2026-08-10 12:14:31] [INFO   ] [KB-000023] [niddk] VALIDATING
+[2026-08-10 12:14:31] [INFO   ] [KB-000023] [niddk] COMPLETED — v1 (unchanged) words=674 duration=2.2s
+[2026-08-10 12:14:31] [INFO   ] [KB-000024] [ada] SEARCHING — Query: UACR albumin creatinine ratio diabetes
+[2026-08-10 12:14:33] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=UACR+albumin+creatinine+ratio+diabetes
+[2026-08-10 12:14:33] [INFO   ] [KB-000024] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:33] [INFO   ] [KB-000024] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:33] [INFO   ] [KB-000024] [niddk] SEARCHING — Query: Urine albumin-to-creatinine ratio UACR
+[2026-08-10 12:14:34] [INFO   ] [KB-000024] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis/albuminuria-albumin-urine
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] EXTRACTING
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] CONVERTING
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] VALIDATING
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/identify-manage-patients/evaluate-ckd/assess-urine-albumin
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] EXTRACTING
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] CONVERTING
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] VALIDATING
+[2026-08-10 12:14:35] [INFO   ] [KB-000024] [niddk] COMPLETED — v1 (unchanged) words=325 duration=2.3s
+[2026-08-10 12:14:35] [INFO   ] [KB-000025] [ada] SEARCHING — Query: Diabetes and kidney disease
+[2026-08-10 12:14:38] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+and+kidney+disease
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [niddk] EXTRACTING
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [niddk] CONVERTING
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [niddk] VALIDATING
+[2026-08-10 12:14:38] [INFO   ] [KB-000025] [niddk] COMPLETED — v2 (unchanged) words=1192 duration=0.4s
+[2026-08-10 12:14:38] [INFO   ] [KB-000028] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:38] [INFO   ] [KB-000028] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:38] [INFO   ] [KB-000028] [medlineplus] SEARCHING — Query: ALT blood test SGPT
+[2026-08-10 12:14:39] [INFO   ] [KB-000028] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003473.htm
+[2026-08-10 12:14:40] [INFO   ] [KB-000028] [medlineplus] EXTRACTING
+[2026-08-10 12:14:40] [INFO   ] [KB-000028] [medlineplus] CONVERTING
+[2026-08-10 12:14:40] [INFO   ] [KB-000028] [medlineplus] VALIDATING
+[2026-08-10 12:14:40] [INFO   ] [KB-000028] [medlineplus] COMPLETED — v1 (unchanged) words=511 duration=1.5s
+[2026-08-10 12:14:40] [INFO   ] [KB-000029] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:40] [INFO   ] [KB-000029] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:40] [INFO   ] [KB-000029] [medlineplus] SEARCHING — Query: AST SGOT blood test
+[2026-08-10 12:14:41] [INFO   ] [KB-000029] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003472.htm
+[2026-08-10 12:14:41] [INFO   ] [KB-000029] [medlineplus] EXTRACTING
+[2026-08-10 12:14:41] [INFO   ] [KB-000029] [medlineplus] CONVERTING
+[2026-08-10 12:14:41] [INFO   ] [KB-000029] [medlineplus] VALIDATING
+[2026-08-10 12:14:41] [INFO   ] [KB-000029] [medlineplus] COMPLETED — v1 (unchanged) words=537 duration=1.7s
+[2026-08-10 12:14:41] [INFO   ] [KB-000030] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:41] [INFO   ] [KB-000030] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:41] [INFO   ] [KB-000030] [medlineplus] SEARCHING — Query: Bilirubin blood test
+[2026-08-10 12:14:43] [INFO   ] [KB-000030] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/bilirubin-blood-test/
+[2026-08-10 12:14:43] [INFO   ] [KB-000030] [medlineplus] EXTRACTING
+[2026-08-10 12:14:43] [INFO   ] [KB-000030] [medlineplus] CONVERTING
+[2026-08-10 12:14:43] [INFO   ] [KB-000030] [medlineplus] VALIDATING
+[2026-08-10 12:14:43] [INFO   ] [KB-000030] [medlineplus] COMPLETED — v1 (unchanged) words=1218 duration=1.5s
+[2026-08-10 12:14:43] [INFO   ] [KB-000031] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:43] [INFO   ] [KB-000031] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:43] [INFO   ] [KB-000031] [medlineplus] SEARCHING — Query: Alkaline phosphatase ALP blood test
+[2026-08-10 12:14:44] [INFO   ] [KB-000031] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003470.htm
+[2026-08-10 12:14:45] [INFO   ] [KB-000031] [medlineplus] EXTRACTING
+[2026-08-10 12:14:45] [INFO   ] [KB-000031] [medlineplus] CONVERTING
+[2026-08-10 12:14:45] [INFO   ] [KB-000031] [medlineplus] VALIDATING
+[2026-08-10 12:14:45] [INFO   ] [KB-000031] [medlineplus] COMPLETED — v1 (unchanged) words=498 duration=1.6s
+[2026-08-10 12:14:45] [INFO   ] [KB-000033] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:45] [INFO   ] [KB-000033] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:45] [INFO   ] [KB-000033] [medlineplus] SEARCHING — Query: Albumin blood test
+[2026-08-10 12:14:45] [INFO   ] [KB-000033] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/albumin-blood-test/
+[2026-08-10 12:14:46] [INFO   ] [KB-000033] [medlineplus] EXTRACTING
+[2026-08-10 12:14:46] [INFO   ] [KB-000033] [medlineplus] CONVERTING
+[2026-08-10 12:14:46] [INFO   ] [KB-000033] [medlineplus] VALIDATING
+[2026-08-10 12:14:46] [INFO   ] [KB-000033] [medlineplus] COMPLETED — v1 (unchanged) words=1175 duration=1.3s
+[2026-08-10 12:14:46] [INFO   ] [KB-000036] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:46] [INFO   ] [KB-000036] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:46] [INFO   ] [KB-000036] [niddk] SEARCHING — Query: Fatty liver disease NAFLD
+[2026-08-10 12:14:47] [INFO   ] [KB-000036] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash
+[2026-08-10 12:14:48] [INFO   ] [KB-000036] [niddk] EXTRACTING
+[2026-08-10 12:14:48] [INFO   ] [KB-000036] [niddk] CONVERTING
+[2026-08-10 12:14:48] [INFO   ] [KB-000036] [niddk] VALIDATING
+[2026-08-10 12:14:48] [INFO   ] [KB-000036] [niddk] COMPLETED — v1 (unchanged) words=395 duration=1.8s
+[2026-08-10 12:14:48] [INFO   ] [KB-000037] [ada] SEARCHING — Query: Diabetes and liver disease NAFLD
+[2026-08-10 12:14:50] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+and+liver+disease+NAFLD
+[2026-08-10 12:14:50] [INFO   ] [KB-000037] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:50] [INFO   ] [KB-000037] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:50] [INFO   ] [KB-000037] [niddk] SEARCHING — Query: NAFLD NASH nonalcoholic fatty liver
+[2026-08-10 12:14:51] [INFO   ] [KB-000037] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash
+[2026-08-10 12:14:52] [INFO   ] [KB-000037] [niddk] EXTRACTING
+[2026-08-10 12:14:52] [INFO   ] [KB-000037] [niddk] CONVERTING
+[2026-08-10 12:14:52] [INFO   ] [KB-000037] [niddk] VALIDATING
+[2026-08-10 12:14:52] [INFO   ] [KB-000037] [niddk] COMPLETED — v1 (unchanged) words=395 duration=1.7s
+[2026-08-10 12:14:52] [INFO   ] [KB-000038] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:52] [INFO   ] [KB-000038] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:52] [INFO   ] [KB-000038] [medlineplus] SEARCHING — Query: Liver function tests
+[2026-08-10 12:14:52] [INFO   ] [KB-000038] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/liver-function-tests/
+[2026-08-10 12:14:53] [INFO   ] [KB-000038] [medlineplus] EXTRACTING
+[2026-08-10 12:14:53] [INFO   ] [KB-000038] [medlineplus] CONVERTING
+[2026-08-10 12:14:53] [INFO   ] [KB-000038] [medlineplus] VALIDATING
+[2026-08-10 12:14:53] [INFO   ] [KB-000038] [medlineplus] COMPLETED — v1 (unchanged) words=1284 duration=1.4s
+[2026-08-10 12:14:53] [INFO   ] [KB-000039] [ada] SEARCHING — Query: Cholesterol HDL diabetes cardiovascular
+[2026-08-10 12:14:55] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Cholesterol+HDL+diabetes+cardiovascular
+[2026-08-10 12:14:55] [INFO   ] [KB-000039] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:55] [INFO   ] [KB-000039] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:55] [INFO   ] [KB-000039] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 12:14:55] [INFO   ] [KB-000039] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 12:14:56] [INFO   ] [KB-000039] [medlineplus] EXTRACTING
+[2026-08-10 12:14:56] [INFO   ] [KB-000039] [medlineplus] CONVERTING
+[2026-08-10 12:14:56] [INFO   ] [KB-000039] [medlineplus] VALIDATING
+[2026-08-10 12:14:56] [INFO   ] [KB-000039] [medlineplus] COMPLETED — v1 (unchanged) words=2063 duration=0.5s
+[2026-08-10 12:14:56] [INFO   ] [KB-000040] [ada] SEARCHING — Query: LDL cholesterol targets diabetes
+[2026-08-10 12:14:58] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=LDL+cholesterol+targets+diabetes
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [medlineplus] EXTRACTING
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [medlineplus] CONVERTING
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [medlineplus] VALIDATING
+[2026-08-10 12:14:58] [INFO   ] [KB-000040] [medlineplus] COMPLETED — v1 (unchanged) words=2063 duration=0.5s
+[2026-08-10 12:14:58] [INFO   ] [KB-000041] [cdc] SEARCHING — Query: Cholesterol about getting cholesterol checked
+[2026-08-10 12:14:58] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Cholesterol+about+getting+cholesterol+checked
+[2026-08-10 12:14:58] [INFO   ] [KB-000041] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:14:58] [INFO   ] [KB-000041] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:58] [INFO   ] [KB-000041] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 12:14:58] [INFO   ] [KB-000041] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 12:14:59] [INFO   ] [KB-000041] [medlineplus] EXTRACTING
+[2026-08-10 12:14:59] [INFO   ] [KB-000041] [medlineplus] CONVERTING
+[2026-08-10 12:14:59] [INFO   ] [KB-000041] [medlineplus] VALIDATING
+[2026-08-10 12:14:59] [INFO   ] [KB-000041] [medlineplus] COMPLETED — v1 (unchanged) words=2063 duration=0.5s
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/triglycerides-test/
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/triglycerides-test/
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [medlineplus] EXTRACTING
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [medlineplus] CONVERTING
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [medlineplus] VALIDATING
+[2026-08-10 12:14:59] [INFO   ] [KB-000042] [medlineplus] COMPLETED — v1 (unchanged) words=1608 duration=0.5s
+[2026-08-10 12:14:59] [INFO   ] [KB-000047] [cdc] SEARCHING — Query: Getting your cholesterol checked lipid panel
+[2026-08-10 12:15:00] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Getting+your+cholesterol+checked+lipid+panel
+[2026-08-10 12:15:00] [INFO   ] [KB-000047] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:00] [INFO   ] [KB-000047] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:00] [INFO   ] [KB-000047] [medlineplus] SEARCHING — Query: Lipid panel blood test
+[2026-08-10 12:15:01] [INFO   ] [KB-000047] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/007812.htm
+[2026-08-10 12:15:01] [INFO   ] [KB-000047] [medlineplus] EXTRACTING
+[2026-08-10 12:15:02] [INFO   ] [KB-000047] [medlineplus] CONVERTING
+[2026-08-10 12:15:02] [INFO   ] [KB-000047] [medlineplus] VALIDATING
+[2026-08-10 12:15:02] [INFO   ] [KB-000047] [medlineplus] COMPLETED — v1 (unchanged) words=760 duration=1.7s
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/vitamin-d-test/
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/vitamin-d-test/
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [medlineplus] EXTRACTING
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [medlineplus] CONVERTING
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [medlineplus] VALIDATING
+[2026-08-10 12:15:02] [INFO   ] [KB-000049] [medlineplus] COMPLETED — v3 (unchanged) words=1597 duration=0.5s
+[2026-08-10 12:15:02] [INFO   ] [KB-000050] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:02] [INFO   ] [KB-000050] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:02] [INFO   ] [KB-000050] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/vitamin-b-test/
+[2026-08-10 12:15:02] [INFO   ] [KB-000050] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/vitamin-b-test/
+[2026-08-10 12:15:03] [INFO   ] [KB-000050] [medlineplus] EXTRACTING
+[2026-08-10 12:15:03] [INFO   ] [KB-000050] [medlineplus] CONVERTING
+[2026-08-10 12:15:03] [INFO   ] [KB-000050] [medlineplus] VALIDATING
+[2026-08-10 12:15:03] [INFO   ] [KB-000050] [medlineplus] COMPLETED — v1 (unchanged) words=1622 duration=0.6s
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/complete-blood-count-cbc/
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/complete-blood-count-cbc/
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [medlineplus] EXTRACTING
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [medlineplus] CONVERTING
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [medlineplus] VALIDATING
+[2026-08-10 12:15:03] [INFO   ] [KB-000054] [medlineplus] COMPLETED — v1 (unchanged) words=1010 duration=0.5s
+[2026-08-10 12:15:03] [INFO   ] [KB-000055] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:03] [INFO   ] [KB-000055] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:03] [INFO   ] [KB-000055] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/hemoglobin-test/
+[2026-08-10 12:15:03] [INFO   ] [KB-000055] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/hemoglobin-test/
+[2026-08-10 12:15:04] [INFO   ] [KB-000055] [medlineplus] EXTRACTING
+[2026-08-10 12:15:04] [INFO   ] [KB-000055] [medlineplus] CONVERTING
+[2026-08-10 12:15:04] [INFO   ] [KB-000055] [medlineplus] VALIDATING
+[2026-08-10 12:15:04] [INFO   ] [KB-000055] [medlineplus] COMPLETED — v1 (unchanged) words=1178 duration=0.6s
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [medlineplus] EXTRACTING
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [medlineplus] CONVERTING
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [medlineplus] VALIDATING
+[2026-08-10 12:15:04] [INFO   ] [KB-000057] [medlineplus] COMPLETED — v1 (unchanged) words=1192 duration=0.7s
+[2026-08-10 12:15:04] [INFO   ] [KB-000058] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:04] [INFO   ] [KB-000058] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:04] [INFO   ] [KB-000058] [medlineplus] SEARCHING — Query: WBC count white blood cell test
+[2026-08-10 12:15:06] [INFO   ] [KB-000058] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/white-blood-count-wbc/
+[2026-08-10 12:15:06] [INFO   ] [KB-000058] [medlineplus] EXTRACTING
+[2026-08-10 12:15:06] [INFO   ] [KB-000058] [medlineplus] CONVERTING
+[2026-08-10 12:15:06] [INFO   ] [KB-000058] [medlineplus] VALIDATING
+[2026-08-10 12:15:06] [INFO   ] [KB-000058] [medlineplus] COMPLETED — v1 (unchanged) words=1589 duration=1.8s
+[2026-08-10 12:15:06] [INFO   ] [KB-000059] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:06] [INFO   ] [KB-000059] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:06] [INFO   ] [KB-000059] [medlineplus] SEARCHING — Query: Platelet count blood test
+[2026-08-10 12:15:07] [INFO   ] [KB-000059] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/platelet-tests/
+[2026-08-10 12:15:08] [INFO   ] [KB-000059] [medlineplus] EXTRACTING
+[2026-08-10 12:15:08] [INFO   ] [KB-000059] [medlineplus] CONVERTING
+[2026-08-10 12:15:08] [INFO   ] [KB-000059] [medlineplus] VALIDATING
+[2026-08-10 12:15:08] [INFO   ] [KB-000059] [medlineplus] COMPLETED — v1 (unchanged) words=1903 duration=2.0s
+[2026-08-10 12:15:08] [INFO   ] [KB-000060] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:08] [INFO   ] [KB-000060] [medlineplus] SEARCHING — Query: Anemia blood disorder
+[2026-08-10 12:15:09] [WARNING] No highly relevant article links found on search page: https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Anemia+blood+disorder
+[2026-08-10 12:15:09] [INFO   ] [KB-000060] [medlineplus] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:09] [INFO   ] [KB-000060] [niddk] SEARCHING — Query: Anemia in chronic kidney disease diabetes
+[2026-08-10 12:15:11] [INFO   ] [KB-000060] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/anemia
+[2026-08-10 12:15:13] [INFO   ] [KB-000060] [niddk] EXTRACTING
+[2026-08-10 12:15:13] [INFO   ] [KB-000060] [niddk] CONVERTING
+[2026-08-10 12:15:13] [INFO   ] [KB-000060] [niddk] VALIDATING
+[2026-08-10 12:15:13] [INFO   ] [KB-000060] [niddk] COMPLETED — v1 (unchanged) words=1847 duration=3.4s
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [medlineplus] EXTRACTING
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [medlineplus] CONVERTING
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [medlineplus] VALIDATING
+[2026-08-10 12:15:13] [INFO   ] [KB-000063] [medlineplus] COMPLETED — v1 (unchanged) words=1638 duration=0.5s
+[2026-08-10 12:15:13] [INFO   ] [KB-000064] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:13] [INFO   ] [KB-000064] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:13] [INFO   ] [KB-000064] [medlineplus] SEARCHING — Query: T3 triiodothyronine test
+[2026-08-10 12:15:14] [INFO   ] [KB-000064] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/triiodothyronine-t3-tests/
+[2026-08-10 12:15:15] [INFO   ] [KB-000064] [medlineplus] EXTRACTING
+[2026-08-10 12:15:15] [INFO   ] [KB-000064] [medlineplus] CONVERTING
+[2026-08-10 12:15:15] [INFO   ] [KB-000064] [medlineplus] VALIDATING
+[2026-08-10 12:15:15] [INFO   ] [KB-000064] [medlineplus] COMPLETED — v1 (unchanged) words=1166 duration=1.7s
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/thyroxine-t4-test/
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/thyroxine-t4-test/
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [medlineplus] EXTRACTING
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [medlineplus] CONVERTING
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [medlineplus] VALIDATING
+[2026-08-10 12:15:15] [INFO   ] [KB-000065] [medlineplus] COMPLETED — v1 (unchanged) words=1859 duration=0.5s
+[2026-08-10 12:15:15] [INFO   ] [KB-000067] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:15] [INFO   ] [KB-000067] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:15] [INFO   ] [KB-000067] [medlineplus] SEARCHING — Query: Hypothyroidism
+[2026-08-10 12:15:16] [INFO   ] [KB-000067] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/000353.htm
+[2026-08-10 12:15:17] [INFO   ] [KB-000067] [medlineplus] EXTRACTING
+[2026-08-10 12:15:17] [INFO   ] [KB-000067] [medlineplus] CONVERTING
+[2026-08-10 12:15:17] [INFO   ] [KB-000067] [medlineplus] VALIDATING
+[2026-08-10 12:15:17] [INFO   ] [KB-000067] [medlineplus] COMPLETED — v1 (unchanged) words=1145 duration=1.5s
+[2026-08-10 12:15:17] [INFO   ] [KB-000069] [ada] SEARCHING — Query: Thyroid disease and diabetes
+[2026-08-10 12:15:18] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Thyroid+disease+and+diabetes
+[2026-08-10 12:15:18] [INFO   ] [KB-000069] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:18] [INFO   ] [KB-000069] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:18] [INFO   ] [KB-000069] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:18] [INFO   ] [KB-000070] [ada] SEARCHING — Query: Cardiovascular disease diabetes
+[2026-08-10 12:15:21] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Cardiovascular+disease+diabetes
+[2026-08-10 12:15:21] [INFO   ] [KB-000070] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:21] [INFO   ] [KB-000070] [cdc] SEARCHING — Query: Diabetes and heart disease
+[2026-08-10 12:15:21] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+and+heart+disease
+[2026-08-10 12:15:21] [INFO   ] [KB-000070] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:21] [INFO   ] [KB-000070] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:21] [INFO   ] [KB-000071] [ada] SEARCHING — Query: High blood pressure diabetes
+[2026-08-10 12:15:23] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=High+blood+pressure+diabetes
+[2026-08-10 12:15:23] [INFO   ] [KB-000071] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:23] [INFO   ] [KB-000071] [cdc] SEARCHING — Query: High blood pressure hypertension
+[2026-08-10 12:15:24] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=High+blood+pressure+hypertension
+[2026-08-10 12:15:24] [INFO   ] [KB-000071] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:24] [INFO   ] [KB-000071] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:24] [INFO   ] [KB-000072] [ada] SEARCHING — Query: Diabetes and stroke risk
+[2026-08-10 12:15:26] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+and+stroke+risk
+[2026-08-10 12:15:26] [INFO   ] [KB-000072] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:26] [INFO   ] [KB-000072] [cdc] SEARCHING — Query: Stroke signs symptoms
+[2026-08-10 12:15:26] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Stroke+signs+symptoms
+[2026-08-10 12:15:26] [INFO   ] [KB-000072] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:26] [INFO   ] [KB-000072] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:26] [INFO   ] [KB-000073] [ada] SEARCHING — Query: Peripheral arterial disease diabetes
+[2026-08-10 12:15:29] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Peripheral+arterial+disease+diabetes
+[2026-08-10 12:15:29] [INFO   ] [KB-000073] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:29] [INFO   ] [KB-000073] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:29] [INFO   ] [KB-000073] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:29] [INFO   ] [KB-000076] [ada] SEARCHING — Query: Neuropathy nerve damage diabetes
+[2026-08-10 12:15:31] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Neuropathy+nerve+damage+diabetes
+[2026-08-10 12:15:31] [INFO   ] [KB-000076] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:31] [INFO   ] [KB-000076] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:31] [INFO   ] [KB-000076] [niddk] SEARCHING — Query: Diabetic neuropathies nerve damage
+[2026-08-10 12:15:33] [INFO   ] [KB-000076] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies
+[2026-08-10 12:15:33] [INFO   ] [KB-000076] [niddk] EXTRACTING
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] CONVERTING
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] VALIDATING
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] FAILED — Quality check failed: Word count too low (406 < 500), No markdown headings found
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies/what-is-diabetic-neuropathy
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] EXTRACTING
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] CONVERTING
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] VALIDATING
+[2026-08-10 12:15:34] [INFO   ] [KB-000076] [niddk] COMPLETED — v2 (new) words=920 duration=2.9s
+[2026-08-10 12:15:34] [INFO   ] [KB-000077] [ada] SEARCHING — Query: Eye complications diabetic retinopathy
+[2026-08-10 12:15:37] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Eye+complications+diabetic+retinopathy
+[2026-08-10 12:15:37] [INFO   ] [KB-000077] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:37] [INFO   ] [KB-000077] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:37] [INFO   ] [KB-000077] [niddk] SEARCHING — Query: Diabetic eye disease retinopathy
+[2026-08-10 12:15:38] [INFO   ] [KB-000077] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-eye-disease
+[2026-08-10 12:15:39] [INFO   ] [KB-000077] [niddk] EXTRACTING
+[2026-08-10 12:15:39] [INFO   ] [KB-000077] [niddk] CONVERTING
+[2026-08-10 12:15:39] [INFO   ] [KB-000077] [niddk] VALIDATING
+[2026-08-10 12:15:39] [INFO   ] [KB-000077] [niddk] COMPLETED — v1 (unchanged) words=2023 duration=2.2s
+[2026-08-10 12:15:39] [INFO   ] [KB-000078] [ada] SEARCHING — Query: Diabetic nephropathy kidney disease
+[2026-08-10 12:15:40] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetic+nephropathy+kidney+disease
+[2026-08-10 12:15:40] [INFO   ] [KB-000078] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:40] [INFO   ] [KB-000078] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:40] [INFO   ] [KB-000078] [niddk] SEARCHING — Query: Diabetic kidney disease nephropathy
+[2026-08-10 12:15:42] [INFO   ] [KB-000078] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease
+[2026-08-10 12:15:42] [INFO   ] [KB-000078] [niddk] EXTRACTING
+[2026-08-10 12:15:42] [INFO   ] [KB-000078] [niddk] CONVERTING
+[2026-08-10 12:15:42] [INFO   ] [KB-000078] [niddk] VALIDATING
+[2026-08-10 12:15:42] [INFO   ] [KB-000078] [niddk] COMPLETED — v1 (unchanged) words=1192 duration=2.2s
+[2026-08-10 12:15:42] [INFO   ] [KB-000079] [ada] SEARCHING — Query: Foot complications diabetes
+[2026-08-10 12:15:45] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Foot+complications+diabetes
+[2026-08-10 12:15:45] [INFO   ] [KB-000079] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:45] [INFO   ] [KB-000079] [cdc] SEARCHING — Query: Diabetes foot problems
+[2026-08-10 12:15:45] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+foot+problems
+[2026-08-10 12:15:45] [INFO   ] [KB-000079] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:45] [INFO   ] [KB-000079] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:45] [INFO   ] [KB-000080] [ada] SEARCHING — Query: Foot care diabetes prevention
+[2026-08-10 12:15:47] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Foot+care+diabetes+prevention
+[2026-08-10 12:15:47] [INFO   ] [KB-000080] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:47] [INFO   ] [KB-000080] [cdc] SEARCHING — Query: Diabetes foot care tips
+[2026-08-10 12:15:47] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+foot+care+tips
+[2026-08-10 12:15:47] [INFO   ] [KB-000080] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:47] [INFO   ] [KB-000080] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:47] [INFO   ] [KB-000081] [ada] SEARCHING — Query: DKA diabetic ketoacidosis
+[2026-08-10 12:15:49] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=DKA+diabetic+ketoacidosis
+[2026-08-10 12:15:49] [INFO   ] [KB-000081] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:49] [INFO   ] [KB-000081] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:49] [INFO   ] [KB-000081] [medlineplus] SEARCHING — Query: Diabetic ketoacidosis DKA
+[2026-08-10 12:15:50] [INFO   ] [KB-000081] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/ketones-in-blood/
+[2026-08-10 12:15:50] [INFO   ] [KB-000081] [medlineplus] EXTRACTING
+[2026-08-10 12:15:50] [INFO   ] [KB-000081] [medlineplus] CONVERTING
+[2026-08-10 12:15:50] [INFO   ] [KB-000081] [medlineplus] VALIDATING
+[2026-08-10 12:15:50] [INFO   ] [KB-000081] [medlineplus] COMPLETED — v1 (unchanged) words=1418 duration=1.3s
+[2026-08-10 12:15:50] [INFO   ] [KB-000082] [ada] SEARCHING — Query: Hyperosmolar hyperglycemic syndrome
+[2026-08-10 12:15:52] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Hyperosmolar+hyperglycemic+syndrome
+[2026-08-10 12:15:52] [INFO   ] [KB-000082] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:52] [INFO   ] [KB-000082] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:52] [INFO   ] [KB-000082] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:52] [INFO   ] [KB-000083] [ada] SEARCHING — Query: Hypoglycemia low blood glucose
+[2026-08-10 12:15:55] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Hypoglycemia+low+blood+glucose
+[2026-08-10 12:15:55] [INFO   ] [KB-000083] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:55] [INFO   ] [KB-000083] [cdc] SEARCHING — Query: Low blood sugar hypoglycemia diabetes
+[2026-08-10 12:15:56] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Low+blood+sugar+hypoglycemia+diabetes
+[2026-08-10 12:15:56] [INFO   ] [KB-000083] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:56] [INFO   ] [KB-000083] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:56] [INFO   ] [KB-000084] [ada] SEARCHING — Query: Hyperglycemia high blood glucose
+[2026-08-10 12:15:57] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Hyperglycemia+high+blood+glucose
+[2026-08-10 12:15:57] [INFO   ] [KB-000084] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:57] [INFO   ] [KB-000084] [cdc] SEARCHING — Query: High blood sugar hyperglycemia diabetes
+[2026-08-10 12:15:57] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=High+blood+sugar+hyperglycemia+diabetes
+[2026-08-10 12:15:57] [INFO   ] [KB-000084] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:57] [INFO   ] [KB-000084] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:57] [INFO   ] [KB-000090] [ada] SEARCHING — Query: Diabetes food and nutrition
+[2026-08-10 12:15:59] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+food+and+nutrition
+[2026-08-10 12:15:59] [INFO   ] [KB-000090] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:59] [INFO   ] [KB-000090] [cdc] SEARCHING — Query: Diabetes meal planning eating well
+[2026-08-10 12:15:59] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+meal+planning+eating+well
+[2026-08-10 12:15:59] [INFO   ] [KB-000090] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:15:59] [INFO   ] [KB-000090] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:15:59] [INFO   ] [KB-000091] [ada] SEARCHING — Query: Carb counting diabetes
+[2026-08-10 12:16:02] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Carb+counting+diabetes
+[2026-08-10 12:16:02] [INFO   ] [KB-000091] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:02] [INFO   ] [KB-000091] [cdc] SEARCHING — Query: Carbohydrate counting diabetes food
+[2026-08-10 12:16:02] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Carbohydrate+counting+diabetes+food
+[2026-08-10 12:16:02] [INFO   ] [KB-000091] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:02] [INFO   ] [KB-000091] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:02] [INFO   ] [KB-000093] [ada] SEARCHING — Query: Fitness and exercise diabetes
+[2026-08-10 12:16:04] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Fitness+and+exercise+diabetes
+[2026-08-10 12:16:04] [INFO   ] [KB-000093] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:04] [INFO   ] [KB-000093] [cdc] SEARCHING — Query: Diabetes and physical activity exercise
+[2026-08-10 12:16:05] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+and+physical+activity+exercise
+[2026-08-10 12:16:05] [INFO   ] [KB-000093] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:05] [INFO   ] [KB-000093] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:05] [INFO   ] [KB-000094] [ada] SEARCHING — Query: Weight management diabetes obesity
+[2026-08-10 12:16:07] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Weight+management+diabetes+obesity
+[2026-08-10 12:16:07] [INFO   ] [KB-000094] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:07] [INFO   ] [KB-000094] [cdc] SEARCHING — Query: Losing weight diabetes healthy weight
+[2026-08-10 12:16:07] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Losing+weight+diabetes+healthy+weight
+[2026-08-10 12:16:07] [INFO   ] [KB-000094] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:07] [INFO   ] [KB-000094] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:07] [INFO   ] [KB-000095] [cdc] SEARCHING — Query: Sleep and diabetes
+[2026-08-10 12:16:07] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Sleep+and+diabetes
+[2026-08-10 12:16:07] [INFO   ] [KB-000095] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:07] [INFO   ] [KB-000095] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:07] [INFO   ] [KB-000095] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:07] [INFO   ] [KB-000096] [ada] SEARCHING — Query: Smoking and diabetes risk
+[2026-08-10 12:16:09] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Smoking+and+diabetes+risk
+[2026-08-10 12:16:09] [INFO   ] [KB-000096] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:09] [INFO   ] [KB-000096] [cdc] SEARCHING — Query: Smoking and diabetes
+[2026-08-10 12:16:09] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Smoking+and+diabetes
+[2026-08-10 12:16:09] [INFO   ] [KB-000096] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:09] [INFO   ] [KB-000096] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:09] [INFO   ] [KB-000097] [ada] SEARCHING — Query: Alcohol and diabetes what you need to know
+[2026-08-10 12:16:12] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Alcohol+and+diabetes+what+you+need+to+know
+[2026-08-10 12:16:12] [INFO   ] [KB-000097] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:12] [INFO   ] [KB-000097] [cdc] SEARCHING — Query: Alcohol and diabetes
+[2026-08-10 12:16:12] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Alcohol+and+diabetes
+[2026-08-10 12:16:12] [INFO   ] [KB-000097] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:12] [INFO   ] [KB-000097] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:12] [INFO   ] [KB-000098] [ada] SEARCHING — Query: Mental health stress diabetes
+[2026-08-10 12:16:14] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Mental+health+stress+diabetes
+[2026-08-10 12:16:14] [INFO   ] [KB-000098] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:14] [INFO   ] [KB-000098] [cdc] SEARCHING — Query: Diabetes and stress management
+[2026-08-10 12:16:14] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+and+stress+management
+[2026-08-10 12:16:14] [INFO   ] [KB-000098] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:14] [INFO   ] [KB-000098] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:14] [INFO   ] [KB-000099] [ada] SEARCHING — Query: Mental health diabetes depression
+[2026-08-10 12:16:16] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Mental+health+diabetes+depression
+[2026-08-10 12:16:16] [INFO   ] [KB-000099] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:16] [INFO   ] [KB-000099] [cdc] SEARCHING — Query: Diabetes and mental health
+[2026-08-10 12:16:16] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+and+mental+health
+[2026-08-10 12:16:16] [INFO   ] [KB-000099] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:16] [INFO   ] [KB-000099] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:16] [INFO   ] [KB-000005] [ada] SEARCHING — Query: Gestational diabetes mellitus
+[2026-08-10 12:16:19] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Gestational+diabetes+mellitus
+[2026-08-10 12:16:19] [INFO   ] [KB-000005] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:19] [INFO   ] [KB-000005] [cdc] SEARCHING — Query: Gestational diabetes
+[2026-08-10 12:16:19] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Gestational+diabetes
+[2026-08-10 12:16:19] [INFO   ] [KB-000005] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:19] [INFO   ] [KB-000005] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:19] [INFO   ] [KB-000008] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:19] [INFO   ] [KB-000008] [medlineplus] SEARCHING — Query: Pancreas diseases and conditions
+[2026-08-10 12:16:20] [INFO   ] [KB-000008] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003816.htm
+[2026-08-10 12:16:21] [INFO   ] [KB-000008] [medlineplus] EXTRACTING
+[2026-08-10 12:16:21] [INFO   ] [KB-000008] [medlineplus] CONVERTING
+[2026-08-10 12:16:21] [INFO   ] [KB-000008] [medlineplus] VALIDATING
+[2026-08-10 12:16:21] [INFO   ] [KB-000008] [medlineplus] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:16:21] [INFO   ] [KB-000008] [niddk] SEARCHING — Query: Pancreas and its functions
+[2026-08-10 12:16:22] [INFO   ] [KB-000008] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/ndep-celebrates-20th-anniversary
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] EXTRACTING
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] CONVERTING
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] VALIDATING
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] FAILED — Quality check failed: Word count too low (174 < 500), No topic keywords found in text, No markdown headings found
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] EXTRACTING
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] CONVERTING
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] VALIDATING
+[2026-08-10 12:16:23] [INFO   ] [KB-000008] [niddk] COMPLETED — v1 (unchanged) words=3204 duration=2.3s
+[2026-08-10 12:16:23] [INFO   ] [KB-000015] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:23] [INFO   ] [KB-000015] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:23] [INFO   ] [KB-000015] [medlineplus] SEARCHING — Query: C-peptide test
+[2026-08-10 12:16:24] [INFO   ] [KB-000015] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/c-peptide-test/
+[2026-08-10 12:16:25] [INFO   ] [KB-000015] [medlineplus] EXTRACTING
+[2026-08-10 12:16:25] [INFO   ] [KB-000015] [medlineplus] CONVERTING
+[2026-08-10 12:16:25] [INFO   ] [KB-000015] [medlineplus] VALIDATING
+[2026-08-10 12:16:25] [INFO   ] [KB-000015] [medlineplus] COMPLETED — v1 (unchanged) words=1506 duration=2.1s
+[2026-08-10 12:16:25] [INFO   ] [KB-000017] [ada] SEARCHING — Query: Postprandial blood glucose after meals
+[2026-08-10 12:16:27] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Postprandial+blood+glucose+after+meals
+[2026-08-10 12:16:27] [INFO   ] [KB-000017] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:27] [INFO   ] [KB-000017] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:27] [INFO   ] [KB-000017] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:27] [INFO   ] [KB-000021] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:27] [INFO   ] [KB-000021] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:27] [INFO   ] [KB-000021] [medlineplus] SEARCHING — Query: Urea blood test
+[2026-08-10 12:16:28] [INFO   ] [KB-000021] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/
+[2026-08-10 12:16:29] [INFO   ] [KB-000021] [medlineplus] EXTRACTING
+[2026-08-10 12:16:29] [INFO   ] [KB-000021] [medlineplus] CONVERTING
+[2026-08-10 12:16:29] [INFO   ] [KB-000021] [medlineplus] VALIDATING
+[2026-08-10 12:16:29] [INFO   ] [KB-000021] [medlineplus] COMPLETED — v1 (unchanged) words=1066 duration=1.6s
+[2026-08-10 12:16:29] [INFO   ] [KB-000022] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:29] [INFO   ] [KB-000022] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:29] [INFO   ] [KB-000022] [medlineplus] SEARCHING — Query: Creatinine urine test
+[2026-08-10 12:16:30] [INFO   ] [KB-000022] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003610.htm
+[2026-08-10 12:16:30] [INFO   ] [KB-000022] [medlineplus] EXTRACTING
+[2026-08-10 12:16:31] [INFO   ] [KB-000022] [medlineplus] CONVERTING
+[2026-08-10 12:16:31] [INFO   ] [KB-000022] [medlineplus] VALIDATING
+[2026-08-10 12:16:31] [INFO   ] [KB-000022] [medlineplus] COMPLETED — v1 (unchanged) words=556 duration=1.5s
+[2026-08-10 12:16:31] [INFO   ] [KB-000026] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:31] [INFO   ] [KB-000026] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:31] [INFO   ] [KB-000026] [medlineplus] SEARCHING — Query: Uric acid blood test
+[2026-08-10 12:16:31] [INFO   ] [KB-000026] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003476.htm
+[2026-08-10 12:16:32] [INFO   ] [KB-000026] [medlineplus] EXTRACTING
+[2026-08-10 12:16:32] [INFO   ] [KB-000026] [medlineplus] CONVERTING
+[2026-08-10 12:16:32] [INFO   ] [KB-000026] [medlineplus] VALIDATING
+[2026-08-10 12:16:32] [INFO   ] [KB-000026] [medlineplus] COMPLETED — v2 (unchanged) words=672 duration=1.4s
+[2026-08-10 12:16:32] [INFO   ] [KB-000027] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:32] [INFO   ] [KB-000027] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:32] [INFO   ] [KB-000027] [medlineplus] SEARCHING — Query: Electrolyte panel blood test
+[2026-08-10 12:16:33] [INFO   ] [KB-000027] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/electrolyte-panel/
+[2026-08-10 12:16:33] [INFO   ] [KB-000027] [medlineplus] EXTRACTING
+[2026-08-10 12:16:33] [INFO   ] [KB-000027] [medlineplus] CONVERTING
+[2026-08-10 12:16:33] [INFO   ] [KB-000027] [medlineplus] VALIDATING
+[2026-08-10 12:16:33] [INFO   ] [KB-000027] [medlineplus] COMPLETED — v2 (unchanged) words=1225 duration=1.3s
+[2026-08-10 12:16:33] [INFO   ] [KB-000032] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:33] [INFO   ] [KB-000032] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:33] [INFO   ] [KB-000032] [medlineplus] SEARCHING — Query: GGT blood test gamma-glutamyl
+[2026-08-10 12:16:34] [INFO   ] [KB-000032] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/gamma-glutamyl-transferase-ggt-test/
+[2026-08-10 12:16:34] [INFO   ] [KB-000032] [medlineplus] EXTRACTING
+[2026-08-10 12:16:35] [INFO   ] [KB-000032] [medlineplus] CONVERTING
+[2026-08-10 12:16:35] [INFO   ] [KB-000032] [medlineplus] VALIDATING
+[2026-08-10 12:16:35] [INFO   ] [KB-000032] [medlineplus] COMPLETED — v1 (unchanged) words=1185 duration=1.4s
+[2026-08-10 12:16:35] [INFO   ] [KB-000034] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:35] [INFO   ] [KB-000034] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:35] [INFO   ] [KB-000034] [medlineplus] SEARCHING — Query: Globulin blood test total protein
+[2026-08-10 12:16:35] [INFO   ] [KB-000034] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/total-protein-and-albumin-globulin-a-g-ratio/
+[2026-08-10 12:16:36] [INFO   ] [KB-000034] [medlineplus] EXTRACTING
+[2026-08-10 12:16:36] [INFO   ] [KB-000034] [medlineplus] CONVERTING
+[2026-08-10 12:16:36] [INFO   ] [KB-000034] [medlineplus] VALIDATING
+[2026-08-10 12:16:36] [INFO   ] [KB-000034] [medlineplus] COMPLETED — v1 (unchanged) words=1550 duration=1.4s
+[2026-08-10 12:16:36] [INFO   ] [KB-000035] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:36] [INFO   ] [KB-000035] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:36] [INFO   ] [KB-000035] [medlineplus] SEARCHING — Query: Total protein blood test
+[2026-08-10 12:16:37] [INFO   ] [KB-000035] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/total-protein-and-albumin-globulin-a-g-ratio/
+[2026-08-10 12:16:37] [INFO   ] [KB-000035] [medlineplus] EXTRACTING
+[2026-08-10 12:16:37] [INFO   ] [KB-000035] [medlineplus] CONVERTING
+[2026-08-10 12:16:37] [INFO   ] [KB-000035] [medlineplus] VALIDATING
+[2026-08-10 12:16:37] [INFO   ] [KB-000035] [medlineplus] COMPLETED — v1 (unchanged) words=1550 duration=1.4s
+[2026-08-10 12:16:37] [INFO   ] [KB-000043] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:37] [INFO   ] [KB-000043] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:37] [INFO   ] [KB-000043] [medlineplus] SEARCHING — Query: VLDL cholesterol test
+[2026-08-10 12:16:38] [INFO   ] [KB-000043] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003494.htm
+[2026-08-10 12:16:39] [INFO   ] [KB-000043] [medlineplus] EXTRACTING
+[2026-08-10 12:16:39] [INFO   ] [KB-000043] [medlineplus] CONVERTING
+[2026-08-10 12:16:39] [INFO   ] [KB-000043] [medlineplus] VALIDATING
+[2026-08-10 12:16:39] [INFO   ] [KB-000043] [medlineplus] COMPLETED — v1 (unchanged) words=542 duration=1.4s
+[2026-08-10 12:16:39] [INFO   ] [KB-000044] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:39] [INFO   ] [KB-000044] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:39] [INFO   ] [KB-000044] [medlineplus] SEARCHING — Query: Apolipoprotein A test
+[2026-08-10 12:16:40] [INFO   ] [KB-000044] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003505.htm
+[2026-08-10 12:16:40] [INFO   ] [KB-000044] [medlineplus] EXTRACTING
+[2026-08-10 12:16:40] [INFO   ] [KB-000044] [medlineplus] CONVERTING
+[2026-08-10 12:16:40] [INFO   ] [KB-000044] [medlineplus] VALIDATING
+[2026-08-10 12:16:40] [INFO   ] [KB-000044] [medlineplus] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:16:40] [INFO   ] [KB-000044] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003502.htm
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] EXTRACTING
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] CONVERTING
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] VALIDATING
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/001666.htm
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] EXTRACTING
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] CONVERTING
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] VALIDATING
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:16:41] [INFO   ] [KB-000044] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/000402.htm
+[2026-08-10 12:16:42] [INFO   ] [KB-000044] [medlineplus] EXTRACTING
+[2026-08-10 12:16:42] [INFO   ] [KB-000044] [medlineplus] CONVERTING
+[2026-08-10 12:16:42] [INFO   ] [KB-000044] [medlineplus] VALIDATING
+[2026-08-10 12:16:42] [INFO   ] [KB-000044] [medlineplus] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:16:42] [INFO   ] [KB-000045] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:42] [INFO   ] [KB-000045] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:42] [INFO   ] [KB-000045] [medlineplus] SEARCHING — Query: Apolipoprotein B test
+[2026-08-10 12:16:43] [INFO   ] [KB-000045] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003505.htm
+[2026-08-10 12:16:43] [INFO   ] [KB-000045] [medlineplus] EXTRACTING
+[2026-08-10 12:16:43] [INFO   ] [KB-000045] [medlineplus] CONVERTING
+[2026-08-10 12:16:43] [INFO   ] [KB-000045] [medlineplus] VALIDATING
+[2026-08-10 12:16:43] [INFO   ] [KB-000045] [medlineplus] COMPLETED — v1 (unchanged) words=603 duration=1.4s
+[2026-08-10 12:16:43] [INFO   ] [KB-000046] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:43] [INFO   ] [KB-000046] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:43] [INFO   ] [KB-000046] [medlineplus] SEARCHING — Query: Lipoprotein a blood test
+[2026-08-10 12:16:44] [INFO   ] [KB-000046] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/lipoprotein-a-blood-test/
+[2026-08-10 12:16:45] [INFO   ] [KB-000046] [medlineplus] EXTRACTING
+[2026-08-10 12:16:45] [INFO   ] [KB-000046] [medlineplus] CONVERTING
+[2026-08-10 12:16:45] [INFO   ] [KB-000046] [medlineplus] VALIDATING
+[2026-08-10 12:16:45] [INFO   ] [KB-000046] [medlineplus] COMPLETED — v1 (unchanged) words=1577 duration=1.5s
+[2026-08-10 12:16:45] [INFO   ] [KB-000048] [ada] SEARCHING — Query: Cholesterol management diabetes targets
+[2026-08-10 12:16:47] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Cholesterol+management+diabetes+targets
+[2026-08-10 12:16:47] [INFO   ] [KB-000048] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:16:47] [INFO   ] [KB-000048] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:47] [INFO   ] [KB-000048] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:47] [INFO   ] [KB-000051] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:47] [INFO   ] [KB-000051] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:47] [INFO   ] [KB-000051] [medlineplus] SEARCHING — Query: Folate folic acid blood test
+[2026-08-10 12:16:47] [INFO   ] [KB-000051] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003686.htm
+[2026-08-10 12:16:48] [INFO   ] [KB-000051] [medlineplus] EXTRACTING
+[2026-08-10 12:16:48] [INFO   ] [KB-000051] [medlineplus] CONVERTING
+[2026-08-10 12:16:48] [INFO   ] [KB-000051] [medlineplus] VALIDATING
+[2026-08-10 12:16:48] [INFO   ] [KB-000051] [medlineplus] COMPLETED — v1 (unchanged) words=590 duration=1.3s
+[2026-08-10 12:16:48] [INFO   ] [KB-000052] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:48] [INFO   ] [KB-000052] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:48] [INFO   ] [KB-000052] [medlineplus] SEARCHING — Query: Iron tests blood ferritin TIBC
+[2026-08-10 12:16:49] [INFO   ] [KB-000052] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/iron-tests/
+[2026-08-10 12:16:49] [INFO   ] [KB-000052] [medlineplus] EXTRACTING
+[2026-08-10 12:16:49] [INFO   ] [KB-000052] [medlineplus] CONVERTING
+[2026-08-10 12:16:49] [INFO   ] [KB-000052] [medlineplus] VALIDATING
+[2026-08-10 12:16:49] [INFO   ] [KB-000052] [medlineplus] COMPLETED — v1 (unchanged) words=1397 duration=1.5s
+[2026-08-10 12:16:49] [INFO   ] [KB-000053] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:49] [INFO   ] [KB-000053] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:49] [INFO   ] [KB-000053] [medlineplus] SEARCHING — Query: Magnesium blood test
+[2026-08-10 12:16:50] [INFO   ] [KB-000053] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/magnesium-blood-test/
+[2026-08-10 12:16:51] [INFO   ] [KB-000053] [medlineplus] EXTRACTING
+[2026-08-10 12:16:51] [INFO   ] [KB-000053] [medlineplus] CONVERTING
+[2026-08-10 12:16:51] [INFO   ] [KB-000053] [medlineplus] VALIDATING
+[2026-08-10 12:16:51] [INFO   ] [KB-000053] [medlineplus] COMPLETED — v1 (unchanged) words=1516 duration=1.4s
+[2026-08-10 12:16:51] [INFO   ] [KB-000056] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:51] [INFO   ] [KB-000056] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:51] [INFO   ] [KB-000056] [medlineplus] SEARCHING — Query: Hematocrit test
+[2026-08-10 12:16:52] [INFO   ] [KB-000056] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/hematocrit-test/
+[2026-08-10 12:16:52] [INFO   ] [KB-000056] [medlineplus] EXTRACTING
+[2026-08-10 12:16:52] [INFO   ] [KB-000056] [medlineplus] CONVERTING
+[2026-08-10 12:16:52] [INFO   ] [KB-000056] [medlineplus] VALIDATING
+[2026-08-10 12:16:52] [INFO   ] [KB-000056] [medlineplus] COMPLETED — v1 (unchanged) words=1386 duration=1.4s
+[2026-08-10 12:16:52] [INFO   ] [KB-000062] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:52] [INFO   ] [KB-000062] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:52] [INFO   ] [KB-000062] [medlineplus] SEARCHING — Query: C-reactive protein CRP test
+[2026-08-10 12:16:53] [INFO   ] [KB-000062] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/
+[2026-08-10 12:16:54] [INFO   ] [KB-000062] [medlineplus] EXTRACTING
+[2026-08-10 12:16:54] [INFO   ] [KB-000062] [medlineplus] CONVERTING
+[2026-08-10 12:16:54] [INFO   ] [KB-000062] [medlineplus] VALIDATING
+[2026-08-10 12:16:54] [INFO   ] [KB-000062] [medlineplus] COMPLETED — v1 (unchanged) words=1121 duration=1.6s
+[2026-08-10 12:16:54] [INFO   ] [KB-000066] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:54] [INFO   ] [KB-000066] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:54] [INFO   ] [KB-000066] [medlineplus] SEARCHING — Query: Thyroid antibodies test TPO
+[2026-08-10 12:16:55] [INFO   ] [KB-000066] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/thyroid-antibodies/
+[2026-08-10 12:16:55] [INFO   ] [KB-000066] [medlineplus] EXTRACTING
+[2026-08-10 12:16:55] [INFO   ] [KB-000066] [medlineplus] CONVERTING
+[2026-08-10 12:16:55] [INFO   ] [KB-000066] [medlineplus] VALIDATING
+[2026-08-10 12:16:55] [INFO   ] [KB-000066] [medlineplus] COMPLETED — v1 (unchanged) words=1287 duration=1.3s
+[2026-08-10 12:16:55] [INFO   ] [KB-000068] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:55] [INFO   ] [KB-000068] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:55] [INFO   ] [KB-000068] [medlineplus] SEARCHING — Query: Hyperthyroidism
+[2026-08-10 12:16:56] [INFO   ] [KB-000068] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/000356.htm
+[2026-08-10 12:16:57] [INFO   ] [KB-000068] [medlineplus] EXTRACTING
+[2026-08-10 12:16:57] [INFO   ] [KB-000068] [medlineplus] CONVERTING
+[2026-08-10 12:16:57] [INFO   ] [KB-000068] [medlineplus] VALIDATING
+[2026-08-10 12:16:57] [INFO   ] [KB-000068] [medlineplus] COMPLETED — v1 (unchanged) words=865 duration=2.0s
+[2026-08-10 12:16:57] [INFO   ] [KB-000074] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:57] [INFO   ] [KB-000074] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:16:57] [INFO   ] [KB-000074] [medlineplus] SEARCHING — Query: Atherosclerosis
+[2026-08-10 12:16:58] [INFO   ] [KB-000074] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/000171.htm
+[2026-08-10 12:16:59] [INFO   ] [KB-000074] [medlineplus] EXTRACTING
+[2026-08-10 12:16:59] [INFO   ] [KB-000074] [medlineplus] CONVERTING
+[2026-08-10 12:16:59] [INFO   ] [KB-000074] [medlineplus] VALIDATING
+[2026-08-10 12:16:59] [INFO   ] [KB-000074] [medlineplus] COMPLETED — v1 (unchanged) words=1256 duration=1.6s
+[2026-08-10 12:16:59] [INFO   ] [KB-000075] [ada] SEARCHING — Query: Diabetes and heart failure
+[2026-08-10 12:17:02] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+and+heart+failure
+[2026-08-10 12:17:02] [INFO   ] [KB-000075] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:02] [INFO   ] [KB-000075] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:02] [INFO   ] [KB-000075] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:02] [INFO   ] [KB-000085] [ada] SEARCHING — Query: Skin complications diabetes
+[2026-08-10 12:17:05] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Skin+complications+diabetes
+[2026-08-10 12:17:05] [INFO   ] [KB-000085] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:05] [INFO   ] [KB-000085] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:05] [INFO   ] [KB-000085] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:05] [INFO   ] [KB-000086] [ada] SEARCHING — Query: Diabetes and oral health
+[2026-08-10 12:17:07] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+and+oral+health
+[2026-08-10 12:17:07] [INFO   ] [KB-000086] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:07] [INFO   ] [KB-000086] [cdc] SEARCHING — Query: Diabetes gum disease dental health
+[2026-08-10 12:17:07] [WARNING] No highly relevant article links found on search page: https://search.cdc.gov/search/?query=Diabetes+gum+disease+dental+health
+[2026-08-10 12:17:07] [INFO   ] [KB-000086] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:07] [INFO   ] [KB-000086] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:07] [INFO   ] [KB-000087] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:07] [INFO   ] [KB-000087] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:07] [INFO   ] [KB-000087] [niddk] SEARCHING — Query: Gastroparesis
+[2026-08-10 12:17:09] [INFO   ] [KB-000087] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis
+[2026-08-10 12:17:10] [INFO   ] [KB-000087] [niddk] EXTRACTING
+[2026-08-10 12:17:10] [INFO   ] [KB-000087] [niddk] CONVERTING
+[2026-08-10 12:17:10] [INFO   ] [KB-000087] [niddk] VALIDATING
+[2026-08-10 12:17:10] [INFO   ] [KB-000087] [niddk] FAILED — Quality check failed: Word count too low (304 < 500), No markdown headings found
+[2026-08-10 12:17:10] [INFO   ] [KB-000087] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/how-gastroparesis-affect-people-with-diabetes
+[2026-08-10 12:17:12] [INFO   ] [KB-000087] [niddk] EXTRACTING
+[2026-08-10 12:17:12] [INFO   ] [KB-000087] [niddk] CONVERTING
+[2026-08-10 12:17:12] [INFO   ] [KB-000087] [niddk] VALIDATING
+[2026-08-10 12:17:12] [INFO   ] [KB-000087] [niddk] COMPLETED — v2 (new) words=1060 duration=4.6s
+[2026-08-10 12:17:12] [INFO   ] [KB-000089] [ada] SEARCHING — Query: Diabetes and infections immune system
+[2026-08-10 12:17:14] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Diabetes+and+infections+immune+system
+[2026-08-10 12:17:14] [INFO   ] [KB-000089] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:14] [INFO   ] [KB-000089] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:14] [INFO   ] [KB-000089] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:14] [INFO   ] [KB-000092] [ada] SEARCHING — Query: Glycemic index diabetes
+[2026-08-10 12:17:16] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Glycemic+index+diabetes
+[2026-08-10 12:17:16] [INFO   ] [KB-000092] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:16] [INFO   ] [KB-000092] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:16] [INFO   ] [KB-000092] [medlineplus] SEARCHING — Query: Glycemic index food list
+[2026-08-10 12:17:17] [WARNING] No highly relevant article links found on search page: https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Glycemic+index+food+list
+[2026-08-10 12:17:17] [INFO   ] [KB-000092] [medlineplus] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:17] [INFO   ] [KB-000100] [ada] SEARCHING — Query: Hydration and diabetes water intake
+[2026-08-10 12:17:19] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Hydration+and+diabetes+water+intake
+[2026-08-10 12:17:19] [INFO   ] [KB-000100] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 12:17:19] [INFO   ] [KB-000100] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:19] [INFO   ] [KB-000100] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:19] [INFO   ] [KB-000061] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:19] [INFO   ] [KB-000061] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:19] [INFO   ] [KB-000061] [medlineplus] SEARCHING — Query: ESR erythrocyte sedimentation rate test
+[2026-08-10 12:17:20] [INFO   ] [KB-000061] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/erythrocyte-sedimentation-rate-esr/
+[2026-08-10 12:17:21] [INFO   ] [KB-000061] [medlineplus] EXTRACTING
+[2026-08-10 12:17:21] [INFO   ] [KB-000061] [medlineplus] CONVERTING
+[2026-08-10 12:17:21] [INFO   ] [KB-000061] [medlineplus] VALIDATING
+[2026-08-10 12:17:21] [INFO   ] [KB-000061] [medlineplus] COMPLETED — v1 (unchanged) words=1232 duration=1.5s
+[2026-08-10 12:17:21] [INFO   ] [KB-000088] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:21] [INFO   ] [KB-000088] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 12:17:21] [INFO   ] [KB-000088] [niddk] SEARCHING — Query: Diabetes sexual urologic problems
+[2026-08-10 12:17:22] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-bladder-problems
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/how-diabetes-related-to-urinary-tract-problems
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:23] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems
+[2026-08-10 12:17:25] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:25] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:25] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:25] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:25] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/urologic-diseases
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: Word count too low (101 < 500), No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/prevenir-problemas
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: Language not detected as English, No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:26] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/prevenir-problemas/sexuales-urologicos
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: Language not detected as English, No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:27] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/health-risks
+[2026-08-10 12:17:28] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-10 12:17:28] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-10 12:17:28] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-10 12:17:28] [INFO   ] [KB-000088] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 12:17:28] [INFO   ] ======================================================================
+[2026-08-10 12:17:28] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 12:17:28] [INFO   ]   Total jobs:   299
+[2026-08-10 12:17:28] [INFO   ]   Scraped:      67
+[2026-08-10 12:17:28] [INFO   ]   Skipped:      0
+[2026-08-10 12:17:28] [INFO   ]   Failed:       232
+[2026-08-10 12:17:28] [INFO   ]   Duration:     224.7s
+[2026-08-10 12:17:28] [INFO   ] ======================================================================

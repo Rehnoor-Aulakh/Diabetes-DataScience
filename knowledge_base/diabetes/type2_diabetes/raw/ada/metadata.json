@@ -6,7 +6,7 @@
   "source_name": "American Diabetes Association",
   "version": 2,
   "url": "https://diabetes.org/about-diabetes/type-2",
-  "scraped_at": "2026-08-10T11:31:54.423565+00:00",
+  "scraped_at": "2026-08-10T11:57:48.452387+00:00",
   "word_count": 362,
   "content_hash": "sha256:aa90ebdb7bda7d112d2a20dd5d6dffde42659725ebba858be2149f1c88e61aab",
   "extractor": "trafilatura/bs4",

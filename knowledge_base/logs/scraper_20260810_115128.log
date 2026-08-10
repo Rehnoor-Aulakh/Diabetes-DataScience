@@ -1,0 +1,24 @@
+[2026-08-10 11:51:28] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115128.log
+[2026-08-10 11:51:28] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:28] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:28] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:51:28] [INFO   ] [KB-000040] [ada] SEARCHING — Query: LDL cholesterol targets diabetes
+[2026-08-10 11:51:29] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=LDL+cholesterol+targets+diabetes
+[2026-08-10 11:51:29] [INFO   ] [KB-000040] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:29] [INFO   ] [KB-000040] [mayo] SEARCHING — Query: LDL cholesterol bad cholesterol
+[2026-08-10 11:51:30] [ERROR  ] Direct search scrape HTTP error for 'https://www.mayoclinic.org/search/search-results?q=LDL+cholesterol+bad+cholesterol': 403
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [medlineplus] EXTRACTING
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [medlineplus] CONVERTING
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [medlineplus] VALIDATING
+[2026-08-10 11:51:30] [INFO   ] [KB-000040] [medlineplus] COMPLETED — v1 (unchanged) words=2063 duration=0.7s
+[2026-08-10 11:51:30] [INFO   ] ======================================================================
+[2026-08-10 11:51:30] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:51:30] [INFO   ]   Total jobs:   3
+[2026-08-10 11:51:30] [INFO   ]   Scraped:      1
+[2026-08-10 11:51:30] [INFO   ]   Skipped:      0
+[2026-08-10 11:51:30] [INFO   ]   Failed:       2
+[2026-08-10 11:51:30] [INFO   ]   Duration:     2.0s
+[2026-08-10 11:51:30] [INFO   ] ======================================================================

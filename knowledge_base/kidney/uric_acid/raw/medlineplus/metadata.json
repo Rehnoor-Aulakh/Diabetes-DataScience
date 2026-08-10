@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000026",
+  "topic": "uric_acid",
+  "topic_title": "Uric Acid",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 2,
+  "url": "https://medlineplus.gov/ency/article/003476.htm",
+  "scraped_at": "2026-08-10T12:16:32.382260+00:00",
+  "word_count": 672,
+  "content_hash": "sha256:27cc59567f639d8996c242bd8c2bf5f842bc3bae4e81b71038dcbf3929ff3657",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"2ccd27dffd224e8718c71d86a9190025\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:50 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

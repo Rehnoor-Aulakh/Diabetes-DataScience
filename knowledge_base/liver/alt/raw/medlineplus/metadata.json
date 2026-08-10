@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000028",
+  "topic": "alt",
+  "topic_title": "ALT (SGPT)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003473.htm",
+  "scraped_at": "2026-08-10T12:14:40.283783+00:00",
+  "word_count": 511,
+  "content_hash": "sha256:c2d46e6527e873ddac29d059050fb94847deb3bad588a1b36614e86a42b8783a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"80d4b6eb77586d8746861c9b7c23d8df\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:15 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/ency/article/003466.htm",
-  "scraped_at": "2026-08-10T11:17:35.419354+00:00",
+  "scraped_at": "2026-08-10T12:14:16.470054+00:00",
   "word_count": 1041,
   "content_hash": "sha256:544621168be8aa8c95cb34274c038a4aca28bf0034100e43b4dd44072506b3c8",
   "extractor": "trafilatura/bs4",

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000062",
+  "topic": "crp",
+  "topic_title": "CRP / hs-CRP (C-Reactive Protein)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+  "scraped_at": "2026-08-10T12:16:54.395359+00:00",
+  "word_count": 1121,
+  "content_hash": "sha256:803a2737857b9edfa4b6683252d5735cfd41055cc212fc8b78bae375121b3c25",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"7d0951862a3b738528a7e1b37059b654\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

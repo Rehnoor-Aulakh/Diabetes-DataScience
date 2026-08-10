@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000066",
+  "topic": "thyroid_antibodies",
+  "topic_title": "Thyroid Antibodies (TPO, TgAb)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/thyroid-antibodies/",
+  "scraped_at": "2026-08-10T12:16:55.664573+00:00",
+  "word_count": 1287,
+  "content_hash": "sha256:23193c85439a994bd888f9d19aba8ccf1bb00699451ea8721caeb899fd55cdea",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"e110ab85c231eea55cd5ee6311fed7f8\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:53 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000076",
+  "topic": "diabetic_neuropathy",
+  "topic_title": "Diabetic Neuropathy",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 2,
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/nerve-damage-diabetic-neuropathies/what-is-diabetic-neuropathy",
+  "scraped_at": "2026-08-10T12:15:34.517329+00:00",
+  "word_count": 920,
+  "content_hash": "sha256:8b8f449b19e6c760ab6367dd99aea5ba27df6dc73d22b6382857838035851e8e",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

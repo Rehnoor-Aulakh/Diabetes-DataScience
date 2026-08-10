@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000046",
+  "topic": "lipoprotein_a",
+  "topic_title": "Lipoprotein(a)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/lipoprotein-a-blood-test/",
+  "scraped_at": "2026-08-10T12:16:45.162593+00:00",
+  "word_count": 1577,
+  "content_hash": "sha256:8f87cbf5e0e93a2d957d365a7bbdae93e9428459de49c43f90510156a6ee96d4",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"5834b1984ad9e4ae1d1d6287b0a77b16\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:54 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

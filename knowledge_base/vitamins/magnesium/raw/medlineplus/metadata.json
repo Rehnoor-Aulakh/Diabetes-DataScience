@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000053",
+  "topic": "magnesium",
+  "topic_title": "Magnesium",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/magnesium-blood-test/",
+  "scraped_at": "2026-08-10T12:16:51.433127+00:00",
+  "word_count": 1516,
+  "content_hash": "sha256:dfb43219b10f386a4c6e45440abd08d363b5689e78fffa0804e6898e64710739",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"43b1b68c1fd2f96afc7319568004a7ce\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:48 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

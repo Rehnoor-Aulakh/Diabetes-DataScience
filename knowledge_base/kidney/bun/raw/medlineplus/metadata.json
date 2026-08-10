@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/",
-  "scraped_at": "2026-08-10T11:33:50.182444+00:00",
+  "scraped_at": "2026-08-10T12:14:27.202562+00:00",
   "word_count": 1066,
   "content_hash": "sha256:ad2215406294065e3640e6866fdf5ce9248a09173f13b69e705f421bb7437114",
   "extractor": "trafilatura/bs4",

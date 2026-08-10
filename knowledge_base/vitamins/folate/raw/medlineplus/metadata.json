@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000051",
+  "topic": "folate",
+  "topic_title": "Folate (Vitamin B9)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003686.htm",
+  "scraped_at": "2026-08-10T12:16:48.460025+00:00",
+  "word_count": 590,
+  "content_hash": "sha256:c8b577408a56a6b7034d5eb9cbd363947975455b29f911c02554f57081fbbb05",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"7f87284f94dcccf946bf1ff0d2babe6d\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:36 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

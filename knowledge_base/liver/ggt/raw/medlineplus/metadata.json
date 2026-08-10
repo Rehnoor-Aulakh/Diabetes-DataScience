@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000032",
+  "topic": "ggt",
+  "topic_title": "GGT (Gamma-Glutamyl Transferase)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/gamma-glutamyl-transferase-ggt-test/",
+  "scraped_at": "2026-08-10T12:16:35.010959+00:00",
+  "word_count": 1185,
+  "content_hash": "sha256:d5b7f81dc29c57592f41f97c5b0e21c4da9c7f5ea26786740f7ac88bff79ec6f",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"776b7ed0c011a8a5ce08b45aae9c5d8d\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:44 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

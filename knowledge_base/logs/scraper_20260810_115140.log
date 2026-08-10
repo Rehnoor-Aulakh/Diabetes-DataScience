@@ -1,0 +1,24 @@
+[2026-08-10 11:51:40] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115140.log
+[2026-08-10 11:51:40] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:40] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:40] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:51:40] [INFO   ] [KB-000027] [cleveland] SEARCHING — Query: Basic metabolic panel electrolytes
+[2026-08-10 11:51:40] [WARNING] No highly relevant article links found on search page: https://my.clevelandclinic.org/search?q=Basic+metabolic+panel+electrolytes
+[2026-08-10 11:51:40] [INFO   ] [KB-000027] [cleveland] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:40] [INFO   ] [KB-000027] [mayo] SEARCHING — Query: Electrolyte test sodium potassium
+[2026-08-10 11:51:40] [ERROR  ] Direct search scrape HTTP error for 'https://www.mayoclinic.org/search/search-results?q=Electrolyte+test+sodium+potassium': 403
+[2026-08-10 11:51:40] [INFO   ] [KB-000027] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:40] [INFO   ] [KB-000027] [medlineplus] SEARCHING — Query: Electrolyte panel blood test
+[2026-08-10 11:51:43] [INFO   ] [KB-000027] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/chloride-blood-test/
+[2026-08-10 11:51:43] [INFO   ] [KB-000027] [medlineplus] EXTRACTING
+[2026-08-10 11:51:43] [INFO   ] [KB-000027] [medlineplus] CONVERTING
+[2026-08-10 11:51:43] [INFO   ] [KB-000027] [medlineplus] VALIDATING
+[2026-08-10 11:51:44] [INFO   ] [KB-000027] [medlineplus] COMPLETED — v1 (new) words=1003 duration=3.1s
+[2026-08-10 11:51:44] [INFO   ] ======================================================================
+[2026-08-10 11:51:44] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:51:44] [INFO   ]   Total jobs:   3
+[2026-08-10 11:51:44] [INFO   ]   Scraped:      1
+[2026-08-10 11:51:44] [INFO   ]   Skipped:      0
+[2026-08-10 11:51:44] [INFO   ]   Failed:       2
+[2026-08-10 11:51:44] [INFO   ]   Duration:     4.0s
+[2026-08-10 11:51:44] [INFO   ] ======================================================================

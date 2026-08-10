@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000021",
+  "topic": "urea",
+  "topic_title": "Urea",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/",
+  "scraped_at": "2026-08-10T12:16:29.475240+00:00",
+  "word_count": 1066,
+  "content_hash": "sha256:d7dcd5032c5a2c58dcd595a0afa77fbf8d97df7818dda09ead6169ea905bd5b6",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"1ee59de7263fba34bb22a18435acd06d\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:42 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

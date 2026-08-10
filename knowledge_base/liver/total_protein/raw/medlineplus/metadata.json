@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000035",
+  "topic": "total_protein",
+  "topic_title": "Total Protein",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/total-protein-and-albumin-globulin-a-g-ratio/",
+  "scraped_at": "2026-08-10T12:16:37.866441+00:00",
+  "word_count": 1550,
+  "content_hash": "sha256:975ca97fbcd7b2c1b27ead4ce9d22eb5c37a8b3b46eefaac450ea916746d42da",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"d8433ecae2222bbdd5506b308ad028e9\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:27 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

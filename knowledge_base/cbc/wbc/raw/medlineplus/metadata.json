@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000058",
+  "topic": "wbc",
+  "topic_title": "White Blood Cell Count",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/white-blood-count-wbc/",
+  "scraped_at": "2026-08-10T12:15:06.798331+00:00",
+  "word_count": 1589,
+  "content_hash": "sha256:39f250d223aa07384018141cf3f56113c538ae871523caefbb461260df1627f5",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"8a664307e9c9e467d2751c8c7af60712\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:36 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

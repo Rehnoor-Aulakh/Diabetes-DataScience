@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000027",
+  "topic": "electrolytes",
+  "topic_title": "Electrolytes (Sodium, Potassium, Chloride)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 2,
+  "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+  "scraped_at": "2026-08-10T12:16:33.636300+00:00",
+  "word_count": 1225,
+  "content_hash": "sha256:ea128f16b12335cac98ce7f83d4747d57c6101e83503ffbc38fa7aecea358661",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"ebf3e7b3226fa16d6577bab74a6f69c6\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:46 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

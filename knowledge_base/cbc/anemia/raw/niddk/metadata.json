@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000060",
+  "topic": "anemia",
+  "topic_title": "Anemia",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/health-information/kidney-disease/anemia",
+  "scraped_at": "2026-08-10T12:15:13.158450+00:00",
+  "word_count": 1847,
+  "content_hash": "sha256:7cde9e0bbad091bc00c5d336d613e0efb753199fb9a00d4e0c8453568b5edc78",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

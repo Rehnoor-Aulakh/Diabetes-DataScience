@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000030",
+  "topic": "bilirubin",
+  "topic_title": "Bilirubin",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/bilirubin-blood-test/",
+  "scraped_at": "2026-08-10T12:14:43.541317+00:00",
+  "word_count": 1218,
+  "content_hash": "sha256:c1f731cbe97de7a0f305a54e66ee00b67b463190d4735eb57d34d668dc4c2207",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"4da973da9e249779bf1c51046dc2dba4\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:38 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

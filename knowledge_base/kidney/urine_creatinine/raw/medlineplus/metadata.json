@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000022",
+  "topic": "urine_creatinine",
+  "topic_title": "Urine Creatinine",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003610.htm",
+  "scraped_at": "2026-08-10T12:16:31.010494+00:00",
+  "word_count": 556,
+  "content_hash": "sha256:c393e15a98a051d4319d8a148181d215307e327e1d1e0c2000bcff950706b9a3",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"7fda04cfd4dca4c676eb08e8f2b9e571\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

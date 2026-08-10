@@ -1,0 +1,27 @@
+[2026-08-10 11:51:18] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115118.log
+[2026-08-10 11:51:18] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:18] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:18] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:51:18] [INFO   ] [KB-000006] [mayo] SEARCHING — Query: Insulin and diabetes
+[2026-08-10 11:51:19] [ERROR  ] Direct search scrape HTTP error for 'https://www.mayoclinic.org/search/search-results?q=Insulin+and+diabetes': 403
+[2026-08-10 11:51:19] [INFO   ] [KB-000006] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:19] [INFO   ] [KB-000006] [medlineplus] SEARCHING — Query: Insulin blood test
+[2026-08-10 11:51:20] [INFO   ] [KB-000006] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/insulin-in-blood/
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [medlineplus] EXTRACTING
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [medlineplus] CONVERTING
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [medlineplus] VALIDATING
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [medlineplus] COMPLETED — v1 (unchanged) words=1581 duration=2.1s
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [niddk] EXTRACTING
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [niddk] CONVERTING
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [niddk] VALIDATING
+[2026-08-10 11:51:21] [INFO   ] [KB-000006] [niddk] COMPLETED — v2 (unchanged) words=2479 duration=0.7s
+[2026-08-10 11:51:21] [INFO   ] ======================================================================
+[2026-08-10 11:51:21] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:51:21] [INFO   ]   Total jobs:   3
+[2026-08-10 11:51:21] [INFO   ]   Scraped:      2
+[2026-08-10 11:51:21] [INFO   ]   Skipped:      0
+[2026-08-10 11:51:21] [INFO   ]   Failed:       1
+[2026-08-10 11:51:21] [INFO   ]   Duration:     3.1s
+[2026-08-10 11:51:21] [INFO   ] ======================================================================

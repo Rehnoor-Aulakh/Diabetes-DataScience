@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000045",
+  "topic": "apob",
+  "topic_title": "Apolipoprotein B",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003505.htm",
+  "scraped_at": "2026-08-10T12:16:43.618854+00:00",
+  "word_count": 603,
+  "content_hash": "sha256:5aae69781c8490a666350a3442685263ca35a0d2c764b43ca49aa161a5b94484",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"a5fac145231d1803f55099d69f3f2108\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:54 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

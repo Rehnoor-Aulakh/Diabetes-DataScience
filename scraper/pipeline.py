@@ -12,6 +12,18 @@ from scraper.extractor import extract_main_content
 from scraper.markdown_converter import convert_to_markdown
 from scraper.quality_checker import check_quality
 from scraper.metadata_writer import write_metadata
+from scraper.health_tracker import SourceHealthTracker
+
+SOURCE_CAPABILITIES = {
+    "mayo": {"search": False},
+    "cleveland": {"search": False},
+    "medlineplus": {"search": True},
+    "niddk": {"search": True},
+    "ada": {"search": True},
+    "cdc": {"search": True}
+}
+
+health_tracker = SourceHealthTracker()
 
 def run_job(job: ScrapeJob, delay_seconds: int = 2) -> bool:
     """
@@ -22,13 +34,26 @@ def run_job(job: ScrapeJob, delay_seconds: int = 2) -> bool:
     start_time = time.time()
     
     try:
+        if health_tracker.is_disabled(job.source_key):
+            log_job(job.document_id, job.source_key, "SKIPPED", "Source is currently disabled due to excessive 403s")
+            job.status = "skipped"
+            job.error = "Source disabled"
+            return False
+            
         # Step 1: Search
         if job.direct_url:
             log_job(job.document_id, job.source_key, "SEARCHING", f"Using direct URL: {job.direct_url}")
             urls = [job.direct_url]
         else:
+            source_caps = SOURCE_CAPABILITIES.get(job.source_key, {"search": True})
+            if not source_caps.get("search", True):
+                log_job(job.document_id, job.source_key, "SKIPPED", "Search disabled for provider and no direct URL available")
+                job.status = "skipped"
+                job.error = "Search disabled"
+                return False
+                
             log_job(job.document_id, job.source_key, "SEARCHING", f"Query: {job.query}")
-            urls = search_article_urls(job.query, job.base_url, job.search_url_template)
+            urls = search_article_urls(job.query, job.base_url, job.search_url_template, job.keywords)
         
         if not urls:
             log_job(job.document_id, job.source_key, "FAILED", "Search returned no valid URLs")
@@ -45,6 +70,8 @@ def run_job(job: ScrapeJob, delay_seconds: int = 2) -> bool:
             
             if download_result.error:
                 log_job(job.document_id, job.source_key, "FAILED", f"Download error: {download_result.error}")
+                if download_result.error == "BLOCKED_403":
+                    health_tracker.record_403(job.source_key)
                 continue
                 
             # Step 3: Extract
@@ -66,7 +93,7 @@ def run_job(job: ScrapeJob, delay_seconds: int = 2) -> bool:
             
             # Step 5: Quality Check
             log_job(job.document_id, job.source_key, "VALIDATING")
-            quality_result = check_quality(markdown_text, job.keywords)
+            quality_result = check_quality(markdown_text, job.keywords, job.module)
             
             if not quality_result.passed:
                 reasons = ", ".join(quality_result.reasons)
@@ -129,6 +156,7 @@ def run_job(job: ScrapeJob, delay_seconds: int = 2) -> bool:
             elapsed = time.time() - start_time
             
             if quality_result.passed:
+                health_tracker.record_success(job.source_key)
                 log_job(
                     job.document_id, 
                     job.source_key, 

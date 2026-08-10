@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
-  "scraped_at": "2026-08-10T11:34:21.921350+00:00",
+  "scraped_at": "2026-08-10T12:15:04.295752+00:00",
   "word_count": 1178,
   "content_hash": "sha256:575f2409064cb9b99f6adca9242f01c88aeb28f3063e2a904499ced225e6073b",
   "extractor": "trafilatura/bs4",

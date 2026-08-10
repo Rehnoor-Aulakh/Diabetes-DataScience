@@ -1,0 +1,20 @@
+[2026-08-10 11:56:21] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115621.log
+[2026-08-10 11:56:21] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:56:21] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:56:21] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:56:21] [INFO   ] [KB-000027] [cleveland] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 11:56:21] [INFO   ] [KB-000027] [mayo] SKIPPED — Search disabled for provider and no direct URL available
+[2026-08-10 11:56:21] [INFO   ] [KB-000027] [medlineplus] SEARCHING — Query: Electrolyte panel blood test
+[2026-08-10 11:56:23] [INFO   ] [KB-000027] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/electrolyte-panel/
+[2026-08-10 11:56:23] [INFO   ] [KB-000027] [medlineplus] EXTRACTING
+[2026-08-10 11:56:23] [INFO   ] [KB-000027] [medlineplus] CONVERTING
+[2026-08-10 11:56:23] [INFO   ] [KB-000027] [medlineplus] VALIDATING
+[2026-08-10 11:56:24] [INFO   ] [KB-000027] [medlineplus] COMPLETED — v2 (new) words=1225 duration=2.1s
+[2026-08-10 11:56:24] [INFO   ] ======================================================================
+[2026-08-10 11:56:24] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:56:24] [INFO   ]   Total jobs:   3
+[2026-08-10 11:56:24] [INFO   ]   Scraped:      1
+[2026-08-10 11:56:24] [INFO   ]   Skipped:      0
+[2026-08-10 11:56:24] [INFO   ]   Failed:       2
+[2026-08-10 11:56:24] [INFO   ]   Duration:     2.1s
+[2026-08-10 11:56:24] [INFO   ] ======================================================================

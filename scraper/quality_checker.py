@@ -20,11 +20,27 @@ class QualityResult:
     word_count: int
     reasons: list[str]
 
-def check_quality(markdown_text: str, keywords: list[str], min_words: int = 300) -> QualityResult:
+def get_minimum_words(module: str) -> int:
+    lab_test_modules = {"diagnosis", "kidney", "liver", "lipid", "vitamins", "cbc", "thyroid", "cardiovascular"}
+    disease_modules = {"diabetes", "complications"}
+    medication_modules = {"medications"}
+    
+    if module in lab_test_modules:
+        return 180
+    elif module in disease_modules:
+        return 500
+    elif module in medication_modules:
+        return 350
+    else:
+        return 300
+
+def check_quality(markdown_text: str, keywords: list[str], module: str = "") -> QualityResult:
     """
     Validate the scraped Markdown content against quality rules.
     """
     logger = get_logger()
+    
+    min_words = get_minimum_words(module)
     
     if not markdown_text or not markdown_text.strip():
         return QualityResult(False, False, False, False, False, 0, ["Empty content"])

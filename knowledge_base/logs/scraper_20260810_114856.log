@@ -1,0 +1,24 @@
+[2026-08-10 11:48:56] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_114856.log
+[2026-08-10 11:48:56] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:48:56] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:48:56] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:48:56] [INFO   ] [KB-000014] [ada] SEARCHING — Query: Oral glucose tolerance test
+[2026-08-10 11:48:57] [WARNING] No highly relevant article links found on search page: https://diabetes.org/search?q=Oral+glucose+tolerance+test
+[2026-08-10 11:48:57] [INFO   ] [KB-000014] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:48:57] [INFO   ] [KB-000014] [mayo] SEARCHING — Query: Glucose tolerance test
+[2026-08-10 11:48:58] [ERROR  ] Direct search scrape HTTP error for 'https://www.mayoclinic.org/search/search-results?q=Glucose+tolerance+test': 403
+[2026-08-10 11:48:58] [INFO   ] [KB-000014] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:48:58] [INFO   ] [KB-000014] [medlineplus] SEARCHING — Query: OGTT oral glucose tolerance test
+[2026-08-10 11:48:59] [INFO   ] [KB-000014] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003466.htm
+[2026-08-10 11:48:59] [INFO   ] [KB-000014] [medlineplus] EXTRACTING
+[2026-08-10 11:48:59] [INFO   ] [KB-000014] [medlineplus] CONVERTING
+[2026-08-10 11:48:59] [INFO   ] [KB-000014] [medlineplus] VALIDATING
+[2026-08-10 11:49:00] [INFO   ] [KB-000014] [medlineplus] COMPLETED — v1 (unchanged) words=1041 duration=2.2s
+[2026-08-10 11:49:00] [INFO   ] ======================================================================
+[2026-08-10 11:49:00] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:49:00] [INFO   ]   Total jobs:   3
+[2026-08-10 11:49:00] [INFO   ]   Scraped:      1
+[2026-08-10 11:49:00] [INFO   ]   Skipped:      0
+[2026-08-10 11:49:00] [INFO   ]   Failed:       2
+[2026-08-10 11:49:00] [INFO   ]   Duration:     4.1s
+[2026-08-10 11:49:00] [INFO   ] ======================================================================

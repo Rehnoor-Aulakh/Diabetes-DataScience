@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000061",
+  "topic": "esr",
+  "topic_title": "ESR (Erythrocyte Sedimentation Rate)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/erythrocyte-sedimentation-rate-esr/",
+  "scraped_at": "2026-08-10T12:17:21.277964+00:00",
+  "word_count": 1232,
+  "content_hash": "sha256:837fafef8cdbd131c48d5e4c48f7ac66247f281b2dfeb8c25eb600d0d1cb67eb",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"32a64d1e92b5968726cae34671a1456a\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:23 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

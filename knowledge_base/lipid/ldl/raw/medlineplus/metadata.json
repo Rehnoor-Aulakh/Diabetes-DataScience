@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
-  "scraped_at": "2026-08-10T11:34:08.911588+00:00",
+  "scraped_at": "2026-08-10T12:14:58.706110+00:00",
   "word_count": 2063,
   "content_hash": "sha256:4c02beb626e862856474ee2b2f8af841299e8d931ee5ece9863bbf4f8ca36011",
   "extractor": "trafilatura/bs4",

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000068",
+  "topic": "hyperthyroidism",
+  "topic_title": "Hyperthyroidism",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/000356.htm",
+  "scraped_at": "2026-08-10T12:16:57.615819+00:00",
+  "word_count": 865,
+  "content_hash": "sha256:0291a6a66a6aa470eef3e47a98a45ba729a4e3e277f025f352ba8c1db28421b6",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"4964fcf28a666af4325fd56a386809c2\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:26:01 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

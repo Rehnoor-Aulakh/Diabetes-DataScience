@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 3,
   "url": "https://medlineplus.gov/lab-tests/vitamin-d-test/",
-  "scraped_at": "2026-08-10T11:34:15.078468+00:00",
+  "scraped_at": "2026-08-10T12:15:02.549397+00:00",
   "word_count": 1597,
   "content_hash": "sha256:3552554d26a928fcd2784ae6b743f80a58e241cebfdfeb3cce8b7e6d22d30295",
   "extractor": "trafilatura/bs4",

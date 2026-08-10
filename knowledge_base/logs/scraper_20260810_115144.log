@@ -1,0 +1,29 @@
+[2026-08-10 11:51:44] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115144.log
+[2026-08-10 11:51:44] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:44] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:44] [INFO   ] Job queue: 0 jobs across 0 topics (filtered from manifest)
+[2026-08-10 11:51:44] [INFO   ] No jobs to run. Exiting.
+[2026-08-10 11:51:44] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115144.log
+[2026-08-10 11:51:44] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:44] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:44] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:51:44] [INFO   ] [KB-000026] [cleveland] SEARCHING — Query: Uric acid test hyperuricemia
+[2026-08-10 11:51:45] [WARNING] No highly relevant article links found on search page: https://my.clevelandclinic.org/search?q=Uric+acid+test+hyperuricemia
+[2026-08-10 11:51:45] [INFO   ] [KB-000026] [cleveland] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:45] [INFO   ] [KB-000026] [mayo] SEARCHING — Query: Uric acid test
+[2026-08-10 11:51:45] [ERROR  ] Direct search scrape HTTP error for 'https://www.mayoclinic.org/search/search-results?q=Uric+acid+test': 403
+[2026-08-10 11:51:45] [INFO   ] [KB-000026] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:51:45] [INFO   ] [KB-000026] [medlineplus] SEARCHING — Query: Uric acid blood test
+[2026-08-10 11:51:47] [INFO   ] [KB-000026] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/uric-acid-test/
+[2026-08-10 11:51:48] [INFO   ] [KB-000026] [medlineplus] EXTRACTING
+[2026-08-10 11:51:48] [INFO   ] [KB-000026] [medlineplus] CONVERTING
+[2026-08-10 11:51:48] [INFO   ] [KB-000026] [medlineplus] VALIDATING
+[2026-08-10 11:51:48] [INFO   ] [KB-000026] [medlineplus] COMPLETED — v1 (new) words=1516 duration=3.0s
+[2026-08-10 11:51:48] [INFO   ] ======================================================================
+[2026-08-10 11:51:48] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:51:48] [INFO   ]   Total jobs:   3
+[2026-08-10 11:51:48] [INFO   ]   Scraped:      1
+[2026-08-10 11:51:48] [INFO   ]   Skipped:      0
+[2026-08-10 11:51:48] [INFO   ]   Failed:       2
+[2026-08-10 11:51:48] [INFO   ]   Duration:     3.8s
+[2026-08-10 11:51:48] [INFO   ] ======================================================================

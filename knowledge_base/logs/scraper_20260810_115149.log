@@ -1,0 +1,5 @@
+[2026-08-10 11:51:49] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115149.log
+[2026-08-10 11:51:49] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:49] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:49] [INFO   ] Job queue: 0 jobs across 0 topics (filtered from manifest)
+[2026-08-10 11:51:49] [INFO   ] No jobs to run. Exiting.

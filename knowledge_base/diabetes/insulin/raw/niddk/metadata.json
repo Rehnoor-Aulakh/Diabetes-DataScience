@@ -6,7 +6,7 @@
   "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
   "version": 2,
   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments",
-  "scraped_at": "2026-08-10T11:32:54.618246+00:00",
+  "scraped_at": "2026-08-10T12:13:51.771820+00:00",
   "word_count": 2479,
   "content_hash": "sha256:2806d56e0b89f2519e67ba54831094166ee6f72763c5a7004394750cc16025e4",
   "extractor": "trafilatura/bs4",

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000064",
+  "topic": "t3",
+  "topic_title": "T3 (Triiodothyronine)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/triiodothyronine-t3-tests/",
+  "scraped_at": "2026-08-10T12:15:15.356443+00:00",
+  "word_count": 1166,
+  "content_hash": "sha256:d9250eb968ad9aa070ff889705b279261d21e10c1ced079f64db3b6463b7a86a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"f368b127432ec2a20870ef32cd46f4e7\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:53 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

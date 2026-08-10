@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/vitamin-b-test/",
-  "scraped_at": "2026-08-10T11:34:17.421146+00:00",
+  "scraped_at": "2026-08-10T12:15:03.141790+00:00",
   "word_count": 1622,
   "content_hash": "sha256:e38a5d5b1d8a8372da8b2c0c820d8d1e33f526d9d0ec6222b77c40fd32923bd1",
   "extractor": "trafilatura/bs4",

@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/triglycerides-test/",
-  "scraped_at": "2026-08-10T11:34:13.050002+00:00",
+  "scraped_at": "2026-08-10T12:14:59.940943+00:00",
   "word_count": 1608,
   "content_hash": "sha256:7a7132476de01a1e92c5c60e3b403c95fcebcb64696aa4bd48b012d5e01a979e",
   "extractor": "trafilatura/bs4",

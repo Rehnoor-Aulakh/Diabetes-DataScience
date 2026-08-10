@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000056",
+  "topic": "hematocrit",
+  "topic_title": "Hematocrit",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/hematocrit-test/",
+  "scraped_at": "2026-08-10T12:16:52.791373+00:00",
+  "word_count": 1386,
+  "content_hash": "sha256:b88452b45aec7a9812f86c38d2b4693b3411a4bfb6c5ccef8a6eafac72252555",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"3349687ca9e9b5fa1f80f325f2a0e746\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:52 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

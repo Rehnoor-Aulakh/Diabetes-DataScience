@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000074",
+  "topic": "atherosclerosis",
+  "topic_title": "Atherosclerosis",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/000171.htm",
+  "scraped_at": "2026-08-10T12:16:59.176802+00:00",
+  "word_count": 1256,
+  "content_hash": "sha256:f39a3367c5bbf264b4e2e81425484c2b59a9a9186220fadaf2589f18a61d2988",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"d76c4e2d4887417d587f670ec7e49ce7\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:44 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

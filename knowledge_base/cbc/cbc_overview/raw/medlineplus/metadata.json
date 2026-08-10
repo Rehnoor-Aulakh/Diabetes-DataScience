@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
-  "scraped_at": "2026-08-10T11:34:19.525197+00:00",
+  "scraped_at": "2026-08-10T12:15:03.688767+00:00",
   "word_count": 1010,
   "content_hash": "sha256:299f674ba3f730676d63542110a25b53bf3970f725cc0006d7c2ec4ebbaea836",
   "extractor": "trafilatura/bs4",

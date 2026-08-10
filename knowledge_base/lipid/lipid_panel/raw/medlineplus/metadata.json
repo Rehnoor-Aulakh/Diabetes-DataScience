@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000047",
+  "topic": "lipid_panel",
+  "topic_title": "Complete Lipid Panel",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/007812.htm",
+  "scraped_at": "2026-08-10T12:15:02.012809+00:00",
+  "word_count": 760,
+  "content_hash": "sha256:f8ee821326af677d706481611874178d6b5fe54d6642ac5b01b3d1e9c26d5adf",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"beb2bd3472a235c384a931b7f8e26485\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:17 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

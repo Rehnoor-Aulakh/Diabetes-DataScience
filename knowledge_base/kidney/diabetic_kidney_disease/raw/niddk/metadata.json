@@ -6,7 +6,7 @@
   "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
   "version": 2,
   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease",
-  "scraped_at": "2026-08-10T11:34:01.315834+00:00",
+  "scraped_at": "2026-08-10T12:14:38.768414+00:00",
   "word_count": 1192,
   "content_hash": "sha256:8d1d7e48a2b34959b63f5001c0a22f84a33796257c6cfbe98e751d7da07dd6e5",
   "extractor": "trafilatura/bs4",

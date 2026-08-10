@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000015",
+  "topic": "c_peptide",
+  "topic_title": "C-Peptide",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/c-peptide-test/",
+  "scraped_at": "2026-08-10T12:16:25.666235+00:00",
+  "word_count": 1506,
+  "content_hash": "sha256:b2ddbef9d4bbcad8601d5cd0d6e57eca8cb8c856f0c004740233727b7f3cd9e6",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"b902c7132462fe3ac348fdec79bc9cbb\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:33 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

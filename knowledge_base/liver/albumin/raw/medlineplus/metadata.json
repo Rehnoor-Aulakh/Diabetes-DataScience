@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000033",
+  "topic": "albumin",
+  "topic_title": "Albumin (Serum)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/albumin-blood-test/",
+  "scraped_at": "2026-08-10T12:14:46.442459+00:00",
+  "word_count": 1175,
+  "content_hash": "sha256:e8a9da0f0a690fbc4fa22b7cdd5074a6ade4b5facd192bd32b9c5b4f1bc4e6c2",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"eaa1ebf5de95a2f69d0c7b9384b85cb9\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:31 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

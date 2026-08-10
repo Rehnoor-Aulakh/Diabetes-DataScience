@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000081",
+  "topic": "diabetic_ketoacidosis",
+  "topic_title": "Diabetic Ketoacidosis (DKA)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/ketones-in-blood/",
+  "scraped_at": "2026-08-10T12:15:50.601669+00:00",
+  "word_count": 1418,
+  "content_hash": "sha256:5196ba34014371796f9668c4e79303a8efe88f41e4c8ab8644cedd0cb088320d",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"263b6ea53b9e1c7cb4181c3231ce7e56\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:33 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000067",
+  "topic": "hypothyroidism",
+  "topic_title": "Hypothyroidism",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/000353.htm",
+  "scraped_at": "2026-08-10T12:15:17.325357+00:00",
+  "word_count": 1145,
+  "content_hash": "sha256:20a0b0a9955e5b2e684ee1e5c6faa94ab79e83a6e0280d2d9b4e18098993f447",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"90c2377cb13fb6217f1709c08f864e7e\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:26:06 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

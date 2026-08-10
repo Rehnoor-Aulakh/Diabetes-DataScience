@@ -1,0 +1,36 @@
+[2026-08-10 11:51:22] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115122.log
+[2026-08-10 11:51:22] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:22] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:22] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:51:22] [INFO   ] [KB-000018] [cleveland] SEARCHING — Using direct URL: https://my.clevelandclinic.org/health/diagnostics/16728-creatinine-test
+[2026-08-10 11:51:22] [INFO   ] [KB-000018] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/16728-creatinine-test
+[2026-08-10 11:51:22] [WARNING] Download aborted for https://my.clevelandclinic.org/health/diagnostics/16728-creatinine-test: NOT_FOUND_404
+[2026-08-10 11:51:22] [INFO   ] [KB-000018] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-10 11:51:22] [INFO   ] [KB-000018] [mayo] SEARCHING — Using direct URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-10 11:51:22] [INFO   ] [KB-000018] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-10 11:51:23] [WARNING] Download aborted for https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646: BLOCKED_403
+[2026-08-10 11:51:23] [INFO   ] [KB-000018] [mayo] FAILED — Download error: BLOCKED_403
+[2026-08-10 11:51:23] [INFO   ] [KB-000018] [niddk] SEARCHING — Query: Creatinine what is it kidney
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/laboratory-evaluation/estimated-gfr-calculators/previous
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] EXTRACTING
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] CONVERTING
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] VALIDATING
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] FAILED — Quality check failed: Word count too low (238 < 300), No markdown headings found
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/high-blood-pressure
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] EXTRACTING
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] CONVERTING
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] VALIDATING
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:51:25] [INFO   ] [KB-000018] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/laboratory-evaluation/estimated-gfr-calculators
+[2026-08-10 11:51:26] [INFO   ] [KB-000018] [niddk] EXTRACTING
+[2026-08-10 11:51:26] [INFO   ] [KB-000018] [niddk] CONVERTING
+[2026-08-10 11:51:26] [INFO   ] [KB-000018] [niddk] VALIDATING
+[2026-08-10 11:51:26] [INFO   ] [KB-000018] [niddk] COMPLETED — v3 (unchanged) words=613 duration=3.3s
+[2026-08-10 11:51:26] [INFO   ] ======================================================================
+[2026-08-10 11:51:26] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:51:26] [INFO   ]   Total jobs:   3
+[2026-08-10 11:51:26] [INFO   ]   Scraped:      1
+[2026-08-10 11:51:26] [INFO   ]   Skipped:      0
+[2026-08-10 11:51:26] [INFO   ]   Failed:       2
+[2026-08-10 11:51:26] [INFO   ]   Duration:     3.9s
+[2026-08-10 11:51:26] [INFO   ] ======================================================================

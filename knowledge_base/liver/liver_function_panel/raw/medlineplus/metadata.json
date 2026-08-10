@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000038",
+  "topic": "liver_function_panel",
+  "topic_title": "Liver Function Test Panel",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+  "scraped_at": "2026-08-10T12:14:53.508005+00:00",
+  "word_count": 1284,
+  "content_hash": "sha256:e514d009ffeb80f095fc2c3f6b86d22776c325e88e822af912ab71f2a722aaf5",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"673d827f379464ba92860e7c79b48b90\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:24 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

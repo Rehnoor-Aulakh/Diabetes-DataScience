@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 2,
   "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
-  "scraped_at": "2026-08-10T11:32:35.271113+00:00",
+  "scraped_at": "2026-08-10T12:14:11.492829+00:00",
   "word_count": 2592,
   "content_hash": "sha256:9dcabbbb67b43f6cd979c652de742fcde3c1876512cbcb8e3e33593a23c273ef",
   "extractor": "trafilatura/bs4",

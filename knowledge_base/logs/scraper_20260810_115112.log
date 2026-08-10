@@ -1,0 +1,26 @@
+[2026-08-10 11:51:12] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_115112.log
+[2026-08-10 11:51:12] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:51:12] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:51:12] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:51:12] [INFO   ] [KB-000001] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes
+[2026-08-10 11:51:12] [INFO   ] [KB-000001] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [ada] EXTRACTING
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [ada] CONVERTING
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [ada] VALIDATING
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [ada] COMPLETED — v1 (unchanged) words=559 duration=1.7s
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [cdc] SEARCHING — Using direct URL: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:51:14] [WARNING] Download aborted for https://www.cdc.gov/diabetes/basics/index.html: BLOCKED_403
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [cdc] FAILED — Download error: BLOCKED_403
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [mayo] SEARCHING — Using direct URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:51:14] [INFO   ] [KB-000001] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:51:15] [WARNING] Download aborted for https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444: BLOCKED_403
+[2026-08-10 11:51:15] [INFO   ] [KB-000001] [mayo] FAILED — Download error: BLOCKED_403
+[2026-08-10 11:51:15] [INFO   ] ======================================================================
+[2026-08-10 11:51:15] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:51:15] [INFO   ]   Total jobs:   3
+[2026-08-10 11:51:15] [INFO   ]   Scraped:      1
+[2026-08-10 11:51:15] [INFO   ]   Skipped:      0
+[2026-08-10 11:51:15] [INFO   ]   Failed:       2
+[2026-08-10 11:51:15] [INFO   ]   Duration:     2.8s
+[2026-08-10 11:51:15] [INFO   ] ======================================================================

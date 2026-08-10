@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000043",
+  "topic": "vldl",
+  "topic_title": "VLDL Cholesterol",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003494.htm",
+  "scraped_at": "2026-08-10T12:16:39.295449+00:00",
+  "word_count": 542,
+  "content_hash": "sha256:bd63149b91186d956c7c014ac7ab9e92830084676afdaac7637e23acdd417960",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"aa1bc9169a14d051ed38a276b043a986\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:26:01 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ada": {
+    "403": 0,
+    "success": 10,
+    "disabled": false
+  },
+  "mayo": {
+    "403": 10,
+    "success": 0,
+    "disabled": false
+  },
+  "medlineplus": {
+    "403": 0,
+    "success": 109,
+    "disabled": false
+  },
+  "cdc": {
+    "403": 6,
+    "success": 0,
+    "disabled": false
+  },
+  "niddk": {
+    "403": 0,
+    "success": 36,
+    "disabled": false
+  }
+}

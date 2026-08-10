@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000087",
+  "topic": "gastroparesis",
+  "topic_title": "Gastroparesis",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 2,
+  "url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/how-gastroparesis-affect-people-with-diabetes",
+  "scraped_at": "2026-08-10T12:17:12.508541+00:00",
+  "word_count": 1060,
+  "content_hash": "sha256:4860ac26614bc833f5277e05daf453d551ac516e9bc853e4ac70def03308a748",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

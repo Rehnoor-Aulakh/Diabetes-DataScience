@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000029",
+  "topic": "ast",
+  "topic_title": "AST (SGOT)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003472.htm",
+  "scraped_at": "2026-08-10T12:14:41.998436+00:00",
+  "word_count": 537,
+  "content_hash": "sha256:7089e4b3df64f424cdbd75f0c5727a99fc99d5537f0f9b08109a3cba9d068573",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"4e6bd342f3d0529e7c3887a88a7274cb\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:26:15 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

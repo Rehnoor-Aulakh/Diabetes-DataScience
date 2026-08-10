@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000031",
+  "topic": "alp",
+  "topic_title": "ALP (Alkaline Phosphatase)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003470.htm",
+  "scraped_at": "2026-08-10T12:14:45.109372+00:00",
+  "word_count": 498,
+  "content_hash": "sha256:9d6bfae58f235d4a5fd48b49e2bd46e151e0295791ab0de1f31e8bb63e77fb2c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"75f7e3bd57e4aa8f3294f3c614d4512e\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:44 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

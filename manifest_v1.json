@@ -1,7 +1,7 @@
 {
   "manifest_version": "1.1",
   "project": "Certus Diagnostics Medical Knowledge Base",
-  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic \u2014 all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
+  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic — all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
   "created": "2024-01-01",
   "last_updated": "2024-01-15",
   "defaults": {
@@ -58,7 +58,7 @@
     "description": "After all sources are scraped for a topic, generate a merged summary.md that synthesizes the best information from all sources. This becomes the Layer 2 canonical knowledge document and the primary retrieval target for RAG.",
     "layers": {
       "layer_1_raw": "Raw scraped documents. Never modify. Ground truth.",
-      "layer_2_canonical": "summary.md \u2014 generated from all sources. Primary retrieval document.",
+      "layer_2_canonical": "summary.md — generated from all sources. Primary retrieval document.",
       "layer_3_vectors": "Chunked and embedded from Layer 2. Stored in vector database."
     }
   },
@@ -89,7 +89,7 @@
       "search_url_template": "https://www.niddk.nih.gov/search?q={query}",
       "enabled": true,
       "evidence_tier": 1,
-      "notes": "NIH institute \u2014 authoritative on diabetes, kidney, liver, and digestive diseases."
+      "notes": "NIH institute — authoritative on diabetes, kidney, liver, and digestive diseases."
     },
     "mayo": {
       "name": "Mayo Clinic",
@@ -128,7 +128,7 @@
     {
       "module": "diabetes",
       "folder": "diabetes",
-      "description": "Diabetes fundamentals \u2014 types, pathophysiology, and core concepts.",
+      "description": "Diabetes fundamentals — types, pathophysiology, and core concepts.",
       "topics": [
         {
           "id": "diabetes_overview",
@@ -181,9 +181,6 @@
           },
           "output_directory": "knowledge_base/diabetes/diabetes_overview",
           "direct_urls": {
-            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
-            "cleveland": "https://my.clevelandclinic.org/health/diseases/7104-diabetes",
-            "cdc": "https://www.cdc.gov/diabetes/basics/index.html",
             "ada": "https://diabetes.org/about-diabetes",
             "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"
           }
@@ -240,9 +237,6 @@
           },
           "output_directory": "knowledge_base/diabetes/type1_diabetes",
           "direct_urls": {
-            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011",
-            "cleveland": "https://my.clevelandclinic.org/health/diseases/21500-type-1-diabetes",
-            "cdc": "https://www.cdc.gov/diabetes/basics/what-is-type-1-diabetes.html",
             "ada": "https://diabetes.org/about-diabetes/type-1",
             "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes"
           }
@@ -300,7 +294,6 @@
           "output_directory": "knowledge_base/diabetes/type2_diabetes",
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes/type-2",
-            "cdc": "https://www.cdc.gov/diabetes/basics/type2.html",
             "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes"
           }
         },
@@ -355,7 +348,6 @@
           "output_directory": "knowledge_base/diabetes/prediabetes",
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes/prediabetes",
-            "cdc": "https://www.cdc.gov/diabetes/basics/prediabetes.html",
             "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
           }
         },
@@ -617,7 +609,7 @@
     {
       "module": "diagnosis",
       "folder": "diagnosis",
-      "description": "Diabetes diagnostic tests \u2014 blood glucose, HbA1c, and supporting biomarkers.",
+      "description": "Diabetes diagnostic tests — blood glucose, HbA1c, and supporting biomarkers.",
       "topics": [
         {
           "id": "hba1c",
@@ -669,10 +661,7 @@
           },
           "output_directory": "knowledge_base/diagnosis/hba1c",
           "direct_urls": {
-            "mayo": "https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643",
-            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/9731-a1c",
             "ada": "https://diabetes.org/about-diabetes/a1c",
-            "cdc": "https://www.cdc.gov/diabetes/managing/managing-blood-sugar/a1c.html",
             "niddk": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
             "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/"
           }
@@ -867,9 +856,7 @@
             "medlineplus": "OGTT oral glucose tolerance test"
           },
           "output_directory": "knowledge_base/diagnosis/ogtt",
-          "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/glucose-tolerance-test/"
-          }
+          "direct_urls": {}
         },
         {
           "id": "c_peptide",
@@ -1019,7 +1006,7 @@
     {
       "module": "kidney",
       "folder": "kidney",
-      "description": "Kidney health biomarkers \u2014 renal function tests critical for diabetes management.",
+      "description": "Kidney health biomarkers — renal function tests critical for diabetes management.",
       "topics": [
         {
           "id": "creatinine",
@@ -1072,8 +1059,6 @@
           },
           "output_directory": "knowledge_base/kidney/creatinine",
           "direct_urls": {
-            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
-            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/16728-creatinine-test",
             "medlineplus": "https://medlineplus.gov/lab-tests/creatinine-test/"
           }
         },
@@ -1125,8 +1110,6 @@
           },
           "output_directory": "knowledge_base/kidney/egfr",
           "direct_urls": {
-            "mayo": "https://www.mayoclinic.org/tests-procedures/glomerular-filtration-rate/about/pac-20384643",
-            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22562-estimated-glomerular-filtration-rate-egfr",
             "medlineplus": "https://medlineplus.gov/lab-tests/estimated-glomerular-filtration-rate-egfr/"
           }
         },
@@ -1429,7 +1412,6 @@
           },
           "output_directory": "knowledge_base/kidney/diabetic_kidney_disease",
           "direct_urls": {
-            "cdc": "https://www.cdc.gov/diabetes/managing/problems/kidney-disease.html",
             "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease"
           }
         },
@@ -1537,7 +1519,7 @@
     {
       "module": "liver",
       "folder": "liver",
-      "description": "Liver health biomarkers \u2014 liver function tests and associated conditions relevant to metabolic disease.",
+      "description": "Liver health biomarkers — liver function tests and associated conditions relevant to metabolic disease.",
       "topics": [
         {
           "id": "alt",
@@ -2088,7 +2070,7 @@
     {
       "module": "lipid",
       "folder": "lipid",
-      "description": "Lipid profile \u2014 cholesterol, triglycerides, and cardiovascular risk biomarkers.",
+      "description": "Lipid profile — cholesterol, triglycerides, and cardiovascular risk biomarkers.",
       "topics": [
         {
           "id": "hdl",
@@ -2839,7 +2821,7 @@
     {
       "module": "cbc",
       "folder": "cbc",
-      "description": "Complete Blood Count \u2014 hematology markers relevant to diabetes management and complications.",
+      "description": "Complete Blood Count — hematology markers relevant to diabetes management and complications.",
       "topics": [
         {
           "id": "cbc_overview",
@@ -3100,9 +3082,7 @@
             "mayo": "White blood cell count test"
           },
           "output_directory": "knowledge_base/cbc/wbc",
-          "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/white-blood-cell-wbc-count/"
-          }
+          "direct_urls": {}
         },
         {
           "id": "platelets",
@@ -3148,9 +3128,7 @@
             "cleveland": "Platelet count test PLT"
           },
           "output_directory": "knowledge_base/cbc/platelets",
-          "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/platelet-count/"
-          }
+          "direct_urls": {}
         },
         {
           "id": "anemia",
@@ -3306,7 +3284,7 @@
     {
       "module": "thyroid",
       "folder": "thyroid",
-      "description": "Thyroid function \u2014 hormone tests and the thyroid-diabetes connection.",
+      "description": "Thyroid function — hormone tests and the thyroid-diabetes connection.",
       "topics": [
         {
           "id": "tsh",
@@ -3405,9 +3383,7 @@
             "cleveland": "T3 blood test thyroid hormone"
           },
           "output_directory": "knowledge_base/thyroid/t3",
-          "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/t3-test/"
-          }
+          "direct_urls": {}
         },
         {
           "id": "t4",
@@ -3661,7 +3637,7 @@
     {
       "module": "cardiovascular",
       "folder": "cardiovascular",
-      "description": "Cardiovascular health \u2014 heart disease, hypertension, and vascular conditions linked to diabetes.",
+      "description": "Cardiovascular health — heart disease, hypertension, and vascular conditions linked to diabetes.",
       "topics": [
         {
           "id": "heart_disease",
@@ -3715,7 +3691,6 @@
           },
           "output_directory": "knowledge_base/cardiovascular/heart_disease",
           "direct_urls": {
-            "cdc": "https://www.cdc.gov/diabetes/managing/problems/heart-disease.html",
             "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/heart-disease-stroke"
           }
         },
@@ -3767,9 +3742,7 @@
             "ada": "High blood pressure diabetes"
           },
           "output_directory": "knowledge_base/cardiovascular/hypertension",
-          "direct_urls": {
-            "cdc": "https://www.cdc.gov/bloodpressure/about.htm"
-          }
+          "direct_urls": {}
         },
         {
           "id": "stroke",
@@ -3969,7 +3942,7 @@
     {
       "module": "complications",
       "folder": "complications",
-      "description": "Diabetes complications \u2014 microvascular, macrovascular, and acute metabolic emergencies.",
+      "description": "Diabetes complications — microvascular, macrovascular, and acute metabolic emergencies.",
       "topics": [
         {
           "id": "diabetic_neuropathy",
@@ -4646,7 +4619,7 @@
     {
       "module": "lifestyle",
       "folder": "lifestyle",
-      "description": "Lifestyle management \u2014 diet, exercise, sleep, and behavioral factors for diabetes care.",
+      "description": "Lifestyle management — diet, exercise, sleep, and behavioral factors for diabetes care.",
       "topics": [
         {
           "id": "healthy_eating",
@@ -5177,7 +5150,7 @@
     {
       "module": "medications",
       "folder": "medications",
-      "description": "Diabetes medications \u2014 drug classes, mechanisms, and treatment approaches. Marked as future priority for corpus expansion.",
+      "description": "Diabetes medications — drug classes, mechanisms, and treatment approaches. Marked as future priority for corpus expansion.",
       "topics": [
         {
           "id": "metformin",
@@ -5692,20 +5665,20 @@
     "Priority 1 = must-have for Certus Diagnostics MVP. Scrape first.",
     "Priority 2 = important for comprehensive coverage. Scrape second pass.",
     "Priority 3 = future expansion or medication module. Scrape when ready.",
-    "Status stages: pending \u2192 scraped \u2192 cleaned \u2192 chunked \u2192 embedded \u2192 verified \u2192 ready.",
+    "Status stages: pending → scraped → cleaned → chunked → embedded → verified → ready.",
     "Each topic folder contains one .md file per source (e.g., ada_v1.md, mayo_v1.md, niddk_v1.md).",
     "Each topic folder also contains metadata.json tracking url, scraped_on, word_count, content_hash, and version.",
     "After all sources are scraped, a summary.md (Layer 2) is generated from all sources for each topic.",
     "The queries object maps source keys to site-specific search strings because each site titles pages differently.",
-    "The medications module is marked as 'future' \u2014 not for the current assignment but structurally ready.",
+    "The medications module is marked as 'future' — not for the current assignment but structurally ready.",
     "Sources were selected for each topic based on which organization is the recognized authority for that domain.",
     "related_tests maps topics to actual blood test parameter names as they appear in lab reports for direct report-to-knowledge lookup.",
     "related_topics creates a knowledge graph enabling traversal from any concept to clinically related concepts.",
-    "clinical_tags enable fast filtering without embeddings \u2014 e.g., filter(tag=='kidney') returns all renal content.",
+    "clinical_tags enable fast filtering without embeddings — e.g., filter(tag=='kidney') returns all renal content.",
     "patient_questions drive future QA pair generation and inform chatbot prompt engineering.",
-    "source_priority defines evidence hierarchy \u2014 if sources disagree, higher-ranked sources are trusted first.",
+    "source_priority defines evidence hierarchy — if sources disagree, higher-ranked sources are trusted first.",
     "reading_level starts at 'patient' and can later be expanded to 'medical_student' and 'doctor' for multi-audience content.",
-    "refresh_interval guides re-scraping schedule \u2014 fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
+    "refresh_interval guides re-scraping schedule — fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
     "document_id (KB-XXXXXX) provides a stable identifier for traceability from vector database chunks back to source documents."
   ]
 }

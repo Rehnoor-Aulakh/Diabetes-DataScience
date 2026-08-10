@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 1,
   "url": "https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/",
-  "scraped_at": "2026-08-10T11:34:25.086933+00:00",
+  "scraped_at": "2026-08-10T12:15:04.976414+00:00",
   "word_count": 1192,
   "content_hash": "sha256:fc5b41783ccc38c8d525fcd1a1e0ca9ffafea5106b4d909f1c8e2e63b4b83a7a",
   "extractor": "trafilatura/bs4",
