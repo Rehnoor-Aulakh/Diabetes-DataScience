@@ -1,9 +1,9 @@
 {
-  "manifest_version": "1.0",
+  "manifest_version": "1.1",
   "project": "Certus Diagnostics Medical Knowledge Base",
-  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic — all search behavior lives here.",
+  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic — all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
   "created": "2024-01-01",
-  "last_updated": "2024-01-01",
+  "last_updated": "2024-01-15",
 
   "defaults": {
     "language": "en",
@@ -15,7 +15,70 @@
     "delay_seconds": 2,
     "max_retries": 3,
     "request_timeout_seconds": 30,
-    "user_agent": "CertusDiagnostics-KnowledgeBot/1.0"
+    "user_agent": "CertusDiagnostics-KnowledgeBot/1.0",
+    "default_reading_level": "patient",
+    "default_refresh_interval": "2 years"
+  },
+
+  "source_priority": [
+    "ada",
+    "niddk",
+    "cdc",
+    "mayo",
+    "cleveland",
+    "medlineplus"
+  ],
+
+  "corpus_stages": [
+    "pending",
+    "scraped",
+    "cleaned",
+    "chunked",
+    "embedded",
+    "verified",
+    "ready"
+  ],
+
+  "article_versioning": {
+    "enabled": true,
+    "naming_convention": "{source}_v{version}.md",
+    "metadata_file": "metadata.json",
+    "metadata_schema": {
+      "document_id": "KB-XXXXXX",
+      "url": "",
+      "scraped_on": "",
+      "last_checked": "",
+      "word_count": 0,
+      "content_hash": "",
+      "version": 1,
+      "status": "pending",
+      "source": "",
+      "topic_id": ""
+    }
+  },
+
+  "summary_generation": {
+    "enabled": true,
+    "output_file": "summary.md",
+    "description": "After all sources are scraped for a topic, generate a merged summary.md that synthesizes the best information from all sources. This becomes the Layer 2 canonical knowledge document and the primary retrieval target for RAG.",
+    "layers": {
+      "layer_1_raw": "Raw scraped documents. Never modify. Ground truth.",
+      "layer_2_canonical": "summary.md — generated from all sources. Primary retrieval document.",
+      "layer_3_vectors": "Chunked and embedded from Layer 2. Stored in vector database."
+    }
+  },
+
+  "document_id_scheme": {
+    "prefix": "KB",
+    "format": "KB-XXXXXX",
+    "description": "Stable identifier for every scraped article. Each chunk in the vector database carries this ID plus chunk index for full traceability.",
+    "chunk_format": {
+      "document_id": "KB-XXXXXX",
+      "module": "",
+      "topic": "",
+      "source": "",
+      "chunk_index": 0
+    }
   },
 
   "sources": {
@@ -24,6 +87,7 @@
       "base_url": "https://diabetes.org",
       "search_url_template": "https://diabetes.org/search?q={query}",
       "enabled": true,
+      "evidence_tier": 1,
       "notes": "Primary authority for diabetes-specific clinical guidelines and patient education."
     },
     "niddk": {
@@ -31,6 +95,7 @@
       "base_url": "https://www.niddk.nih.gov",
       "search_url_template": "https://www.niddk.nih.gov/search?q={query}",
       "enabled": true,
+      "evidence_tier": 1,
       "notes": "NIH institute — authoritative on diabetes, kidney, liver, and digestive diseases."
     },
     "mayo": {
@@ -38,6 +103,7 @@
       "base_url": "https://www.mayoclinic.org",
       "search_url_template": "https://www.mayoclinic.org/search/search-results?q={query}",
       "enabled": true,
+      "evidence_tier": 2,
       "notes": "Comprehensive patient-facing medical encyclopedia. Excellent for tests, procedures, and conditions."
     },
     "medlineplus": {
@@ -45,6 +111,7 @@
       "base_url": "https://medlineplus.gov",
       "search_url_template": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query={query}",
       "enabled": true,
+      "evidence_tier": 2,
       "notes": "NLM consumer health resource. Strong coverage of lab tests, drugs, and conditions in plain language."
     },
     "cleveland": {
@@ -52,6 +119,7 @@
       "base_url": "https://my.clevelandclinic.org",
       "search_url_template": "https://my.clevelandclinic.org/search?q={query}",
       "enabled": true,
+      "evidence_tier": 2,
       "notes": "Strong coverage of diagnostics, lab tests, and cardiovascular topics."
     },
     "cdc": {
@@ -59,6 +127,7 @@
       "base_url": "https://www.cdc.gov",
       "search_url_template": "https://search.cdc.gov/search/?query={query}",
       "enabled": true,
+      "evidence_tier": 1,
       "notes": "Public health authority. Strong on prevention, epidemiology, and lifestyle guidance."
     }
   },
@@ -74,10 +143,36 @@
 
         {
           "id": "diabetes_overview",
+          "document_id": "KB-000001",
           "title": "What is Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetes", "blood sugar", "glucose", "diabetes mellitus", "chronic disease"],
+          "clinical_tags": ["diabetes", "endocrinology", "metabolic", "chronic disease", "blood sugar"],
+          "related_tests": [
+            "FASTING BLOOD SUGAR (FBS)",
+            "HbA1c",
+            "RANDOM BLOOD SUGAR",
+            "ORAL GLUCOSE TOLERANCE TEST (OGTT)"
+          ],
+          "related_topics": [
+            "type1_diabetes",
+            "type2_diabetes",
+            "prediabetes",
+            "insulin",
+            "glucose_metabolism",
+            "hba1c"
+          ],
+          "patient_questions": [
+            "What is diabetes?",
+            "What are the types of diabetes?",
+            "How do I know if I have diabetes?",
+            "Can diabetes be cured?",
+            "What causes diabetes?"
+          ],
           "queries": {
             "ada": "What is diabetes",
             "cdc": "About diabetes basics",
@@ -88,10 +183,37 @@
 
         {
           "id": "type1_diabetes",
+          "document_id": "KB-000002",
           "title": "Type 1 Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["type 1 diabetes", "autoimmune diabetes", "insulin dependent", "juvenile diabetes", "T1D"],
+          "clinical_tags": ["diabetes", "type 1", "autoimmune", "endocrinology", "insulin dependent"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "C-PEPTIDE",
+            "INSULIN - FASTING",
+            "GAD ANTIBODIES"
+          ],
+          "related_topics": [
+            "diabetes_overview",
+            "insulin",
+            "hba1c",
+            "diabetic_ketoacidosis",
+            "c_peptide",
+            "pancreas"
+          ],
+          "patient_questions": [
+            "What causes Type 1 diabetes?",
+            "Is Type 1 diabetes genetic?",
+            "What is the difference between Type 1 and Type 2?",
+            "Can Type 1 diabetes be prevented?",
+            "How is Type 1 diabetes managed?"
+          ],
           "queries": {
             "ada": "Type 1 diabetes",
             "niddk": "What is type 1 diabetes",
@@ -102,10 +224,37 @@
 
         {
           "id": "type2_diabetes",
+          "document_id": "KB-000003",
           "title": "Type 2 Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["type 2 diabetes", "insulin resistance", "non-insulin dependent", "adult onset diabetes", "T2D"],
+          "clinical_tags": ["diabetes", "type 2", "insulin resistance", "endocrinology", "metabolic syndrome"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
+            "INSULIN - FASTING",
+            "TRIGLYCERIDES"
+          ],
+          "related_topics": [
+            "diabetes_overview",
+            "insulin_resistance",
+            "prediabetes",
+            "hba1c",
+            "metformin",
+            "weight_management"
+          ],
+          "patient_questions": [
+            "What causes Type 2 diabetes?",
+            "Can Type 2 diabetes be reversed?",
+            "What is the difference between Type 1 and Type 2?",
+            "Am I at risk for Type 2 diabetes?",
+            "How is Type 2 diabetes treated?"
+          ],
           "queries": {
             "ada": "Type 2 diabetes",
             "cdc": "Type 2 diabetes basics",
@@ -116,10 +265,36 @@
 
         {
           "id": "prediabetes",
+          "document_id": "KB-000004",
           "title": "Prediabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["prediabetes", "impaired glucose tolerance", "impaired fasting glucose", "borderline diabetes"],
+          "clinical_tags": ["diabetes", "prediabetes", "metabolic", "prevention", "endocrinology"],
+          "related_tests": [
+            "FASTING BLOOD SUGAR (FBS)",
+            "HbA1c",
+            "ORAL GLUCOSE TOLERANCE TEST (OGTT)"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "insulin_resistance",
+            "hba1c",
+            "fasting_blood_glucose",
+            "weight_management",
+            "healthy_eating",
+            "exercise"
+          ],
+          "patient_questions": [
+            "What is prediabetes?",
+            "Can prediabetes be reversed?",
+            "Will prediabetes always become diabetes?",
+            "How is prediabetes diagnosed?",
+            "What lifestyle changes help prediabetes?"
+          ],
           "queries": {
             "cdc": "Prediabetes your chance to prevent type 2 diabetes",
             "ada": "Understanding prediabetes",
@@ -130,10 +305,33 @@
 
         {
           "id": "gestational_diabetes",
+          "document_id": "KB-000005",
           "title": "Gestational Diabetes",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["gestational diabetes", "pregnancy diabetes", "GDM", "glucose tolerance pregnancy"],
+          "clinical_tags": ["diabetes", "gestational", "pregnancy", "endocrinology", "obstetrics"],
+          "related_tests": [
+            "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
+            "FASTING BLOOD SUGAR (FBS)",
+            "HbA1c"
+          ],
+          "related_topics": [
+            "diabetes_overview",
+            "type2_diabetes",
+            "ogtt",
+            "fasting_blood_glucose"
+          ],
+          "patient_questions": [
+            "What is gestational diabetes?",
+            "Will gestational diabetes harm my baby?",
+            "Does gestational diabetes go away after pregnancy?",
+            "Am I at risk for Type 2 diabetes after gestational diabetes?",
+            "How is gestational diabetes managed?"
+          ],
           "queries": {
             "cdc": "Gestational diabetes",
             "ada": "Gestational diabetes mellitus",
@@ -144,10 +342,35 @@
 
         {
           "id": "insulin",
+          "document_id": "KB-000006",
           "title": "Insulin",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["insulin", "insulin hormone", "pancreas insulin", "insulin function"],
+          "clinical_tags": ["diabetes", "endocrinology", "hormone", "pancreas", "metabolism"],
+          "related_tests": [
+            "INSULIN - FASTING",
+            "C-PEPTIDE",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "insulin_resistance",
+            "pancreas",
+            "type1_diabetes",
+            "type2_diabetes",
+            "glucose_metabolism",
+            "insulin_therapy"
+          ],
+          "patient_questions": [
+            "What does insulin do in the body?",
+            "Why is insulin important for diabetes?",
+            "What happens when insulin is too low?",
+            "What happens when insulin is too high?",
+            "What is the difference between insulin and blood sugar?"
+          ],
           "queries": {
             "niddk": "Insulin what it does",
             "medlineplus": "Insulin blood test",
@@ -158,10 +381,37 @@
 
         {
           "id": "insulin_resistance",
+          "document_id": "KB-000007",
           "title": "Insulin Resistance",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["insulin resistance", "metabolic syndrome", "insulin sensitivity"],
+          "clinical_tags": ["diabetes", "insulin resistance", "metabolic syndrome", "endocrinology", "obesity"],
+          "related_tests": [
+            "INSULIN - FASTING",
+            "FASTING BLOOD SUGAR (FBS)",
+            "HbA1c",
+            "TRIGLYCERIDES",
+            "HDL CHOLESTEROL"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "prediabetes",
+            "insulin",
+            "weight_management",
+            "triglycerides",
+            "hdl"
+          ],
+          "patient_questions": [
+            "What is insulin resistance?",
+            "What causes insulin resistance?",
+            "How do I know if I have insulin resistance?",
+            "Can insulin resistance be reversed?",
+            "What is the connection between insulin resistance and Type 2 diabetes?"
+          ],
           "queries": {
             "niddk": "Insulin resistance and prediabetes",
             "ada": "Insulin resistance",
@@ -172,10 +422,34 @@
 
         {
           "id": "pancreas",
+          "document_id": "KB-000008",
           "title": "Pancreas and Beta Cells",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["pancreas", "beta cells", "islets of Langerhans", "insulin production", "alpha cells", "glucagon"],
+          "clinical_tags": ["diabetes", "endocrinology", "anatomy", "pancreas", "beta cells"],
+          "related_tests": [
+            "C-PEPTIDE",
+            "INSULIN - FASTING",
+            "AMYLASE",
+            "LIPASE"
+          ],
+          "related_topics": [
+            "insulin",
+            "type1_diabetes",
+            "glucose_metabolism",
+            "c_peptide"
+          ],
+          "patient_questions": [
+            "What does the pancreas do?",
+            "What are beta cells?",
+            "Why do beta cells stop working in diabetes?",
+            "Can beta cells regenerate?",
+            "What is the role of glucagon?"
+          ],
           "queries": {
             "niddk": "Pancreas and its functions",
             "medlineplus": "Pancreas diseases and conditions",
@@ -186,10 +460,36 @@
 
         {
           "id": "glucose_metabolism",
+          "document_id": "KB-000009",
           "title": "Blood Glucose Regulation",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["blood glucose regulation", "glucose metabolism", "gluconeogenesis", "glycogenolysis", "glycogen"],
+          "clinical_tags": ["diabetes", "endocrinology", "metabolism", "physiology", "glucose"],
+          "related_tests": [
+            "FASTING BLOOD SUGAR (FBS)",
+            "RANDOM BLOOD SUGAR",
+            "HbA1c",
+            "INSULIN - FASTING"
+          ],
+          "related_topics": [
+            "diabetes_overview",
+            "insulin",
+            "insulin_resistance",
+            "pancreas",
+            "hyperglycemia",
+            "hypoglycemia"
+          ],
+          "patient_questions": [
+            "How does the body regulate blood sugar?",
+            "What happens to blood sugar after eating?",
+            "Why does blood sugar rise overnight?",
+            "What is the dawn phenomenon?",
+            "How do insulin and glucagon work together?"
+          ],
           "queries": {
             "niddk": "How does the body regulate blood sugar",
             "ada": "Blood glucose management",
@@ -209,10 +509,35 @@
 
         {
           "id": "hba1c",
+          "document_id": "KB-000010",
           "title": "HbA1c",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["HbA1c", "A1C", "glycated hemoglobin", "hemoglobin A1c", "glycosylated hemoglobin"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "endocrinology", "glycemic control"],
+          "related_tests": [
+            "HbA1c",
+            "ESTIMATED AVERAGE GLUCOSE (eAG)",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "average_blood_glucose",
+            "hyperglycemia",
+            "type2_diabetes",
+            "prediabetes",
+            "insulin_resistance",
+            "hemoglobin"
+          ],
+          "patient_questions": [
+            "What does my HbA1c number mean?",
+            "What is a normal HbA1c level?",
+            "Why is my HbA1c high?",
+            "How can I lower my HbA1c?",
+            "How often should I get an HbA1c test?"
+          ],
           "queries": {
             "ada": "Understanding A1C",
             "mayo": "A1C test",
@@ -223,10 +548,33 @@
 
         {
           "id": "average_blood_glucose",
+          "document_id": "KB-000011",
           "title": "Average Blood Glucose",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["average blood glucose", "estimated average glucose", "eAG", "mean glucose"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "glycemic control"],
+          "related_tests": [
+            "ESTIMATED AVERAGE GLUCOSE (eAG)",
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "hba1c",
+            "glucose_monitoring",
+            "fasting_blood_glucose",
+            "hyperglycemia"
+          ],
+          "patient_questions": [
+            "What is estimated average glucose?",
+            "How is eAG calculated from HbA1c?",
+            "What is a normal average blood glucose?",
+            "Why is my average blood glucose high?",
+            "How does eAG relate to my daily readings?"
+          ],
           "queries": {
             "ada": "Estimated average glucose eAG",
             "mayo": "Blood glucose test average glucose"
@@ -236,10 +584,34 @@
 
         {
           "id": "fasting_blood_glucose",
+          "document_id": "KB-000012",
           "title": "Fasting Blood Sugar",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["fasting blood glucose", "fasting blood sugar", "FBG", "fasting plasma glucose", "FPG"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "fasting", "glucose"],
+          "related_tests": [
+            "FASTING BLOOD SUGAR (FBS)",
+            "FASTING PLASMA GLUCOSE (FPG)"
+          ],
+          "related_topics": [
+            "hba1c",
+            "prediabetes",
+            "type2_diabetes",
+            "random_blood_glucose",
+            "ogtt",
+            "glucose_metabolism"
+          ],
+          "patient_questions": [
+            "What is a normal fasting blood sugar level?",
+            "Why is my fasting blood sugar high?",
+            "How long should I fast before the test?",
+            "What does borderline fasting sugar mean?",
+            "How can I lower my fasting blood sugar?"
+          ],
           "queries": {
             "ada": "Fasting blood glucose test",
             "cdc": "Diabetes testing fasting blood sugar",
@@ -250,10 +622,32 @@
 
         {
           "id": "random_blood_glucose",
+          "document_id": "KB-000013",
           "title": "Random Blood Sugar",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["random blood glucose", "random blood sugar", "casual plasma glucose"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "glucose"],
+          "related_tests": [
+            "RANDOM BLOOD SUGAR",
+            "BLOOD GLUCOSE - RANDOM"
+          ],
+          "related_topics": [
+            "fasting_blood_glucose",
+            "hba1c",
+            "hyperglycemia",
+            "postprandial_glucose"
+          ],
+          "patient_questions": [
+            "What is a normal random blood sugar?",
+            "Why is my random blood sugar high?",
+            "Do I need to fast for a random blood sugar test?",
+            "What does a random blood sugar of 200 mean?",
+            "Is random blood sugar accurate for diagnosis?"
+          ],
           "queries": {
             "ada": "Random blood glucose test diabetes",
             "medlineplus": "Blood glucose test random",
@@ -264,10 +658,33 @@
 
         {
           "id": "ogtt",
+          "document_id": "KB-000014",
           "title": "Oral Glucose Tolerance Test",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["OGTT", "oral glucose tolerance test", "glucose tolerance", "2-hour glucose"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "glucose tolerance", "prediabetes"],
+          "related_tests": [
+            "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
+            "2-HOUR PLASMA GLUCOSE"
+          ],
+          "related_topics": [
+            "prediabetes",
+            "gestational_diabetes",
+            "fasting_blood_glucose",
+            "type2_diabetes",
+            "insulin_resistance"
+          ],
+          "patient_questions": [
+            "What happens during an oral glucose tolerance test?",
+            "What do OGTT results mean?",
+            "How do I prepare for an OGTT?",
+            "Why did my doctor order a glucose tolerance test?",
+            "What is a normal 2-hour glucose reading?"
+          ],
           "queries": {
             "ada": "Oral glucose tolerance test",
             "mayo": "Glucose tolerance test",
@@ -278,10 +695,32 @@
 
         {
           "id": "c_peptide",
+          "document_id": "KB-000015",
           "title": "C-Peptide",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["C-peptide", "connecting peptide", "insulin secretion marker"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "insulin", "pancreas"],
+          "related_tests": [
+            "C-PEPTIDE",
+            "INSULIN - FASTING"
+          ],
+          "related_topics": [
+            "insulin",
+            "pancreas",
+            "type1_diabetes",
+            "type2_diabetes"
+          ],
+          "patient_questions": [
+            "What does a C-Peptide test measure?",
+            "Why is my C-Peptide low?",
+            "Why is my C-Peptide high?",
+            "What does C-Peptide tell about my diabetes type?",
+            "How is C-Peptide different from an insulin test?"
+          ],
           "queries": {
             "medlineplus": "C-peptide test",
             "cleveland": "C-peptide blood test",
@@ -292,10 +731,34 @@
 
         {
           "id": "glucose_monitoring",
+          "document_id": "KB-000016",
           "title": "Blood Glucose Monitoring",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "1 year",
           "keywords": ["glucose monitoring", "blood sugar monitoring", "CGM", "continuous glucose monitor", "self-monitoring blood glucose", "SMBG", "glucometer"],
+          "clinical_tags": ["diabetes", "monitoring", "technology", "self-management", "CGM"],
+          "related_tests": [
+            "FASTING BLOOD SUGAR (FBS)",
+            "RANDOM BLOOD SUGAR",
+            "HbA1c"
+          ],
+          "related_topics": [
+            "hba1c",
+            "fasting_blood_glucose",
+            "postprandial_glucose",
+            "hypoglycemia",
+            "hyperglycemia"
+          ],
+          "patient_questions": [
+            "How often should I check my blood sugar?",
+            "What is a continuous glucose monitor (CGM)?",
+            "What is a normal blood sugar range throughout the day?",
+            "When is the best time to check blood sugar?",
+            "What should I do if my blood sugar is too high or too low?"
+          ],
           "queries": {
             "ada": "Blood glucose monitoring",
             "cdc": "Monitoring your blood sugar diabetes",
@@ -306,10 +769,33 @@
 
         {
           "id": "postprandial_glucose",
+          "document_id": "KB-000017",
           "title": "Postprandial Blood Glucose",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["postprandial glucose", "after meal blood sugar", "2-hour postprandial", "PPG"],
+          "clinical_tags": ["diabetes", "diagnosis", "blood test", "postprandial", "glucose"],
+          "related_tests": [
+            "POST-PRANDIAL BLOOD SUGAR (PPBS)",
+            "2-HOUR POST-PRANDIAL GLUCOSE"
+          ],
+          "related_topics": [
+            "fasting_blood_glucose",
+            "glucose_monitoring",
+            "hba1c",
+            "carb_counting",
+            "glycemic_index"
+          ],
+          "patient_questions": [
+            "What is a normal blood sugar after eating?",
+            "Why is my blood sugar high after meals?",
+            "How long after eating should I check my blood sugar?",
+            "How can I reduce post-meal blood sugar spikes?",
+            "Is a post-meal sugar of 180 dangerous?"
+          ],
           "queries": {
             "ada": "Postprandial blood glucose after meals",
             "mayo": "Blood sugar after eating postprandial glucose",
@@ -329,10 +815,36 @@
 
         {
           "id": "creatinine",
+          "document_id": "KB-000018",
           "title": "Creatinine",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["creatinine", "serum creatinine", "blood creatinine", "kidney function test"],
+          "clinical_tags": ["kidney", "renal", "blood test", "nephrology", "diabetes", "ckd"],
+          "related_tests": [
+            "CREATININE - SERUM",
+            "CREATININE - URINE",
+            "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+            "BUN (BLOOD UREA NITROGEN)"
+          ],
+          "related_topics": [
+            "egfr",
+            "bun",
+            "microalbumin",
+            "diabetic_kidney_disease",
+            "urine_creatinine",
+            "albumin_creatinine_ratio"
+          ],
+          "patient_questions": [
+            "What does creatinine measure?",
+            "Why is my creatinine high?",
+            "Why is my creatinine low?",
+            "How can I lower my creatinine?",
+            "Is high creatinine dangerous?"
+          ],
           "queries": {
             "niddk": "Creatinine what is it kidney",
             "mayo": "Creatinine test",
@@ -343,10 +855,33 @@
 
         {
           "id": "egfr",
+          "document_id": "KB-000019",
           "title": "eGFR",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["eGFR", "estimated glomerular filtration rate", "GFR", "kidney filtration rate"],
+          "clinical_tags": ["kidney", "renal", "blood test", "nephrology", "ckd", "filtration"],
+          "related_tests": [
+            "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+            "CREATININE - SERUM"
+          ],
+          "related_topics": [
+            "creatinine",
+            "diabetic_kidney_disease",
+            "microalbumin",
+            "bun",
+            "albumin_creatinine_ratio"
+          ],
+          "patient_questions": [
+            "What does eGFR measure?",
+            "What is a normal eGFR?",
+            "What does a low eGFR mean?",
+            "Can eGFR improve?",
+            "What stage of kidney disease is my eGFR?"
+          ],
           "queries": {
             "niddk": "Estimated GFR glomerular filtration rate",
             "cleveland": "eGFR test kidney function",
@@ -357,10 +892,33 @@
 
         {
           "id": "bun",
+          "document_id": "KB-000020",
           "title": "BUN (Blood Urea Nitrogen)",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["BUN", "blood urea nitrogen", "urea nitrogen", "kidney function"],
+          "clinical_tags": ["kidney", "renal", "blood test", "nephrology", "urea"],
+          "related_tests": [
+            "BUN (BLOOD UREA NITROGEN)",
+            "CREATININE - SERUM",
+            "BUN/CREATININE RATIO"
+          ],
+          "related_topics": [
+            "creatinine",
+            "egfr",
+            "urea",
+            "diabetic_kidney_disease"
+          ],
+          "patient_questions": [
+            "What does BUN measure?",
+            "Why is my BUN high?",
+            "Why is my BUN low?",
+            "What is a normal BUN level?",
+            "What does the BUN/Creatinine ratio mean?"
+          ],
           "queries": {
             "medlineplus": "BUN blood urea nitrogen test",
             "cleveland": "Blood urea nitrogen BUN test",
@@ -371,10 +929,32 @@
 
         {
           "id": "urea",
+          "document_id": "KB-000021",
           "title": "Urea",
           "priority": 2,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["urea", "blood urea", "urea blood test"],
+          "clinical_tags": ["kidney", "renal", "blood test", "nephrology"],
+          "related_tests": [
+            "UREA",
+            "BUN (BLOOD UREA NITROGEN)"
+          ],
+          "related_topics": [
+            "bun",
+            "creatinine",
+            "egfr",
+            "diabetic_kidney_disease"
+          ],
+          "patient_questions": [
+            "What is urea?",
+            "What is the difference between urea and BUN?",
+            "Why is my urea level high?",
+            "What causes low urea?",
+            "How does urea relate to kidney function?"
+          ],
           "queries": {
             "medlineplus": "Urea blood test",
             "mayo": "Urea nitrogen blood test",
@@ -385,10 +965,33 @@
 
         {
           "id": "urine_creatinine",
+          "document_id": "KB-000022",
           "title": "Urine Creatinine",
           "priority": 2,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["urine creatinine", "creatinine clearance", "24-hour urine creatinine"],
+          "clinical_tags": ["kidney", "renal", "urine test", "nephrology", "creatinine clearance"],
+          "related_tests": [
+            "CREATININE - URINE",
+            "CREATININE CLEARANCE",
+            "24-HOUR URINE CREATININE"
+          ],
+          "related_topics": [
+            "creatinine",
+            "albumin_creatinine_ratio",
+            "microalbumin",
+            "egfr"
+          ],
+          "patient_questions": [
+            "What does a urine creatinine test measure?",
+            "What is creatinine clearance?",
+            "How is a 24-hour urine test done?",
+            "Why is my urine creatinine abnormal?",
+            "How does urine creatinine relate to kidney function?"
+          ],
           "queries": {
             "medlineplus": "Creatinine urine test",
             "cleveland": "Urine creatinine test creatinine clearance",
@@ -399,10 +1002,34 @@
 
         {
           "id": "microalbumin",
+          "document_id": "KB-000023",
           "title": "Microalbumin (Urine Albumin)",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["microalbumin", "urine albumin", "microalbuminuria", "albumin urine test", "proteinuria"],
+          "clinical_tags": ["kidney", "renal", "urine test", "diabetes", "nephrology", "microvascular"],
+          "related_tests": [
+            "MICROALBUMIN - URINE",
+            "URINE ALBUMIN",
+            "ALBUMIN/CREATININE RATIO (ACR)"
+          ],
+          "related_topics": [
+            "albumin_creatinine_ratio",
+            "diabetic_kidney_disease",
+            "creatinine",
+            "egfr",
+            "diabetic_nephropathy"
+          ],
+          "patient_questions": [
+            "What does microalbumin in urine mean?",
+            "Why is albumin in my urine?",
+            "Is microalbuminuria serious?",
+            "Can microalbuminuria be reversed?",
+            "How is microalbumin related to diabetes kidney damage?"
+          ],
           "queries": {
             "niddk": "Albuminuria albumin urine diabetes",
             "ada": "Urine albumin test diabetes kidney",
@@ -413,10 +1040,34 @@
 
         {
           "id": "albumin_creatinine_ratio",
+          "document_id": "KB-000024",
           "title": "Albumin-to-Creatinine Ratio (ACR)",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["albumin creatinine ratio", "ACR", "UACR", "urine albumin creatinine ratio"],
+          "clinical_tags": ["kidney", "renal", "urine test", "diabetes", "nephrology", "ckd"],
+          "related_tests": [
+            "ALBUMIN/CREATININE RATIO (ACR)",
+            "URINE ALBUMIN/CREATININE RATIO (UACR)",
+            "MICROALBUMIN - URINE"
+          ],
+          "related_topics": [
+            "microalbumin",
+            "creatinine",
+            "egfr",
+            "diabetic_kidney_disease",
+            "diabetic_nephropathy"
+          ],
+          "patient_questions": [
+            "What does the albumin-to-creatinine ratio measure?",
+            "What is a normal ACR?",
+            "Why is my ACR high?",
+            "What does an ACR over 30 mean?",
+            "How often should my ACR be tested?"
+          ],
           "queries": {
             "niddk": "Urine albumin-to-creatinine ratio UACR",
             "mayo": "Albumin creatinine ratio urine test",
@@ -427,10 +1078,37 @@
 
         {
           "id": "diabetic_kidney_disease",
+          "document_id": "KB-000025",
           "title": "Diabetic Kidney Disease",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetic kidney disease", "diabetic nephropathy", "chronic kidney disease diabetes", "CKD", "kidney damage diabetes"],
+          "clinical_tags": ["kidney", "renal", "diabetes", "nephrology", "ckd", "microvascular", "complication"],
+          "related_tests": [
+            "CREATININE - SERUM",
+            "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+            "ALBUMIN/CREATININE RATIO (ACR)",
+            "BUN (BLOOD UREA NITROGEN)",
+            "MICROALBUMIN - URINE"
+          ],
+          "related_topics": [
+            "creatinine",
+            "egfr",
+            "microalbumin",
+            "albumin_creatinine_ratio",
+            "diabetic_nephropathy",
+            "hypertension"
+          ],
+          "patient_questions": [
+            "How does diabetes damage the kidneys?",
+            "What are the stages of diabetic kidney disease?",
+            "Can diabetic kidney disease be reversed?",
+            "What tests screen for kidney damage in diabetes?",
+            "How can I protect my kidneys if I have diabetes?"
+          ],
           "queries": {
             "ada": "Diabetes and kidney disease",
             "niddk": "Diabetic kidney disease",
@@ -441,10 +1119,32 @@
 
         {
           "id": "uric_acid",
+          "document_id": "KB-000026",
           "title": "Uric Acid",
           "priority": 2,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["uric acid", "urate", "hyperuricemia", "gout", "kidney stones uric acid"],
+          "clinical_tags": ["kidney", "renal", "blood test", "gout", "metabolic"],
+          "related_tests": [
+            "URIC ACID - SERUM",
+            "URIC ACID - URINE"
+          ],
+          "related_topics": [
+            "creatinine",
+            "egfr",
+            "diabetic_kidney_disease",
+            "electrolytes"
+          ],
+          "patient_questions": [
+            "What does uric acid measure?",
+            "Why is my uric acid high?",
+            "What is the connection between uric acid and diabetes?",
+            "Can high uric acid damage my kidneys?",
+            "How can I lower my uric acid?"
+          ],
           "queries": {
             "medlineplus": "Uric acid blood test",
             "mayo": "Uric acid test",
@@ -455,10 +1155,36 @@
 
         {
           "id": "electrolytes",
+          "document_id": "KB-000027",
           "title": "Electrolytes (Sodium, Potassium, Chloride)",
           "priority": 2,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["electrolytes", "sodium", "potassium", "chloride", "electrolyte panel", "basic metabolic panel"],
+          "clinical_tags": ["kidney", "renal", "blood test", "electrolytes", "metabolic"],
+          "related_tests": [
+            "SODIUM",
+            "POTASSIUM",
+            "CHLORIDE",
+            "ELECTROLYTE PANEL",
+            "BASIC METABOLIC PANEL (BMP)"
+          ],
+          "related_topics": [
+            "creatinine",
+            "egfr",
+            "bun",
+            "diabetic_kidney_disease",
+            "diabetic_ketoacidosis"
+          ],
+          "patient_questions": [
+            "What are electrolytes?",
+            "Why is my potassium high or low?",
+            "Why is my sodium high or low?",
+            "How do electrolytes relate to kidney function?",
+            "Can diabetes affect my electrolyte levels?"
+          ],
           "queries": {
             "medlineplus": "Electrolyte panel blood test",
             "mayo": "Electrolyte test sodium potassium",
@@ -478,10 +1204,34 @@
 
         {
           "id": "alt",
+          "document_id": "KB-000028",
           "title": "ALT (SGPT)",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["ALT", "SGPT", "alanine aminotransferase", "alanine transaminase", "liver enzyme"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "liver enzyme", "metabolic"],
+          "related_tests": [
+            "ALT (SGPT)",
+            "ALANINE AMINOTRANSFERASE",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "ast",
+            "liver_function_panel",
+            "fatty_liver",
+            "nafld",
+            "bilirubin"
+          ],
+          "patient_questions": [
+            "What does ALT measure?",
+            "Why is my ALT high?",
+            "Why is my ALT low?",
+            "How can I lower my ALT?",
+            "Is high ALT dangerous?"
+          ],
           "queries": {
             "mayo": "ALT blood test alanine aminotransferase",
             "medlineplus": "ALT blood test SGPT",
@@ -492,10 +1242,34 @@
 
         {
           "id": "ast",
+          "document_id": "KB-000029",
           "title": "AST (SGOT)",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["AST", "SGOT", "aspartate aminotransferase", "aspartate transaminase", "liver enzyme"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "liver enzyme", "cardiac"],
+          "related_tests": [
+            "AST (SGOT)",
+            "ASPARTATE AMINOTRANSFERASE",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "alt",
+            "liver_function_panel",
+            "fatty_liver",
+            "nafld",
+            "bilirubin"
+          ],
+          "patient_questions": [
+            "What does AST measure?",
+            "Why is my AST high?",
+            "Why is my AST low?",
+            "What does the AST/ALT ratio mean?",
+            "Is high AST always a liver problem?"
+          ],
           "queries": {
             "mayo": "AST test aspartate aminotransferase",
             "cleveland": "AST blood test SGOT liver",
@@ -506,10 +1280,35 @@
 
         {
           "id": "bilirubin",
+          "document_id": "KB-000030",
           "title": "Bilirubin",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["bilirubin", "total bilirubin", "direct bilirubin", "indirect bilirubin", "conjugated bilirubin", "jaundice"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "bilirubin", "jaundice"],
+          "related_tests": [
+            "BILIRUBIN - TOTAL",
+            "BILIRUBIN - DIRECT",
+            "BILIRUBIN - INDIRECT",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "alt",
+            "ast",
+            "alp",
+            "liver_function_panel",
+            "hemoglobin"
+          ],
+          "patient_questions": [
+            "What does bilirubin measure?",
+            "Why is my bilirubin high?",
+            "What is the difference between direct and indirect bilirubin?",
+            "What causes jaundice?",
+            "Can diabetes affect bilirubin levels?"
+          ],
           "queries": {
             "medlineplus": "Bilirubin blood test",
             "mayo": "Bilirubin test",
@@ -520,10 +1319,33 @@
 
         {
           "id": "alp",
+          "document_id": "KB-000031",
           "title": "ALP (Alkaline Phosphatase)",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["ALP", "alkaline phosphatase", "liver enzyme", "bone enzyme"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "bone", "enzyme"],
+          "related_tests": [
+            "ALKALINE PHOSPHATASE (ALP)",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "ggt",
+            "alt",
+            "ast",
+            "bilirubin",
+            "liver_function_panel"
+          ],
+          "patient_questions": [
+            "What does ALP measure?",
+            "Why is my ALP high?",
+            "Why is my ALP low?",
+            "Is ALP a liver or bone test?",
+            "How can I lower my ALP?"
+          ],
           "queries": {
             "medlineplus": "Alkaline phosphatase ALP blood test",
             "cleveland": "ALP alkaline phosphatase test",
@@ -534,10 +1356,34 @@
 
         {
           "id": "ggt",
+          "document_id": "KB-000032",
           "title": "GGT (Gamma-Glutamyl Transferase)",
           "priority": 2,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["GGT", "gamma-glutamyl transferase", "gamma GT", "liver bile duct enzyme"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "bile duct", "enzyme"],
+          "related_tests": [
+            "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "alp",
+            "alt",
+            "ast",
+            "bilirubin",
+            "liver_function_panel",
+            "alcohol"
+          ],
+          "patient_questions": [
+            "What does GGT measure?",
+            "Why is my GGT high?",
+            "Is GGT related to alcohol use?",
+            "What is the difference between GGT and ALP?",
+            "How can I lower my GGT?"
+          ],
           "queries": {
             "cleveland": "GGT gamma-glutamyl transferase test",
             "mayo": "Gamma-glutamyl transferase GGT test",
@@ -548,10 +1394,33 @@
 
         {
           "id": "albumin",
+          "document_id": "KB-000033",
           "title": "Albumin (Serum)",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["albumin", "serum albumin", "blood albumin", "liver protein"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "protein", "nutrition"],
+          "related_tests": [
+            "ALBUMIN - SERUM",
+            "TOTAL PROTEIN",
+            "A/G RATIO"
+          ],
+          "related_topics": [
+            "globulin",
+            "total_protein",
+            "liver_function_panel",
+            "microalbumin"
+          ],
+          "patient_questions": [
+            "What does serum albumin measure?",
+            "Why is my albumin low?",
+            "Why is my albumin high?",
+            "Is low albumin serious?",
+            "How can I raise my albumin level?"
+          ],
           "queries": {
             "medlineplus": "Albumin blood test",
             "mayo": "Albumin serum test liver",
@@ -562,10 +1431,32 @@
 
         {
           "id": "globulin",
+          "document_id": "KB-000034",
           "title": "Globulin",
           "priority": 2,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["globulin", "total protein", "A/G ratio", "albumin globulin ratio", "immunoglobulins"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "protein", "immune"],
+          "related_tests": [
+            "GLOBULIN",
+            "A/G RATIO",
+            "TOTAL PROTEIN"
+          ],
+          "related_topics": [
+            "albumin",
+            "total_protein",
+            "liver_function_panel"
+          ],
+          "patient_questions": [
+            "What does globulin measure?",
+            "Why is my globulin high?",
+            "Why is my globulin low?",
+            "What is the A/G ratio?",
+            "What causes abnormal globulin levels?"
+          ],
           "queries": {
             "medlineplus": "Globulin blood test total protein",
             "mayo": "Total protein test globulin albumin",
@@ -576,10 +1467,33 @@
 
         {
           "id": "total_protein",
+          "document_id": "KB-000035",
           "title": "Total Protein",
           "priority": 2,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["total protein", "serum protein", "protein electrophoresis"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "protein"],
+          "related_tests": [
+            "TOTAL PROTEIN",
+            "ALBUMIN - SERUM",
+            "GLOBULIN",
+            "A/G RATIO"
+          ],
+          "related_topics": [
+            "albumin",
+            "globulin",
+            "liver_function_panel"
+          ],
+          "patient_questions": [
+            "What does total protein measure?",
+            "Why is my total protein high?",
+            "Why is my total protein low?",
+            "What is included in total protein?",
+            "How does total protein relate to liver health?"
+          ],
           "queries": {
             "medlineplus": "Total protein blood test",
             "mayo": "Total protein test",
@@ -590,10 +1504,36 @@
 
         {
           "id": "fatty_liver",
+          "document_id": "KB-000036",
           "title": "Fatty Liver Disease",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["fatty liver", "hepatic steatosis", "liver fat", "MASLD"],
+          "clinical_tags": ["liver", "hepatology", "metabolic", "diabetes", "obesity"],
+          "related_tests": [
+            "ALT (SGPT)",
+            "AST (SGOT)",
+            "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+            "TRIGLYCERIDES"
+          ],
+          "related_topics": [
+            "nafld",
+            "alt",
+            "ast",
+            "triglycerides",
+            "weight_management",
+            "insulin_resistance"
+          ],
+          "patient_questions": [
+            "What is fatty liver disease?",
+            "Can fatty liver be reversed?",
+            "Is fatty liver dangerous?",
+            "What causes fatty liver in diabetes?",
+            "How is fatty liver diagnosed?"
+          ],
           "queries": {
             "mayo": "Nonalcoholic fatty liver disease",
             "niddk": "Fatty liver disease NAFLD",
@@ -604,10 +1544,38 @@
 
         {
           "id": "nafld",
+          "document_id": "KB-000037",
           "title": "NAFLD / MASLD and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "1 year",
           "keywords": ["NAFLD", "NASH", "MASLD", "MASH", "nonalcoholic fatty liver", "nonalcoholic steatohepatitis", "metabolic associated steatotic liver disease"],
+          "clinical_tags": ["liver", "hepatology", "diabetes", "metabolic", "inflammation", "fibrosis"],
+          "related_tests": [
+            "ALT (SGPT)",
+            "AST (SGOT)",
+            "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+            "TRIGLYCERIDES",
+            "HbA1c"
+          ],
+          "related_topics": [
+            "fatty_liver",
+            "alt",
+            "ast",
+            "ggt",
+            "insulin_resistance",
+            "type2_diabetes",
+            "weight_management"
+          ],
+          "patient_questions": [
+            "What is the difference between NAFLD and NASH?",
+            "Why do people with diabetes get NAFLD?",
+            "Can NAFLD lead to liver failure?",
+            "What is MASLD?",
+            "How can I treat NAFLD?"
+          ],
           "queries": {
             "niddk": "NAFLD NASH nonalcoholic fatty liver",
             "mayo": "Nonalcoholic steatohepatitis NASH",
@@ -618,10 +1586,41 @@
 
         {
           "id": "liver_function_panel",
+          "document_id": "KB-000038",
           "title": "Liver Function Test Panel",
           "priority": 1,
           "status": "pending",
+          "specialty": "hepatology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["liver function test", "LFT", "hepatic function panel", "comprehensive metabolic panel liver"],
+          "clinical_tags": ["liver", "hepatology", "blood test", "panel", "diagnostic"],
+          "related_tests": [
+            "LIVER FUNCTION TEST (LFT)",
+            "ALT (SGPT)",
+            "AST (SGOT)",
+            "ALKALINE PHOSPHATASE (ALP)",
+            "BILIRUBIN - TOTAL",
+            "ALBUMIN - SERUM",
+            "TOTAL PROTEIN"
+          ],
+          "related_topics": [
+            "alt",
+            "ast",
+            "bilirubin",
+            "alp",
+            "albumin",
+            "globulin",
+            "total_protein",
+            "ggt"
+          ],
+          "patient_questions": [
+            "What does a liver function test include?",
+            "What do my liver function results mean?",
+            "Why did my doctor order a liver panel?",
+            "Can diabetes affect liver function tests?",
+            "How often should liver function be checked?"
+          ],
           "queries": {
             "medlineplus": "Liver function tests",
             "mayo": "Liver function tests",
@@ -641,10 +1640,34 @@
 
         {
           "id": "hdl",
+          "document_id": "KB-000039",
           "title": "HDL Cholesterol",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["HDL", "high-density lipoprotein", "good cholesterol", "HDL-C"],
+          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "cardiology", "protective"],
+          "related_tests": [
+            "HDL CHOLESTEROL",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "ldl",
+            "total_cholesterol",
+            "triglycerides",
+            "lipid_panel",
+            "cholesterol_ratio",
+            "heart_disease"
+          ],
+          "patient_questions": [
+            "What is HDL cholesterol?",
+            "Why is HDL called good cholesterol?",
+            "Why is my HDL low?",
+            "How can I raise my HDL?",
+            "What is a good HDL level?"
+          ],
           "queries": {
             "mayo": "HDL cholesterol good cholesterol",
             "medlineplus": "HDL cholesterol test",
@@ -655,10 +1678,36 @@
 
         {
           "id": "ldl",
+          "document_id": "KB-000040",
           "title": "LDL Cholesterol",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["LDL", "low-density lipoprotein", "bad cholesterol", "LDL-C"],
+          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "cardiology", "atherogenic"],
+          "related_tests": [
+            "LDL CHOLESTEROL - DIRECT",
+            "LDL CHOLESTEROL - CALCULATED",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "hdl",
+            "total_cholesterol",
+            "triglycerides",
+            "apob",
+            "lipid_panel",
+            "statins",
+            "atherosclerosis"
+          ],
+          "patient_questions": [
+            "What is LDL cholesterol?",
+            "Why is LDL called bad cholesterol?",
+            "Why is my LDL high?",
+            "How can I lower my LDL?",
+            "What is a healthy LDL target for diabetes?"
+          ],
           "queries": {
             "mayo": "LDL cholesterol bad cholesterol",
             "medlineplus": "LDL cholesterol test",
@@ -669,10 +1718,33 @@
 
         {
           "id": "total_cholesterol",
+          "document_id": "KB-000041",
           "title": "Total Cholesterol",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["total cholesterol", "cholesterol", "blood cholesterol", "hypercholesterolemia"],
+          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "cardiology"],
+          "related_tests": [
+            "TOTAL CHOLESTEROL",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "hdl",
+            "ldl",
+            "triglycerides",
+            "lipid_panel",
+            "cholesterol_ratio"
+          ],
+          "patient_questions": [
+            "What is total cholesterol?",
+            "What is a normal total cholesterol?",
+            "Why is my cholesterol high?",
+            "How can I lower my cholesterol?",
+            "Does diabetes raise cholesterol?"
+          ],
           "queries": {
             "cdc": "Cholesterol about getting cholesterol checked",
             "mayo": "High cholesterol",
@@ -683,10 +1755,36 @@
 
         {
           "id": "triglycerides",
+          "document_id": "KB-000042",
           "title": "Triglycerides",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["triglycerides", "TG", "blood fat", "hypertriglyceridemia"],
+          "clinical_tags": ["lipid", "triglycerides", "cardiovascular", "metabolic", "diabetes"],
+          "related_tests": [
+            "TRIGLYCERIDES",
+            "LIPID PROFILE",
+            "VLDL CHOLESTEROL"
+          ],
+          "related_topics": [
+            "hdl",
+            "ldl",
+            "vldl",
+            "lipid_panel",
+            "insulin_resistance",
+            "fatty_liver",
+            "heart_disease"
+          ],
+          "patient_questions": [
+            "What are triglycerides?",
+            "Why are my triglycerides high?",
+            "How can I lower my triglycerides?",
+            "What is the connection between triglycerides and diabetes?",
+            "Are high triglycerides dangerous?"
+          ],
           "queries": {
             "mayo": "Triglycerides why they matter",
             "cleveland": "Triglycerides blood test",
@@ -697,10 +1795,32 @@
 
         {
           "id": "vldl",
+          "document_id": "KB-000043",
           "title": "VLDL Cholesterol",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["VLDL", "very low-density lipoprotein", "VLDL cholesterol"],
+          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "atherogenic"],
+          "related_tests": [
+            "VLDL CHOLESTEROL",
+            "TRIGLYCERIDES",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "triglycerides",
+            "ldl",
+            "lipid_panel"
+          ],
+          "patient_questions": [
+            "What is VLDL cholesterol?",
+            "Why is my VLDL high?",
+            "How is VLDL different from LDL?",
+            "How is VLDL calculated?",
+            "Can I lower my VLDL?"
+          ],
           "queries": {
             "medlineplus": "VLDL cholesterol test",
             "cleveland": "VLDL very low-density lipoprotein",
@@ -711,10 +1831,32 @@
 
         {
           "id": "apoa1",
+          "document_id": "KB-000044",
           "title": "Apolipoprotein A1",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["ApoA1", "apolipoprotein A-1", "apoA-I", "HDL apolipoprotein"],
+          "clinical_tags": ["lipid", "cardiovascular", "advanced lipid", "cardiology"],
+          "related_tests": [
+            "APOLIPOPROTEIN A1",
+            "HDL CHOLESTEROL"
+          ],
+          "related_topics": [
+            "hdl",
+            "apob",
+            "cholesterol_ratio",
+            "heart_disease"
+          ],
+          "patient_questions": [
+            "What is Apolipoprotein A1?",
+            "Why is my ApoA1 low?",
+            "How does ApoA1 relate to HDL?",
+            "What is the ApoB/ApoA1 ratio?",
+            "Is ApoA1 a better predictor than HDL?"
+          ],
           "queries": {
             "medlineplus": "Apolipoprotein A test",
             "cleveland": "Apolipoprotein A1 test",
@@ -725,10 +1867,33 @@
 
         {
           "id": "apob",
+          "document_id": "KB-000045",
           "title": "Apolipoprotein B",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["ApoB", "apolipoprotein B", "apoB-100", "atherogenic particles"],
+          "clinical_tags": ["lipid", "cardiovascular", "advanced lipid", "cardiology", "atherogenic"],
+          "related_tests": [
+            "APOLIPOPROTEIN B",
+            "LDL CHOLESTEROL - DIRECT"
+          ],
+          "related_topics": [
+            "ldl",
+            "apoa1",
+            "lipoprotein_a",
+            "cholesterol_ratio",
+            "atherosclerosis"
+          ],
+          "patient_questions": [
+            "What is Apolipoprotein B?",
+            "Why is my ApoB high?",
+            "Is ApoB better than LDL for predicting heart risk?",
+            "How can I lower my ApoB?",
+            "What is a good ApoB level for diabetes?"
+          ],
           "queries": {
             "medlineplus": "Apolipoprotein B test",
             "cleveland": "Apolipoprotein B ApoB test",
@@ -739,10 +1904,32 @@
 
         {
           "id": "lipoprotein_a",
+          "document_id": "KB-000046",
           "title": "Lipoprotein(a)",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["Lp(a)", "lipoprotein a", "lipoprotein little a", "cardiovascular risk marker"],
+          "clinical_tags": ["lipid", "cardiovascular", "advanced lipid", "genetic risk", "cardiology"],
+          "related_tests": [
+            "LIPOPROTEIN (a)",
+            "Lp(a)"
+          ],
+          "related_topics": [
+            "apob",
+            "ldl",
+            "heart_disease",
+            "atherosclerosis"
+          ],
+          "patient_questions": [
+            "What is Lipoprotein(a)?",
+            "Why is my Lp(a) high?",
+            "Is Lp(a) genetic?",
+            "Can I lower my Lp(a)?",
+            "What does high Lp(a) mean for my heart risk?"
+          ],
           "queries": {
             "cleveland": "Lipoprotein a Lp(a) test",
             "mayo": "Lipoprotein(a) heart disease risk",
@@ -753,10 +1940,39 @@
 
         {
           "id": "lipid_panel",
+          "document_id": "KB-000047",
           "title": "Complete Lipid Panel",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["lipid panel", "lipid profile", "cholesterol test", "fasting lipid panel"],
+          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "panel", "diagnostic"],
+          "related_tests": [
+            "LIPID PROFILE",
+            "TOTAL CHOLESTEROL",
+            "HDL CHOLESTEROL",
+            "LDL CHOLESTEROL - DIRECT",
+            "TRIGLYCERIDES",
+            "VLDL CHOLESTEROL",
+            "NON-HDL CHOLESTEROL"
+          ],
+          "related_topics": [
+            "hdl",
+            "ldl",
+            "total_cholesterol",
+            "triglycerides",
+            "vldl",
+            "cholesterol_ratio"
+          ],
+          "patient_questions": [
+            "What does a lipid panel test include?",
+            "What do my cholesterol numbers mean?",
+            "Do I need to fast for a lipid panel?",
+            "How often should I get my lipids checked?",
+            "What are the cholesterol targets for diabetes?"
+          ],
           "queries": {
             "medlineplus": "Lipid panel blood test",
             "mayo": "Cholesterol test lipid panel",
@@ -767,10 +1983,35 @@
 
         {
           "id": "cholesterol_ratio",
+          "document_id": "KB-000048",
           "title": "Cholesterol Ratios",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["cholesterol ratio", "TC/HDL ratio", "LDL/HDL ratio", "non-HDL cholesterol", "cardiovascular risk ratio"],
+          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "risk assessment"],
+          "related_tests": [
+            "TC/HDL RATIO",
+            "LDL/HDL RATIO",
+            "NON-HDL CHOLESTEROL"
+          ],
+          "related_topics": [
+            "hdl",
+            "ldl",
+            "total_cholesterol",
+            "lipid_panel",
+            "apob",
+            "heart_disease"
+          ],
+          "patient_questions": [
+            "What is a cholesterol ratio?",
+            "What is a good TC/HDL ratio?",
+            "What is non-HDL cholesterol?",
+            "Which ratio is best for predicting heart risk?",
+            "How can I improve my cholesterol ratio?"
+          ],
           "queries": {
             "mayo": "Cholesterol ratio cardiovascular risk",
             "cleveland": "Non-HDL cholesterol ratio",
@@ -790,10 +2031,32 @@
 
         {
           "id": "vitamin_d",
+          "document_id": "KB-000049",
           "title": "Vitamin D",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["vitamin D", "25-hydroxyvitamin D", "vitamin D deficiency", "cholecalciferol", "calciferol"],
+          "clinical_tags": ["vitamins", "micronutrient", "endocrinology", "bone", "immune", "diabetes"],
+          "related_tests": [
+            "VITAMIN D, 25-HYDROXY",
+            "25-OH VITAMIN D",
+            "CALCIUM"
+          ],
+          "related_topics": [
+            "vitamin_b12",
+            "insulin_resistance",
+            "type2_diabetes"
+          ],
+          "patient_questions": [
+            "What does my Vitamin D level mean?",
+            "Why is my Vitamin D low?",
+            "How can I raise my Vitamin D?",
+            "Is Vitamin D deficiency connected to diabetes?",
+            "How much Vitamin D should I take?"
+          ],
           "queries": {
             "mayo": "Vitamin D deficiency",
             "medlineplus": "Vitamin D test 25-hydroxy",
@@ -804,10 +2067,34 @@
 
         {
           "id": "vitamin_b12",
+          "document_id": "KB-000050",
           "title": "Vitamin B12",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["vitamin B12", "cobalamin", "B12 deficiency", "methylcobalamin", "cyanocobalamin"],
+          "clinical_tags": ["vitamins", "micronutrient", "hematology", "neurology", "diabetes", "metformin"],
+          "related_tests": [
+            "VITAMIN B12",
+            "METHYLMALONIC ACID",
+            "HOMOCYSTEINE"
+          ],
+          "related_topics": [
+            "vitamin_d",
+            "anemia",
+            "hemoglobin",
+            "metformin",
+            "diabetic_neuropathy"
+          ],
+          "patient_questions": [
+            "What does my Vitamin B12 level mean?",
+            "Why is my B12 low?",
+            "Does metformin lower Vitamin B12?",
+            "What are the symptoms of B12 deficiency?",
+            "Can low B12 cause neuropathy?"
+          ],
           "queries": {
             "medlineplus": "Vitamin B12 level test",
             "mayo": "Vitamin B12 deficiency",
@@ -818,10 +2105,32 @@
 
         {
           "id": "folate",
+          "document_id": "KB-000051",
           "title": "Folate (Vitamin B9)",
           "priority": 2,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["folate", "folic acid", "vitamin B9", "folate deficiency"],
+          "clinical_tags": ["vitamins", "micronutrient", "hematology", "anemia"],
+          "related_tests": [
+            "FOLATE - SERUM",
+            "FOLIC ACID",
+            "RBC FOLATE"
+          ],
+          "related_topics": [
+            "vitamin_b12",
+            "anemia",
+            "hemoglobin"
+          ],
+          "patient_questions": [
+            "What does my folate level mean?",
+            "Why is my folate low?",
+            "What is the difference between folate and folic acid?",
+            "Can low folate cause anemia?",
+            "How can I increase my folate levels?"
+          ],
           "queries": {
             "medlineplus": "Folate folic acid blood test",
             "mayo": "Folate deficiency vitamin B9",
@@ -832,10 +2141,35 @@
 
         {
           "id": "iron_studies",
+          "document_id": "KB-000052",
           "title": "Iron Studies (Serum Iron, Ferritin, TIBC)",
           "priority": 2,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["serum iron", "ferritin", "TIBC", "total iron binding capacity", "iron deficiency", "iron overload", "transferrin saturation"],
+          "clinical_tags": ["vitamins", "micronutrient", "hematology", "anemia", "iron"],
+          "related_tests": [
+            "SERUM IRON",
+            "FERRITIN",
+            "TOTAL IRON BINDING CAPACITY (TIBC)",
+            "TRANSFERRIN SATURATION",
+            "TRANSFERRIN"
+          ],
+          "related_topics": [
+            "anemia",
+            "hemoglobin",
+            "vitamin_b12",
+            "folate"
+          ],
+          "patient_questions": [
+            "What do iron studies measure?",
+            "Why is my ferritin low?",
+            "Why is my ferritin high?",
+            "What does TIBC mean?",
+            "Can diabetes affect iron levels?"
+          ],
           "queries": {
             "medlineplus": "Iron tests blood ferritin TIBC",
             "mayo": "Iron deficiency anemia ferritin test",
@@ -846,10 +2180,32 @@
 
         {
           "id": "magnesium",
+          "document_id": "KB-000053",
           "title": "Magnesium",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["magnesium", "serum magnesium", "hypomagnesemia", "magnesium deficiency diabetes"],
+          "clinical_tags": ["vitamins", "micronutrient", "electrolyte", "diabetes", "metabolic"],
+          "related_tests": [
+            "MAGNESIUM - SERUM",
+            "MAGNESIUM - URINE"
+          ],
+          "related_topics": [
+            "electrolytes",
+            "insulin_resistance",
+            "type2_diabetes",
+            "vitamin_d"
+          ],
+          "patient_questions": [
+            "What does my magnesium level mean?",
+            "Why is my magnesium low?",
+            "How does magnesium relate to diabetes?",
+            "Can low magnesium cause insulin resistance?",
+            "What foods are high in magnesium?"
+          ],
           "queries": {
             "medlineplus": "Magnesium blood test",
             "mayo": "Magnesium supplement deficiency",
@@ -869,10 +2225,42 @@
 
         {
           "id": "cbc_overview",
+          "document_id": "KB-000054",
           "title": "Complete Blood Count (CBC)",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["CBC", "complete blood count", "blood count", "hematology panel"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "panel", "diagnostic"],
+          "related_tests": [
+            "COMPLETE BLOOD COUNT (CBC)",
+            "HEMOGLOBIN",
+            "HEMATOCRIT",
+            "RBC COUNT",
+            "WBC COUNT",
+            "PLATELET COUNT",
+            "MCV",
+            "MCH",
+            "MCHC",
+            "RDW"
+          ],
+          "related_topics": [
+            "hemoglobin",
+            "hematocrit",
+            "rbc",
+            "wbc",
+            "platelets",
+            "anemia"
+          ],
+          "patient_questions": [
+            "What does a CBC test include?",
+            "What do my CBC results mean?",
+            "Why did my doctor order a CBC?",
+            "How often should I get a CBC?",
+            "Can diabetes affect my CBC results?"
+          ],
           "queries": {
             "medlineplus": "Complete blood count CBC test",
             "mayo": "Complete blood count CBC",
@@ -883,10 +2271,35 @@
 
         {
           "id": "hemoglobin",
+          "document_id": "KB-000055",
           "title": "Hemoglobin",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["hemoglobin", "Hgb", "Hb", "hemoglobin level", "oxygen carrying protein"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "anemia", "oxygen"],
+          "related_tests": [
+            "HEMOGLOBIN",
+            "HEMATOCRIT",
+            "RBC COUNT"
+          ],
+          "related_topics": [
+            "anemia",
+            "hba1c",
+            "hematocrit",
+            "rbc",
+            "iron_studies",
+            "vitamin_b12"
+          ],
+          "patient_questions": [
+            "What does hemoglobin measure?",
+            "Why is my hemoglobin low?",
+            "Why is my hemoglobin high?",
+            "How does low hemoglobin affect HbA1c?",
+            "What is a normal hemoglobin level?"
+          ],
           "queries": {
             "medlineplus": "Hemoglobin test",
             "mayo": "Hemoglobin test low hemoglobin",
@@ -897,10 +2310,33 @@
 
         {
           "id": "hematocrit",
+          "document_id": "KB-000056",
           "title": "Hematocrit",
           "priority": 2,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["hematocrit", "Hct", "packed cell volume", "PCV"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "anemia"],
+          "related_tests": [
+            "HEMATOCRIT",
+            "PACKED CELL VOLUME (PCV)",
+            "HEMOGLOBIN"
+          ],
+          "related_topics": [
+            "hemoglobin",
+            "rbc",
+            "anemia",
+            "cbc_overview"
+          ],
+          "patient_questions": [
+            "What does hematocrit measure?",
+            "Why is my hematocrit low?",
+            "Why is my hematocrit high?",
+            "What is the relationship between hematocrit and hemoglobin?",
+            "Can dehydration affect hematocrit?"
+          ],
           "queries": {
             "medlineplus": "Hematocrit test",
             "mayo": "Hematocrit test",
@@ -911,10 +2347,35 @@
 
         {
           "id": "rbc",
+          "document_id": "KB-000057",
           "title": "Red Blood Cell Count",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["RBC", "red blood cell count", "erythrocytes", "red blood cells"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "erythrocyte"],
+          "related_tests": [
+            "RBC COUNT",
+            "MCV",
+            "MCH",
+            "MCHC",
+            "RDW"
+          ],
+          "related_topics": [
+            "hemoglobin",
+            "hematocrit",
+            "anemia",
+            "cbc_overview"
+          ],
+          "patient_questions": [
+            "What does RBC count measure?",
+            "Why is my RBC count low?",
+            "Why is my RBC count high?",
+            "What do MCV, MCH, and MCHC mean?",
+            "How does diabetes affect red blood cells?"
+          ],
           "queries": {
             "medlineplus": "RBC count red blood cell test",
             "cleveland": "Red blood cell count RBC test",
@@ -925,10 +2386,36 @@
 
         {
           "id": "wbc",
+          "document_id": "KB-000058",
           "title": "White Blood Cell Count",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["WBC", "white blood cell count", "leukocytes", "white blood cells", "immune cells"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "immune", "infection"],
+          "related_tests": [
+            "WBC COUNT",
+            "WBC DIFFERENTIAL",
+            "NEUTROPHILS",
+            "LYMPHOCYTES",
+            "MONOCYTES",
+            "EOSINOPHILS",
+            "BASOPHILS"
+          ],
+          "related_topics": [
+            "cbc_overview",
+            "infections",
+            "crp"
+          ],
+          "patient_questions": [
+            "What does WBC count measure?",
+            "Why is my WBC count high?",
+            "Why is my WBC count low?",
+            "What does the WBC differential show?",
+            "Can diabetes affect my white blood cell count?"
+          ],
           "queries": {
             "medlineplus": "WBC count white blood cell test",
             "cleveland": "White blood cell count WBC test",
@@ -939,10 +2426,31 @@
 
         {
           "id": "platelets",
+          "document_id": "KB-000059",
           "title": "Platelet Count",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["platelets", "platelet count", "thrombocytes", "PLT"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "coagulation", "bleeding"],
+          "related_tests": [
+            "PLATELET COUNT",
+            "MEAN PLATELET VOLUME (MPV)"
+          ],
+          "related_topics": [
+            "cbc_overview",
+            "hemoglobin",
+            "aspirin_antiplatelet"
+          ],
+          "patient_questions": [
+            "What does platelet count measure?",
+            "Why is my platelet count low?",
+            "Why is my platelet count high?",
+            "What is a normal platelet count?",
+            "How do platelets relate to diabetes complications?"
+          ],
           "queries": {
             "medlineplus": "Platelet count blood test",
             "mayo": "Platelet count test thrombocytes",
@@ -953,10 +2461,41 @@
 
         {
           "id": "anemia",
+          "document_id": "KB-000060",
           "title": "Anemia",
           "priority": 1,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["anemia", "low hemoglobin", "iron deficiency anemia", "anemia of chronic disease", "anemia diabetes"],
+          "clinical_tags": ["cbc", "hematology", "anemia", "diabetes", "ckd", "iron"],
+          "related_tests": [
+            "HEMOGLOBIN",
+            "HEMATOCRIT",
+            "RBC COUNT",
+            "MCV",
+            "SERUM IRON",
+            "FERRITIN",
+            "TOTAL IRON BINDING CAPACITY (TIBC)",
+            "VITAMIN B12",
+            "FOLATE - SERUM"
+          ],
+          "related_topics": [
+            "hemoglobin",
+            "iron_studies",
+            "vitamin_b12",
+            "folate",
+            "diabetic_kidney_disease",
+            "hba1c"
+          ],
+          "patient_questions": [
+            "What is anemia?",
+            "Why do people with diabetes get anemia?",
+            "How does anemia affect my HbA1c?",
+            "What types of anemia are common in diabetes?",
+            "How is anemia treated?"
+          ],
           "queries": {
             "mayo": "Anemia symptoms causes",
             "medlineplus": "Anemia blood disorder",
@@ -967,10 +2506,30 @@
 
         {
           "id": "esr",
+          "document_id": "KB-000061",
           "title": "ESR (Erythrocyte Sedimentation Rate)",
           "priority": 3,
           "status": "pending",
+          "specialty": "hematology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["ESR", "erythrocyte sedimentation rate", "sed rate", "inflammation marker"],
+          "clinical_tags": ["cbc", "hematology", "blood test", "inflammation", "autoimmune"],
+          "related_tests": [
+            "ESR (ERYTHROCYTE SEDIMENTATION RATE)"
+          ],
+          "related_topics": [
+            "crp",
+            "wbc",
+            "infections"
+          ],
+          "patient_questions": [
+            "What does ESR measure?",
+            "Why is my ESR high?",
+            "Why is my ESR low?",
+            "What does ESR tell about inflammation?",
+            "Is ESR related to diabetes?"
+          ],
           "queries": {
             "medlineplus": "ESR erythrocyte sedimentation rate test",
             "mayo": "Sed rate erythrocyte sedimentation rate",
@@ -981,10 +2540,32 @@
 
         {
           "id": "crp",
+          "document_id": "KB-000062",
           "title": "CRP / hs-CRP (C-Reactive Protein)",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["CRP", "C-reactive protein", "hs-CRP", "high-sensitivity CRP", "inflammation", "cardiovascular risk"],
+          "clinical_tags": ["cbc", "inflammation", "cardiovascular", "blood test", "cardiology"],
+          "related_tests": [
+            "C-REACTIVE PROTEIN (CRP)",
+            "HIGH-SENSITIVITY CRP (hs-CRP)"
+          ],
+          "related_topics": [
+            "esr",
+            "heart_disease",
+            "atherosclerosis",
+            "insulin_resistance"
+          ],
+          "patient_questions": [
+            "What does CRP measure?",
+            "Why is my CRP high?",
+            "What is the difference between CRP and hs-CRP?",
+            "Does high CRP mean heart disease?",
+            "How can I lower my CRP?"
+          ],
           "queries": {
             "medlineplus": "C-reactive protein CRP test",
             "mayo": "C-reactive protein test inflammation",
@@ -1004,10 +2585,35 @@
 
         {
           "id": "tsh",
+          "document_id": "KB-000063",
           "title": "TSH (Thyroid Stimulating Hormone)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["TSH", "thyroid stimulating hormone", "thyrotropin", "thyroid function test"],
+          "clinical_tags": ["thyroid", "endocrinology", "blood test", "hormone"],
+          "related_tests": [
+            "TSH (THYROID STIMULATING HORMONE)",
+            "FREE T4",
+            "FREE T3"
+          ],
+          "related_topics": [
+            "t3",
+            "t4",
+            "hypothyroidism",
+            "hyperthyroidism",
+            "thyroid_antibodies",
+            "diabetes_thyroid_connection"
+          ],
+          "patient_questions": [
+            "What does TSH measure?",
+            "Why is my TSH high?",
+            "Why is my TSH low?",
+            "What is a normal TSH level?",
+            "How does thyroid function affect diabetes?"
+          ],
           "queries": {
             "mayo": "TSH test thyroid stimulating hormone",
             "medlineplus": "TSH test thyroid",
@@ -1018,10 +2624,33 @@
 
         {
           "id": "t3",
+          "document_id": "KB-000064",
           "title": "T3 (Triiodothyronine)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["T3", "triiodothyronine", "free T3", "total T3", "thyroid hormone"],
+          "clinical_tags": ["thyroid", "endocrinology", "blood test", "hormone"],
+          "related_tests": [
+            "T3 - TOTAL",
+            "FREE T3",
+            "TRIIODOTHYRONINE"
+          ],
+          "related_topics": [
+            "tsh",
+            "t4",
+            "hypothyroidism",
+            "hyperthyroidism"
+          ],
+          "patient_questions": [
+            "What does T3 measure?",
+            "Why is my T3 low?",
+            "Why is my T3 high?",
+            "What is the difference between free T3 and total T3?",
+            "How does T3 affect metabolism?"
+          ],
           "queries": {
             "medlineplus": "T3 triiodothyronine test",
             "mayo": "T3 test triiodothyronine thyroid",
@@ -1032,10 +2661,33 @@
 
         {
           "id": "t4",
+          "document_id": "KB-000065",
           "title": "T4 (Thyroxine)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["T4", "thyroxine", "free T4", "total T4", "thyroid hormone"],
+          "clinical_tags": ["thyroid", "endocrinology", "blood test", "hormone"],
+          "related_tests": [
+            "T4 - TOTAL",
+            "FREE T4",
+            "THYROXINE"
+          ],
+          "related_topics": [
+            "tsh",
+            "t3",
+            "hypothyroidism",
+            "hyperthyroidism"
+          ],
+          "patient_questions": [
+            "What does T4 measure?",
+            "Why is my T4 low?",
+            "Why is my T4 high?",
+            "What is the difference between free T4 and total T4?",
+            "How does T4 relate to TSH?"
+          ],
           "queries": {
             "medlineplus": "T4 thyroxine blood test",
             "mayo": "Thyroxine T4 test thyroid",
@@ -1046,10 +2698,34 @@
 
         {
           "id": "thyroid_antibodies",
+          "document_id": "KB-000066",
           "title": "Thyroid Antibodies (TPO, TgAb)",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["TPO antibodies", "thyroid peroxidase antibodies", "thyroglobulin antibodies", "TgAb", "Hashimoto", "autoimmune thyroid"],
+          "clinical_tags": ["thyroid", "endocrinology", "autoimmune", "antibodies"],
+          "related_tests": [
+            "THYROID PEROXIDASE ANTIBODIES (TPO)",
+            "THYROGLOBULIN ANTIBODIES (TgAb)",
+            "TSH RECEPTOR ANTIBODIES (TRAb)"
+          ],
+          "related_topics": [
+            "tsh",
+            "hypothyroidism",
+            "hyperthyroidism",
+            "diabetes_thyroid_connection",
+            "type1_diabetes"
+          ],
+          "patient_questions": [
+            "What are thyroid antibodies?",
+            "Why are my TPO antibodies high?",
+            "Do thyroid antibodies mean I have Hashimoto's?",
+            "Is there a connection between thyroid antibodies and Type 1 diabetes?",
+            "Can thyroid antibodies go away?"
+          ],
           "queries": {
             "medlineplus": "Thyroid antibodies test TPO",
             "mayo": "Thyroid peroxidase antibodies TPO test",
@@ -1060,10 +2736,36 @@
 
         {
           "id": "hypothyroidism",
+          "document_id": "KB-000067",
           "title": "Hypothyroidism",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["hypothyroidism", "underactive thyroid", "low thyroid", "Hashimoto thyroiditis"],
+          "clinical_tags": ["thyroid", "endocrinology", "autoimmune", "metabolism", "fatigue"],
+          "related_tests": [
+            "TSH (THYROID STIMULATING HORMONE)",
+            "FREE T4",
+            "FREE T3",
+            "THYROID PEROXIDASE ANTIBODIES (TPO)"
+          ],
+          "related_topics": [
+            "tsh",
+            "t3",
+            "t4",
+            "thyroid_antibodies",
+            "diabetes_thyroid_connection",
+            "weight_management"
+          ],
+          "patient_questions": [
+            "What is hypothyroidism?",
+            "What are the symptoms of underactive thyroid?",
+            "Can hypothyroidism affect blood sugar?",
+            "Is hypothyroidism related to diabetes?",
+            "How is hypothyroidism treated?"
+          ],
           "queries": {
             "mayo": "Hypothyroidism underactive thyroid",
             "medlineplus": "Hypothyroidism",
@@ -1074,10 +2776,35 @@
 
         {
           "id": "hyperthyroidism",
+          "document_id": "KB-000068",
           "title": "Hyperthyroidism",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["hyperthyroidism", "overactive thyroid", "Graves disease", "thyrotoxicosis"],
+          "clinical_tags": ["thyroid", "endocrinology", "autoimmune", "metabolism"],
+          "related_tests": [
+            "TSH (THYROID STIMULATING HORMONE)",
+            "FREE T4",
+            "FREE T3",
+            "TSH RECEPTOR ANTIBODIES (TRAb)"
+          ],
+          "related_topics": [
+            "tsh",
+            "t3",
+            "t4",
+            "hypothyroidism",
+            "diabetes_thyroid_connection"
+          ],
+          "patient_questions": [
+            "What is hyperthyroidism?",
+            "What are the symptoms of overactive thyroid?",
+            "Can hyperthyroidism cause high blood sugar?",
+            "What is Graves disease?",
+            "How is hyperthyroidism treated?"
+          ],
           "queries": {
             "mayo": "Hyperthyroidism overactive thyroid",
             "medlineplus": "Hyperthyroidism",
@@ -1088,10 +2815,36 @@
 
         {
           "id": "diabetes_thyroid_connection",
+          "document_id": "KB-000069",
           "title": "Diabetes and Thyroid Disease",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetes thyroid", "type 1 diabetes thyroid", "autoimmune thyroid diabetes", "thyroid dysfunction diabetes"],
+          "clinical_tags": ["thyroid", "diabetes", "endocrinology", "autoimmune", "comorbidity"],
+          "related_tests": [
+            "TSH (THYROID STIMULATING HORMONE)",
+            "FREE T4",
+            "HbA1c",
+            "THYROID PEROXIDASE ANTIBODIES (TPO)"
+          ],
+          "related_topics": [
+            "tsh",
+            "hypothyroidism",
+            "hyperthyroidism",
+            "type1_diabetes",
+            "type2_diabetes",
+            "thyroid_antibodies"
+          ],
+          "patient_questions": [
+            "Why do people with diabetes need thyroid testing?",
+            "How does thyroid disease affect blood sugar?",
+            "Is thyroid disease common in Type 1 diabetes?",
+            "Can thyroid medication affect my diabetes?",
+            "How often should diabetics check thyroid?"
+          ],
           "queries": {
             "ada": "Thyroid disease and diabetes",
             "mayo": "Diabetes and thyroid problems",
@@ -1111,10 +2864,37 @@
 
         {
           "id": "heart_disease",
+          "document_id": "KB-000070",
           "title": "Heart Disease and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["heart disease", "cardiovascular disease", "coronary artery disease", "CVD", "diabetes heart"],
+          "clinical_tags": ["cardiovascular", "cardiology", "diabetes", "macrovascular", "complication"],
+          "related_tests": [
+            "LIPID PROFILE",
+            "HbA1c",
+            "HIGH-SENSITIVITY CRP (hs-CRP)",
+            "BLOOD PRESSURE"
+          ],
+          "related_topics": [
+            "hypertension",
+            "stroke",
+            "atherosclerosis",
+            "ldl",
+            "triglycerides",
+            "heart_failure",
+            "peripheral_artery_disease"
+          ],
+          "patient_questions": [
+            "How does diabetes increase heart disease risk?",
+            "What are the warning signs of heart disease?",
+            "How can I reduce my cardiovascular risk?",
+            "What tests screen for heart disease in diabetes?",
+            "Is heart disease preventable with diabetes?"
+          ],
           "queries": {
             "cdc": "Diabetes and heart disease",
             "ada": "Cardiovascular disease diabetes",
@@ -1125,10 +2905,34 @@
 
         {
           "id": "hypertension",
+          "document_id": "KB-000071",
           "title": "Hypertension (High Blood Pressure)",
           "priority": 1,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["hypertension", "high blood pressure", "blood pressure", "systolic", "diastolic"],
+          "clinical_tags": ["cardiovascular", "cardiology", "hypertension", "diabetes", "kidney"],
+          "related_tests": [
+            "BLOOD PRESSURE",
+            "CREATININE - SERUM",
+            "ELECTROLYTE PANEL"
+          ],
+          "related_topics": [
+            "heart_disease",
+            "stroke",
+            "diabetic_kidney_disease",
+            "diabetic_retinopathy",
+            "ace_inhibitors_arbs"
+          ],
+          "patient_questions": [
+            "What is a normal blood pressure for diabetics?",
+            "Why do people with diabetes get high blood pressure?",
+            "How can I lower my blood pressure naturally?",
+            "Does high blood pressure damage kidneys?",
+            "What blood pressure medications are best for diabetes?"
+          ],
           "queries": {
             "cdc": "High blood pressure hypertension",
             "mayo": "High blood pressure symptoms causes",
@@ -1139,10 +2943,33 @@
 
         {
           "id": "stroke",
+          "document_id": "KB-000072",
           "title": "Stroke and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "neurology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["stroke", "cerebrovascular accident", "brain attack", "TIA", "transient ischemic attack"],
+          "clinical_tags": ["cardiovascular", "neurology", "diabetes", "macrovascular", "emergency"],
+          "related_tests": [
+            "LIPID PROFILE",
+            "HbA1c",
+            "BLOOD PRESSURE"
+          ],
+          "related_topics": [
+            "heart_disease",
+            "hypertension",
+            "atherosclerosis",
+            "ldl"
+          ],
+          "patient_questions": [
+            "How does diabetes increase stroke risk?",
+            "What are the warning signs of a stroke?",
+            "What is a TIA?",
+            "How can I prevent stroke with diabetes?",
+            "What should I do if I suspect a stroke?"
+          ],
           "queries": {
             "cdc": "Stroke signs symptoms",
             "mayo": "Stroke symptoms causes risk factors",
@@ -1153,10 +2980,33 @@
 
         {
           "id": "peripheral_artery_disease",
+          "document_id": "KB-000073",
           "title": "Peripheral Artery Disease (PAD)",
           "priority": 1,
           "status": "pending",
+          "specialty": "vascular surgery",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["peripheral artery disease", "PAD", "peripheral vascular disease", "PVD", "claudication"],
+          "clinical_tags": ["cardiovascular", "vascular", "diabetes", "macrovascular", "legs"],
+          "related_tests": [
+            "ANKLE-BRACHIAL INDEX (ABI)",
+            "LIPID PROFILE",
+            "HbA1c"
+          ],
+          "related_topics": [
+            "atherosclerosis",
+            "diabetic_foot",
+            "heart_disease",
+            "smoking"
+          ],
+          "patient_questions": [
+            "What is peripheral artery disease?",
+            "What are the symptoms of PAD?",
+            "How does diabetes cause PAD?",
+            "Can PAD be reversed?",
+            "Why does PAD increase foot amputation risk?"
+          ],
           "queries": {
             "cleveland": "Peripheral artery disease PAD",
             "ada": "Peripheral arterial disease diabetes",
@@ -1167,10 +3017,36 @@
 
         {
           "id": "atherosclerosis",
+          "document_id": "KB-000074",
           "title": "Atherosclerosis",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["atherosclerosis", "hardening of arteries", "plaque buildup", "arterial disease"],
+          "clinical_tags": ["cardiovascular", "cardiology", "macrovascular", "plaque", "inflammation"],
+          "related_tests": [
+            "LIPID PROFILE",
+            "HIGH-SENSITIVITY CRP (hs-CRP)",
+            "APOLIPOPROTEIN B",
+            "LIPOPROTEIN (a)"
+          ],
+          "related_topics": [
+            "heart_disease",
+            "stroke",
+            "peripheral_artery_disease",
+            "ldl",
+            "apob",
+            "crp"
+          ],
+          "patient_questions": [
+            "What is atherosclerosis?",
+            "How does diabetes accelerate atherosclerosis?",
+            "Can atherosclerosis be reversed?",
+            "What tests detect atherosclerosis?",
+            "How can I prevent plaque buildup?"
+          ],
           "queries": {
             "mayo": "Atherosclerosis hardening of arteries",
             "cleveland": "Atherosclerosis causes symptoms",
@@ -1181,10 +3057,33 @@
 
         {
           "id": "heart_failure",
+          "document_id": "KB-000075",
           "title": "Heart Failure and Diabetes",
           "priority": 2,
           "status": "pending",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["heart failure", "congestive heart failure", "CHF", "cardiac insufficiency", "diabetic cardiomyopathy"],
+          "clinical_tags": ["cardiovascular", "cardiology", "diabetes", "heart failure"],
+          "related_tests": [
+            "BNP (B-TYPE NATRIURETIC PEPTIDE)",
+            "NT-proBNP",
+            "ECHOCARDIOGRAM"
+          ],
+          "related_topics": [
+            "heart_disease",
+            "hypertension",
+            "sglt2_inhibitors",
+            "atherosclerosis"
+          ],
+          "patient_questions": [
+            "What is heart failure?",
+            "How does diabetes cause heart failure?",
+            "What are the symptoms of heart failure?",
+            "Can heart failure be treated?",
+            "Do SGLT2 inhibitors help heart failure?"
+          ],
           "queries": {
             "mayo": "Heart failure symptoms causes",
             "cleveland": "Heart failure diabetes connection",
@@ -1204,10 +3103,34 @@
 
         {
           "id": "diabetic_neuropathy",
+          "document_id": "KB-000076",
           "title": "Diabetic Neuropathy",
           "priority": 1,
           "status": "pending",
+          "specialty": "neurology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetic neuropathy", "peripheral neuropathy", "nerve damage diabetes", "autonomic neuropathy", "numbness tingling"],
+          "clinical_tags": ["complications", "neurology", "microvascular", "diabetes", "nerve damage"],
+          "related_tests": [
+            "HbA1c",
+            "VITAMIN B12",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "diabetic_foot",
+            "foot_care",
+            "hyperglycemia",
+            "vitamin_b12",
+            "gastroparesis"
+          ],
+          "patient_questions": [
+            "What is diabetic neuropathy?",
+            "What are the symptoms of nerve damage from diabetes?",
+            "Can diabetic neuropathy be reversed?",
+            "How can I prevent neuropathy?",
+            "What treatments are available for neuropathy?"
+          ],
           "queries": {
             "ada": "Neuropathy nerve damage diabetes",
             "mayo": "Diabetic neuropathy types symptoms",
@@ -1218,10 +3141,33 @@
 
         {
           "id": "diabetic_retinopathy",
+          "document_id": "KB-000077",
           "title": "Diabetic Retinopathy",
           "priority": 1,
           "status": "pending",
+          "specialty": "ophthalmology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetic retinopathy", "diabetic eye disease", "retinal damage", "macular edema", "proliferative retinopathy"],
+          "clinical_tags": ["complications", "ophthalmology", "microvascular", "diabetes", "eye", "vision"],
+          "related_tests": [
+            "HbA1c",
+            "BLOOD PRESSURE",
+            "DILATED EYE EXAM"
+          ],
+          "related_topics": [
+            "hyperglycemia",
+            "hypertension",
+            "diabetic_neuropathy",
+            "diabetic_nephropathy"
+          ],
+          "patient_questions": [
+            "What is diabetic retinopathy?",
+            "Can diabetes cause blindness?",
+            "How often should I get an eye exam?",
+            "Can diabetic retinopathy be reversed?",
+            "What are the treatments for diabetic eye disease?"
+          ],
           "queries": {
             "ada": "Eye complications diabetic retinopathy",
             "mayo": "Diabetic retinopathy symptoms",
@@ -1232,10 +3178,37 @@
 
         {
           "id": "diabetic_nephropathy",
+          "document_id": "KB-000078",
           "title": "Diabetic Nephropathy",
           "priority": 1,
           "status": "pending",
+          "specialty": "nephrology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetic nephropathy", "diabetic kidney disease", "kidney failure diabetes", "CKD diabetes"],
+          "clinical_tags": ["complications", "nephrology", "microvascular", "diabetes", "kidney", "ckd"],
+          "related_tests": [
+            "CREATININE - SERUM",
+            "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+            "ALBUMIN/CREATININE RATIO (ACR)",
+            "MICROALBUMIN - URINE",
+            "BUN (BLOOD UREA NITROGEN)"
+          ],
+          "related_topics": [
+            "diabetic_kidney_disease",
+            "creatinine",
+            "egfr",
+            "microalbumin",
+            "albumin_creatinine_ratio",
+            "hypertension"
+          ],
+          "patient_questions": [
+            "What is diabetic nephropathy?",
+            "How does diabetes damage the kidneys?",
+            "What are the stages of kidney disease?",
+            "Can kidney damage from diabetes be reversed?",
+            "How can I protect my kidneys?"
+          ],
           "queries": {
             "ada": "Diabetic nephropathy kidney disease",
             "niddk": "Diabetic kidney disease nephropathy",
@@ -1246,10 +3219,33 @@
 
         {
           "id": "diabetic_foot",
+          "document_id": "KB-000079",
           "title": "Diabetic Foot",
           "priority": 1,
           "status": "pending",
+          "specialty": "podiatry",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetic foot", "foot ulcer", "diabetic foot ulcer", "foot infection diabetes", "Charcot foot"],
+          "clinical_tags": ["complications", "podiatry", "diabetes", "wound care", "amputation risk"],
+          "related_tests": [
+            "HbA1c",
+            "MONOFILAMENT TEST",
+            "ANKLE-BRACHIAL INDEX (ABI)"
+          ],
+          "related_topics": [
+            "foot_care",
+            "diabetic_neuropathy",
+            "peripheral_artery_disease",
+            "infections"
+          ],
+          "patient_questions": [
+            "What causes diabetic foot problems?",
+            "What are the signs of a diabetic foot ulcer?",
+            "Why are foot problems serious in diabetes?",
+            "Can diabetic foot ulcers heal?",
+            "How can I prevent foot amputation?"
+          ],
           "queries": {
             "cdc": "Diabetes foot problems",
             "ada": "Foot complications diabetes",
@@ -1260,10 +3256,31 @@
 
         {
           "id": "foot_care",
+          "document_id": "KB-000080",
           "title": "Diabetic Foot Care",
           "priority": 1,
           "status": "pending",
+          "specialty": "podiatry",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["foot care", "diabetes foot care", "foot exam diabetes", "podiatry diabetes", "foot inspection"],
+          "clinical_tags": ["complications", "podiatry", "diabetes", "prevention", "self-care"],
+          "related_tests": [
+            "HbA1c",
+            "MONOFILAMENT TEST"
+          ],
+          "related_topics": [
+            "diabetic_foot",
+            "diabetic_neuropathy",
+            "peripheral_artery_disease"
+          ],
+          "patient_questions": [
+            "How should I care for my feet with diabetes?",
+            "How often should I inspect my feet?",
+            "What shoes are best for diabetic feet?",
+            "When should I see a podiatrist?",
+            "What should I look for during a foot check?"
+          ],
           "queries": {
             "ada": "Foot care diabetes prevention",
             "cdc": "Diabetes foot care tips",
@@ -1274,10 +3291,36 @@
 
         {
           "id": "diabetic_ketoacidosis",
+          "document_id": "KB-000081",
           "title": "Diabetic Ketoacidosis (DKA)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["DKA", "diabetic ketoacidosis", "ketones", "ketosis", "metabolic acidosis"],
+          "clinical_tags": ["complications", "endocrinology", "emergency", "acute", "ketones"],
+          "related_tests": [
+            "BLOOD GLUCOSE",
+            "URINE KETONES",
+            "BLOOD KETONES",
+            "ARTERIAL BLOOD GAS (ABG)",
+            "ELECTROLYTE PANEL",
+            "BICARBONATE"
+          ],
+          "related_topics": [
+            "type1_diabetes",
+            "hyperglycemia",
+            "insulin",
+            "electrolytes"
+          ],
+          "patient_questions": [
+            "What is diabetic ketoacidosis (DKA)?",
+            "What are the warning signs of DKA?",
+            "How do I test for ketones?",
+            "Is DKA life-threatening?",
+            "How is DKA treated?"
+          ],
           "queries": {
             "ada": "DKA diabetic ketoacidosis",
             "mayo": "Diabetic ketoacidosis symptoms causes",
@@ -1288,10 +3331,34 @@
 
         {
           "id": "hyperosmolar_syndrome",
+          "document_id": "KB-000082",
           "title": "Hyperosmolar Hyperglycemic Syndrome (HHS)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["HHS", "hyperosmolar hyperglycemic syndrome", "diabetic hyperosmolar syndrome", "hyperosmolar coma", "HHNS"],
+          "clinical_tags": ["complications", "endocrinology", "emergency", "acute", "dehydration"],
+          "related_tests": [
+            "BLOOD GLUCOSE",
+            "SERUM OSMOLALITY",
+            "ELECTROLYTE PANEL",
+            "CREATININE - SERUM"
+          ],
+          "related_topics": [
+            "hyperglycemia",
+            "type2_diabetes",
+            "diabetic_ketoacidosis",
+            "electrolytes"
+          ],
+          "patient_questions": [
+            "What is hyperosmolar hyperglycemic syndrome?",
+            "What causes HHS?",
+            "What are the symptoms of HHS?",
+            "How is HHS different from DKA?",
+            "Is HHS an emergency?"
+          ],
           "queries": {
             "ada": "Hyperosmolar hyperglycemic syndrome",
             "mayo": "Diabetic hyperosmolar syndrome",
@@ -1302,10 +3369,35 @@
 
         {
           "id": "hypoglycemia",
+          "document_id": "KB-000083",
           "title": "Hypoglycemia (Low Blood Sugar)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["hypoglycemia", "low blood sugar", "insulin shock", "hypoglycemic episode", "glucose tablets"],
+          "clinical_tags": ["complications", "endocrinology", "emergency", "acute", "low glucose"],
+          "related_tests": [
+            "BLOOD GLUCOSE",
+            "FASTING BLOOD SUGAR (FBS)",
+            "INSULIN - FASTING",
+            "C-PEPTIDE"
+          ],
+          "related_topics": [
+            "hyperglycemia",
+            "glucose_monitoring",
+            "insulin",
+            "glucose_metabolism",
+            "insulin_therapy"
+          ],
+          "patient_questions": [
+            "What is hypoglycemia?",
+            "What are the symptoms of low blood sugar?",
+            "What should I do if my blood sugar drops?",
+            "What blood sugar level is dangerously low?",
+            "How can I prevent low blood sugar episodes?"
+          ],
           "queries": {
             "ada": "Hypoglycemia low blood glucose",
             "cdc": "Low blood sugar hypoglycemia diabetes",
@@ -1316,10 +3408,34 @@
 
         {
           "id": "hyperglycemia",
+          "document_id": "KB-000084",
           "title": "Hyperglycemia (High Blood Sugar)",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["hyperglycemia", "high blood sugar", "elevated glucose", "blood sugar spike"],
+          "clinical_tags": ["complications", "endocrinology", "acute", "high glucose", "diabetes"],
+          "related_tests": [
+            "BLOOD GLUCOSE",
+            "HbA1c",
+            "URINE KETONES"
+          ],
+          "related_topics": [
+            "hypoglycemia",
+            "hba1c",
+            "diabetic_ketoacidosis",
+            "hyperosmolar_syndrome",
+            "glucose_monitoring"
+          ],
+          "patient_questions": [
+            "What is hyperglycemia?",
+            "What are the symptoms of high blood sugar?",
+            "What causes blood sugar spikes?",
+            "When is high blood sugar an emergency?",
+            "How can I bring my blood sugar down quickly?"
+          ],
           "queries": {
             "ada": "Hyperglycemia high blood glucose",
             "cdc": "High blood sugar hyperglycemia diabetes",
@@ -1330,10 +3446,31 @@
 
         {
           "id": "diabetic_skin_conditions",
+          "document_id": "KB-000085",
           "title": "Diabetic Skin Conditions",
           "priority": 2,
           "status": "pending",
+          "specialty": "dermatology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["diabetic dermopathy", "acanthosis nigricans", "skin conditions diabetes", "necrobiosis lipoidica", "diabetic blisters"],
+          "clinical_tags": ["complications", "dermatology", "diabetes", "skin", "insulin resistance"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "insulin_resistance",
+            "type2_diabetes",
+            "infections"
+          ],
+          "patient_questions": [
+            "What skin conditions are caused by diabetes?",
+            "What is acanthosis nigricans?",
+            "Why do I get skin infections with diabetes?",
+            "Can diabetic skin conditions be treated?",
+            "Are dark skin patches a sign of diabetes?"
+          ],
           "queries": {
             "ada": "Skin complications diabetes",
             "mayo": "Diabetes skin conditions symptoms",
@@ -1344,10 +3481,29 @@
 
         {
           "id": "dental_health",
+          "document_id": "KB-000086",
           "title": "Diabetes and Dental Health",
           "priority": 2,
           "status": "pending",
+          "specialty": "dentistry",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["diabetes dental", "periodontal disease diabetes", "gum disease", "oral health diabetes"],
+          "clinical_tags": ["complications", "dentistry", "diabetes", "oral health", "infection"],
+          "related_tests": [
+            "HbA1c"
+          ],
+          "related_topics": [
+            "infections",
+            "hyperglycemia"
+          ],
+          "patient_questions": [
+            "How does diabetes affect my teeth and gums?",
+            "Why do diabetics get gum disease?",
+            "How often should I see a dentist?",
+            "Can gum disease affect blood sugar?",
+            "What dental care routine is best for diabetes?"
+          ],
           "queries": {
             "ada": "Diabetes and oral health",
             "cdc": "Diabetes gum disease dental health",
@@ -1358,10 +3514,32 @@
 
         {
           "id": "gastroparesis",
+          "document_id": "KB-000087",
           "title": "Gastroparesis",
           "priority": 2,
           "status": "pending",
+          "specialty": "gastroenterology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["gastroparesis", "delayed gastric emptying", "stomach paralysis", "diabetic gastroparesis"],
+          "clinical_tags": ["complications", "gastroenterology", "diabetes", "autonomic neuropathy", "digestion"],
+          "related_tests": [
+            "GASTRIC EMPTYING STUDY",
+            "HbA1c"
+          ],
+          "related_topics": [
+            "diabetic_neuropathy",
+            "hyperglycemia",
+            "hypoglycemia",
+            "healthy_eating"
+          ],
+          "patient_questions": [
+            "What is gastroparesis?",
+            "How does diabetes cause gastroparesis?",
+            "What are the symptoms of gastroparesis?",
+            "How does gastroparesis affect blood sugar?",
+            "What treatments are available for gastroparesis?"
+          ],
           "queries": {
             "niddk": "Gastroparesis",
             "mayo": "Gastroparesis symptoms causes",
@@ -1372,10 +3550,31 @@
 
         {
           "id": "sexual_dysfunction",
+          "document_id": "KB-000088",
           "title": "Diabetes and Sexual Health",
           "priority": 3,
           "status": "pending",
+          "specialty": "urology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["erectile dysfunction diabetes", "sexual dysfunction diabetes", "diabetes sexual health"],
+          "clinical_tags": ["complications", "urology", "diabetes", "neuropathy", "vascular"],
+          "related_tests": [
+            "TESTOSTERONE",
+            "HbA1c"
+          ],
+          "related_topics": [
+            "diabetic_neuropathy",
+            "peripheral_artery_disease",
+            "mental_health"
+          ],
+          "patient_questions": [
+            "How does diabetes affect sexual health?",
+            "What causes erectile dysfunction in diabetes?",
+            "Can sexual dysfunction from diabetes be treated?",
+            "Is sexual dysfunction reversible?",
+            "When should I talk to my doctor about this?"
+          ],
           "queries": {
             "niddk": "Diabetes sexual urologic problems",
             "mayo": "Erectile dysfunction diabetes",
@@ -1386,10 +3585,34 @@
 
         {
           "id": "infections",
+          "document_id": "KB-000089",
           "title": "Diabetes and Infections",
           "priority": 2,
           "status": "pending",
+          "specialty": "infectious disease",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetes infections", "UTI diabetes", "yeast infection diabetes", "wound healing diabetes", "immune system diabetes"],
+          "clinical_tags": ["complications", "infectious disease", "diabetes", "immune", "wound healing"],
+          "related_tests": [
+            "WBC COUNT",
+            "HbA1c",
+            "URINE CULTURE",
+            "C-REACTIVE PROTEIN (CRP)"
+          ],
+          "related_topics": [
+            "wbc",
+            "crp",
+            "diabetic_foot",
+            "hyperglycemia"
+          ],
+          "patient_questions": [
+            "Why are infections more common with diabetes?",
+            "What types of infections are common in diabetes?",
+            "Why do wounds heal slowly with diabetes?",
+            "How can I prevent infections?",
+            "When should I see a doctor for an infection?"
+          ],
           "queries": {
             "ada": "Diabetes and infections immune system",
             "cleveland": "Diabetes risk infections",
@@ -1409,10 +3632,35 @@
 
         {
           "id": "healthy_eating",
+          "document_id": "KB-000090",
           "title": "Healthy Eating for Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "nutrition",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetes diet", "healthy eating", "meal planning", "carbohydrate counting", "glycemic index", "nutrition diabetes"],
+          "clinical_tags": ["lifestyle", "nutrition", "diabetes", "diet", "self-management"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "carb_counting",
+            "glycemic_index",
+            "weight_management",
+            "exercise",
+            "triglycerides",
+            "type2_diabetes"
+          ],
+          "patient_questions": [
+            "What should I eat with diabetes?",
+            "What foods should I avoid?",
+            "How do carbohydrates affect blood sugar?",
+            "What is a diabetes-friendly meal plan?",
+            "Can I eat fruit with diabetes?"
+          ],
           "queries": {
             "ada": "Diabetes food and nutrition",
             "cdc": "Diabetes meal planning eating well",
@@ -1423,10 +3671,32 @@
 
         {
           "id": "carb_counting",
+          "document_id": "KB-000091",
           "title": "Carbohydrate Counting",
           "priority": 1,
           "status": "pending",
+          "specialty": "nutrition",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["carb counting", "carbohydrate counting", "net carbs", "carbohydrate management"],
+          "clinical_tags": ["lifestyle", "nutrition", "diabetes", "carbohydrates", "meal planning"],
+          "related_tests": [
+            "HbA1c",
+            "POST-PRANDIAL BLOOD SUGAR (PPBS)"
+          ],
+          "related_topics": [
+            "healthy_eating",
+            "glycemic_index",
+            "postprandial_glucose",
+            "insulin_therapy"
+          ],
+          "patient_questions": [
+            "What is carb counting?",
+            "How many carbs should I eat per meal?",
+            "How do I calculate net carbs?",
+            "Does carb counting really help blood sugar?",
+            "What tools help with carb counting?"
+          ],
           "queries": {
             "ada": "Carb counting diabetes",
             "cdc": "Carbohydrate counting diabetes food",
@@ -1437,10 +3707,31 @@
 
         {
           "id": "glycemic_index",
+          "document_id": "KB-000092",
           "title": "Glycemic Index and Glycemic Load",
           "priority": 2,
           "status": "pending",
+          "specialty": "nutrition",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["glycemic index", "GI", "glycemic load", "GL", "low glycemic foods"],
+          "clinical_tags": ["lifestyle", "nutrition", "diabetes", "carbohydrates", "blood sugar"],
+          "related_tests": [
+            "HbA1c",
+            "POST-PRANDIAL BLOOD SUGAR (PPBS)"
+          ],
+          "related_topics": [
+            "healthy_eating",
+            "carb_counting",
+            "postprandial_glucose"
+          ],
+          "patient_questions": [
+            "What is the glycemic index?",
+            "What is the difference between GI and glycemic load?",
+            "Which foods have a low glycemic index?",
+            "Does glycemic index matter for diabetes?",
+            "Can low GI foods help my blood sugar?"
+          ],
           "queries": {
             "ada": "Glycemic index diabetes",
             "mayo": "Glycemic index diet",
@@ -1451,10 +3742,35 @@
 
         {
           "id": "exercise",
+          "document_id": "KB-000093",
           "title": "Exercise and Physical Activity",
           "priority": 1,
           "status": "pending",
+          "specialty": "sports medicine",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["exercise diabetes", "physical activity", "aerobic exercise", "resistance training", "blood sugar exercise"],
+          "clinical_tags": ["lifestyle", "exercise", "diabetes", "physical activity", "prevention"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "LIPID PROFILE",
+            "BLOOD PRESSURE"
+          ],
+          "related_topics": [
+            "weight_management",
+            "healthy_eating",
+            "insulin_resistance",
+            "heart_disease",
+            "hypoglycemia"
+          ],
+          "patient_questions": [
+            "What type of exercise is best for diabetes?",
+            "How much exercise should I do?",
+            "Can exercise lower my blood sugar?",
+            "Is it safe to exercise with high blood sugar?",
+            "What precautions should I take when exercising?"
+          ],
           "queries": {
             "cdc": "Diabetes and physical activity exercise",
             "ada": "Fitness and exercise diabetes",
@@ -1465,10 +3781,36 @@
 
         {
           "id": "weight_management",
+          "document_id": "KB-000094",
           "title": "Weight Management",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["weight loss diabetes", "weight management", "BMI", "obesity diabetes", "bariatric surgery"],
+          "clinical_tags": ["lifestyle", "weight", "diabetes", "obesity", "metabolic"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "LIPID PROFILE",
+            "INSULIN - FASTING"
+          ],
+          "related_topics": [
+            "healthy_eating",
+            "exercise",
+            "insulin_resistance",
+            "type2_diabetes",
+            "fatty_liver",
+            "glp1_agonists"
+          ],
+          "patient_questions": [
+            "How much weight loss improves diabetes?",
+            "Why is it harder to lose weight with diabetes?",
+            "What is a healthy BMI for diabetics?",
+            "Can weight loss reverse Type 2 diabetes?",
+            "What is bariatric surgery for diabetes?"
+          ],
           "queries": {
             "cdc": "Losing weight diabetes healthy weight",
             "mayo": "Diabetes and weight loss management",
@@ -1479,10 +3821,32 @@
 
         {
           "id": "sleep",
+          "document_id": "KB-000095",
           "title": "Sleep and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "sleep medicine",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["sleep diabetes", "sleep apnea diabetes", "insomnia blood sugar", "sleep quality"],
+          "clinical_tags": ["lifestyle", "sleep", "diabetes", "metabolism", "insulin resistance"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "insulin_resistance",
+            "weight_management",
+            "stress_management",
+            "mental_health"
+          ],
+          "patient_questions": [
+            "How does poor sleep affect blood sugar?",
+            "What is sleep apnea and how does it relate to diabetes?",
+            "How many hours of sleep do I need?",
+            "Can better sleep improve my diabetes?",
+            "Why does blood sugar rise during the night?"
+          ],
           "queries": {
             "cdc": "Sleep and diabetes",
             "mayo": "Sleep and blood sugar diabetes",
@@ -1493,10 +3857,31 @@
 
         {
           "id": "smoking",
+          "document_id": "KB-000096",
           "title": "Smoking and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "pulmonology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["smoking diabetes", "tobacco diabetes", "smoking cessation", "quit smoking diabetes"],
+          "clinical_tags": ["lifestyle", "smoking", "diabetes", "cardiovascular", "prevention"],
+          "related_tests": [
+            "HbA1c",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "heart_disease",
+            "peripheral_artery_disease",
+            "hypertension"
+          ],
+          "patient_questions": [
+            "How does smoking affect diabetes?",
+            "Does quitting smoking improve diabetes?",
+            "Does smoking increase diabetes complications?",
+            "What resources help with quitting smoking?",
+            "How does smoking affect insulin resistance?"
+          ],
           "queries": {
             "cdc": "Smoking and diabetes",
             "ada": "Smoking and diabetes risk",
@@ -1507,10 +3892,34 @@
 
         {
           "id": "alcohol",
+          "document_id": "KB-000097",
           "title": "Alcohol and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["alcohol diabetes", "drinking diabetes", "alcohol blood sugar", "alcohol and insulin"],
+          "clinical_tags": ["lifestyle", "alcohol", "diabetes", "hypoglycemia", "liver"],
+          "related_tests": [
+            "FASTING BLOOD SUGAR (FBS)",
+            "HbA1c",
+            "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "hypoglycemia",
+            "fatty_liver",
+            "ggt",
+            "triglycerides"
+          ],
+          "patient_questions": [
+            "Can I drink alcohol with diabetes?",
+            "How does alcohol affect blood sugar?",
+            "Why does alcohol cause low blood sugar?",
+            "How much alcohol is safe with diabetes?",
+            "Does alcohol interact with diabetes medications?"
+          ],
           "queries": {
             "cdc": "Alcohol and diabetes",
             "ada": "Alcohol and diabetes what you need to know",
@@ -1521,10 +3930,33 @@
 
         {
           "id": "stress_management",
+          "document_id": "KB-000098",
           "title": "Stress Management",
           "priority": 1,
           "status": "pending",
+          "specialty": "psychiatry",
+          "reading_level": "patient",
+          "refresh_interval": "3 years",
           "keywords": ["stress diabetes", "stress management", "cortisol blood sugar", "mental health diabetes", "anxiety diabetes"],
+          "clinical_tags": ["lifestyle", "stress", "diabetes", "mental health", "cortisol"],
+          "related_tests": [
+            "CORTISOL",
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "mental_health",
+            "sleep",
+            "exercise",
+            "hyperglycemia"
+          ],
+          "patient_questions": [
+            "How does stress affect blood sugar?",
+            "What is the cortisol-blood sugar connection?",
+            "What stress management techniques help diabetes?",
+            "Can stress cause diabetes?",
+            "How do I manage diabetes burnout?"
+          ],
           "queries": {
             "cdc": "Diabetes and stress management",
             "mayo": "Stress and blood sugar diabetes",
@@ -1535,10 +3967,31 @@
 
         {
           "id": "mental_health",
+          "document_id": "KB-000099",
           "title": "Mental Health and Diabetes",
           "priority": 1,
           "status": "pending",
+          "specialty": "psychiatry",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["diabetes depression", "diabetes distress", "diabetes burnout", "mental health diabetes", "emotional wellbeing"],
+          "clinical_tags": ["lifestyle", "mental health", "diabetes", "depression", "wellbeing"],
+          "related_tests": [
+            "HbA1c"
+          ],
+          "related_topics": [
+            "stress_management",
+            "sleep",
+            "exercise",
+            "healthy_eating"
+          ],
+          "patient_questions": [
+            "Is depression common with diabetes?",
+            "What is diabetes distress?",
+            "How does depression affect blood sugar management?",
+            "When should I seek mental health support?",
+            "What resources are available for diabetes and mental health?"
+          ],
           "queries": {
             "ada": "Mental health diabetes depression",
             "cdc": "Diabetes and mental health",
@@ -1549,10 +4002,33 @@
 
         {
           "id": "hydration",
+          "document_id": "KB-000100",
           "title": "Hydration and Diabetes",
           "priority": 2,
           "status": "pending",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "5 years",
           "keywords": ["hydration diabetes", "water intake diabetes", "dehydration blood sugar", "diabetes thirst polydipsia"],
+          "clinical_tags": ["lifestyle", "hydration", "diabetes", "dehydration", "self-care"],
+          "related_tests": [
+            "BLOOD GLUCOSE",
+            "SODIUM",
+            "SERUM OSMOLALITY"
+          ],
+          "related_topics": [
+            "hyperglycemia",
+            "diabetic_ketoacidosis",
+            "hyperosmolar_syndrome",
+            "electrolytes"
+          ],
+          "patient_questions": [
+            "How much water should I drink with diabetes?",
+            "Why does diabetes cause excessive thirst?",
+            "Can dehydration raise blood sugar?",
+            "What are the signs of dehydration in diabetes?",
+            "Are sports drinks safe for diabetics?"
+          ],
           "queries": {
             "ada": "Hydration and diabetes water intake",
             "mayo": "Dehydration and diabetes symptoms",
@@ -1572,10 +4048,36 @@
 
         {
           "id": "metformin",
+          "document_id": "KB-000101",
           "title": "Metformin",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "1 year",
           "keywords": ["metformin", "Glucophage", "biguanide", "first-line diabetes medication"],
+          "clinical_tags": ["medications", "endocrinology", "oral medication", "first-line", "diabetes"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "CREATININE - SERUM",
+            "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+            "VITAMIN B12"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "insulin_resistance",
+            "vitamin_b12",
+            "egfr",
+            "weight_management"
+          ],
+          "patient_questions": [
+            "How does metformin work?",
+            "What are the side effects of metformin?",
+            "Does metformin cause vitamin B12 deficiency?",
+            "Can I take metformin with kidney disease?",
+            "Does metformin cause weight loss?"
+          ],
           "queries": {
             "medlineplus": "Metformin",
             "mayo": "Metformin oral route",
@@ -1586,10 +4088,34 @@
 
         {
           "id": "insulin_therapy",
+          "document_id": "KB-000102",
           "title": "Insulin Therapy",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "1 year",
           "keywords": ["insulin therapy", "insulin types", "basal insulin", "bolus insulin", "insulin pump", "rapid-acting insulin", "long-acting insulin"],
+          "clinical_tags": ["medications", "endocrinology", "insulin", "injection", "diabetes"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "C-PEPTIDE"
+          ],
+          "related_topics": [
+            "insulin",
+            "type1_diabetes",
+            "type2_diabetes",
+            "hypoglycemia",
+            "glucose_monitoring"
+          ],
+          "patient_questions": [
+            "What types of insulin are there?",
+            "How do I inject insulin properly?",
+            "What is the difference between basal and bolus insulin?",
+            "What is an insulin pump?",
+            "Can insulin cause weight gain?"
+          ],
           "queries": {
             "ada": "Insulin and other injectables",
             "mayo": "Insulin therapy types and delivery",
@@ -1600,10 +4126,33 @@
 
         {
           "id": "glp1_agonists",
+          "document_id": "KB-000103",
           "title": "GLP-1 Receptor Agonists",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "6 months",
           "keywords": ["GLP-1", "GLP-1 receptor agonist", "incretin", "semaglutide", "liraglutide", "dulaglutide", "Ozempic", "Trulicity"],
+          "clinical_tags": ["medications", "endocrinology", "injectable", "weight loss", "diabetes", "incretin"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "LIPID PROFILE"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "weight_management",
+            "heart_disease",
+            "insulin_resistance"
+          ],
+          "patient_questions": [
+            "How do GLP-1 agonists work?",
+            "What are the side effects of GLP-1 medications?",
+            "Do GLP-1 drugs cause weight loss?",
+            "What is the difference between Ozempic and Trulicity?",
+            "Can GLP-1 agonists protect the heart?"
+          ],
           "queries": {
             "ada": "GLP-1 receptor agonists diabetes",
             "mayo": "GLP-1 agonist medications diabetes",
@@ -1614,10 +4163,34 @@
 
         {
           "id": "sglt2_inhibitors",
+          "document_id": "KB-000104",
           "title": "SGLT2 Inhibitors",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "6 months",
           "keywords": ["SGLT2 inhibitor", "sodium-glucose cotransporter 2", "empagliflozin", "dapagliflozin", "canagliflozin", "Jardiance", "Farxiga"],
+          "clinical_tags": ["medications", "endocrinology", "oral medication", "kidney", "heart", "diabetes"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+            "URINE KETONES"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "heart_failure",
+            "diabetic_kidney_disease",
+            "diabetic_ketoacidosis"
+          ],
+          "patient_questions": [
+            "How do SGLT2 inhibitors work?",
+            "What are the side effects of SGLT2 inhibitors?",
+            "Do SGLT2 inhibitors protect the kidneys?",
+            "Can SGLT2 inhibitors cause DKA?",
+            "What is the difference between Jardiance and Farxiga?"
+          ],
           "queries": {
             "ada": "SGLT2 inhibitors diabetes",
             "mayo": "SGLT2 inhibitors diabetes kidney heart",
@@ -1628,10 +4201,31 @@
 
         {
           "id": "dpp4_inhibitors",
+          "document_id": "KB-000105",
           "title": "DPP-4 Inhibitors",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "1 year",
           "keywords": ["DPP-4 inhibitor", "dipeptidyl peptidase-4", "sitagliptin", "linagliptin", "Januvia", "gliptin"],
+          "clinical_tags": ["medications", "endocrinology", "oral medication", "incretin", "diabetes"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "glp1_agonists",
+            "metformin"
+          ],
+          "patient_questions": [
+            "How do DPP-4 inhibitors work?",
+            "What are the side effects of DPP-4 inhibitors?",
+            "What is the difference between DPP-4 inhibitors and GLP-1 agonists?",
+            "Can I take DPP-4 inhibitors with metformin?",
+            "Do DPP-4 inhibitors cause weight gain?"
+          ],
           "queries": {
             "ada": "DPP-4 inhibitors diabetes oral medication",
             "mayo": "DPP-4 inhibitors diabetes treatment",
@@ -1642,10 +4236,31 @@
 
         {
           "id": "sulfonylureas",
+          "document_id": "KB-000106",
           "title": "Sulfonylureas",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["sulfonylurea", "glipizide", "glyburide", "glimepiride", "Glucotrol", "Amaryl"],
+          "clinical_tags": ["medications", "endocrinology", "oral medication", "insulin secretagogue", "diabetes"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)"
+          ],
+          "related_topics": [
+            "type2_diabetes",
+            "hypoglycemia",
+            "metformin"
+          ],
+          "patient_questions": [
+            "How do sulfonylureas work?",
+            "What are the side effects of sulfonylureas?",
+            "Can sulfonylureas cause low blood sugar?",
+            "Do sulfonylureas cause weight gain?",
+            "Are sulfonylureas still prescribed?"
+          ],
           "queries": {
             "medlineplus": "Glipizide sulfonylurea diabetes",
             "mayo": "Sulfonylureas diabetes medication",
@@ -1656,10 +4271,33 @@
 
         {
           "id": "thiazolidinediones",
+          "document_id": "KB-000107",
           "title": "Thiazolidinediones (TZDs)",
           "priority": 3,
           "status": "future",
+          "specialty": "endocrinology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["thiazolidinedione", "TZD", "pioglitazone", "Actos", "insulin sensitizer"],
+          "clinical_tags": ["medications", "endocrinology", "oral medication", "insulin sensitizer", "diabetes"],
+          "related_tests": [
+            "HbA1c",
+            "FASTING BLOOD SUGAR (FBS)",
+            "LIVER FUNCTION TEST (LFT)"
+          ],
+          "related_topics": [
+            "insulin_resistance",
+            "type2_diabetes",
+            "fatty_liver",
+            "metformin"
+          ],
+          "patient_questions": [
+            "How do thiazolidinediones work?",
+            "What are the side effects of TZDs?",
+            "Do TZDs cause weight gain?",
+            "Are TZDs safe for the liver?",
+            "Who should not take pioglitazone?"
+          ],
           "queries": {
             "medlineplus": "Pioglitazone thiazolidinedione diabetes",
             "mayo": "Thiazolidinediones diabetes TZD",
@@ -1670,10 +4308,34 @@
 
         {
           "id": "statins",
+          "document_id": "KB-000108",
           "title": "Statins (Cholesterol Medications)",
           "priority": 3,
           "status": "future",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "1 year",
           "keywords": ["statin", "atorvastatin", "rosuvastatin", "cholesterol lowering", "Lipitor", "Crestor"],
+          "clinical_tags": ["medications", "cardiology", "cholesterol", "cardiovascular", "diabetes"],
+          "related_tests": [
+            "LIPID PROFILE",
+            "LDL CHOLESTEROL - DIRECT",
+            "LIVER FUNCTION TEST (LFT)",
+            "CREATINE KINASE (CK)"
+          ],
+          "related_topics": [
+            "ldl",
+            "total_cholesterol",
+            "heart_disease",
+            "atherosclerosis"
+          ],
+          "patient_questions": [
+            "How do statins work?",
+            "What are the side effects of statins?",
+            "Do all diabetics need statins?",
+            "Can statins affect blood sugar?",
+            "What is the difference between atorvastatin and rosuvastatin?"
+          ],
           "queries": {
             "mayo": "Statins cholesterol lowering medications",
             "medlineplus": "Statins for cholesterol",
@@ -1684,10 +4346,34 @@
 
         {
           "id": "ace_inhibitors_arbs",
+          "document_id": "KB-000109",
           "title": "ACE Inhibitors and ARBs",
           "priority": 3,
           "status": "future",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["ACE inhibitor", "ARB", "angiotensin", "lisinopril", "losartan", "blood pressure kidney protection"],
+          "clinical_tags": ["medications", "cardiology", "blood pressure", "kidney protection", "diabetes"],
+          "related_tests": [
+            "BLOOD PRESSURE",
+            "CREATININE - SERUM",
+            "POTASSIUM",
+            "ALBUMIN/CREATININE RATIO (ACR)"
+          ],
+          "related_topics": [
+            "hypertension",
+            "diabetic_kidney_disease",
+            "diabetic_nephropathy",
+            "heart_failure"
+          ],
+          "patient_questions": [
+            "How do ACE inhibitors work?",
+            "What is the difference between ACE inhibitors and ARBs?",
+            "Why do diabetics take ACE inhibitors for kidney protection?",
+            "What are the side effects of ACE inhibitors?",
+            "Can I take ACE inhibitors with high potassium?"
+          ],
           "queries": {
             "mayo": "ACE inhibitors ARBs blood pressure",
             "medlineplus": "ACE inhibitors angiotensin",
@@ -1698,10 +4384,32 @@
 
         {
           "id": "aspirin_antiplatelet",
+          "document_id": "KB-000110",
           "title": "Aspirin and Antiplatelet Therapy",
           "priority": 3,
           "status": "future",
+          "specialty": "cardiology",
+          "reading_level": "patient",
+          "refresh_interval": "2 years",
           "keywords": ["aspirin", "antiplatelet", "cardiovascular prevention", "blood thinner diabetes"],
+          "clinical_tags": ["medications", "cardiology", "cardiovascular prevention", "antiplatelet", "diabetes"],
+          "related_tests": [
+            "PLATELET COUNT",
+            "BLEEDING TIME"
+          ],
+          "related_topics": [
+            "heart_disease",
+            "stroke",
+            "peripheral_artery_disease",
+            "platelets"
+          ],
+          "patient_questions": [
+            "Should I take daily aspirin with diabetes?",
+            "How does aspirin prevent heart attacks?",
+            "What are the risks of aspirin therapy?",
+            "Who should and should not take aspirin?",
+            "Is aspirin therapy still recommended for diabetics?"
+          ],
           "queries": {
             "ada": "Aspirin therapy diabetes cardiovascular",
             "mayo": "Daily aspirin therapy benefits risks",
@@ -1715,23 +4423,36 @@
 
   "statistics": {
     "total_modules": 12,
-    "total_topics": 107,
-    "total_source_fetches_estimated": 312,
+    "total_topics": 110,
+    "total_source_fetches_estimated": 329,
     "modules_active": 11,
     "modules_future": 1,
-    "priority_1_topics": 63,
-    "priority_2_topics": 29,
-    "priority_3_topics": 15
+    "priority_1_topics": 67,
+    "priority_2_topics": 31,
+    "priority_3_topics": 12,
+    "unique_clinical_tags": 65,
+    "unique_related_tests": 95,
+    "knowledge_graph_edges": 550
   },
 
   "notes": [
     "Priority 1 = must-have for Certus Diagnostics MVP. Scrape first.",
     "Priority 2 = important for comprehensive coverage. Scrape second pass.",
     "Priority 3 = future expansion or medication module. Scrape when ready.",
-    "Status values: pending, scraped, failed, review, approved.",
-    "Each topic folder contains one .md file per source (e.g., ada.md, mayo.md, niddk.md).",
+    "Status stages: pending → scraped → cleaned → chunked → embedded → verified → ready.",
+    "Each topic folder contains one .md file per source (e.g., ada_v1.md, mayo_v1.md, niddk_v1.md).",
+    "Each topic folder also contains metadata.json tracking url, scraped_on, word_count, content_hash, and version.",
+    "After all sources are scraped, a summary.md (Layer 2) is generated from all sources for each topic.",
     "The queries object maps source keys to site-specific search strings because each site titles pages differently.",
     "The medications module is marked as 'future' — not for the current assignment but structurally ready.",
-    "Sources were selected for each topic based on which organization is the recognized authority for that domain."
+    "Sources were selected for each topic based on which organization is the recognized authority for that domain.",
+    "related_tests maps topics to actual blood test parameter names as they appear in lab reports for direct report-to-knowledge lookup.",
+    "related_topics creates a knowledge graph enabling traversal from any concept to clinically related concepts.",
+    "clinical_tags enable fast filtering without embeddings — e.g., filter(tag=='kidney') returns all renal content.",
+    "patient_questions drive future QA pair generation and inform chatbot prompt engineering.",
+    "source_priority defines evidence hierarchy — if sources disagree, higher-ranked sources are trusted first.",
+    "reading_level starts at 'patient' and can later be expanded to 'medical_student' and 'doctor' for multi-audience content.",
+    "refresh_interval guides re-scraping schedule — fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
+    "document_id (KB-XXXXXX) provides a stable identifier for traceability from vector database chunks back to source documents."
   ]
 }
