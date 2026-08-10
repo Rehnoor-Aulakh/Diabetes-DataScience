@@ -4,24 +4,23 @@
   "topic_title": "HbA1c",
   "source": "ada",
   "source_name": "American Diabetes Association",
-  "version": 4,
-  "url": "https://diabetes.org/living-with-diabetes/pregnancy/gestational-diabetes",
-  "scraped_at": "2026-08-10T10:58:28.321260+00:00",
-  "word_count": 635,
-  "content_hash": "sha256:87e17fdc6c142283ef0aa8284dc18a5207b7e937f81aca93ebf7a66ec2b66a83",
+  "version": 5,
+  "url": "https://diabetes.org/about-diabetes/a1c",
+  "scraped_at": "2026-08-10T11:32:18.916617+00:00",
+  "word_count": 836,
+  "content_hash": "sha256:38253477007d523fc78d6f26081f83e29cacbcca20ddc0d555701faef4b9e44e",
   "extractor": "trafilatura/bs4",
   "language": "en",
   "http_etag": null,
-  "http_last_modified": "Mon, 10 Aug 2026 07:04:44 GMT",
-  "status": "failed",
+  "http_last_modified": "Mon, 10 Aug 2026 07:02:24 GMT",
+  "status": "scraped",
   "quality_checks": {
     "min_words": true,
-    "has_keywords": false,
+    "has_keywords": true,
     "has_headings": false,
     "is_english": true,
-    "passed": false,
+    "passed": true,
     "reasons": [
-      "No topic keywords found in text",
       "No markdown headings found"
     ]
   }

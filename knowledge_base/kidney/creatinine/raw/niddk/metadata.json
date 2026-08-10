@@ -6,7 +6,7 @@
   "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
   "version": 3,
   "url": "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/laboratory-evaluation/estimated-gfr-calculators",
-  "scraped_at": "2026-08-10T11:05:08.452885+00:00",
+  "scraped_at": "2026-08-10T11:33:22.919696+00:00",
   "word_count": 613,
   "content_hash": "sha256:3eee08aae743bb0a17be663f251a4c7eec5b3f7a45b910a1c8928068b7e6577a",
   "extractor": "trafilatura/bs4",

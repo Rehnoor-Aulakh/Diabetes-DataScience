@@ -1,0 +1,21 @@
+[2026-08-10 11:17:18] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111718.log
+[2026-08-10 11:17:18] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:17:18] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:17:18] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:17:18] [INFO   ] [KB-000003] [ada] SEARCHING — Query: Type 2 diabetes
+[2026-08-10 11:17:20] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Type+2+diabetes
+[2026-08-10 11:17:20] [INFO   ] [KB-000003] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:20] [INFO   ] [KB-000003] [cdc] SEARCHING — Query: Type 2 diabetes basics
+[2026-08-10 11:17:20] [WARNING] No valid article links found on search page: https://search.cdc.gov/search/?query=Type+2+diabetes+basics
+[2026-08-10 11:17:20] [INFO   ] [KB-000003] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:20] [INFO   ] [KB-000003] [mayo] SEARCHING — Query: Type 2 diabetes symptoms causes treatment
+[2026-08-10 11:17:20] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Type+2+diabetes+symptoms+causes+treatment': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Type+2+diabetes+symptoms+causes+treatment
+[2026-08-10 11:17:20] [INFO   ] [KB-000003] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:20] [INFO   ] ======================================================================
+[2026-08-10 11:17:20] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:17:20] [INFO   ]   Total jobs:   3
+[2026-08-10 11:17:20] [INFO   ]   Scraped:      0
+[2026-08-10 11:17:20] [INFO   ]   Skipped:      0
+[2026-08-10 11:17:20] [INFO   ]   Failed:       3
+[2026-08-10 11:17:20] [INFO   ]   Duration:     2.6s
+[2026-08-10 11:17:20] [INFO   ] ======================================================================

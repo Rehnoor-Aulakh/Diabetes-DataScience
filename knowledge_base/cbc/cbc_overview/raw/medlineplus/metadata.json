@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000054",
+  "topic": "cbc_overview",
+  "topic_title": "Complete Blood Count (CBC)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+  "scraped_at": "2026-08-10T11:34:19.525197+00:00",
+  "word_count": 1010,
+  "content_hash": "sha256:299f674ba3f730676d63542110a25b53bf3970f725cc0006d7c2ec4ebbaea836",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"7aa35f6cba58a69311dbe64b300ebe06\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:54 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

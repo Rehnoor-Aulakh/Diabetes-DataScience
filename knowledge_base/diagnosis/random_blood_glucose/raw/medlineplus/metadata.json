@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000013",
+  "topic": "random_blood_glucose",
+  "topic_title": "Random Blood Sugar",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 2,
+  "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+  "scraped_at": "2026-08-10T11:32:35.271113+00:00",
+  "word_count": 2592,
+  "content_hash": "sha256:9dcabbbb67b43f6cd979c652de742fcde3c1876512cbcb8e3e33593a23c273ef",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"fa510211e7fa9c49c84512a90a0d6af4\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:47 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

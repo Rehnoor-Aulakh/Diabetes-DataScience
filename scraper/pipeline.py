@@ -23,8 +23,12 @@ def run_job(job: ScrapeJob, delay_seconds: int = 2) -> bool:
     
     try:
         # Step 1: Search
-        log_job(job.document_id, job.source_key, "SEARCHING", f"Query: {job.query}")
-        urls = search_article_urls(job.query, job.base_url, job.search_url_template)
+        if job.direct_url:
+            log_job(job.document_id, job.source_key, "SEARCHING", f"Using direct URL: {job.direct_url}")
+            urls = [job.direct_url]
+        else:
+            log_job(job.document_id, job.source_key, "SEARCHING", f"Query: {job.query}")
+            urls = search_article_urls(job.query, job.base_url, job.search_url_template)
         
         if not urls:
             log_job(job.document_id, job.source_key, "FAILED", "Search returned no valid URLs")

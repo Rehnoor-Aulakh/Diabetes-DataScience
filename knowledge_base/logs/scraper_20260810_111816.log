@@ -1,0 +1,27 @@
+[2026-08-10 11:18:16] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111816.log
+[2026-08-10 11:18:16] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:18:16] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:18:16] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:18:16] [INFO   ] [KB-000054] [cleveland] SEARCHING — Query: CBC complete blood count test
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [cleveland] EXTRACTING
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [cleveland] CONVERTING
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [cleveland] VALIDATING
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [mayo] SEARCHING — Query: Complete blood count CBC
+[2026-08-10 11:18:17] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Complete+blood+count+CBC': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Complete+blood+count+CBC
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:18:17] [INFO   ] [KB-000054] [medlineplus] SEARCHING — Query: Complete blood count CBC test
+[2026-08-10 11:18:19] [INFO   ] [KB-000054] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/complete-blood-count-cbc/
+[2026-08-10 11:18:20] [INFO   ] [KB-000054] [medlineplus] EXTRACTING
+[2026-08-10 11:18:20] [INFO   ] [KB-000054] [medlineplus] CONVERTING
+[2026-08-10 11:18:20] [INFO   ] [KB-000054] [medlineplus] VALIDATING
+[2026-08-10 11:18:20] [INFO   ] [KB-000054] [medlineplus] COMPLETED — v1 (new) words=1010 duration=2.9s
+[2026-08-10 11:18:20] [INFO   ] ======================================================================
+[2026-08-10 11:18:20] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:18:20] [INFO   ]   Total jobs:   3
+[2026-08-10 11:18:20] [INFO   ]   Scraped:      1
+[2026-08-10 11:18:20] [INFO   ]   Skipped:      0
+[2026-08-10 11:18:20] [INFO   ]   Failed:       2
+[2026-08-10 11:18:20] [INFO   ]   Duration:     4.1s
+[2026-08-10 11:18:20] [INFO   ] ======================================================================

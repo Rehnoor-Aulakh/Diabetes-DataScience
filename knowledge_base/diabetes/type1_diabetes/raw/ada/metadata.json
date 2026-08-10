@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000002",
+  "topic": "type1_diabetes",
+  "topic_title": "Type 1 Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/about-diabetes/type-1",
+  "scraped_at": "2026-08-10T11:31:41.827039+00:00",
+  "word_count": 1454,
+  "content_hash": "sha256:ae2a740dd2a61b81efb69e1c2d8dde34c181705826ac7b6c56e2c69915df67e7",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Mon, 10 Aug 2026 07:03:15 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

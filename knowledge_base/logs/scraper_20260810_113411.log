@@ -1,0 +1,27 @@
+[2026-08-10 11:34:11] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_113411.log
+[2026-08-10 11:34:11] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:34:11] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:34:11] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:34:11] [INFO   ] [KB-000042] [cleveland] SEARCHING — Query: Triglycerides blood test
+[2026-08-10 11:34:11] [INFO   ] [KB-000042] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 11:34:11] [INFO   ] [KB-000042] [cleveland] EXTRACTING
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [cleveland] CONVERTING
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [cleveland] VALIDATING
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [mayo] SEARCHING — Query: Triglycerides why they matter
+[2026-08-10 11:34:12] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Triglycerides+why+they+matter': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Triglycerides+why+they+matter
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/triglycerides-test/
+[2026-08-10 11:34:12] [INFO   ] [KB-000042] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/triglycerides-test/
+[2026-08-10 11:34:13] [INFO   ] [KB-000042] [medlineplus] EXTRACTING
+[2026-08-10 11:34:13] [INFO   ] [KB-000042] [medlineplus] CONVERTING
+[2026-08-10 11:34:13] [INFO   ] [KB-000042] [medlineplus] VALIDATING
+[2026-08-10 11:34:13] [INFO   ] [KB-000042] [medlineplus] COMPLETED — v1 (new) words=1608 duration=0.7s
+[2026-08-10 11:34:13] [INFO   ] ======================================================================
+[2026-08-10 11:34:13] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:34:13] [INFO   ]   Total jobs:   3
+[2026-08-10 11:34:13] [INFO   ]   Scraped:      1
+[2026-08-10 11:34:13] [INFO   ]   Skipped:      0
+[2026-08-10 11:34:13] [INFO   ]   Failed:       2
+[2026-08-10 11:34:13] [INFO   ]   Duration:     2.0s
+[2026-08-10 11:34:13] [INFO   ] ======================================================================

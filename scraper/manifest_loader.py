@@ -31,6 +31,7 @@ class ScrapeJob:
     keywords: list[str]
     priority: int
     output_directory: str
+    direct_url: Optional[str] = None
     # Populated during execution
     status: str = "pending"
     url: Optional[str] = None
@@ -151,6 +152,8 @@ def load_manifest(
                     )
                     continue
 
+                direct_urls = topic.get("direct_urls", {})
+                
                 job = ScrapeJob(
                     document_id=topic.get("document_id", ""),
                     topic_id=topic_id,
@@ -162,6 +165,7 @@ def load_manifest(
                     base_url=source_info.get("base_url", ""),
                     search_url_template=source_info.get("search_url_template", ""),
                     query=query_text,
+                    direct_url=direct_urls.get(source_key),
                     keywords=topic.get("keywords", []),
                     priority=priority,
                     output_directory=output_dir,

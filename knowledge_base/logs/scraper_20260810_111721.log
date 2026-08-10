@@ -1,0 +1,21 @@
+[2026-08-10 11:17:21] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111721.log
+[2026-08-10 11:17:21] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:17:21] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:17:21] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:17:21] [INFO   ] [KB-000004] [ada] SEARCHING — Query: Understanding prediabetes
+[2026-08-10 11:17:23] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Understanding+prediabetes
+[2026-08-10 11:17:23] [INFO   ] [KB-000004] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:23] [INFO   ] [KB-000004] [cdc] SEARCHING — Query: Prediabetes your chance to prevent type 2 diabetes
+[2026-08-10 11:17:24] [WARNING] No valid article links found on search page: https://search.cdc.gov/search/?query=Prediabetes+your+chance+to+prevent+type+2+diabetes
+[2026-08-10 11:17:24] [INFO   ] [KB-000004] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:24] [INFO   ] [KB-000004] [mayo] SEARCHING — Query: Prediabetes symptoms causes
+[2026-08-10 11:17:24] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Prediabetes+symptoms+causes': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Prediabetes+symptoms+causes
+[2026-08-10 11:17:24] [INFO   ] [KB-000004] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:24] [INFO   ] ======================================================================
+[2026-08-10 11:17:24] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:17:24] [INFO   ]   Total jobs:   3
+[2026-08-10 11:17:24] [INFO   ]   Scraped:      0
+[2026-08-10 11:17:24] [INFO   ]   Skipped:      0
+[2026-08-10 11:17:24] [INFO   ]   Failed:       3
+[2026-08-10 11:17:24] [INFO   ]   Duration:     3.0s
+[2026-08-10 11:17:24] [INFO   ] ======================================================================

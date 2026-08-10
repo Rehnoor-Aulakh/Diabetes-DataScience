@@ -1,0 +1,24 @@
+[2026-08-10 11:13:52] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111352.log
+[2026-08-10 11:13:52] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:13:52] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:13:52] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:13:52] [INFO   ] [KB-000007] [ada] SEARCHING — Query: Insulin resistance
+[2026-08-10 11:13:53] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Insulin+resistance
+[2026-08-10 11:13:53] [INFO   ] [KB-000007] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:13:53] [INFO   ] [KB-000007] [mayo] SEARCHING — Query: Insulin resistance metabolic syndrome
+[2026-08-10 11:13:54] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Insulin+resistance+metabolic+syndrome': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Insulin+resistance+metabolic+syndrome
+[2026-08-10 11:13:54] [INFO   ] [KB-000007] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:13:54] [INFO   ] [KB-000007] [niddk] SEARCHING — Query: Insulin resistance and prediabetes
+[2026-08-10 11:13:55] [INFO   ] [KB-000007] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes
+[2026-08-10 11:13:55] [INFO   ] [KB-000007] [niddk] EXTRACTING
+[2026-08-10 11:13:55] [INFO   ] [KB-000007] [niddk] CONVERTING
+[2026-08-10 11:13:55] [INFO   ] [KB-000007] [niddk] VALIDATING
+[2026-08-10 11:13:55] [INFO   ] [KB-000007] [niddk] COMPLETED — v2 (new) words=1003 duration=1.9s
+[2026-08-10 11:13:55] [INFO   ] ======================================================================
+[2026-08-10 11:13:55] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:13:55] [INFO   ]   Total jobs:   3
+[2026-08-10 11:13:55] [INFO   ]   Scraped:      1
+[2026-08-10 11:13:55] [INFO   ]   Skipped:      0
+[2026-08-10 11:13:55] [INFO   ]   Failed:       2
+[2026-08-10 11:13:55] [INFO   ]   Duration:     3.9s
+[2026-08-10 11:13:55] [INFO   ] ======================================================================

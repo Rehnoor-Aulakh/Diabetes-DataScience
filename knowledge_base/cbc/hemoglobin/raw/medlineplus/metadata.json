@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000055",
+  "topic": "hemoglobin",
+  "topic_title": "Hemoglobin",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+  "scraped_at": "2026-08-10T11:34:21.921350+00:00",
+  "word_count": 1178,
+  "content_hash": "sha256:575f2409064cb9b99f6adca9242f01c88aeb28f3063e2a904499ced225e6073b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"48e64c9c007e4186f1bf6854079a5f36\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:39 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

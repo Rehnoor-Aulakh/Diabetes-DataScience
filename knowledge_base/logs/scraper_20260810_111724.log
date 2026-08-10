@@ -1,0 +1,24 @@
+[2026-08-10 11:17:24] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111724.log
+[2026-08-10 11:17:24] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:17:24] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:17:24] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:17:24] [INFO   ] [KB-000010] [ada] SEARCHING — Query: Understanding A1C
+[2026-08-10 11:17:25] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Understanding+A1C
+[2026-08-10 11:17:25] [INFO   ] [KB-000010] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:25] [INFO   ] [KB-000010] [mayo] SEARCHING — Query: A1C test
+[2026-08-10 11:17:25] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=A1C+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=A1C+test
+[2026-08-10 11:17:25] [INFO   ] [KB-000010] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:25] [INFO   ] [KB-000010] [medlineplus] SEARCHING — Query: Hemoglobin A1C HbA1c test
+[2026-08-10 11:17:26] [INFO   ] [KB-000010] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+[2026-08-10 11:17:27] [INFO   ] [KB-000010] [medlineplus] EXTRACTING
+[2026-08-10 11:17:27] [INFO   ] [KB-000010] [medlineplus] CONVERTING
+[2026-08-10 11:17:27] [INFO   ] [KB-000010] [medlineplus] VALIDATING
+[2026-08-10 11:17:27] [INFO   ] [KB-000010] [medlineplus] COMPLETED — v4 (unchanged) words=1542 duration=1.8s
+[2026-08-10 11:17:27] [INFO   ] ======================================================================
+[2026-08-10 11:17:27] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:17:27] [INFO   ]   Total jobs:   3
+[2026-08-10 11:17:27] [INFO   ]   Scraped:      1
+[2026-08-10 11:17:27] [INFO   ]   Skipped:      0
+[2026-08-10 11:17:27] [INFO   ]   Failed:       2
+[2026-08-10 11:17:27] [INFO   ]   Duration:     2.6s
+[2026-08-10 11:17:27] [INFO   ] ======================================================================

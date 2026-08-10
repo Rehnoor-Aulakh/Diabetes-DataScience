@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000006",
+  "topic": "insulin",
+  "topic_title": "Insulin",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/insulin-in-blood/",
+  "scraped_at": "2026-08-10T11:32:53.898612+00:00",
+  "word_count": 1581,
+  "content_hash": "sha256:585413d338f8bf4568814645c9e0b74777c09f3b4df9e901ee50c81214b92540",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"09d2dae2612dab31f23096f5336f5862\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

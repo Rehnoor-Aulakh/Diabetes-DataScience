@@ -1,0 +1,27 @@
+[2026-08-10 11:18:21] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111821.log
+[2026-08-10 11:18:21] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:18:21] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:18:21] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:18:21] [INFO   ] [KB-000063] [cleveland] SEARCHING — Query: TSH test thyroid function
+[2026-08-10 11:18:21] [INFO   ] [KB-000063] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 11:18:21] [INFO   ] [KB-000063] [cleveland] EXTRACTING
+[2026-08-10 11:18:21] [INFO   ] [KB-000063] [cleveland] CONVERTING
+[2026-08-10 11:18:21] [INFO   ] [KB-000063] [cleveland] VALIDATING
+[2026-08-10 11:18:22] [INFO   ] [KB-000063] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:18:22] [INFO   ] [KB-000063] [mayo] SEARCHING — Query: TSH test thyroid stimulating hormone
+[2026-08-10 11:18:22] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=TSH+test+thyroid+stimulating+hormone': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=TSH+test+thyroid+stimulating+hormone
+[2026-08-10 11:18:22] [INFO   ] [KB-000063] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:18:22] [INFO   ] [KB-000063] [medlineplus] SEARCHING — Query: TSH test thyroid
+[2026-08-10 11:18:23] [INFO   ] [KB-000063] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/
+[2026-08-10 11:18:24] [INFO   ] [KB-000063] [medlineplus] EXTRACTING
+[2026-08-10 11:18:24] [INFO   ] [KB-000063] [medlineplus] CONVERTING
+[2026-08-10 11:18:24] [INFO   ] [KB-000063] [medlineplus] VALIDATING
+[2026-08-10 11:18:25] [INFO   ] [KB-000063] [medlineplus] COMPLETED — v1 (new) words=1638 duration=2.8s
+[2026-08-10 11:18:25] [INFO   ] ======================================================================
+[2026-08-10 11:18:25] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:18:25] [INFO   ]   Total jobs:   3
+[2026-08-10 11:18:25] [INFO   ]   Scraped:      1
+[2026-08-10 11:18:25] [INFO   ]   Skipped:      0
+[2026-08-10 11:18:25] [INFO   ]   Failed:       2
+[2026-08-10 11:18:25] [INFO   ]   Duration:     3.9s
+[2026-08-10 11:18:25] [INFO   ] ======================================================================

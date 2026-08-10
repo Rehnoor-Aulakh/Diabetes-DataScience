@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000065",
+  "topic": "t4",
+  "topic_title": "T4 (Thyroxine)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+  "scraped_at": "2026-08-10T11:35:20.095418+00:00",
+  "word_count": 1859,
+  "content_hash": "sha256:728c676b008e292d8a4feabee621e6aec617ce3bb05e636682a524fca1e98d4a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"a9cbfc9d10074ae5e88346fcef7cc565\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:48 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+[2026-08-10 11:17:10] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111710.log
+[2026-08-10 11:17:10] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:17:10] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:17:10] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:17:10] [INFO   ] [KB-000001] [ada] SEARCHING — Query: What is diabetes
+[2026-08-10 11:17:12] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=What+is+diabetes
+[2026-08-10 11:17:12] [INFO   ] [KB-000001] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:12] [INFO   ] [KB-000001] [cdc] SEARCHING — Query: About diabetes basics
+[2026-08-10 11:17:13] [WARNING] No valid article links found on search page: https://search.cdc.gov/search/?query=About+diabetes+basics
+[2026-08-10 11:17:13] [INFO   ] [KB-000001] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:13] [INFO   ] [KB-000001] [mayo] SEARCHING — Query: Diabetes overview symptoms causes
+[2026-08-10 11:17:13] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Diabetes+overview+symptoms+causes': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Diabetes+overview+symptoms+causes
+[2026-08-10 11:17:13] [INFO   ] [KB-000001] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:13] [INFO   ] ======================================================================
+[2026-08-10 11:17:13] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:17:13] [INFO   ]   Total jobs:   3
+[2026-08-10 11:17:13] [INFO   ]   Scraped:      0
+[2026-08-10 11:17:13] [INFO   ]   Skipped:      0
+[2026-08-10 11:17:13] [INFO   ]   Failed:       3
+[2026-08-10 11:17:13] [INFO   ]   Duration:     2.8s
+[2026-08-10 11:17:13] [INFO   ] ======================================================================

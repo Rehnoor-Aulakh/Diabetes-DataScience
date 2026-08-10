@@ -1,0 +1,21 @@
+[2026-08-10 11:32:32] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_113232.log
+[2026-08-10 11:32:32] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:32:32] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:32:32] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:32:32] [INFO   ] [KB-000012] [ada] SEARCHING — Query: Fasting blood glucose test
+[2026-08-10 11:32:32] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Fasting+blood+glucose+test
+[2026-08-10 11:32:32] [INFO   ] [KB-000012] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:32:32] [INFO   ] [KB-000012] [cdc] SEARCHING — Query: Diabetes testing fasting blood sugar
+[2026-08-10 11:32:33] [WARNING] No valid article links found on search page: https://search.cdc.gov/search/?query=Diabetes+testing+fasting+blood+sugar
+[2026-08-10 11:32:33] [INFO   ] [KB-000012] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 11:32:33] [INFO   ] [KB-000012] [mayo] SEARCHING — Query: Blood sugar test fasting glucose
+[2026-08-10 11:32:33] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Blood+sugar+test+fasting+glucose': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Blood+sugar+test+fasting+glucose
+[2026-08-10 11:32:33] [INFO   ] [KB-000012] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:32:33] [INFO   ] ======================================================================
+[2026-08-10 11:32:33] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:32:33] [INFO   ]   Total jobs:   3
+[2026-08-10 11:32:33] [INFO   ]   Scraped:      0
+[2026-08-10 11:32:33] [INFO   ]   Skipped:      0
+[2026-08-10 11:32:33] [INFO   ]   Failed:       3
+[2026-08-10 11:32:33] [INFO   ]   Duration:     1.0s
+[2026-08-10 11:32:33] [INFO   ] ======================================================================

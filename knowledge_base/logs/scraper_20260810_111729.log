@@ -1,0 +1,24 @@
+[2026-08-10 11:17:29] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111729.log
+[2026-08-10 11:17:29] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:17:29] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:17:29] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:17:29] [INFO   ] [KB-000013] [ada] SEARCHING — Query: Random blood glucose test diabetes
+[2026-08-10 11:17:30] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Random+blood+glucose+test+diabetes
+[2026-08-10 11:17:30] [INFO   ] [KB-000013] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:30] [INFO   ] [KB-000013] [mayo] SEARCHING — Query: Random blood sugar test
+[2026-08-10 11:17:30] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Random+blood+sugar+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Random+blood+sugar+test
+[2026-08-10 11:17:30] [INFO   ] [KB-000013] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:30] [INFO   ] [KB-000013] [medlineplus] SEARCHING — Query: Blood glucose test random
+[2026-08-10 11:17:31] [INFO   ] [KB-000013] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/article/003482.htm
+[2026-08-10 11:17:31] [INFO   ] [KB-000013] [medlineplus] EXTRACTING
+[2026-08-10 11:17:31] [INFO   ] [KB-000013] [medlineplus] CONVERTING
+[2026-08-10 11:17:31] [INFO   ] [KB-000013] [medlineplus] VALIDATING
+[2026-08-10 11:17:31] [INFO   ] [KB-000013] [medlineplus] COMPLETED — v1 (unchanged) words=1195 duration=1.5s
+[2026-08-10 11:17:31] [INFO   ] ======================================================================
+[2026-08-10 11:17:31] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:17:31] [INFO   ]   Total jobs:   3
+[2026-08-10 11:17:31] [INFO   ]   Scraped:      1
+[2026-08-10 11:17:31] [INFO   ]   Skipped:      0
+[2026-08-10 11:17:31] [INFO   ]   Failed:       2
+[2026-08-10 11:17:31] [INFO   ]   Duration:     2.4s
+[2026-08-10 11:17:31] [INFO   ] ======================================================================

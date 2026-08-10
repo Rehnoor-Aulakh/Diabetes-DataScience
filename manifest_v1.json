@@ -1,10 +1,9 @@
 {
   "manifest_version": "1.1",
   "project": "Certus Diagnostics Medical Knowledge Base",
-  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic — all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
+  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic \u2014 all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
   "created": "2024-01-01",
   "last_updated": "2024-01-15",
-
   "defaults": {
     "language": "en",
     "file_extension": ".md",
@@ -19,7 +18,6 @@
     "default_reading_level": "patient",
     "default_refresh_interval": "2 years"
   },
-
   "source_priority": [
     "ada",
     "niddk",
@@ -28,7 +26,6 @@
     "cleveland",
     "medlineplus"
   ],
-
   "corpus_stages": [
     "pending",
     "scraped",
@@ -38,7 +35,6 @@
     "verified",
     "ready"
   ],
-
   "article_versioning": {
     "enabled": true,
     "naming_convention": "{source}_v{version}.md",
@@ -56,18 +52,16 @@
       "topic_id": ""
     }
   },
-
   "summary_generation": {
     "enabled": true,
     "output_file": "summary.md",
     "description": "After all sources are scraped for a topic, generate a merged summary.md that synthesizes the best information from all sources. This becomes the Layer 2 canonical knowledge document and the primary retrieval target for RAG.",
     "layers": {
       "layer_1_raw": "Raw scraped documents. Never modify. Ground truth.",
-      "layer_2_canonical": "summary.md — generated from all sources. Primary retrieval document.",
+      "layer_2_canonical": "summary.md \u2014 generated from all sources. Primary retrieval document.",
       "layer_3_vectors": "Chunked and embedded from Layer 2. Stored in vector database."
     }
   },
-
   "document_id_scheme": {
     "prefix": "KB",
     "format": "KB-XXXXXX",
@@ -80,7 +74,6 @@
       "chunk_index": 0
     }
   },
-
   "sources": {
     "ada": {
       "name": "American Diabetes Association",
@@ -96,7 +89,7 @@
       "search_url_template": "https://www.niddk.nih.gov/search?q={query}",
       "enabled": true,
       "evidence_tier": 1,
-      "notes": "NIH institute — authoritative on diabetes, kidney, liver, and digestive diseases."
+      "notes": "NIH institute \u2014 authoritative on diabetes, kidney, liver, and digestive diseases."
     },
     "mayo": {
       "name": "Mayo Clinic",
@@ -131,16 +124,12 @@
       "notes": "Public health authority. Strong on prevention, epidemiology, and lifestyle guidance."
     }
   },
-
   "modules": [
-
     {
       "module": "diabetes",
       "folder": "diabetes",
-      "description": "Diabetes fundamentals — types, pathophysiology, and core concepts.",
-
+      "description": "Diabetes fundamentals \u2014 types, pathophysiology, and core concepts.",
       "topics": [
-
         {
           "id": "diabetes_overview",
           "document_id": "KB-000001",
@@ -150,8 +139,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetes", "blood sugar", "glucose", "diabetes mellitus", "chronic disease"],
-          "clinical_tags": ["diabetes", "endocrinology", "metabolic", "chronic disease", "blood sugar"],
+          "keywords": [
+            "diabetes",
+            "blood sugar",
+            "glucose",
+            "diabetes mellitus",
+            "chronic disease"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "endocrinology",
+            "metabolic",
+            "chronic disease",
+            "blood sugar"
+          ],
           "related_tests": [
             "FASTING BLOOD SUGAR (FBS)",
             "HbA1c",
@@ -178,9 +179,15 @@
             "cdc": "About diabetes basics",
             "mayo": "Diabetes overview symptoms causes"
           },
-          "output_directory": "knowledge_base/diabetes/diabetes_overview"
+          "output_directory": "knowledge_base/diabetes/diabetes_overview",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/7104-diabetes",
+            "cdc": "https://www.cdc.gov/diabetes/basics/index.html",
+            "ada": "https://diabetes.org/about-diabetes",
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"
+          }
         },
-
         {
           "id": "type1_diabetes",
           "document_id": "KB-000002",
@@ -190,8 +197,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["type 1 diabetes", "autoimmune diabetes", "insulin dependent", "juvenile diabetes", "T1D"],
-          "clinical_tags": ["diabetes", "type 1", "autoimmune", "endocrinology", "insulin dependent"],
+          "keywords": [
+            "type 1 diabetes",
+            "autoimmune diabetes",
+            "insulin dependent",
+            "juvenile diabetes",
+            "T1D"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "type 1",
+            "autoimmune",
+            "endocrinology",
+            "insulin dependent"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -219,9 +238,15 @@
             "niddk": "What is type 1 diabetes",
             "mayo": "Type 1 diabetes symptoms causes"
           },
-          "output_directory": "knowledge_base/diabetes/type1_diabetes"
+          "output_directory": "knowledge_base/diabetes/type1_diabetes",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/21500-type-1-diabetes",
+            "cdc": "https://www.cdc.gov/diabetes/basics/what-is-type-1-diabetes.html",
+            "ada": "https://diabetes.org/about-diabetes/type-1",
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes"
+          }
         },
-
         {
           "id": "type2_diabetes",
           "document_id": "KB-000003",
@@ -231,8 +256,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["type 2 diabetes", "insulin resistance", "non-insulin dependent", "adult onset diabetes", "T2D"],
-          "clinical_tags": ["diabetes", "type 2", "insulin resistance", "endocrinology", "metabolic syndrome"],
+          "keywords": [
+            "type 2 diabetes",
+            "insulin resistance",
+            "non-insulin dependent",
+            "adult onset diabetes",
+            "T2D"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "type 2",
+            "insulin resistance",
+            "endocrinology",
+            "metabolic syndrome"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -260,9 +297,13 @@
             "cdc": "Type 2 diabetes basics",
             "mayo": "Type 2 diabetes symptoms causes treatment"
           },
-          "output_directory": "knowledge_base/diabetes/type2_diabetes"
+          "output_directory": "knowledge_base/diabetes/type2_diabetes",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/type-2",
+            "cdc": "https://www.cdc.gov/diabetes/basics/type2.html",
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes"
+          }
         },
-
         {
           "id": "prediabetes",
           "document_id": "KB-000004",
@@ -272,8 +313,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["prediabetes", "impaired glucose tolerance", "impaired fasting glucose", "borderline diabetes"],
-          "clinical_tags": ["diabetes", "prediabetes", "metabolic", "prevention", "endocrinology"],
+          "keywords": [
+            "prediabetes",
+            "impaired glucose tolerance",
+            "impaired fasting glucose",
+            "borderline diabetes"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "prediabetes",
+            "metabolic",
+            "prevention",
+            "endocrinology"
+          ],
           "related_tests": [
             "FASTING BLOOD SUGAR (FBS)",
             "HbA1c",
@@ -300,9 +352,13 @@
             "ada": "Understanding prediabetes",
             "mayo": "Prediabetes symptoms causes"
           },
-          "output_directory": "knowledge_base/diabetes/prediabetes"
+          "output_directory": "knowledge_base/diabetes/prediabetes",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/prediabetes",
+            "cdc": "https://www.cdc.gov/diabetes/basics/prediabetes.html",
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+          }
         },
-
         {
           "id": "gestational_diabetes",
           "document_id": "KB-000005",
@@ -312,8 +368,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["gestational diabetes", "pregnancy diabetes", "GDM", "glucose tolerance pregnancy"],
-          "clinical_tags": ["diabetes", "gestational", "pregnancy", "endocrinology", "obstetrics"],
+          "keywords": [
+            "gestational diabetes",
+            "pregnancy diabetes",
+            "GDM",
+            "glucose tolerance pregnancy"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "gestational",
+            "pregnancy",
+            "endocrinology",
+            "obstetrics"
+          ],
           "related_tests": [
             "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
             "FASTING BLOOD SUGAR (FBS)",
@@ -339,7 +406,6 @@
           },
           "output_directory": "knowledge_base/diabetes/gestational_diabetes"
         },
-
         {
           "id": "insulin",
           "document_id": "KB-000006",
@@ -349,8 +415,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["insulin", "insulin hormone", "pancreas insulin", "insulin function"],
-          "clinical_tags": ["diabetes", "endocrinology", "hormone", "pancreas", "metabolism"],
+          "keywords": [
+            "insulin",
+            "insulin hormone",
+            "pancreas insulin",
+            "insulin function"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "endocrinology",
+            "hormone",
+            "pancreas",
+            "metabolism"
+          ],
           "related_tests": [
             "INSULIN - FASTING",
             "C-PEPTIDE",
@@ -376,9 +453,11 @@
             "medlineplus": "Insulin blood test",
             "mayo": "Insulin and diabetes"
           },
-          "output_directory": "knowledge_base/diabetes/insulin"
+          "output_directory": "knowledge_base/diabetes/insulin",
+          "direct_urls": {
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+          }
         },
-
         {
           "id": "insulin_resistance",
           "document_id": "KB-000007",
@@ -388,8 +467,18 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["insulin resistance", "metabolic syndrome", "insulin sensitivity"],
-          "clinical_tags": ["diabetes", "insulin resistance", "metabolic syndrome", "endocrinology", "obesity"],
+          "keywords": [
+            "insulin resistance",
+            "metabolic syndrome",
+            "insulin sensitivity"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "insulin resistance",
+            "metabolic syndrome",
+            "endocrinology",
+            "obesity"
+          ],
           "related_tests": [
             "INSULIN - FASTING",
             "FASTING BLOOD SUGAR (FBS)",
@@ -417,9 +506,11 @@
             "ada": "Insulin resistance",
             "mayo": "Insulin resistance metabolic syndrome"
           },
-          "output_directory": "knowledge_base/diabetes/insulin_resistance"
+          "output_directory": "knowledge_base/diabetes/insulin_resistance",
+          "direct_urls": {
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+          }
         },
-
         {
           "id": "pancreas",
           "document_id": "KB-000008",
@@ -429,8 +520,21 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["pancreas", "beta cells", "islets of Langerhans", "insulin production", "alpha cells", "glucagon"],
-          "clinical_tags": ["diabetes", "endocrinology", "anatomy", "pancreas", "beta cells"],
+          "keywords": [
+            "pancreas",
+            "beta cells",
+            "islets of Langerhans",
+            "insulin production",
+            "alpha cells",
+            "glucagon"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "endocrinology",
+            "anatomy",
+            "pancreas",
+            "beta cells"
+          ],
           "related_tests": [
             "C-PEPTIDE",
             "INSULIN - FASTING",
@@ -457,7 +561,6 @@
           },
           "output_directory": "knowledge_base/diabetes/pancreas"
         },
-
         {
           "id": "glucose_metabolism",
           "document_id": "KB-000009",
@@ -467,8 +570,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["blood glucose regulation", "glucose metabolism", "gluconeogenesis", "glycogenolysis", "glycogen"],
-          "clinical_tags": ["diabetes", "endocrinology", "metabolism", "physiology", "glucose"],
+          "keywords": [
+            "blood glucose regulation",
+            "glucose metabolism",
+            "gluconeogenesis",
+            "glycogenolysis",
+            "glycogen"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "endocrinology",
+            "metabolism",
+            "physiology",
+            "glucose"
+          ],
           "related_tests": [
             "FASTING BLOOD SUGAR (FBS)",
             "RANDOM BLOOD SUGAR",
@@ -499,14 +614,11 @@
         }
       ]
     },
-
     {
       "module": "diagnosis",
       "folder": "diagnosis",
-      "description": "Diabetes diagnostic tests — blood glucose, HbA1c, and supporting biomarkers.",
-
+      "description": "Diabetes diagnostic tests \u2014 blood glucose, HbA1c, and supporting biomarkers.",
       "topics": [
-
         {
           "id": "hba1c",
           "document_id": "KB-000010",
@@ -516,8 +628,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["HbA1c", "A1C", "glycated hemoglobin", "hemoglobin A1c", "glycosylated hemoglobin"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "endocrinology", "glycemic control"],
+          "keywords": [
+            "HbA1c",
+            "A1C",
+            "glycated hemoglobin",
+            "hemoglobin A1c",
+            "glycosylated hemoglobin"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "endocrinology",
+            "glycemic control"
+          ],
           "related_tests": [
             "HbA1c",
             "ESTIMATED AVERAGE GLUCOSE (eAG)",
@@ -543,9 +667,16 @@
             "mayo": "A1C test",
             "medlineplus": "Hemoglobin A1C HbA1c test"
           },
-          "output_directory": "knowledge_base/diagnosis/hba1c"
+          "output_directory": "knowledge_base/diagnosis/hba1c",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/9731-a1c",
+            "ada": "https://diabetes.org/about-diabetes/a1c",
+            "cdc": "https://www.cdc.gov/diabetes/managing/managing-blood-sugar/a1c.html",
+            "niddk": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+            "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/"
+          }
         },
-
         {
           "id": "average_blood_glucose",
           "document_id": "KB-000011",
@@ -555,8 +686,18 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["average blood glucose", "estimated average glucose", "eAG", "mean glucose"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "glycemic control"],
+          "keywords": [
+            "average blood glucose",
+            "estimated average glucose",
+            "eAG",
+            "mean glucose"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "glycemic control"
+          ],
           "related_tests": [
             "ESTIMATED AVERAGE GLUCOSE (eAG)",
             "HbA1c",
@@ -581,7 +722,6 @@
           },
           "output_directory": "knowledge_base/diagnosis/average_blood_glucose"
         },
-
         {
           "id": "fasting_blood_glucose",
           "document_id": "KB-000012",
@@ -591,8 +731,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["fasting blood glucose", "fasting blood sugar", "FBG", "fasting plasma glucose", "FPG"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "fasting", "glucose"],
+          "keywords": [
+            "fasting blood glucose",
+            "fasting blood sugar",
+            "FBG",
+            "fasting plasma glucose",
+            "FPG"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "fasting",
+            "glucose"
+          ],
           "related_tests": [
             "FASTING BLOOD SUGAR (FBS)",
             "FASTING PLASMA GLUCOSE (FPG)"
@@ -617,9 +769,11 @@
             "cdc": "Diabetes testing fasting blood sugar",
             "mayo": "Blood sugar test fasting glucose"
           },
-          "output_directory": "knowledge_base/diagnosis/fasting_blood_glucose"
+          "output_directory": "knowledge_base/diagnosis/fasting_blood_glucose",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/blood-glucose-test/"
+          }
         },
-
         {
           "id": "random_blood_glucose",
           "document_id": "KB-000013",
@@ -629,8 +783,17 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["random blood glucose", "random blood sugar", "casual plasma glucose"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "glucose"],
+          "keywords": [
+            "random blood glucose",
+            "random blood sugar",
+            "casual plasma glucose"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "glucose"
+          ],
           "related_tests": [
             "RANDOM BLOOD SUGAR",
             "BLOOD GLUCOSE - RANDOM"
@@ -653,9 +816,11 @@
             "medlineplus": "Blood glucose test random",
             "mayo": "Random blood sugar test"
           },
-          "output_directory": "knowledge_base/diagnosis/random_blood_glucose"
+          "output_directory": "knowledge_base/diagnosis/random_blood_glucose",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/blood-glucose-test/"
+          }
         },
-
         {
           "id": "ogtt",
           "document_id": "KB-000014",
@@ -665,8 +830,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["OGTT", "oral glucose tolerance test", "glucose tolerance", "2-hour glucose"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "glucose tolerance", "prediabetes"],
+          "keywords": [
+            "OGTT",
+            "oral glucose tolerance test",
+            "glucose tolerance",
+            "2-hour glucose"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "glucose tolerance",
+            "prediabetes"
+          ],
           "related_tests": [
             "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
             "2-HOUR PLASMA GLUCOSE"
@@ -690,9 +866,11 @@
             "mayo": "Glucose tolerance test",
             "medlineplus": "OGTT oral glucose tolerance test"
           },
-          "output_directory": "knowledge_base/diagnosis/ogtt"
+          "output_directory": "knowledge_base/diagnosis/ogtt",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/glucose-tolerance-test/"
+          }
         },
-
         {
           "id": "c_peptide",
           "document_id": "KB-000015",
@@ -702,8 +880,18 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["C-peptide", "connecting peptide", "insulin secretion marker"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "insulin", "pancreas"],
+          "keywords": [
+            "C-peptide",
+            "connecting peptide",
+            "insulin secretion marker"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "insulin",
+            "pancreas"
+          ],
           "related_tests": [
             "C-PEPTIDE",
             "INSULIN - FASTING"
@@ -728,7 +916,6 @@
           },
           "output_directory": "knowledge_base/diagnosis/c_peptide"
         },
-
         {
           "id": "glucose_monitoring",
           "document_id": "KB-000016",
@@ -738,8 +925,22 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "1 year",
-          "keywords": ["glucose monitoring", "blood sugar monitoring", "CGM", "continuous glucose monitor", "self-monitoring blood glucose", "SMBG", "glucometer"],
-          "clinical_tags": ["diabetes", "monitoring", "technology", "self-management", "CGM"],
+          "keywords": [
+            "glucose monitoring",
+            "blood sugar monitoring",
+            "CGM",
+            "continuous glucose monitor",
+            "self-monitoring blood glucose",
+            "SMBG",
+            "glucometer"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "monitoring",
+            "technology",
+            "self-management",
+            "CGM"
+          ],
           "related_tests": [
             "FASTING BLOOD SUGAR (FBS)",
             "RANDOM BLOOD SUGAR",
@@ -766,7 +967,6 @@
           },
           "output_directory": "knowledge_base/diagnosis/glucose_monitoring"
         },
-
         {
           "id": "postprandial_glucose",
           "document_id": "KB-000017",
@@ -776,8 +976,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["postprandial glucose", "after meal blood sugar", "2-hour postprandial", "PPG"],
-          "clinical_tags": ["diabetes", "diagnosis", "blood test", "postprandial", "glucose"],
+          "keywords": [
+            "postprandial glucose",
+            "after meal blood sugar",
+            "2-hour postprandial",
+            "PPG"
+          ],
+          "clinical_tags": [
+            "diabetes",
+            "diagnosis",
+            "blood test",
+            "postprandial",
+            "glucose"
+          ],
           "related_tests": [
             "POST-PRANDIAL BLOOD SUGAR (PPBS)",
             "2-HOUR POST-PRANDIAL GLUCOSE"
@@ -805,14 +1016,11 @@
         }
       ]
     },
-
     {
       "module": "kidney",
       "folder": "kidney",
-      "description": "Kidney health biomarkers — renal function tests critical for diabetes management.",
-
+      "description": "Kidney health biomarkers \u2014 renal function tests critical for diabetes management.",
       "topics": [
-
         {
           "id": "creatinine",
           "document_id": "KB-000018",
@@ -822,8 +1030,20 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["creatinine", "serum creatinine", "blood creatinine", "kidney function test"],
-          "clinical_tags": ["kidney", "renal", "blood test", "nephrology", "diabetes", "ckd"],
+          "keywords": [
+            "creatinine",
+            "serum creatinine",
+            "blood creatinine",
+            "kidney function test"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "blood test",
+            "nephrology",
+            "diabetes",
+            "ckd"
+          ],
           "related_tests": [
             "CREATININE - SERUM",
             "CREATININE - URINE",
@@ -850,9 +1070,13 @@
             "mayo": "Creatinine test",
             "cleveland": "Creatinine blood test kidney function"
           },
-          "output_directory": "knowledge_base/kidney/creatinine"
+          "output_directory": "knowledge_base/kidney/creatinine",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/16728-creatinine-test",
+            "medlineplus": "https://medlineplus.gov/lab-tests/creatinine-test/"
+          }
         },
-
         {
           "id": "egfr",
           "document_id": "KB-000019",
@@ -862,8 +1086,20 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["eGFR", "estimated glomerular filtration rate", "GFR", "kidney filtration rate"],
-          "clinical_tags": ["kidney", "renal", "blood test", "nephrology", "ckd", "filtration"],
+          "keywords": [
+            "eGFR",
+            "estimated glomerular filtration rate",
+            "GFR",
+            "kidney filtration rate"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "blood test",
+            "nephrology",
+            "ckd",
+            "filtration"
+          ],
           "related_tests": [
             "EST. GLOMERULAR FILTRATION RATE (eGFR)",
             "CREATININE - SERUM"
@@ -887,9 +1123,13 @@
             "cleveland": "eGFR test kidney function",
             "mayo": "Glomerular filtration rate GFR test"
           },
-          "output_directory": "knowledge_base/kidney/egfr"
+          "output_directory": "knowledge_base/kidney/egfr",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/glomerular-filtration-rate/about/pac-20384643",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22562-estimated-glomerular-filtration-rate-egfr",
+            "medlineplus": "https://medlineplus.gov/lab-tests/estimated-glomerular-filtration-rate-egfr/"
+          }
         },
-
         {
           "id": "bun",
           "document_id": "KB-000020",
@@ -899,8 +1139,19 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["BUN", "blood urea nitrogen", "urea nitrogen", "kidney function"],
-          "clinical_tags": ["kidney", "renal", "blood test", "nephrology", "urea"],
+          "keywords": [
+            "BUN",
+            "blood urea nitrogen",
+            "urea nitrogen",
+            "kidney function"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "blood test",
+            "nephrology",
+            "urea"
+          ],
           "related_tests": [
             "BUN (BLOOD UREA NITROGEN)",
             "CREATININE - SERUM",
@@ -924,9 +1175,11 @@
             "cleveland": "Blood urea nitrogen BUN test",
             "mayo": "Blood urea nitrogen test"
           },
-          "output_directory": "knowledge_base/kidney/bun"
+          "output_directory": "knowledge_base/kidney/bun",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/"
+          }
         },
-
         {
           "id": "urea",
           "document_id": "KB-000021",
@@ -936,8 +1189,17 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["urea", "blood urea", "urea blood test"],
-          "clinical_tags": ["kidney", "renal", "blood test", "nephrology"],
+          "keywords": [
+            "urea",
+            "blood urea",
+            "urea blood test"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "blood test",
+            "nephrology"
+          ],
           "related_tests": [
             "UREA",
             "BUN (BLOOD UREA NITROGEN)"
@@ -962,7 +1224,6 @@
           },
           "output_directory": "knowledge_base/kidney/urea"
         },
-
         {
           "id": "urine_creatinine",
           "document_id": "KB-000022",
@@ -972,8 +1233,18 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["urine creatinine", "creatinine clearance", "24-hour urine creatinine"],
-          "clinical_tags": ["kidney", "renal", "urine test", "nephrology", "creatinine clearance"],
+          "keywords": [
+            "urine creatinine",
+            "creatinine clearance",
+            "24-hour urine creatinine"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "urine test",
+            "nephrology",
+            "creatinine clearance"
+          ],
           "related_tests": [
             "CREATININE - URINE",
             "CREATININE CLEARANCE",
@@ -999,7 +1270,6 @@
           },
           "output_directory": "knowledge_base/kidney/urine_creatinine"
         },
-
         {
           "id": "microalbumin",
           "document_id": "KB-000023",
@@ -1009,8 +1279,21 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["microalbumin", "urine albumin", "microalbuminuria", "albumin urine test", "proteinuria"],
-          "clinical_tags": ["kidney", "renal", "urine test", "diabetes", "nephrology", "microvascular"],
+          "keywords": [
+            "microalbumin",
+            "urine albumin",
+            "microalbuminuria",
+            "albumin urine test",
+            "proteinuria"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "urine test",
+            "diabetes",
+            "nephrology",
+            "microvascular"
+          ],
           "related_tests": [
             "MICROALBUMIN - URINE",
             "URINE ALBUMIN",
@@ -1035,9 +1318,11 @@
             "ada": "Urine albumin test diabetes kidney",
             "mayo": "Microalbumin test urine albumin"
           },
-          "output_directory": "knowledge_base/kidney/microalbumin"
+          "output_directory": "knowledge_base/kidney/microalbumin",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+          }
         },
-
         {
           "id": "albumin_creatinine_ratio",
           "document_id": "KB-000024",
@@ -1047,8 +1332,20 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["albumin creatinine ratio", "ACR", "UACR", "urine albumin creatinine ratio"],
-          "clinical_tags": ["kidney", "renal", "urine test", "diabetes", "nephrology", "ckd"],
+          "keywords": [
+            "albumin creatinine ratio",
+            "ACR",
+            "UACR",
+            "urine albumin creatinine ratio"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "urine test",
+            "diabetes",
+            "nephrology",
+            "ckd"
+          ],
           "related_tests": [
             "ALBUMIN/CREATININE RATIO (ACR)",
             "URINE ALBUMIN/CREATININE RATIO (UACR)",
@@ -1073,9 +1370,11 @@
             "mayo": "Albumin creatinine ratio urine test",
             "ada": "UACR albumin creatinine ratio diabetes"
           },
-          "output_directory": "knowledge_base/kidney/albumin_creatinine_ratio"
+          "output_directory": "knowledge_base/kidney/albumin_creatinine_ratio",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+          }
         },
-
         {
           "id": "diabetic_kidney_disease",
           "document_id": "KB-000025",
@@ -1085,8 +1384,22 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetic kidney disease", "diabetic nephropathy", "chronic kidney disease diabetes", "CKD", "kidney damage diabetes"],
-          "clinical_tags": ["kidney", "renal", "diabetes", "nephrology", "ckd", "microvascular", "complication"],
+          "keywords": [
+            "diabetic kidney disease",
+            "diabetic nephropathy",
+            "chronic kidney disease diabetes",
+            "CKD",
+            "kidney damage diabetes"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "diabetes",
+            "nephrology",
+            "ckd",
+            "microvascular",
+            "complication"
+          ],
           "related_tests": [
             "CREATININE - SERUM",
             "EST. GLOMERULAR FILTRATION RATE (eGFR)",
@@ -1114,9 +1427,12 @@
             "niddk": "Diabetic kidney disease",
             "mayo": "Diabetic nephropathy kidney disease"
           },
-          "output_directory": "knowledge_base/kidney/diabetic_kidney_disease"
+          "output_directory": "knowledge_base/kidney/diabetic_kidney_disease",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/managing/problems/kidney-disease.html",
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease"
+          }
         },
-
         {
           "id": "uric_acid",
           "document_id": "KB-000026",
@@ -1126,8 +1442,20 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["uric acid", "urate", "hyperuricemia", "gout", "kidney stones uric acid"],
-          "clinical_tags": ["kidney", "renal", "blood test", "gout", "metabolic"],
+          "keywords": [
+            "uric acid",
+            "urate",
+            "hyperuricemia",
+            "gout",
+            "kidney stones uric acid"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "blood test",
+            "gout",
+            "metabolic"
+          ],
           "related_tests": [
             "URIC ACID - SERUM",
             "URIC ACID - URINE"
@@ -1152,7 +1480,6 @@
           },
           "output_directory": "knowledge_base/kidney/uric_acid"
         },
-
         {
           "id": "electrolytes",
           "document_id": "KB-000027",
@@ -1162,8 +1489,21 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["electrolytes", "sodium", "potassium", "chloride", "electrolyte panel", "basic metabolic panel"],
-          "clinical_tags": ["kidney", "renal", "blood test", "electrolytes", "metabolic"],
+          "keywords": [
+            "electrolytes",
+            "sodium",
+            "potassium",
+            "chloride",
+            "electrolyte panel",
+            "basic metabolic panel"
+          ],
+          "clinical_tags": [
+            "kidney",
+            "renal",
+            "blood test",
+            "electrolytes",
+            "metabolic"
+          ],
           "related_tests": [
             "SODIUM",
             "POTASSIUM",
@@ -1194,14 +1534,11 @@
         }
       ]
     },
-
     {
       "module": "liver",
       "folder": "liver",
-      "description": "Liver health biomarkers — liver function tests and associated conditions relevant to metabolic disease.",
-
+      "description": "Liver health biomarkers \u2014 liver function tests and associated conditions relevant to metabolic disease.",
       "topics": [
-
         {
           "id": "alt",
           "document_id": "KB-000028",
@@ -1211,8 +1548,20 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["ALT", "SGPT", "alanine aminotransferase", "alanine transaminase", "liver enzyme"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "liver enzyme", "metabolic"],
+          "keywords": [
+            "ALT",
+            "SGPT",
+            "alanine aminotransferase",
+            "alanine transaminase",
+            "liver enzyme"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "liver enzyme",
+            "metabolic"
+          ],
           "related_tests": [
             "ALT (SGPT)",
             "ALANINE AMINOTRANSFERASE",
@@ -1239,7 +1588,6 @@
           },
           "output_directory": "knowledge_base/liver/alt"
         },
-
         {
           "id": "ast",
           "document_id": "KB-000029",
@@ -1249,8 +1597,20 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["AST", "SGOT", "aspartate aminotransferase", "aspartate transaminase", "liver enzyme"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "liver enzyme", "cardiac"],
+          "keywords": [
+            "AST",
+            "SGOT",
+            "aspartate aminotransferase",
+            "aspartate transaminase",
+            "liver enzyme"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "liver enzyme",
+            "cardiac"
+          ],
           "related_tests": [
             "AST (SGOT)",
             "ASPARTATE AMINOTRANSFERASE",
@@ -1277,7 +1637,6 @@
           },
           "output_directory": "knowledge_base/liver/ast"
         },
-
         {
           "id": "bilirubin",
           "document_id": "KB-000030",
@@ -1287,8 +1646,21 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["bilirubin", "total bilirubin", "direct bilirubin", "indirect bilirubin", "conjugated bilirubin", "jaundice"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "bilirubin", "jaundice"],
+          "keywords": [
+            "bilirubin",
+            "total bilirubin",
+            "direct bilirubin",
+            "indirect bilirubin",
+            "conjugated bilirubin",
+            "jaundice"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "bilirubin",
+            "jaundice"
+          ],
           "related_tests": [
             "BILIRUBIN - TOTAL",
             "BILIRUBIN - DIRECT",
@@ -1316,7 +1688,6 @@
           },
           "output_directory": "knowledge_base/liver/bilirubin"
         },
-
         {
           "id": "alp",
           "document_id": "KB-000031",
@@ -1326,8 +1697,19 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["ALP", "alkaline phosphatase", "liver enzyme", "bone enzyme"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "bone", "enzyme"],
+          "keywords": [
+            "ALP",
+            "alkaline phosphatase",
+            "liver enzyme",
+            "bone enzyme"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "bone",
+            "enzyme"
+          ],
           "related_tests": [
             "ALKALINE PHOSPHATASE (ALP)",
             "LIVER FUNCTION TEST (LFT)"
@@ -1353,7 +1735,6 @@
           },
           "output_directory": "knowledge_base/liver/alp"
         },
-
         {
           "id": "ggt",
           "document_id": "KB-000032",
@@ -1363,8 +1744,19 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["GGT", "gamma-glutamyl transferase", "gamma GT", "liver bile duct enzyme"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "bile duct", "enzyme"],
+          "keywords": [
+            "GGT",
+            "gamma-glutamyl transferase",
+            "gamma GT",
+            "liver bile duct enzyme"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "bile duct",
+            "enzyme"
+          ],
           "related_tests": [
             "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
             "LIVER FUNCTION TEST (LFT)"
@@ -1391,7 +1783,6 @@
           },
           "output_directory": "knowledge_base/liver/ggt"
         },
-
         {
           "id": "albumin",
           "document_id": "KB-000033",
@@ -1401,8 +1792,19 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["albumin", "serum albumin", "blood albumin", "liver protein"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "protein", "nutrition"],
+          "keywords": [
+            "albumin",
+            "serum albumin",
+            "blood albumin",
+            "liver protein"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "protein",
+            "nutrition"
+          ],
           "related_tests": [
             "ALBUMIN - SERUM",
             "TOTAL PROTEIN",
@@ -1428,7 +1830,6 @@
           },
           "output_directory": "knowledge_base/liver/albumin"
         },
-
         {
           "id": "globulin",
           "document_id": "KB-000034",
@@ -1438,8 +1839,20 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["globulin", "total protein", "A/G ratio", "albumin globulin ratio", "immunoglobulins"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "protein", "immune"],
+          "keywords": [
+            "globulin",
+            "total protein",
+            "A/G ratio",
+            "albumin globulin ratio",
+            "immunoglobulins"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "protein",
+            "immune"
+          ],
           "related_tests": [
             "GLOBULIN",
             "A/G RATIO",
@@ -1464,7 +1877,6 @@
           },
           "output_directory": "knowledge_base/liver/globulin"
         },
-
         {
           "id": "total_protein",
           "document_id": "KB-000035",
@@ -1474,8 +1886,17 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["total protein", "serum protein", "protein electrophoresis"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "protein"],
+          "keywords": [
+            "total protein",
+            "serum protein",
+            "protein electrophoresis"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "protein"
+          ],
           "related_tests": [
             "TOTAL PROTEIN",
             "ALBUMIN - SERUM",
@@ -1501,7 +1922,6 @@
           },
           "output_directory": "knowledge_base/liver/total_protein"
         },
-
         {
           "id": "fatty_liver",
           "document_id": "KB-000036",
@@ -1511,8 +1931,19 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["fatty liver", "hepatic steatosis", "liver fat", "MASLD"],
-          "clinical_tags": ["liver", "hepatology", "metabolic", "diabetes", "obesity"],
+          "keywords": [
+            "fatty liver",
+            "hepatic steatosis",
+            "liver fat",
+            "MASLD"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "metabolic",
+            "diabetes",
+            "obesity"
+          ],
           "related_tests": [
             "ALT (SGPT)",
             "AST (SGOT)",
@@ -1541,7 +1972,6 @@
           },
           "output_directory": "knowledge_base/liver/fatty_liver"
         },
-
         {
           "id": "nafld",
           "document_id": "KB-000037",
@@ -1551,8 +1981,23 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "1 year",
-          "keywords": ["NAFLD", "NASH", "MASLD", "MASH", "nonalcoholic fatty liver", "nonalcoholic steatohepatitis", "metabolic associated steatotic liver disease"],
-          "clinical_tags": ["liver", "hepatology", "diabetes", "metabolic", "inflammation", "fibrosis"],
+          "keywords": [
+            "NAFLD",
+            "NASH",
+            "MASLD",
+            "MASH",
+            "nonalcoholic fatty liver",
+            "nonalcoholic steatohepatitis",
+            "metabolic associated steatotic liver disease"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "diabetes",
+            "metabolic",
+            "inflammation",
+            "fibrosis"
+          ],
           "related_tests": [
             "ALT (SGPT)",
             "AST (SGOT)",
@@ -1583,7 +2028,6 @@
           },
           "output_directory": "knowledge_base/liver/nafld"
         },
-
         {
           "id": "liver_function_panel",
           "document_id": "KB-000038",
@@ -1593,8 +2037,19 @@
           "specialty": "hepatology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["liver function test", "LFT", "hepatic function panel", "comprehensive metabolic panel liver"],
-          "clinical_tags": ["liver", "hepatology", "blood test", "panel", "diagnostic"],
+          "keywords": [
+            "liver function test",
+            "LFT",
+            "hepatic function panel",
+            "comprehensive metabolic panel liver"
+          ],
+          "clinical_tags": [
+            "liver",
+            "hepatology",
+            "blood test",
+            "panel",
+            "diagnostic"
+          ],
           "related_tests": [
             "LIVER FUNCTION TEST (LFT)",
             "ALT (SGPT)",
@@ -1630,14 +2085,11 @@
         }
       ]
     },
-
     {
       "module": "lipid",
       "folder": "lipid",
-      "description": "Lipid profile — cholesterol, triglycerides, and cardiovascular risk biomarkers.",
-
+      "description": "Lipid profile \u2014 cholesterol, triglycerides, and cardiovascular risk biomarkers.",
       "topics": [
-
         {
           "id": "hdl",
           "document_id": "KB-000039",
@@ -1647,8 +2099,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["HDL", "high-density lipoprotein", "good cholesterol", "HDL-C"],
-          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "cardiology", "protective"],
+          "keywords": [
+            "HDL",
+            "high-density lipoprotein",
+            "good cholesterol",
+            "HDL-C"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cholesterol",
+            "cardiovascular",
+            "cardiology",
+            "protective"
+          ],
           "related_tests": [
             "HDL CHOLESTEROL",
             "LIPID PROFILE"
@@ -1673,9 +2136,11 @@
             "medlineplus": "HDL cholesterol test",
             "ada": "Cholesterol HDL diabetes cardiovascular"
           },
-          "output_directory": "knowledge_base/lipid/hdl"
+          "output_directory": "knowledge_base/lipid/hdl",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/"
+          }
         },
-
         {
           "id": "ldl",
           "document_id": "KB-000040",
@@ -1685,8 +2150,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["LDL", "low-density lipoprotein", "bad cholesterol", "LDL-C"],
-          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "cardiology", "atherogenic"],
+          "keywords": [
+            "LDL",
+            "low-density lipoprotein",
+            "bad cholesterol",
+            "LDL-C"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cholesterol",
+            "cardiovascular",
+            "cardiology",
+            "atherogenic"
+          ],
           "related_tests": [
             "LDL CHOLESTEROL - DIRECT",
             "LDL CHOLESTEROL - CALCULATED",
@@ -1713,9 +2189,11 @@
             "medlineplus": "LDL cholesterol test",
             "ada": "LDL cholesterol targets diabetes"
           },
-          "output_directory": "knowledge_base/lipid/ldl"
+          "output_directory": "knowledge_base/lipid/ldl",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/"
+          }
         },
-
         {
           "id": "total_cholesterol",
           "document_id": "KB-000041",
@@ -1725,8 +2203,18 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["total cholesterol", "cholesterol", "blood cholesterol", "hypercholesterolemia"],
-          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "cardiology"],
+          "keywords": [
+            "total cholesterol",
+            "cholesterol",
+            "blood cholesterol",
+            "hypercholesterolemia"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cholesterol",
+            "cardiovascular",
+            "cardiology"
+          ],
           "related_tests": [
             "TOTAL CHOLESTEROL",
             "LIPID PROFILE"
@@ -1750,9 +2238,11 @@
             "mayo": "High cholesterol",
             "medlineplus": "Cholesterol levels blood test"
           },
-          "output_directory": "knowledge_base/lipid/total_cholesterol"
+          "output_directory": "knowledge_base/lipid/total_cholesterol",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/"
+          }
         },
-
         {
           "id": "triglycerides",
           "document_id": "KB-000042",
@@ -1762,8 +2252,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["triglycerides", "TG", "blood fat", "hypertriglyceridemia"],
-          "clinical_tags": ["lipid", "triglycerides", "cardiovascular", "metabolic", "diabetes"],
+          "keywords": [
+            "triglycerides",
+            "TG",
+            "blood fat",
+            "hypertriglyceridemia"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "triglycerides",
+            "cardiovascular",
+            "metabolic",
+            "diabetes"
+          ],
           "related_tests": [
             "TRIGLYCERIDES",
             "LIPID PROFILE",
@@ -1790,9 +2291,11 @@
             "cleveland": "Triglycerides blood test",
             "medlineplus": "Triglyceride level blood test"
           },
-          "output_directory": "knowledge_base/lipid/triglycerides"
+          "output_directory": "knowledge_base/lipid/triglycerides",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/triglycerides-test/"
+          }
         },
-
         {
           "id": "vldl",
           "document_id": "KB-000043",
@@ -1802,8 +2305,17 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["VLDL", "very low-density lipoprotein", "VLDL cholesterol"],
-          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "atherogenic"],
+          "keywords": [
+            "VLDL",
+            "very low-density lipoprotein",
+            "VLDL cholesterol"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cholesterol",
+            "cardiovascular",
+            "atherogenic"
+          ],
           "related_tests": [
             "VLDL CHOLESTEROL",
             "TRIGLYCERIDES",
@@ -1828,7 +2340,6 @@
           },
           "output_directory": "knowledge_base/lipid/vldl"
         },
-
         {
           "id": "apoa1",
           "document_id": "KB-000044",
@@ -1838,8 +2349,18 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["ApoA1", "apolipoprotein A-1", "apoA-I", "HDL apolipoprotein"],
-          "clinical_tags": ["lipid", "cardiovascular", "advanced lipid", "cardiology"],
+          "keywords": [
+            "ApoA1",
+            "apolipoprotein A-1",
+            "apoA-I",
+            "HDL apolipoprotein"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cardiovascular",
+            "advanced lipid",
+            "cardiology"
+          ],
           "related_tests": [
             "APOLIPOPROTEIN A1",
             "HDL CHOLESTEROL"
@@ -1864,7 +2385,6 @@
           },
           "output_directory": "knowledge_base/lipid/apoa1"
         },
-
         {
           "id": "apob",
           "document_id": "KB-000045",
@@ -1874,8 +2394,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["ApoB", "apolipoprotein B", "apoB-100", "atherogenic particles"],
-          "clinical_tags": ["lipid", "cardiovascular", "advanced lipid", "cardiology", "atherogenic"],
+          "keywords": [
+            "ApoB",
+            "apolipoprotein B",
+            "apoB-100",
+            "atherogenic particles"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cardiovascular",
+            "advanced lipid",
+            "cardiology",
+            "atherogenic"
+          ],
           "related_tests": [
             "APOLIPOPROTEIN B",
             "LDL CHOLESTEROL - DIRECT"
@@ -1901,7 +2432,6 @@
           },
           "output_directory": "knowledge_base/lipid/apob"
         },
-
         {
           "id": "lipoprotein_a",
           "document_id": "KB-000046",
@@ -1911,8 +2441,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["Lp(a)", "lipoprotein a", "lipoprotein little a", "cardiovascular risk marker"],
-          "clinical_tags": ["lipid", "cardiovascular", "advanced lipid", "genetic risk", "cardiology"],
+          "keywords": [
+            "Lp(a)",
+            "lipoprotein a",
+            "lipoprotein little a",
+            "cardiovascular risk marker"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cardiovascular",
+            "advanced lipid",
+            "genetic risk",
+            "cardiology"
+          ],
           "related_tests": [
             "LIPOPROTEIN (a)",
             "Lp(a)"
@@ -1937,7 +2478,6 @@
           },
           "output_directory": "knowledge_base/lipid/lipoprotein_a"
         },
-
         {
           "id": "lipid_panel",
           "document_id": "KB-000047",
@@ -1947,8 +2487,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["lipid panel", "lipid profile", "cholesterol test", "fasting lipid panel"],
-          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "panel", "diagnostic"],
+          "keywords": [
+            "lipid panel",
+            "lipid profile",
+            "cholesterol test",
+            "fasting lipid panel"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cholesterol",
+            "cardiovascular",
+            "panel",
+            "diagnostic"
+          ],
           "related_tests": [
             "LIPID PROFILE",
             "TOTAL CHOLESTEROL",
@@ -1980,7 +2531,6 @@
           },
           "output_directory": "knowledge_base/lipid/lipid_panel"
         },
-
         {
           "id": "cholesterol_ratio",
           "document_id": "KB-000048",
@@ -1990,8 +2540,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["cholesterol ratio", "TC/HDL ratio", "LDL/HDL ratio", "non-HDL cholesterol", "cardiovascular risk ratio"],
-          "clinical_tags": ["lipid", "cholesterol", "cardiovascular", "risk assessment"],
+          "keywords": [
+            "cholesterol ratio",
+            "TC/HDL ratio",
+            "LDL/HDL ratio",
+            "non-HDL cholesterol",
+            "cardiovascular risk ratio"
+          ],
+          "clinical_tags": [
+            "lipid",
+            "cholesterol",
+            "cardiovascular",
+            "risk assessment"
+          ],
           "related_tests": [
             "TC/HDL RATIO",
             "LDL/HDL RATIO",
@@ -2021,14 +2582,11 @@
         }
       ]
     },
-
     {
       "module": "vitamins",
       "folder": "vitamins",
       "description": "Vitamins and micronutrients commonly deficient or important in diabetes management.",
-
       "topics": [
-
         {
           "id": "vitamin_d",
           "document_id": "KB-000049",
@@ -2038,8 +2596,21 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["vitamin D", "25-hydroxyvitamin D", "vitamin D deficiency", "cholecalciferol", "calciferol"],
-          "clinical_tags": ["vitamins", "micronutrient", "endocrinology", "bone", "immune", "diabetes"],
+          "keywords": [
+            "vitamin D",
+            "25-hydroxyvitamin D",
+            "vitamin D deficiency",
+            "cholecalciferol",
+            "calciferol"
+          ],
+          "clinical_tags": [
+            "vitamins",
+            "micronutrient",
+            "endocrinology",
+            "bone",
+            "immune",
+            "diabetes"
+          ],
           "related_tests": [
             "VITAMIN D, 25-HYDROXY",
             "25-OH VITAMIN D",
@@ -2062,9 +2633,11 @@
             "medlineplus": "Vitamin D test 25-hydroxy",
             "cleveland": "Vitamin D blood test deficiency"
           },
-          "output_directory": "knowledge_base/vitamins/vitamin_d"
+          "output_directory": "knowledge_base/vitamins/vitamin_d",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/vitamin-d-test/"
+          }
         },
-
         {
           "id": "vitamin_b12",
           "document_id": "KB-000050",
@@ -2074,8 +2647,21 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["vitamin B12", "cobalamin", "B12 deficiency", "methylcobalamin", "cyanocobalamin"],
-          "clinical_tags": ["vitamins", "micronutrient", "hematology", "neurology", "diabetes", "metformin"],
+          "keywords": [
+            "vitamin B12",
+            "cobalamin",
+            "B12 deficiency",
+            "methylcobalamin",
+            "cyanocobalamin"
+          ],
+          "clinical_tags": [
+            "vitamins",
+            "micronutrient",
+            "hematology",
+            "neurology",
+            "diabetes",
+            "metformin"
+          ],
           "related_tests": [
             "VITAMIN B12",
             "METHYLMALONIC ACID",
@@ -2100,9 +2686,11 @@
             "mayo": "Vitamin B12 deficiency",
             "cleveland": "Vitamin B12 blood test cobalamin"
           },
-          "output_directory": "knowledge_base/vitamins/vitamin_b12"
+          "output_directory": "knowledge_base/vitamins/vitamin_b12",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/vitamin-b-test/"
+          }
         },
-
         {
           "id": "folate",
           "document_id": "KB-000051",
@@ -2112,8 +2700,18 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["folate", "folic acid", "vitamin B9", "folate deficiency"],
-          "clinical_tags": ["vitamins", "micronutrient", "hematology", "anemia"],
+          "keywords": [
+            "folate",
+            "folic acid",
+            "vitamin B9",
+            "folate deficiency"
+          ],
+          "clinical_tags": [
+            "vitamins",
+            "micronutrient",
+            "hematology",
+            "anemia"
+          ],
           "related_tests": [
             "FOLATE - SERUM",
             "FOLIC ACID",
@@ -2138,7 +2736,6 @@
           },
           "output_directory": "knowledge_base/vitamins/folate"
         },
-
         {
           "id": "iron_studies",
           "document_id": "KB-000052",
@@ -2148,8 +2745,22 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["serum iron", "ferritin", "TIBC", "total iron binding capacity", "iron deficiency", "iron overload", "transferrin saturation"],
-          "clinical_tags": ["vitamins", "micronutrient", "hematology", "anemia", "iron"],
+          "keywords": [
+            "serum iron",
+            "ferritin",
+            "TIBC",
+            "total iron binding capacity",
+            "iron deficiency",
+            "iron overload",
+            "transferrin saturation"
+          ],
+          "clinical_tags": [
+            "vitamins",
+            "micronutrient",
+            "hematology",
+            "anemia",
+            "iron"
+          ],
           "related_tests": [
             "SERUM IRON",
             "FERRITIN",
@@ -2177,7 +2788,6 @@
           },
           "output_directory": "knowledge_base/vitamins/iron_studies"
         },
-
         {
           "id": "magnesium",
           "document_id": "KB-000053",
@@ -2187,8 +2797,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["magnesium", "serum magnesium", "hypomagnesemia", "magnesium deficiency diabetes"],
-          "clinical_tags": ["vitamins", "micronutrient", "electrolyte", "diabetes", "metabolic"],
+          "keywords": [
+            "magnesium",
+            "serum magnesium",
+            "hypomagnesemia",
+            "magnesium deficiency diabetes"
+          ],
+          "clinical_tags": [
+            "vitamins",
+            "micronutrient",
+            "electrolyte",
+            "diabetes",
+            "metabolic"
+          ],
           "related_tests": [
             "MAGNESIUM - SERUM",
             "MAGNESIUM - URINE"
@@ -2215,14 +2836,11 @@
         }
       ]
     },
-
     {
       "module": "cbc",
       "folder": "cbc",
-      "description": "Complete Blood Count — hematology markers relevant to diabetes management and complications.",
-
+      "description": "Complete Blood Count \u2014 hematology markers relevant to diabetes management and complications.",
       "topics": [
-
         {
           "id": "cbc_overview",
           "document_id": "KB-000054",
@@ -2232,8 +2850,19 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["CBC", "complete blood count", "blood count", "hematology panel"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "panel", "diagnostic"],
+          "keywords": [
+            "CBC",
+            "complete blood count",
+            "blood count",
+            "hematology panel"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "panel",
+            "diagnostic"
+          ],
           "related_tests": [
             "COMPLETE BLOOD COUNT (CBC)",
             "HEMOGLOBIN",
@@ -2266,9 +2895,11 @@
             "mayo": "Complete blood count CBC",
             "cleveland": "CBC complete blood count test"
           },
-          "output_directory": "knowledge_base/cbc/cbc_overview"
+          "output_directory": "knowledge_base/cbc/cbc_overview",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/"
+          }
         },
-
         {
           "id": "hemoglobin",
           "document_id": "KB-000055",
@@ -2278,8 +2909,20 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["hemoglobin", "Hgb", "Hb", "hemoglobin level", "oxygen carrying protein"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "anemia", "oxygen"],
+          "keywords": [
+            "hemoglobin",
+            "Hgb",
+            "Hb",
+            "hemoglobin level",
+            "oxygen carrying protein"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "anemia",
+            "oxygen"
+          ],
           "related_tests": [
             "HEMOGLOBIN",
             "HEMATOCRIT",
@@ -2305,9 +2948,11 @@
             "mayo": "Hemoglobin test low hemoglobin",
             "cleveland": "Hemoglobin blood test Hgb"
           },
-          "output_directory": "knowledge_base/cbc/hemoglobin"
+          "output_directory": "knowledge_base/cbc/hemoglobin",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-test/"
+          }
         },
-
         {
           "id": "hematocrit",
           "document_id": "KB-000056",
@@ -2317,8 +2962,18 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["hematocrit", "Hct", "packed cell volume", "PCV"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "anemia"],
+          "keywords": [
+            "hematocrit",
+            "Hct",
+            "packed cell volume",
+            "PCV"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "anemia"
+          ],
           "related_tests": [
             "HEMATOCRIT",
             "PACKED CELL VOLUME (PCV)",
@@ -2344,7 +2999,6 @@
           },
           "output_directory": "knowledge_base/cbc/hematocrit"
         },
-
         {
           "id": "rbc",
           "document_id": "KB-000057",
@@ -2354,8 +3008,18 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["RBC", "red blood cell count", "erythrocytes", "red blood cells"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "erythrocyte"],
+          "keywords": [
+            "RBC",
+            "red blood cell count",
+            "erythrocytes",
+            "red blood cells"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "erythrocyte"
+          ],
           "related_tests": [
             "RBC COUNT",
             "MCV",
@@ -2381,9 +3045,11 @@
             "cleveland": "Red blood cell count RBC test",
             "mayo": "Red blood cell count test"
           },
-          "output_directory": "knowledge_base/cbc/rbc"
+          "output_directory": "knowledge_base/cbc/rbc",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/"
+          }
         },
-
         {
           "id": "wbc",
           "document_id": "KB-000058",
@@ -2393,8 +3059,20 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["WBC", "white blood cell count", "leukocytes", "white blood cells", "immune cells"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "immune", "infection"],
+          "keywords": [
+            "WBC",
+            "white blood cell count",
+            "leukocytes",
+            "white blood cells",
+            "immune cells"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "immune",
+            "infection"
+          ],
           "related_tests": [
             "WBC COUNT",
             "WBC DIFFERENTIAL",
@@ -2421,9 +3099,11 @@
             "cleveland": "White blood cell count WBC test",
             "mayo": "White blood cell count test"
           },
-          "output_directory": "knowledge_base/cbc/wbc"
+          "output_directory": "knowledge_base/cbc/wbc",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/white-blood-cell-wbc-count/"
+          }
         },
-
         {
           "id": "platelets",
           "document_id": "KB-000059",
@@ -2433,8 +3113,19 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["platelets", "platelet count", "thrombocytes", "PLT"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "coagulation", "bleeding"],
+          "keywords": [
+            "platelets",
+            "platelet count",
+            "thrombocytes",
+            "PLT"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "coagulation",
+            "bleeding"
+          ],
           "related_tests": [
             "PLATELET COUNT",
             "MEAN PLATELET VOLUME (MPV)"
@@ -2456,9 +3147,11 @@
             "mayo": "Platelet count test thrombocytes",
             "cleveland": "Platelet count test PLT"
           },
-          "output_directory": "knowledge_base/cbc/platelets"
+          "output_directory": "knowledge_base/cbc/platelets",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/platelet-count/"
+          }
         },
-
         {
           "id": "anemia",
           "document_id": "KB-000060",
@@ -2468,8 +3161,21 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["anemia", "low hemoglobin", "iron deficiency anemia", "anemia of chronic disease", "anemia diabetes"],
-          "clinical_tags": ["cbc", "hematology", "anemia", "diabetes", "ckd", "iron"],
+          "keywords": [
+            "anemia",
+            "low hemoglobin",
+            "iron deficiency anemia",
+            "anemia of chronic disease",
+            "anemia diabetes"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "anemia",
+            "diabetes",
+            "ckd",
+            "iron"
+          ],
           "related_tests": [
             "HEMOGLOBIN",
             "HEMATOCRIT",
@@ -2503,7 +3209,6 @@
           },
           "output_directory": "knowledge_base/cbc/anemia"
         },
-
         {
           "id": "esr",
           "document_id": "KB-000061",
@@ -2513,8 +3218,19 @@
           "specialty": "hematology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["ESR", "erythrocyte sedimentation rate", "sed rate", "inflammation marker"],
-          "clinical_tags": ["cbc", "hematology", "blood test", "inflammation", "autoimmune"],
+          "keywords": [
+            "ESR",
+            "erythrocyte sedimentation rate",
+            "sed rate",
+            "inflammation marker"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "hematology",
+            "blood test",
+            "inflammation",
+            "autoimmune"
+          ],
           "related_tests": [
             "ESR (ERYTHROCYTE SEDIMENTATION RATE)"
           ],
@@ -2537,7 +3253,6 @@
           },
           "output_directory": "knowledge_base/cbc/esr"
         },
-
         {
           "id": "crp",
           "document_id": "KB-000062",
@@ -2547,8 +3262,21 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["CRP", "C-reactive protein", "hs-CRP", "high-sensitivity CRP", "inflammation", "cardiovascular risk"],
-          "clinical_tags": ["cbc", "inflammation", "cardiovascular", "blood test", "cardiology"],
+          "keywords": [
+            "CRP",
+            "C-reactive protein",
+            "hs-CRP",
+            "high-sensitivity CRP",
+            "inflammation",
+            "cardiovascular risk"
+          ],
+          "clinical_tags": [
+            "cbc",
+            "inflammation",
+            "cardiovascular",
+            "blood test",
+            "cardiology"
+          ],
           "related_tests": [
             "C-REACTIVE PROTEIN (CRP)",
             "HIGH-SENSITIVITY CRP (hs-CRP)"
@@ -2575,14 +3303,11 @@
         }
       ]
     },
-
     {
       "module": "thyroid",
       "folder": "thyroid",
-      "description": "Thyroid function — hormone tests and the thyroid-diabetes connection.",
-
+      "description": "Thyroid function \u2014 hormone tests and the thyroid-diabetes connection.",
       "topics": [
-
         {
           "id": "tsh",
           "document_id": "KB-000063",
@@ -2592,8 +3317,18 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["TSH", "thyroid stimulating hormone", "thyrotropin", "thyroid function test"],
-          "clinical_tags": ["thyroid", "endocrinology", "blood test", "hormone"],
+          "keywords": [
+            "TSH",
+            "thyroid stimulating hormone",
+            "thyrotropin",
+            "thyroid function test"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "endocrinology",
+            "blood test",
+            "hormone"
+          ],
           "related_tests": [
             "TSH (THYROID STIMULATING HORMONE)",
             "FREE T4",
@@ -2619,9 +3354,11 @@
             "medlineplus": "TSH test thyroid",
             "cleveland": "TSH test thyroid function"
           },
-          "output_directory": "knowledge_base/thyroid/tsh"
+          "output_directory": "knowledge_base/thyroid/tsh",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/"
+          }
         },
-
         {
           "id": "t3",
           "document_id": "KB-000064",
@@ -2631,8 +3368,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["T3", "triiodothyronine", "free T3", "total T3", "thyroid hormone"],
-          "clinical_tags": ["thyroid", "endocrinology", "blood test", "hormone"],
+          "keywords": [
+            "T3",
+            "triiodothyronine",
+            "free T3",
+            "total T3",
+            "thyroid hormone"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "endocrinology",
+            "blood test",
+            "hormone"
+          ],
           "related_tests": [
             "T3 - TOTAL",
             "FREE T3",
@@ -2656,9 +3404,11 @@
             "mayo": "T3 test triiodothyronine thyroid",
             "cleveland": "T3 blood test thyroid hormone"
           },
-          "output_directory": "knowledge_base/thyroid/t3"
+          "output_directory": "knowledge_base/thyroid/t3",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/t3-test/"
+          }
         },
-
         {
           "id": "t4",
           "document_id": "KB-000065",
@@ -2668,8 +3418,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["T4", "thyroxine", "free T4", "total T4", "thyroid hormone"],
-          "clinical_tags": ["thyroid", "endocrinology", "blood test", "hormone"],
+          "keywords": [
+            "T4",
+            "thyroxine",
+            "free T4",
+            "total T4",
+            "thyroid hormone"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "endocrinology",
+            "blood test",
+            "hormone"
+          ],
           "related_tests": [
             "T4 - TOTAL",
             "FREE T4",
@@ -2693,9 +3454,11 @@
             "mayo": "Thyroxine T4 test thyroid",
             "cleveland": "Free T4 thyroxine test"
           },
-          "output_directory": "knowledge_base/thyroid/t4"
+          "output_directory": "knowledge_base/thyroid/t4",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/"
+          }
         },
-
         {
           "id": "thyroid_antibodies",
           "document_id": "KB-000066",
@@ -2705,8 +3468,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["TPO antibodies", "thyroid peroxidase antibodies", "thyroglobulin antibodies", "TgAb", "Hashimoto", "autoimmune thyroid"],
-          "clinical_tags": ["thyroid", "endocrinology", "autoimmune", "antibodies"],
+          "keywords": [
+            "TPO antibodies",
+            "thyroid peroxidase antibodies",
+            "thyroglobulin antibodies",
+            "TgAb",
+            "Hashimoto",
+            "autoimmune thyroid"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "endocrinology",
+            "autoimmune",
+            "antibodies"
+          ],
           "related_tests": [
             "THYROID PEROXIDASE ANTIBODIES (TPO)",
             "THYROGLOBULIN ANTIBODIES (TgAb)",
@@ -2733,7 +3508,6 @@
           },
           "output_directory": "knowledge_base/thyroid/thyroid_antibodies"
         },
-
         {
           "id": "hypothyroidism",
           "document_id": "KB-000067",
@@ -2743,8 +3517,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["hypothyroidism", "underactive thyroid", "low thyroid", "Hashimoto thyroiditis"],
-          "clinical_tags": ["thyroid", "endocrinology", "autoimmune", "metabolism", "fatigue"],
+          "keywords": [
+            "hypothyroidism",
+            "underactive thyroid",
+            "low thyroid",
+            "Hashimoto thyroiditis"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "endocrinology",
+            "autoimmune",
+            "metabolism",
+            "fatigue"
+          ],
           "related_tests": [
             "TSH (THYROID STIMULATING HORMONE)",
             "FREE T4",
@@ -2773,7 +3558,6 @@
           },
           "output_directory": "knowledge_base/thyroid/hypothyroidism"
         },
-
         {
           "id": "hyperthyroidism",
           "document_id": "KB-000068",
@@ -2783,8 +3567,18 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["hyperthyroidism", "overactive thyroid", "Graves disease", "thyrotoxicosis"],
-          "clinical_tags": ["thyroid", "endocrinology", "autoimmune", "metabolism"],
+          "keywords": [
+            "hyperthyroidism",
+            "overactive thyroid",
+            "Graves disease",
+            "thyrotoxicosis"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "endocrinology",
+            "autoimmune",
+            "metabolism"
+          ],
           "related_tests": [
             "TSH (THYROID STIMULATING HORMONE)",
             "FREE T4",
@@ -2812,7 +3606,6 @@
           },
           "output_directory": "knowledge_base/thyroid/hyperthyroidism"
         },
-
         {
           "id": "diabetes_thyroid_connection",
           "document_id": "KB-000069",
@@ -2822,8 +3615,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetes thyroid", "type 1 diabetes thyroid", "autoimmune thyroid diabetes", "thyroid dysfunction diabetes"],
-          "clinical_tags": ["thyroid", "diabetes", "endocrinology", "autoimmune", "comorbidity"],
+          "keywords": [
+            "diabetes thyroid",
+            "type 1 diabetes thyroid",
+            "autoimmune thyroid diabetes",
+            "thyroid dysfunction diabetes"
+          ],
+          "clinical_tags": [
+            "thyroid",
+            "diabetes",
+            "endocrinology",
+            "autoimmune",
+            "comorbidity"
+          ],
           "related_tests": [
             "TSH (THYROID STIMULATING HORMONE)",
             "FREE T4",
@@ -2854,14 +3658,11 @@
         }
       ]
     },
-
     {
       "module": "cardiovascular",
       "folder": "cardiovascular",
-      "description": "Cardiovascular health — heart disease, hypertension, and vascular conditions linked to diabetes.",
-
+      "description": "Cardiovascular health \u2014 heart disease, hypertension, and vascular conditions linked to diabetes.",
       "topics": [
-
         {
           "id": "heart_disease",
           "document_id": "KB-000070",
@@ -2871,8 +3672,20 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["heart disease", "cardiovascular disease", "coronary artery disease", "CVD", "diabetes heart"],
-          "clinical_tags": ["cardiovascular", "cardiology", "diabetes", "macrovascular", "complication"],
+          "keywords": [
+            "heart disease",
+            "cardiovascular disease",
+            "coronary artery disease",
+            "CVD",
+            "diabetes heart"
+          ],
+          "clinical_tags": [
+            "cardiovascular",
+            "cardiology",
+            "diabetes",
+            "macrovascular",
+            "complication"
+          ],
           "related_tests": [
             "LIPID PROFILE",
             "HbA1c",
@@ -2900,9 +3713,12 @@
             "ada": "Cardiovascular disease diabetes",
             "mayo": "Diabetes and heart disease risk"
           },
-          "output_directory": "knowledge_base/cardiovascular/heart_disease"
+          "output_directory": "knowledge_base/cardiovascular/heart_disease",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/managing/problems/heart-disease.html",
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/heart-disease-stroke"
+          }
         },
-
         {
           "id": "hypertension",
           "document_id": "KB-000071",
@@ -2912,8 +3728,20 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["hypertension", "high blood pressure", "blood pressure", "systolic", "diastolic"],
-          "clinical_tags": ["cardiovascular", "cardiology", "hypertension", "diabetes", "kidney"],
+          "keywords": [
+            "hypertension",
+            "high blood pressure",
+            "blood pressure",
+            "systolic",
+            "diastolic"
+          ],
+          "clinical_tags": [
+            "cardiovascular",
+            "cardiology",
+            "hypertension",
+            "diabetes",
+            "kidney"
+          ],
           "related_tests": [
             "BLOOD PRESSURE",
             "CREATININE - SERUM",
@@ -2938,9 +3766,11 @@
             "mayo": "High blood pressure symptoms causes",
             "ada": "High blood pressure diabetes"
           },
-          "output_directory": "knowledge_base/cardiovascular/hypertension"
+          "output_directory": "knowledge_base/cardiovascular/hypertension",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/bloodpressure/about.htm"
+          }
         },
-
         {
           "id": "stroke",
           "document_id": "KB-000072",
@@ -2950,8 +3780,20 @@
           "specialty": "neurology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["stroke", "cerebrovascular accident", "brain attack", "TIA", "transient ischemic attack"],
-          "clinical_tags": ["cardiovascular", "neurology", "diabetes", "macrovascular", "emergency"],
+          "keywords": [
+            "stroke",
+            "cerebrovascular accident",
+            "brain attack",
+            "TIA",
+            "transient ischemic attack"
+          ],
+          "clinical_tags": [
+            "cardiovascular",
+            "neurology",
+            "diabetes",
+            "macrovascular",
+            "emergency"
+          ],
           "related_tests": [
             "LIPID PROFILE",
             "HbA1c",
@@ -2977,7 +3819,6 @@
           },
           "output_directory": "knowledge_base/cardiovascular/stroke"
         },
-
         {
           "id": "peripheral_artery_disease",
           "document_id": "KB-000073",
@@ -2987,8 +3828,20 @@
           "specialty": "vascular surgery",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["peripheral artery disease", "PAD", "peripheral vascular disease", "PVD", "claudication"],
-          "clinical_tags": ["cardiovascular", "vascular", "diabetes", "macrovascular", "legs"],
+          "keywords": [
+            "peripheral artery disease",
+            "PAD",
+            "peripheral vascular disease",
+            "PVD",
+            "claudication"
+          ],
+          "clinical_tags": [
+            "cardiovascular",
+            "vascular",
+            "diabetes",
+            "macrovascular",
+            "legs"
+          ],
           "related_tests": [
             "ANKLE-BRACHIAL INDEX (ABI)",
             "LIPID PROFILE",
@@ -3014,7 +3867,6 @@
           },
           "output_directory": "knowledge_base/cardiovascular/peripheral_artery_disease"
         },
-
         {
           "id": "atherosclerosis",
           "document_id": "KB-000074",
@@ -3024,8 +3876,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["atherosclerosis", "hardening of arteries", "plaque buildup", "arterial disease"],
-          "clinical_tags": ["cardiovascular", "cardiology", "macrovascular", "plaque", "inflammation"],
+          "keywords": [
+            "atherosclerosis",
+            "hardening of arteries",
+            "plaque buildup",
+            "arterial disease"
+          ],
+          "clinical_tags": [
+            "cardiovascular",
+            "cardiology",
+            "macrovascular",
+            "plaque",
+            "inflammation"
+          ],
           "related_tests": [
             "LIPID PROFILE",
             "HIGH-SENSITIVITY CRP (hs-CRP)",
@@ -3054,7 +3917,6 @@
           },
           "output_directory": "knowledge_base/cardiovascular/atherosclerosis"
         },
-
         {
           "id": "heart_failure",
           "document_id": "KB-000075",
@@ -3064,8 +3926,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["heart failure", "congestive heart failure", "CHF", "cardiac insufficiency", "diabetic cardiomyopathy"],
-          "clinical_tags": ["cardiovascular", "cardiology", "diabetes", "heart failure"],
+          "keywords": [
+            "heart failure",
+            "congestive heart failure",
+            "CHF",
+            "cardiac insufficiency",
+            "diabetic cardiomyopathy"
+          ],
+          "clinical_tags": [
+            "cardiovascular",
+            "cardiology",
+            "diabetes",
+            "heart failure"
+          ],
           "related_tests": [
             "BNP (B-TYPE NATRIURETIC PEPTIDE)",
             "NT-proBNP",
@@ -3093,14 +3966,11 @@
         }
       ]
     },
-
     {
       "module": "complications",
       "folder": "complications",
-      "description": "Diabetes complications — microvascular, macrovascular, and acute metabolic emergencies.",
-
+      "description": "Diabetes complications \u2014 microvascular, macrovascular, and acute metabolic emergencies.",
       "topics": [
-
         {
           "id": "diabetic_neuropathy",
           "document_id": "KB-000076",
@@ -3110,8 +3980,20 @@
           "specialty": "neurology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetic neuropathy", "peripheral neuropathy", "nerve damage diabetes", "autonomic neuropathy", "numbness tingling"],
-          "clinical_tags": ["complications", "neurology", "microvascular", "diabetes", "nerve damage"],
+          "keywords": [
+            "diabetic neuropathy",
+            "peripheral neuropathy",
+            "nerve damage diabetes",
+            "autonomic neuropathy",
+            "numbness tingling"
+          ],
+          "clinical_tags": [
+            "complications",
+            "neurology",
+            "microvascular",
+            "diabetes",
+            "nerve damage"
+          ],
           "related_tests": [
             "HbA1c",
             "VITAMIN B12",
@@ -3138,7 +4020,6 @@
           },
           "output_directory": "knowledge_base/complications/diabetic_neuropathy"
         },
-
         {
           "id": "diabetic_retinopathy",
           "document_id": "KB-000077",
@@ -3148,8 +4029,21 @@
           "specialty": "ophthalmology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetic retinopathy", "diabetic eye disease", "retinal damage", "macular edema", "proliferative retinopathy"],
-          "clinical_tags": ["complications", "ophthalmology", "microvascular", "diabetes", "eye", "vision"],
+          "keywords": [
+            "diabetic retinopathy",
+            "diabetic eye disease",
+            "retinal damage",
+            "macular edema",
+            "proliferative retinopathy"
+          ],
+          "clinical_tags": [
+            "complications",
+            "ophthalmology",
+            "microvascular",
+            "diabetes",
+            "eye",
+            "vision"
+          ],
           "related_tests": [
             "HbA1c",
             "BLOOD PRESSURE",
@@ -3175,7 +4069,6 @@
           },
           "output_directory": "knowledge_base/complications/diabetic_retinopathy"
         },
-
         {
           "id": "diabetic_nephropathy",
           "document_id": "KB-000078",
@@ -3185,8 +4078,20 @@
           "specialty": "nephrology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetic nephropathy", "diabetic kidney disease", "kidney failure diabetes", "CKD diabetes"],
-          "clinical_tags": ["complications", "nephrology", "microvascular", "diabetes", "kidney", "ckd"],
+          "keywords": [
+            "diabetic nephropathy",
+            "diabetic kidney disease",
+            "kidney failure diabetes",
+            "CKD diabetes"
+          ],
+          "clinical_tags": [
+            "complications",
+            "nephrology",
+            "microvascular",
+            "diabetes",
+            "kidney",
+            "ckd"
+          ],
           "related_tests": [
             "CREATININE - SERUM",
             "EST. GLOMERULAR FILTRATION RATE (eGFR)",
@@ -3216,7 +4121,6 @@
           },
           "output_directory": "knowledge_base/complications/diabetic_nephropathy"
         },
-
         {
           "id": "diabetic_foot",
           "document_id": "KB-000079",
@@ -3226,8 +4130,20 @@
           "specialty": "podiatry",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetic foot", "foot ulcer", "diabetic foot ulcer", "foot infection diabetes", "Charcot foot"],
-          "clinical_tags": ["complications", "podiatry", "diabetes", "wound care", "amputation risk"],
+          "keywords": [
+            "diabetic foot",
+            "foot ulcer",
+            "diabetic foot ulcer",
+            "foot infection diabetes",
+            "Charcot foot"
+          ],
+          "clinical_tags": [
+            "complications",
+            "podiatry",
+            "diabetes",
+            "wound care",
+            "amputation risk"
+          ],
           "related_tests": [
             "HbA1c",
             "MONOFILAMENT TEST",
@@ -3253,7 +4169,6 @@
           },
           "output_directory": "knowledge_base/complications/diabetic_foot"
         },
-
         {
           "id": "foot_care",
           "document_id": "KB-000080",
@@ -3263,8 +4178,20 @@
           "specialty": "podiatry",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["foot care", "diabetes foot care", "foot exam diabetes", "podiatry diabetes", "foot inspection"],
-          "clinical_tags": ["complications", "podiatry", "diabetes", "prevention", "self-care"],
+          "keywords": [
+            "foot care",
+            "diabetes foot care",
+            "foot exam diabetes",
+            "podiatry diabetes",
+            "foot inspection"
+          ],
+          "clinical_tags": [
+            "complications",
+            "podiatry",
+            "diabetes",
+            "prevention",
+            "self-care"
+          ],
           "related_tests": [
             "HbA1c",
             "MONOFILAMENT TEST"
@@ -3288,7 +4215,6 @@
           },
           "output_directory": "knowledge_base/complications/foot_care"
         },
-
         {
           "id": "diabetic_ketoacidosis",
           "document_id": "KB-000081",
@@ -3298,8 +4224,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["DKA", "diabetic ketoacidosis", "ketones", "ketosis", "metabolic acidosis"],
-          "clinical_tags": ["complications", "endocrinology", "emergency", "acute", "ketones"],
+          "keywords": [
+            "DKA",
+            "diabetic ketoacidosis",
+            "ketones",
+            "ketosis",
+            "metabolic acidosis"
+          ],
+          "clinical_tags": [
+            "complications",
+            "endocrinology",
+            "emergency",
+            "acute",
+            "ketones"
+          ],
           "related_tests": [
             "BLOOD GLUCOSE",
             "URINE KETONES",
@@ -3328,7 +4266,6 @@
           },
           "output_directory": "knowledge_base/complications/diabetic_ketoacidosis"
         },
-
         {
           "id": "hyperosmolar_syndrome",
           "document_id": "KB-000082",
@@ -3338,8 +4275,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["HHS", "hyperosmolar hyperglycemic syndrome", "diabetic hyperosmolar syndrome", "hyperosmolar coma", "HHNS"],
-          "clinical_tags": ["complications", "endocrinology", "emergency", "acute", "dehydration"],
+          "keywords": [
+            "HHS",
+            "hyperosmolar hyperglycemic syndrome",
+            "diabetic hyperosmolar syndrome",
+            "hyperosmolar coma",
+            "HHNS"
+          ],
+          "clinical_tags": [
+            "complications",
+            "endocrinology",
+            "emergency",
+            "acute",
+            "dehydration"
+          ],
           "related_tests": [
             "BLOOD GLUCOSE",
             "SERUM OSMOLALITY",
@@ -3366,7 +4315,6 @@
           },
           "output_directory": "knowledge_base/complications/hyperosmolar_syndrome"
         },
-
         {
           "id": "hypoglycemia",
           "document_id": "KB-000083",
@@ -3376,8 +4324,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["hypoglycemia", "low blood sugar", "insulin shock", "hypoglycemic episode", "glucose tablets"],
-          "clinical_tags": ["complications", "endocrinology", "emergency", "acute", "low glucose"],
+          "keywords": [
+            "hypoglycemia",
+            "low blood sugar",
+            "insulin shock",
+            "hypoglycemic episode",
+            "glucose tablets"
+          ],
+          "clinical_tags": [
+            "complications",
+            "endocrinology",
+            "emergency",
+            "acute",
+            "low glucose"
+          ],
           "related_tests": [
             "BLOOD GLUCOSE",
             "FASTING BLOOD SUGAR (FBS)",
@@ -3405,7 +4365,6 @@
           },
           "output_directory": "knowledge_base/complications/hypoglycemia"
         },
-
         {
           "id": "hyperglycemia",
           "document_id": "KB-000084",
@@ -3415,8 +4374,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["hyperglycemia", "high blood sugar", "elevated glucose", "blood sugar spike"],
-          "clinical_tags": ["complications", "endocrinology", "acute", "high glucose", "diabetes"],
+          "keywords": [
+            "hyperglycemia",
+            "high blood sugar",
+            "elevated glucose",
+            "blood sugar spike"
+          ],
+          "clinical_tags": [
+            "complications",
+            "endocrinology",
+            "acute",
+            "high glucose",
+            "diabetes"
+          ],
           "related_tests": [
             "BLOOD GLUCOSE",
             "HbA1c",
@@ -3443,7 +4413,6 @@
           },
           "output_directory": "knowledge_base/complications/hyperglycemia"
         },
-
         {
           "id": "diabetic_skin_conditions",
           "document_id": "KB-000085",
@@ -3453,8 +4422,20 @@
           "specialty": "dermatology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["diabetic dermopathy", "acanthosis nigricans", "skin conditions diabetes", "necrobiosis lipoidica", "diabetic blisters"],
-          "clinical_tags": ["complications", "dermatology", "diabetes", "skin", "insulin resistance"],
+          "keywords": [
+            "diabetic dermopathy",
+            "acanthosis nigricans",
+            "skin conditions diabetes",
+            "necrobiosis lipoidica",
+            "diabetic blisters"
+          ],
+          "clinical_tags": [
+            "complications",
+            "dermatology",
+            "diabetes",
+            "skin",
+            "insulin resistance"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)"
@@ -3478,7 +4459,6 @@
           },
           "output_directory": "knowledge_base/complications/diabetic_skin_conditions"
         },
-
         {
           "id": "dental_health",
           "document_id": "KB-000086",
@@ -3488,8 +4468,19 @@
           "specialty": "dentistry",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["diabetes dental", "periodontal disease diabetes", "gum disease", "oral health diabetes"],
-          "clinical_tags": ["complications", "dentistry", "diabetes", "oral health", "infection"],
+          "keywords": [
+            "diabetes dental",
+            "periodontal disease diabetes",
+            "gum disease",
+            "oral health diabetes"
+          ],
+          "clinical_tags": [
+            "complications",
+            "dentistry",
+            "diabetes",
+            "oral health",
+            "infection"
+          ],
           "related_tests": [
             "HbA1c"
           ],
@@ -3511,7 +4502,6 @@
           },
           "output_directory": "knowledge_base/complications/dental_health"
         },
-
         {
           "id": "gastroparesis",
           "document_id": "KB-000087",
@@ -3521,8 +4511,19 @@
           "specialty": "gastroenterology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["gastroparesis", "delayed gastric emptying", "stomach paralysis", "diabetic gastroparesis"],
-          "clinical_tags": ["complications", "gastroenterology", "diabetes", "autonomic neuropathy", "digestion"],
+          "keywords": [
+            "gastroparesis",
+            "delayed gastric emptying",
+            "stomach paralysis",
+            "diabetic gastroparesis"
+          ],
+          "clinical_tags": [
+            "complications",
+            "gastroenterology",
+            "diabetes",
+            "autonomic neuropathy",
+            "digestion"
+          ],
           "related_tests": [
             "GASTRIC EMPTYING STUDY",
             "HbA1c"
@@ -3547,7 +4548,6 @@
           },
           "output_directory": "knowledge_base/complications/gastroparesis"
         },
-
         {
           "id": "sexual_dysfunction",
           "document_id": "KB-000088",
@@ -3557,8 +4557,18 @@
           "specialty": "urology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["erectile dysfunction diabetes", "sexual dysfunction diabetes", "diabetes sexual health"],
-          "clinical_tags": ["complications", "urology", "diabetes", "neuropathy", "vascular"],
+          "keywords": [
+            "erectile dysfunction diabetes",
+            "sexual dysfunction diabetes",
+            "diabetes sexual health"
+          ],
+          "clinical_tags": [
+            "complications",
+            "urology",
+            "diabetes",
+            "neuropathy",
+            "vascular"
+          ],
           "related_tests": [
             "TESTOSTERONE",
             "HbA1c"
@@ -3582,7 +4592,6 @@
           },
           "output_directory": "knowledge_base/complications/sexual_dysfunction"
         },
-
         {
           "id": "infections",
           "document_id": "KB-000089",
@@ -3592,8 +4601,20 @@
           "specialty": "infectious disease",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetes infections", "UTI diabetes", "yeast infection diabetes", "wound healing diabetes", "immune system diabetes"],
-          "clinical_tags": ["complications", "infectious disease", "diabetes", "immune", "wound healing"],
+          "keywords": [
+            "diabetes infections",
+            "UTI diabetes",
+            "yeast infection diabetes",
+            "wound healing diabetes",
+            "immune system diabetes"
+          ],
+          "clinical_tags": [
+            "complications",
+            "infectious disease",
+            "diabetes",
+            "immune",
+            "wound healing"
+          ],
           "related_tests": [
             "WBC COUNT",
             "HbA1c",
@@ -3622,14 +4643,11 @@
         }
       ]
     },
-
     {
       "module": "lifestyle",
       "folder": "lifestyle",
-      "description": "Lifestyle management — diet, exercise, sleep, and behavioral factors for diabetes care.",
-
+      "description": "Lifestyle management \u2014 diet, exercise, sleep, and behavioral factors for diabetes care.",
       "topics": [
-
         {
           "id": "healthy_eating",
           "document_id": "KB-000090",
@@ -3639,8 +4657,21 @@
           "specialty": "nutrition",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetes diet", "healthy eating", "meal planning", "carbohydrate counting", "glycemic index", "nutrition diabetes"],
-          "clinical_tags": ["lifestyle", "nutrition", "diabetes", "diet", "self-management"],
+          "keywords": [
+            "diabetes diet",
+            "healthy eating",
+            "meal planning",
+            "carbohydrate counting",
+            "glycemic index",
+            "nutrition diabetes"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "nutrition",
+            "diabetes",
+            "diet",
+            "self-management"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -3668,7 +4699,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/healthy_eating"
         },
-
         {
           "id": "carb_counting",
           "document_id": "KB-000091",
@@ -3678,8 +4708,19 @@
           "specialty": "nutrition",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["carb counting", "carbohydrate counting", "net carbs", "carbohydrate management"],
-          "clinical_tags": ["lifestyle", "nutrition", "diabetes", "carbohydrates", "meal planning"],
+          "keywords": [
+            "carb counting",
+            "carbohydrate counting",
+            "net carbs",
+            "carbohydrate management"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "nutrition",
+            "diabetes",
+            "carbohydrates",
+            "meal planning"
+          ],
           "related_tests": [
             "HbA1c",
             "POST-PRANDIAL BLOOD SUGAR (PPBS)"
@@ -3704,7 +4745,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/carb_counting"
         },
-
         {
           "id": "glycemic_index",
           "document_id": "KB-000092",
@@ -3714,8 +4754,20 @@
           "specialty": "nutrition",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["glycemic index", "GI", "glycemic load", "GL", "low glycemic foods"],
-          "clinical_tags": ["lifestyle", "nutrition", "diabetes", "carbohydrates", "blood sugar"],
+          "keywords": [
+            "glycemic index",
+            "GI",
+            "glycemic load",
+            "GL",
+            "low glycemic foods"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "nutrition",
+            "diabetes",
+            "carbohydrates",
+            "blood sugar"
+          ],
           "related_tests": [
             "HbA1c",
             "POST-PRANDIAL BLOOD SUGAR (PPBS)"
@@ -3739,7 +4791,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/glycemic_index"
         },
-
         {
           "id": "exercise",
           "document_id": "KB-000093",
@@ -3749,8 +4800,20 @@
           "specialty": "sports medicine",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["exercise diabetes", "physical activity", "aerobic exercise", "resistance training", "blood sugar exercise"],
-          "clinical_tags": ["lifestyle", "exercise", "diabetes", "physical activity", "prevention"],
+          "keywords": [
+            "exercise diabetes",
+            "physical activity",
+            "aerobic exercise",
+            "resistance training",
+            "blood sugar exercise"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "exercise",
+            "diabetes",
+            "physical activity",
+            "prevention"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -3778,7 +4841,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/exercise"
         },
-
         {
           "id": "weight_management",
           "document_id": "KB-000094",
@@ -3788,8 +4850,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["weight loss diabetes", "weight management", "BMI", "obesity diabetes", "bariatric surgery"],
-          "clinical_tags": ["lifestyle", "weight", "diabetes", "obesity", "metabolic"],
+          "keywords": [
+            "weight loss diabetes",
+            "weight management",
+            "BMI",
+            "obesity diabetes",
+            "bariatric surgery"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "weight",
+            "diabetes",
+            "obesity",
+            "metabolic"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -3818,7 +4892,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/weight_management"
         },
-
         {
           "id": "sleep",
           "document_id": "KB-000095",
@@ -3828,8 +4901,19 @@
           "specialty": "sleep medicine",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["sleep diabetes", "sleep apnea diabetes", "insomnia blood sugar", "sleep quality"],
-          "clinical_tags": ["lifestyle", "sleep", "diabetes", "metabolism", "insulin resistance"],
+          "keywords": [
+            "sleep diabetes",
+            "sleep apnea diabetes",
+            "insomnia blood sugar",
+            "sleep quality"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "sleep",
+            "diabetes",
+            "metabolism",
+            "insulin resistance"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)"
@@ -3854,7 +4938,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/sleep"
         },
-
         {
           "id": "smoking",
           "document_id": "KB-000096",
@@ -3864,8 +4947,19 @@
           "specialty": "pulmonology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["smoking diabetes", "tobacco diabetes", "smoking cessation", "quit smoking diabetes"],
-          "clinical_tags": ["lifestyle", "smoking", "diabetes", "cardiovascular", "prevention"],
+          "keywords": [
+            "smoking diabetes",
+            "tobacco diabetes",
+            "smoking cessation",
+            "quit smoking diabetes"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "smoking",
+            "diabetes",
+            "cardiovascular",
+            "prevention"
+          ],
           "related_tests": [
             "HbA1c",
             "LIPID PROFILE"
@@ -3889,7 +4983,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/smoking"
         },
-
         {
           "id": "alcohol",
           "document_id": "KB-000097",
@@ -3899,8 +4992,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["alcohol diabetes", "drinking diabetes", "alcohol blood sugar", "alcohol and insulin"],
-          "clinical_tags": ["lifestyle", "alcohol", "diabetes", "hypoglycemia", "liver"],
+          "keywords": [
+            "alcohol diabetes",
+            "drinking diabetes",
+            "alcohol blood sugar",
+            "alcohol and insulin"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "alcohol",
+            "diabetes",
+            "hypoglycemia",
+            "liver"
+          ],
           "related_tests": [
             "FASTING BLOOD SUGAR (FBS)",
             "HbA1c",
@@ -3927,7 +5031,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/alcohol"
         },
-
         {
           "id": "stress_management",
           "document_id": "KB-000098",
@@ -3937,8 +5040,20 @@
           "specialty": "psychiatry",
           "reading_level": "patient",
           "refresh_interval": "3 years",
-          "keywords": ["stress diabetes", "stress management", "cortisol blood sugar", "mental health diabetes", "anxiety diabetes"],
-          "clinical_tags": ["lifestyle", "stress", "diabetes", "mental health", "cortisol"],
+          "keywords": [
+            "stress diabetes",
+            "stress management",
+            "cortisol blood sugar",
+            "mental health diabetes",
+            "anxiety diabetes"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "stress",
+            "diabetes",
+            "mental health",
+            "cortisol"
+          ],
           "related_tests": [
             "CORTISOL",
             "HbA1c",
@@ -3964,7 +5079,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/stress_management"
         },
-
         {
           "id": "mental_health",
           "document_id": "KB-000099",
@@ -3974,8 +5088,20 @@
           "specialty": "psychiatry",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["diabetes depression", "diabetes distress", "diabetes burnout", "mental health diabetes", "emotional wellbeing"],
-          "clinical_tags": ["lifestyle", "mental health", "diabetes", "depression", "wellbeing"],
+          "keywords": [
+            "diabetes depression",
+            "diabetes distress",
+            "diabetes burnout",
+            "mental health diabetes",
+            "emotional wellbeing"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "mental health",
+            "diabetes",
+            "depression",
+            "wellbeing"
+          ],
           "related_tests": [
             "HbA1c"
           ],
@@ -3999,7 +5125,6 @@
           },
           "output_directory": "knowledge_base/lifestyle/mental_health"
         },
-
         {
           "id": "hydration",
           "document_id": "KB-000100",
@@ -4009,8 +5134,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "5 years",
-          "keywords": ["hydration diabetes", "water intake diabetes", "dehydration blood sugar", "diabetes thirst polydipsia"],
-          "clinical_tags": ["lifestyle", "hydration", "diabetes", "dehydration", "self-care"],
+          "keywords": [
+            "hydration diabetes",
+            "water intake diabetes",
+            "dehydration blood sugar",
+            "diabetes thirst polydipsia"
+          ],
+          "clinical_tags": [
+            "lifestyle",
+            "hydration",
+            "diabetes",
+            "dehydration",
+            "self-care"
+          ],
           "related_tests": [
             "BLOOD GLUCOSE",
             "SODIUM",
@@ -4038,14 +5174,11 @@
         }
       ]
     },
-
     {
       "module": "medications",
       "folder": "medications",
-      "description": "Diabetes medications — drug classes, mechanisms, and treatment approaches. Marked as future priority for corpus expansion.",
-
+      "description": "Diabetes medications \u2014 drug classes, mechanisms, and treatment approaches. Marked as future priority for corpus expansion.",
       "topics": [
-
         {
           "id": "metformin",
           "document_id": "KB-000101",
@@ -4055,8 +5188,19 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "1 year",
-          "keywords": ["metformin", "Glucophage", "biguanide", "first-line diabetes medication"],
-          "clinical_tags": ["medications", "endocrinology", "oral medication", "first-line", "diabetes"],
+          "keywords": [
+            "metformin",
+            "Glucophage",
+            "biguanide",
+            "first-line diabetes medication"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "oral medication",
+            "first-line",
+            "diabetes"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -4085,7 +5229,6 @@
           },
           "output_directory": "knowledge_base/medications/metformin"
         },
-
         {
           "id": "insulin_therapy",
           "document_id": "KB-000102",
@@ -4095,8 +5238,22 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "1 year",
-          "keywords": ["insulin therapy", "insulin types", "basal insulin", "bolus insulin", "insulin pump", "rapid-acting insulin", "long-acting insulin"],
-          "clinical_tags": ["medications", "endocrinology", "insulin", "injection", "diabetes"],
+          "keywords": [
+            "insulin therapy",
+            "insulin types",
+            "basal insulin",
+            "bolus insulin",
+            "insulin pump",
+            "rapid-acting insulin",
+            "long-acting insulin"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "insulin",
+            "injection",
+            "diabetes"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -4123,7 +5280,6 @@
           },
           "output_directory": "knowledge_base/medications/insulin_therapy"
         },
-
         {
           "id": "glp1_agonists",
           "document_id": "KB-000103",
@@ -4133,8 +5289,24 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "6 months",
-          "keywords": ["GLP-1", "GLP-1 receptor agonist", "incretin", "semaglutide", "liraglutide", "dulaglutide", "Ozempic", "Trulicity"],
-          "clinical_tags": ["medications", "endocrinology", "injectable", "weight loss", "diabetes", "incretin"],
+          "keywords": [
+            "GLP-1",
+            "GLP-1 receptor agonist",
+            "incretin",
+            "semaglutide",
+            "liraglutide",
+            "dulaglutide",
+            "Ozempic",
+            "Trulicity"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "injectable",
+            "weight loss",
+            "diabetes",
+            "incretin"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -4160,7 +5332,6 @@
           },
           "output_directory": "knowledge_base/medications/glp1_agonists"
         },
-
         {
           "id": "sglt2_inhibitors",
           "document_id": "KB-000104",
@@ -4170,8 +5341,23 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "6 months",
-          "keywords": ["SGLT2 inhibitor", "sodium-glucose cotransporter 2", "empagliflozin", "dapagliflozin", "canagliflozin", "Jardiance", "Farxiga"],
-          "clinical_tags": ["medications", "endocrinology", "oral medication", "kidney", "heart", "diabetes"],
+          "keywords": [
+            "SGLT2 inhibitor",
+            "sodium-glucose cotransporter 2",
+            "empagliflozin",
+            "dapagliflozin",
+            "canagliflozin",
+            "Jardiance",
+            "Farxiga"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "oral medication",
+            "kidney",
+            "heart",
+            "diabetes"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -4198,7 +5384,6 @@
           },
           "output_directory": "knowledge_base/medications/sglt2_inhibitors"
         },
-
         {
           "id": "dpp4_inhibitors",
           "document_id": "KB-000105",
@@ -4208,8 +5393,21 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "1 year",
-          "keywords": ["DPP-4 inhibitor", "dipeptidyl peptidase-4", "sitagliptin", "linagliptin", "Januvia", "gliptin"],
-          "clinical_tags": ["medications", "endocrinology", "oral medication", "incretin", "diabetes"],
+          "keywords": [
+            "DPP-4 inhibitor",
+            "dipeptidyl peptidase-4",
+            "sitagliptin",
+            "linagliptin",
+            "Januvia",
+            "gliptin"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "oral medication",
+            "incretin",
+            "diabetes"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)"
@@ -4233,7 +5431,6 @@
           },
           "output_directory": "knowledge_base/medications/dpp4_inhibitors"
         },
-
         {
           "id": "sulfonylureas",
           "document_id": "KB-000106",
@@ -4243,8 +5440,21 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["sulfonylurea", "glipizide", "glyburide", "glimepiride", "Glucotrol", "Amaryl"],
-          "clinical_tags": ["medications", "endocrinology", "oral medication", "insulin secretagogue", "diabetes"],
+          "keywords": [
+            "sulfonylurea",
+            "glipizide",
+            "glyburide",
+            "glimepiride",
+            "Glucotrol",
+            "Amaryl"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "oral medication",
+            "insulin secretagogue",
+            "diabetes"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)"
@@ -4268,7 +5478,6 @@
           },
           "output_directory": "knowledge_base/medications/sulfonylureas"
         },
-
         {
           "id": "thiazolidinediones",
           "document_id": "KB-000107",
@@ -4278,8 +5487,20 @@
           "specialty": "endocrinology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["thiazolidinedione", "TZD", "pioglitazone", "Actos", "insulin sensitizer"],
-          "clinical_tags": ["medications", "endocrinology", "oral medication", "insulin sensitizer", "diabetes"],
+          "keywords": [
+            "thiazolidinedione",
+            "TZD",
+            "pioglitazone",
+            "Actos",
+            "insulin sensitizer"
+          ],
+          "clinical_tags": [
+            "medications",
+            "endocrinology",
+            "oral medication",
+            "insulin sensitizer",
+            "diabetes"
+          ],
           "related_tests": [
             "HbA1c",
             "FASTING BLOOD SUGAR (FBS)",
@@ -4305,7 +5526,6 @@
           },
           "output_directory": "knowledge_base/medications/thiazolidinediones"
         },
-
         {
           "id": "statins",
           "document_id": "KB-000108",
@@ -4315,8 +5535,21 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "1 year",
-          "keywords": ["statin", "atorvastatin", "rosuvastatin", "cholesterol lowering", "Lipitor", "Crestor"],
-          "clinical_tags": ["medications", "cardiology", "cholesterol", "cardiovascular", "diabetes"],
+          "keywords": [
+            "statin",
+            "atorvastatin",
+            "rosuvastatin",
+            "cholesterol lowering",
+            "Lipitor",
+            "Crestor"
+          ],
+          "clinical_tags": [
+            "medications",
+            "cardiology",
+            "cholesterol",
+            "cardiovascular",
+            "diabetes"
+          ],
           "related_tests": [
             "LIPID PROFILE",
             "LDL CHOLESTEROL - DIRECT",
@@ -4343,7 +5576,6 @@
           },
           "output_directory": "knowledge_base/medications/statins"
         },
-
         {
           "id": "ace_inhibitors_arbs",
           "document_id": "KB-000109",
@@ -4353,8 +5585,21 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["ACE inhibitor", "ARB", "angiotensin", "lisinopril", "losartan", "blood pressure kidney protection"],
-          "clinical_tags": ["medications", "cardiology", "blood pressure", "kidney protection", "diabetes"],
+          "keywords": [
+            "ACE inhibitor",
+            "ARB",
+            "angiotensin",
+            "lisinopril",
+            "losartan",
+            "blood pressure kidney protection"
+          ],
+          "clinical_tags": [
+            "medications",
+            "cardiology",
+            "blood pressure",
+            "kidney protection",
+            "diabetes"
+          ],
           "related_tests": [
             "BLOOD PRESSURE",
             "CREATININE - SERUM",
@@ -4381,7 +5626,6 @@
           },
           "output_directory": "knowledge_base/medications/ace_inhibitors_arbs"
         },
-
         {
           "id": "aspirin_antiplatelet",
           "document_id": "KB-000110",
@@ -4391,8 +5635,19 @@
           "specialty": "cardiology",
           "reading_level": "patient",
           "refresh_interval": "2 years",
-          "keywords": ["aspirin", "antiplatelet", "cardiovascular prevention", "blood thinner diabetes"],
-          "clinical_tags": ["medications", "cardiology", "cardiovascular prevention", "antiplatelet", "diabetes"],
+          "keywords": [
+            "aspirin",
+            "antiplatelet",
+            "cardiovascular prevention",
+            "blood thinner diabetes"
+          ],
+          "clinical_tags": [
+            "medications",
+            "cardiology",
+            "cardiovascular prevention",
+            "antiplatelet",
+            "diabetes"
+          ],
           "related_tests": [
             "PLATELET COUNT",
             "BLEEDING TIME"
@@ -4420,7 +5675,6 @@
       ]
     }
   ],
-
   "statistics": {
     "total_modules": 12,
     "total_topics": 110,
@@ -4434,25 +5688,24 @@
     "unique_related_tests": 95,
     "knowledge_graph_edges": 550
   },
-
   "notes": [
     "Priority 1 = must-have for Certus Diagnostics MVP. Scrape first.",
     "Priority 2 = important for comprehensive coverage. Scrape second pass.",
     "Priority 3 = future expansion or medication module. Scrape when ready.",
-    "Status stages: pending → scraped → cleaned → chunked → embedded → verified → ready.",
+    "Status stages: pending \u2192 scraped \u2192 cleaned \u2192 chunked \u2192 embedded \u2192 verified \u2192 ready.",
     "Each topic folder contains one .md file per source (e.g., ada_v1.md, mayo_v1.md, niddk_v1.md).",
     "Each topic folder also contains metadata.json tracking url, scraped_on, word_count, content_hash, and version.",
     "After all sources are scraped, a summary.md (Layer 2) is generated from all sources for each topic.",
     "The queries object maps source keys to site-specific search strings because each site titles pages differently.",
-    "The medications module is marked as 'future' — not for the current assignment but structurally ready.",
+    "The medications module is marked as 'future' \u2014 not for the current assignment but structurally ready.",
     "Sources were selected for each topic based on which organization is the recognized authority for that domain.",
     "related_tests maps topics to actual blood test parameter names as they appear in lab reports for direct report-to-knowledge lookup.",
     "related_topics creates a knowledge graph enabling traversal from any concept to clinically related concepts.",
-    "clinical_tags enable fast filtering without embeddings — e.g., filter(tag=='kidney') returns all renal content.",
+    "clinical_tags enable fast filtering without embeddings \u2014 e.g., filter(tag=='kidney') returns all renal content.",
     "patient_questions drive future QA pair generation and inform chatbot prompt engineering.",
-    "source_priority defines evidence hierarchy — if sources disagree, higher-ranked sources are trusted first.",
+    "source_priority defines evidence hierarchy \u2014 if sources disagree, higher-ranked sources are trusted first.",
     "reading_level starts at 'patient' and can later be expanded to 'medical_student' and 'doctor' for multi-audience content.",
-    "refresh_interval guides re-scraping schedule — fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
+    "refresh_interval guides re-scraping schedule \u2014 fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
     "document_id (KB-XXXXXX) provides a stable identifier for traceability from vector database chunks back to source documents."
   ]
 }

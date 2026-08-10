@@ -1,0 +1,259 @@
+
+[2026-08-10 11:28:12] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112812.log
+[2026-08-10 11:28:12] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:12] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:12] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:12] [INFO   ] [KB-000001] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes
+[2026-08-10 11:28:12] [INFO   ] [KB-000001] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes
+[2026-08-10 11:28:13] [INFO   ] [KB-000001] [ada] EXTRACTING
+[2026-08-10 11:28:14] [INFO   ] [KB-000001] [ada] CONVERTING
+[2026-08-10 11:28:14] [INFO   ] [KB-000001] [ada] VALIDATING
+[2026-08-10 11:28:14] [INFO   ] [KB-000001] [ada] COMPLETED — v1 (unchanged) words=559 duration=1.5s
+[2026-08-10 11:28:14] [INFO   ] [KB-000001] [cdc] SEARCHING — Using direct URL: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:28:14] [INFO   ] [KB-000001] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:28:14] [WARNING] Download attempt 1/3 failed for https://www.cdc.gov/diabetes/basics/index.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:28:16] [WARNING] Download attempt 2/3 failed for https://www.cdc.gov/diabetes/basics/index.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:28:18] [WARNING] Download attempt 3/3 failed for https://www.cdc.gov/diabetes/basics/index.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:28:18] [INFO   ] [KB-000001] [cdc] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/index.html
+[2026-08-10 11:28:18] [INFO   ] [KB-000001] [mayo] SEARCHING — Using direct URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:28:18] [INFO   ] [KB-000001] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:28:19] [WARNING] Download attempt 1/3 failed for https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:28:21] [WARNING] Download attempt 2/3 failed for https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:28:23] [WARNING] Download attempt 3/3 failed for https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:28:23] [INFO   ] [KB-000001] [mayo] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-10 11:28:23] [INFO   ] ======================================================================
+[2026-08-10 11:28:23] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:23] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:23] [INFO   ]   Scraped:      1
+[2026-08-10 11:28:23] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:23] [INFO   ]   Failed:       2
+[2026-08-10 11:28:23] [INFO   ]   Duration:     10.5s
+[2026-08-10 11:28:23] [INFO   ] ======================================================================
+[2026-08-10 11:28:23] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112823.log
+[2026-08-10 11:28:23] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:23] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:23] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:23] [INFO   ] [KB-000002] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/type-1
+[2026-08-10 11:28:23] [INFO   ] [KB-000002] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/type-1
+[2026-08-10 11:28:24] [INFO   ] [KB-000002] [ada] EXTRACTING
+[2026-08-10 11:28:24] [INFO   ] [KB-000002] [ada] CONVERTING
+[2026-08-10 11:28:24] [INFO   ] [KB-000002] [ada] VALIDATING
+[2026-08-10 11:28:24] [INFO   ] [KB-000002] [ada] COMPLETED — v1 (unchanged) words=1454 duration=0.9s
+[2026-08-10 11:28:24] [INFO   ] [KB-000002] [mayo] SEARCHING — Using direct URL: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-10 11:28:24] [INFO   ] [KB-000002] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-10 11:28:24] [WARNING] Download attempt 1/3 failed for https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-10 11:28:27] [WARNING] Download attempt 2/3 failed for https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-10 11:28:29] [WARNING] Download attempt 3/3 failed for https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-10 11:28:29] [INFO   ] [KB-000002] [mayo] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-10 11:28:29] [INFO   ] [KB-000002] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes
+[2026-08-10 11:28:29] [INFO   ] [KB-000002] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes
+[2026-08-10 11:28:31] [INFO   ] [KB-000002] [niddk] EXTRACTING
+[2026-08-10 11:28:31] [INFO   ] [KB-000002] [niddk] CONVERTING
+[2026-08-10 11:28:31] [INFO   ] [KB-000002] [niddk] VALIDATING
+[2026-08-10 11:28:31] [INFO   ] [KB-000002] [niddk] COMPLETED — v2 (new) words=3204 duration=2.1s
+[2026-08-10 11:28:31] [INFO   ] ======================================================================
+[2026-08-10 11:28:31] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:31] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:31] [INFO   ]   Scraped:      2
+[2026-08-10 11:28:31] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:31] [INFO   ]   Failed:       1
+[2026-08-10 11:28:31] [INFO   ]   Duration:     7.4s
+[2026-08-10 11:28:31] [INFO   ] ======================================================================
+[2026-08-10 11:28:31] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112831.log
+[2026-08-10 11:28:31] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:31] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:31] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:31] [INFO   ] [KB-000003] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/type-2
+[2026-08-10 11:28:31] [INFO   ] [KB-000003] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/type-2
+[2026-08-10 11:28:33] [INFO   ] [KB-000003] [ada] EXTRACTING
+[2026-08-10 11:28:33] [INFO   ] [KB-000003] [ada] CONVERTING
+[2026-08-10 11:28:33] [INFO   ] [KB-000003] [ada] VALIDATING
+[2026-08-10 11:28:33] [INFO   ] [KB-000003] [ada] COMPLETED — v2 (new) words=362 duration=1.6s
+[2026-08-10 11:28:33] [INFO   ] [KB-000003] [cdc] SEARCHING — Using direct URL: https://www.cdc.gov/diabetes/basics/type2.html
+[2026-08-10 11:28:33] [INFO   ] [KB-000003] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/basics/type2.html
+[2026-08-10 11:28:33] [WARNING] Download attempt 1/3 failed for https://www.cdc.gov/diabetes/basics/type2.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/type2.html
+[2026-08-10 11:28:35] [WARNING] Download attempt 2/3 failed for https://www.cdc.gov/diabetes/basics/type2.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/type2.html
+[2026-08-10 11:28:37] [WARNING] Download attempt 3/3 failed for https://www.cdc.gov/diabetes/basics/type2.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/type2.html
+[2026-08-10 11:28:37] [INFO   ] [KB-000003] [cdc] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/type2.html
+[2026-08-10 11:28:37] [INFO   ] [KB-000003] [mayo] SEARCHING — Query: Type 2 diabetes symptoms causes treatment
+[2026-08-10 11:28:38] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Type+2+diabetes+symptoms+causes+treatment': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Type+2+diabetes+symptoms+causes+treatment
+[2026-08-10 11:28:38] [INFO   ] [KB-000003] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:38] [INFO   ] ======================================================================
+[2026-08-10 11:28:38] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:38] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:38] [INFO   ]   Scraped:      1
+[2026-08-10 11:28:38] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:38] [INFO   ]   Failed:       2
+[2026-08-10 11:28:38] [INFO   ]   Duration:     6.3s
+[2026-08-10 11:28:38] [INFO   ] ======================================================================
+[2026-08-10 11:28:38] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112838.log
+[2026-08-10 11:28:38] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:38] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:38] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:38] [INFO   ] [KB-000004] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/prediabetes
+[2026-08-10 11:28:38] [INFO   ] [KB-000004] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/prediabetes
+[2026-08-10 11:28:39] [INFO   ] [KB-000004] [ada] EXTRACTING
+[2026-08-10 11:28:39] [INFO   ] [KB-000004] [ada] CONVERTING
+[2026-08-10 11:28:39] [INFO   ] [KB-000004] [ada] VALIDATING
+[2026-08-10 11:28:39] [INFO   ] [KB-000004] [ada] FAILED — Quality check failed: Word count too low (243 < 300), No markdown headings found
+[2026-08-10 11:28:39] [INFO   ] [KB-000004] [cdc] SEARCHING — Using direct URL: https://www.cdc.gov/diabetes/basics/prediabetes.html
+[2026-08-10 11:28:39] [INFO   ] [KB-000004] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/basics/prediabetes.html
+[2026-08-10 11:28:39] [WARNING] Download attempt 1/3 failed for https://www.cdc.gov/diabetes/basics/prediabetes.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/prediabetes.html
+[2026-08-10 11:28:41] [WARNING] Download attempt 2/3 failed for https://www.cdc.gov/diabetes/basics/prediabetes.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/prediabetes.html
+[2026-08-10 11:28:44] [WARNING] Download attempt 3/3 failed for https://www.cdc.gov/diabetes/basics/prediabetes.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/prediabetes.html
+[2026-08-10 11:28:44] [INFO   ] [KB-000004] [cdc] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/basics/prediabetes.html
+[2026-08-10 11:28:44] [INFO   ] [KB-000004] [mayo] SEARCHING — Query: Prediabetes symptoms causes
+[2026-08-10 11:28:44] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Prediabetes+symptoms+causes': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Prediabetes+symptoms+causes
+[2026-08-10 11:28:44] [INFO   ] [KB-000004] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:44] [INFO   ] ======================================================================
+[2026-08-10 11:28:44] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:44] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:44] [INFO   ]   Scraped:      0
+[2026-08-10 11:28:44] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:44] [INFO   ]   Failed:       3
+[2026-08-10 11:28:44] [INFO   ]   Duration:     5.8s
+[2026-08-10 11:28:44] [INFO   ] ======================================================================
+[2026-08-10 11:28:44] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112844.log
+[2026-08-10 11:28:44] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:44] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:44] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:44] [INFO   ] [KB-000010] [ada] SEARCHING — Using direct URL: https://diabetes.org/about-diabetes/a1c
+[2026-08-10 11:28:44] [INFO   ] [KB-000010] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/a1c
+[2026-08-10 11:28:45] [INFO   ] [KB-000010] [ada] EXTRACTING
+[2026-08-10 11:28:45] [INFO   ] [KB-000010] [ada] CONVERTING
+[2026-08-10 11:28:45] [INFO   ] [KB-000010] [ada] VALIDATING
+[2026-08-10 11:28:45] [INFO   ] [KB-000010] [ada] COMPLETED — v5 (unchanged) words=836 duration=0.9s
+[2026-08-10 11:28:45] [INFO   ] [KB-000010] [mayo] SEARCHING — Using direct URL: https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643
+[2026-08-10 11:28:45] [INFO   ] [KB-000010] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643
+[2026-08-10 11:28:45] [WARNING] Download attempt 1/3 failed for https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643
+[2026-08-10 11:28:47] [WARNING] Download attempt 2/3 failed for https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643
+[2026-08-10 11:28:50] [WARNING] Download attempt 3/3 failed for https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [mayo] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/tests-procedures/a1c-test/about/pac-20384643
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [medlineplus] EXTRACTING
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [medlineplus] CONVERTING
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [medlineplus] VALIDATING
+[2026-08-10 11:28:50] [INFO   ] [KB-000010] [medlineplus] COMPLETED — v4 (unchanged) words=1542 duration=0.7s
+[2026-08-10 11:28:50] [INFO   ] ======================================================================
+[2026-08-10 11:28:50] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:50] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:50] [INFO   ]   Scraped:      2
+[2026-08-10 11:28:50] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:50] [INFO   ]   Failed:       1
+[2026-08-10 11:28:50] [INFO   ]   Duration:     6.0s
+[2026-08-10 11:28:50] [INFO   ] ======================================================================
+[2026-08-10 11:28:51] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112851.log
+[2026-08-10 11:28:51] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:51] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:51] [INFO   ] Job queue: 2 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:51] [INFO   ] [KB-000011] [ada] SEARCHING — Query: Estimated average glucose eAG
+[2026-08-10 11:28:53] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Estimated+average+glucose+eAG
+[2026-08-10 11:28:53] [INFO   ] [KB-000011] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:53] [INFO   ] [KB-000011] [mayo] SEARCHING — Query: Blood glucose test average glucose
+[2026-08-10 11:28:53] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Blood+glucose+test+average+glucose': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Blood+glucose+test+average+glucose
+[2026-08-10 11:28:53] [INFO   ] [KB-000011] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:53] [INFO   ] ======================================================================
+[2026-08-10 11:28:53] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:53] [INFO   ]   Total jobs:   2
+[2026-08-10 11:28:53] [INFO   ]   Scraped:      0
+[2026-08-10 11:28:53] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:53] [INFO   ]   Failed:       2
+[2026-08-10 11:28:53] [INFO   ]   Duration:     2.3s
+[2026-08-10 11:28:53] [INFO   ] ======================================================================
+[2026-08-10 11:28:53] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112853.log
+[2026-08-10 11:28:53] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:53] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:53] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:53] [INFO   ] [KB-000012] [ada] SEARCHING — Query: Fasting blood glucose test
+[2026-08-10 11:28:54] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Fasting+blood+glucose+test
+[2026-08-10 11:28:54] [INFO   ] [KB-000012] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:54] [INFO   ] [KB-000012] [cdc] SEARCHING — Query: Diabetes testing fasting blood sugar
+[2026-08-10 11:28:55] [WARNING] No valid article links found on search page: https://search.cdc.gov/search/?query=Diabetes+testing+fasting+blood+sugar
+[2026-08-10 11:28:55] [INFO   ] [KB-000012] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:55] [INFO   ] [KB-000012] [mayo] SEARCHING — Query: Blood sugar test fasting glucose
+[2026-08-10 11:28:55] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Blood+sugar+test+fasting+glucose': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Blood+sugar+test+fasting+glucose
+[2026-08-10 11:28:55] [INFO   ] [KB-000012] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:55] [INFO   ] ======================================================================
+[2026-08-10 11:28:55] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:55] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:55] [INFO   ]   Scraped:      0
+[2026-08-10 11:28:55] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:55] [INFO   ]   Failed:       3
+[2026-08-10 11:28:55] [INFO   ]   Duration:     1.3s
+[2026-08-10 11:28:55] [INFO   ] ======================================================================
+[2026-08-10 11:28:55] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112855.log
+[2026-08-10 11:28:55] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:55] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:55] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:55] [INFO   ] [KB-000013] [ada] SEARCHING — Query: Random blood glucose test diabetes
+[2026-08-10 11:28:56] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Random+blood+glucose+test+diabetes
+[2026-08-10 11:28:56] [INFO   ] [KB-000013] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:56] [INFO   ] [KB-000013] [mayo] SEARCHING — Query: Random blood sugar test
+[2026-08-10 11:28:56] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Random+blood+sugar+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Random+blood+sugar+test
+[2026-08-10 11:28:56] [INFO   ] [KB-000013] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:56] [INFO   ] [KB-000013] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/blood-glucose-test/
+[2026-08-10 11:28:56] [INFO   ] [KB-000013] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/blood-glucose-test/
+[2026-08-10 11:28:57] [INFO   ] [KB-000013] [medlineplus] EXTRACTING
+[2026-08-10 11:28:57] [INFO   ] [KB-000013] [medlineplus] CONVERTING
+[2026-08-10 11:28:57] [INFO   ] [KB-000013] [medlineplus] VALIDATING
+[2026-08-10 11:28:57] [INFO   ] [KB-000013] [medlineplus] COMPLETED — v2 (new) words=2592 duration=0.7s
+[2026-08-10 11:28:57] [INFO   ] ======================================================================
+[2026-08-10 11:28:57] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:57] [INFO   ]   Total jobs:   3
+[2026-08-10 11:28:57] [INFO   ]   Scraped:      1
+[2026-08-10 11:28:57] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:57] [INFO   ]   Failed:       2
+[2026-08-10 11:28:57] [INFO   ]   Duration:     1.5s
+[2026-08-10 11:28:57] [INFO   ] ======================================================================
+[2026-08-10 11:28:57] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112857.log
+[2026-08-10 11:28:57] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:57] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:57] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:57] [INFO   ] [KB-000014] [ada] SEARCHING — Query: Oral glucose tolerance test
+[2026-08-10 11:28:58] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Oral+glucose+tolerance+test
+[2026-08-10 11:28:58] [INFO   ] [KB-000014] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:58] [INFO   ] [KB-000014] [mayo] SEARCHING — Query: Glucose tolerance test
+[2026-08-10 11:28:58] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Glucose+tolerance+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Glucose+tolerance+test
+[2026-08-10 11:28:58] [INFO   ] [KB-000014] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:58] [INFO   ] [KB-000014] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/glucose-tolerance-test/
+[2026-08-10 11:28:58] [INFO   ] [KB-000014] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/glucose-tolerance-test/
+[2026-08-10 11:28:59] [WARNING] Download attempt 1/3 failed for https://medlineplus.gov/lab-tests/glucose-tolerance-test/: 404 Client Error: Not Found for url: https://medlineplus.gov/lab-tests/glucose-tolerance-test/
+[2026-08-10 11:29:02] [WARNING] Download attempt 2/3 failed for https://medlineplus.gov/lab-tests/glucose-tolerance-test/: 404 Client Error: Not Found for url: https://medlineplus.gov/lab-tests/glucose-tolerance-test/
+[2026-08-10 11:29:05] [WARNING] Download attempt 3/3 failed for https://medlineplus.gov/lab-tests/glucose-tolerance-test/: 404 Client Error: Not Found for url: https://medlineplus.gov/lab-tests/glucose-tolerance-test/
+[2026-08-10 11:29:05] [INFO   ] [KB-000014] [medlineplus] FAILED — Download error: Failed after 3 attempts: 404 Client Error: Not Found for url: https://medlineplus.gov/lab-tests/glucose-tolerance-test/
+[2026-08-10 11:29:05] [INFO   ] ======================================================================
+[2026-08-10 11:29:05] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:29:05] [INFO   ]   Total jobs:   3
+[2026-08-10 11:29:05] [INFO   ]   Scraped:      0
+[2026-08-10 11:29:05] [INFO   ]   Skipped:      0
+[2026-08-10 11:29:05] [INFO   ]   Failed:       3
+[2026-08-10 11:29:05] [INFO   ]   Duration:     7.6s
+[2026-08-10 11:29:05] [INFO   ] ======================================================================
+[2026-08-10 11:29:05] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112905.log
+[2026-08-10 11:29:05] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:29:05] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:29:05] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:29:05] [INFO   ] [KB-000006] [mayo] SEARCHING — Query: Insulin and diabetes
+[2026-08-10 11:29:05] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Insulin+and+diabetes': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Insulin+and+diabetes
+[2026-08-10 11:29:05] [INFO   ] [KB-000006] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:29:05] [INFO   ] [KB-000006] [medlineplus] SEARCHING — Query: Insulin blood test
+[2026-08-10 11:29:06] [INFO   ] [KB-000006] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/insulin-in-blood/
+[2026-08-10 11:29:07] [INFO   ] [KB-000006] [medlineplus] EXTRACTING
+[2026-08-10 11:29:07] [INFO   ] [KB-000006] [medlineplus] CONVERTING
+[2026-08-10 11:29:07] [INFO   ] [KB-000006] [medlineplus] VALIDATING
+[2026-08-10 11:29:07] [INFO   ] [KB-000006] [medlineplus] COMPLETED — v1 (unchanged) words=1581 duration=1.7s
+[2026-08-10 11:29:07] [INFO   ] [KB-000006] [niddk] SEARCHING — Using direct URL: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+[2026-08-10 11:29:07] [INFO   ] [KB-000006] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+[2026-08-10 11:29:09] [INFO   ] [KB-000006] [niddk] EXTRACTING
+[2026-08-10 11:29:09] [INFO   ] [KB-000006] [niddk] CONVERTING
+[2026-08-10 11:29:09] [INFO   ] [KB-000006] [niddk] VALIDATING
+[2026-08-10 11:29:09] [INFO   ] [KB-000006] [niddk] COMPLETED — v2 (new) words=2479 duration=1.9s
+[2026-08-10 11:29:09] [INFO   ] ======================================================================
+[2026-08-10 11:29:09] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:29:09] [INFO   ]   Total jobs:   3
+[2026-08-10 11:29:09] [INFO   ]   Scraped:      2
+[2026-08-10 11:29:09] [INFO   ]   Skipped:      0
+[2026-08-10 11:29:09] [INFO   ]   Failed:       1
+[2026-08-10 11:29:09] [INFO   ]   Duration:     3.8s
+[2026-08-10 11:29:09] [INFO   ] ======================================================================

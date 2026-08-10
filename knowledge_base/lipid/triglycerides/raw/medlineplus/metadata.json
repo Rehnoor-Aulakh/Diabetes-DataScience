@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000042",
+  "topic": "triglycerides",
+  "topic_title": "Triglycerides",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/triglycerides-test/",
+  "scraped_at": "2026-08-10T11:34:13.050002+00:00",
+  "word_count": 1608,
+  "content_hash": "sha256:7a7132476de01a1e92c5c60e3b403c95fcebcb64696aa4bd48b012d5e01a979e",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"acef588f63ad15d22506a3b9fe72e743\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:54 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

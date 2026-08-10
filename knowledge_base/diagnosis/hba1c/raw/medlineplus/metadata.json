@@ -6,7 +6,7 @@
   "source_name": "MedlinePlus",
   "version": 4,
   "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
-  "scraped_at": "2026-08-10T11:11:31.856532+00:00",
+  "scraped_at": "2026-08-10T11:32:30.265250+00:00",
   "word_count": 1542,
   "content_hash": "sha256:0d9f6625295920ff046c8dcd73d2f244d02fffd99119ba2f27ebf365975d1855",
   "extractor": "trafilatura/bs4",

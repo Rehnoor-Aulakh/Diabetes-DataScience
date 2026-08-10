@@ -1,0 +1,18 @@
+[2026-08-10 11:28:51] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_112851.log
+[2026-08-10 11:28:51] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:28:51] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:28:51] [INFO   ] Job queue: 2 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:28:51] [INFO   ] [KB-000011] [ada] SEARCHING — Query: Estimated average glucose eAG
+[2026-08-10 11:28:53] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Estimated+average+glucose+eAG
+[2026-08-10 11:28:53] [INFO   ] [KB-000011] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:53] [INFO   ] [KB-000011] [mayo] SEARCHING — Query: Blood glucose test average glucose
+[2026-08-10 11:28:53] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Blood+glucose+test+average+glucose': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Blood+glucose+test+average+glucose
+[2026-08-10 11:28:53] [INFO   ] [KB-000011] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:28:53] [INFO   ] ======================================================================
+[2026-08-10 11:28:53] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:28:53] [INFO   ]   Total jobs:   2
+[2026-08-10 11:28:53] [INFO   ]   Scraped:      0
+[2026-08-10 11:28:53] [INFO   ]   Skipped:      0
+[2026-08-10 11:28:53] [INFO   ]   Failed:       2
+[2026-08-10 11:28:53] [INFO   ]   Duration:     2.3s
+[2026-08-10 11:28:53] [INFO   ] ======================================================================

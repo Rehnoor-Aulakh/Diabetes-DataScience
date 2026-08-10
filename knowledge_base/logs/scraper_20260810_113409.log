@@ -1,0 +1,24 @@
+[2026-08-10 11:34:09] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_113409.log
+[2026-08-10 11:34:09] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:34:09] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:34:09] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:34:09] [INFO   ] [KB-000041] [cdc] SEARCHING — Query: Cholesterol about getting cholesterol checked
+[2026-08-10 11:34:09] [WARNING] No valid article links found on search page: https://search.cdc.gov/search/?query=Cholesterol+about+getting+cholesterol+checked
+[2026-08-10 11:34:09] [INFO   ] [KB-000041] [cdc] FAILED — Search returned no valid URLs
+[2026-08-10 11:34:09] [INFO   ] [KB-000041] [mayo] SEARCHING — Query: High cholesterol
+[2026-08-10 11:34:10] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=High+cholesterol': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=High+cholesterol
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [medlineplus] EXTRACTING
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [medlineplus] CONVERTING
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [medlineplus] VALIDATING
+[2026-08-10 11:34:10] [INFO   ] [KB-000041] [medlineplus] COMPLETED — v1 (new) words=2063 duration=0.7s
+[2026-08-10 11:34:10] [INFO   ] ======================================================================
+[2026-08-10 11:34:10] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:34:10] [INFO   ]   Total jobs:   3
+[2026-08-10 11:34:10] [INFO   ]   Scraped:      1
+[2026-08-10 11:34:10] [INFO   ]   Skipped:      0
+[2026-08-10 11:34:10] [INFO   ]   Failed:       2
+[2026-08-10 11:34:10] [INFO   ]   Duration:     1.4s
+[2026-08-10 11:34:10] [INFO   ] ======================================================================

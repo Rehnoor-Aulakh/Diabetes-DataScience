@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000041",
+  "topic": "total_cholesterol",
+  "topic_title": "Total Cholesterol",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+  "scraped_at": "2026-08-10T11:34:10.698916+00:00",
+  "word_count": 2063,
+  "content_hash": "sha256:cae9242d1f1e6a045b48cc14757588f982fdc1134098917e10941dfc60c2ae6c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"09e1e0d8fc3f9da2166fd955ceec1092\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:33 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

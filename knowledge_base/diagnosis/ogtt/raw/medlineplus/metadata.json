@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000014",
+  "topic": "ogtt",
+  "topic_title": "Oral Glucose Tolerance Test",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/article/003466.htm",
+  "scraped_at": "2026-08-10T11:17:35.419354+00:00",
+  "word_count": 1041,
+  "content_hash": "sha256:544621168be8aa8c95cb34274c038a4aca28bf0034100e43b4dd44072506b3c8",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"8b448a520cfa2a278ff61a9316a156cd\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:10 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

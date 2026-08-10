@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000050",
+  "topic": "vitamin_b12",
+  "topic_title": "Vitamin B12",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/vitamin-b-test/",
+  "scraped_at": "2026-08-10T11:34:17.421146+00:00",
+  "word_count": 1622,
+  "content_hash": "sha256:e38a5d5b1d8a8372da8b2c0c820d8d1e33f526d9d0ec6222b77c40fd32923bd1",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"9fb7d64a355c16a303c00d63218bf089\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:27 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

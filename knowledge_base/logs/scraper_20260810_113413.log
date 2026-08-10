@@ -1,0 +1,27 @@
+[2026-08-10 11:34:13] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_113413.log
+[2026-08-10 11:34:13] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:34:13] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:34:13] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:34:13] [INFO   ] [KB-000049] [cleveland] SEARCHING — Query: Vitamin D blood test deficiency
+[2026-08-10 11:34:13] [INFO   ] [KB-000049] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [cleveland] EXTRACTING
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [cleveland] CONVERTING
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [cleveland] VALIDATING
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [mayo] SEARCHING — Query: Vitamin D deficiency
+[2026-08-10 11:34:14] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Vitamin+D+deficiency': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Vitamin+D+deficiency
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/vitamin-d-test/
+[2026-08-10 11:34:14] [INFO   ] [KB-000049] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/vitamin-d-test/
+[2026-08-10 11:34:15] [INFO   ] [KB-000049] [medlineplus] EXTRACTING
+[2026-08-10 11:34:15] [INFO   ] [KB-000049] [medlineplus] CONVERTING
+[2026-08-10 11:34:15] [INFO   ] [KB-000049] [medlineplus] VALIDATING
+[2026-08-10 11:34:15] [INFO   ] [KB-000049] [medlineplus] COMPLETED — v3 (new) words=1597 duration=0.5s
+[2026-08-10 11:34:15] [INFO   ] ======================================================================
+[2026-08-10 11:34:15] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:34:15] [INFO   ]   Total jobs:   3
+[2026-08-10 11:34:15] [INFO   ]   Scraped:      1
+[2026-08-10 11:34:15] [INFO   ]   Skipped:      0
+[2026-08-10 11:34:15] [INFO   ]   Failed:       2
+[2026-08-10 11:34:15] [INFO   ]   Duration:     1.6s
+[2026-08-10 11:34:15] [INFO   ] ======================================================================

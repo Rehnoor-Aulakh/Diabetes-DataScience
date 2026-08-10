@@ -1,0 +1,24 @@
+[2026-08-10 11:35:20] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_113520.log
+[2026-08-10 11:35:20] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:35:20] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:35:20] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:35:20] [INFO   ] [KB-000070] [ada] SEARCHING — Query: Cardiovascular disease diabetes
+[2026-08-10 11:35:21] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Cardiovascular+disease+diabetes
+[2026-08-10 11:35:21] [INFO   ] [KB-000070] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:35:21] [INFO   ] [KB-000070] [cdc] SEARCHING — Using direct URL: https://www.cdc.gov/diabetes/managing/problems/heart-disease.html
+[2026-08-10 11:35:21] [INFO   ] [KB-000070] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/managing/problems/heart-disease.html
+[2026-08-10 11:35:21] [WARNING] Download attempt 1/3 failed for https://www.cdc.gov/diabetes/managing/problems/heart-disease.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/managing/problems/heart-disease.html
+[2026-08-10 11:35:26] [WARNING] Download attempt 2/3 failed for https://www.cdc.gov/diabetes/managing/problems/heart-disease.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/managing/problems/heart-disease.html
+[2026-08-10 11:35:31] [WARNING] Download attempt 3/3 failed for https://www.cdc.gov/diabetes/managing/problems/heart-disease.html: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/managing/problems/heart-disease.html
+[2026-08-10 11:35:31] [INFO   ] [KB-000070] [cdc] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.cdc.gov/diabetes/managing/problems/heart-disease.html
+[2026-08-10 11:35:31] [INFO   ] [KB-000070] [mayo] SEARCHING — Query: Diabetes and heart disease risk
+[2026-08-10 11:35:32] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Diabetes+and+heart+disease+risk': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Diabetes+and+heart+disease+risk
+[2026-08-10 11:35:32] [INFO   ] [KB-000070] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:35:32] [INFO   ] ======================================================================
+[2026-08-10 11:35:32] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:35:32] [INFO   ]   Total jobs:   3
+[2026-08-10 11:35:32] [INFO   ]   Scraped:      0
+[2026-08-10 11:35:32] [INFO   ]   Skipped:      0
+[2026-08-10 11:35:32] [INFO   ]   Failed:       3
+[2026-08-10 11:35:32] [INFO   ]   Duration:     11.6s
+[2026-08-10 11:35:32] [INFO   ] ======================================================================

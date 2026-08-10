@@ -1,0 +1,24 @@
+[2026-08-10 11:17:56] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111756.log
+[2026-08-10 11:17:56] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:17:56] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:17:56] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:17:56] [INFO   ] [KB-000023] [ada] SEARCHING — Query: Urine albumin test diabetes kidney
+[2026-08-10 11:17:58] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Urine+albumin+test+diabetes+kidney
+[2026-08-10 11:17:58] [INFO   ] [KB-000023] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:58] [INFO   ] [KB-000023] [mayo] SEARCHING — Query: Microalbumin test urine albumin
+[2026-08-10 11:17:58] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Microalbumin+test+urine+albumin': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Microalbumin+test+urine+albumin
+[2026-08-10 11:17:58] [INFO   ] [KB-000023] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:17:58] [INFO   ] [KB-000023] [niddk] SEARCHING — Query: Albuminuria albumin urine diabetes
+[2026-08-10 11:18:00] [INFO   ] [KB-000023] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis/albuminuria-albumin-urine
+[2026-08-10 11:18:02] [INFO   ] [KB-000023] [niddk] EXTRACTING
+[2026-08-10 11:18:02] [INFO   ] [KB-000023] [niddk] CONVERTING
+[2026-08-10 11:18:02] [INFO   ] [KB-000023] [niddk] VALIDATING
+[2026-08-10 11:18:02] [INFO   ] [KB-000023] [niddk] COMPLETED — v1 (new) words=674 duration=4.4s
+[2026-08-10 11:18:02] [INFO   ] ======================================================================
+[2026-08-10 11:18:02] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:18:02] [INFO   ]   Total jobs:   3
+[2026-08-10 11:18:02] [INFO   ]   Scraped:      1
+[2026-08-10 11:18:02] [INFO   ]   Skipped:      0
+[2026-08-10 11:18:02] [INFO   ]   Failed:       2
+[2026-08-10 11:18:02] [INFO   ]   Duration:     6.3s
+[2026-08-10 11:18:02] [INFO   ] ======================================================================

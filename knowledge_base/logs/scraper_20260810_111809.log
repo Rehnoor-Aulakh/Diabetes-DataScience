@@ -1,0 +1,24 @@
+[2026-08-10 11:18:09] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_111809.log
+[2026-08-10 11:18:09] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:18:09] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:18:09] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:18:09] [INFO   ] [KB-000025] [ada] SEARCHING — Query: Diabetes and kidney disease
+[2026-08-10 11:18:11] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Diabetes+and+kidney+disease
+[2026-08-10 11:18:11] [INFO   ] [KB-000025] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:18:11] [INFO   ] [KB-000025] [mayo] SEARCHING — Query: Diabetic nephropathy kidney disease
+[2026-08-10 11:18:11] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Diabetic+nephropathy+kidney+disease': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Diabetic+nephropathy+kidney+disease
+[2026-08-10 11:18:11] [INFO   ] [KB-000025] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:18:11] [INFO   ] [KB-000025] [niddk] SEARCHING — Query: Diabetic kidney disease
+[2026-08-10 11:18:11] [INFO   ] [KB-000025] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems
+[2026-08-10 11:18:12] [INFO   ] [KB-000025] [niddk] EXTRACTING
+[2026-08-10 11:18:12] [INFO   ] [KB-000025] [niddk] CONVERTING
+[2026-08-10 11:18:12] [INFO   ] [KB-000025] [niddk] VALIDATING
+[2026-08-10 11:18:12] [INFO   ] [KB-000025] [niddk] COMPLETED — v1 (unchanged) words=558 duration=1.1s
+[2026-08-10 11:18:12] [INFO   ] ======================================================================
+[2026-08-10 11:18:12] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:18:12] [INFO   ]   Total jobs:   3
+[2026-08-10 11:18:12] [INFO   ]   Scraped:      1
+[2026-08-10 11:18:12] [INFO   ]   Skipped:      0
+[2026-08-10 11:18:12] [INFO   ]   Failed:       2
+[2026-08-10 11:18:12] [INFO   ]   Duration:     2.7s
+[2026-08-10 11:18:12] [INFO   ] ======================================================================

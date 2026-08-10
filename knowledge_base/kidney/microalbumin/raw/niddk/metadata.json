@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000023",
+  "topic": "microalbumin",
+  "topic_title": "Microalbumin (Urine Albumin)",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis/albuminuria-albumin-urine",
+  "scraped_at": "2026-08-10T11:33:54.103196+00:00",
+  "word_count": 674,
+  "content_hash": "sha256:3a5bfabcadc36835cd33fe46030873d43d853df0e57f36328f4accae93a9ec00",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

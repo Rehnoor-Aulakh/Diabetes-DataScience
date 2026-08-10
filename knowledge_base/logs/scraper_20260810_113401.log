@@ -1,0 +1,24 @@
+[2026-08-10 11:34:01] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_113401.log
+[2026-08-10 11:34:01] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:34:01] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:34:01] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:34:01] [INFO   ] [KB-000039] [ada] SEARCHING — Query: Cholesterol HDL diabetes cardiovascular
+[2026-08-10 11:34:03] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Cholesterol+HDL+diabetes+cardiovascular
+[2026-08-10 11:34:03] [INFO   ] [KB-000039] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:34:03] [INFO   ] [KB-000039] [mayo] SEARCHING — Query: HDL cholesterol good cholesterol
+[2026-08-10 11:34:04] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=HDL+cholesterol+good+cholesterol': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=HDL+cholesterol+good+cholesterol
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [medlineplus] SEARCHING — Using direct URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/cholesterol-levels/
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [medlineplus] EXTRACTING
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [medlineplus] CONVERTING
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [medlineplus] VALIDATING
+[2026-08-10 11:34:04] [INFO   ] [KB-000039] [medlineplus] COMPLETED — v1 (new) words=2063 duration=1.0s
+[2026-08-10 11:34:04] [INFO   ] ======================================================================
+[2026-08-10 11:34:04] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:34:04] [INFO   ]   Total jobs:   3
+[2026-08-10 11:34:04] [INFO   ]   Scraped:      1
+[2026-08-10 11:34:04] [INFO   ]   Skipped:      0
+[2026-08-10 11:34:04] [INFO   ]   Failed:       2
+[2026-08-10 11:34:04] [INFO   ]   Duration:     3.3s
+[2026-08-10 11:34:04] [INFO   ] ======================================================================

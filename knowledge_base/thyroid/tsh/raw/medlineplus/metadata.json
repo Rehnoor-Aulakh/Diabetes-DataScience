@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000063",
+  "topic": "tsh",
+  "topic_title": "TSH (Thyroid Stimulating Hormone)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+  "scraped_at": "2026-08-10T11:34:59.412110+00:00",
+  "word_count": 1638,
+  "content_hash": "sha256:71344a1ecb9cc03eb1af023b2f8e0cfe12402a1caf9c6e7f1b960ab0bb1a008c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"53fe49f923641a85e3283a1313b6a637\"",
+  "http_last_modified": "Sat, 08 Aug 2026 04:19:31 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}
