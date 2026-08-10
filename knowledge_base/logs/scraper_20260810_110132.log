@@ -1,0 +1,24 @@
+[2026-08-10 11:01:32] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_110132.log
+[2026-08-10 11:01:32] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:01:32] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:01:32] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:01:32] [INFO   ] [KB-000019] [cleveland] SEARCHING — Query: eGFR test kidney function
+[2026-08-10 11:01:33] [INFO   ] [KB-000019] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 11:01:33] [INFO   ] [KB-000019] [cleveland] EXTRACTING
+[2026-08-10 11:01:34] [INFO   ] [KB-000019] [cleveland] CONVERTING
+[2026-08-10 11:01:34] [INFO   ] [KB-000019] [cleveland] VALIDATING
+[2026-08-10 11:01:34] [INFO   ] [KB-000019] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:01:34] [INFO   ] [KB-000019] [mayo] SEARCHING — Query: Glomerular filtration rate GFR test
+[2026-08-10 11:01:34] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Glomerular+filtration+rate+GFR+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Glomerular+filtration+rate+GFR+test
+[2026-08-10 11:01:34] [INFO   ] [KB-000019] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:01:34] [INFO   ] [KB-000019] [niddk] SEARCHING — Query: Estimated GFR glomerular filtration rate
+[2026-08-10 11:01:36] [WARNING] No valid article links found on search page: https://www.niddk.nih.gov/search?q=Estimated+GFR+glomerular+filtration+rate
+[2026-08-10 11:01:36] [INFO   ] [KB-000019] [niddk] FAILED — Search returned no valid URLs
+[2026-08-10 11:01:36] [INFO   ] ======================================================================
+[2026-08-10 11:01:36] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:01:36] [INFO   ]   Total jobs:   3
+[2026-08-10 11:01:36] [INFO   ]   Scraped:      0
+[2026-08-10 11:01:36] [INFO   ]   Skipped:      0
+[2026-08-10 11:01:36] [INFO   ]   Failed:       3
+[2026-08-10 11:01:36] [INFO   ]   Duration:     3.1s
+[2026-08-10 11:01:36] [INFO   ] ======================================================================

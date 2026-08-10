@@ -6,7 +6,7 @@
   "source_name": "Cleveland Clinic",
   "version": 1,
   "url": "https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis",
-  "scraped_at": "2026-08-10T06:46:32.571021+00:00",
+  "scraped_at": "2026-08-10T11:01:28.177209+00:00",
   "word_count": 872,
   "content_hash": "sha256:ab1090281e0f34462a9e6070f6369ce618b971022eefb7ea614416450dcb1fbb",
   "extractor": "trafilatura/bs4",

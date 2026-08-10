@@ -1,0 +1,19 @@
+[2026-08-10 11:01:24] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_110124.log
+[2026-08-10 11:01:24] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:01:24] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:01:24] [INFO   ] [KB-000010] [medlineplus] Already scraped — skipping
+[2026-08-10 11:01:24] [INFO   ] Job queue: 2 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:01:24] [INFO   ] [KB-000010] [ada] SEARCHING — Query: Understanding A1C
+[2026-08-10 11:01:26] [WARNING] No valid article links found on search page: https://diabetes.org/search?q=Understanding+A1C
+[2026-08-10 11:01:26] [INFO   ] [KB-000010] [ada] FAILED — Search returned no valid URLs
+[2026-08-10 11:01:26] [INFO   ] [KB-000010] [mayo] SEARCHING — Query: A1C test
+[2026-08-10 11:01:26] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=A1C+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=A1C+test
+[2026-08-10 11:01:26] [INFO   ] [KB-000010] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:01:26] [INFO   ] ======================================================================
+[2026-08-10 11:01:26] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:01:26] [INFO   ]   Total jobs:   2
+[2026-08-10 11:01:26] [INFO   ]   Scraped:      0
+[2026-08-10 11:01:26] [INFO   ]   Skipped:      0
+[2026-08-10 11:01:26] [INFO   ]   Failed:       2
+[2026-08-10 11:01:26] [INFO   ]   Duration:     1.2s
+[2026-08-10 11:01:26] [INFO   ] ======================================================================

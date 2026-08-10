@@ -4,6 +4,13 @@ CLI entry point for the medical knowledge base scraper.
 
 import argparse
 import time
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from scraper.logger import setup_logger, get_logger, log_summary
 from scraper.manifest_loader import load_manifest
 from scraper.pipeline import run_job
@@ -19,6 +26,10 @@ def main():
     parser.add_argument("--delay", type=int, default=2, help="Delay between requests")
     
     args = parser.parse_args()
+
+    manifest_path = Path(args.manifest)
+    if not manifest_path.is_absolute():
+        manifest_path = ROOT / manifest_path
     
     logger = setup_logger()
     logger.info("Starting Scraper CLI")
@@ -27,7 +38,7 @@ def main():
     
     try:
         manifest = load_manifest(
-            manifest_path=args.manifest,
+            manifest_path=str(manifest_path),
             module_filter=args.module,
             topic_filter=args.topic,
             max_priority=args.priority,

@@ -1,0 +1,16 @@
+{
+    "remove": [
+        "the", "a", "an", "of", "and", "in", "to", "is", "that", "it", "with",
+        "as", "for", "was", "on", "are", "by", "this", "be", "at", "from",
+        "or", "have", "an", "they", "which", "one", "you", "were", "all",
+        "their", "there", "been", "has", "but", "when", "can", "if", "would",
+        "we", "who", "so", "what", "about", "up", "out", "its", "into", "some"
+    ],
+    "always_keep": [
+        "high", "low", "normal", "abnormal", "positive", "negative",
+        "without", "no", "not", "greater", "less", "above", "below",
+        "under", "over", "more", "within", "between", "mild", "severe",
+        "moderate", "increase", "decrease", "elevated", "reduced",
+        "absence", "presence"
+    ]
+}

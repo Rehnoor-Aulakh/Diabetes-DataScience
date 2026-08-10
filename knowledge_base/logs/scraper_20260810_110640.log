@@ -1,0 +1,22 @@
+[2026-08-10 11:06:40] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_110640.log
+[2026-08-10 11:06:40] [INFO   ] Starting Scraper CLI
+[2026-08-10 11:06:40] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 11:06:40] [INFO   ] [KB-000019] [niddk] Already scraped — skipping
+[2026-08-10 11:06:40] [INFO   ] Job queue: 2 jobs across 1 topics (filtered from manifest)
+[2026-08-10 11:06:40] [INFO   ] [KB-000019] [cleveland] SEARCHING — Query: eGFR test kidney function
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [cleveland] EXTRACTING
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [cleveland] CONVERTING
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [cleveland] VALIDATING
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [mayo] SEARCHING — Query: Glomerular filtration rate GFR test
+[2026-08-10 11:06:41] [ERROR  ] Direct search scrape error for 'https://www.mayoclinic.org/search/search-results?q=Glomerular+filtration+rate+GFR+test': 403 Client Error: Forbidden for url: https://www.mayoclinic.org/search/search-results?q=Glomerular+filtration+rate+GFR+test
+[2026-08-10 11:06:41] [INFO   ] [KB-000019] [mayo] FAILED — Search returned no valid URLs
+[2026-08-10 11:06:41] [INFO   ] ======================================================================
+[2026-08-10 11:06:41] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 11:06:41] [INFO   ]   Total jobs:   2
+[2026-08-10 11:06:41] [INFO   ]   Scraped:      0
+[2026-08-10 11:06:41] [INFO   ]   Skipped:      0
+[2026-08-10 11:06:41] [INFO   ]   Failed:       2
+[2026-08-10 11:06:41] [INFO   ]   Duration:     1.5s
+[2026-08-10 11:06:41] [INFO   ] ======================================================================

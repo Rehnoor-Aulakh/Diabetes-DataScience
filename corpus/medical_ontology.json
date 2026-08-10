@@ -1,0 +1,3295 @@
+{
+  "HBA1C": {
+    "id": "CONCEPT__HBA1C",
+    "canonical": "HBA1C",
+    "type": "medical_concept",
+    "aliases": [
+      "glycosylated hemoglobin",
+      "HbA1c",
+      "glycated hemoglobin",
+      "hemoglobin A1c",
+      "A1C",
+      "hba1c"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "ESTIMATED AVERAGE GLUCOSE (eAG)",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "average_blood_glucose",
+      "hyperglycemia",
+      "type2_diabetes",
+      "prediabetes",
+      "insulin_resistance",
+      "hemoglobin"
+    ]
+  },
+  "ABG": {
+    "id": "TEST_GLYCEMIC_1",
+    "canonical": "ABG",
+    "type": "lab_test",
+    "aliases": [
+      "abg",
+      "AVERAGE BLOOD GLUCOSE ABG",
+      "AVERAGE BLOOD GLUCOSE (ABG)"
+    ],
+    "category": "glycemic",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "C_PEPTIDE": {
+    "id": "CONCEPT__C_PEPTIDE",
+    "canonical": "C_PEPTIDE",
+    "type": "medical_concept",
+    "aliases": [
+      "connecting peptide",
+      "insulin secretion marker",
+      "C-Peptide",
+      "C-peptide",
+      "c_peptide"
+    ],
+    "category": "",
+    "related_tests": [
+      "C-PEPTIDE",
+      "INSULIN - FASTING"
+    ],
+    "related_topics": [
+      "insulin",
+      "pancreas",
+      "type1_diabetes",
+      "type2_diabetes"
+    ]
+  },
+  "CREATININE": {
+    "id": "CONCEPT__CREATININE",
+    "canonical": "CREATININE",
+    "type": "medical_concept",
+    "aliases": [
+      "blood creatinine",
+      "Creatinine",
+      "creatinine",
+      "kidney function test",
+      "serum creatinine"
+    ],
+    "category": "",
+    "related_tests": [
+      "CREATININE - SERUM",
+      "CREATININE - URINE",
+      "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+      "BUN (BLOOD UREA NITROGEN)"
+    ],
+    "related_topics": [
+      "egfr",
+      "bun",
+      "microalbumin",
+      "diabetic_kidney_disease",
+      "urine_creatinine",
+      "albumin_creatinine_ratio"
+    ]
+  },
+  "EGFR": {
+    "id": "CONCEPT__EGFR",
+    "canonical": "EGFR",
+    "type": "medical_concept",
+    "aliases": [
+      "kidney filtration rate",
+      "estimated glomerular filtration rate",
+      "egfr",
+      "GFR",
+      "eGFR"
+    ],
+    "category": "",
+    "related_tests": [
+      "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+      "CREATININE - SERUM"
+    ],
+    "related_topics": [
+      "creatinine",
+      "diabetic_kidney_disease",
+      "microalbumin",
+      "bun",
+      "albumin_creatinine_ratio"
+    ]
+  },
+  "BUN": {
+    "id": "CONCEPT__BUN",
+    "canonical": "BUN",
+    "type": "medical_concept",
+    "aliases": [
+      "blood urea nitrogen",
+      "BUN (Blood Urea Nitrogen)",
+      "bun",
+      "kidney function",
+      "urea nitrogen",
+      "BUN"
+    ],
+    "category": "",
+    "related_tests": [
+      "BUN (BLOOD UREA NITROGEN)",
+      "CREATININE - SERUM",
+      "BUN/CREATININE RATIO"
+    ],
+    "related_topics": [
+      "creatinine",
+      "egfr",
+      "urea",
+      "diabetic_kidney_disease"
+    ]
+  },
+  "UREA": {
+    "id": "CONCEPT__UREA",
+    "canonical": "UREA",
+    "type": "medical_concept",
+    "aliases": [
+      "Urea",
+      "urea blood test",
+      "urea",
+      "blood urea"
+    ],
+    "category": "",
+    "related_tests": [
+      "UREA",
+      "BUN (BLOOD UREA NITROGEN)"
+    ],
+    "related_topics": [
+      "bun",
+      "creatinine",
+      "egfr",
+      "diabetic_kidney_disease"
+    ]
+  },
+  "URIC_ACID": {
+    "id": "CONCEPT__URIC_ACID",
+    "canonical": "URIC_ACID",
+    "type": "medical_concept",
+    "aliases": [
+      "kidney stones uric acid",
+      "uric acid",
+      "gout",
+      "uric_acid",
+      "urate",
+      "hyperuricemia",
+      "Uric Acid"
+    ],
+    "category": "",
+    "related_tests": [
+      "URIC ACID - SERUM",
+      "URIC ACID - URINE"
+    ],
+    "related_topics": [
+      "creatinine",
+      "egfr",
+      "diabetic_kidney_disease",
+      "electrolytes"
+    ]
+  },
+  "CALCIUM": {
+    "id": "TEST_RENAL_8",
+    "canonical": "CALCIUM",
+    "type": "lab_test",
+    "aliases": [
+      "CALCIUM",
+      "calcium"
+    ],
+    "category": "renal",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "BUN_CREATININE_RATIO": {
+    "id": "TEST_RENAL_9",
+    "canonical": "BUN_CREATININE_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "bun_creatinine_ratio",
+      "BUN / SR.CREATININE RATIO"
+    ],
+    "category": "renal",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "UREA_CREATININE_RATIO": {
+    "id": "TEST_RENAL_10",
+    "canonical": "UREA_CREATININE_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "urea_creatinine_ratio",
+      "UREA / SR.CREATININE RATIO"
+    ],
+    "category": "renal",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "URINE_CREATININE": {
+    "id": "CONCEPT__URINE_CREATININE",
+    "canonical": "URINE_CREATININE",
+    "type": "medical_concept",
+    "aliases": [
+      "24-hour urine creatinine",
+      "Urine Creatinine",
+      "creatinine clearance",
+      "urine_creatinine",
+      "urine creatinine"
+    ],
+    "category": "",
+    "related_tests": [
+      "CREATININE - URINE",
+      "CREATININE CLEARANCE",
+      "24-HOUR URINE CREATININE"
+    ],
+    "related_topics": [
+      "creatinine",
+      "albumin_creatinine_ratio",
+      "microalbumin",
+      "egfr"
+    ]
+  },
+  "URINARY_MICROALBUMIN": {
+    "id": "TEST_RENAL_12",
+    "canonical": "URINARY_MICROALBUMIN",
+    "type": "lab_test",
+    "aliases": [
+      "urinary_microalbumin",
+      "URINARY MICROALBUMIN"
+    ],
+    "category": "renal",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "UACR": {
+    "id": "TEST_RENAL_13",
+    "canonical": "UACR",
+    "type": "lab_test",
+    "aliases": [
+      "URI. ALBUMIN/CREATININE RATIO (UA/C)",
+      "URI. ALBUMIN/CREATININE RATIO UA/C",
+      "uacr"
+    ],
+    "category": "renal",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "TOTAL_CHOLESTEROL": {
+    "id": "CONCEPT__TOTAL_CHOLESTEROL",
+    "canonical": "TOTAL_CHOLESTEROL",
+    "type": "medical_concept",
+    "aliases": [
+      "blood cholesterol",
+      "total cholesterol",
+      "Total Cholesterol",
+      "hypercholesterolemia",
+      "cholesterol",
+      "total_cholesterol"
+    ],
+    "category": "",
+    "related_tests": [
+      "TOTAL CHOLESTEROL",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "hdl",
+      "ldl",
+      "triglycerides",
+      "lipid_panel",
+      "cholesterol_ratio"
+    ]
+  },
+  "HDL": {
+    "id": "CONCEPT__HDL",
+    "canonical": "HDL",
+    "type": "medical_concept",
+    "aliases": [
+      "HDL Cholesterol",
+      "HDL-C",
+      "HDL",
+      "high-density lipoprotein",
+      "good cholesterol",
+      "hdl"
+    ],
+    "category": "",
+    "related_tests": [
+      "HDL CHOLESTEROL",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "ldl",
+      "total_cholesterol",
+      "triglycerides",
+      "lipid_panel",
+      "cholesterol_ratio",
+      "heart_disease"
+    ]
+  },
+  "LDL": {
+    "id": "CONCEPT__LDL",
+    "canonical": "LDL",
+    "type": "medical_concept",
+    "aliases": [
+      "LDL Cholesterol",
+      "bad cholesterol",
+      "low-density lipoprotein",
+      "LDL-C",
+      "ldl",
+      "LDL"
+    ],
+    "category": "",
+    "related_tests": [
+      "LDL CHOLESTEROL - DIRECT",
+      "LDL CHOLESTEROL - CALCULATED",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "hdl",
+      "total_cholesterol",
+      "triglycerides",
+      "apob",
+      "lipid_panel",
+      "statins",
+      "atherosclerosis"
+    ]
+  },
+  "VLDL": {
+    "id": "CONCEPT__VLDL",
+    "canonical": "VLDL",
+    "type": "medical_concept",
+    "aliases": [
+      "very low-density lipoprotein",
+      "vldl",
+      "VLDL cholesterol",
+      "VLDL",
+      "VLDL Cholesterol"
+    ],
+    "category": "",
+    "related_tests": [
+      "VLDL CHOLESTEROL",
+      "TRIGLYCERIDES",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "triglycerides",
+      "ldl",
+      "lipid_panel"
+    ]
+  },
+  "TRIGLYCERIDES": {
+    "id": "CONCEPT__TRIGLYCERIDES",
+    "canonical": "TRIGLYCERIDES",
+    "type": "medical_concept",
+    "aliases": [
+      "Triglycerides",
+      "TG",
+      "hypertriglyceridemia",
+      "blood fat",
+      "triglycerides"
+    ],
+    "category": "",
+    "related_tests": [
+      "TRIGLYCERIDES",
+      "LIPID PROFILE",
+      "VLDL CHOLESTEROL"
+    ],
+    "related_topics": [
+      "hdl",
+      "ldl",
+      "vldl",
+      "lipid_panel",
+      "insulin_resistance",
+      "fatty_liver",
+      "heart_disease"
+    ]
+  },
+  "NON_HDL": {
+    "id": "TEST_LIPID_19",
+    "canonical": "NON_HDL",
+    "type": "lab_test",
+    "aliases": [
+      "non_hdl",
+      "NON-HDL CHOLESTEROL"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "TC_HDL_RATIO": {
+    "id": "TEST_LIPID_20",
+    "canonical": "TC_HDL_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "tc_hdl_ratio",
+      "TC/ HDL CHOLESTEROL RATIO"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "TRIG_HDL_RATIO": {
+    "id": "TEST_LIPID_21",
+    "canonical": "TRIG_HDL_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "TRIG / HDL RATIO",
+      "trig_hdl_ratio"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "LDL_HDL_RATIO": {
+    "id": "TEST_LIPID_22",
+    "canonical": "LDL_HDL_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "LDL / HDL RATIO",
+      "ldl_hdl_ratio"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "HDL_LDL_RATIO": {
+    "id": "TEST_LIPID_23",
+    "canonical": "HDL_LDL_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "hdl_ldl_ratio",
+      "HDL / LDL RATIO"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "APO_A1": {
+    "id": "TEST_LIPID_24",
+    "canonical": "APO_A1",
+    "type": "lab_test",
+    "aliases": [
+      "APOLIPOPROTEIN A1 APO-A1",
+      "APOLIPOPROTEIN - A1 (APO-A1)",
+      "apo_a1"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "APO_B": {
+    "id": "TEST_LIPID_25",
+    "canonical": "APO_B",
+    "type": "lab_test",
+    "aliases": [
+      "apo_b",
+      "APOLIPOPROTEIN - B (APO-B)",
+      "APOLIPOPROTEIN B APO-B"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "APO_B_APO_A1_RATIO": {
+    "id": "TEST_LIPID_26",
+    "canonical": "APO_B_APO_A1_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "APO B / APO A1 RATIO APO B/A1",
+      "APO B / APO A1 RATIO (APO B/A1)",
+      "apo_b_apo_a1_ratio"
+    ],
+    "category": "lipid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "LIPOPROTEIN_A": {
+    "id": "CONCEPT__LIPOPROTEIN_A",
+    "canonical": "LIPOPROTEIN_A",
+    "type": "medical_concept",
+    "aliases": [
+      "Lp(a)",
+      "lipoprotein_a",
+      "lipoprotein a",
+      "Lipoprotein(a)",
+      "lipoprotein little a",
+      "cardiovascular risk marker"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIPOPROTEIN (a)",
+      "Lp(a)"
+    ],
+    "related_topics": [
+      "apob",
+      "ldl",
+      "heart_disease",
+      "atherosclerosis"
+    ]
+  },
+  "ALT": {
+    "id": "CONCEPT__ALT",
+    "canonical": "ALT",
+    "type": "medical_concept",
+    "aliases": [
+      "SGPT",
+      "alanine aminotransferase",
+      "alanine transaminase",
+      "ALT",
+      "ALT (SGPT)",
+      "liver enzyme",
+      "alt"
+    ],
+    "category": "",
+    "related_tests": [
+      "ALT (SGPT)",
+      "ALANINE AMINOTRANSFERASE",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "ast",
+      "liver_function_panel",
+      "fatty_liver",
+      "nafld",
+      "bilirubin"
+    ]
+  },
+  "AST": {
+    "id": "CONCEPT__AST",
+    "canonical": "AST",
+    "type": "medical_concept",
+    "aliases": [
+      "AST (SGOT)",
+      "AST",
+      "SGOT",
+      "aspartate aminotransferase",
+      "ast",
+      "liver enzyme",
+      "aspartate transaminase"
+    ],
+    "category": "",
+    "related_tests": [
+      "AST (SGOT)",
+      "ASPARTATE AMINOTRANSFERASE",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "alt",
+      "liver_function_panel",
+      "fatty_liver",
+      "nafld",
+      "bilirubin"
+    ]
+  },
+  "AST_ALT_RATIO": {
+    "id": "TEST_LIVER_30",
+    "canonical": "AST_ALT_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "ast_alt_ratio",
+      "SGOT / SGPT RATIO"
+    ],
+    "category": "liver",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "ALKALINE_PHOSPHATASE": {
+    "id": "TEST_LIVER_31",
+    "canonical": "ALKALINE_PHOSPHATASE",
+    "type": "lab_test",
+    "aliases": [
+      "alkaline_phosphatase",
+      "ALKALINE PHOSPHATASE"
+    ],
+    "category": "liver",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "BILIRUBIN_TOTAL": {
+    "id": "TEST_LIVER_32",
+    "canonical": "BILIRUBIN_TOTAL",
+    "type": "lab_test",
+    "aliases": [
+      "BILIRUBIN TOTAL",
+      "bilirubin_total",
+      "BILIRUBIN - TOTAL"
+    ],
+    "category": "liver",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "BILIRUBIN_DIRECT": {
+    "id": "TEST_LIVER_33",
+    "canonical": "BILIRUBIN_DIRECT",
+    "type": "lab_test",
+    "aliases": [
+      "BILIRUBIN -DIRECT",
+      "bilirubin_direct"
+    ],
+    "category": "liver",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "BILIRUBIN_INDIRECT": {
+    "id": "TEST_LIVER_34",
+    "canonical": "BILIRUBIN_INDIRECT",
+    "type": "lab_test",
+    "aliases": [
+      "BILIRUBIN INDIRECT",
+      "bilirubin_indirect",
+      "BILIRUBIN (INDIRECT)"
+    ],
+    "category": "liver",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "GGT": {
+    "id": "CONCEPT__GGT",
+    "canonical": "GGT",
+    "type": "medical_concept",
+    "aliases": [
+      "ggt",
+      "gamma GT",
+      "liver bile duct enzyme",
+      "gamma-glutamyl transferase",
+      "GGT",
+      "GGT (Gamma-Glutamyl Transferase)"
+    ],
+    "category": "",
+    "related_tests": [
+      "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "alp",
+      "alt",
+      "ast",
+      "bilirubin",
+      "liver_function_panel",
+      "alcohol"
+    ]
+  },
+  "TOTAL_PROTEIN": {
+    "id": "CONCEPT__TOTAL_PROTEIN",
+    "canonical": "TOTAL_PROTEIN",
+    "type": "medical_concept",
+    "aliases": [
+      "serum protein",
+      "total_protein",
+      "Total Protein",
+      "total protein",
+      "protein electrophoresis"
+    ],
+    "category": "",
+    "related_tests": [
+      "TOTAL PROTEIN",
+      "ALBUMIN - SERUM",
+      "GLOBULIN",
+      "A/G RATIO"
+    ],
+    "related_topics": [
+      "albumin",
+      "globulin",
+      "liver_function_panel"
+    ]
+  },
+  "ALBUMIN": {
+    "id": "CONCEPT__ALBUMIN",
+    "canonical": "ALBUMIN",
+    "type": "medical_concept",
+    "aliases": [
+      "albumin",
+      "serum albumin",
+      "liver protein",
+      "blood albumin",
+      "Albumin (Serum)"
+    ],
+    "category": "",
+    "related_tests": [
+      "ALBUMIN - SERUM",
+      "TOTAL PROTEIN",
+      "A/G RATIO"
+    ],
+    "related_topics": [
+      "globulin",
+      "total_protein",
+      "liver_function_panel",
+      "microalbumin"
+    ]
+  },
+  "GLOBULIN": {
+    "id": "CONCEPT__GLOBULIN",
+    "canonical": "GLOBULIN",
+    "type": "medical_concept",
+    "aliases": [
+      "A/G ratio",
+      "total protein",
+      "immunoglobulins",
+      "albumin globulin ratio",
+      "Globulin",
+      "globulin"
+    ],
+    "category": "",
+    "related_tests": [
+      "GLOBULIN",
+      "A/G RATIO",
+      "TOTAL PROTEIN"
+    ],
+    "related_topics": [
+      "albumin",
+      "total_protein",
+      "liver_function_panel"
+    ]
+  },
+  "ALBUMIN_GLOBULIN_RATIO": {
+    "id": "TEST_LIVER_39",
+    "canonical": "ALBUMIN_GLOBULIN_RATIO",
+    "type": "lab_test",
+    "aliases": [
+      "SERUM ALB/GLOBULIN RATIO",
+      "albumin_globulin_ratio"
+    ],
+    "category": "liver",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "TSH": {
+    "id": "CONCEPT__TSH",
+    "canonical": "TSH",
+    "type": "medical_concept",
+    "aliases": [
+      "tsh",
+      "TSH (Thyroid Stimulating Hormone)",
+      "TSH",
+      "thyroid stimulating hormone",
+      "thyroid function test",
+      "thyrotropin"
+    ],
+    "category": "",
+    "related_tests": [
+      "TSH (THYROID STIMULATING HORMONE)",
+      "FREE T4",
+      "FREE T3"
+    ],
+    "related_topics": [
+      "t3",
+      "t4",
+      "hypothyroidism",
+      "hyperthyroidism",
+      "thyroid_antibodies",
+      "diabetes_thyroid_connection"
+    ]
+  },
+  "T4": {
+    "id": "CONCEPT__T4",
+    "canonical": "T4",
+    "type": "medical_concept",
+    "aliases": [
+      "free T4",
+      "thyroxine",
+      "thyroid hormone",
+      "total T4",
+      "T4 (Thyroxine)",
+      "t4",
+      "T4"
+    ],
+    "category": "",
+    "related_tests": [
+      "T4 - TOTAL",
+      "FREE T4",
+      "THYROXINE"
+    ],
+    "related_topics": [
+      "tsh",
+      "t3",
+      "hypothyroidism",
+      "hyperthyroidism"
+    ]
+  },
+  "T3": {
+    "id": "CONCEPT__T3",
+    "canonical": "T3",
+    "type": "medical_concept",
+    "aliases": [
+      "T3",
+      "free T3",
+      "triiodothyronine",
+      "total T3",
+      "T3 (Triiodothyronine)",
+      "thyroid hormone",
+      "t3"
+    ],
+    "category": "",
+    "related_tests": [
+      "T3 - TOTAL",
+      "FREE T3",
+      "TRIIODOTHYRONINE"
+    ],
+    "related_topics": [
+      "tsh",
+      "t4",
+      "hypothyroidism",
+      "hyperthyroidism"
+    ]
+  },
+  "TSH_RECEPTOR_ANTIBODIES": {
+    "id": "TEST_THYROID_43",
+    "canonical": "TSH_RECEPTOR_ANTIBODIES",
+    "type": "lab_test",
+    "aliases": [
+      "tsh_receptor_antibodies",
+      "TSH RECEPTOR ANTIBODIES"
+    ],
+    "category": "thyroid",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "VITAMIN_D": {
+    "id": "CONCEPT__VITAMIN_D",
+    "canonical": "VITAMIN_D",
+    "type": "medical_concept",
+    "aliases": [
+      "vitamin D",
+      "vitamin D deficiency",
+      "calciferol",
+      "25-hydroxyvitamin D",
+      "Vitamin D",
+      "cholecalciferol",
+      "vitamin_d"
+    ],
+    "category": "",
+    "related_tests": [
+      "VITAMIN D, 25-HYDROXY",
+      "25-OH VITAMIN D",
+      "CALCIUM"
+    ],
+    "related_topics": [
+      "vitamin_b12",
+      "insulin_resistance",
+      "type2_diabetes"
+    ]
+  },
+  "VITAMIN_B12": {
+    "id": "CONCEPT__VITAMIN_B12",
+    "canonical": "VITAMIN_B12",
+    "type": "medical_concept",
+    "aliases": [
+      "methylcobalamin",
+      "B12 deficiency",
+      "cyanocobalamin",
+      "vitamin B12",
+      "Vitamin B12",
+      "cobalamin",
+      "vitamin_b12"
+    ],
+    "category": "",
+    "related_tests": [
+      "VITAMIN B12",
+      "METHYLMALONIC ACID",
+      "HOMOCYSTEINE"
+    ],
+    "related_topics": [
+      "vitamin_d",
+      "anemia",
+      "hemoglobin",
+      "metformin",
+      "diabetic_neuropathy"
+    ]
+  },
+  "HS_CRP": {
+    "id": "TEST_INFLAMMATION_46",
+    "canonical": "HS_CRP",
+    "type": "lab_test",
+    "aliases": [
+      "HIGH SENSITIVITY C-REACTIVE PROTEIN (HS-CRP)",
+      "HIGH SENSITIVITY C-REACTIVE PROTEIN HS-CRP",
+      "hs_crp"
+    ],
+    "category": "inflammation",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "CRP": {
+    "id": "CONCEPT__CRP",
+    "canonical": "CRP",
+    "type": "medical_concept",
+    "aliases": [
+      "crp",
+      "C-reactive protein",
+      "CRP",
+      "high-sensitivity CRP",
+      "CRP / hs-CRP (C-Reactive Protein)",
+      "cardiovascular risk",
+      "hs-CRP",
+      "inflammation"
+    ],
+    "category": "",
+    "related_tests": [
+      "C-REACTIVE PROTEIN (CRP)",
+      "HIGH-SENSITIVITY CRP (hs-CRP)"
+    ],
+    "related_topics": [
+      "esr",
+      "heart_disease",
+      "atherosclerosis",
+      "insulin_resistance"
+    ]
+  },
+  "ESR": {
+    "id": "CONCEPT__ESR",
+    "canonical": "ESR",
+    "type": "medical_concept",
+    "aliases": [
+      "ESR",
+      "erythrocyte sedimentation rate",
+      "esr",
+      "ESR (Erythrocyte Sedimentation Rate)",
+      "sed rate",
+      "inflammation marker"
+    ],
+    "category": "",
+    "related_tests": [
+      "ESR (ERYTHROCYTE SEDIMENTATION RATE)"
+    ],
+    "related_topics": [
+      "crp",
+      "wbc",
+      "infections"
+    ]
+  },
+  "HEMOGLOBIN": {
+    "id": "CONCEPT__HEMOGLOBIN",
+    "canonical": "HEMOGLOBIN",
+    "type": "medical_concept",
+    "aliases": [
+      "hemoglobin",
+      "Hgb",
+      "oxygen carrying protein",
+      "hemoglobin level",
+      "Hb",
+      "Hemoglobin"
+    ],
+    "category": "",
+    "related_tests": [
+      "HEMOGLOBIN",
+      "HEMATOCRIT",
+      "RBC COUNT"
+    ],
+    "related_topics": [
+      "anemia",
+      "hba1c",
+      "hematocrit",
+      "rbc",
+      "iron_studies",
+      "vitamin_b12"
+    ]
+  },
+  "WBC": {
+    "id": "CONCEPT__WBC",
+    "canonical": "WBC",
+    "type": "medical_concept",
+    "aliases": [
+      "wbc",
+      "immune cells",
+      "leukocytes",
+      "WBC",
+      "White Blood Cell Count",
+      "white blood cells",
+      "white blood cell count"
+    ],
+    "category": "",
+    "related_tests": [
+      "WBC COUNT",
+      "WBC DIFFERENTIAL",
+      "NEUTROPHILS",
+      "LYMPHOCYTES",
+      "MONOCYTES",
+      "EOSINOPHILS",
+      "BASOPHILS"
+    ],
+    "related_topics": [
+      "cbc_overview",
+      "infections",
+      "crp"
+    ]
+  },
+  "PLATELET_COUNT": {
+    "id": "TEST_CBC_51",
+    "canonical": "PLATELET_COUNT",
+    "type": "lab_test",
+    "aliases": [
+      "PLATELET COUNT",
+      "platelet_count"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "HEMATOCRIT": {
+    "id": "CONCEPT__HEMATOCRIT",
+    "canonical": "HEMATOCRIT",
+    "type": "medical_concept",
+    "aliases": [
+      "packed cell volume",
+      "PCV",
+      "Hct",
+      "Hematocrit",
+      "hematocrit"
+    ],
+    "category": "",
+    "related_tests": [
+      "HEMATOCRIT",
+      "PACKED CELL VOLUME (PCV)",
+      "HEMOGLOBIN"
+    ],
+    "related_topics": [
+      "hemoglobin",
+      "rbc",
+      "anemia",
+      "cbc_overview"
+    ]
+  },
+  "RBC": {
+    "id": "CONCEPT__RBC",
+    "canonical": "RBC",
+    "type": "medical_concept",
+    "aliases": [
+      "red blood cells",
+      "red blood cell count",
+      "rbc",
+      "RBC",
+      "erythrocytes",
+      "Red Blood Cell Count"
+    ],
+    "category": "",
+    "related_tests": [
+      "RBC COUNT",
+      "MCV",
+      "MCH",
+      "MCHC",
+      "RDW"
+    ],
+    "related_topics": [
+      "hemoglobin",
+      "hematocrit",
+      "anemia",
+      "cbc_overview"
+    ]
+  },
+  "MCV": {
+    "id": "TEST_CBC_55",
+    "canonical": "MCV",
+    "type": "lab_test",
+    "aliases": [
+      "mcv",
+      "MEAN CORPUSCULAR VOLUMEMCV",
+      "MEAN CORPUSCULAR VOLUME(MCV)"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "MCH": {
+    "id": "TEST_CBC_56",
+    "canonical": "MCH",
+    "type": "lab_test",
+    "aliases": [
+      "MEAN CORPUSCULAR HEMOGLOBINMCH",
+      "mch",
+      "MEAN CORPUSCULAR HEMOGLOBIN(MCH)"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "MCHC": {
+    "id": "TEST_CBC_56",
+    "canonical": "MCHC",
+    "type": "lab_test",
+    "aliases": [
+      "mchc",
+      "MEAN CORP.HEMO.CONC(MCHC)",
+      "MEAN CORP.HEMO.CONCMCHC"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "RDW_CV": {
+    "id": "TEST_CBC_58",
+    "canonical": "RDW_CV",
+    "type": "lab_test",
+    "aliases": [
+      "RED CELL DISTRIBUTION WIDTH RDW-CV",
+      "rdw_cv",
+      "RED CELL DISTRIBUTION WIDTH (RDW-CV)"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "RDW_SD": {
+    "id": "TEST_CBC_59",
+    "canonical": "RDW_SD",
+    "type": "lab_test",
+    "aliases": [
+      "rdw_sd",
+      "Red Cell Distribution Width - SD (RDW-SD)",
+      "Red Cell Distribution Width SD RDW-SD"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "MPV": {
+    "id": "TEST_CBC_60",
+    "canonical": "MPV",
+    "type": "lab_test",
+    "aliases": [
+      "MEAN PLATELET VOLUMEMPV",
+      "mpv",
+      "MEAN PLATELET VOLUME(MPV)"
+    ],
+    "category": "cbc",
+    "unit": "",
+    "related_organs": [],
+    "related_conditions": []
+  },
+  "DIABETES_OVERVIEW": {
+    "id": "CONCEPT__DIABETES_OVERVIEW",
+    "canonical": "DIABETES_OVERVIEW",
+    "type": "medical_concept",
+    "aliases": [
+      "glucose",
+      "chronic disease",
+      "What is Diabetes",
+      "diabetes mellitus",
+      "diabetes_overview",
+      "diabetes",
+      "blood sugar"
+    ],
+    "category": "",
+    "related_tests": [
+      "FASTING BLOOD SUGAR (FBS)",
+      "HbA1c",
+      "RANDOM BLOOD SUGAR",
+      "ORAL GLUCOSE TOLERANCE TEST (OGTT)"
+    ],
+    "related_topics": [
+      "type1_diabetes",
+      "type2_diabetes",
+      "prediabetes",
+      "insulin",
+      "glucose_metabolism",
+      "hba1c"
+    ]
+  },
+  "TYPE1_DIABETES": {
+    "id": "CONCEPT__TYPE1_DIABETES",
+    "canonical": "TYPE1_DIABETES",
+    "type": "medical_concept",
+    "aliases": [
+      "type1_diabetes",
+      "T1D",
+      "autoimmune diabetes",
+      "Type 1 Diabetes",
+      "juvenile diabetes",
+      "insulin dependent",
+      "type 1 diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "C-PEPTIDE",
+      "INSULIN - FASTING",
+      "GAD ANTIBODIES"
+    ],
+    "related_topics": [
+      "diabetes_overview",
+      "insulin",
+      "hba1c",
+      "diabetic_ketoacidosis",
+      "c_peptide",
+      "pancreas"
+    ]
+  },
+  "TYPE2_DIABETES": {
+    "id": "CONCEPT__TYPE2_DIABETES",
+    "canonical": "TYPE2_DIABETES",
+    "type": "medical_concept",
+    "aliases": [
+      "Type 2 Diabetes",
+      "insulin resistance",
+      "type 2 diabetes",
+      "T2D",
+      "type2_diabetes",
+      "non-insulin dependent",
+      "adult onset diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
+      "INSULIN - FASTING",
+      "TRIGLYCERIDES"
+    ],
+    "related_topics": [
+      "diabetes_overview",
+      "insulin_resistance",
+      "prediabetes",
+      "hba1c",
+      "metformin",
+      "weight_management"
+    ]
+  },
+  "PREDIABETES": {
+    "id": "CONCEPT__PREDIABETES",
+    "canonical": "PREDIABETES",
+    "type": "medical_concept",
+    "aliases": [
+      "impaired fasting glucose",
+      "prediabetes",
+      "Prediabetes",
+      "borderline diabetes",
+      "impaired glucose tolerance"
+    ],
+    "category": "",
+    "related_tests": [
+      "FASTING BLOOD SUGAR (FBS)",
+      "HbA1c",
+      "ORAL GLUCOSE TOLERANCE TEST (OGTT)"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "insulin_resistance",
+      "hba1c",
+      "fasting_blood_glucose",
+      "weight_management",
+      "healthy_eating",
+      "exercise"
+    ]
+  },
+  "GESTATIONAL_DIABETES": {
+    "id": "CONCEPT__GESTATIONAL_DIABETES",
+    "canonical": "GESTATIONAL_DIABETES",
+    "type": "medical_concept",
+    "aliases": [
+      "glucose tolerance pregnancy",
+      "gestational diabetes",
+      "Gestational Diabetes",
+      "pregnancy diabetes",
+      "gestational_diabetes",
+      "GDM"
+    ],
+    "category": "",
+    "related_tests": [
+      "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
+      "FASTING BLOOD SUGAR (FBS)",
+      "HbA1c"
+    ],
+    "related_topics": [
+      "diabetes_overview",
+      "type2_diabetes",
+      "ogtt",
+      "fasting_blood_glucose"
+    ]
+  },
+  "INSULIN": {
+    "id": "CONCEPT__INSULIN",
+    "canonical": "INSULIN",
+    "type": "medical_concept",
+    "aliases": [
+      "pancreas insulin",
+      "insulin function",
+      "Insulin",
+      "insulin hormone",
+      "insulin"
+    ],
+    "category": "",
+    "related_tests": [
+      "INSULIN - FASTING",
+      "C-PEPTIDE",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "insulin_resistance",
+      "pancreas",
+      "type1_diabetes",
+      "type2_diabetes",
+      "glucose_metabolism",
+      "insulin_therapy"
+    ]
+  },
+  "INSULIN_RESISTANCE": {
+    "id": "CONCEPT__INSULIN_RESISTANCE",
+    "canonical": "INSULIN_RESISTANCE",
+    "type": "medical_concept",
+    "aliases": [
+      "insulin_resistance",
+      "insulin sensitivity",
+      "insulin resistance",
+      "Insulin Resistance",
+      "metabolic syndrome"
+    ],
+    "category": "",
+    "related_tests": [
+      "INSULIN - FASTING",
+      "FASTING BLOOD SUGAR (FBS)",
+      "HbA1c",
+      "TRIGLYCERIDES",
+      "HDL CHOLESTEROL"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "prediabetes",
+      "insulin",
+      "weight_management",
+      "triglycerides",
+      "hdl"
+    ]
+  },
+  "PANCREAS": {
+    "id": "CONCEPT__PANCREAS",
+    "canonical": "PANCREAS",
+    "type": "medical_concept",
+    "aliases": [
+      "glucagon",
+      "Pancreas and Beta Cells",
+      "alpha cells",
+      "pancreas",
+      "beta cells",
+      "insulin production",
+      "islets of Langerhans"
+    ],
+    "category": "",
+    "related_tests": [
+      "C-PEPTIDE",
+      "INSULIN - FASTING",
+      "AMYLASE",
+      "LIPASE"
+    ],
+    "related_topics": [
+      "insulin",
+      "type1_diabetes",
+      "glucose_metabolism",
+      "c_peptide"
+    ]
+  },
+  "GLUCOSE_METABOLISM": {
+    "id": "CONCEPT__GLUCOSE_METABOLISM",
+    "canonical": "GLUCOSE_METABOLISM",
+    "type": "medical_concept",
+    "aliases": [
+      "glycogenolysis",
+      "glycogen",
+      "blood glucose regulation",
+      "Blood Glucose Regulation",
+      "glucose metabolism",
+      "gluconeogenesis",
+      "glucose_metabolism"
+    ],
+    "category": "",
+    "related_tests": [
+      "FASTING BLOOD SUGAR (FBS)",
+      "RANDOM BLOOD SUGAR",
+      "HbA1c",
+      "INSULIN - FASTING"
+    ],
+    "related_topics": [
+      "diabetes_overview",
+      "insulin",
+      "insulin_resistance",
+      "pancreas",
+      "hyperglycemia",
+      "hypoglycemia"
+    ]
+  },
+  "AVERAGE_BLOOD_GLUCOSE": {
+    "id": "CONCEPT__AVERAGE_BLOOD_GLUCOSE",
+    "canonical": "AVERAGE_BLOOD_GLUCOSE",
+    "type": "medical_concept",
+    "aliases": [
+      "average blood glucose",
+      "eAG",
+      "average_blood_glucose",
+      "Average Blood Glucose",
+      "estimated average glucose",
+      "mean glucose"
+    ],
+    "category": "",
+    "related_tests": [
+      "ESTIMATED AVERAGE GLUCOSE (eAG)",
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "hba1c",
+      "glucose_monitoring",
+      "fasting_blood_glucose",
+      "hyperglycemia"
+    ]
+  },
+  "FASTING_BLOOD_GLUCOSE": {
+    "id": "CONCEPT__FASTING_BLOOD_GLUCOSE",
+    "canonical": "FASTING_BLOOD_GLUCOSE",
+    "type": "medical_concept",
+    "aliases": [
+      "fasting plasma glucose",
+      "Fasting Blood Sugar",
+      "fasting_blood_glucose",
+      "FBG",
+      "fasting blood sugar",
+      "FPG",
+      "fasting blood glucose"
+    ],
+    "category": "",
+    "related_tests": [
+      "FASTING BLOOD SUGAR (FBS)",
+      "FASTING PLASMA GLUCOSE (FPG)"
+    ],
+    "related_topics": [
+      "hba1c",
+      "prediabetes",
+      "type2_diabetes",
+      "random_blood_glucose",
+      "ogtt",
+      "glucose_metabolism"
+    ]
+  },
+  "RANDOM_BLOOD_GLUCOSE": {
+    "id": "CONCEPT__RANDOM_BLOOD_GLUCOSE",
+    "canonical": "RANDOM_BLOOD_GLUCOSE",
+    "type": "medical_concept",
+    "aliases": [
+      "random blood sugar",
+      "casual plasma glucose",
+      "random blood glucose",
+      "Random Blood Sugar",
+      "random_blood_glucose"
+    ],
+    "category": "",
+    "related_tests": [
+      "RANDOM BLOOD SUGAR",
+      "BLOOD GLUCOSE - RANDOM"
+    ],
+    "related_topics": [
+      "fasting_blood_glucose",
+      "hba1c",
+      "hyperglycemia",
+      "postprandial_glucose"
+    ]
+  },
+  "OGTT": {
+    "id": "CONCEPT__OGTT",
+    "canonical": "OGTT",
+    "type": "medical_concept",
+    "aliases": [
+      "Oral Glucose Tolerance Test",
+      "2-hour glucose",
+      "oral glucose tolerance test",
+      "ogtt",
+      "OGTT",
+      "glucose tolerance"
+    ],
+    "category": "",
+    "related_tests": [
+      "ORAL GLUCOSE TOLERANCE TEST (OGTT)",
+      "2-HOUR PLASMA GLUCOSE"
+    ],
+    "related_topics": [
+      "prediabetes",
+      "gestational_diabetes",
+      "fasting_blood_glucose",
+      "type2_diabetes",
+      "insulin_resistance"
+    ]
+  },
+  "GLUCOSE_MONITORING": {
+    "id": "CONCEPT__GLUCOSE_MONITORING",
+    "canonical": "GLUCOSE_MONITORING",
+    "type": "medical_concept",
+    "aliases": [
+      "self-monitoring blood glucose",
+      "glucose monitoring",
+      "CGM",
+      "glucose_monitoring",
+      "blood sugar monitoring",
+      "SMBG",
+      "continuous glucose monitor",
+      "Blood Glucose Monitoring",
+      "glucometer"
+    ],
+    "category": "",
+    "related_tests": [
+      "FASTING BLOOD SUGAR (FBS)",
+      "RANDOM BLOOD SUGAR",
+      "HbA1c"
+    ],
+    "related_topics": [
+      "hba1c",
+      "fasting_blood_glucose",
+      "postprandial_glucose",
+      "hypoglycemia",
+      "hyperglycemia"
+    ]
+  },
+  "POSTPRANDIAL_GLUCOSE": {
+    "id": "CONCEPT__POSTPRANDIAL_GLUCOSE",
+    "canonical": "POSTPRANDIAL_GLUCOSE",
+    "type": "medical_concept",
+    "aliases": [
+      "2-hour postprandial",
+      "postprandial_glucose",
+      "Postprandial Blood Glucose",
+      "PPG",
+      "postprandial glucose",
+      "after meal blood sugar"
+    ],
+    "category": "",
+    "related_tests": [
+      "POST-PRANDIAL BLOOD SUGAR (PPBS)",
+      "2-HOUR POST-PRANDIAL GLUCOSE"
+    ],
+    "related_topics": [
+      "fasting_blood_glucose",
+      "glucose_monitoring",
+      "hba1c",
+      "carb_counting",
+      "glycemic_index"
+    ]
+  },
+  "MICROALBUMIN": {
+    "id": "CONCEPT__MICROALBUMIN",
+    "canonical": "MICROALBUMIN",
+    "type": "medical_concept",
+    "aliases": [
+      "albumin urine test",
+      "proteinuria",
+      "microalbuminuria",
+      "microalbumin",
+      "Microalbumin (Urine Albumin)",
+      "urine albumin"
+    ],
+    "category": "",
+    "related_tests": [
+      "MICROALBUMIN - URINE",
+      "URINE ALBUMIN",
+      "ALBUMIN/CREATININE RATIO (ACR)"
+    ],
+    "related_topics": [
+      "albumin_creatinine_ratio",
+      "diabetic_kidney_disease",
+      "creatinine",
+      "egfr",
+      "diabetic_nephropathy"
+    ]
+  },
+  "ALBUMIN_CREATININE_RATIO": {
+    "id": "CONCEPT__ALBUMIN_CREATININE_RATIO",
+    "canonical": "ALBUMIN_CREATININE_RATIO",
+    "type": "medical_concept",
+    "aliases": [
+      "ACR",
+      "urine albumin creatinine ratio",
+      "Albumin-to-Creatinine Ratio (ACR)",
+      "albumin_creatinine_ratio",
+      "UACR",
+      "albumin creatinine ratio"
+    ],
+    "category": "",
+    "related_tests": [
+      "ALBUMIN/CREATININE RATIO (ACR)",
+      "URINE ALBUMIN/CREATININE RATIO (UACR)",
+      "MICROALBUMIN - URINE"
+    ],
+    "related_topics": [
+      "microalbumin",
+      "creatinine",
+      "egfr",
+      "diabetic_kidney_disease",
+      "diabetic_nephropathy"
+    ]
+  },
+  "DIABETIC_KIDNEY_DISEASE": {
+    "id": "CONCEPT__DIABETIC_KIDNEY_DISEASE",
+    "canonical": "DIABETIC_KIDNEY_DISEASE",
+    "type": "medical_concept",
+    "aliases": [
+      "diabetic_kidney_disease",
+      "diabetic kidney disease",
+      "kidney damage diabetes",
+      "diabetic nephropathy",
+      "Diabetic Kidney Disease",
+      "chronic kidney disease diabetes",
+      "CKD"
+    ],
+    "category": "",
+    "related_tests": [
+      "CREATININE - SERUM",
+      "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+      "ALBUMIN/CREATININE RATIO (ACR)",
+      "BUN (BLOOD UREA NITROGEN)",
+      "MICROALBUMIN - URINE"
+    ],
+    "related_topics": [
+      "creatinine",
+      "egfr",
+      "microalbumin",
+      "albumin_creatinine_ratio",
+      "diabetic_nephropathy",
+      "hypertension"
+    ]
+  },
+  "ELECTROLYTES": {
+    "id": "CONCEPT__ELECTROLYTES",
+    "canonical": "ELECTROLYTES",
+    "type": "medical_concept",
+    "aliases": [
+      "potassium",
+      "electrolytes",
+      "chloride",
+      "electrolyte panel",
+      "sodium",
+      "Electrolytes (Sodium, Potassium, Chloride)",
+      "basic metabolic panel"
+    ],
+    "category": "",
+    "related_tests": [
+      "SODIUM",
+      "POTASSIUM",
+      "CHLORIDE",
+      "ELECTROLYTE PANEL",
+      "BASIC METABOLIC PANEL (BMP)"
+    ],
+    "related_topics": [
+      "creatinine",
+      "egfr",
+      "bun",
+      "diabetic_kidney_disease",
+      "diabetic_ketoacidosis"
+    ]
+  },
+  "BILIRUBIN": {
+    "id": "CONCEPT__BILIRUBIN",
+    "canonical": "BILIRUBIN",
+    "type": "medical_concept",
+    "aliases": [
+      "bilirubin",
+      "jaundice",
+      "total bilirubin",
+      "direct bilirubin",
+      "conjugated bilirubin",
+      "Bilirubin",
+      "indirect bilirubin"
+    ],
+    "category": "",
+    "related_tests": [
+      "BILIRUBIN - TOTAL",
+      "BILIRUBIN - DIRECT",
+      "BILIRUBIN - INDIRECT",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "alt",
+      "ast",
+      "alp",
+      "liver_function_panel",
+      "hemoglobin"
+    ]
+  },
+  "ALP": {
+    "id": "CONCEPT__ALP",
+    "canonical": "ALP",
+    "type": "medical_concept",
+    "aliases": [
+      "ALP (Alkaline Phosphatase)",
+      "alp",
+      "bone enzyme",
+      "ALP",
+      "liver enzyme",
+      "alkaline phosphatase"
+    ],
+    "category": "",
+    "related_tests": [
+      "ALKALINE PHOSPHATASE (ALP)",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "ggt",
+      "alt",
+      "ast",
+      "bilirubin",
+      "liver_function_panel"
+    ]
+  },
+  "FATTY_LIVER": {
+    "id": "CONCEPT__FATTY_LIVER",
+    "canonical": "FATTY_LIVER",
+    "type": "medical_concept",
+    "aliases": [
+      "liver fat",
+      "hepatic steatosis",
+      "fatty liver",
+      "Fatty Liver Disease",
+      "fatty_liver",
+      "MASLD"
+    ],
+    "category": "",
+    "related_tests": [
+      "ALT (SGPT)",
+      "AST (SGOT)",
+      "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+      "TRIGLYCERIDES"
+    ],
+    "related_topics": [
+      "nafld",
+      "alt",
+      "ast",
+      "triglycerides",
+      "weight_management",
+      "insulin_resistance"
+    ]
+  },
+  "NAFLD": {
+    "id": "CONCEPT__NAFLD",
+    "canonical": "NAFLD",
+    "type": "medical_concept",
+    "aliases": [
+      "NAFLD / MASLD and Diabetes",
+      "NAFLD",
+      "nonalcoholic fatty liver",
+      "nonalcoholic steatohepatitis",
+      "nafld",
+      "MASH",
+      "NASH",
+      "metabolic associated steatotic liver disease",
+      "MASLD"
+    ],
+    "category": "",
+    "related_tests": [
+      "ALT (SGPT)",
+      "AST (SGOT)",
+      "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+      "TRIGLYCERIDES",
+      "HbA1c"
+    ],
+    "related_topics": [
+      "fatty_liver",
+      "alt",
+      "ast",
+      "ggt",
+      "insulin_resistance",
+      "type2_diabetes",
+      "weight_management"
+    ]
+  },
+  "LIVER_FUNCTION_PANEL": {
+    "id": "CONCEPT__LIVER_FUNCTION_PANEL",
+    "canonical": "LIVER_FUNCTION_PANEL",
+    "type": "medical_concept",
+    "aliases": [
+      "liver function test",
+      "comprehensive metabolic panel liver",
+      "liver_function_panel",
+      "LFT",
+      "Liver Function Test Panel",
+      "hepatic function panel"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIVER FUNCTION TEST (LFT)",
+      "ALT (SGPT)",
+      "AST (SGOT)",
+      "ALKALINE PHOSPHATASE (ALP)",
+      "BILIRUBIN - TOTAL",
+      "ALBUMIN - SERUM",
+      "TOTAL PROTEIN"
+    ],
+    "related_topics": [
+      "alt",
+      "ast",
+      "bilirubin",
+      "alp",
+      "albumin",
+      "globulin",
+      "total_protein",
+      "ggt"
+    ]
+  },
+  "APOA1": {
+    "id": "CONCEPT__APOA1",
+    "canonical": "APOA1",
+    "type": "medical_concept",
+    "aliases": [
+      "Apolipoprotein A1",
+      "ApoA1",
+      "HDL apolipoprotein",
+      "apoA-I",
+      "apoa1",
+      "apolipoprotein A-1"
+    ],
+    "category": "",
+    "related_tests": [
+      "APOLIPOPROTEIN A1",
+      "HDL CHOLESTEROL"
+    ],
+    "related_topics": [
+      "hdl",
+      "apob",
+      "cholesterol_ratio",
+      "heart_disease"
+    ]
+  },
+  "APOB": {
+    "id": "CONCEPT__APOB",
+    "canonical": "APOB",
+    "type": "medical_concept",
+    "aliases": [
+      "ApoB",
+      "Apolipoprotein B",
+      "atherogenic particles",
+      "apob",
+      "apoB-100",
+      "apolipoprotein B"
+    ],
+    "category": "",
+    "related_tests": [
+      "APOLIPOPROTEIN B",
+      "LDL CHOLESTEROL - DIRECT"
+    ],
+    "related_topics": [
+      "ldl",
+      "apoa1",
+      "lipoprotein_a",
+      "cholesterol_ratio",
+      "atherosclerosis"
+    ]
+  },
+  "LIPID_PANEL": {
+    "id": "CONCEPT__LIPID_PANEL",
+    "canonical": "LIPID_PANEL",
+    "type": "medical_concept",
+    "aliases": [
+      "Complete Lipid Panel",
+      "lipid profile",
+      "lipid panel",
+      "lipid_panel",
+      "cholesterol test",
+      "fasting lipid panel"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIPID PROFILE",
+      "TOTAL CHOLESTEROL",
+      "HDL CHOLESTEROL",
+      "LDL CHOLESTEROL - DIRECT",
+      "TRIGLYCERIDES",
+      "VLDL CHOLESTEROL",
+      "NON-HDL CHOLESTEROL"
+    ],
+    "related_topics": [
+      "hdl",
+      "ldl",
+      "total_cholesterol",
+      "triglycerides",
+      "vldl",
+      "cholesterol_ratio"
+    ]
+  },
+  "CHOLESTEROL_RATIO": {
+    "id": "CONCEPT__CHOLESTEROL_RATIO",
+    "canonical": "CHOLESTEROL_RATIO",
+    "type": "medical_concept",
+    "aliases": [
+      "Cholesterol Ratios",
+      "non-HDL cholesterol",
+      "cholesterol_ratio",
+      "cardiovascular risk ratio",
+      "cholesterol ratio",
+      "LDL/HDL ratio",
+      "TC/HDL ratio"
+    ],
+    "category": "",
+    "related_tests": [
+      "TC/HDL RATIO",
+      "LDL/HDL RATIO",
+      "NON-HDL CHOLESTEROL"
+    ],
+    "related_topics": [
+      "hdl",
+      "ldl",
+      "total_cholesterol",
+      "lipid_panel",
+      "apob",
+      "heart_disease"
+    ]
+  },
+  "FOLATE": {
+    "id": "CONCEPT__FOLATE",
+    "canonical": "FOLATE",
+    "type": "medical_concept",
+    "aliases": [
+      "folate",
+      "folate deficiency",
+      "Folate (Vitamin B9)",
+      "folic acid",
+      "vitamin B9"
+    ],
+    "category": "",
+    "related_tests": [
+      "FOLATE - SERUM",
+      "FOLIC ACID",
+      "RBC FOLATE"
+    ],
+    "related_topics": [
+      "vitamin_b12",
+      "anemia",
+      "hemoglobin"
+    ]
+  },
+  "IRON_STUDIES": {
+    "id": "CONCEPT__IRON_STUDIES",
+    "canonical": "IRON_STUDIES",
+    "type": "medical_concept",
+    "aliases": [
+      "transferrin saturation",
+      "ferritin",
+      "total iron binding capacity",
+      "Iron Studies (Serum Iron, Ferritin, TIBC)",
+      "TIBC",
+      "iron deficiency",
+      "serum iron",
+      "iron overload",
+      "iron_studies"
+    ],
+    "category": "",
+    "related_tests": [
+      "SERUM IRON",
+      "FERRITIN",
+      "TOTAL IRON BINDING CAPACITY (TIBC)",
+      "TRANSFERRIN SATURATION",
+      "TRANSFERRIN"
+    ],
+    "related_topics": [
+      "anemia",
+      "hemoglobin",
+      "vitamin_b12",
+      "folate"
+    ]
+  },
+  "MAGNESIUM": {
+    "id": "CONCEPT__MAGNESIUM",
+    "canonical": "MAGNESIUM",
+    "type": "medical_concept",
+    "aliases": [
+      "magnesium",
+      "serum magnesium",
+      "hypomagnesemia",
+      "Magnesium",
+      "magnesium deficiency diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "MAGNESIUM - SERUM",
+      "MAGNESIUM - URINE"
+    ],
+    "related_topics": [
+      "electrolytes",
+      "insulin_resistance",
+      "type2_diabetes",
+      "vitamin_d"
+    ]
+  },
+  "CBC_OVERVIEW": {
+    "id": "CONCEPT__CBC_OVERVIEW",
+    "canonical": "CBC_OVERVIEW",
+    "type": "medical_concept",
+    "aliases": [
+      "hematology panel",
+      "complete blood count",
+      "CBC",
+      "cbc_overview",
+      "blood count",
+      "Complete Blood Count (CBC)"
+    ],
+    "category": "",
+    "related_tests": [
+      "COMPLETE BLOOD COUNT (CBC)",
+      "HEMOGLOBIN",
+      "HEMATOCRIT",
+      "RBC COUNT",
+      "WBC COUNT",
+      "PLATELET COUNT",
+      "MCV",
+      "MCH",
+      "MCHC",
+      "RDW"
+    ],
+    "related_topics": [
+      "hemoglobin",
+      "hematocrit",
+      "rbc",
+      "wbc",
+      "platelets",
+      "anemia"
+    ]
+  },
+  "PLATELETS": {
+    "id": "CONCEPT__PLATELETS",
+    "canonical": "PLATELETS",
+    "type": "medical_concept",
+    "aliases": [
+      "thrombocytes",
+      "Platelet Count",
+      "PLT",
+      "platelet count",
+      "platelets"
+    ],
+    "category": "",
+    "related_tests": [
+      "PLATELET COUNT",
+      "MEAN PLATELET VOLUME (MPV)"
+    ],
+    "related_topics": [
+      "cbc_overview",
+      "hemoglobin",
+      "aspirin_antiplatelet"
+    ]
+  },
+  "ANEMIA": {
+    "id": "CONCEPT__ANEMIA",
+    "canonical": "ANEMIA",
+    "type": "medical_concept",
+    "aliases": [
+      "Anemia",
+      "low hemoglobin",
+      "anemia diabetes",
+      "anemia",
+      "anemia of chronic disease",
+      "iron deficiency anemia"
+    ],
+    "category": "",
+    "related_tests": [
+      "HEMOGLOBIN",
+      "HEMATOCRIT",
+      "RBC COUNT",
+      "MCV",
+      "SERUM IRON",
+      "FERRITIN",
+      "TOTAL IRON BINDING CAPACITY (TIBC)",
+      "VITAMIN B12",
+      "FOLATE - SERUM"
+    ],
+    "related_topics": [
+      "hemoglobin",
+      "iron_studies",
+      "vitamin_b12",
+      "folate",
+      "diabetic_kidney_disease",
+      "hba1c"
+    ]
+  },
+  "THYROID_ANTIBODIES": {
+    "id": "CONCEPT__THYROID_ANTIBODIES",
+    "canonical": "THYROID_ANTIBODIES",
+    "type": "medical_concept",
+    "aliases": [
+      "Thyroid Antibodies (TPO, TgAb)",
+      "thyroid peroxidase antibodies",
+      "Hashimoto",
+      "thyroglobulin antibodies",
+      "TPO antibodies",
+      "TgAb",
+      "autoimmune thyroid",
+      "thyroid_antibodies"
+    ],
+    "category": "",
+    "related_tests": [
+      "THYROID PEROXIDASE ANTIBODIES (TPO)",
+      "THYROGLOBULIN ANTIBODIES (TgAb)",
+      "TSH RECEPTOR ANTIBODIES (TRAb)"
+    ],
+    "related_topics": [
+      "tsh",
+      "hypothyroidism",
+      "hyperthyroidism",
+      "diabetes_thyroid_connection",
+      "type1_diabetes"
+    ]
+  },
+  "HYPOTHYROIDISM": {
+    "id": "CONCEPT__HYPOTHYROIDISM",
+    "canonical": "HYPOTHYROIDISM",
+    "type": "medical_concept",
+    "aliases": [
+      "Hashimoto thyroiditis",
+      "underactive thyroid",
+      "Hypothyroidism",
+      "hypothyroidism",
+      "low thyroid"
+    ],
+    "category": "",
+    "related_tests": [
+      "TSH (THYROID STIMULATING HORMONE)",
+      "FREE T4",
+      "FREE T3",
+      "THYROID PEROXIDASE ANTIBODIES (TPO)"
+    ],
+    "related_topics": [
+      "tsh",
+      "t3",
+      "t4",
+      "thyroid_antibodies",
+      "diabetes_thyroid_connection",
+      "weight_management"
+    ]
+  },
+  "HYPERTHYROIDISM": {
+    "id": "CONCEPT__HYPERTHYROIDISM",
+    "canonical": "HYPERTHYROIDISM",
+    "type": "medical_concept",
+    "aliases": [
+      "Graves disease",
+      "overactive thyroid",
+      "Hyperthyroidism",
+      "thyrotoxicosis",
+      "hyperthyroidism"
+    ],
+    "category": "",
+    "related_tests": [
+      "TSH (THYROID STIMULATING HORMONE)",
+      "FREE T4",
+      "FREE T3",
+      "TSH RECEPTOR ANTIBODIES (TRAb)"
+    ],
+    "related_topics": [
+      "tsh",
+      "t3",
+      "t4",
+      "hypothyroidism",
+      "diabetes_thyroid_connection"
+    ]
+  },
+  "DIABETES_THYROID_CONNECTION": {
+    "id": "CONCEPT__DIABETES_THYROID_CONNECTION",
+    "canonical": "DIABETES_THYROID_CONNECTION",
+    "type": "medical_concept",
+    "aliases": [
+      "diabetes_thyroid_connection",
+      "type 1 diabetes thyroid",
+      "diabetes thyroid",
+      "autoimmune thyroid diabetes",
+      "thyroid dysfunction diabetes",
+      "Diabetes and Thyroid Disease"
+    ],
+    "category": "",
+    "related_tests": [
+      "TSH (THYROID STIMULATING HORMONE)",
+      "FREE T4",
+      "HbA1c",
+      "THYROID PEROXIDASE ANTIBODIES (TPO)"
+    ],
+    "related_topics": [
+      "tsh",
+      "hypothyroidism",
+      "hyperthyroidism",
+      "type1_diabetes",
+      "type2_diabetes",
+      "thyroid_antibodies"
+    ]
+  },
+  "HEART_DISEASE": {
+    "id": "CONCEPT__HEART_DISEASE",
+    "canonical": "HEART_DISEASE",
+    "type": "medical_concept",
+    "aliases": [
+      "cardiovascular disease",
+      "heart disease",
+      "coronary artery disease",
+      "heart_disease",
+      "Heart Disease and Diabetes",
+      "CVD",
+      "diabetes heart"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIPID PROFILE",
+      "HbA1c",
+      "HIGH-SENSITIVITY CRP (hs-CRP)",
+      "BLOOD PRESSURE"
+    ],
+    "related_topics": [
+      "hypertension",
+      "stroke",
+      "atherosclerosis",
+      "ldl",
+      "triglycerides",
+      "heart_failure",
+      "peripheral_artery_disease"
+    ]
+  },
+  "HYPERTENSION": {
+    "id": "CONCEPT__HYPERTENSION",
+    "canonical": "HYPERTENSION",
+    "type": "medical_concept",
+    "aliases": [
+      "systolic",
+      "blood pressure",
+      "high blood pressure",
+      "diastolic",
+      "hypertension",
+      "Hypertension (High Blood Pressure)"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD PRESSURE",
+      "CREATININE - SERUM",
+      "ELECTROLYTE PANEL"
+    ],
+    "related_topics": [
+      "heart_disease",
+      "stroke",
+      "diabetic_kidney_disease",
+      "diabetic_retinopathy",
+      "ace_inhibitors_arbs"
+    ]
+  },
+  "STROKE": {
+    "id": "CONCEPT__STROKE",
+    "canonical": "STROKE",
+    "type": "medical_concept",
+    "aliases": [
+      "cerebrovascular accident",
+      "brain attack",
+      "transient ischemic attack",
+      "stroke",
+      "TIA",
+      "Stroke and Diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIPID PROFILE",
+      "HbA1c",
+      "BLOOD PRESSURE"
+    ],
+    "related_topics": [
+      "heart_disease",
+      "hypertension",
+      "atherosclerosis",
+      "ldl"
+    ]
+  },
+  "PERIPHERAL_ARTERY_DISEASE": {
+    "id": "CONCEPT__PERIPHERAL_ARTERY_DISEASE",
+    "canonical": "PERIPHERAL_ARTERY_DISEASE",
+    "type": "medical_concept",
+    "aliases": [
+      "peripheral_artery_disease",
+      "peripheral vascular disease",
+      "claudication",
+      "Peripheral Artery Disease (PAD)",
+      "PVD",
+      "peripheral artery disease",
+      "PAD"
+    ],
+    "category": "",
+    "related_tests": [
+      "ANKLE-BRACHIAL INDEX (ABI)",
+      "LIPID PROFILE",
+      "HbA1c"
+    ],
+    "related_topics": [
+      "atherosclerosis",
+      "diabetic_foot",
+      "heart_disease",
+      "smoking"
+    ]
+  },
+  "ATHEROSCLEROSIS": {
+    "id": "CONCEPT__ATHEROSCLEROSIS",
+    "canonical": "ATHEROSCLEROSIS",
+    "type": "medical_concept",
+    "aliases": [
+      "Atherosclerosis",
+      "hardening of arteries",
+      "atherosclerosis",
+      "plaque buildup",
+      "arterial disease"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIPID PROFILE",
+      "HIGH-SENSITIVITY CRP (hs-CRP)",
+      "APOLIPOPROTEIN B",
+      "LIPOPROTEIN (a)"
+    ],
+    "related_topics": [
+      "heart_disease",
+      "stroke",
+      "peripheral_artery_disease",
+      "ldl",
+      "apob",
+      "crp"
+    ]
+  },
+  "HEART_FAILURE": {
+    "id": "CONCEPT__HEART_FAILURE",
+    "canonical": "HEART_FAILURE",
+    "type": "medical_concept",
+    "aliases": [
+      "Heart Failure and Diabetes",
+      "heart_failure",
+      "congestive heart failure",
+      "diabetic cardiomyopathy",
+      "CHF",
+      "cardiac insufficiency",
+      "heart failure"
+    ],
+    "category": "",
+    "related_tests": [
+      "BNP (B-TYPE NATRIURETIC PEPTIDE)",
+      "NT-proBNP",
+      "ECHOCARDIOGRAM"
+    ],
+    "related_topics": [
+      "heart_disease",
+      "hypertension",
+      "sglt2_inhibitors",
+      "atherosclerosis"
+    ]
+  },
+  "DIABETIC_NEUROPATHY": {
+    "id": "CONCEPT__DIABETIC_NEUROPATHY",
+    "canonical": "DIABETIC_NEUROPATHY",
+    "type": "medical_concept",
+    "aliases": [
+      "numbness tingling",
+      "peripheral neuropathy",
+      "diabetic neuropathy",
+      "Diabetic Neuropathy",
+      "autonomic neuropathy",
+      "diabetic_neuropathy",
+      "nerve damage diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "VITAMIN B12",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "diabetic_foot",
+      "foot_care",
+      "hyperglycemia",
+      "vitamin_b12",
+      "gastroparesis"
+    ]
+  },
+  "DIABETIC_RETINOPATHY": {
+    "id": "CONCEPT__DIABETIC_RETINOPATHY",
+    "canonical": "DIABETIC_RETINOPATHY",
+    "type": "medical_concept",
+    "aliases": [
+      "macular edema",
+      "proliferative retinopathy",
+      "diabetic_retinopathy",
+      "Diabetic Retinopathy",
+      "diabetic eye disease",
+      "diabetic retinopathy",
+      "retinal damage"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "BLOOD PRESSURE",
+      "DILATED EYE EXAM"
+    ],
+    "related_topics": [
+      "hyperglycemia",
+      "hypertension",
+      "diabetic_neuropathy",
+      "diabetic_nephropathy"
+    ]
+  },
+  "DIABETIC_NEPHROPATHY": {
+    "id": "CONCEPT__DIABETIC_NEPHROPATHY",
+    "canonical": "DIABETIC_NEPHROPATHY",
+    "type": "medical_concept",
+    "aliases": [
+      "kidney failure diabetes",
+      "Diabetic Nephropathy",
+      "diabetic kidney disease",
+      "diabetic nephropathy",
+      "diabetic_nephropathy",
+      "CKD diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "CREATININE - SERUM",
+      "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+      "ALBUMIN/CREATININE RATIO (ACR)",
+      "MICROALBUMIN - URINE",
+      "BUN (BLOOD UREA NITROGEN)"
+    ],
+    "related_topics": [
+      "diabetic_kidney_disease",
+      "creatinine",
+      "egfr",
+      "microalbumin",
+      "albumin_creatinine_ratio",
+      "hypertension"
+    ]
+  },
+  "DIABETIC_FOOT": {
+    "id": "CONCEPT__DIABETIC_FOOT",
+    "canonical": "DIABETIC_FOOT",
+    "type": "medical_concept",
+    "aliases": [
+      "Charcot foot",
+      "Diabetic Foot",
+      "diabetic_foot",
+      "diabetic foot",
+      "foot infection diabetes",
+      "foot ulcer",
+      "diabetic foot ulcer"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "MONOFILAMENT TEST",
+      "ANKLE-BRACHIAL INDEX (ABI)"
+    ],
+    "related_topics": [
+      "foot_care",
+      "diabetic_neuropathy",
+      "peripheral_artery_disease",
+      "infections"
+    ]
+  },
+  "FOOT_CARE": {
+    "id": "CONCEPT__FOOT_CARE",
+    "canonical": "FOOT_CARE",
+    "type": "medical_concept",
+    "aliases": [
+      "foot care",
+      "Diabetic Foot Care",
+      "foot_care",
+      "foot inspection",
+      "foot exam diabetes",
+      "podiatry diabetes",
+      "diabetes foot care"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "MONOFILAMENT TEST"
+    ],
+    "related_topics": [
+      "diabetic_foot",
+      "diabetic_neuropathy",
+      "peripheral_artery_disease"
+    ]
+  },
+  "DIABETIC_KETOACIDOSIS": {
+    "id": "CONCEPT__DIABETIC_KETOACIDOSIS",
+    "canonical": "DIABETIC_KETOACIDOSIS",
+    "type": "medical_concept",
+    "aliases": [
+      "Diabetic Ketoacidosis (DKA)",
+      "diabetic_ketoacidosis",
+      "ketosis",
+      "diabetic ketoacidosis",
+      "ketones",
+      "DKA",
+      "metabolic acidosis"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD GLUCOSE",
+      "URINE KETONES",
+      "BLOOD KETONES",
+      "ARTERIAL BLOOD GAS (ABG)",
+      "ELECTROLYTE PANEL",
+      "BICARBONATE"
+    ],
+    "related_topics": [
+      "type1_diabetes",
+      "hyperglycemia",
+      "insulin",
+      "electrolytes"
+    ]
+  },
+  "HYPEROSMOLAR_SYNDROME": {
+    "id": "CONCEPT__HYPEROSMOLAR_SYNDROME",
+    "canonical": "HYPEROSMOLAR_SYNDROME",
+    "type": "medical_concept",
+    "aliases": [
+      "hyperosmolar coma",
+      "HHNS",
+      "hyperosmolar hyperglycemic syndrome",
+      "Hyperosmolar Hyperglycemic Syndrome (HHS)",
+      "HHS",
+      "hyperosmolar_syndrome",
+      "diabetic hyperosmolar syndrome"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD GLUCOSE",
+      "SERUM OSMOLALITY",
+      "ELECTROLYTE PANEL",
+      "CREATININE - SERUM"
+    ],
+    "related_topics": [
+      "hyperglycemia",
+      "type2_diabetes",
+      "diabetic_ketoacidosis",
+      "electrolytes"
+    ]
+  },
+  "HYPOGLYCEMIA": {
+    "id": "CONCEPT__HYPOGLYCEMIA",
+    "canonical": "HYPOGLYCEMIA",
+    "type": "medical_concept",
+    "aliases": [
+      "hypoglycemia",
+      "Hypoglycemia (Low Blood Sugar)",
+      "low blood sugar",
+      "insulin shock",
+      "hypoglycemic episode",
+      "glucose tablets"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD GLUCOSE",
+      "FASTING BLOOD SUGAR (FBS)",
+      "INSULIN - FASTING",
+      "C-PEPTIDE"
+    ],
+    "related_topics": [
+      "hyperglycemia",
+      "glucose_monitoring",
+      "insulin",
+      "glucose_metabolism",
+      "insulin_therapy"
+    ]
+  },
+  "HYPERGLYCEMIA": {
+    "id": "CONCEPT__HYPERGLYCEMIA",
+    "canonical": "HYPERGLYCEMIA",
+    "type": "medical_concept",
+    "aliases": [
+      "blood sugar spike",
+      "hyperglycemia",
+      "high blood sugar",
+      "Hyperglycemia (High Blood Sugar)",
+      "elevated glucose"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD GLUCOSE",
+      "HbA1c",
+      "URINE KETONES"
+    ],
+    "related_topics": [
+      "hypoglycemia",
+      "hba1c",
+      "diabetic_ketoacidosis",
+      "hyperosmolar_syndrome",
+      "glucose_monitoring"
+    ]
+  },
+  "DIABETIC_SKIN_CONDITIONS": {
+    "id": "CONCEPT__DIABETIC_SKIN_CONDITIONS",
+    "canonical": "DIABETIC_SKIN_CONDITIONS",
+    "type": "medical_concept",
+    "aliases": [
+      "acanthosis nigricans",
+      "skin conditions diabetes",
+      "Diabetic Skin Conditions",
+      "diabetic_skin_conditions",
+      "diabetic dermopathy",
+      "necrobiosis lipoidica",
+      "diabetic blisters"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "insulin_resistance",
+      "type2_diabetes",
+      "infections"
+    ]
+  },
+  "DENTAL_HEALTH": {
+    "id": "CONCEPT__DENTAL_HEALTH",
+    "canonical": "DENTAL_HEALTH",
+    "type": "medical_concept",
+    "aliases": [
+      "Diabetes and Dental Health",
+      "gum disease",
+      "diabetes dental",
+      "periodontal disease diabetes",
+      "oral health diabetes",
+      "dental_health"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c"
+    ],
+    "related_topics": [
+      "infections",
+      "hyperglycemia"
+    ]
+  },
+  "GASTROPARESIS": {
+    "id": "CONCEPT__GASTROPARESIS",
+    "canonical": "GASTROPARESIS",
+    "type": "medical_concept",
+    "aliases": [
+      "gastroparesis",
+      "delayed gastric emptying",
+      "stomach paralysis",
+      "Gastroparesis",
+      "diabetic gastroparesis"
+    ],
+    "category": "",
+    "related_tests": [
+      "GASTRIC EMPTYING STUDY",
+      "HbA1c"
+    ],
+    "related_topics": [
+      "diabetic_neuropathy",
+      "hyperglycemia",
+      "hypoglycemia",
+      "healthy_eating"
+    ]
+  },
+  "SEXUAL_DYSFUNCTION": {
+    "id": "CONCEPT__SEXUAL_DYSFUNCTION",
+    "canonical": "SEXUAL_DYSFUNCTION",
+    "type": "medical_concept",
+    "aliases": [
+      "sexual_dysfunction",
+      "diabetes sexual health",
+      "Diabetes and Sexual Health",
+      "erectile dysfunction diabetes",
+      "sexual dysfunction diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "TESTOSTERONE",
+      "HbA1c"
+    ],
+    "related_topics": [
+      "diabetic_neuropathy",
+      "peripheral_artery_disease",
+      "mental_health"
+    ]
+  },
+  "INFECTIONS": {
+    "id": "CONCEPT__INFECTIONS",
+    "canonical": "INFECTIONS",
+    "type": "medical_concept",
+    "aliases": [
+      "immune system diabetes",
+      "UTI diabetes",
+      "Diabetes and Infections",
+      "infections",
+      "diabetes infections",
+      "wound healing diabetes",
+      "yeast infection diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "WBC COUNT",
+      "HbA1c",
+      "URINE CULTURE",
+      "C-REACTIVE PROTEIN (CRP)"
+    ],
+    "related_topics": [
+      "wbc",
+      "crp",
+      "diabetic_foot",
+      "hyperglycemia"
+    ]
+  },
+  "HEALTHY_EATING": {
+    "id": "CONCEPT__HEALTHY_EATING",
+    "canonical": "HEALTHY_EATING",
+    "type": "medical_concept",
+    "aliases": [
+      "diabetes diet",
+      "meal planning",
+      "Healthy Eating for Diabetes",
+      "nutrition diabetes",
+      "healthy eating",
+      "glycemic index",
+      "carbohydrate counting",
+      "healthy_eating"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "carb_counting",
+      "glycemic_index",
+      "weight_management",
+      "exercise",
+      "triglycerides",
+      "type2_diabetes"
+    ]
+  },
+  "CARB_COUNTING": {
+    "id": "CONCEPT__CARB_COUNTING",
+    "canonical": "CARB_COUNTING",
+    "type": "medical_concept",
+    "aliases": [
+      "carbohydrate management",
+      "net carbs",
+      "carb counting",
+      "Carbohydrate Counting",
+      "carbohydrate counting",
+      "carb_counting"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "POST-PRANDIAL BLOOD SUGAR (PPBS)"
+    ],
+    "related_topics": [
+      "healthy_eating",
+      "glycemic_index",
+      "postprandial_glucose",
+      "insulin_therapy"
+    ]
+  },
+  "GLYCEMIC_INDEX": {
+    "id": "CONCEPT__GLYCEMIC_INDEX",
+    "canonical": "GLYCEMIC_INDEX",
+    "type": "medical_concept",
+    "aliases": [
+      "glycemic_index",
+      "low glycemic foods",
+      "Glycemic Index and Glycemic Load",
+      "GI",
+      "GL",
+      "glycemic index",
+      "glycemic load"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "POST-PRANDIAL BLOOD SUGAR (PPBS)"
+    ],
+    "related_topics": [
+      "healthy_eating",
+      "carb_counting",
+      "postprandial_glucose"
+    ]
+  },
+  "EXERCISE": {
+    "id": "CONCEPT__EXERCISE",
+    "canonical": "EXERCISE",
+    "type": "medical_concept",
+    "aliases": [
+      "exercise",
+      "blood sugar exercise",
+      "aerobic exercise",
+      "physical activity",
+      "exercise diabetes",
+      "resistance training",
+      "Exercise and Physical Activity"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "LIPID PROFILE",
+      "BLOOD PRESSURE"
+    ],
+    "related_topics": [
+      "weight_management",
+      "healthy_eating",
+      "insulin_resistance",
+      "heart_disease",
+      "hypoglycemia"
+    ]
+  },
+  "WEIGHT_MANAGEMENT": {
+    "id": "CONCEPT__WEIGHT_MANAGEMENT",
+    "canonical": "WEIGHT_MANAGEMENT",
+    "type": "medical_concept",
+    "aliases": [
+      "BMI",
+      "Weight Management",
+      "weight management",
+      "weight_management",
+      "obesity diabetes",
+      "weight loss diabetes",
+      "bariatric surgery"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "LIPID PROFILE",
+      "INSULIN - FASTING"
+    ],
+    "related_topics": [
+      "healthy_eating",
+      "exercise",
+      "insulin_resistance",
+      "type2_diabetes",
+      "fatty_liver",
+      "glp1_agonists"
+    ]
+  },
+  "SLEEP": {
+    "id": "CONCEPT__SLEEP",
+    "canonical": "SLEEP",
+    "type": "medical_concept",
+    "aliases": [
+      "sleep diabetes",
+      "insomnia blood sugar",
+      "sleep apnea diabetes",
+      "sleep quality",
+      "sleep",
+      "Sleep and Diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "insulin_resistance",
+      "weight_management",
+      "stress_management",
+      "mental_health"
+    ]
+  },
+  "SMOKING": {
+    "id": "CONCEPT__SMOKING",
+    "canonical": "SMOKING",
+    "type": "medical_concept",
+    "aliases": [
+      "smoking diabetes",
+      "quit smoking diabetes",
+      "smoking",
+      "tobacco diabetes",
+      "Smoking and Diabetes",
+      "smoking cessation"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "heart_disease",
+      "peripheral_artery_disease",
+      "hypertension"
+    ]
+  },
+  "ALCOHOL": {
+    "id": "CONCEPT__ALCOHOL",
+    "canonical": "ALCOHOL",
+    "type": "medical_concept",
+    "aliases": [
+      "alcohol diabetes",
+      "alcohol blood sugar",
+      "alcohol and insulin",
+      "drinking diabetes",
+      "Alcohol and Diabetes",
+      "alcohol"
+    ],
+    "category": "",
+    "related_tests": [
+      "FASTING BLOOD SUGAR (FBS)",
+      "HbA1c",
+      "GGT (GAMMA-GLUTAMYL TRANSFERASE)",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "hypoglycemia",
+      "fatty_liver",
+      "ggt",
+      "triglycerides"
+    ]
+  },
+  "STRESS_MANAGEMENT": {
+    "id": "CONCEPT__STRESS_MANAGEMENT",
+    "canonical": "STRESS_MANAGEMENT",
+    "type": "medical_concept",
+    "aliases": [
+      "stress management",
+      "anxiety diabetes",
+      "stress diabetes",
+      "mental health diabetes",
+      "stress_management",
+      "cortisol blood sugar",
+      "Stress Management"
+    ],
+    "category": "",
+    "related_tests": [
+      "CORTISOL",
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "mental_health",
+      "sleep",
+      "exercise",
+      "hyperglycemia"
+    ]
+  },
+  "MENTAL_HEALTH": {
+    "id": "CONCEPT__MENTAL_HEALTH",
+    "canonical": "MENTAL_HEALTH",
+    "type": "medical_concept",
+    "aliases": [
+      "diabetes burnout",
+      "mental_health",
+      "diabetes distress",
+      "diabetes depression",
+      "mental health diabetes",
+      "emotional wellbeing",
+      "Mental Health and Diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c"
+    ],
+    "related_topics": [
+      "stress_management",
+      "sleep",
+      "exercise",
+      "healthy_eating"
+    ]
+  },
+  "HYDRATION": {
+    "id": "CONCEPT__HYDRATION",
+    "canonical": "HYDRATION",
+    "type": "medical_concept",
+    "aliases": [
+      "hydration diabetes",
+      "dehydration blood sugar",
+      "water intake diabetes",
+      "diabetes thirst polydipsia",
+      "hydration",
+      "Hydration and Diabetes"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD GLUCOSE",
+      "SODIUM",
+      "SERUM OSMOLALITY"
+    ],
+    "related_topics": [
+      "hyperglycemia",
+      "diabetic_ketoacidosis",
+      "hyperosmolar_syndrome",
+      "electrolytes"
+    ]
+  },
+  "METFORMIN": {
+    "id": "CONCEPT__METFORMIN",
+    "canonical": "METFORMIN",
+    "type": "medical_concept",
+    "aliases": [
+      "first-line diabetes medication",
+      "biguanide",
+      "Metformin",
+      "Glucophage",
+      "metformin"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "CREATININE - SERUM",
+      "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+      "VITAMIN B12"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "insulin_resistance",
+      "vitamin_b12",
+      "egfr",
+      "weight_management"
+    ]
+  },
+  "INSULIN_THERAPY": {
+    "id": "CONCEPT__INSULIN_THERAPY",
+    "canonical": "INSULIN_THERAPY",
+    "type": "medical_concept",
+    "aliases": [
+      "bolus insulin",
+      "insulin_therapy",
+      "insulin pump",
+      "insulin types",
+      "basal insulin",
+      "insulin therapy",
+      "long-acting insulin",
+      "rapid-acting insulin",
+      "Insulin Therapy"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "C-PEPTIDE"
+    ],
+    "related_topics": [
+      "insulin",
+      "type1_diabetes",
+      "type2_diabetes",
+      "hypoglycemia",
+      "glucose_monitoring"
+    ]
+  },
+  "GLP1_AGONISTS": {
+    "id": "CONCEPT__GLP1_AGONISTS",
+    "canonical": "GLP1_AGONISTS",
+    "type": "medical_concept",
+    "aliases": [
+      "semaglutide",
+      "Ozempic",
+      "GLP-1",
+      "incretin",
+      "liraglutide",
+      "dulaglutide",
+      "Trulicity",
+      "GLP-1 Receptor Agonists",
+      "GLP-1 receptor agonist",
+      "glp1_agonists"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "LIPID PROFILE"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "weight_management",
+      "heart_disease",
+      "insulin_resistance"
+    ]
+  },
+  "SGLT2_INHIBITORS": {
+    "id": "CONCEPT__SGLT2_INHIBITORS",
+    "canonical": "SGLT2_INHIBITORS",
+    "type": "medical_concept",
+    "aliases": [
+      "Jardiance",
+      "canagliflozin",
+      "SGLT2 Inhibitors",
+      "sodium-glucose cotransporter 2",
+      "sglt2_inhibitors",
+      "Farxiga",
+      "dapagliflozin",
+      "SGLT2 inhibitor",
+      "empagliflozin"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "EST. GLOMERULAR FILTRATION RATE (eGFR)",
+      "URINE KETONES"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "heart_failure",
+      "diabetic_kidney_disease",
+      "diabetic_ketoacidosis"
+    ]
+  },
+  "DPP4_INHIBITORS": {
+    "id": "CONCEPT__DPP4_INHIBITORS",
+    "canonical": "DPP4_INHIBITORS",
+    "type": "medical_concept",
+    "aliases": [
+      "dpp4_inhibitors",
+      "DPP-4 inhibitor",
+      "linagliptin",
+      "DPP-4 Inhibitors",
+      "sitagliptin",
+      "Januvia",
+      "dipeptidyl peptidase-4",
+      "gliptin"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "glp1_agonists",
+      "metformin"
+    ]
+  },
+  "SULFONYLUREAS": {
+    "id": "CONCEPT__SULFONYLUREAS",
+    "canonical": "SULFONYLUREAS",
+    "type": "medical_concept",
+    "aliases": [
+      "glipizide",
+      "glyburide",
+      "sulfonylurea",
+      "Amaryl",
+      "Glucotrol",
+      "sulfonylureas",
+      "glimepiride",
+      "Sulfonylureas"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)"
+    ],
+    "related_topics": [
+      "type2_diabetes",
+      "hypoglycemia",
+      "metformin"
+    ]
+  },
+  "THIAZOLIDINEDIONES": {
+    "id": "CONCEPT__THIAZOLIDINEDIONES",
+    "canonical": "THIAZOLIDINEDIONES",
+    "type": "medical_concept",
+    "aliases": [
+      "TZD",
+      "thiazolidinedione",
+      "pioglitazone",
+      "insulin sensitizer",
+      "Thiazolidinediones (TZDs)",
+      "Actos",
+      "thiazolidinediones"
+    ],
+    "category": "",
+    "related_tests": [
+      "HbA1c",
+      "FASTING BLOOD SUGAR (FBS)",
+      "LIVER FUNCTION TEST (LFT)"
+    ],
+    "related_topics": [
+      "insulin_resistance",
+      "type2_diabetes",
+      "fatty_liver",
+      "metformin"
+    ]
+  },
+  "STATINS": {
+    "id": "CONCEPT__STATINS",
+    "canonical": "STATINS",
+    "type": "medical_concept",
+    "aliases": [
+      "Crestor",
+      "rosuvastatin",
+      "Lipitor",
+      "Statins (Cholesterol Medications)",
+      "cholesterol lowering",
+      "atorvastatin",
+      "statin",
+      "statins"
+    ],
+    "category": "",
+    "related_tests": [
+      "LIPID PROFILE",
+      "LDL CHOLESTEROL - DIRECT",
+      "LIVER FUNCTION TEST (LFT)",
+      "CREATINE KINASE (CK)"
+    ],
+    "related_topics": [
+      "ldl",
+      "total_cholesterol",
+      "heart_disease",
+      "atherosclerosis"
+    ]
+  },
+  "ACE_INHIBITORS_ARBS": {
+    "id": "CONCEPT__ACE_INHIBITORS_ARBS",
+    "canonical": "ACE_INHIBITORS_ARBS",
+    "type": "medical_concept",
+    "aliases": [
+      "angiotensin",
+      "blood pressure kidney protection",
+      "ARB",
+      "ACE inhibitor",
+      "ace_inhibitors_arbs",
+      "ACE Inhibitors and ARBs",
+      "losartan",
+      "lisinopril"
+    ],
+    "category": "",
+    "related_tests": [
+      "BLOOD PRESSURE",
+      "CREATININE - SERUM",
+      "POTASSIUM",
+      "ALBUMIN/CREATININE RATIO (ACR)"
+    ],
+    "related_topics": [
+      "hypertension",
+      "diabetic_kidney_disease",
+      "diabetic_nephropathy",
+      "heart_failure"
+    ]
+  },
+  "ASPIRIN_ANTIPLATELET": {
+    "id": "CONCEPT__ASPIRIN_ANTIPLATELET",
+    "canonical": "ASPIRIN_ANTIPLATELET",
+    "type": "medical_concept",
+    "aliases": [
+      "aspirin",
+      "antiplatelet",
+      "Aspirin and Antiplatelet Therapy",
+      "aspirin_antiplatelet",
+      "blood thinner diabetes",
+      "cardiovascular prevention"
+    ],
+    "category": "",
+    "related_tests": [
+      "PLATELET COUNT",
+      "BLEEDING TIME"
+    ],
+    "related_topics": [
+      "heart_disease",
+      "stroke",
+      "peripheral_artery_disease",
+      "platelets"
+    ]
+  }
+}

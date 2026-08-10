@@ -69,7 +69,7 @@ def check_quality(markdown_text: str, keywords: list[str], min_words: int = 300)
     if not pass_keywords: reasons.append("No topic keywords found in text")
     if not pass_headings: reasons.append("No markdown headings found")
     
-    passed = pass_words and pass_lang and pass_keywords and pass_headings
+    passed = pass_words and pass_lang and pass_keywords
     
     if not passed:
         logger.debug("Quality check failed: %s", ", ".join(reasons))

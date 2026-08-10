@@ -1,4 +1,8 @@
 import nbformat as nbf
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+NOTEBOOK_PATH = ROOT / "notebooks" / "ScrapingForNLP.ipynb"
 
 nb = nbf.v4.new_notebook()
 
@@ -12,9 +16,20 @@ cells.append(nbf.v4.new_markdown_cell("## 1. Understanding the Scraper Service\n
 cells.append(nbf.v4.new_code_cell("""import os
 import sys
 from pprint import pprint
+from pathlib import Path
 
-# Ensure the root directory is in the path to import our scraper package
-sys.path.append(os.path.abspath('..'))
+def find_project_root(start: Path | None = None) -> Path:
+    current = (start or Path.cwd()).resolve()
+    for candidate in [current, *current.parents]:
+        if (candidate / "scraper").is_dir() and (candidate / "corpus").is_dir():
+            return candidate
+    raise RuntimeError("Could not locate the Diabetes DataScience project root.")
+
+PROJECT_ROOT = find_project_root()
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+OUTPUT_DIR = PROJECT_ROOT / "knowledge_v1"
 
 from scraper.downloader import download_html
 from scraper.extractor import extract_main_content
@@ -123,19 +138,20 @@ cells.append(nbf.v4.new_markdown_cell("### Saving the Data\nFinally, we pickle t
 cells.append(nbf.v4.new_code_cell("""import pickle
 
 # Save Corpus
-data_clean.to_pickle("corpus.pkl")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+data_clean.to_pickle(OUTPUT_DIR / "corpus.pkl")
 
 # Save Document-Term Matrix
-data_dtm.to_pickle("dtm.pkl")
+data_dtm.to_pickle(OUTPUT_DIR / "dtm.pkl")
 
 # Save CountVectorizer
-pickle.dump(cv, open("cv.pkl", "wb"))
+pickle.dump(cv, open(OUTPUT_DIR / "cv.pkl", "wb"))
 
 print("NLP artifacts saved successfully!")"""))
 
 nb.cells = cells
 
-with open('notebooks/ScrapingForNLP.ipynb', 'w') as f:
+with open(NOTEBOOK_PATH, 'w') as f:
     nbf.write(nb, f)
 
 print("Main Notebook successfully generated!")
