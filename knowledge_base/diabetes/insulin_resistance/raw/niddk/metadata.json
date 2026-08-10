@@ -1,0 +1,29 @@
+{
+  "document_id": "KB-000007",
+  "topic": "insulin_resistance",
+  "topic_title": "Insulin Resistance",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/",
+  "scraped_at": "2026-08-10T06:48:11.376612+00:00",
+  "word_count": 142,
+  "content_hash": "sha256:21d1eb21328a355f9812415881a7ba0c3399ac04863357bea8a7a7314348eb57",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": false,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "Word count too low (142 < 300)",
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

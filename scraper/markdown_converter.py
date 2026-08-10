@@ -23,8 +23,7 @@ def convert_to_markdown(html_content: str, metadata_header: dict = None) -> str:
         markdown_text = markdownify.markdownify(
             html_content,
             heading_style="ATX",  # Use # instead of ===
-            bullets="-",
-            strip=['a', 'img'] # Strip links and images for cleaner text
+            bullets="-"
         )
         
         # Clean up excessive newlines

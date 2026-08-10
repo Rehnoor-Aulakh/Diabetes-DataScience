@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000018",
+  "topic": "creatinine",
+  "topic_title": "Creatinine",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis",
+  "scraped_at": "2026-08-10T06:46:32.571021+00:00",
+  "word_count": 872,
+  "content_hash": "sha256:ab1090281e0f34462a9e6070f6369ce618b971022eefb7ea614416450dcb1fbb",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

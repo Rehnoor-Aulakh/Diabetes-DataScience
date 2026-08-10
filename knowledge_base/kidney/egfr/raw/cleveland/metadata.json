@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000019",
+  "topic": "egfr",
+  "topic_title": "eGFR",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis",
+  "scraped_at": "2026-08-10T06:47:01.455110+00:00",
+  "word_count": 872,
+  "content_hash": "sha256:d016739f19606dc65189f2dbfa35dcf1c788f15fddfcf148833bf0178710f69a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

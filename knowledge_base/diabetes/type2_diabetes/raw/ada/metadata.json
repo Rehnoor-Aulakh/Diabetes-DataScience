@@ -1,14 +1,14 @@
 {
-  "document_id": "KB-000010",
-  "topic": "hba1c",
-  "topic_title": "HbA1c",
+  "document_id": "KB-000003",
+  "topic": "type2_diabetes",
+  "topic_title": "Type 2 Diabetes",
   "source": "ada",
   "source_name": "American Diabetes Association",
-  "version": 2,
+  "version": 1,
   "url": "https://professional.diabetes.org/",
-  "scraped_at": "2026-08-10T06:46:17.769094+00:00",
+  "scraped_at": "2026-08-10T06:47:42.804231+00:00",
   "word_count": 552,
-  "content_hash": "sha256:dd1faf1c03a93cb96ef3e475786cb7b2d613de4962c9095cc6e0460b53754fff",
+  "content_hash": "sha256:79a60a4b48b4f64947cc14db93b95941452bc6bdd0fb30902d025901d4aaf1b5",
   "extractor": "trafilatura/bs4",
   "language": "en",
   "http_etag": null,
@@ -16,12 +16,11 @@
   "status": "failed",
   "quality_checks": {
     "min_words": true,
-    "has_keywords": false,
+    "has_keywords": true,
     "has_headings": false,
     "is_english": true,
     "passed": false,
     "reasons": [
-      "No topic keywords found in text",
       "No markdown headings found"
     ]
   }

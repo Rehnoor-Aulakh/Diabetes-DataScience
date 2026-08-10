@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000049",
+  "topic": "vitamin_d",
+  "topic_title": "Vitamin D",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis",
+  "scraped_at": "2026-08-10T06:47:23.682320+00:00",
+  "word_count": 872,
+  "content_hash": "sha256:90430f85975653a78cb09c156ebd76e0a8c92056c9711552352e517842ef857b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

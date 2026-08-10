@@ -29,8 +29,8 @@ def extract_main_content(html: str) -> str | None:
             html,
             include_comments=False,
             include_tables=True,
-            include_images=False,
-            include_links=False,
+            include_images=True,
+            include_links=True,
             output_format='xml' # XML output preserves structure better than txt
         )
         

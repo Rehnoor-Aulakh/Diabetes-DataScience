@@ -1,0 +1,30 @@
+[2026-08-10 06:47:22] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_064722.log
+[2026-08-10 06:47:22] [INFO   ] Starting Scraper CLI
+[2026-08-10 06:47:22] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 06:47:22] [INFO   ] Job queue: 3 jobs across 1 topics (filtered from manifest)
+[2026-08-10 06:47:22] [INFO   ] [KB-000049] [cleveland] SEARCHING — Query: Vitamin D blood test deficiency
+[2026-08-10 06:47:23] [INFO   ] [KB-000049] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis
+[2026-08-10 06:47:23] [INFO   ] [KB-000049] [cleveland] EXTRACTING
+[2026-08-10 06:47:23] [INFO   ] [KB-000049] [cleveland] CONVERTING
+[2026-08-10 06:47:23] [INFO   ] [KB-000049] [cleveland] VALIDATING
+[2026-08-10 06:47:23] [INFO   ] [KB-000049] [cleveland] FAILED — Quality check failed: No topic keywords found in text, No markdown headings found
+[2026-08-10 06:47:23] [INFO   ] [KB-000049] [mayo] SEARCHING — Query: Vitamin D deficiency
+[2026-08-10 06:47:25] [INFO   ] [KB-000049] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/
+[2026-08-10 06:47:26] [WARNING] Download attempt 1/3 failed for https://www.mayoclinic.org/: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/
+[2026-08-10 06:47:28] [WARNING] Download attempt 2/3 failed for https://www.mayoclinic.org/: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/
+[2026-08-10 06:47:30] [WARNING] Download attempt 3/3 failed for https://www.mayoclinic.org/: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/
+[2026-08-10 06:47:30] [INFO   ] [KB-000049] [mayo] FAILED — Download error: Failed after 3 attempts: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/
+[2026-08-10 06:47:30] [INFO   ] [KB-000049] [medlineplus] SEARCHING — Query: Vitamin D test 25-hydroxy
+[2026-08-10 06:47:36] [INFO   ] [KB-000049] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov
+[2026-08-10 06:47:38] [INFO   ] [KB-000049] [medlineplus] EXTRACTING
+[2026-08-10 06:47:38] [INFO   ] [KB-000049] [medlineplus] CONVERTING
+[2026-08-10 06:47:38] [INFO   ] [KB-000049] [medlineplus] VALIDATING
+[2026-08-10 06:47:38] [INFO   ] [KB-000049] [medlineplus] FAILED — Quality check failed: Word count too low (78 < 300), No topic keywords found in text, No markdown headings found
+[2026-08-10 06:47:38] [INFO   ] ======================================================================
+[2026-08-10 06:47:38] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-10 06:47:38] [INFO   ]   Total jobs:   3
+[2026-08-10 06:47:38] [INFO   ]   Scraped:      0
+[2026-08-10 06:47:38] [INFO   ]   Skipped:      0
+[2026-08-10 06:47:38] [INFO   ]   Failed:       3
+[2026-08-10 06:47:38] [INFO   ]   Duration:     16.2s
+[2026-08-10 06:47:38] [INFO   ] ======================================================================

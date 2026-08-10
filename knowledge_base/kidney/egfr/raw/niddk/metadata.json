@@ -1,0 +1,29 @@
+{
+  "document_id": "KB-000019",
+  "topic": "egfr",
+  "topic_title": "eGFR",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/",
+  "scraped_at": "2026-08-10T06:47:21.667152+00:00",
+  "word_count": 142,
+  "content_hash": "sha256:802ab505c301725dc28fdc9ffa9ffd7376610b6885129b898f8bc8fe7eb80602",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": false,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "Word count too low (142 < 300)",
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

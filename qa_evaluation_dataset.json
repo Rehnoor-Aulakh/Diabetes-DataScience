@@ -1,0 +1,3302 @@
+[
+  {
+    "question": "What is diabetes?",
+    "topic_id": "diabetes_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000001"
+  },
+  {
+    "question": "What are the types of diabetes?",
+    "topic_id": "diabetes_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000001"
+  },
+  {
+    "question": "How do I know if I have diabetes?",
+    "topic_id": "diabetes_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000001"
+  },
+  {
+    "question": "Can diabetes be cured?",
+    "topic_id": "diabetes_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000001"
+  },
+  {
+    "question": "What causes diabetes?",
+    "topic_id": "diabetes_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000001"
+  },
+  {
+    "question": "What causes Type 1 diabetes?",
+    "topic_id": "type1_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000002"
+  },
+  {
+    "question": "Is Type 1 diabetes genetic?",
+    "topic_id": "type1_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000002"
+  },
+  {
+    "question": "What is the difference between Type 1 and Type 2?",
+    "topic_id": "type1_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000002"
+  },
+  {
+    "question": "Can Type 1 diabetes be prevented?",
+    "topic_id": "type1_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000002"
+  },
+  {
+    "question": "How is Type 1 diabetes managed?",
+    "topic_id": "type1_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000002"
+  },
+  {
+    "question": "What causes Type 2 diabetes?",
+    "topic_id": "type2_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000003"
+  },
+  {
+    "question": "Can Type 2 diabetes be reversed?",
+    "topic_id": "type2_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000003"
+  },
+  {
+    "question": "What is the difference between Type 1 and Type 2?",
+    "topic_id": "type2_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000003"
+  },
+  {
+    "question": "Am I at risk for Type 2 diabetes?",
+    "topic_id": "type2_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000003"
+  },
+  {
+    "question": "How is Type 2 diabetes treated?",
+    "topic_id": "type2_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000003"
+  },
+  {
+    "question": "What is prediabetes?",
+    "topic_id": "prediabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000004"
+  },
+  {
+    "question": "Can prediabetes be reversed?",
+    "topic_id": "prediabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000004"
+  },
+  {
+    "question": "Will prediabetes always become diabetes?",
+    "topic_id": "prediabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000004"
+  },
+  {
+    "question": "How is prediabetes diagnosed?",
+    "topic_id": "prediabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000004"
+  },
+  {
+    "question": "What lifestyle changes help prediabetes?",
+    "topic_id": "prediabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000004"
+  },
+  {
+    "question": "What is gestational diabetes?",
+    "topic_id": "gestational_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000005"
+  },
+  {
+    "question": "Will gestational diabetes harm my baby?",
+    "topic_id": "gestational_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000005"
+  },
+  {
+    "question": "Does gestational diabetes go away after pregnancy?",
+    "topic_id": "gestational_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000005"
+  },
+  {
+    "question": "Am I at risk for Type 2 diabetes after gestational diabetes?",
+    "topic_id": "gestational_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000005"
+  },
+  {
+    "question": "How is gestational diabetes managed?",
+    "topic_id": "gestational_diabetes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000005"
+  },
+  {
+    "question": "What does insulin do in the body?",
+    "topic_id": "insulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000006"
+  },
+  {
+    "question": "Why is insulin important for diabetes?",
+    "topic_id": "insulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000006"
+  },
+  {
+    "question": "What happens when insulin is too low?",
+    "topic_id": "insulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000006"
+  },
+  {
+    "question": "What happens when insulin is too high?",
+    "topic_id": "insulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000006"
+  },
+  {
+    "question": "What is the difference between insulin and blood sugar?",
+    "topic_id": "insulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000006"
+  },
+  {
+    "question": "What is insulin resistance?",
+    "topic_id": "insulin_resistance",
+    "ground_truth_answer": "",
+    "document_id": "KB-000007"
+  },
+  {
+    "question": "What causes insulin resistance?",
+    "topic_id": "insulin_resistance",
+    "ground_truth_answer": "",
+    "document_id": "KB-000007"
+  },
+  {
+    "question": "How do I know if I have insulin resistance?",
+    "topic_id": "insulin_resistance",
+    "ground_truth_answer": "",
+    "document_id": "KB-000007"
+  },
+  {
+    "question": "Can insulin resistance be reversed?",
+    "topic_id": "insulin_resistance",
+    "ground_truth_answer": "",
+    "document_id": "KB-000007"
+  },
+  {
+    "question": "What is the connection between insulin resistance and Type 2 diabetes?",
+    "topic_id": "insulin_resistance",
+    "ground_truth_answer": "",
+    "document_id": "KB-000007"
+  },
+  {
+    "question": "What does the pancreas do?",
+    "topic_id": "pancreas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000008"
+  },
+  {
+    "question": "What are beta cells?",
+    "topic_id": "pancreas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000008"
+  },
+  {
+    "question": "Why do beta cells stop working in diabetes?",
+    "topic_id": "pancreas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000008"
+  },
+  {
+    "question": "Can beta cells regenerate?",
+    "topic_id": "pancreas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000008"
+  },
+  {
+    "question": "What is the role of glucagon?",
+    "topic_id": "pancreas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000008"
+  },
+  {
+    "question": "How does the body regulate blood sugar?",
+    "topic_id": "glucose_metabolism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000009"
+  },
+  {
+    "question": "What happens to blood sugar after eating?",
+    "topic_id": "glucose_metabolism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000009"
+  },
+  {
+    "question": "Why does blood sugar rise overnight?",
+    "topic_id": "glucose_metabolism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000009"
+  },
+  {
+    "question": "What is the dawn phenomenon?",
+    "topic_id": "glucose_metabolism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000009"
+  },
+  {
+    "question": "How do insulin and glucagon work together?",
+    "topic_id": "glucose_metabolism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000009"
+  },
+  {
+    "question": "What does my HbA1c number mean?",
+    "topic_id": "hba1c",
+    "ground_truth_answer": "",
+    "document_id": "KB-000010"
+  },
+  {
+    "question": "What is a normal HbA1c level?",
+    "topic_id": "hba1c",
+    "ground_truth_answer": "",
+    "document_id": "KB-000010"
+  },
+  {
+    "question": "Why is my HbA1c high?",
+    "topic_id": "hba1c",
+    "ground_truth_answer": "",
+    "document_id": "KB-000010"
+  },
+  {
+    "question": "How can I lower my HbA1c?",
+    "topic_id": "hba1c",
+    "ground_truth_answer": "",
+    "document_id": "KB-000010"
+  },
+  {
+    "question": "How often should I get an HbA1c test?",
+    "topic_id": "hba1c",
+    "ground_truth_answer": "",
+    "document_id": "KB-000010"
+  },
+  {
+    "question": "What is estimated average glucose?",
+    "topic_id": "average_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000011"
+  },
+  {
+    "question": "How is eAG calculated from HbA1c?",
+    "topic_id": "average_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000011"
+  },
+  {
+    "question": "What is a normal average blood glucose?",
+    "topic_id": "average_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000011"
+  },
+  {
+    "question": "Why is my average blood glucose high?",
+    "topic_id": "average_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000011"
+  },
+  {
+    "question": "How does eAG relate to my daily readings?",
+    "topic_id": "average_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000011"
+  },
+  {
+    "question": "What is a normal fasting blood sugar level?",
+    "topic_id": "fasting_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000012"
+  },
+  {
+    "question": "Why is my fasting blood sugar high?",
+    "topic_id": "fasting_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000012"
+  },
+  {
+    "question": "How long should I fast before the test?",
+    "topic_id": "fasting_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000012"
+  },
+  {
+    "question": "What does borderline fasting sugar mean?",
+    "topic_id": "fasting_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000012"
+  },
+  {
+    "question": "How can I lower my fasting blood sugar?",
+    "topic_id": "fasting_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000012"
+  },
+  {
+    "question": "What is a normal random blood sugar?",
+    "topic_id": "random_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000013"
+  },
+  {
+    "question": "Why is my random blood sugar high?",
+    "topic_id": "random_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000013"
+  },
+  {
+    "question": "Do I need to fast for a random blood sugar test?",
+    "topic_id": "random_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000013"
+  },
+  {
+    "question": "What does a random blood sugar of 200 mean?",
+    "topic_id": "random_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000013"
+  },
+  {
+    "question": "Is random blood sugar accurate for diagnosis?",
+    "topic_id": "random_blood_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000013"
+  },
+  {
+    "question": "What happens during an oral glucose tolerance test?",
+    "topic_id": "ogtt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000014"
+  },
+  {
+    "question": "What do OGTT results mean?",
+    "topic_id": "ogtt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000014"
+  },
+  {
+    "question": "How do I prepare for an OGTT?",
+    "topic_id": "ogtt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000014"
+  },
+  {
+    "question": "Why did my doctor order a glucose tolerance test?",
+    "topic_id": "ogtt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000014"
+  },
+  {
+    "question": "What is a normal 2-hour glucose reading?",
+    "topic_id": "ogtt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000014"
+  },
+  {
+    "question": "What does a C-Peptide test measure?",
+    "topic_id": "c_peptide",
+    "ground_truth_answer": "",
+    "document_id": "KB-000015"
+  },
+  {
+    "question": "Why is my C-Peptide low?",
+    "topic_id": "c_peptide",
+    "ground_truth_answer": "",
+    "document_id": "KB-000015"
+  },
+  {
+    "question": "Why is my C-Peptide high?",
+    "topic_id": "c_peptide",
+    "ground_truth_answer": "",
+    "document_id": "KB-000015"
+  },
+  {
+    "question": "What does C-Peptide tell about my diabetes type?",
+    "topic_id": "c_peptide",
+    "ground_truth_answer": "",
+    "document_id": "KB-000015"
+  },
+  {
+    "question": "How is C-Peptide different from an insulin test?",
+    "topic_id": "c_peptide",
+    "ground_truth_answer": "",
+    "document_id": "KB-000015"
+  },
+  {
+    "question": "How often should I check my blood sugar?",
+    "topic_id": "glucose_monitoring",
+    "ground_truth_answer": "",
+    "document_id": "KB-000016"
+  },
+  {
+    "question": "What is a continuous glucose monitor (CGM)?",
+    "topic_id": "glucose_monitoring",
+    "ground_truth_answer": "",
+    "document_id": "KB-000016"
+  },
+  {
+    "question": "What is a normal blood sugar range throughout the day?",
+    "topic_id": "glucose_monitoring",
+    "ground_truth_answer": "",
+    "document_id": "KB-000016"
+  },
+  {
+    "question": "When is the best time to check blood sugar?",
+    "topic_id": "glucose_monitoring",
+    "ground_truth_answer": "",
+    "document_id": "KB-000016"
+  },
+  {
+    "question": "What should I do if my blood sugar is too high or too low?",
+    "topic_id": "glucose_monitoring",
+    "ground_truth_answer": "",
+    "document_id": "KB-000016"
+  },
+  {
+    "question": "What is a normal blood sugar after eating?",
+    "topic_id": "postprandial_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000017"
+  },
+  {
+    "question": "Why is my blood sugar high after meals?",
+    "topic_id": "postprandial_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000017"
+  },
+  {
+    "question": "How long after eating should I check my blood sugar?",
+    "topic_id": "postprandial_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000017"
+  },
+  {
+    "question": "How can I reduce post-meal blood sugar spikes?",
+    "topic_id": "postprandial_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000017"
+  },
+  {
+    "question": "Is a post-meal sugar of 180 dangerous?",
+    "topic_id": "postprandial_glucose",
+    "ground_truth_answer": "",
+    "document_id": "KB-000017"
+  },
+  {
+    "question": "What does creatinine measure?",
+    "topic_id": "creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000018"
+  },
+  {
+    "question": "Why is my creatinine high?",
+    "topic_id": "creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000018"
+  },
+  {
+    "question": "Why is my creatinine low?",
+    "topic_id": "creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000018"
+  },
+  {
+    "question": "How can I lower my creatinine?",
+    "topic_id": "creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000018"
+  },
+  {
+    "question": "Is high creatinine dangerous?",
+    "topic_id": "creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000018"
+  },
+  {
+    "question": "What does eGFR measure?",
+    "topic_id": "egfr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000019"
+  },
+  {
+    "question": "What is a normal eGFR?",
+    "topic_id": "egfr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000019"
+  },
+  {
+    "question": "What does a low eGFR mean?",
+    "topic_id": "egfr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000019"
+  },
+  {
+    "question": "Can eGFR improve?",
+    "topic_id": "egfr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000019"
+  },
+  {
+    "question": "What stage of kidney disease is my eGFR?",
+    "topic_id": "egfr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000019"
+  },
+  {
+    "question": "What does BUN measure?",
+    "topic_id": "bun",
+    "ground_truth_answer": "",
+    "document_id": "KB-000020"
+  },
+  {
+    "question": "Why is my BUN high?",
+    "topic_id": "bun",
+    "ground_truth_answer": "",
+    "document_id": "KB-000020"
+  },
+  {
+    "question": "Why is my BUN low?",
+    "topic_id": "bun",
+    "ground_truth_answer": "",
+    "document_id": "KB-000020"
+  },
+  {
+    "question": "What is a normal BUN level?",
+    "topic_id": "bun",
+    "ground_truth_answer": "",
+    "document_id": "KB-000020"
+  },
+  {
+    "question": "What does the BUN/Creatinine ratio mean?",
+    "topic_id": "bun",
+    "ground_truth_answer": "",
+    "document_id": "KB-000020"
+  },
+  {
+    "question": "What is urea?",
+    "topic_id": "urea",
+    "ground_truth_answer": "",
+    "document_id": "KB-000021"
+  },
+  {
+    "question": "What is the difference between urea and BUN?",
+    "topic_id": "urea",
+    "ground_truth_answer": "",
+    "document_id": "KB-000021"
+  },
+  {
+    "question": "Why is my urea level high?",
+    "topic_id": "urea",
+    "ground_truth_answer": "",
+    "document_id": "KB-000021"
+  },
+  {
+    "question": "What causes low urea?",
+    "topic_id": "urea",
+    "ground_truth_answer": "",
+    "document_id": "KB-000021"
+  },
+  {
+    "question": "How does urea relate to kidney function?",
+    "topic_id": "urea",
+    "ground_truth_answer": "",
+    "document_id": "KB-000021"
+  },
+  {
+    "question": "What does a urine creatinine test measure?",
+    "topic_id": "urine_creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000022"
+  },
+  {
+    "question": "What is creatinine clearance?",
+    "topic_id": "urine_creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000022"
+  },
+  {
+    "question": "How is a 24-hour urine test done?",
+    "topic_id": "urine_creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000022"
+  },
+  {
+    "question": "Why is my urine creatinine abnormal?",
+    "topic_id": "urine_creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000022"
+  },
+  {
+    "question": "How does urine creatinine relate to kidney function?",
+    "topic_id": "urine_creatinine",
+    "ground_truth_answer": "",
+    "document_id": "KB-000022"
+  },
+  {
+    "question": "What does microalbumin in urine mean?",
+    "topic_id": "microalbumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000023"
+  },
+  {
+    "question": "Why is albumin in my urine?",
+    "topic_id": "microalbumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000023"
+  },
+  {
+    "question": "Is microalbuminuria serious?",
+    "topic_id": "microalbumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000023"
+  },
+  {
+    "question": "Can microalbuminuria be reversed?",
+    "topic_id": "microalbumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000023"
+  },
+  {
+    "question": "How is microalbumin related to diabetes kidney damage?",
+    "topic_id": "microalbumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000023"
+  },
+  {
+    "question": "What does the albumin-to-creatinine ratio measure?",
+    "topic_id": "albumin_creatinine_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000024"
+  },
+  {
+    "question": "What is a normal ACR?",
+    "topic_id": "albumin_creatinine_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000024"
+  },
+  {
+    "question": "Why is my ACR high?",
+    "topic_id": "albumin_creatinine_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000024"
+  },
+  {
+    "question": "What does an ACR over 30 mean?",
+    "topic_id": "albumin_creatinine_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000024"
+  },
+  {
+    "question": "How often should my ACR be tested?",
+    "topic_id": "albumin_creatinine_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000024"
+  },
+  {
+    "question": "How does diabetes damage the kidneys?",
+    "topic_id": "diabetic_kidney_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000025"
+  },
+  {
+    "question": "What are the stages of diabetic kidney disease?",
+    "topic_id": "diabetic_kidney_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000025"
+  },
+  {
+    "question": "Can diabetic kidney disease be reversed?",
+    "topic_id": "diabetic_kidney_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000025"
+  },
+  {
+    "question": "What tests screen for kidney damage in diabetes?",
+    "topic_id": "diabetic_kidney_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000025"
+  },
+  {
+    "question": "How can I protect my kidneys if I have diabetes?",
+    "topic_id": "diabetic_kidney_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000025"
+  },
+  {
+    "question": "What does uric acid measure?",
+    "topic_id": "uric_acid",
+    "ground_truth_answer": "",
+    "document_id": "KB-000026"
+  },
+  {
+    "question": "Why is my uric acid high?",
+    "topic_id": "uric_acid",
+    "ground_truth_answer": "",
+    "document_id": "KB-000026"
+  },
+  {
+    "question": "What is the connection between uric acid and diabetes?",
+    "topic_id": "uric_acid",
+    "ground_truth_answer": "",
+    "document_id": "KB-000026"
+  },
+  {
+    "question": "Can high uric acid damage my kidneys?",
+    "topic_id": "uric_acid",
+    "ground_truth_answer": "",
+    "document_id": "KB-000026"
+  },
+  {
+    "question": "How can I lower my uric acid?",
+    "topic_id": "uric_acid",
+    "ground_truth_answer": "",
+    "document_id": "KB-000026"
+  },
+  {
+    "question": "What are electrolytes?",
+    "topic_id": "electrolytes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000027"
+  },
+  {
+    "question": "Why is my potassium high or low?",
+    "topic_id": "electrolytes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000027"
+  },
+  {
+    "question": "Why is my sodium high or low?",
+    "topic_id": "electrolytes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000027"
+  },
+  {
+    "question": "How do electrolytes relate to kidney function?",
+    "topic_id": "electrolytes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000027"
+  },
+  {
+    "question": "Can diabetes affect my electrolyte levels?",
+    "topic_id": "electrolytes",
+    "ground_truth_answer": "",
+    "document_id": "KB-000027"
+  },
+  {
+    "question": "What does ALT measure?",
+    "topic_id": "alt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000028"
+  },
+  {
+    "question": "Why is my ALT high?",
+    "topic_id": "alt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000028"
+  },
+  {
+    "question": "Why is my ALT low?",
+    "topic_id": "alt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000028"
+  },
+  {
+    "question": "How can I lower my ALT?",
+    "topic_id": "alt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000028"
+  },
+  {
+    "question": "Is high ALT dangerous?",
+    "topic_id": "alt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000028"
+  },
+  {
+    "question": "What does AST measure?",
+    "topic_id": "ast",
+    "ground_truth_answer": "",
+    "document_id": "KB-000029"
+  },
+  {
+    "question": "Why is my AST high?",
+    "topic_id": "ast",
+    "ground_truth_answer": "",
+    "document_id": "KB-000029"
+  },
+  {
+    "question": "Why is my AST low?",
+    "topic_id": "ast",
+    "ground_truth_answer": "",
+    "document_id": "KB-000029"
+  },
+  {
+    "question": "What does the AST/ALT ratio mean?",
+    "topic_id": "ast",
+    "ground_truth_answer": "",
+    "document_id": "KB-000029"
+  },
+  {
+    "question": "Is high AST always a liver problem?",
+    "topic_id": "ast",
+    "ground_truth_answer": "",
+    "document_id": "KB-000029"
+  },
+  {
+    "question": "What does bilirubin measure?",
+    "topic_id": "bilirubin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000030"
+  },
+  {
+    "question": "Why is my bilirubin high?",
+    "topic_id": "bilirubin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000030"
+  },
+  {
+    "question": "What is the difference between direct and indirect bilirubin?",
+    "topic_id": "bilirubin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000030"
+  },
+  {
+    "question": "What causes jaundice?",
+    "topic_id": "bilirubin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000030"
+  },
+  {
+    "question": "Can diabetes affect bilirubin levels?",
+    "topic_id": "bilirubin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000030"
+  },
+  {
+    "question": "What does ALP measure?",
+    "topic_id": "alp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000031"
+  },
+  {
+    "question": "Why is my ALP high?",
+    "topic_id": "alp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000031"
+  },
+  {
+    "question": "Why is my ALP low?",
+    "topic_id": "alp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000031"
+  },
+  {
+    "question": "Is ALP a liver or bone test?",
+    "topic_id": "alp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000031"
+  },
+  {
+    "question": "How can I lower my ALP?",
+    "topic_id": "alp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000031"
+  },
+  {
+    "question": "What does GGT measure?",
+    "topic_id": "ggt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000032"
+  },
+  {
+    "question": "Why is my GGT high?",
+    "topic_id": "ggt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000032"
+  },
+  {
+    "question": "Is GGT related to alcohol use?",
+    "topic_id": "ggt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000032"
+  },
+  {
+    "question": "What is the difference between GGT and ALP?",
+    "topic_id": "ggt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000032"
+  },
+  {
+    "question": "How can I lower my GGT?",
+    "topic_id": "ggt",
+    "ground_truth_answer": "",
+    "document_id": "KB-000032"
+  },
+  {
+    "question": "What does serum albumin measure?",
+    "topic_id": "albumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000033"
+  },
+  {
+    "question": "Why is my albumin low?",
+    "topic_id": "albumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000033"
+  },
+  {
+    "question": "Why is my albumin high?",
+    "topic_id": "albumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000033"
+  },
+  {
+    "question": "Is low albumin serious?",
+    "topic_id": "albumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000033"
+  },
+  {
+    "question": "How can I raise my albumin level?",
+    "topic_id": "albumin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000033"
+  },
+  {
+    "question": "What does globulin measure?",
+    "topic_id": "globulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000034"
+  },
+  {
+    "question": "Why is my globulin high?",
+    "topic_id": "globulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000034"
+  },
+  {
+    "question": "Why is my globulin low?",
+    "topic_id": "globulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000034"
+  },
+  {
+    "question": "What is the A/G ratio?",
+    "topic_id": "globulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000034"
+  },
+  {
+    "question": "What causes abnormal globulin levels?",
+    "topic_id": "globulin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000034"
+  },
+  {
+    "question": "What does total protein measure?",
+    "topic_id": "total_protein",
+    "ground_truth_answer": "",
+    "document_id": "KB-000035"
+  },
+  {
+    "question": "Why is my total protein high?",
+    "topic_id": "total_protein",
+    "ground_truth_answer": "",
+    "document_id": "KB-000035"
+  },
+  {
+    "question": "Why is my total protein low?",
+    "topic_id": "total_protein",
+    "ground_truth_answer": "",
+    "document_id": "KB-000035"
+  },
+  {
+    "question": "What is included in total protein?",
+    "topic_id": "total_protein",
+    "ground_truth_answer": "",
+    "document_id": "KB-000035"
+  },
+  {
+    "question": "How does total protein relate to liver health?",
+    "topic_id": "total_protein",
+    "ground_truth_answer": "",
+    "document_id": "KB-000035"
+  },
+  {
+    "question": "What is fatty liver disease?",
+    "topic_id": "fatty_liver",
+    "ground_truth_answer": "",
+    "document_id": "KB-000036"
+  },
+  {
+    "question": "Can fatty liver be reversed?",
+    "topic_id": "fatty_liver",
+    "ground_truth_answer": "",
+    "document_id": "KB-000036"
+  },
+  {
+    "question": "Is fatty liver dangerous?",
+    "topic_id": "fatty_liver",
+    "ground_truth_answer": "",
+    "document_id": "KB-000036"
+  },
+  {
+    "question": "What causes fatty liver in diabetes?",
+    "topic_id": "fatty_liver",
+    "ground_truth_answer": "",
+    "document_id": "KB-000036"
+  },
+  {
+    "question": "How is fatty liver diagnosed?",
+    "topic_id": "fatty_liver",
+    "ground_truth_answer": "",
+    "document_id": "KB-000036"
+  },
+  {
+    "question": "What is the difference between NAFLD and NASH?",
+    "topic_id": "nafld",
+    "ground_truth_answer": "",
+    "document_id": "KB-000037"
+  },
+  {
+    "question": "Why do people with diabetes get NAFLD?",
+    "topic_id": "nafld",
+    "ground_truth_answer": "",
+    "document_id": "KB-000037"
+  },
+  {
+    "question": "Can NAFLD lead to liver failure?",
+    "topic_id": "nafld",
+    "ground_truth_answer": "",
+    "document_id": "KB-000037"
+  },
+  {
+    "question": "What is MASLD?",
+    "topic_id": "nafld",
+    "ground_truth_answer": "",
+    "document_id": "KB-000037"
+  },
+  {
+    "question": "How can I treat NAFLD?",
+    "topic_id": "nafld",
+    "ground_truth_answer": "",
+    "document_id": "KB-000037"
+  },
+  {
+    "question": "What does a liver function test include?",
+    "topic_id": "liver_function_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000038"
+  },
+  {
+    "question": "What do my liver function results mean?",
+    "topic_id": "liver_function_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000038"
+  },
+  {
+    "question": "Why did my doctor order a liver panel?",
+    "topic_id": "liver_function_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000038"
+  },
+  {
+    "question": "Can diabetes affect liver function tests?",
+    "topic_id": "liver_function_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000038"
+  },
+  {
+    "question": "How often should liver function be checked?",
+    "topic_id": "liver_function_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000038"
+  },
+  {
+    "question": "What is HDL cholesterol?",
+    "topic_id": "hdl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000039"
+  },
+  {
+    "question": "Why is HDL called good cholesterol?",
+    "topic_id": "hdl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000039"
+  },
+  {
+    "question": "Why is my HDL low?",
+    "topic_id": "hdl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000039"
+  },
+  {
+    "question": "How can I raise my HDL?",
+    "topic_id": "hdl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000039"
+  },
+  {
+    "question": "What is a good HDL level?",
+    "topic_id": "hdl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000039"
+  },
+  {
+    "question": "What is LDL cholesterol?",
+    "topic_id": "ldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000040"
+  },
+  {
+    "question": "Why is LDL called bad cholesterol?",
+    "topic_id": "ldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000040"
+  },
+  {
+    "question": "Why is my LDL high?",
+    "topic_id": "ldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000040"
+  },
+  {
+    "question": "How can I lower my LDL?",
+    "topic_id": "ldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000040"
+  },
+  {
+    "question": "What is a healthy LDL target for diabetes?",
+    "topic_id": "ldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000040"
+  },
+  {
+    "question": "What is total cholesterol?",
+    "topic_id": "total_cholesterol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000041"
+  },
+  {
+    "question": "What is a normal total cholesterol?",
+    "topic_id": "total_cholesterol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000041"
+  },
+  {
+    "question": "Why is my cholesterol high?",
+    "topic_id": "total_cholesterol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000041"
+  },
+  {
+    "question": "How can I lower my cholesterol?",
+    "topic_id": "total_cholesterol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000041"
+  },
+  {
+    "question": "Does diabetes raise cholesterol?",
+    "topic_id": "total_cholesterol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000041"
+  },
+  {
+    "question": "What are triglycerides?",
+    "topic_id": "triglycerides",
+    "ground_truth_answer": "",
+    "document_id": "KB-000042"
+  },
+  {
+    "question": "Why are my triglycerides high?",
+    "topic_id": "triglycerides",
+    "ground_truth_answer": "",
+    "document_id": "KB-000042"
+  },
+  {
+    "question": "How can I lower my triglycerides?",
+    "topic_id": "triglycerides",
+    "ground_truth_answer": "",
+    "document_id": "KB-000042"
+  },
+  {
+    "question": "What is the connection between triglycerides and diabetes?",
+    "topic_id": "triglycerides",
+    "ground_truth_answer": "",
+    "document_id": "KB-000042"
+  },
+  {
+    "question": "Are high triglycerides dangerous?",
+    "topic_id": "triglycerides",
+    "ground_truth_answer": "",
+    "document_id": "KB-000042"
+  },
+  {
+    "question": "What is VLDL cholesterol?",
+    "topic_id": "vldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000043"
+  },
+  {
+    "question": "Why is my VLDL high?",
+    "topic_id": "vldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000043"
+  },
+  {
+    "question": "How is VLDL different from LDL?",
+    "topic_id": "vldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000043"
+  },
+  {
+    "question": "How is VLDL calculated?",
+    "topic_id": "vldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000043"
+  },
+  {
+    "question": "Can I lower my VLDL?",
+    "topic_id": "vldl",
+    "ground_truth_answer": "",
+    "document_id": "KB-000043"
+  },
+  {
+    "question": "What is Apolipoprotein A1?",
+    "topic_id": "apoa1",
+    "ground_truth_answer": "",
+    "document_id": "KB-000044"
+  },
+  {
+    "question": "Why is my ApoA1 low?",
+    "topic_id": "apoa1",
+    "ground_truth_answer": "",
+    "document_id": "KB-000044"
+  },
+  {
+    "question": "How does ApoA1 relate to HDL?",
+    "topic_id": "apoa1",
+    "ground_truth_answer": "",
+    "document_id": "KB-000044"
+  },
+  {
+    "question": "What is the ApoB/ApoA1 ratio?",
+    "topic_id": "apoa1",
+    "ground_truth_answer": "",
+    "document_id": "KB-000044"
+  },
+  {
+    "question": "Is ApoA1 a better predictor than HDL?",
+    "topic_id": "apoa1",
+    "ground_truth_answer": "",
+    "document_id": "KB-000044"
+  },
+  {
+    "question": "What is Apolipoprotein B?",
+    "topic_id": "apob",
+    "ground_truth_answer": "",
+    "document_id": "KB-000045"
+  },
+  {
+    "question": "Why is my ApoB high?",
+    "topic_id": "apob",
+    "ground_truth_answer": "",
+    "document_id": "KB-000045"
+  },
+  {
+    "question": "Is ApoB better than LDL for predicting heart risk?",
+    "topic_id": "apob",
+    "ground_truth_answer": "",
+    "document_id": "KB-000045"
+  },
+  {
+    "question": "How can I lower my ApoB?",
+    "topic_id": "apob",
+    "ground_truth_answer": "",
+    "document_id": "KB-000045"
+  },
+  {
+    "question": "What is a good ApoB level for diabetes?",
+    "topic_id": "apob",
+    "ground_truth_answer": "",
+    "document_id": "KB-000045"
+  },
+  {
+    "question": "What is Lipoprotein(a)?",
+    "topic_id": "lipoprotein_a",
+    "ground_truth_answer": "",
+    "document_id": "KB-000046"
+  },
+  {
+    "question": "Why is my Lp(a) high?",
+    "topic_id": "lipoprotein_a",
+    "ground_truth_answer": "",
+    "document_id": "KB-000046"
+  },
+  {
+    "question": "Is Lp(a) genetic?",
+    "topic_id": "lipoprotein_a",
+    "ground_truth_answer": "",
+    "document_id": "KB-000046"
+  },
+  {
+    "question": "Can I lower my Lp(a)?",
+    "topic_id": "lipoprotein_a",
+    "ground_truth_answer": "",
+    "document_id": "KB-000046"
+  },
+  {
+    "question": "What does high Lp(a) mean for my heart risk?",
+    "topic_id": "lipoprotein_a",
+    "ground_truth_answer": "",
+    "document_id": "KB-000046"
+  },
+  {
+    "question": "What does a lipid panel test include?",
+    "topic_id": "lipid_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000047"
+  },
+  {
+    "question": "What do my cholesterol numbers mean?",
+    "topic_id": "lipid_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000047"
+  },
+  {
+    "question": "Do I need to fast for a lipid panel?",
+    "topic_id": "lipid_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000047"
+  },
+  {
+    "question": "How often should I get my lipids checked?",
+    "topic_id": "lipid_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000047"
+  },
+  {
+    "question": "What are the cholesterol targets for diabetes?",
+    "topic_id": "lipid_panel",
+    "ground_truth_answer": "",
+    "document_id": "KB-000047"
+  },
+  {
+    "question": "What is a cholesterol ratio?",
+    "topic_id": "cholesterol_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000048"
+  },
+  {
+    "question": "What is a good TC/HDL ratio?",
+    "topic_id": "cholesterol_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000048"
+  },
+  {
+    "question": "What is non-HDL cholesterol?",
+    "topic_id": "cholesterol_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000048"
+  },
+  {
+    "question": "Which ratio is best for predicting heart risk?",
+    "topic_id": "cholesterol_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000048"
+  },
+  {
+    "question": "How can I improve my cholesterol ratio?",
+    "topic_id": "cholesterol_ratio",
+    "ground_truth_answer": "",
+    "document_id": "KB-000048"
+  },
+  {
+    "question": "What does my Vitamin D level mean?",
+    "topic_id": "vitamin_d",
+    "ground_truth_answer": "",
+    "document_id": "KB-000049"
+  },
+  {
+    "question": "Why is my Vitamin D low?",
+    "topic_id": "vitamin_d",
+    "ground_truth_answer": "",
+    "document_id": "KB-000049"
+  },
+  {
+    "question": "How can I raise my Vitamin D?",
+    "topic_id": "vitamin_d",
+    "ground_truth_answer": "",
+    "document_id": "KB-000049"
+  },
+  {
+    "question": "Is Vitamin D deficiency connected to diabetes?",
+    "topic_id": "vitamin_d",
+    "ground_truth_answer": "",
+    "document_id": "KB-000049"
+  },
+  {
+    "question": "How much Vitamin D should I take?",
+    "topic_id": "vitamin_d",
+    "ground_truth_answer": "",
+    "document_id": "KB-000049"
+  },
+  {
+    "question": "What does my Vitamin B12 level mean?",
+    "topic_id": "vitamin_b12",
+    "ground_truth_answer": "",
+    "document_id": "KB-000050"
+  },
+  {
+    "question": "Why is my B12 low?",
+    "topic_id": "vitamin_b12",
+    "ground_truth_answer": "",
+    "document_id": "KB-000050"
+  },
+  {
+    "question": "Does metformin lower Vitamin B12?",
+    "topic_id": "vitamin_b12",
+    "ground_truth_answer": "",
+    "document_id": "KB-000050"
+  },
+  {
+    "question": "What are the symptoms of B12 deficiency?",
+    "topic_id": "vitamin_b12",
+    "ground_truth_answer": "",
+    "document_id": "KB-000050"
+  },
+  {
+    "question": "Can low B12 cause neuropathy?",
+    "topic_id": "vitamin_b12",
+    "ground_truth_answer": "",
+    "document_id": "KB-000050"
+  },
+  {
+    "question": "What does my folate level mean?",
+    "topic_id": "folate",
+    "ground_truth_answer": "",
+    "document_id": "KB-000051"
+  },
+  {
+    "question": "Why is my folate low?",
+    "topic_id": "folate",
+    "ground_truth_answer": "",
+    "document_id": "KB-000051"
+  },
+  {
+    "question": "What is the difference between folate and folic acid?",
+    "topic_id": "folate",
+    "ground_truth_answer": "",
+    "document_id": "KB-000051"
+  },
+  {
+    "question": "Can low folate cause anemia?",
+    "topic_id": "folate",
+    "ground_truth_answer": "",
+    "document_id": "KB-000051"
+  },
+  {
+    "question": "How can I increase my folate levels?",
+    "topic_id": "folate",
+    "ground_truth_answer": "",
+    "document_id": "KB-000051"
+  },
+  {
+    "question": "What do iron studies measure?",
+    "topic_id": "iron_studies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000052"
+  },
+  {
+    "question": "Why is my ferritin low?",
+    "topic_id": "iron_studies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000052"
+  },
+  {
+    "question": "Why is my ferritin high?",
+    "topic_id": "iron_studies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000052"
+  },
+  {
+    "question": "What does TIBC mean?",
+    "topic_id": "iron_studies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000052"
+  },
+  {
+    "question": "Can diabetes affect iron levels?",
+    "topic_id": "iron_studies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000052"
+  },
+  {
+    "question": "What does my magnesium level mean?",
+    "topic_id": "magnesium",
+    "ground_truth_answer": "",
+    "document_id": "KB-000053"
+  },
+  {
+    "question": "Why is my magnesium low?",
+    "topic_id": "magnesium",
+    "ground_truth_answer": "",
+    "document_id": "KB-000053"
+  },
+  {
+    "question": "How does magnesium relate to diabetes?",
+    "topic_id": "magnesium",
+    "ground_truth_answer": "",
+    "document_id": "KB-000053"
+  },
+  {
+    "question": "Can low magnesium cause insulin resistance?",
+    "topic_id": "magnesium",
+    "ground_truth_answer": "",
+    "document_id": "KB-000053"
+  },
+  {
+    "question": "What foods are high in magnesium?",
+    "topic_id": "magnesium",
+    "ground_truth_answer": "",
+    "document_id": "KB-000053"
+  },
+  {
+    "question": "What does a CBC test include?",
+    "topic_id": "cbc_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000054"
+  },
+  {
+    "question": "What do my CBC results mean?",
+    "topic_id": "cbc_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000054"
+  },
+  {
+    "question": "Why did my doctor order a CBC?",
+    "topic_id": "cbc_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000054"
+  },
+  {
+    "question": "How often should I get a CBC?",
+    "topic_id": "cbc_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000054"
+  },
+  {
+    "question": "Can diabetes affect my CBC results?",
+    "topic_id": "cbc_overview",
+    "ground_truth_answer": "",
+    "document_id": "KB-000054"
+  },
+  {
+    "question": "What does hemoglobin measure?",
+    "topic_id": "hemoglobin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000055"
+  },
+  {
+    "question": "Why is my hemoglobin low?",
+    "topic_id": "hemoglobin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000055"
+  },
+  {
+    "question": "Why is my hemoglobin high?",
+    "topic_id": "hemoglobin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000055"
+  },
+  {
+    "question": "How does low hemoglobin affect HbA1c?",
+    "topic_id": "hemoglobin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000055"
+  },
+  {
+    "question": "What is a normal hemoglobin level?",
+    "topic_id": "hemoglobin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000055"
+  },
+  {
+    "question": "What does hematocrit measure?",
+    "topic_id": "hematocrit",
+    "ground_truth_answer": "",
+    "document_id": "KB-000056"
+  },
+  {
+    "question": "Why is my hematocrit low?",
+    "topic_id": "hematocrit",
+    "ground_truth_answer": "",
+    "document_id": "KB-000056"
+  },
+  {
+    "question": "Why is my hematocrit high?",
+    "topic_id": "hematocrit",
+    "ground_truth_answer": "",
+    "document_id": "KB-000056"
+  },
+  {
+    "question": "What is the relationship between hematocrit and hemoglobin?",
+    "topic_id": "hematocrit",
+    "ground_truth_answer": "",
+    "document_id": "KB-000056"
+  },
+  {
+    "question": "Can dehydration affect hematocrit?",
+    "topic_id": "hematocrit",
+    "ground_truth_answer": "",
+    "document_id": "KB-000056"
+  },
+  {
+    "question": "What does RBC count measure?",
+    "topic_id": "rbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000057"
+  },
+  {
+    "question": "Why is my RBC count low?",
+    "topic_id": "rbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000057"
+  },
+  {
+    "question": "Why is my RBC count high?",
+    "topic_id": "rbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000057"
+  },
+  {
+    "question": "What do MCV, MCH, and MCHC mean?",
+    "topic_id": "rbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000057"
+  },
+  {
+    "question": "How does diabetes affect red blood cells?",
+    "topic_id": "rbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000057"
+  },
+  {
+    "question": "What does WBC count measure?",
+    "topic_id": "wbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000058"
+  },
+  {
+    "question": "Why is my WBC count high?",
+    "topic_id": "wbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000058"
+  },
+  {
+    "question": "Why is my WBC count low?",
+    "topic_id": "wbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000058"
+  },
+  {
+    "question": "What does the WBC differential show?",
+    "topic_id": "wbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000058"
+  },
+  {
+    "question": "Can diabetes affect my white blood cell count?",
+    "topic_id": "wbc",
+    "ground_truth_answer": "",
+    "document_id": "KB-000058"
+  },
+  {
+    "question": "What does platelet count measure?",
+    "topic_id": "platelets",
+    "ground_truth_answer": "",
+    "document_id": "KB-000059"
+  },
+  {
+    "question": "Why is my platelet count low?",
+    "topic_id": "platelets",
+    "ground_truth_answer": "",
+    "document_id": "KB-000059"
+  },
+  {
+    "question": "Why is my platelet count high?",
+    "topic_id": "platelets",
+    "ground_truth_answer": "",
+    "document_id": "KB-000059"
+  },
+  {
+    "question": "What is a normal platelet count?",
+    "topic_id": "platelets",
+    "ground_truth_answer": "",
+    "document_id": "KB-000059"
+  },
+  {
+    "question": "How do platelets relate to diabetes complications?",
+    "topic_id": "platelets",
+    "ground_truth_answer": "",
+    "document_id": "KB-000059"
+  },
+  {
+    "question": "What is anemia?",
+    "topic_id": "anemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000060"
+  },
+  {
+    "question": "Why do people with diabetes get anemia?",
+    "topic_id": "anemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000060"
+  },
+  {
+    "question": "How does anemia affect my HbA1c?",
+    "topic_id": "anemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000060"
+  },
+  {
+    "question": "What types of anemia are common in diabetes?",
+    "topic_id": "anemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000060"
+  },
+  {
+    "question": "How is anemia treated?",
+    "topic_id": "anemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000060"
+  },
+  {
+    "question": "What does ESR measure?",
+    "topic_id": "esr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000061"
+  },
+  {
+    "question": "Why is my ESR high?",
+    "topic_id": "esr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000061"
+  },
+  {
+    "question": "Why is my ESR low?",
+    "topic_id": "esr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000061"
+  },
+  {
+    "question": "What does ESR tell about inflammation?",
+    "topic_id": "esr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000061"
+  },
+  {
+    "question": "Is ESR related to diabetes?",
+    "topic_id": "esr",
+    "ground_truth_answer": "",
+    "document_id": "KB-000061"
+  },
+  {
+    "question": "What does CRP measure?",
+    "topic_id": "crp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000062"
+  },
+  {
+    "question": "Why is my CRP high?",
+    "topic_id": "crp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000062"
+  },
+  {
+    "question": "What is the difference between CRP and hs-CRP?",
+    "topic_id": "crp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000062"
+  },
+  {
+    "question": "Does high CRP mean heart disease?",
+    "topic_id": "crp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000062"
+  },
+  {
+    "question": "How can I lower my CRP?",
+    "topic_id": "crp",
+    "ground_truth_answer": "",
+    "document_id": "KB-000062"
+  },
+  {
+    "question": "What does TSH measure?",
+    "topic_id": "tsh",
+    "ground_truth_answer": "",
+    "document_id": "KB-000063"
+  },
+  {
+    "question": "Why is my TSH high?",
+    "topic_id": "tsh",
+    "ground_truth_answer": "",
+    "document_id": "KB-000063"
+  },
+  {
+    "question": "Why is my TSH low?",
+    "topic_id": "tsh",
+    "ground_truth_answer": "",
+    "document_id": "KB-000063"
+  },
+  {
+    "question": "What is a normal TSH level?",
+    "topic_id": "tsh",
+    "ground_truth_answer": "",
+    "document_id": "KB-000063"
+  },
+  {
+    "question": "How does thyroid function affect diabetes?",
+    "topic_id": "tsh",
+    "ground_truth_answer": "",
+    "document_id": "KB-000063"
+  },
+  {
+    "question": "What does T3 measure?",
+    "topic_id": "t3",
+    "ground_truth_answer": "",
+    "document_id": "KB-000064"
+  },
+  {
+    "question": "Why is my T3 low?",
+    "topic_id": "t3",
+    "ground_truth_answer": "",
+    "document_id": "KB-000064"
+  },
+  {
+    "question": "Why is my T3 high?",
+    "topic_id": "t3",
+    "ground_truth_answer": "",
+    "document_id": "KB-000064"
+  },
+  {
+    "question": "What is the difference between free T3 and total T3?",
+    "topic_id": "t3",
+    "ground_truth_answer": "",
+    "document_id": "KB-000064"
+  },
+  {
+    "question": "How does T3 affect metabolism?",
+    "topic_id": "t3",
+    "ground_truth_answer": "",
+    "document_id": "KB-000064"
+  },
+  {
+    "question": "What does T4 measure?",
+    "topic_id": "t4",
+    "ground_truth_answer": "",
+    "document_id": "KB-000065"
+  },
+  {
+    "question": "Why is my T4 low?",
+    "topic_id": "t4",
+    "ground_truth_answer": "",
+    "document_id": "KB-000065"
+  },
+  {
+    "question": "Why is my T4 high?",
+    "topic_id": "t4",
+    "ground_truth_answer": "",
+    "document_id": "KB-000065"
+  },
+  {
+    "question": "What is the difference between free T4 and total T4?",
+    "topic_id": "t4",
+    "ground_truth_answer": "",
+    "document_id": "KB-000065"
+  },
+  {
+    "question": "How does T4 relate to TSH?",
+    "topic_id": "t4",
+    "ground_truth_answer": "",
+    "document_id": "KB-000065"
+  },
+  {
+    "question": "What are thyroid antibodies?",
+    "topic_id": "thyroid_antibodies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000066"
+  },
+  {
+    "question": "Why are my TPO antibodies high?",
+    "topic_id": "thyroid_antibodies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000066"
+  },
+  {
+    "question": "Do thyroid antibodies mean I have Hashimoto's?",
+    "topic_id": "thyroid_antibodies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000066"
+  },
+  {
+    "question": "Is there a connection between thyroid antibodies and Type 1 diabetes?",
+    "topic_id": "thyroid_antibodies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000066"
+  },
+  {
+    "question": "Can thyroid antibodies go away?",
+    "topic_id": "thyroid_antibodies",
+    "ground_truth_answer": "",
+    "document_id": "KB-000066"
+  },
+  {
+    "question": "What is hypothyroidism?",
+    "topic_id": "hypothyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000067"
+  },
+  {
+    "question": "What are the symptoms of underactive thyroid?",
+    "topic_id": "hypothyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000067"
+  },
+  {
+    "question": "Can hypothyroidism affect blood sugar?",
+    "topic_id": "hypothyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000067"
+  },
+  {
+    "question": "Is hypothyroidism related to diabetes?",
+    "topic_id": "hypothyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000067"
+  },
+  {
+    "question": "How is hypothyroidism treated?",
+    "topic_id": "hypothyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000067"
+  },
+  {
+    "question": "What is hyperthyroidism?",
+    "topic_id": "hyperthyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000068"
+  },
+  {
+    "question": "What are the symptoms of overactive thyroid?",
+    "topic_id": "hyperthyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000068"
+  },
+  {
+    "question": "Can hyperthyroidism cause high blood sugar?",
+    "topic_id": "hyperthyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000068"
+  },
+  {
+    "question": "What is Graves disease?",
+    "topic_id": "hyperthyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000068"
+  },
+  {
+    "question": "How is hyperthyroidism treated?",
+    "topic_id": "hyperthyroidism",
+    "ground_truth_answer": "",
+    "document_id": "KB-000068"
+  },
+  {
+    "question": "Why do people with diabetes need thyroid testing?",
+    "topic_id": "diabetes_thyroid_connection",
+    "ground_truth_answer": "",
+    "document_id": "KB-000069"
+  },
+  {
+    "question": "How does thyroid disease affect blood sugar?",
+    "topic_id": "diabetes_thyroid_connection",
+    "ground_truth_answer": "",
+    "document_id": "KB-000069"
+  },
+  {
+    "question": "Is thyroid disease common in Type 1 diabetes?",
+    "topic_id": "diabetes_thyroid_connection",
+    "ground_truth_answer": "",
+    "document_id": "KB-000069"
+  },
+  {
+    "question": "Can thyroid medication affect my diabetes?",
+    "topic_id": "diabetes_thyroid_connection",
+    "ground_truth_answer": "",
+    "document_id": "KB-000069"
+  },
+  {
+    "question": "How often should diabetics check thyroid?",
+    "topic_id": "diabetes_thyroid_connection",
+    "ground_truth_answer": "",
+    "document_id": "KB-000069"
+  },
+  {
+    "question": "How does diabetes increase heart disease risk?",
+    "topic_id": "heart_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000070"
+  },
+  {
+    "question": "What are the warning signs of heart disease?",
+    "topic_id": "heart_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000070"
+  },
+  {
+    "question": "How can I reduce my cardiovascular risk?",
+    "topic_id": "heart_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000070"
+  },
+  {
+    "question": "What tests screen for heart disease in diabetes?",
+    "topic_id": "heart_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000070"
+  },
+  {
+    "question": "Is heart disease preventable with diabetes?",
+    "topic_id": "heart_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000070"
+  },
+  {
+    "question": "What is a normal blood pressure for diabetics?",
+    "topic_id": "hypertension",
+    "ground_truth_answer": "",
+    "document_id": "KB-000071"
+  },
+  {
+    "question": "Why do people with diabetes get high blood pressure?",
+    "topic_id": "hypertension",
+    "ground_truth_answer": "",
+    "document_id": "KB-000071"
+  },
+  {
+    "question": "How can I lower my blood pressure naturally?",
+    "topic_id": "hypertension",
+    "ground_truth_answer": "",
+    "document_id": "KB-000071"
+  },
+  {
+    "question": "Does high blood pressure damage kidneys?",
+    "topic_id": "hypertension",
+    "ground_truth_answer": "",
+    "document_id": "KB-000071"
+  },
+  {
+    "question": "What blood pressure medications are best for diabetes?",
+    "topic_id": "hypertension",
+    "ground_truth_answer": "",
+    "document_id": "KB-000071"
+  },
+  {
+    "question": "How does diabetes increase stroke risk?",
+    "topic_id": "stroke",
+    "ground_truth_answer": "",
+    "document_id": "KB-000072"
+  },
+  {
+    "question": "What are the warning signs of a stroke?",
+    "topic_id": "stroke",
+    "ground_truth_answer": "",
+    "document_id": "KB-000072"
+  },
+  {
+    "question": "What is a TIA?",
+    "topic_id": "stroke",
+    "ground_truth_answer": "",
+    "document_id": "KB-000072"
+  },
+  {
+    "question": "How can I prevent stroke with diabetes?",
+    "topic_id": "stroke",
+    "ground_truth_answer": "",
+    "document_id": "KB-000072"
+  },
+  {
+    "question": "What should I do if I suspect a stroke?",
+    "topic_id": "stroke",
+    "ground_truth_answer": "",
+    "document_id": "KB-000072"
+  },
+  {
+    "question": "What is peripheral artery disease?",
+    "topic_id": "peripheral_artery_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000073"
+  },
+  {
+    "question": "What are the symptoms of PAD?",
+    "topic_id": "peripheral_artery_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000073"
+  },
+  {
+    "question": "How does diabetes cause PAD?",
+    "topic_id": "peripheral_artery_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000073"
+  },
+  {
+    "question": "Can PAD be reversed?",
+    "topic_id": "peripheral_artery_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000073"
+  },
+  {
+    "question": "Why does PAD increase foot amputation risk?",
+    "topic_id": "peripheral_artery_disease",
+    "ground_truth_answer": "",
+    "document_id": "KB-000073"
+  },
+  {
+    "question": "What is atherosclerosis?",
+    "topic_id": "atherosclerosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000074"
+  },
+  {
+    "question": "How does diabetes accelerate atherosclerosis?",
+    "topic_id": "atherosclerosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000074"
+  },
+  {
+    "question": "Can atherosclerosis be reversed?",
+    "topic_id": "atherosclerosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000074"
+  },
+  {
+    "question": "What tests detect atherosclerosis?",
+    "topic_id": "atherosclerosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000074"
+  },
+  {
+    "question": "How can I prevent plaque buildup?",
+    "topic_id": "atherosclerosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000074"
+  },
+  {
+    "question": "What is heart failure?",
+    "topic_id": "heart_failure",
+    "ground_truth_answer": "",
+    "document_id": "KB-000075"
+  },
+  {
+    "question": "How does diabetes cause heart failure?",
+    "topic_id": "heart_failure",
+    "ground_truth_answer": "",
+    "document_id": "KB-000075"
+  },
+  {
+    "question": "What are the symptoms of heart failure?",
+    "topic_id": "heart_failure",
+    "ground_truth_answer": "",
+    "document_id": "KB-000075"
+  },
+  {
+    "question": "Can heart failure be treated?",
+    "topic_id": "heart_failure",
+    "ground_truth_answer": "",
+    "document_id": "KB-000075"
+  },
+  {
+    "question": "Do SGLT2 inhibitors help heart failure?",
+    "topic_id": "heart_failure",
+    "ground_truth_answer": "",
+    "document_id": "KB-000075"
+  },
+  {
+    "question": "What is diabetic neuropathy?",
+    "topic_id": "diabetic_neuropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000076"
+  },
+  {
+    "question": "What are the symptoms of nerve damage from diabetes?",
+    "topic_id": "diabetic_neuropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000076"
+  },
+  {
+    "question": "Can diabetic neuropathy be reversed?",
+    "topic_id": "diabetic_neuropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000076"
+  },
+  {
+    "question": "How can I prevent neuropathy?",
+    "topic_id": "diabetic_neuropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000076"
+  },
+  {
+    "question": "What treatments are available for neuropathy?",
+    "topic_id": "diabetic_neuropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000076"
+  },
+  {
+    "question": "What is diabetic retinopathy?",
+    "topic_id": "diabetic_retinopathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000077"
+  },
+  {
+    "question": "Can diabetes cause blindness?",
+    "topic_id": "diabetic_retinopathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000077"
+  },
+  {
+    "question": "How often should I get an eye exam?",
+    "topic_id": "diabetic_retinopathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000077"
+  },
+  {
+    "question": "Can diabetic retinopathy be reversed?",
+    "topic_id": "diabetic_retinopathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000077"
+  },
+  {
+    "question": "What are the treatments for diabetic eye disease?",
+    "topic_id": "diabetic_retinopathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000077"
+  },
+  {
+    "question": "What is diabetic nephropathy?",
+    "topic_id": "diabetic_nephropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000078"
+  },
+  {
+    "question": "How does diabetes damage the kidneys?",
+    "topic_id": "diabetic_nephropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000078"
+  },
+  {
+    "question": "What are the stages of kidney disease?",
+    "topic_id": "diabetic_nephropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000078"
+  },
+  {
+    "question": "Can kidney damage from diabetes be reversed?",
+    "topic_id": "diabetic_nephropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000078"
+  },
+  {
+    "question": "How can I protect my kidneys?",
+    "topic_id": "diabetic_nephropathy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000078"
+  },
+  {
+    "question": "What causes diabetic foot problems?",
+    "topic_id": "diabetic_foot",
+    "ground_truth_answer": "",
+    "document_id": "KB-000079"
+  },
+  {
+    "question": "What are the signs of a diabetic foot ulcer?",
+    "topic_id": "diabetic_foot",
+    "ground_truth_answer": "",
+    "document_id": "KB-000079"
+  },
+  {
+    "question": "Why are foot problems serious in diabetes?",
+    "topic_id": "diabetic_foot",
+    "ground_truth_answer": "",
+    "document_id": "KB-000079"
+  },
+  {
+    "question": "Can diabetic foot ulcers heal?",
+    "topic_id": "diabetic_foot",
+    "ground_truth_answer": "",
+    "document_id": "KB-000079"
+  },
+  {
+    "question": "How can I prevent foot amputation?",
+    "topic_id": "diabetic_foot",
+    "ground_truth_answer": "",
+    "document_id": "KB-000079"
+  },
+  {
+    "question": "How should I care for my feet with diabetes?",
+    "topic_id": "foot_care",
+    "ground_truth_answer": "",
+    "document_id": "KB-000080"
+  },
+  {
+    "question": "How often should I inspect my feet?",
+    "topic_id": "foot_care",
+    "ground_truth_answer": "",
+    "document_id": "KB-000080"
+  },
+  {
+    "question": "What shoes are best for diabetic feet?",
+    "topic_id": "foot_care",
+    "ground_truth_answer": "",
+    "document_id": "KB-000080"
+  },
+  {
+    "question": "When should I see a podiatrist?",
+    "topic_id": "foot_care",
+    "ground_truth_answer": "",
+    "document_id": "KB-000080"
+  },
+  {
+    "question": "What should I look for during a foot check?",
+    "topic_id": "foot_care",
+    "ground_truth_answer": "",
+    "document_id": "KB-000080"
+  },
+  {
+    "question": "What is diabetic ketoacidosis (DKA)?",
+    "topic_id": "diabetic_ketoacidosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000081"
+  },
+  {
+    "question": "What are the warning signs of DKA?",
+    "topic_id": "diabetic_ketoacidosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000081"
+  },
+  {
+    "question": "How do I test for ketones?",
+    "topic_id": "diabetic_ketoacidosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000081"
+  },
+  {
+    "question": "Is DKA life-threatening?",
+    "topic_id": "diabetic_ketoacidosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000081"
+  },
+  {
+    "question": "How is DKA treated?",
+    "topic_id": "diabetic_ketoacidosis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000081"
+  },
+  {
+    "question": "What is hyperosmolar hyperglycemic syndrome?",
+    "topic_id": "hyperosmolar_syndrome",
+    "ground_truth_answer": "",
+    "document_id": "KB-000082"
+  },
+  {
+    "question": "What causes HHS?",
+    "topic_id": "hyperosmolar_syndrome",
+    "ground_truth_answer": "",
+    "document_id": "KB-000082"
+  },
+  {
+    "question": "What are the symptoms of HHS?",
+    "topic_id": "hyperosmolar_syndrome",
+    "ground_truth_answer": "",
+    "document_id": "KB-000082"
+  },
+  {
+    "question": "How is HHS different from DKA?",
+    "topic_id": "hyperosmolar_syndrome",
+    "ground_truth_answer": "",
+    "document_id": "KB-000082"
+  },
+  {
+    "question": "Is HHS an emergency?",
+    "topic_id": "hyperosmolar_syndrome",
+    "ground_truth_answer": "",
+    "document_id": "KB-000082"
+  },
+  {
+    "question": "What is hypoglycemia?",
+    "topic_id": "hypoglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000083"
+  },
+  {
+    "question": "What are the symptoms of low blood sugar?",
+    "topic_id": "hypoglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000083"
+  },
+  {
+    "question": "What should I do if my blood sugar drops?",
+    "topic_id": "hypoglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000083"
+  },
+  {
+    "question": "What blood sugar level is dangerously low?",
+    "topic_id": "hypoglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000083"
+  },
+  {
+    "question": "How can I prevent low blood sugar episodes?",
+    "topic_id": "hypoglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000083"
+  },
+  {
+    "question": "What is hyperglycemia?",
+    "topic_id": "hyperglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000084"
+  },
+  {
+    "question": "What are the symptoms of high blood sugar?",
+    "topic_id": "hyperglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000084"
+  },
+  {
+    "question": "What causes blood sugar spikes?",
+    "topic_id": "hyperglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000084"
+  },
+  {
+    "question": "When is high blood sugar an emergency?",
+    "topic_id": "hyperglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000084"
+  },
+  {
+    "question": "How can I bring my blood sugar down quickly?",
+    "topic_id": "hyperglycemia",
+    "ground_truth_answer": "",
+    "document_id": "KB-000084"
+  },
+  {
+    "question": "What skin conditions are caused by diabetes?",
+    "topic_id": "diabetic_skin_conditions",
+    "ground_truth_answer": "",
+    "document_id": "KB-000085"
+  },
+  {
+    "question": "What is acanthosis nigricans?",
+    "topic_id": "diabetic_skin_conditions",
+    "ground_truth_answer": "",
+    "document_id": "KB-000085"
+  },
+  {
+    "question": "Why do I get skin infections with diabetes?",
+    "topic_id": "diabetic_skin_conditions",
+    "ground_truth_answer": "",
+    "document_id": "KB-000085"
+  },
+  {
+    "question": "Can diabetic skin conditions be treated?",
+    "topic_id": "diabetic_skin_conditions",
+    "ground_truth_answer": "",
+    "document_id": "KB-000085"
+  },
+  {
+    "question": "Are dark skin patches a sign of diabetes?",
+    "topic_id": "diabetic_skin_conditions",
+    "ground_truth_answer": "",
+    "document_id": "KB-000085"
+  },
+  {
+    "question": "How does diabetes affect my teeth and gums?",
+    "topic_id": "dental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000086"
+  },
+  {
+    "question": "Why do diabetics get gum disease?",
+    "topic_id": "dental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000086"
+  },
+  {
+    "question": "How often should I see a dentist?",
+    "topic_id": "dental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000086"
+  },
+  {
+    "question": "Can gum disease affect blood sugar?",
+    "topic_id": "dental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000086"
+  },
+  {
+    "question": "What dental care routine is best for diabetes?",
+    "topic_id": "dental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000086"
+  },
+  {
+    "question": "What is gastroparesis?",
+    "topic_id": "gastroparesis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000087"
+  },
+  {
+    "question": "How does diabetes cause gastroparesis?",
+    "topic_id": "gastroparesis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000087"
+  },
+  {
+    "question": "What are the symptoms of gastroparesis?",
+    "topic_id": "gastroparesis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000087"
+  },
+  {
+    "question": "How does gastroparesis affect blood sugar?",
+    "topic_id": "gastroparesis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000087"
+  },
+  {
+    "question": "What treatments are available for gastroparesis?",
+    "topic_id": "gastroparesis",
+    "ground_truth_answer": "",
+    "document_id": "KB-000087"
+  },
+  {
+    "question": "How does diabetes affect sexual health?",
+    "topic_id": "sexual_dysfunction",
+    "ground_truth_answer": "",
+    "document_id": "KB-000088"
+  },
+  {
+    "question": "What causes erectile dysfunction in diabetes?",
+    "topic_id": "sexual_dysfunction",
+    "ground_truth_answer": "",
+    "document_id": "KB-000088"
+  },
+  {
+    "question": "Can sexual dysfunction from diabetes be treated?",
+    "topic_id": "sexual_dysfunction",
+    "ground_truth_answer": "",
+    "document_id": "KB-000088"
+  },
+  {
+    "question": "Is sexual dysfunction reversible?",
+    "topic_id": "sexual_dysfunction",
+    "ground_truth_answer": "",
+    "document_id": "KB-000088"
+  },
+  {
+    "question": "When should I talk to my doctor about this?",
+    "topic_id": "sexual_dysfunction",
+    "ground_truth_answer": "",
+    "document_id": "KB-000088"
+  },
+  {
+    "question": "Why are infections more common with diabetes?",
+    "topic_id": "infections",
+    "ground_truth_answer": "",
+    "document_id": "KB-000089"
+  },
+  {
+    "question": "What types of infections are common in diabetes?",
+    "topic_id": "infections",
+    "ground_truth_answer": "",
+    "document_id": "KB-000089"
+  },
+  {
+    "question": "Why do wounds heal slowly with diabetes?",
+    "topic_id": "infections",
+    "ground_truth_answer": "",
+    "document_id": "KB-000089"
+  },
+  {
+    "question": "How can I prevent infections?",
+    "topic_id": "infections",
+    "ground_truth_answer": "",
+    "document_id": "KB-000089"
+  },
+  {
+    "question": "When should I see a doctor for an infection?",
+    "topic_id": "infections",
+    "ground_truth_answer": "",
+    "document_id": "KB-000089"
+  },
+  {
+    "question": "What should I eat with diabetes?",
+    "topic_id": "healthy_eating",
+    "ground_truth_answer": "",
+    "document_id": "KB-000090"
+  },
+  {
+    "question": "What foods should I avoid?",
+    "topic_id": "healthy_eating",
+    "ground_truth_answer": "",
+    "document_id": "KB-000090"
+  },
+  {
+    "question": "How do carbohydrates affect blood sugar?",
+    "topic_id": "healthy_eating",
+    "ground_truth_answer": "",
+    "document_id": "KB-000090"
+  },
+  {
+    "question": "What is a diabetes-friendly meal plan?",
+    "topic_id": "healthy_eating",
+    "ground_truth_answer": "",
+    "document_id": "KB-000090"
+  },
+  {
+    "question": "Can I eat fruit with diabetes?",
+    "topic_id": "healthy_eating",
+    "ground_truth_answer": "",
+    "document_id": "KB-000090"
+  },
+  {
+    "question": "What is carb counting?",
+    "topic_id": "carb_counting",
+    "ground_truth_answer": "",
+    "document_id": "KB-000091"
+  },
+  {
+    "question": "How many carbs should I eat per meal?",
+    "topic_id": "carb_counting",
+    "ground_truth_answer": "",
+    "document_id": "KB-000091"
+  },
+  {
+    "question": "How do I calculate net carbs?",
+    "topic_id": "carb_counting",
+    "ground_truth_answer": "",
+    "document_id": "KB-000091"
+  },
+  {
+    "question": "Does carb counting really help blood sugar?",
+    "topic_id": "carb_counting",
+    "ground_truth_answer": "",
+    "document_id": "KB-000091"
+  },
+  {
+    "question": "What tools help with carb counting?",
+    "topic_id": "carb_counting",
+    "ground_truth_answer": "",
+    "document_id": "KB-000091"
+  },
+  {
+    "question": "What is the glycemic index?",
+    "topic_id": "glycemic_index",
+    "ground_truth_answer": "",
+    "document_id": "KB-000092"
+  },
+  {
+    "question": "What is the difference between GI and glycemic load?",
+    "topic_id": "glycemic_index",
+    "ground_truth_answer": "",
+    "document_id": "KB-000092"
+  },
+  {
+    "question": "Which foods have a low glycemic index?",
+    "topic_id": "glycemic_index",
+    "ground_truth_answer": "",
+    "document_id": "KB-000092"
+  },
+  {
+    "question": "Does glycemic index matter for diabetes?",
+    "topic_id": "glycemic_index",
+    "ground_truth_answer": "",
+    "document_id": "KB-000092"
+  },
+  {
+    "question": "Can low GI foods help my blood sugar?",
+    "topic_id": "glycemic_index",
+    "ground_truth_answer": "",
+    "document_id": "KB-000092"
+  },
+  {
+    "question": "What type of exercise is best for diabetes?",
+    "topic_id": "exercise",
+    "ground_truth_answer": "",
+    "document_id": "KB-000093"
+  },
+  {
+    "question": "How much exercise should I do?",
+    "topic_id": "exercise",
+    "ground_truth_answer": "",
+    "document_id": "KB-000093"
+  },
+  {
+    "question": "Can exercise lower my blood sugar?",
+    "topic_id": "exercise",
+    "ground_truth_answer": "",
+    "document_id": "KB-000093"
+  },
+  {
+    "question": "Is it safe to exercise with high blood sugar?",
+    "topic_id": "exercise",
+    "ground_truth_answer": "",
+    "document_id": "KB-000093"
+  },
+  {
+    "question": "What precautions should I take when exercising?",
+    "topic_id": "exercise",
+    "ground_truth_answer": "",
+    "document_id": "KB-000093"
+  },
+  {
+    "question": "How much weight loss improves diabetes?",
+    "topic_id": "weight_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000094"
+  },
+  {
+    "question": "Why is it harder to lose weight with diabetes?",
+    "topic_id": "weight_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000094"
+  },
+  {
+    "question": "What is a healthy BMI for diabetics?",
+    "topic_id": "weight_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000094"
+  },
+  {
+    "question": "Can weight loss reverse Type 2 diabetes?",
+    "topic_id": "weight_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000094"
+  },
+  {
+    "question": "What is bariatric surgery for diabetes?",
+    "topic_id": "weight_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000094"
+  },
+  {
+    "question": "How does poor sleep affect blood sugar?",
+    "topic_id": "sleep",
+    "ground_truth_answer": "",
+    "document_id": "KB-000095"
+  },
+  {
+    "question": "What is sleep apnea and how does it relate to diabetes?",
+    "topic_id": "sleep",
+    "ground_truth_answer": "",
+    "document_id": "KB-000095"
+  },
+  {
+    "question": "How many hours of sleep do I need?",
+    "topic_id": "sleep",
+    "ground_truth_answer": "",
+    "document_id": "KB-000095"
+  },
+  {
+    "question": "Can better sleep improve my diabetes?",
+    "topic_id": "sleep",
+    "ground_truth_answer": "",
+    "document_id": "KB-000095"
+  },
+  {
+    "question": "Why does blood sugar rise during the night?",
+    "topic_id": "sleep",
+    "ground_truth_answer": "",
+    "document_id": "KB-000095"
+  },
+  {
+    "question": "How does smoking affect diabetes?",
+    "topic_id": "smoking",
+    "ground_truth_answer": "",
+    "document_id": "KB-000096"
+  },
+  {
+    "question": "Does quitting smoking improve diabetes?",
+    "topic_id": "smoking",
+    "ground_truth_answer": "",
+    "document_id": "KB-000096"
+  },
+  {
+    "question": "Does smoking increase diabetes complications?",
+    "topic_id": "smoking",
+    "ground_truth_answer": "",
+    "document_id": "KB-000096"
+  },
+  {
+    "question": "What resources help with quitting smoking?",
+    "topic_id": "smoking",
+    "ground_truth_answer": "",
+    "document_id": "KB-000096"
+  },
+  {
+    "question": "How does smoking affect insulin resistance?",
+    "topic_id": "smoking",
+    "ground_truth_answer": "",
+    "document_id": "KB-000096"
+  },
+  {
+    "question": "Can I drink alcohol with diabetes?",
+    "topic_id": "alcohol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000097"
+  },
+  {
+    "question": "How does alcohol affect blood sugar?",
+    "topic_id": "alcohol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000097"
+  },
+  {
+    "question": "Why does alcohol cause low blood sugar?",
+    "topic_id": "alcohol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000097"
+  },
+  {
+    "question": "How much alcohol is safe with diabetes?",
+    "topic_id": "alcohol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000097"
+  },
+  {
+    "question": "Does alcohol interact with diabetes medications?",
+    "topic_id": "alcohol",
+    "ground_truth_answer": "",
+    "document_id": "KB-000097"
+  },
+  {
+    "question": "How does stress affect blood sugar?",
+    "topic_id": "stress_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000098"
+  },
+  {
+    "question": "What is the cortisol-blood sugar connection?",
+    "topic_id": "stress_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000098"
+  },
+  {
+    "question": "What stress management techniques help diabetes?",
+    "topic_id": "stress_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000098"
+  },
+  {
+    "question": "Can stress cause diabetes?",
+    "topic_id": "stress_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000098"
+  },
+  {
+    "question": "How do I manage diabetes burnout?",
+    "topic_id": "stress_management",
+    "ground_truth_answer": "",
+    "document_id": "KB-000098"
+  },
+  {
+    "question": "Is depression common with diabetes?",
+    "topic_id": "mental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000099"
+  },
+  {
+    "question": "What is diabetes distress?",
+    "topic_id": "mental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000099"
+  },
+  {
+    "question": "How does depression affect blood sugar management?",
+    "topic_id": "mental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000099"
+  },
+  {
+    "question": "When should I seek mental health support?",
+    "topic_id": "mental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000099"
+  },
+  {
+    "question": "What resources are available for diabetes and mental health?",
+    "topic_id": "mental_health",
+    "ground_truth_answer": "",
+    "document_id": "KB-000099"
+  },
+  {
+    "question": "How much water should I drink with diabetes?",
+    "topic_id": "hydration",
+    "ground_truth_answer": "",
+    "document_id": "KB-000100"
+  },
+  {
+    "question": "Why does diabetes cause excessive thirst?",
+    "topic_id": "hydration",
+    "ground_truth_answer": "",
+    "document_id": "KB-000100"
+  },
+  {
+    "question": "Can dehydration raise blood sugar?",
+    "topic_id": "hydration",
+    "ground_truth_answer": "",
+    "document_id": "KB-000100"
+  },
+  {
+    "question": "What are the signs of dehydration in diabetes?",
+    "topic_id": "hydration",
+    "ground_truth_answer": "",
+    "document_id": "KB-000100"
+  },
+  {
+    "question": "Are sports drinks safe for diabetics?",
+    "topic_id": "hydration",
+    "ground_truth_answer": "",
+    "document_id": "KB-000100"
+  },
+  {
+    "question": "How does metformin work?",
+    "topic_id": "metformin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000101"
+  },
+  {
+    "question": "What are the side effects of metformin?",
+    "topic_id": "metformin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000101"
+  },
+  {
+    "question": "Does metformin cause vitamin B12 deficiency?",
+    "topic_id": "metformin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000101"
+  },
+  {
+    "question": "Can I take metformin with kidney disease?",
+    "topic_id": "metformin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000101"
+  },
+  {
+    "question": "Does metformin cause weight loss?",
+    "topic_id": "metformin",
+    "ground_truth_answer": "",
+    "document_id": "KB-000101"
+  },
+  {
+    "question": "What types of insulin are there?",
+    "topic_id": "insulin_therapy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000102"
+  },
+  {
+    "question": "How do I inject insulin properly?",
+    "topic_id": "insulin_therapy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000102"
+  },
+  {
+    "question": "What is the difference between basal and bolus insulin?",
+    "topic_id": "insulin_therapy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000102"
+  },
+  {
+    "question": "What is an insulin pump?",
+    "topic_id": "insulin_therapy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000102"
+  },
+  {
+    "question": "Can insulin cause weight gain?",
+    "topic_id": "insulin_therapy",
+    "ground_truth_answer": "",
+    "document_id": "KB-000102"
+  },
+  {
+    "question": "How do GLP-1 agonists work?",
+    "topic_id": "glp1_agonists",
+    "ground_truth_answer": "",
+    "document_id": "KB-000103"
+  },
+  {
+    "question": "What are the side effects of GLP-1 medications?",
+    "topic_id": "glp1_agonists",
+    "ground_truth_answer": "",
+    "document_id": "KB-000103"
+  },
+  {
+    "question": "Do GLP-1 drugs cause weight loss?",
+    "topic_id": "glp1_agonists",
+    "ground_truth_answer": "",
+    "document_id": "KB-000103"
+  },
+  {
+    "question": "What is the difference between Ozempic and Trulicity?",
+    "topic_id": "glp1_agonists",
+    "ground_truth_answer": "",
+    "document_id": "KB-000103"
+  },
+  {
+    "question": "Can GLP-1 agonists protect the heart?",
+    "topic_id": "glp1_agonists",
+    "ground_truth_answer": "",
+    "document_id": "KB-000103"
+  },
+  {
+    "question": "How do SGLT2 inhibitors work?",
+    "topic_id": "sglt2_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000104"
+  },
+  {
+    "question": "What are the side effects of SGLT2 inhibitors?",
+    "topic_id": "sglt2_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000104"
+  },
+  {
+    "question": "Do SGLT2 inhibitors protect the kidneys?",
+    "topic_id": "sglt2_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000104"
+  },
+  {
+    "question": "Can SGLT2 inhibitors cause DKA?",
+    "topic_id": "sglt2_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000104"
+  },
+  {
+    "question": "What is the difference between Jardiance and Farxiga?",
+    "topic_id": "sglt2_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000104"
+  },
+  {
+    "question": "How do DPP-4 inhibitors work?",
+    "topic_id": "dpp4_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000105"
+  },
+  {
+    "question": "What are the side effects of DPP-4 inhibitors?",
+    "topic_id": "dpp4_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000105"
+  },
+  {
+    "question": "What is the difference between DPP-4 inhibitors and GLP-1 agonists?",
+    "topic_id": "dpp4_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000105"
+  },
+  {
+    "question": "Can I take DPP-4 inhibitors with metformin?",
+    "topic_id": "dpp4_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000105"
+  },
+  {
+    "question": "Do DPP-4 inhibitors cause weight gain?",
+    "topic_id": "dpp4_inhibitors",
+    "ground_truth_answer": "",
+    "document_id": "KB-000105"
+  },
+  {
+    "question": "How do sulfonylureas work?",
+    "topic_id": "sulfonylureas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000106"
+  },
+  {
+    "question": "What are the side effects of sulfonylureas?",
+    "topic_id": "sulfonylureas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000106"
+  },
+  {
+    "question": "Can sulfonylureas cause low blood sugar?",
+    "topic_id": "sulfonylureas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000106"
+  },
+  {
+    "question": "Do sulfonylureas cause weight gain?",
+    "topic_id": "sulfonylureas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000106"
+  },
+  {
+    "question": "Are sulfonylureas still prescribed?",
+    "topic_id": "sulfonylureas",
+    "ground_truth_answer": "",
+    "document_id": "KB-000106"
+  },
+  {
+    "question": "How do thiazolidinediones work?",
+    "topic_id": "thiazolidinediones",
+    "ground_truth_answer": "",
+    "document_id": "KB-000107"
+  },
+  {
+    "question": "What are the side effects of TZDs?",
+    "topic_id": "thiazolidinediones",
+    "ground_truth_answer": "",
+    "document_id": "KB-000107"
+  },
+  {
+    "question": "Do TZDs cause weight gain?",
+    "topic_id": "thiazolidinediones",
+    "ground_truth_answer": "",
+    "document_id": "KB-000107"
+  },
+  {
+    "question": "Are TZDs safe for the liver?",
+    "topic_id": "thiazolidinediones",
+    "ground_truth_answer": "",
+    "document_id": "KB-000107"
+  },
+  {
+    "question": "Who should not take pioglitazone?",
+    "topic_id": "thiazolidinediones",
+    "ground_truth_answer": "",
+    "document_id": "KB-000107"
+  },
+  {
+    "question": "How do statins work?",
+    "topic_id": "statins",
+    "ground_truth_answer": "",
+    "document_id": "KB-000108"
+  },
+  {
+    "question": "What are the side effects of statins?",
+    "topic_id": "statins",
+    "ground_truth_answer": "",
+    "document_id": "KB-000108"
+  },
+  {
+    "question": "Do all diabetics need statins?",
+    "topic_id": "statins",
+    "ground_truth_answer": "",
+    "document_id": "KB-000108"
+  },
+  {
+    "question": "Can statins affect blood sugar?",
+    "topic_id": "statins",
+    "ground_truth_answer": "",
+    "document_id": "KB-000108"
+  },
+  {
+    "question": "What is the difference between atorvastatin and rosuvastatin?",
+    "topic_id": "statins",
+    "ground_truth_answer": "",
+    "document_id": "KB-000108"
+  },
+  {
+    "question": "How do ACE inhibitors work?",
+    "topic_id": "ace_inhibitors_arbs",
+    "ground_truth_answer": "",
+    "document_id": "KB-000109"
+  },
+  {
+    "question": "What is the difference between ACE inhibitors and ARBs?",
+    "topic_id": "ace_inhibitors_arbs",
+    "ground_truth_answer": "",
+    "document_id": "KB-000109"
+  },
+  {
+    "question": "Why do diabetics take ACE inhibitors for kidney protection?",
+    "topic_id": "ace_inhibitors_arbs",
+    "ground_truth_answer": "",
+    "document_id": "KB-000109"
+  },
+  {
+    "question": "What are the side effects of ACE inhibitors?",
+    "topic_id": "ace_inhibitors_arbs",
+    "ground_truth_answer": "",
+    "document_id": "KB-000109"
+  },
+  {
+    "question": "Can I take ACE inhibitors with high potassium?",
+    "topic_id": "ace_inhibitors_arbs",
+    "ground_truth_answer": "",
+    "document_id": "KB-000109"
+  },
+  {
+    "question": "Should I take daily aspirin with diabetes?",
+    "topic_id": "aspirin_antiplatelet",
+    "ground_truth_answer": "",
+    "document_id": "KB-000110"
+  },
+  {
+    "question": "How does aspirin prevent heart attacks?",
+    "topic_id": "aspirin_antiplatelet",
+    "ground_truth_answer": "",
+    "document_id": "KB-000110"
+  },
+  {
+    "question": "What are the risks of aspirin therapy?",
+    "topic_id": "aspirin_antiplatelet",
+    "ground_truth_answer": "",
+    "document_id": "KB-000110"
+  },
+  {
+    "question": "Who should and should not take aspirin?",
+    "topic_id": "aspirin_antiplatelet",
+    "ground_truth_answer": "",
+    "document_id": "KB-000110"
+  },
+  {
+    "question": "Is aspirin therapy still recommended for diabetics?",
+    "topic_id": "aspirin_antiplatelet",
+    "ground_truth_answer": "",
+    "document_id": "KB-000110"
+  }
+]
