@@ -1,0 +1,426 @@
+{
+  "version": "1.0",
+  "project": "Certus Diabetes Knowledge Base",
+  "sources": {
+    "ada": {
+      "name": "American Diabetes Association",
+      "base_url": "https://diabetes.org"
+    },
+    "niddk": {
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+      "base_url": "https://www.niddk.nih.gov"
+    },
+    "mayo": {
+      "name": "Mayo Clinic",
+      "base_url": "https://www.mayoclinic.org"
+    },
+    "medlineplus": {
+      "name": "MedlinePlus",
+      "base_url": "https://medlineplus.gov"
+    },
+    "cleveland": {
+      "name": "Cleveland Clinic",
+      "base_url": "https://my.clevelandclinic.org"
+    },
+    "cdc": {
+      "name": "Centers for Disease Control and Prevention",
+      "base_url": "https://www.cdc.gov"
+    }
+  },
+
+  "modules": [
+
+    {
+      "module": "diabetes",
+      "topics": [
+
+        {
+          "id": "diabetes_overview",
+          "title": "What is Diabetes",
+          "priority": 1,
+          "sources": ["ada","cdc","mayo"]
+        },
+
+        {
+          "id": "type1_diabetes",
+          "title": "Type 1 Diabetes",
+          "priority": 1,
+          "sources": ["ada","niddk","mayo"]
+        },
+
+        {
+          "id": "type2_diabetes",
+          "title": "Type 2 Diabetes",
+          "priority": 1,
+          "sources": ["ada","cdc","mayo"]
+        },
+
+        {
+          "id": "prediabetes",
+          "title": "Prediabetes",
+          "priority": 1,
+          "sources": ["cdc","ada","mayo"]
+        },
+
+        {
+          "id": "gestational_diabetes",
+          "title": "Gestational Diabetes",
+          "priority": 2,
+          "sources": ["cdc","ada"]
+        },
+
+        {
+          "id": "insulin",
+          "title": "Insulin",
+          "priority": 1,
+          "sources": ["niddk","medlineplus","mayo"]
+        },
+
+        {
+          "id": "insulin_resistance",
+          "title": "Insulin Resistance",
+          "priority": 1,
+          "sources": ["niddk","mayo","ada"]
+        },
+
+        {
+          "id": "pancreas",
+          "title": "Pancreas",
+          "priority": 2,
+          "sources": ["niddk","medlineplus"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "diagnosis",
+      "topics": [
+
+        {
+          "id": "hba1c",
+          "title": "HbA1c",
+          "priority": 1,
+          "sources": ["ada","mayo","medlineplus"]
+        },
+
+        {
+          "id": "average_blood_glucose",
+          "title": "Average Blood Glucose",
+          "priority": 1,
+          "sources": ["ada","mayo"]
+        },
+
+        {
+          "id": "fasting_blood_glucose",
+          "title": "Fasting Blood Sugar",
+          "priority": 1,
+          "sources": ["ada","cdc","mayo"]
+        },
+
+        {
+          "id": "ogtt",
+          "title": "Oral Glucose Tolerance Test",
+          "priority": 2,
+          "sources": ["ada","mayo"]
+        },
+
+        {
+          "id": "c_peptide",
+          "title": "C-Peptide",
+          "priority": 2,
+          "sources": ["medlineplus","cleveland"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "kidney",
+      "topics": [
+
+        {
+          "id": "creatinine",
+          "title": "Serum Creatinine",
+          "priority": 1,
+          "sources": ["niddk","mayo","cleveland"]
+        },
+
+        {
+          "id": "egfr",
+          "title": "Estimated Glomerular Filtration Rate",
+          "priority": 1,
+          "sources": ["niddk","cleveland","mayo"]
+        },
+
+        {
+          "id": "bun",
+          "title": "Blood Urea Nitrogen",
+          "priority": 2,
+          "sources": ["medlineplus","cleveland"]
+        },
+
+        {
+          "id": "microalbumin",
+          "title": "Urine Microalbumin",
+          "priority": 1,
+          "sources": ["niddk","ada"]
+        },
+
+        {
+          "id": "albumin_creatinine_ratio",
+          "title": "Albumin Creatinine Ratio",
+          "priority": 1,
+          "sources": ["niddk","mayo"]
+        },
+
+        {
+          "id": "diabetic_kidney_disease",
+          "title": "Diabetic Kidney Disease",
+          "priority": 1,
+          "sources": ["ada","niddk","mayo"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "liver",
+      "topics": [
+
+        {
+          "id": "alt",
+          "title": "ALT (SGPT)",
+          "priority": 2,
+          "sources": ["mayo","medlineplus"]
+        },
+
+        {
+          "id": "ast",
+          "title": "AST (SGOT)",
+          "priority": 2,
+          "sources": ["mayo","cleveland"]
+        },
+
+        {
+          "id": "bilirubin",
+          "title": "Bilirubin",
+          "priority": 2,
+          "sources": ["medlineplus","mayo"]
+        },
+
+        {
+          "id": "alp",
+          "title": "Alkaline Phosphatase",
+          "priority": 2,
+          "sources": ["medlineplus","cleveland"]
+        },
+
+        {
+          "id": "ggt",
+          "title": "Gamma GT",
+          "priority": 2,
+          "sources": ["cleveland","mayo"]
+        },
+
+        {
+          "id": "fatty_liver",
+          "title": "Fatty Liver Disease",
+          "priority": 1,
+          "sources": ["mayo","niddk"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "lipid",
+      "topics": [
+
+        {
+          "id": "hdl",
+          "title": "HDL Cholesterol",
+          "priority": 1,
+          "sources": ["mayo","medlineplus"]
+        },
+
+        {
+          "id": "ldl",
+          "title": "LDL Cholesterol",
+          "priority": 1,
+          "sources": ["mayo","medlineplus"]
+        },
+
+        {
+          "id": "triglycerides",
+          "title": "Triglycerides",
+          "priority": 1,
+          "sources": ["mayo","cleveland"]
+        },
+
+        {
+          "id": "total_cholesterol",
+          "title": "Total Cholesterol",
+          "priority": 2,
+          "sources": ["cdc","mayo"]
+        },
+
+        {
+          "id": "apob",
+          "title": "Apolipoprotein B",
+          "priority": 3,
+          "sources": ["cleveland","medlineplus"]
+        },
+
+        {
+          "id": "apoa1",
+          "title": "Apolipoprotein A1",
+          "priority": 3,
+          "sources": ["cleveland","medlineplus"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "vitamins",
+      "topics": [
+
+        {
+          "id": "vitamin_d",
+          "title": "Vitamin D",
+          "priority": 2,
+          "sources": ["mayo","medlineplus"]
+        },
+
+        {
+          "id": "vitamin_b12",
+          "title": "Vitamin B12",
+          "priority": 2,
+          "sources": ["medlineplus","mayo"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "thyroid",
+      "topics": [
+
+        {
+          "id": "tsh",
+          "title": "TSH",
+          "priority": 3,
+          "sources": ["mayo","medlineplus"]
+        },
+
+        {
+          "id": "t3",
+          "title": "T3",
+          "priority": 3,
+          "sources": ["medlineplus","mayo"]
+        },
+
+        {
+          "id": "t4",
+          "title": "T4",
+          "priority": 3,
+          "sources": ["medlineplus","mayo"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "complications",
+      "topics": [
+
+        {
+          "id": "neuropathy",
+          "title": "Diabetic Neuropathy",
+          "priority": 1,
+          "sources": ["ada","mayo"]
+        },
+
+        {
+          "id": "retinopathy",
+          "title": "Diabetic Retinopathy",
+          "priority": 1,
+          "sources": ["ada","mayo"]
+        },
+
+        {
+          "id": "diabetic_foot",
+          "title": "Diabetic Foot",
+          "priority": 1,
+          "sources": ["cdc","ada"]
+        },
+
+        {
+          "id": "hypoglycemia",
+          "title": "Hypoglycemia",
+          "priority": 1,
+          "sources": ["ada","cdc"]
+        },
+
+        {
+          "id": "hyperglycemia",
+          "title": "Hyperglycemia",
+          "priority": 1,
+          "sources": ["ada","cdc"]
+        }
+
+      ]
+    },
+
+    {
+      "module": "lifestyle",
+      "topics": [
+
+        {
+          "id": "healthy_diet",
+          "title": "Healthy Diet",
+          "priority": 1,
+          "sources": ["ada","cdc"]
+        },
+
+        {
+          "id": "exercise",
+          "title": "Exercise",
+          "priority": 1,
+          "sources": ["cdc","ada"]
+        },
+
+        {
+          "id": "weight_loss",
+          "title": "Weight Loss",
+          "priority": 1,
+          "sources": ["cdc","mayo"]
+        },
+
+        {
+          "id": "sleep",
+          "title": "Sleep",
+          "priority": 2,
+          "sources": ["cdc","mayo"]
+        },
+
+        {
+          "id": "stress",
+          "title": "Stress",
+          "priority": 2,
+          "sources": ["cdc","mayo"]
+        },
+
+        {
+          "id": "smoking",
+          "title": "Smoking and Diabetes",
+          "priority": 2,
+          "sources": ["cdc","ada"]
+        }
+
+      ]
+    }
+
+  ]
+}
