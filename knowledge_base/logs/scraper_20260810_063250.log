@@ -1,0 +1,304 @@
+[2026-08-10 06:32:50] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260810_063250.log
+[2026-08-10 06:32:50] [INFO   ] Starting Scraper CLI
+[2026-08-10 06:32:50] [INFO   ] Loaded manifest v1.1 — Certus Diagnostics Medical Knowledge Base
+[2026-08-10 06:32:50] [INFO   ] Job queue: 299 jobs across 100 topics (filtered from manifest)
+[2026-08-10 06:32:50] [INFO   ] DRY RUN MODE — Would execute the following jobs:
+[2026-08-10 06:32:50] [INFO   ]   [KB-000001] diabetes_overview (ada) — What is diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000001] diabetes_overview (cdc) — About diabetes basics
+[2026-08-10 06:32:50] [INFO   ]   [KB-000001] diabetes_overview (mayo) — Diabetes overview symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000002] type1_diabetes (ada) — Type 1 diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000002] type1_diabetes (mayo) — Type 1 diabetes symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000002] type1_diabetes (niddk) — What is type 1 diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000003] type2_diabetes (ada) — Type 2 diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000003] type2_diabetes (cdc) — Type 2 diabetes basics
+[2026-08-10 06:32:50] [INFO   ]   [KB-000003] type2_diabetes (mayo) — Type 2 diabetes symptoms causes treatment
+[2026-08-10 06:32:50] [INFO   ]   [KB-000004] prediabetes (ada) — Understanding prediabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000004] prediabetes (cdc) — Prediabetes your chance to prevent type 2 diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000004] prediabetes (mayo) — Prediabetes symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000006] insulin (mayo) — Insulin and diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000006] insulin (medlineplus) — Insulin blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000006] insulin (niddk) — Insulin what it does
+[2026-08-10 06:32:50] [INFO   ]   [KB-000007] insulin_resistance (ada) — Insulin resistance
+[2026-08-10 06:32:50] [INFO   ]   [KB-000007] insulin_resistance (mayo) — Insulin resistance metabolic syndrome
+[2026-08-10 06:32:50] [INFO   ]   [KB-000007] insulin_resistance (niddk) — Insulin resistance and prediabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000009] glucose_metabolism (ada) — Blood glucose management
+[2026-08-10 06:32:50] [INFO   ]   [KB-000009] glucose_metabolism (mayo) — Blood sugar regulation glucose metabolism
+[2026-08-10 06:32:50] [INFO   ]   [KB-000009] glucose_metabolism (niddk) — How does the body regulate blood sugar
+[2026-08-10 06:32:50] [INFO   ]   [KB-000010] hba1c (ada) — Understanding A1C
+[2026-08-10 06:32:50] [INFO   ]   [KB-000010] hba1c (mayo) — A1C test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000010] hba1c (medlineplus) — Hemoglobin A1C HbA1c test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000011] average_blood_glucose (ada) — Estimated average glucose eAG
+[2026-08-10 06:32:50] [INFO   ]   [KB-000011] average_blood_glucose (mayo) — Blood glucose test average glucose
+[2026-08-10 06:32:50] [INFO   ]   [KB-000012] fasting_blood_glucose (ada) — Fasting blood glucose test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000012] fasting_blood_glucose (cdc) — Diabetes testing fasting blood sugar
+[2026-08-10 06:32:50] [INFO   ]   [KB-000012] fasting_blood_glucose (mayo) — Blood sugar test fasting glucose
+[2026-08-10 06:32:50] [INFO   ]   [KB-000013] random_blood_glucose (ada) — Random blood glucose test diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000013] random_blood_glucose (mayo) — Random blood sugar test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000013] random_blood_glucose (medlineplus) — Blood glucose test random
+[2026-08-10 06:32:50] [INFO   ]   [KB-000014] ogtt (ada) — Oral glucose tolerance test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000014] ogtt (mayo) — Glucose tolerance test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000014] ogtt (medlineplus) — OGTT oral glucose tolerance test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000016] glucose_monitoring (ada) — Blood glucose monitoring
+[2026-08-10 06:32:50] [INFO   ]   [KB-000016] glucose_monitoring (cdc) — Monitoring your blood sugar diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000016] glucose_monitoring (mayo) — Blood sugar testing glucose monitor
+[2026-08-10 06:32:50] [INFO   ]   [KB-000018] creatinine (cleveland) — Creatinine blood test kidney function
+[2026-08-10 06:32:50] [INFO   ]   [KB-000018] creatinine (mayo) — Creatinine test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000018] creatinine (niddk) — Creatinine what is it kidney
+[2026-08-10 06:32:50] [INFO   ]   [KB-000019] egfr (cleveland) — eGFR test kidney function
+[2026-08-10 06:32:50] [INFO   ]   [KB-000019] egfr (mayo) — Glomerular filtration rate GFR test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000019] egfr (niddk) — Estimated GFR glomerular filtration rate
+[2026-08-10 06:32:50] [INFO   ]   [KB-000020] bun (cleveland) — Blood urea nitrogen BUN test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000020] bun (mayo) — Blood urea nitrogen test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000020] bun (medlineplus) — BUN blood urea nitrogen test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000023] microalbumin (ada) — Urine albumin test diabetes kidney
+[2026-08-10 06:32:50] [INFO   ]   [KB-000023] microalbumin (mayo) — Microalbumin test urine albumin
+[2026-08-10 06:32:50] [INFO   ]   [KB-000023] microalbumin (niddk) — Albuminuria albumin urine diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000024] albumin_creatinine_ratio (ada) — UACR albumin creatinine ratio diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000024] albumin_creatinine_ratio (mayo) — Albumin creatinine ratio urine test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000024] albumin_creatinine_ratio (niddk) — Urine albumin-to-creatinine ratio UACR
+[2026-08-10 06:32:50] [INFO   ]   [KB-000025] diabetic_kidney_disease (ada) — Diabetes and kidney disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000025] diabetic_kidney_disease (mayo) — Diabetic nephropathy kidney disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000025] diabetic_kidney_disease (niddk) — Diabetic kidney disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000028] alt (cleveland) — Alanine aminotransferase ALT test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000028] alt (mayo) — ALT blood test alanine aminotransferase
+[2026-08-10 06:32:50] [INFO   ]   [KB-000028] alt (medlineplus) — ALT blood test SGPT
+[2026-08-10 06:32:50] [INFO   ]   [KB-000029] ast (cleveland) — AST blood test SGOT liver
+[2026-08-10 06:32:50] [INFO   ]   [KB-000029] ast (mayo) — AST test aspartate aminotransferase
+[2026-08-10 06:32:50] [INFO   ]   [KB-000029] ast (medlineplus) — AST SGOT blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000030] bilirubin (cleveland) — Bilirubin test total direct indirect
+[2026-08-10 06:32:50] [INFO   ]   [KB-000030] bilirubin (mayo) — Bilirubin test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000030] bilirubin (medlineplus) — Bilirubin blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000031] alp (cleveland) — ALP alkaline phosphatase test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000031] alp (mayo) — Alkaline phosphatase test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000031] alp (medlineplus) — Alkaline phosphatase ALP blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000033] albumin (cleveland) — Serum albumin test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000033] albumin (mayo) — Albumin serum test liver
+[2026-08-10 06:32:50] [INFO   ]   [KB-000033] albumin (medlineplus) — Albumin blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000036] fatty_liver (cleveland) — Fatty liver disease symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000036] fatty_liver (mayo) — Nonalcoholic fatty liver disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000036] fatty_liver (niddk) — Fatty liver disease NAFLD
+[2026-08-10 06:32:50] [INFO   ]   [KB-000037] nafld (ada) — Diabetes and liver disease NAFLD
+[2026-08-10 06:32:50] [INFO   ]   [KB-000037] nafld (mayo) — Nonalcoholic steatohepatitis NASH
+[2026-08-10 06:32:50] [INFO   ]   [KB-000037] nafld (niddk) — NAFLD NASH nonalcoholic fatty liver
+[2026-08-10 06:32:50] [INFO   ]   [KB-000038] liver_function_panel (cleveland) — Liver panel liver function test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000038] liver_function_panel (mayo) — Liver function tests
+[2026-08-10 06:32:50] [INFO   ]   [KB-000038] liver_function_panel (medlineplus) — Liver function tests
+[2026-08-10 06:32:50] [INFO   ]   [KB-000039] hdl (ada) — Cholesterol HDL diabetes cardiovascular
+[2026-08-10 06:32:50] [INFO   ]   [KB-000039] hdl (mayo) — HDL cholesterol good cholesterol
+[2026-08-10 06:32:50] [INFO   ]   [KB-000039] hdl (medlineplus) — HDL cholesterol test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000040] ldl (ada) — LDL cholesterol targets diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000040] ldl (mayo) — LDL cholesterol bad cholesterol
+[2026-08-10 06:32:50] [INFO   ]   [KB-000040] ldl (medlineplus) — LDL cholesterol test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000041] total_cholesterol (cdc) — Cholesterol about getting cholesterol checked
+[2026-08-10 06:32:50] [INFO   ]   [KB-000041] total_cholesterol (mayo) — High cholesterol
+[2026-08-10 06:32:50] [INFO   ]   [KB-000041] total_cholesterol (medlineplus) — Cholesterol levels blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000042] triglycerides (cleveland) — Triglycerides blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000042] triglycerides (mayo) — Triglycerides why they matter
+[2026-08-10 06:32:50] [INFO   ]   [KB-000042] triglycerides (medlineplus) — Triglyceride level blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000047] lipid_panel (cdc) — Getting your cholesterol checked lipid panel
+[2026-08-10 06:32:50] [INFO   ]   [KB-000047] lipid_panel (mayo) — Cholesterol test lipid panel
+[2026-08-10 06:32:50] [INFO   ]   [KB-000047] lipid_panel (medlineplus) — Lipid panel blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000049] vitamin_d (cleveland) — Vitamin D blood test deficiency
+[2026-08-10 06:32:50] [INFO   ]   [KB-000049] vitamin_d (mayo) — Vitamin D deficiency
+[2026-08-10 06:32:50] [INFO   ]   [KB-000049] vitamin_d (medlineplus) — Vitamin D test 25-hydroxy
+[2026-08-10 06:32:50] [INFO   ]   [KB-000050] vitamin_b12 (cleveland) — Vitamin B12 blood test cobalamin
+[2026-08-10 06:32:50] [INFO   ]   [KB-000050] vitamin_b12 (mayo) — Vitamin B12 deficiency
+[2026-08-10 06:32:50] [INFO   ]   [KB-000050] vitamin_b12 (medlineplus) — Vitamin B12 level test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000054] cbc_overview (cleveland) — CBC complete blood count test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000054] cbc_overview (mayo) — Complete blood count CBC
+[2026-08-10 06:32:50] [INFO   ]   [KB-000054] cbc_overview (medlineplus) — Complete blood count CBC test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000055] hemoglobin (cleveland) — Hemoglobin blood test Hgb
+[2026-08-10 06:32:50] [INFO   ]   [KB-000055] hemoglobin (mayo) — Hemoglobin test low hemoglobin
+[2026-08-10 06:32:50] [INFO   ]   [KB-000055] hemoglobin (medlineplus) — Hemoglobin test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000057] rbc (cleveland) — Red blood cell count RBC test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000057] rbc (mayo) — Red blood cell count test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000057] rbc (medlineplus) — RBC count red blood cell test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000058] wbc (cleveland) — White blood cell count WBC test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000058] wbc (mayo) — White blood cell count test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000058] wbc (medlineplus) — WBC count white blood cell test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000059] platelets (cleveland) — Platelet count test PLT
+[2026-08-10 06:32:50] [INFO   ]   [KB-000059] platelets (mayo) — Platelet count test thrombocytes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000059] platelets (medlineplus) — Platelet count blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000060] anemia (mayo) — Anemia symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000060] anemia (medlineplus) — Anemia blood disorder
+[2026-08-10 06:32:50] [INFO   ]   [KB-000060] anemia (niddk) — Anemia in chronic kidney disease diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000063] tsh (cleveland) — TSH test thyroid function
+[2026-08-10 06:32:50] [INFO   ]   [KB-000063] tsh (mayo) — TSH test thyroid stimulating hormone
+[2026-08-10 06:32:50] [INFO   ]   [KB-000063] tsh (medlineplus) — TSH test thyroid
+[2026-08-10 06:32:50] [INFO   ]   [KB-000064] t3 (cleveland) — T3 blood test thyroid hormone
+[2026-08-10 06:32:50] [INFO   ]   [KB-000064] t3 (mayo) — T3 test triiodothyronine thyroid
+[2026-08-10 06:32:50] [INFO   ]   [KB-000064] t3 (medlineplus) — T3 triiodothyronine test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000065] t4 (cleveland) — Free T4 thyroxine test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000065] t4 (mayo) — Thyroxine T4 test thyroid
+[2026-08-10 06:32:50] [INFO   ]   [KB-000065] t4 (medlineplus) — T4 thyroxine blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000067] hypothyroidism (cleveland) — Hypothyroidism underactive thyroid disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000067] hypothyroidism (mayo) — Hypothyroidism underactive thyroid
+[2026-08-10 06:32:50] [INFO   ]   [KB-000067] hypothyroidism (medlineplus) — Hypothyroidism
+[2026-08-10 06:32:50] [INFO   ]   [KB-000069] diabetes_thyroid_connection (ada) — Thyroid disease and diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000069] diabetes_thyroid_connection (cleveland) — Thyroid disease diabetes connection
+[2026-08-10 06:32:50] [INFO   ]   [KB-000069] diabetes_thyroid_connection (mayo) — Diabetes and thyroid problems
+[2026-08-10 06:32:50] [INFO   ]   [KB-000070] heart_disease (ada) — Cardiovascular disease diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000070] heart_disease (cdc) — Diabetes and heart disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000070] heart_disease (mayo) — Diabetes and heart disease risk
+[2026-08-10 06:32:50] [INFO   ]   [KB-000071] hypertension (ada) — High blood pressure diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000071] hypertension (cdc) — High blood pressure hypertension
+[2026-08-10 06:32:50] [INFO   ]   [KB-000071] hypertension (mayo) — High blood pressure symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000072] stroke (ada) — Diabetes and stroke risk
+[2026-08-10 06:32:50] [INFO   ]   [KB-000072] stroke (cdc) — Stroke signs symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000072] stroke (mayo) — Stroke symptoms causes risk factors
+[2026-08-10 06:32:50] [INFO   ]   [KB-000073] peripheral_artery_disease (ada) — Peripheral arterial disease diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000073] peripheral_artery_disease (cleveland) — Peripheral artery disease PAD
+[2026-08-10 06:32:50] [INFO   ]   [KB-000073] peripheral_artery_disease (mayo) — Peripheral artery disease symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000076] diabetic_neuropathy (ada) — Neuropathy nerve damage diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000076] diabetic_neuropathy (mayo) — Diabetic neuropathy types symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000076] diabetic_neuropathy (niddk) — Diabetic neuropathies nerve damage
+[2026-08-10 06:32:50] [INFO   ]   [KB-000077] diabetic_retinopathy (ada) — Eye complications diabetic retinopathy
+[2026-08-10 06:32:50] [INFO   ]   [KB-000077] diabetic_retinopathy (mayo) — Diabetic retinopathy symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000077] diabetic_retinopathy (niddk) — Diabetic eye disease retinopathy
+[2026-08-10 06:32:50] [INFO   ]   [KB-000078] diabetic_nephropathy (ada) — Diabetic nephropathy kidney disease
+[2026-08-10 06:32:50] [INFO   ]   [KB-000078] diabetic_nephropathy (mayo) — Diabetic nephropathy symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000078] diabetic_nephropathy (niddk) — Diabetic kidney disease nephropathy
+[2026-08-10 06:32:50] [INFO   ]   [KB-000079] diabetic_foot (ada) — Foot complications diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000079] diabetic_foot (cdc) — Diabetes foot problems
+[2026-08-10 06:32:50] [INFO   ]   [KB-000079] diabetic_foot (mayo) — Diabetic foot care ulcers
+[2026-08-10 06:32:50] [INFO   ]   [KB-000080] foot_care (ada) — Foot care diabetes prevention
+[2026-08-10 06:32:50] [INFO   ]   [KB-000080] foot_care (cdc) — Diabetes foot care tips
+[2026-08-10 06:32:50] [INFO   ]   [KB-000080] foot_care (mayo) — Diabetes foot care daily routine
+[2026-08-10 06:32:50] [INFO   ]   [KB-000081] diabetic_ketoacidosis (ada) — DKA diabetic ketoacidosis
+[2026-08-10 06:32:50] [INFO   ]   [KB-000081] diabetic_ketoacidosis (mayo) — Diabetic ketoacidosis symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000081] diabetic_ketoacidosis (medlineplus) — Diabetic ketoacidosis DKA
+[2026-08-10 06:32:50] [INFO   ]   [KB-000082] hyperosmolar_syndrome (ada) — Hyperosmolar hyperglycemic syndrome
+[2026-08-10 06:32:50] [INFO   ]   [KB-000082] hyperosmolar_syndrome (cleveland) — Hyperosmolar hyperglycemic state HHS
+[2026-08-10 06:32:50] [INFO   ]   [KB-000082] hyperosmolar_syndrome (mayo) — Diabetic hyperosmolar syndrome
+[2026-08-10 06:32:50] [INFO   ]   [KB-000083] hypoglycemia (ada) — Hypoglycemia low blood glucose
+[2026-08-10 06:32:50] [INFO   ]   [KB-000083] hypoglycemia (cdc) — Low blood sugar hypoglycemia diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000083] hypoglycemia (mayo) — Hypoglycemia symptoms causes treatment
+[2026-08-10 06:32:50] [INFO   ]   [KB-000084] hyperglycemia (ada) — Hyperglycemia high blood glucose
+[2026-08-10 06:32:50] [INFO   ]   [KB-000084] hyperglycemia (cdc) — High blood sugar hyperglycemia diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000084] hyperglycemia (mayo) — Hyperglycemia in diabetes symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000090] healthy_eating (ada) — Diabetes food and nutrition
+[2026-08-10 06:32:50] [INFO   ]   [KB-000090] healthy_eating (cdc) — Diabetes meal planning eating well
+[2026-08-10 06:32:50] [INFO   ]   [KB-000090] healthy_eating (mayo) — Diabetes diet create healthy eating plan
+[2026-08-10 06:32:50] [INFO   ]   [KB-000091] carb_counting (ada) — Carb counting diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000091] carb_counting (cdc) — Carbohydrate counting diabetes food
+[2026-08-10 06:32:50] [INFO   ]   [KB-000091] carb_counting (mayo) — Carb counting diabetes meal planning
+[2026-08-10 06:32:50] [INFO   ]   [KB-000093] exercise (ada) — Fitness and exercise diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000093] exercise (cdc) — Diabetes and physical activity exercise
+[2026-08-10 06:32:50] [INFO   ]   [KB-000093] exercise (mayo) — Diabetes and exercise blood sugar
+[2026-08-10 06:32:50] [INFO   ]   [KB-000094] weight_management (ada) — Weight management diabetes obesity
+[2026-08-10 06:32:50] [INFO   ]   [KB-000094] weight_management (cdc) — Losing weight diabetes healthy weight
+[2026-08-10 06:32:50] [INFO   ]   [KB-000094] weight_management (mayo) — Diabetes and weight loss management
+[2026-08-10 06:32:50] [INFO   ]   [KB-000095] sleep (cdc) — Sleep and diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000095] sleep (cleveland) — Diabetes and sleep problems
+[2026-08-10 06:32:50] [INFO   ]   [KB-000095] sleep (mayo) — Sleep and blood sugar diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000096] smoking (ada) — Smoking and diabetes risk
+[2026-08-10 06:32:50] [INFO   ]   [KB-000096] smoking (cdc) — Smoking and diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000096] smoking (mayo) — Quit smoking diabetes benefits
+[2026-08-10 06:32:50] [INFO   ]   [KB-000097] alcohol (ada) — Alcohol and diabetes what you need to know
+[2026-08-10 06:32:50] [INFO   ]   [KB-000097] alcohol (cdc) — Alcohol and diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000097] alcohol (mayo) — Diabetes and alcohol effects blood sugar
+[2026-08-10 06:32:50] [INFO   ]   [KB-000098] stress_management (ada) — Mental health stress diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000098] stress_management (cdc) — Diabetes and stress management
+[2026-08-10 06:32:50] [INFO   ]   [KB-000098] stress_management (mayo) — Stress and blood sugar diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000099] mental_health (ada) — Mental health diabetes depression
+[2026-08-10 06:32:50] [INFO   ]   [KB-000099] mental_health (cdc) — Diabetes and mental health
+[2026-08-10 06:32:50] [INFO   ]   [KB-000099] mental_health (mayo) — Diabetes and depression mental health
+[2026-08-10 06:32:50] [INFO   ]   [KB-000005] gestational_diabetes (ada) — Gestational diabetes mellitus
+[2026-08-10 06:32:50] [INFO   ]   [KB-000005] gestational_diabetes (cdc) — Gestational diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000005] gestational_diabetes (mayo) — Gestational diabetes symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000008] pancreas (cleveland) — Pancreas function beta cells
+[2026-08-10 06:32:50] [INFO   ]   [KB-000008] pancreas (medlineplus) — Pancreas diseases and conditions
+[2026-08-10 06:32:50] [INFO   ]   [KB-000008] pancreas (niddk) — Pancreas and its functions
+[2026-08-10 06:32:50] [INFO   ]   [KB-000015] c_peptide (cleveland) — C-peptide blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000015] c_peptide (mayo) — C-peptide test insulin
+[2026-08-10 06:32:50] [INFO   ]   [KB-000015] c_peptide (medlineplus) — C-peptide test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000017] postprandial_glucose (ada) — Postprandial blood glucose after meals
+[2026-08-10 06:32:50] [INFO   ]   [KB-000017] postprandial_glucose (cleveland) — Postprandial blood sugar test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000017] postprandial_glucose (mayo) — Blood sugar after eating postprandial glucose
+[2026-08-10 06:32:50] [INFO   ]   [KB-000021] urea (cleveland) — Urea test kidney
+[2026-08-10 06:32:50] [INFO   ]   [KB-000021] urea (mayo) — Urea nitrogen blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000021] urea (medlineplus) — Urea blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000022] urine_creatinine (cleveland) — Urine creatinine test creatinine clearance
+[2026-08-10 06:32:50] [INFO   ]   [KB-000022] urine_creatinine (mayo) — Creatinine clearance test urine
+[2026-08-10 06:32:50] [INFO   ]   [KB-000022] urine_creatinine (medlineplus) — Creatinine urine test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000026] uric_acid (cleveland) — Uric acid test hyperuricemia
+[2026-08-10 06:32:50] [INFO   ]   [KB-000026] uric_acid (mayo) — Uric acid test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000026] uric_acid (medlineplus) — Uric acid blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000027] electrolytes (cleveland) — Basic metabolic panel electrolytes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000027] electrolytes (mayo) — Electrolyte test sodium potassium
+[2026-08-10 06:32:50] [INFO   ]   [KB-000027] electrolytes (medlineplus) — Electrolyte panel blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000032] ggt (cleveland) — GGT gamma-glutamyl transferase test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000032] ggt (mayo) — Gamma-glutamyl transferase GGT test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000032] ggt (medlineplus) — GGT blood test gamma-glutamyl
+[2026-08-10 06:32:50] [INFO   ]   [KB-000034] globulin (cleveland) — Globulin test A/G ratio
+[2026-08-10 06:32:50] [INFO   ]   [KB-000034] globulin (mayo) — Total protein test globulin albumin
+[2026-08-10 06:32:50] [INFO   ]   [KB-000034] globulin (medlineplus) — Globulin blood test total protein
+[2026-08-10 06:32:50] [INFO   ]   [KB-000035] total_protein (cleveland) — Serum total protein test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000035] total_protein (mayo) — Total protein test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000035] total_protein (medlineplus) — Total protein blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000043] vldl (cleveland) — VLDL very low-density lipoprotein
+[2026-08-10 06:32:50] [INFO   ]   [KB-000043] vldl (mayo) — VLDL cholesterol
+[2026-08-10 06:32:50] [INFO   ]   [KB-000043] vldl (medlineplus) — VLDL cholesterol test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000044] apoa1 (cleveland) — Apolipoprotein A1 test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000044] apoa1 (mayo) — Apolipoprotein A cardiovascular risk
+[2026-08-10 06:32:50] [INFO   ]   [KB-000044] apoa1 (medlineplus) — Apolipoprotein A test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000045] apob (cleveland) — Apolipoprotein B ApoB test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000045] apob (mayo) — Apolipoprotein B cardiovascular
+[2026-08-10 06:32:50] [INFO   ]   [KB-000045] apob (medlineplus) — Apolipoprotein B test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000046] lipoprotein_a (cleveland) — Lipoprotein a Lp(a) test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000046] lipoprotein_a (mayo) — Lipoprotein(a) heart disease risk
+[2026-08-10 06:32:50] [INFO   ]   [KB-000046] lipoprotein_a (medlineplus) — Lipoprotein a blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000048] cholesterol_ratio (ada) — Cholesterol management diabetes targets
+[2026-08-10 06:32:50] [INFO   ]   [KB-000048] cholesterol_ratio (cleveland) — Non-HDL cholesterol ratio
+[2026-08-10 06:32:50] [INFO   ]   [KB-000048] cholesterol_ratio (mayo) — Cholesterol ratio cardiovascular risk
+[2026-08-10 06:32:50] [INFO   ]   [KB-000051] folate (cleveland) — Folate blood test folic acid
+[2026-08-10 06:32:50] [INFO   ]   [KB-000051] folate (mayo) — Folate deficiency vitamin B9
+[2026-08-10 06:32:50] [INFO   ]   [KB-000051] folate (medlineplus) — Folate folic acid blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000052] iron_studies (cleveland) — Iron studies ferritin TIBC transferrin
+[2026-08-10 06:32:50] [INFO   ]   [KB-000052] iron_studies (mayo) — Iron deficiency anemia ferritin test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000052] iron_studies (medlineplus) — Iron tests blood ferritin TIBC
+[2026-08-10 06:32:50] [INFO   ]   [KB-000053] magnesium (cleveland) — Magnesium test hypomagnesemia
+[2026-08-10 06:32:50] [INFO   ]   [KB-000053] magnesium (mayo) — Magnesium supplement deficiency
+[2026-08-10 06:32:50] [INFO   ]   [KB-000053] magnesium (medlineplus) — Magnesium blood test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000056] hematocrit (cleveland) — Hematocrit blood test PCV
+[2026-08-10 06:32:50] [INFO   ]   [KB-000056] hematocrit (mayo) — Hematocrit test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000056] hematocrit (medlineplus) — Hematocrit test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000062] crp (cleveland) — High-sensitivity CRP hs-CRP test cardiovascular
+[2026-08-10 06:32:50] [INFO   ]   [KB-000062] crp (mayo) — C-reactive protein test inflammation
+[2026-08-10 06:32:50] [INFO   ]   [KB-000062] crp (medlineplus) — C-reactive protein CRP test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000066] thyroid_antibodies (cleveland) — Thyroid antibodies Hashimoto autoimmune
+[2026-08-10 06:32:50] [INFO   ]   [KB-000066] thyroid_antibodies (mayo) — Thyroid peroxidase antibodies TPO test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000066] thyroid_antibodies (medlineplus) — Thyroid antibodies test TPO
+[2026-08-10 06:32:50] [INFO   ]   [KB-000068] hyperthyroidism (cleveland) — Hyperthyroidism overactive thyroid Graves
+[2026-08-10 06:32:50] [INFO   ]   [KB-000068] hyperthyroidism (mayo) — Hyperthyroidism overactive thyroid
+[2026-08-10 06:32:50] [INFO   ]   [KB-000068] hyperthyroidism (medlineplus) — Hyperthyroidism
+[2026-08-10 06:32:50] [INFO   ]   [KB-000074] atherosclerosis (cleveland) — Atherosclerosis causes symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000074] atherosclerosis (mayo) — Atherosclerosis hardening of arteries
+[2026-08-10 06:32:50] [INFO   ]   [KB-000074] atherosclerosis (medlineplus) — Atherosclerosis
+[2026-08-10 06:32:50] [INFO   ]   [KB-000075] heart_failure (ada) — Diabetes and heart failure
+[2026-08-10 06:32:50] [INFO   ]   [KB-000075] heart_failure (cleveland) — Heart failure diabetes connection
+[2026-08-10 06:32:50] [INFO   ]   [KB-000075] heart_failure (mayo) — Heart failure symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000085] diabetic_skin_conditions (ada) — Skin complications diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000085] diabetic_skin_conditions (cleveland) — Diabetic skin problems conditions
+[2026-08-10 06:32:50] [INFO   ]   [KB-000085] diabetic_skin_conditions (mayo) — Diabetes skin conditions symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000086] dental_health (ada) — Diabetes and oral health
+[2026-08-10 06:32:50] [INFO   ]   [KB-000086] dental_health (cdc) — Diabetes gum disease dental health
+[2026-08-10 06:32:50] [INFO   ]   [KB-000086] dental_health (mayo) — Diabetes and dental care oral health
+[2026-08-10 06:32:50] [INFO   ]   [KB-000087] gastroparesis (cleveland) — Diabetic gastroparesis stomach
+[2026-08-10 06:32:50] [INFO   ]   [KB-000087] gastroparesis (mayo) — Gastroparesis symptoms causes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000087] gastroparesis (niddk) — Gastroparesis
+[2026-08-10 06:32:50] [INFO   ]   [KB-000089] infections (ada) — Diabetes and infections immune system
+[2026-08-10 06:32:50] [INFO   ]   [KB-000089] infections (cleveland) — Diabetes risk infections
+[2026-08-10 06:32:50] [INFO   ]   [KB-000089] infections (mayo) — Diabetes and wound healing infections
+[2026-08-10 06:32:50] [INFO   ]   [KB-000092] glycemic_index (ada) — Glycemic index diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000092] glycemic_index (mayo) — Glycemic index diet
+[2026-08-10 06:32:50] [INFO   ]   [KB-000092] glycemic_index (medlineplus) — Glycemic index food list
+[2026-08-10 06:32:50] [INFO   ]   [KB-000100] hydration (ada) — Hydration and diabetes water intake
+[2026-08-10 06:32:50] [INFO   ]   [KB-000100] hydration (cleveland) — Diabetes hydration water intake
+[2026-08-10 06:32:50] [INFO   ]   [KB-000100] hydration (mayo) — Dehydration and diabetes symptoms
+[2026-08-10 06:32:50] [INFO   ]   [KB-000061] esr (cleveland) — ESR test inflammation
+[2026-08-10 06:32:50] [INFO   ]   [KB-000061] esr (mayo) — Sed rate erythrocyte sedimentation rate
+[2026-08-10 06:32:50] [INFO   ]   [KB-000061] esr (medlineplus) — ESR erythrocyte sedimentation rate test
+[2026-08-10 06:32:50] [INFO   ]   [KB-000088] sexual_dysfunction (cleveland) — Diabetes sexual dysfunction
+[2026-08-10 06:32:50] [INFO   ]   [KB-000088] sexual_dysfunction (mayo) — Erectile dysfunction diabetes
+[2026-08-10 06:32:50] [INFO   ]   [KB-000088] sexual_dysfunction (niddk) — Diabetes sexual urologic problems

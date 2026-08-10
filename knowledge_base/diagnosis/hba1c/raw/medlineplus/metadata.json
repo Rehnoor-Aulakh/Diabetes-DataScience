@@ -1,0 +1,29 @@
+{
+  "document_id": "KB-000010",
+  "topic": "hba1c",
+  "topic_title": "HbA1c",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov",
+  "scraped_at": "2026-08-10T06:36:35.998325+00:00",
+  "word_count": 78,
+  "content_hash": "sha256:01672979259f2fa69e1c067c923ac2263c3c372d63ca519d30bf2fa2cc229d20",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"969da987d5be4a5abd30e51681b6b6fb\"",
+  "http_last_modified": "Thu, 02 Jul 2026 15:34:39 GMT",
+  "status": "failed",
+  "quality_checks": {
+    "min_words": false,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "Word count too low (78 < 300)",
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}
