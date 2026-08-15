@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000040",
+  "topic": "ldl",
+  "topic_title": "LDL Cholesterol",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/cholesterol/art-20045192",
+  "scraped_at": "2026-08-15T05:55:23.714827+00:00",
+  "word_count": 943,
+  "content_hash": "sha256:7768447d7feaeabb9cc01717486520e9714db0d3fcce90dd068af1f295c685ae",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"ppzyz9w4qrqszm\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

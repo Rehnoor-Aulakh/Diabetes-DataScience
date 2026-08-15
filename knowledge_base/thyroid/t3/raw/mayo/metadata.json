@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000064",
+  "topic": "t3",
+  "topic_title": "T3 (Triiodothyronine)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202",
+  "scraped_at": "2026-08-15T06:10:50.791847+00:00",
+  "word_count": 233,
+  "content_hash": "sha256:ab85b2ed8c73e1c5943727384777255d5a00264698de17a4c7596d740d55bf8b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

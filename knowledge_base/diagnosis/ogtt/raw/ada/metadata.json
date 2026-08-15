@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000014",
+  "topic": "ogtt",
+  "topic_title": "Oral Glucose Tolerance Test",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/about-diabetes/diagnosis",
+  "scraped_at": "2026-08-15T05:54:37.716682+00:00",
+  "word_count": 589,
+  "content_hash": "sha256:ab4b9f0a9ab34fe623ce2047673fea0d963d15a8cf022abed2d51b9d12e5a5d3",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:04:47 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

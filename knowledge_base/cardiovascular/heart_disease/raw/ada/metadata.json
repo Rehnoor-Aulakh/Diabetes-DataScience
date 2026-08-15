@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000070",
+  "topic": "heart_disease",
+  "topic_title": "Heart Disease and Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart/diabetes-affect-your-heart",
+  "scraped_at": "2026-08-15T05:56:22.549736+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:9ef6cc94dc94948e12c73c43729f8c02fd9e42a74497d04da059d69f6b42cb6e",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:17:21 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

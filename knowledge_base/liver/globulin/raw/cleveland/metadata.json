@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000034",
+  "topic": "globulin",
+  "topic_title": "Globulin",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test",
+  "scraped_at": "2026-08-15T06:04:48.381471+00:00",
+  "word_count": 596,
+  "content_hash": "sha256:28db40f76c15ccc15effbb796c104f87cdabb567c7bfac95111f1a27085ea5cf",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

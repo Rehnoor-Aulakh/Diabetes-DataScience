@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000045",
+  "topic": "apob",
+  "topic_title": "Apolipoprotein B",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601",
+  "scraped_at": "2026-08-15T06:05:06.861569+00:00",
+  "word_count": 1295,
+  "content_hash": "sha256:a553f51d331809f1f294ae2591b59b5bf7620a4376ae52f03f07f76a066fafc7",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

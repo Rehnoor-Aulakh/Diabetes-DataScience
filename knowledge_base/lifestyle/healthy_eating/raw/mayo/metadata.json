@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000090",
+  "topic": "healthy_eating",
+  "topic_title": "Healthy Eating for Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-diet/art-20044295",
+  "scraped_at": "2026-08-15T05:57:20.693046+00:00",
+  "word_count": 1311,
+  "content_hash": "sha256:b194d5221e65b9e30d3fb92acb9ec5bd306d8f5bb7ced5b3311d0e4c570b6ce8",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"byj3adtsudri7r\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,1484 @@
+[2026-08-15 05:54:09] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260815_055409.log
+[2026-08-15 05:54:09] [INFO   ] Starting Full Medical Knowledge Base Corpus Scraper
+[2026-08-15 05:54:09] [INFO   ] [KB-000001] [ada] SKIPPED — Already scraped
+[2026-08-15 05:54:09] [INFO   ] [KB-000001] [cdc] RESOLVING — Topic: What is Diabetes
+[2026-08-15 05:54:09] [INFO   ] [KB-000001] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/about/index.html
+[2026-08-15 05:54:10] [INFO   ] [KB-000001] [cdc] EXTRACTING
+[2026-08-15 05:54:10] [INFO   ] [KB-000001] [cdc] CONVERTING
+[2026-08-15 05:54:10] [INFO   ] [KB-000001] [cdc] VALIDATING
+[2026-08-15 05:54:10] [INFO   ] [KB-000001] [cdc] COMPLETED — v1 (715 words)
+[2026-08-15 05:54:10] [INFO   ] [KB-000001] [mayo] RESOLVING — Topic: What is Diabetes
+[2026-08-15 05:54:10] [INFO   ] [KB-000001] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-15 05:54:11] [INFO   ] [KB-000001] [mayo] EXTRACTING
+[2026-08-15 05:54:11] [INFO   ] [KB-000001] [mayo] CONVERTING
+[2026-08-15 05:54:11] [INFO   ] [KB-000001] [mayo] VALIDATING
+[2026-08-15 05:54:11] [INFO   ] [KB-000001] [mayo] COMPLETED — v1 (1492 words)
+[2026-08-15 05:54:11] [INFO   ] [KB-000002] [ada] SKIPPED — Already scraped
+[2026-08-15 05:54:11] [INFO   ] [KB-000002] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:11] [INFO   ] [KB-000002] [mayo] RESOLVING — Topic: Type 1 Diabetes
+[2026-08-15 05:54:11] [INFO   ] [KB-000002] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011
+[2026-08-15 05:54:12] [INFO   ] [KB-000002] [mayo] EXTRACTING
+[2026-08-15 05:54:12] [INFO   ] [KB-000002] [mayo] CONVERTING
+[2026-08-15 05:54:12] [INFO   ] [KB-000002] [mayo] VALIDATING
+[2026-08-15 05:54:12] [INFO   ] [KB-000002] [mayo] COMPLETED — v1 (847 words)
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [ada] SKIPPED — Already scraped
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [cdc] RESOLVING — Topic: Type 2 Diabetes
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/about/about-type-2-diabetes.html
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [cdc] EXTRACTING
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [cdc] CONVERTING
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [cdc] VALIDATING
+[2026-08-15 05:54:12] [INFO   ] [KB-000003] [cdc] COMPLETED — v1 (620 words)
+[2026-08-15 05:54:13] [INFO   ] [KB-000003] [mayo] RESOLVING — Topic: Type 2 Diabetes
+[2026-08-15 05:54:13] [INFO   ] [KB-000003] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/symptoms-causes/syc-20351193
+[2026-08-15 05:54:13] [INFO   ] [KB-000003] [mayo] EXTRACTING
+[2026-08-15 05:54:13] [INFO   ] [KB-000003] [mayo] CONVERTING
+[2026-08-15 05:54:13] [INFO   ] [KB-000003] [mayo] VALIDATING
+[2026-08-15 05:54:13] [INFO   ] [KB-000003] [mayo] COMPLETED — v1 (1395 words)
+[2026-08-15 05:54:14] [INFO   ] [KB-000004] [cdc] RESOLVING — Topic: Prediabetes
+[2026-08-15 05:54:14] [INFO   ] [KB-000004] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/prevention-type-2/prediabetes-prevent-type-2.html
+[2026-08-15 05:54:14] [INFO   ] [KB-000004] [cdc] EXTRACTING
+[2026-08-15 05:54:14] [INFO   ] [KB-000004] [cdc] CONVERTING
+[2026-08-15 05:54:14] [INFO   ] [KB-000004] [cdc] VALIDATING
+[2026-08-15 05:54:14] [INFO   ] [KB-000004] [cdc] COMPLETED — v1 (480 words)
+[2026-08-15 05:54:15] [INFO   ] [KB-000004] [ada] RESOLVING — Topic: Prediabetes
+[2026-08-15 05:54:15] [INFO   ] [KB-000004] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/prediabetes
+[2026-08-15 05:54:16] [INFO   ] [KB-000004] [ada] EXTRACTING
+[2026-08-15 05:54:16] [INFO   ] [KB-000004] [ada] CONVERTING
+[2026-08-15 05:54:16] [INFO   ] [KB-000004] [ada] VALIDATING
+[2026-08-15 05:54:16] [INFO   ] [KB-000004] [ada] COMPLETED — v1 (243 words)
+[2026-08-15 05:54:16] [INFO   ] [KB-000004] [mayo] RESOLVING — Topic: Prediabetes
+[2026-08-15 05:54:16] [INFO   ] [KB-000004] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/prediabetes/symptoms-causes/syc-20355278
+[2026-08-15 05:54:17] [INFO   ] [KB-000004] [mayo] EXTRACTING
+[2026-08-15 05:54:17] [INFO   ] [KB-000004] [mayo] CONVERTING
+[2026-08-15 05:54:17] [INFO   ] [KB-000004] [mayo] VALIDATING
+[2026-08-15 05:54:17] [INFO   ] [KB-000004] [mayo] COMPLETED — v1 (625 words)
+[2026-08-15 05:54:17] [INFO   ] [KB-000005] [cdc] RESOLVING — Topic: Gestational Diabetes
+[2026-08-15 05:54:17] [INFO   ] [KB-000005] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/about/gestational-diabetes.html
+[2026-08-15 05:54:17] [INFO   ] [KB-000005] [cdc] EXTRACTING
+[2026-08-15 05:54:17] [INFO   ] [KB-000005] [cdc] CONVERTING
+[2026-08-15 05:54:17] [INFO   ] [KB-000005] [cdc] VALIDATING
+[2026-08-15 05:54:17] [INFO   ] [KB-000005] [cdc] COMPLETED — v1 (549 words)
+[2026-08-15 05:54:18] [INFO   ] [KB-000005] [ada] RESOLVING — Topic: Gestational Diabetes
+[2026-08-15 05:54:18] [INFO   ] [KB-000005] [ada] DOWNLOADING — URL: https://diabetes.org/living-with-diabetes/pregnancy/gestational-diabetes
+[2026-08-15 05:54:18] [INFO   ] [KB-000005] [ada] EXTRACTING
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [ada] CONVERTING
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [ada] VALIDATING
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [ada] COMPLETED — v1 (635 words)
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [mayo] RESOLVING — Topic: Gestational Diabetes
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/gestational-diabetes/symptoms-causes/syc-20355339
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [mayo] EXTRACTING
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [mayo] CONVERTING
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [mayo] VALIDATING
+[2026-08-15 05:54:19] [INFO   ] [KB-000005] [mayo] COMPLETED — v1 (976 words)
+[2026-08-15 05:54:19] [INFO   ] [KB-000006] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:19] [INFO   ] [KB-000006] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:19] [INFO   ] [KB-000006] [mayo] RESOLVING — Topic: Insulin
+[2026-08-15 05:54:19] [INFO   ] [KB-000006] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/insulin-and-diabetes/art-20046974
+[2026-08-15 05:54:20] [INFO   ] [KB-000006] [mayo] EXTRACTING
+[2026-08-15 05:54:20] [INFO   ] [KB-000006] [mayo] CONVERTING
+[2026-08-15 05:54:20] [INFO   ] [KB-000006] [mayo] VALIDATING
+[2026-08-15 05:54:20] [INFO   ] [KB-000006] [mayo] COMPLETED — v1 (1331 words)
+[2026-08-15 05:54:20] [INFO   ] [KB-000007] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:20] [INFO   ] [KB-000007] [ada] RESOLVING — Topic: Insulin Resistance
+[2026-08-15 05:54:20] [INFO   ] [KB-000007] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/medication-treatments
+[2026-08-15 05:54:21] [INFO   ] [KB-000007] [ada] EXTRACTING
+[2026-08-15 05:54:21] [INFO   ] [KB-000007] [ada] CONVERTING
+[2026-08-15 05:54:21] [INFO   ] [KB-000007] [ada] VALIDATING
+[2026-08-15 05:54:21] [INFO   ] [KB-000007] [ada] COMPLETED — v2 (367 words)
+[2026-08-15 05:54:21] [INFO   ] [KB-000007] [mayo] RESOLVING — Topic: Insulin Resistance
+[2026-08-15 05:54:21] [INFO   ] [KB-000007] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/metabolic-syndrome/symptoms-causes/syc-20351916
+[2026-08-15 05:54:23] [INFO   ] [KB-000007] [mayo] EXTRACTING
+[2026-08-15 05:54:23] [INFO   ] [KB-000007] [mayo] CONVERTING
+[2026-08-15 05:54:23] [INFO   ] [KB-000007] [mayo] VALIDATING
+[2026-08-15 05:54:23] [INFO   ] [KB-000007] [mayo] COMPLETED — v1 (558 words)
+[2026-08-15 05:54:23] [INFO   ] [KB-000008] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:23] [INFO   ] [KB-000008] [medlineplus] RESOLVING — Topic: Pancreas and Beta Cells
+[2026-08-15 05:54:23] [INFO   ] [KB-000008] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/pancreaticdiseases.html
+[2026-08-15 05:54:24] [INFO   ] [KB-000008] [medlineplus] EXTRACTING
+[2026-08-15 05:54:24] [INFO   ] [KB-000008] [medlineplus] CONVERTING
+[2026-08-15 05:54:24] [INFO   ] [KB-000008] [medlineplus] VALIDATING
+[2026-08-15 05:54:24] [INFO   ] [KB-000008] [medlineplus] COMPLETED — v1 (469 words)
+[2026-08-15 05:54:24] [INFO   ] [KB-000008] [cleveland] RESOLVING — Topic: Pancreas and Beta Cells
+[2026-08-15 05:54:24] [INFO   ] [KB-000008] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/body/21740-pancreas
+[2026-08-15 05:54:25] [INFO   ] [KB-000008] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:25] [INFO   ] [KB-000009] [niddk] RESOLVING — Topic: Blood Glucose Regulation
+[2026-08-15 05:54:25] [INFO   ] [KB-000009] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [niddk] EXTRACTING
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [niddk] CONVERTING
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [niddk] VALIDATING
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [niddk] COMPLETED — v1 (738 words)
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [ada] RESOLVING — Topic: Blood Glucose Regulation
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [ada] EXTRACTING
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [ada] CONVERTING
+[2026-08-15 05:54:26] [INFO   ] [KB-000009] [ada] VALIDATING
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [ada] COMPLETED — v1 (559 words)
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [mayo] RESOLVING — Topic: Blood Glucose Regulation
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [mayo] EXTRACTING
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [mayo] CONVERTING
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [mayo] VALIDATING
+[2026-08-15 05:54:27] [INFO   ] [KB-000009] [mayo] COMPLETED — v1 (1492 words)
+[2026-08-15 05:54:27] [INFO   ] [KB-000010] [ada] SKIPPED — Already scraped
+[2026-08-15 05:54:27] [INFO   ] [KB-000010] [mayo] RESOLVING — Topic: HbA1c
+[2026-08-15 05:54:27] [INFO   ] [KB-000010] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/hba1c-test/about/pac-20384643
+[2026-08-15 05:54:28] [INFO   ] [KB-000010] [mayo] EXTRACTING
+[2026-08-15 05:54:28] [INFO   ] [KB-000010] [mayo] CONVERTING
+[2026-08-15 05:54:28] [INFO   ] [KB-000010] [mayo] VALIDATING
+[2026-08-15 05:54:28] [INFO   ] [KB-000010] [mayo] COMPLETED — v1 (896 words)
+[2026-08-15 05:54:28] [INFO   ] [KB-000010] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:28] [INFO   ] [KB-000011] [ada] RESOLVING — Topic: Average Blood Glucose
+[2026-08-15 05:54:28] [INFO   ] [KB-000011] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/a1c
+[2026-08-15 05:54:29] [INFO   ] [KB-000011] [ada] EXTRACTING
+[2026-08-15 05:54:29] [INFO   ] [KB-000011] [ada] CONVERTING
+[2026-08-15 05:54:29] [INFO   ] [KB-000011] [ada] VALIDATING
+[2026-08-15 05:54:29] [INFO   ] [KB-000011] [ada] COMPLETED — v1 (836 words)
+[2026-08-15 05:54:29] [INFO   ] [KB-000011] [mayo] RESOLVING — Topic: Average Blood Glucose
+[2026-08-15 05:54:29] [INFO   ] [KB-000011] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 05:54:31] [INFO   ] [KB-000011] [mayo] EXTRACTING
+[2026-08-15 05:54:31] [INFO   ] [KB-000011] [mayo] CONVERTING
+[2026-08-15 05:54:31] [INFO   ] [KB-000011] [mayo] VALIDATING
+[2026-08-15 05:54:31] [INFO   ] [KB-000011] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 05:54:31] [INFO   ] [KB-000012] [ada] RESOLVING — Topic: Fasting Blood Sugar
+[2026-08-15 05:54:31] [INFO   ] [KB-000012] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/diagnosis
+[2026-08-15 05:54:32] [INFO   ] [KB-000012] [ada] EXTRACTING
+[2026-08-15 05:54:32] [INFO   ] [KB-000012] [ada] CONVERTING
+[2026-08-15 05:54:32] [INFO   ] [KB-000012] [ada] VALIDATING
+[2026-08-15 05:54:32] [INFO   ] [KB-000012] [ada] COMPLETED — v1 (589 words)
+[2026-08-15 05:54:32] [INFO   ] [KB-000012] [cdc] RESOLVING — Topic: Fasting Blood Sugar
+[2026-08-15 05:54:32] [INFO   ] [KB-000012] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-testing/index.html
+[2026-08-15 05:54:33] [INFO   ] [KB-000012] [cdc] EXTRACTING
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [cdc] CONVERTING
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [cdc] VALIDATING
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [cdc] COMPLETED — v1 (869 words)
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [mayo] RESOLVING — Topic: Fasting Blood Sugar
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [mayo] EXTRACTING
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [mayo] CONVERTING
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [mayo] VALIDATING
+[2026-08-15 05:54:34] [INFO   ] [KB-000012] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [ada] RESOLVING — Topic: Random Blood Sugar
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/diagnosis
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [ada] EXTRACTING
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [ada] CONVERTING
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [ada] VALIDATING
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [ada] COMPLETED — v1 (589 words)
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [mayo] RESOLVING — Topic: Random Blood Sugar
+[2026-08-15 05:54:35] [INFO   ] [KB-000013] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 05:54:36] [INFO   ] [KB-000013] [mayo] EXTRACTING
+[2026-08-15 05:54:36] [INFO   ] [KB-000013] [mayo] CONVERTING
+[2026-08-15 05:54:36] [INFO   ] [KB-000013] [mayo] VALIDATING
+[2026-08-15 05:54:36] [INFO   ] [KB-000013] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 05:54:36] [INFO   ] [KB-000014] [ada] RESOLVING — Topic: Oral Glucose Tolerance Test
+[2026-08-15 05:54:36] [INFO   ] [KB-000014] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/diagnosis
+[2026-08-15 05:54:37] [INFO   ] [KB-000014] [ada] EXTRACTING
+[2026-08-15 05:54:37] [INFO   ] [KB-000014] [ada] CONVERTING
+[2026-08-15 05:54:37] [INFO   ] [KB-000014] [ada] VALIDATING
+[2026-08-15 05:54:37] [INFO   ] [KB-000014] [ada] COMPLETED — v1 (589 words)
+[2026-08-15 05:54:37] [INFO   ] [KB-000014] [mayo] RESOLVING — Topic: Oral Glucose Tolerance Test
+[2026-08-15 05:54:37] [INFO   ] [KB-000014] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/glucose-tolerance-test/about/pac-20394296
+[2026-08-15 05:54:38] [INFO   ] [KB-000014] [mayo] EXTRACTING
+[2026-08-15 05:54:39] [INFO   ] [KB-000014] [mayo] CONVERTING
+[2026-08-15 05:54:39] [INFO   ] [KB-000014] [mayo] VALIDATING
+[2026-08-15 05:54:39] [INFO   ] [KB-000014] [mayo] COMPLETED — v1 (1244 words)
+[2026-08-15 05:54:39] [INFO   ] [KB-000014] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:39] [INFO   ] [KB-000015] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:39] [INFO   ] [KB-000015] [cleveland] RESOLVING — Topic: C-Peptide
+[2026-08-15 05:54:39] [INFO   ] [KB-000015] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21950-c-peptide-test
+[2026-08-15 05:54:40] [INFO   ] [KB-000015] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:40] [INFO   ] [KB-000015] [mayo] RESOLVING — Topic: C-Peptide
+[2026-08-15 05:54:40] [INFO   ] [KB-000015] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/c-peptide-test/about/pac-20384646
+[2026-08-15 05:54:40] [INFO   ] [KB-000015] [mayo] EXTRACTING
+[2026-08-15 05:54:41] [INFO   ] [KB-000015] [mayo] CONVERTING
+[2026-08-15 05:54:41] [INFO   ] [KB-000015] [mayo] VALIDATING
+[2026-08-15 05:54:41] [INFO   ] [KB-000015] [mayo] COMPLETED — v1 (855 words)
+[2026-08-15 05:54:41] [INFO   ] [KB-000016] [ada] RESOLVING — Topic: Blood Glucose Monitoring
+[2026-08-15 05:54:41] [INFO   ] [KB-000016] [ada] DOWNLOADING — URL: https://diabetes.org/living-with-diabetes/treatment-care/checking-your-blood-sugar
+[2026-08-15 05:54:42] [INFO   ] [KB-000016] [ada] EXTRACTING
+[2026-08-15 05:54:42] [INFO   ] [KB-000016] [ada] CONVERTING
+[2026-08-15 05:54:42] [INFO   ] [KB-000016] [ada] VALIDATING
+[2026-08-15 05:54:42] [INFO   ] [KB-000016] [ada] COMPLETED — v1 (726 words)
+[2026-08-15 05:54:42] [INFO   ] [KB-000016] [cdc] RESOLVING — Topic: Blood Glucose Monitoring
+[2026-08-15 05:54:42] [INFO   ] [KB-000016] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/managing/managing-blood-sugar/monitoring-your-blood-sugar.html
+[2026-08-15 05:54:43] [INFO   ] [KB-000016] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:43] [INFO   ] [KB-000016] [mayo] RESOLVING — Topic: Blood Glucose Monitoring
+[2026-08-15 05:54:43] [INFO   ] [KB-000016] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628
+[2026-08-15 05:54:44] [INFO   ] [KB-000016] [mayo] EXTRACTING
+[2026-08-15 05:54:44] [INFO   ] [KB-000016] [mayo] CONVERTING
+[2026-08-15 05:54:44] [INFO   ] [KB-000016] [mayo] VALIDATING
+[2026-08-15 05:54:44] [INFO   ] [KB-000016] [mayo] COMPLETED — v1 (1664 words)
+[2026-08-15 05:54:44] [INFO   ] [KB-000017] [ada] RESOLVING — Topic: Postprandial Blood Glucose
+[2026-08-15 05:54:44] [INFO   ] [KB-000017] [ada] DOWNLOADING — URL: https://diabetes.org/living-with-diabetes/treatment-care/checking-your-blood-sugar
+[2026-08-15 05:54:45] [INFO   ] [KB-000017] [ada] EXTRACTING
+[2026-08-15 05:54:45] [INFO   ] [KB-000017] [ada] CONVERTING
+[2026-08-15 05:54:45] [INFO   ] [KB-000017] [ada] VALIDATING
+[2026-08-15 05:54:45] [INFO   ] [KB-000017] [ada] COMPLETED — v1 (726 words)
+[2026-08-15 05:54:45] [INFO   ] [KB-000017] [mayo] RESOLVING — Topic: Postprandial Blood Glucose
+[2026-08-15 05:54:45] [INFO   ] [KB-000017] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 05:54:46] [INFO   ] [KB-000017] [mayo] EXTRACTING
+[2026-08-15 05:54:46] [INFO   ] [KB-000017] [mayo] CONVERTING
+[2026-08-15 05:54:46] [INFO   ] [KB-000017] [mayo] VALIDATING
+[2026-08-15 05:54:46] [INFO   ] [KB-000017] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 05:54:46] [INFO   ] [KB-000017] [cleveland] RESOLVING — Topic: Postprandial Blood Glucose
+[2026-08-15 05:54:46] [INFO   ] [KB-000017] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/blood-glucose-test
+[2026-08-15 05:54:47] [INFO   ] [KB-000017] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [mayo] RESOLVING — Topic: Creatinine
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [mayo] EXTRACTING
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [mayo] CONVERTING
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [mayo] VALIDATING
+[2026-08-15 05:54:47] [INFO   ] [KB-000018] [mayo] COMPLETED — v1 (855 words)
+[2026-08-15 05:54:48] [INFO   ] [KB-000018] [cleveland] RESOLVING — Topic: Creatinine
+[2026-08-15 05:54:48] [INFO   ] [KB-000018] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/16370-creatinine-test
+[2026-08-15 05:54:48] [INFO   ] [KB-000018] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:48] [INFO   ] [KB-000019] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:48] [INFO   ] [KB-000019] [cleveland] RESOLVING — Topic: eGFR
+[2026-08-15 05:54:48] [INFO   ] [KB-000019] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21539-estimated-glomerular-filtration-rate-egfr
+[2026-08-15 05:54:49] [INFO   ] [KB-000019] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:49] [INFO   ] [KB-000019] [mayo] RESOLVING — Topic: eGFR
+[2026-08-15 05:54:49] [INFO   ] [KB-000019] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-15 05:54:50] [INFO   ] [KB-000019] [mayo] EXTRACTING
+[2026-08-15 05:54:50] [INFO   ] [KB-000019] [mayo] CONVERTING
+[2026-08-15 05:54:50] [INFO   ] [KB-000019] [mayo] VALIDATING
+[2026-08-15 05:54:50] [INFO   ] [KB-000019] [mayo] COMPLETED — v1 (855 words)
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [cleveland] RESOLVING — Topic: BUN (Blood Urea Nitrogen)
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17684-blood-urea-nitrogen-bun-test
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [cleveland] EXTRACTING
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [cleveland] CONVERTING
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [cleveland] VALIDATING
+[2026-08-15 05:54:50] [INFO   ] [KB-000020] [cleveland] COMPLETED — v1 (1010 words)
+[2026-08-15 05:54:51] [INFO   ] [KB-000020] [mayo] RESOLVING — Topic: BUN (Blood Urea Nitrogen)
+[2026-08-15 05:54:51] [INFO   ] [KB-000020] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-urea-nitrogen/about/pac-20384603
+[2026-08-15 05:54:51] [INFO   ] [KB-000020] [mayo] EXTRACTING
+[2026-08-15 05:54:51] [INFO   ] [KB-000020] [mayo] CONVERTING
+[2026-08-15 05:54:51] [INFO   ] [KB-000020] [mayo] VALIDATING
+[2026-08-15 05:54:51] [INFO   ] [KB-000020] [mayo] COMPLETED — v1 (75 words)
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [mayo] RESOLVING — Topic: Urea
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-urea-nitrogen/about/pac-20384603
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [mayo] EXTRACTING
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [mayo] CONVERTING
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [mayo] VALIDATING
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [mayo] COMPLETED — v1 (75 words)
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [cleveland] RESOLVING — Topic: Urea
+[2026-08-15 05:54:52] [INFO   ] [KB-000021] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17684-blood-urea-nitrogen-bun-test
+[2026-08-15 05:54:53] [INFO   ] [KB-000021] [cleveland] EXTRACTING
+[2026-08-15 05:54:53] [INFO   ] [KB-000021] [cleveland] CONVERTING
+[2026-08-15 05:54:53] [INFO   ] [KB-000021] [cleveland] VALIDATING
+[2026-08-15 05:54:53] [INFO   ] [KB-000021] [cleveland] COMPLETED — v1 (1010 words)
+[2026-08-15 05:54:53] [INFO   ] [KB-000022] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:54:53] [INFO   ] [KB-000022] [cleveland] RESOLVING — Topic: Urine Creatinine
+[2026-08-15 05:54:53] [INFO   ] [KB-000022] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/16370-creatinine-test
+[2026-08-15 05:54:53] [INFO   ] [KB-000022] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:54:53] [INFO   ] [KB-000022] [mayo] RESOLVING — Topic: Urine Creatinine
+[2026-08-15 05:54:53] [INFO   ] [KB-000022] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-15 05:54:54] [INFO   ] [KB-000022] [mayo] EXTRACTING
+[2026-08-15 05:54:54] [INFO   ] [KB-000022] [mayo] CONVERTING
+[2026-08-15 05:54:54] [INFO   ] [KB-000022] [mayo] VALIDATING
+[2026-08-15 05:54:54] [INFO   ] [KB-000022] [mayo] COMPLETED — v1 (855 words)
+[2026-08-15 05:54:54] [INFO   ] [KB-000023] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:54] [INFO   ] [KB-000023] [ada] RESOLVING — Topic: Microalbumin (Urine Albumin)
+[2026-08-15 05:54:54] [INFO   ] [KB-000023] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/kidney-care
+[2026-08-15 05:54:55] [INFO   ] [KB-000023] [ada] EXTRACTING
+[2026-08-15 05:54:55] [INFO   ] [KB-000023] [ada] CONVERTING
+[2026-08-15 05:54:55] [INFO   ] [KB-000023] [ada] VALIDATING
+[2026-08-15 05:54:55] [INFO   ] [KB-000023] [ada] COMPLETED — v1 (1062 words)
+[2026-08-15 05:54:55] [INFO   ] [KB-000023] [mayo] RESOLVING — Topic: Microalbumin (Urine Albumin)
+[2026-08-15 05:54:55] [INFO   ] [KB-000023] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/microalbumin-test/about/pac-20384640
+[2026-08-15 05:54:56] [INFO   ] [KB-000023] [mayo] EXTRACTING
+[2026-08-15 05:54:56] [INFO   ] [KB-000023] [mayo] CONVERTING
+[2026-08-15 05:54:56] [INFO   ] [KB-000023] [mayo] VALIDATING
+[2026-08-15 05:54:56] [INFO   ] [KB-000023] [mayo] COMPLETED — v1 (75 words)
+[2026-08-15 05:54:56] [INFO   ] [KB-000024] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:54:56] [INFO   ] [KB-000024] [mayo] RESOLVING — Topic: Albumin-to-Creatinine Ratio (ACR)
+[2026-08-15 05:54:56] [INFO   ] [KB-000024] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/microalbumin-test/about/pac-20384640
+[2026-08-15 05:54:57] [INFO   ] [KB-000024] [mayo] EXTRACTING
+[2026-08-15 05:54:57] [INFO   ] [KB-000024] [mayo] CONVERTING
+[2026-08-15 05:54:57] [INFO   ] [KB-000024] [mayo] VALIDATING
+[2026-08-15 05:54:57] [INFO   ] [KB-000024] [mayo] COMPLETED — v1 (75 words)
+[2026-08-15 05:54:57] [INFO   ] [KB-000024] [ada] RESOLVING — Topic: Albumin-to-Creatinine Ratio (ACR)
+[2026-08-15 05:54:57] [INFO   ] [KB-000024] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/kidney-care
+[2026-08-15 05:54:58] [INFO   ] [KB-000024] [ada] EXTRACTING
+[2026-08-15 05:54:59] [INFO   ] [KB-000024] [ada] CONVERTING
+[2026-08-15 05:54:59] [INFO   ] [KB-000024] [ada] VALIDATING
+[2026-08-15 05:54:59] [INFO   ] [KB-000024] [ada] COMPLETED — v1 (1062 words)
+[2026-08-15 05:54:59] [INFO   ] [KB-000025] [ada] RESOLVING — Topic: Diabetic Kidney Disease
+[2026-08-15 05:54:59] [INFO   ] [KB-000025] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/kidney-care
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [ada] EXTRACTING
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [ada] CONVERTING
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [ada] VALIDATING
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [ada] COMPLETED — v1 (1062 words)
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [mayo] RESOLVING — Topic: Diabetic Kidney Disease
+[2026-08-15 05:55:00] [INFO   ] [KB-000025] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556
+[2026-08-15 05:55:01] [INFO   ] [KB-000025] [mayo] EXTRACTING
+[2026-08-15 05:55:01] [INFO   ] [KB-000025] [mayo] CONVERTING
+[2026-08-15 05:55:01] [INFO   ] [KB-000025] [mayo] VALIDATING
+[2026-08-15 05:55:01] [INFO   ] [KB-000025] [mayo] COMPLETED — v1 (1040 words)
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [mayo] RESOLVING — Topic: Uric Acid
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/uric-acid-test/about/pac-20384648
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [mayo] EXTRACTING
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [mayo] CONVERTING
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [mayo] VALIDATING
+[2026-08-15 05:55:01] [INFO   ] [KB-000026] [mayo] COMPLETED — v1 (75 words)
+[2026-08-15 05:55:02] [INFO   ] [KB-000026] [cleveland] RESOLVING — Topic: Uric Acid
+[2026-08-15 05:55:02] [INFO   ] [KB-000026] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17808-uric-acid-test
+[2026-08-15 05:55:02] [INFO   ] [KB-000026] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:02] [INFO   ] [KB-000027] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:02] [INFO   ] [KB-000027] [mayo] RESOLVING — Topic: Electrolytes (Sodium, Potassium, Chloride)
+[2026-08-15 05:55:02] [INFO   ] [KB-000027] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/comprehensive-metabolic-panel/about/pac-20385006
+[2026-08-15 05:55:03] [INFO   ] [KB-000027] [mayo] EXTRACTING
+[2026-08-15 05:55:03] [INFO   ] [KB-000027] [mayo] CONVERTING
+[2026-08-15 05:55:03] [INFO   ] [KB-000027] [mayo] VALIDATING
+[2026-08-15 05:55:03] [INFO   ] [KB-000027] [mayo] COMPLETED — v1 (656 words)
+[2026-08-15 05:55:03] [INFO   ] [KB-000027] [cleveland] RESOLVING — Topic: Electrolytes (Sodium, Potassium, Chloride)
+[2026-08-15 05:55:03] [INFO   ] [KB-000027] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21790-basic-metabolic-panel-bmp
+[2026-08-15 05:55:04] [INFO   ] [KB-000027] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:04] [INFO   ] [KB-000028] [mayo] RESOLVING — Topic: ALT (SGPT)
+[2026-08-15 05:55:04] [INFO   ] [KB-000028] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:04] [INFO   ] [KB-000028] [mayo] EXTRACTING
+[2026-08-15 05:55:04] [INFO   ] [KB-000028] [mayo] CONVERTING
+[2026-08-15 05:55:04] [INFO   ] [KB-000028] [mayo] VALIDATING
+[2026-08-15 05:55:04] [INFO   ] [KB-000028] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:05] [INFO   ] [KB-000028] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:05] [INFO   ] [KB-000028] [cleveland] RESOLVING — Topic: ALT (SGPT)
+[2026-08-15 05:55:05] [INFO   ] [KB-000028] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17662-alt-blood-test
+[2026-08-15 05:55:05] [INFO   ] [KB-000028] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:05] [INFO   ] [KB-000029] [mayo] RESOLVING — Topic: AST (SGOT)
+[2026-08-15 05:55:05] [INFO   ] [KB-000029] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:06] [INFO   ] [KB-000029] [mayo] EXTRACTING
+[2026-08-15 05:55:06] [INFO   ] [KB-000029] [mayo] CONVERTING
+[2026-08-15 05:55:06] [INFO   ] [KB-000029] [mayo] VALIDATING
+[2026-08-15 05:55:06] [INFO   ] [KB-000029] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:06] [INFO   ] [KB-000029] [cleveland] RESOLVING — Topic: AST (SGOT)
+[2026-08-15 05:55:06] [INFO   ] [KB-000029] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21156-ast-test
+[2026-08-15 05:55:07] [INFO   ] [KB-000029] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:07] [INFO   ] [KB-000029] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [mayo] RESOLVING — Topic: Bilirubin
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/bilirubin/about/pac-20393041
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [mayo] EXTRACTING
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [mayo] CONVERTING
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [mayo] VALIDATING
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [mayo] COMPLETED — v1 (1373 words)
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [cleveland] RESOLVING — Topic: Bilirubin
+[2026-08-15 05:55:07] [INFO   ] [KB-000030] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17845-bilirubin
+[2026-08-15 05:55:08] [INFO   ] [KB-000030] [cleveland] EXTRACTING
+[2026-08-15 05:55:08] [INFO   ] [KB-000030] [cleveland] CONVERTING
+[2026-08-15 05:55:08] [INFO   ] [KB-000030] [cleveland] VALIDATING
+[2026-08-15 05:55:08] [INFO   ] [KB-000030] [cleveland] COMPLETED — v1 (1690 words)
+[2026-08-15 05:55:08] [INFO   ] [KB-000031] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:08] [INFO   ] [KB-000031] [cleveland] RESOLVING — Topic: ALP (Alkaline Phosphatase)
+[2026-08-15 05:55:08] [INFO   ] [KB-000031] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/22029-alkaline-phosphatase-alp
+[2026-08-15 05:55:08] [INFO   ] [KB-000031] [cleveland] EXTRACTING
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [cleveland] CONVERTING
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [cleveland] VALIDATING
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [cleveland] COMPLETED — v1 (1545 words)
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [mayo] RESOLVING — Topic: ALP (Alkaline Phosphatase)
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [mayo] EXTRACTING
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [mayo] CONVERTING
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [mayo] VALIDATING
+[2026-08-15 05:55:09] [INFO   ] [KB-000031] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:09] [INFO   ] [KB-000032] [cleveland] RESOLVING — Topic: GGT (Gamma-Glutamyl Transferase)
+[2026-08-15 05:55:09] [INFO   ] [KB-000032] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/22055-gamma-glutamyl-transferase-ggt-test
+[2026-08-15 05:55:10] [INFO   ] [KB-000032] [cleveland] EXTRACTING
+[2026-08-15 05:55:10] [INFO   ] [KB-000032] [cleveland] CONVERTING
+[2026-08-15 05:55:10] [INFO   ] [KB-000032] [cleveland] VALIDATING
+[2026-08-15 05:55:10] [INFO   ] [KB-000032] [cleveland] COMPLETED — v1 (705 words)
+[2026-08-15 05:55:10] [INFO   ] [KB-000032] [mayo] RESOLVING — Topic: GGT (Gamma-Glutamyl Transferase)
+[2026-08-15 05:55:10] [INFO   ] [KB-000032] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:11] [INFO   ] [KB-000032] [mayo] EXTRACTING
+[2026-08-15 05:55:11] [INFO   ] [KB-000032] [mayo] CONVERTING
+[2026-08-15 05:55:11] [INFO   ] [KB-000032] [mayo] VALIDATING
+[2026-08-15 05:55:11] [INFO   ] [KB-000032] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:11] [INFO   ] [KB-000032] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [mayo] RESOLVING — Topic: Albumin (Serum)
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [mayo] EXTRACTING
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [mayo] CONVERTING
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [mayo] VALIDATING
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [cleveland] RESOLVING — Topic: Albumin (Serum)
+[2026-08-15 05:55:11] [INFO   ] [KB-000033] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test
+[2026-08-15 05:55:12] [INFO   ] [KB-000033] [cleveland] EXTRACTING
+[2026-08-15 05:55:12] [INFO   ] [KB-000033] [cleveland] CONVERTING
+[2026-08-15 05:55:12] [INFO   ] [KB-000033] [cleveland] VALIDATING
+[2026-08-15 05:55:12] [INFO   ] [KB-000033] [cleveland] COMPLETED — v1 (596 words)
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [mayo] RESOLVING — Topic: Globulin
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [mayo] EXTRACTING
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [mayo] CONVERTING
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [mayo] VALIDATING
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [cleveland] RESOLVING — Topic: Globulin
+[2026-08-15 05:55:13] [INFO   ] [KB-000034] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test
+[2026-08-15 05:55:14] [INFO   ] [KB-000034] [cleveland] EXTRACTING
+[2026-08-15 05:55:14] [INFO   ] [KB-000034] [cleveland] CONVERTING
+[2026-08-15 05:55:14] [INFO   ] [KB-000034] [cleveland] VALIDATING
+[2026-08-15 05:55:14] [INFO   ] [KB-000034] [cleveland] COMPLETED — v1 (596 words)
+[2026-08-15 05:55:14] [INFO   ] [KB-000035] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:14] [INFO   ] [KB-000035] [mayo] RESOLVING — Topic: Total Protein
+[2026-08-15 05:55:14] [INFO   ] [KB-000035] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [mayo] EXTRACTING
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [mayo] CONVERTING
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [mayo] VALIDATING
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [cleveland] RESOLVING — Topic: Total Protein
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [cleveland] EXTRACTING
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [cleveland] CONVERTING
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [cleveland] VALIDATING
+[2026-08-15 05:55:15] [INFO   ] [KB-000035] [cleveland] COMPLETED — v1 (596 words)
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [mayo] RESOLVING — Topic: Fatty Liver Disease
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [mayo] EXTRACTING
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [mayo] CONVERTING
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [mayo] VALIDATING
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [mayo] COMPLETED — v1 (1001 words)
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [cleveland] RESOLVING — Topic: Fatty Liver Disease
+[2026-08-15 05:55:16] [INFO   ] [KB-000036] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/15831-fatty-liver-disease
+[2026-08-15 05:55:17] [INFO   ] [KB-000036] [cleveland] EXTRACTING
+[2026-08-15 05:55:17] [INFO   ] [KB-000036] [cleveland] CONVERTING
+[2026-08-15 05:55:17] [INFO   ] [KB-000036] [cleveland] VALIDATING
+[2026-08-15 05:55:17] [INFO   ] [KB-000036] [cleveland] COMPLETED — v1 (759 words)
+[2026-08-15 05:55:17] [INFO   ] [KB-000037] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:55:17] [INFO   ] [KB-000037] [mayo] RESOLVING — Topic: NAFLD / MASLD and Diabetes
+[2026-08-15 05:55:17] [INFO   ] [KB-000037] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567
+[2026-08-15 05:55:18] [INFO   ] [KB-000037] [mayo] EXTRACTING
+[2026-08-15 05:55:18] [INFO   ] [KB-000037] [mayo] CONVERTING
+[2026-08-15 05:55:18] [INFO   ] [KB-000037] [mayo] VALIDATING
+[2026-08-15 05:55:18] [INFO   ] [KB-000037] [mayo] COMPLETED — v1 (1001 words)
+[2026-08-15 05:55:18] [INFO   ] [KB-000037] [ada] RESOLVING — Topic: NAFLD / MASLD and Diabetes
+[2026-08-15 05:55:18] [INFO   ] [KB-000037] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-health
+[2026-08-15 05:55:19] [INFO   ] [KB-000037] [ada] EXTRACTING
+[2026-08-15 05:55:19] [INFO   ] [KB-000037] [ada] CONVERTING
+[2026-08-15 05:55:19] [INFO   ] [KB-000037] [ada] VALIDATING
+[2026-08-15 05:55:19] [INFO   ] [KB-000037] [ada] COMPLETED — v1 (292 words)
+[2026-08-15 05:55:19] [INFO   ] [KB-000038] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:19] [INFO   ] [KB-000038] [mayo] RESOLVING — Topic: Liver Function Test Panel
+[2026-08-15 05:55:19] [INFO   ] [KB-000038] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [mayo] EXTRACTING
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [mayo] CONVERTING
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [mayo] VALIDATING
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [mayo] COMPLETED — v1 (902 words)
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [cleveland] RESOLVING — Topic: Liver Function Test Panel
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17662-alt-blood-test
+[2026-08-15 05:55:20] [INFO   ] [KB-000038] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:20] [INFO   ] [KB-000039] [mayo] RESOLVING — Topic: HDL Cholesterol
+[2026-08-15 05:55:20] [INFO   ] [KB-000039] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/hdl-cholesterol/art-20046388
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [mayo] EXTRACTING
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [mayo] CONVERTING
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [mayo] VALIDATING
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [mayo] COMPLETED — v1 (1022 words)
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [ada] RESOLVING — Topic: HDL Cholesterol
+[2026-08-15 05:55:21] [INFO   ] [KB-000039] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:55:22] [INFO   ] [KB-000039] [ada] EXTRACTING
+[2026-08-15 05:55:22] [INFO   ] [KB-000039] [ada] CONVERTING
+[2026-08-15 05:55:22] [INFO   ] [KB-000039] [ada] VALIDATING
+[2026-08-15 05:55:22] [INFO   ] [KB-000039] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [mayo] RESOLVING — Topic: LDL Cholesterol
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/cholesterol/art-20045192
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [mayo] EXTRACTING
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [mayo] CONVERTING
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [mayo] VALIDATING
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [mayo] COMPLETED — v1 (943 words)
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [ada] RESOLVING — Topic: LDL Cholesterol
+[2026-08-15 05:55:23] [INFO   ] [KB-000040] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:55:25] [INFO   ] [KB-000040] [ada] EXTRACTING
+[2026-08-15 05:55:25] [INFO   ] [KB-000040] [ada] CONVERTING
+[2026-08-15 05:55:25] [INFO   ] [KB-000040] [ada] VALIDATING
+[2026-08-15 05:55:25] [INFO   ] [KB-000040] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:55:25] [INFO   ] [KB-000041] [cdc] RESOLVING — Topic: Total Cholesterol
+[2026-08-15 05:55:25] [INFO   ] [KB-000041] [cdc] DOWNLOADING — URL: https://www.cdc.gov/cholesterol/about/index.html
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [cdc] EXTRACTING
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [cdc] CONVERTING
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [cdc] VALIDATING
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [cdc] COMPLETED — v1 (758 words)
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [mayo] RESOLVING — Topic: Total Cholesterol
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [mayo] EXTRACTING
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [mayo] CONVERTING
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [mayo] VALIDATING
+[2026-08-15 05:55:27] [INFO   ] [KB-000041] [mayo] COMPLETED — v1 (1295 words)
+[2026-08-15 05:55:28] [INFO   ] [KB-000041] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:28] [INFO   ] [KB-000042] [mayo] RESOLVING — Topic: Triglycerides
+[2026-08-15 05:55:28] [INFO   ] [KB-000042] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/triglycerides/art-20048186
+[2026-08-15 05:55:28] [INFO   ] [KB-000042] [mayo] EXTRACTING
+[2026-08-15 05:55:28] [INFO   ] [KB-000042] [mayo] CONVERTING
+[2026-08-15 05:55:28] [INFO   ] [KB-000042] [mayo] VALIDATING
+[2026-08-15 05:55:28] [INFO   ] [KB-000042] [mayo] COMPLETED — v1 (1044 words)
+[2026-08-15 05:55:29] [INFO   ] [KB-000042] [cleveland] RESOLVING — Topic: Triglycerides
+[2026-08-15 05:55:29] [INFO   ] [KB-000042] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/articles/17583-triglycerides-high-triglycerides
+[2026-08-15 05:55:30] [INFO   ] [KB-000042] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:30] [INFO   ] [KB-000042] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:30] [INFO   ] [KB-000043] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:30] [INFO   ] [KB-000043] [cleveland] RESOLVING — Topic: VLDL Cholesterol
+[2026-08-15 05:55:30] [INFO   ] [KB-000043] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/articles/17583-triglycerides-high-triglycerides
+[2026-08-15 05:55:30] [INFO   ] [KB-000043] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:30] [INFO   ] [KB-000043] [mayo] RESOLVING — Topic: VLDL Cholesterol
+[2026-08-15 05:55:30] [INFO   ] [KB-000043] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/vldl-cholesterol/faq-20058275
+[2026-08-15 05:55:31] [INFO   ] [KB-000043] [mayo] EXTRACTING
+[2026-08-15 05:55:31] [INFO   ] [KB-000043] [mayo] CONVERTING
+[2026-08-15 05:55:31] [INFO   ] [KB-000043] [mayo] VALIDATING
+[2026-08-15 05:55:31] [INFO   ] [KB-000043] [mayo] COMPLETED — v1 (274 words)
+[2026-08-15 05:55:31] [INFO   ] [KB-000044] [medlineplus] RESOLVING — Topic: Apolipoprotein A1
+[2026-08-15 05:55:31] [INFO   ] [KB-000044] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/apolipoprotein-a1/
+[2026-08-15 05:55:34] [INFO   ] [KB-000044] [medlineplus] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:34] [INFO   ] [KB-000044] [cleveland] RESOLVING — Topic: Apolipoprotein A1
+[2026-08-15 05:55:34] [INFO   ] [KB-000044] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/16954-lipid-panel
+[2026-08-15 05:55:34] [INFO   ] [KB-000044] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:34] [INFO   ] [KB-000044] [mayo] RESOLVING — Topic: Apolipoprotein A1
+[2026-08-15 05:55:34] [INFO   ] [KB-000044] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601
+[2026-08-15 05:55:35] [INFO   ] [KB-000044] [mayo] EXTRACTING
+[2026-08-15 05:55:35] [INFO   ] [KB-000044] [mayo] CONVERTING
+[2026-08-15 05:55:35] [INFO   ] [KB-000044] [mayo] VALIDATING
+[2026-08-15 05:55:35] [INFO   ] [KB-000044] [mayo] COMPLETED — v1 (1295 words)
+[2026-08-15 05:55:35] [INFO   ] [KB-000045] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:35] [INFO   ] [KB-000045] [cleveland] RESOLVING — Topic: Apolipoprotein B
+[2026-08-15 05:55:35] [INFO   ] [KB-000045] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/16954-lipid-panel
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [mayo] RESOLVING — Topic: Apolipoprotein B
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [mayo] EXTRACTING
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [mayo] CONVERTING
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [mayo] VALIDATING
+[2026-08-15 05:55:36] [INFO   ] [KB-000045] [mayo] COMPLETED — v1 (1295 words)
+[2026-08-15 05:55:36] [INFO   ] [KB-000046] [cleveland] RESOLVING — Topic: Lipoprotein(a)
+[2026-08-15 05:55:36] [INFO   ] [KB-000046] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21980-lipoprotein-a-test
+[2026-08-15 05:55:37] [INFO   ] [KB-000046] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:37] [INFO   ] [KB-000046] [mayo] RESOLVING — Topic: Lipoprotein(a)
+[2026-08-15 05:55:37] [INFO   ] [KB-000046] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/lipoprotein-a/faq-20058451
+[2026-08-15 05:55:41] [INFO   ] [KB-000046] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:41] [INFO   ] [KB-000046] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [mayo] RESOLVING — Topic: Complete Lipid Panel
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [mayo] EXTRACTING
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [mayo] CONVERTING
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [mayo] VALIDATING
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [mayo] COMPLETED — v1 (1295 words)
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [cdc] RESOLVING — Topic: Complete Lipid Panel
+[2026-08-15 05:55:41] [INFO   ] [KB-000047] [cdc] DOWNLOADING — URL: https://www.cdc.gov/cholesterol/about/index.html
+[2026-08-15 05:55:42] [INFO   ] [KB-000047] [cdc] EXTRACTING
+[2026-08-15 05:55:42] [INFO   ] [KB-000047] [cdc] CONVERTING
+[2026-08-15 05:55:42] [INFO   ] [KB-000047] [cdc] VALIDATING
+[2026-08-15 05:55:42] [INFO   ] [KB-000047] [cdc] COMPLETED — v1 (758 words)
+[2026-08-15 05:55:42] [INFO   ] [KB-000048] [mayo] RESOLVING — Topic: Cholesterol Ratios
+[2026-08-15 05:55:42] [INFO   ] [KB-000048] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/cholesterol-ratio/faq-20058006
+[2026-08-15 05:55:43] [INFO   ] [KB-000048] [mayo] EXTRACTING
+[2026-08-15 05:55:43] [INFO   ] [KB-000048] [mayo] CONVERTING
+[2026-08-15 05:55:43] [INFO   ] [KB-000048] [mayo] VALIDATING
+[2026-08-15 05:55:43] [INFO   ] [KB-000048] [mayo] COMPLETED — v1 (281 words)
+[2026-08-15 05:55:43] [INFO   ] [KB-000048] [cleveland] RESOLVING — Topic: Cholesterol Ratios
+[2026-08-15 05:55:43] [INFO   ] [KB-000048] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/articles/17583-triglycerides-high-triglycerides
+[2026-08-15 05:55:44] [INFO   ] [KB-000048] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:44] [INFO   ] [KB-000048] [ada] RESOLVING — Topic: Cholesterol Ratios
+[2026-08-15 05:55:44] [INFO   ] [KB-000048] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:55:45] [INFO   ] [KB-000048] [ada] EXTRACTING
+[2026-08-15 05:55:45] [INFO   ] [KB-000048] [ada] CONVERTING
+[2026-08-15 05:55:45] [INFO   ] [KB-000048] [ada] VALIDATING
+[2026-08-15 05:55:45] [INFO   ] [KB-000048] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:55:45] [INFO   ] [KB-000049] [mayo] RESOLVING — Topic: Vitamin D
+[2026-08-15 05:55:45] [INFO   ] [KB-000049] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/drugs-supplements-vitamin-d/art-20363792
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [mayo] EXTRACTING
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [mayo] CONVERTING
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [mayo] VALIDATING
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [mayo] COMPLETED — v1 (1093 words)
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [cleveland] RESOLVING — Topic: Vitamin D
+[2026-08-15 05:55:46] [INFO   ] [KB-000049] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21112-vitamin-d-deficiency
+[2026-08-15 05:55:47] [INFO   ] [KB-000049] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [mayo] RESOLVING — Topic: Vitamin B12
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/drugs-supplements-vitamin-b12/art-20363663
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [mayo] EXTRACTING
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [mayo] CONVERTING
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [mayo] VALIDATING
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [mayo] COMPLETED — v1 (731 words)
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [cleveland] RESOLVING — Topic: Vitamin B12
+[2026-08-15 05:55:47] [INFO   ] [KB-000050] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21112-vitamin-d-deficiency
+[2026-08-15 05:55:48] [INFO   ] [KB-000050] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [mayo] RESOLVING — Topic: Folate (Vitamin B9)
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/drugs-supplements-folate/art-20364625
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [mayo] EXTRACTING
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [mayo] CONVERTING
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [mayo] VALIDATING
+[2026-08-15 05:55:48] [INFO   ] [KB-000051] [mayo] COMPLETED — v1 (780 words)
+[2026-08-15 05:55:49] [INFO   ] [KB-000051] [cleveland] RESOLVING — Topic: Folate (Vitamin B9)
+[2026-08-15 05:55:49] [INFO   ] [KB-000051] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21112-vitamin-d-deficiency
+[2026-08-15 05:55:49] [INFO   ] [KB-000051] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [mayo] RESOLVING — Topic: Iron Studies (Serum Iron, Ferritin, TIBC)
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/ferritin-test/about/pac-20384928
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [mayo] EXTRACTING
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [mayo] CONVERTING
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [mayo] VALIDATING
+[2026-08-15 05:55:49] [INFO   ] [KB-000052] [mayo] COMPLETED — v1 (504 words)
+[2026-08-15 05:55:50] [INFO   ] [KB-000052] [cleveland] RESOLVING — Topic: Iron Studies (Serum Iron, Ferritin, TIBC)
+[2026-08-15 05:55:50] [INFO   ] [KB-000052] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17812-ferritin-test
+[2026-08-15 05:55:50] [INFO   ] [KB-000052] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:50] [INFO   ] [KB-000053] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:50] [INFO   ] [KB-000053] [mayo] RESOLVING — Topic: Magnesium
+[2026-08-15 05:55:50] [INFO   ] [KB-000053] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/drugs-supplements-magnesium-supplement/art-20364673
+[2026-08-15 05:55:54] [INFO   ] [KB-000053] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:54] [INFO   ] [KB-000053] [cleveland] RESOLVING — Topic: Magnesium
+[2026-08-15 05:55:54] [INFO   ] [KB-000053] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21790-basic-metabolic-panel-bmp
+[2026-08-15 05:55:55] [INFO   ] [KB-000053] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [mayo] RESOLVING — Topic: Complete Blood Count (CBC)
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [mayo] EXTRACTING
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [mayo] CONVERTING
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [mayo] VALIDATING
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [mayo] COMPLETED — v1 (1371 words)
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [cleveland] RESOLVING — Topic: Complete Blood Count (CBC)
+[2026-08-15 05:55:55] [INFO   ] [KB-000054] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count
+[2026-08-15 05:55:56] [INFO   ] [KB-000054] [cleveland] EXTRACTING
+[2026-08-15 05:55:56] [INFO   ] [KB-000054] [cleveland] CONVERTING
+[2026-08-15 05:55:56] [INFO   ] [KB-000054] [cleveland] VALIDATING
+[2026-08-15 05:55:56] [INFO   ] [KB-000054] [cleveland] COMPLETED — v1 (1509 words)
+[2026-08-15 05:55:56] [INFO   ] [KB-000055] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:56] [INFO   ] [KB-000055] [mayo] RESOLVING — Topic: Hemoglobin
+[2026-08-15 05:55:56] [INFO   ] [KB-000055] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/hemoglobin-test/about/pac-20385075
+[2026-08-15 05:55:57] [INFO   ] [KB-000055] [mayo] EXTRACTING
+[2026-08-15 05:55:57] [INFO   ] [KB-000055] [mayo] CONVERTING
+[2026-08-15 05:55:57] [INFO   ] [KB-000055] [mayo] VALIDATING
+[2026-08-15 05:55:57] [INFO   ] [KB-000055] [mayo] COMPLETED — v1 (836 words)
+[2026-08-15 05:55:57] [INFO   ] [KB-000055] [cleveland] RESOLVING — Topic: Hemoglobin
+[2026-08-15 05:55:57] [INFO   ] [KB-000055] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count
+[2026-08-15 05:55:58] [INFO   ] [KB-000055] [cleveland] EXTRACTING
+[2026-08-15 05:55:58] [INFO   ] [KB-000055] [cleveland] CONVERTING
+[2026-08-15 05:55:58] [INFO   ] [KB-000055] [cleveland] VALIDATING
+[2026-08-15 05:55:58] [INFO   ] [KB-000055] [cleveland] COMPLETED — v1 (1509 words)
+[2026-08-15 05:55:58] [INFO   ] [KB-000056] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:55:58] [INFO   ] [KB-000056] [mayo] RESOLVING — Topic: Hematocrit
+[2026-08-15 05:55:58] [INFO   ] [KB-000056] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/hematocrit/about/pac-20385282
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [mayo] EXTRACTING
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [mayo] CONVERTING
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [mayo] VALIDATING
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [mayo] COMPLETED — v1 (1665 words)
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [cleveland] RESOLVING — Topic: Hematocrit
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [cleveland] EXTRACTING
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [cleveland] CONVERTING
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [cleveland] VALIDATING
+[2026-08-15 05:55:59] [INFO   ] [KB-000056] [cleveland] COMPLETED — v1 (1509 words)
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [cleveland] RESOLVING — Topic: Red Blood Cell Count
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [cleveland] EXTRACTING
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [cleveland] CONVERTING
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [cleveland] VALIDATING
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [cleveland] COMPLETED — v1 (1509 words)
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [mayo] RESOLVING — Topic: Red Blood Cell Count
+[2026-08-15 05:56:00] [INFO   ] [KB-000057] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919
+[2026-08-15 05:56:01] [INFO   ] [KB-000057] [mayo] EXTRACTING
+[2026-08-15 05:56:01] [INFO   ] [KB-000057] [mayo] CONVERTING
+[2026-08-15 05:56:01] [INFO   ] [KB-000057] [mayo] VALIDATING
+[2026-08-15 05:56:01] [INFO   ] [KB-000057] [mayo] COMPLETED — v1 (1371 words)
+[2026-08-15 05:56:01] [INFO   ] [KB-000058] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:01] [INFO   ] [KB-000058] [cleveland] RESOLVING — Topic: White Blood Cell Count
+[2026-08-15 05:56:01] [INFO   ] [KB-000058] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count
+[2026-08-15 05:56:01] [INFO   ] [KB-000058] [cleveland] EXTRACTING
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [cleveland] CONVERTING
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [cleveland] VALIDATING
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [cleveland] COMPLETED — v1 (1509 words)
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [mayo] RESOLVING — Topic: White Blood Cell Count
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [mayo] EXTRACTING
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [mayo] CONVERTING
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [mayo] VALIDATING
+[2026-08-15 05:56:02] [INFO   ] [KB-000058] [mayo] COMPLETED — v1 (1371 words)
+[2026-08-15 05:56:02] [INFO   ] [KB-000059] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:02] [INFO   ] [KB-000059] [mayo] RESOLVING — Topic: Platelet Count
+[2026-08-15 05:56:02] [INFO   ] [KB-000059] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919
+[2026-08-15 05:56:03] [INFO   ] [KB-000059] [mayo] EXTRACTING
+[2026-08-15 05:56:03] [INFO   ] [KB-000059] [mayo] CONVERTING
+[2026-08-15 05:56:03] [INFO   ] [KB-000059] [mayo] VALIDATING
+[2026-08-15 05:56:03] [INFO   ] [KB-000059] [mayo] COMPLETED — v1 (1371 words)
+[2026-08-15 05:56:03] [INFO   ] [KB-000059] [cleveland] RESOLVING — Topic: Platelet Count
+[2026-08-15 05:56:03] [INFO   ] [KB-000059] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count
+[2026-08-15 05:56:04] [INFO   ] [KB-000059] [cleveland] EXTRACTING
+[2026-08-15 05:56:04] [INFO   ] [KB-000059] [cleveland] CONVERTING
+[2026-08-15 05:56:04] [INFO   ] [KB-000059] [cleveland] VALIDATING
+[2026-08-15 05:56:04] [INFO   ] [KB-000059] [cleveland] COMPLETED — v1 (1509 words)
+[2026-08-15 05:56:04] [INFO   ] [KB-000060] [mayo] RESOLVING — Topic: Anemia
+[2026-08-15 05:56:04] [INFO   ] [KB-000060] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/anemia/symptoms-causes/syc-20351360
+[2026-08-15 05:56:05] [INFO   ] [KB-000060] [mayo] EXTRACTING
+[2026-08-15 05:56:05] [INFO   ] [KB-000060] [mayo] CONVERTING
+[2026-08-15 05:56:05] [INFO   ] [KB-000060] [mayo] VALIDATING
+[2026-08-15 05:56:05] [INFO   ] [KB-000060] [mayo] COMPLETED — v1 (1298 words)
+[2026-08-15 05:56:05] [INFO   ] [KB-000060] [medlineplus] RESOLVING — Topic: Anemia
+[2026-08-15 05:56:05] [INFO   ] [KB-000060] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/anemia.html
+[2026-08-15 05:56:06] [INFO   ] [KB-000060] [medlineplus] EXTRACTING
+[2026-08-15 05:56:06] [INFO   ] [KB-000060] [medlineplus] CONVERTING
+[2026-08-15 05:56:06] [INFO   ] [KB-000060] [medlineplus] VALIDATING
+[2026-08-15 05:56:06] [INFO   ] [KB-000060] [medlineplus] COMPLETED — v1 (1015 words)
+[2026-08-15 05:56:06] [INFO   ] [KB-000060] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:56:06] [INFO   ] [KB-000061] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:06] [INFO   ] [KB-000061] [mayo] RESOLVING — Topic: ESR (Erythrocyte Sedimentation Rate)
+[2026-08-15 05:56:06] [INFO   ] [KB-000061] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/sed-rate/about/pac-20384797
+[2026-08-15 05:56:07] [INFO   ] [KB-000061] [mayo] EXTRACTING
+[2026-08-15 05:56:07] [INFO   ] [KB-000061] [mayo] CONVERTING
+[2026-08-15 05:56:07] [INFO   ] [KB-000061] [mayo] VALIDATING
+[2026-08-15 05:56:07] [INFO   ] [KB-000061] [mayo] COMPLETED — v1 (487 words)
+[2026-08-15 05:56:07] [INFO   ] [KB-000061] [cleveland] RESOLVING — Topic: ESR (Erythrocyte Sedimentation Rate)
+[2026-08-15 05:56:07] [INFO   ] [KB-000061] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17820-erythrocyte-sedimentation-rate-esr
+[2026-08-15 05:56:08] [INFO   ] [KB-000061] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [mayo] RESOLVING — Topic: CRP / hs-CRP (C-Reactive Protein)
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/c-reactive-protein-test/about/pac-20385228
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [mayo] EXTRACTING
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [mayo] CONVERTING
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [mayo] VALIDATING
+[2026-08-15 05:56:08] [INFO   ] [KB-000062] [mayo] COMPLETED — v1 (747 words)
+[2026-08-15 05:56:09] [INFO   ] [KB-000062] [cleveland] RESOLVING — Topic: CRP / hs-CRP (C-Reactive Protein)
+[2026-08-15 05:56:09] [INFO   ] [KB-000062] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21980-c-reactive-protein-crp-test
+[2026-08-15 05:56:09] [INFO   ] [KB-000062] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:09] [INFO   ] [KB-000063] [mayo] RESOLVING — Topic: TSH (Thyroid Stimulating Hormone)
+[2026-08-15 05:56:09] [INFO   ] [KB-000063] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [mayo] EXTRACTING
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [mayo] CONVERTING
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [mayo] VALIDATING
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [cleveland] RESOLVING — Topic: TSH (Thyroid Stimulating Hormone)
+[2026-08-15 05:56:10] [INFO   ] [KB-000063] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17556-thyroid-stimulating-hormone-tsh-test
+[2026-08-15 05:56:11] [INFO   ] [KB-000063] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:11] [INFO   ] [KB-000064] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:11] [INFO   ] [KB-000064] [mayo] RESOLVING — Topic: T3 (Triiodothyronine)
+[2026-08-15 05:56:11] [INFO   ] [KB-000064] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [mayo] EXTRACTING
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [mayo] CONVERTING
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [mayo] VALIDATING
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [cleveland] RESOLVING — Topic: T3 (Triiodothyronine)
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17556-thyroid-stimulating-hormone-tsh-test
+[2026-08-15 05:56:12] [INFO   ] [KB-000064] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:12] [INFO   ] [KB-000065] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:12] [INFO   ] [KB-000065] [mayo] RESOLVING — Topic: T4 (Thyroxine)
+[2026-08-15 05:56:12] [INFO   ] [KB-000065] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [mayo] EXTRACTING
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [mayo] CONVERTING
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [mayo] VALIDATING
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [cleveland] RESOLVING — Topic: T4 (Thyroxine)
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17556-thyroid-stimulating-hormone-tsh-test
+[2026-08-15 05:56:13] [INFO   ] [KB-000065] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:13] [INFO   ] [KB-000066] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:13] [INFO   ] [KB-000066] [mayo] RESOLVING — Topic: Thyroid Antibodies (TPO, TgAb)
+[2026-08-15 05:56:13] [INFO   ] [KB-000066] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 05:56:14] [INFO   ] [KB-000066] [mayo] EXTRACTING
+[2026-08-15 05:56:14] [INFO   ] [KB-000066] [mayo] CONVERTING
+[2026-08-15 05:56:14] [INFO   ] [KB-000066] [mayo] VALIDATING
+[2026-08-15 05:56:14] [INFO   ] [KB-000066] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 05:56:14] [INFO   ] [KB-000066] [cleveland] RESOLVING — Topic: Thyroid Antibodies (TPO, TgAb)
+[2026-08-15 05:56:14] [INFO   ] [KB-000066] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/17556-thyroid-stimulating-hormone-tsh-test
+[2026-08-15 05:56:15] [INFO   ] [KB-000066] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [mayo] RESOLVING — Topic: Hypothyroidism
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/hypothyroidism/symptoms-causes/syc-20350284
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [mayo] EXTRACTING
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [mayo] CONVERTING
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [mayo] VALIDATING
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [mayo] COMPLETED — v1 (1291 words)
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [cleveland] RESOLVING — Topic: Hypothyroidism
+[2026-08-15 05:56:15] [INFO   ] [KB-000067] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/12120-hypothyroidism
+[2026-08-15 05:56:16] [INFO   ] [KB-000067] [cleveland] EXTRACTING
+[2026-08-15 05:56:16] [INFO   ] [KB-000067] [cleveland] CONVERTING
+[2026-08-15 05:56:16] [INFO   ] [KB-000067] [cleveland] VALIDATING
+[2026-08-15 05:56:16] [INFO   ] [KB-000067] [cleveland] COMPLETED — v1 (1167 words)
+[2026-08-15 05:56:16] [INFO   ] [KB-000068] [mayo] RESOLVING — Topic: Hyperthyroidism
+[2026-08-15 05:56:16] [INFO   ] [KB-000068] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/hyperthyroidism/symptoms-causes/syc-20373659
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [mayo] EXTRACTING
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [mayo] CONVERTING
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [mayo] VALIDATING
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [mayo] COMPLETED — v1 (889 words)
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [cleveland] RESOLVING — Topic: Hyperthyroidism
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/14129-hyperthyroidism
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [cleveland] EXTRACTING
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [cleveland] CONVERTING
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [cleveland] VALIDATING
+[2026-08-15 05:56:17] [INFO   ] [KB-000068] [cleveland] COMPLETED — v1 (1074 words)
+[2026-08-15 05:56:18] [INFO   ] [KB-000069] [ada] RESOLVING — Topic: Diabetes and Thyroid Disease
+[2026-08-15 05:56:18] [INFO   ] [KB-000069] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-health
+[2026-08-15 05:56:19] [INFO   ] [KB-000069] [ada] EXTRACTING
+[2026-08-15 05:56:19] [INFO   ] [KB-000069] [ada] CONVERTING
+[2026-08-15 05:56:19] [INFO   ] [KB-000069] [ada] VALIDATING
+[2026-08-15 05:56:19] [INFO   ] [KB-000069] [ada] COMPLETED — v1 (292 words)
+[2026-08-15 05:56:19] [INFO   ] [KB-000069] [mayo] RESOLVING — Topic: Diabetes and Thyroid Disease
+[2026-08-15 05:56:19] [INFO   ] [KB-000069] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [mayo] EXTRACTING
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [mayo] CONVERTING
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [mayo] VALIDATING
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [mayo] COMPLETED — v1 (1492 words)
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [cleveland] RESOLVING — Topic: Diabetes and Thyroid Disease
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/12120-hypothyroidism
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [cleveland] EXTRACTING
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [cleveland] CONVERTING
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [cleveland] VALIDATING
+[2026-08-15 05:56:20] [INFO   ] [KB-000069] [cleveland] COMPLETED — v1 (1167 words)
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [cdc] RESOLVING — Topic: Heart Disease and Diabetes
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-heart.html
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [cdc] EXTRACTING
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [cdc] CONVERTING
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [cdc] VALIDATING
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [cdc] COMPLETED — v1 (778 words)
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [ada] RESOLVING — Topic: Heart Disease and Diabetes
+[2026-08-15 05:56:21] [INFO   ] [KB-000070] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart/diabetes-affect-your-heart
+[2026-08-15 05:56:22] [INFO   ] [KB-000070] [ada] EXTRACTING
+[2026-08-15 05:56:22] [INFO   ] [KB-000070] [ada] CONVERTING
+[2026-08-15 05:56:22] [INFO   ] [KB-000070] [ada] VALIDATING
+[2026-08-15 05:56:22] [INFO   ] [KB-000070] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:56:22] [INFO   ] [KB-000070] [mayo] RESOLVING — Topic: Heart Disease and Diabetes
+[2026-08-15 05:56:22] [INFO   ] [KB-000070] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118
+[2026-08-15 05:56:23] [INFO   ] [KB-000070] [mayo] EXTRACTING
+[2026-08-15 05:56:23] [INFO   ] [KB-000070] [mayo] CONVERTING
+[2026-08-15 05:56:23] [INFO   ] [KB-000070] [mayo] VALIDATING
+[2026-08-15 05:56:23] [INFO   ] [KB-000070] [mayo] COMPLETED — v1 (2654 words)
+[2026-08-15 05:56:23] [INFO   ] [KB-000071] [cdc] RESOLVING — Topic: Hypertension (High Blood Pressure)
+[2026-08-15 05:56:23] [INFO   ] [KB-000071] [cdc] DOWNLOADING — URL: https://www.cdc.gov/high-blood-pressure/about/index.html
+[2026-08-15 05:56:24] [INFO   ] [KB-000071] [cdc] EXTRACTING
+[2026-08-15 05:56:24] [INFO   ] [KB-000071] [cdc] CONVERTING
+[2026-08-15 05:56:24] [INFO   ] [KB-000071] [cdc] VALIDATING
+[2026-08-15 05:56:24] [INFO   ] [KB-000071] [cdc] COMPLETED — v1 (966 words)
+[2026-08-15 05:56:24] [INFO   ] [KB-000071] [mayo] RESOLVING — Topic: Hypertension (High Blood Pressure)
+[2026-08-15 05:56:24] [INFO   ] [KB-000071] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/symptoms-causes/syc-20373410
+[2026-08-15 05:56:25] [INFO   ] [KB-000071] [mayo] EXTRACTING
+[2026-08-15 05:56:25] [INFO   ] [KB-000071] [mayo] CONVERTING
+[2026-08-15 05:56:25] [INFO   ] [KB-000071] [mayo] VALIDATING
+[2026-08-15 05:56:25] [INFO   ] [KB-000071] [mayo] COMPLETED — v1 (1476 words)
+[2026-08-15 05:56:25] [INFO   ] [KB-000071] [ada] RESOLVING — Topic: Hypertension (High Blood Pressure)
+[2026-08-15 05:56:25] [INFO   ] [KB-000071] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:56:26] [INFO   ] [KB-000071] [ada] EXTRACTING
+[2026-08-15 05:56:26] [INFO   ] [KB-000071] [ada] CONVERTING
+[2026-08-15 05:56:26] [INFO   ] [KB-000071] [ada] VALIDATING
+[2026-08-15 05:56:26] [INFO   ] [KB-000071] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:56:26] [INFO   ] [KB-000072] [cdc] RESOLVING — Topic: Stroke and Diabetes
+[2026-08-15 05:56:26] [INFO   ] [KB-000072] [cdc] DOWNLOADING — URL: https://www.cdc.gov/stroke/about/index.html
+[2026-08-15 05:56:26] [INFO   ] [KB-000072] [cdc] EXTRACTING
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [cdc] CONVERTING
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [cdc] VALIDATING
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [cdc] COMPLETED — v1 (641 words)
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [mayo] RESOLVING — Topic: Stroke and Diabetes
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [mayo] EXTRACTING
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [mayo] CONVERTING
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [mayo] VALIDATING
+[2026-08-15 05:56:27] [INFO   ] [KB-000072] [mayo] COMPLETED — v1 (768 words)
+[2026-08-15 05:56:28] [INFO   ] [KB-000072] [ada] RESOLVING — Topic: Stroke and Diabetes
+[2026-08-15 05:56:28] [INFO   ] [KB-000072] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:56:29] [INFO   ] [KB-000072] [ada] EXTRACTING
+[2026-08-15 05:56:29] [INFO   ] [KB-000072] [ada] CONVERTING
+[2026-08-15 05:56:29] [INFO   ] [KB-000072] [ada] VALIDATING
+[2026-08-15 05:56:29] [INFO   ] [KB-000072] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:56:29] [INFO   ] [KB-000073] [cleveland] RESOLVING — Topic: Peripheral Artery Disease (PAD)
+[2026-08-15 05:56:29] [INFO   ] [KB-000073] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17357-peripheral-artery-disease-pad
+[2026-08-15 05:56:29] [INFO   ] [KB-000073] [cleveland] EXTRACTING
+[2026-08-15 05:56:29] [INFO   ] [KB-000073] [cleveland] CONVERTING
+[2026-08-15 05:56:29] [INFO   ] [KB-000073] [cleveland] VALIDATING
+[2026-08-15 05:56:29] [INFO   ] [KB-000073] [cleveland] COMPLETED — v1 (1291 words)
+[2026-08-15 05:56:30] [INFO   ] [KB-000073] [ada] RESOLVING — Topic: Peripheral Artery Disease (PAD)
+[2026-08-15 05:56:30] [INFO   ] [KB-000073] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [ada] EXTRACTING
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [ada] CONVERTING
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [ada] VALIDATING
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [mayo] RESOLVING — Topic: Peripheral Artery Disease (PAD)
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/peripheral-artery-disease/symptoms-causes/syc-20350557
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [mayo] EXTRACTING
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [mayo] CONVERTING
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [mayo] VALIDATING
+[2026-08-15 05:56:31] [INFO   ] [KB-000073] [mayo] COMPLETED — v1 (703 words)
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [mayo] RESOLVING — Topic: Atherosclerosis
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [mayo] EXTRACTING
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [mayo] CONVERTING
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [mayo] VALIDATING
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [mayo] COMPLETED — v1 (955 words)
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [cleveland] RESOLVING — Topic: Atherosclerosis
+[2026-08-15 05:56:32] [INFO   ] [KB-000074] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/16753-atherosclerosis
+[2026-08-15 05:56:33] [INFO   ] [KB-000074] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:33] [INFO   ] [KB-000074] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:33] [INFO   ] [KB-000075] [mayo] RESOLVING — Topic: Heart Failure and Diabetes
+[2026-08-15 05:56:33] [INFO   ] [KB-000075] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/heart-failure/symptoms-causes/syc-20373142
+[2026-08-15 05:56:34] [INFO   ] [KB-000075] [mayo] EXTRACTING
+[2026-08-15 05:56:34] [INFO   ] [KB-000075] [mayo] CONVERTING
+[2026-08-15 05:56:34] [INFO   ] [KB-000075] [mayo] VALIDATING
+[2026-08-15 05:56:34] [INFO   ] [KB-000075] [mayo] COMPLETED — v1 (1819 words)
+[2026-08-15 05:56:34] [INFO   ] [KB-000075] [cleveland] RESOLVING — Topic: Heart Failure and Diabetes
+[2026-08-15 05:56:34] [INFO   ] [KB-000075] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/17069-heart-failure
+[2026-08-15 05:56:35] [INFO   ] [KB-000075] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:56:35] [INFO   ] [KB-000075] [ada] RESOLVING — Topic: Heart Failure and Diabetes
+[2026-08-15 05:56:35] [INFO   ] [KB-000075] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:56:36] [INFO   ] [KB-000075] [ada] EXTRACTING
+[2026-08-15 05:56:36] [INFO   ] [KB-000075] [ada] CONVERTING
+[2026-08-15 05:56:36] [INFO   ] [KB-000075] [ada] VALIDATING
+[2026-08-15 05:56:36] [INFO   ] [KB-000075] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:56:36] [INFO   ] [KB-000076] [ada] RESOLVING — Topic: Diabetic Neuropathy
+[2026-08-15 05:56:36] [INFO   ] [KB-000076] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/complications
+[2026-08-15 05:56:37] [INFO   ] [KB-000076] [ada] EXTRACTING
+[2026-08-15 05:56:37] [INFO   ] [KB-000076] [ada] CONVERTING
+[2026-08-15 05:56:37] [INFO   ] [KB-000076] [ada] VALIDATING
+[2026-08-15 05:56:37] [INFO   ] [KB-000076] [ada] COMPLETED — v1 (610 words)
+[2026-08-15 05:56:37] [INFO   ] [KB-000076] [mayo] RESOLVING — Topic: Diabetic Neuropathy
+[2026-08-15 05:56:37] [INFO   ] [KB-000076] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-neuropathy/symptoms-causes/syc-20371580
+[2026-08-15 05:56:38] [INFO   ] [KB-000076] [mayo] EXTRACTING
+[2026-08-15 05:56:38] [INFO   ] [KB-000076] [mayo] CONVERTING
+[2026-08-15 05:56:38] [INFO   ] [KB-000076] [mayo] VALIDATING
+[2026-08-15 05:56:38] [INFO   ] [KB-000076] [mayo] COMPLETED — v1 (1926 words)
+[2026-08-15 05:56:38] [INFO   ] [KB-000076] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:56:38] [INFO   ] [KB-000077] [ada] RESOLVING — Topic: Diabetic Retinopathy
+[2026-08-15 05:56:38] [INFO   ] [KB-000077] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/eye-health
+[2026-08-15 05:56:39] [INFO   ] [KB-000077] [ada] EXTRACTING
+[2026-08-15 05:56:39] [INFO   ] [KB-000077] [ada] CONVERTING
+[2026-08-15 05:56:39] [INFO   ] [KB-000077] [ada] VALIDATING
+[2026-08-15 05:56:39] [INFO   ] [KB-000077] [ada] COMPLETED — v1 (927 words)
+[2026-08-15 05:56:39] [INFO   ] [KB-000077] [mayo] RESOLVING — Topic: Diabetic Retinopathy
+[2026-08-15 05:56:39] [INFO   ] [KB-000077] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-retinopathy/symptoms-causes/syc-20371611
+[2026-08-15 05:56:40] [INFO   ] [KB-000077] [mayo] EXTRACTING
+[2026-08-15 05:56:40] [INFO   ] [KB-000077] [mayo] CONVERTING
+[2026-08-15 05:56:40] [INFO   ] [KB-000077] [mayo] VALIDATING
+[2026-08-15 05:56:40] [INFO   ] [KB-000077] [mayo] COMPLETED — v1 (1115 words)
+[2026-08-15 05:56:40] [INFO   ] [KB-000077] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:56:40] [INFO   ] [KB-000078] [ada] RESOLVING — Topic: Diabetic Nephropathy
+[2026-08-15 05:56:40] [INFO   ] [KB-000078] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/kidney-care
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [ada] EXTRACTING
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [ada] CONVERTING
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [ada] VALIDATING
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [ada] COMPLETED — v1 (1062 words)
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [mayo] RESOLVING — Topic: Diabetic Nephropathy
+[2026-08-15 05:56:41] [INFO   ] [KB-000078] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556
+[2026-08-15 05:56:42] [INFO   ] [KB-000078] [mayo] EXTRACTING
+[2026-08-15 05:56:42] [INFO   ] [KB-000078] [mayo] CONVERTING
+[2026-08-15 05:56:42] [INFO   ] [KB-000078] [mayo] VALIDATING
+[2026-08-15 05:56:42] [INFO   ] [KB-000078] [mayo] COMPLETED — v1 (1040 words)
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [cdc] RESOLVING — Topic: Diabetic Foot
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [cdc] EXTRACTING
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [cdc] CONVERTING
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [cdc] VALIDATING
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [cdc] COMPLETED — v1 (878 words)
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [ada] RESOLVING — Topic: Diabetic Foot
+[2026-08-15 05:56:42] [INFO   ] [KB-000079] [ada] DOWNLOADING — URL: https://diabetes.org/diabetes-and-your-feet
+[2026-08-15 05:56:44] [INFO   ] [KB-000079] [ada] EXTRACTING
+[2026-08-15 05:56:44] [INFO   ] [KB-000079] [ada] CONVERTING
+[2026-08-15 05:56:44] [INFO   ] [KB-000079] [ada] VALIDATING
+[2026-08-15 05:56:44] [INFO   ] [KB-000079] [ada] COMPLETED — v1 (1110 words)
+[2026-08-15 05:56:44] [INFO   ] [KB-000079] [mayo] RESOLVING — Topic: Diabetic Foot
+[2026-08-15 05:56:44] [INFO   ] [KB-000079] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/amputation-and-diabetes/art-20045762
+[2026-08-15 05:56:45] [INFO   ] [KB-000079] [mayo] EXTRACTING
+[2026-08-15 05:56:45] [INFO   ] [KB-000079] [mayo] CONVERTING
+[2026-08-15 05:56:45] [INFO   ] [KB-000079] [mayo] VALIDATING
+[2026-08-15 05:56:45] [INFO   ] [KB-000079] [mayo] COMPLETED — v1 (797 words)
+[2026-08-15 05:56:45] [INFO   ] [KB-000080] [ada] RESOLVING — Topic: Diabetic Foot Care
+[2026-08-15 05:56:45] [INFO   ] [KB-000080] [ada] DOWNLOADING — URL: https://diabetes.org/diabetes-and-your-feet
+[2026-08-15 05:56:47] [INFO   ] [KB-000080] [ada] EXTRACTING
+[2026-08-15 05:56:47] [INFO   ] [KB-000080] [ada] CONVERTING
+[2026-08-15 05:56:47] [INFO   ] [KB-000080] [ada] VALIDATING
+[2026-08-15 05:56:47] [INFO   ] [KB-000080] [ada] COMPLETED — v1 (1110 words)
+[2026-08-15 05:56:47] [INFO   ] [KB-000080] [cdc] RESOLVING — Topic: Diabetic Foot Care
+[2026-08-15 05:56:47] [INFO   ] [KB-000080] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [cdc] EXTRACTING
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [cdc] CONVERTING
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [cdc] VALIDATING
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [cdc] COMPLETED — v1 (878 words)
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [mayo] RESOLVING — Topic: Diabetic Foot Care
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/amputation-and-diabetes/art-20045762
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [mayo] EXTRACTING
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [mayo] CONVERTING
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [mayo] VALIDATING
+[2026-08-15 05:56:48] [INFO   ] [KB-000080] [mayo] COMPLETED — v1 (797 words)
+[2026-08-15 05:56:49] [INFO   ] [KB-000081] [ada] RESOLVING — Topic: Diabetic Ketoacidosis (DKA)
+[2026-08-15 05:56:49] [INFO   ] [KB-000081] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/complications
+[2026-08-15 05:56:49] [INFO   ] [KB-000081] [ada] EXTRACTING
+[2026-08-15 05:56:49] [INFO   ] [KB-000081] [ada] CONVERTING
+[2026-08-15 05:56:49] [INFO   ] [KB-000081] [ada] VALIDATING
+[2026-08-15 05:56:49] [INFO   ] [KB-000081] [ada] COMPLETED — v1 (610 words)
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [mayo] RESOLVING — Topic: Diabetic Ketoacidosis (DKA)
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/symptoms-causes/syc-20371551
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [mayo] EXTRACTING
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [mayo] CONVERTING
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [mayo] VALIDATING
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [mayo] COMPLETED — v1 (1127 words)
+[2026-08-15 05:56:50] [INFO   ] [KB-000081] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 05:56:50] [INFO   ] [KB-000082] [ada] RESOLVING — Topic: Hyperosmolar Hyperglycemic Syndrome (HHS)
+[2026-08-15 05:56:50] [INFO   ] [KB-000082] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/complications
+[2026-08-15 05:56:51] [INFO   ] [KB-000082] [ada] EXTRACTING
+[2026-08-15 05:56:51] [INFO   ] [KB-000082] [ada] CONVERTING
+[2026-08-15 05:56:51] [INFO   ] [KB-000082] [ada] VALIDATING
+[2026-08-15 05:56:51] [INFO   ] [KB-000082] [ada] COMPLETED — v1 (610 words)
+[2026-08-15 05:56:51] [INFO   ] [KB-000082] [mayo] RESOLVING — Topic: Hyperosmolar Hyperglycemic Syndrome (HHS)
+[2026-08-15 05:56:51] [INFO   ] [KB-000082] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-hyperosmolar-syndrome/symptoms-causes/syc-20371565
+[2026-08-15 05:56:54] [WARNING] Download aborted for https://www.mayoclinic.org/diseases-conditions/diabetic-hyperosmolar-syndrome/symptoms-causes/syc-20371565: BLOCKED_403
+[2026-08-15 05:56:54] [INFO   ] [KB-000082] [mayo] FAILED — Download error: BLOCKED_403
+[2026-08-15 05:56:54] [INFO   ] [KB-000082] [cleveland] RESOLVING — Topic: Hyperosmolar Hyperglycemic Syndrome (HHS)
+[2026-08-15 05:56:54] [INFO   ] [KB-000082] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes
+[2026-08-15 05:56:55] [INFO   ] [KB-000082] [cleveland] EXTRACTING
+[2026-08-15 05:56:55] [INFO   ] [KB-000082] [cleveland] CONVERTING
+[2026-08-15 05:56:55] [INFO   ] [KB-000082] [cleveland] VALIDATING
+[2026-08-15 05:56:55] [INFO   ] [KB-000082] [cleveland] COMPLETED — v1 (1279 words)
+[2026-08-15 05:56:55] [INFO   ] [KB-000083] [ada] RESOLVING — Topic: Hypoglycemia (Low Blood Sugar)
+[2026-08-15 05:56:55] [INFO   ] [KB-000083] [ada] DOWNLOADING — URL: https://diabetes.org/living-with-diabetes/hypoglycemia-low-blood-glucose
+[2026-08-15 05:56:56] [INFO   ] [KB-000083] [ada] EXTRACTING
+[2026-08-15 05:56:56] [INFO   ] [KB-000083] [ada] CONVERTING
+[2026-08-15 05:56:56] [INFO   ] [KB-000083] [ada] VALIDATING
+[2026-08-15 05:56:56] [INFO   ] [KB-000083] [ada] COMPLETED — v1 (355 words)
+[2026-08-15 05:56:56] [INFO   ] [KB-000083] [cdc] RESOLVING — Topic: Hypoglycemia (Low Blood Sugar)
+[2026-08-15 05:56:56] [INFO   ] [KB-000083] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/signs-symptoms/index.html
+[2026-08-15 05:56:57] [INFO   ] [KB-000083] [cdc] EXTRACTING
+[2026-08-15 05:56:57] [INFO   ] [KB-000083] [cdc] CONVERTING
+[2026-08-15 05:56:57] [INFO   ] [KB-000083] [cdc] VALIDATING
+[2026-08-15 05:56:57] [INFO   ] [KB-000083] [cdc] COMPLETED — v1 (344 words)
+[2026-08-15 05:56:57] [INFO   ] [KB-000083] [mayo] RESOLVING — Topic: Hypoglycemia (Low Blood Sugar)
+[2026-08-15 05:56:57] [INFO   ] [KB-000083] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/hypoglycemia/symptoms-causes/syc-20373685
+[2026-08-15 05:56:58] [INFO   ] [KB-000083] [mayo] EXTRACTING
+[2026-08-15 05:56:58] [INFO   ] [KB-000083] [mayo] CONVERTING
+[2026-08-15 05:56:58] [INFO   ] [KB-000083] [mayo] VALIDATING
+[2026-08-15 05:56:58] [INFO   ] [KB-000083] [mayo] COMPLETED — v1 (1471 words)
+[2026-08-15 05:56:58] [INFO   ] [KB-000084] [ada] RESOLVING — Topic: Hyperglycemia (High Blood Sugar)
+[2026-08-15 05:56:58] [INFO   ] [KB-000084] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/complications
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [ada] EXTRACTING
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [ada] CONVERTING
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [ada] VALIDATING
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [ada] COMPLETED — v1 (610 words)
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [cdc] RESOLVING — Topic: Hyperglycemia (High Blood Sugar)
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/signs-symptoms/index.html
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [cdc] EXTRACTING
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [cdc] CONVERTING
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [cdc] VALIDATING
+[2026-08-15 05:56:59] [INFO   ] [KB-000084] [cdc] COMPLETED — v1 (344 words)
+[2026-08-15 05:57:00] [INFO   ] [KB-000084] [mayo] RESOLVING — Topic: Hyperglycemia (High Blood Sugar)
+[2026-08-15 05:57:00] [INFO   ] [KB-000084] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631
+[2026-08-15 05:57:00] [INFO   ] [KB-000084] [mayo] EXTRACTING
+[2026-08-15 05:57:00] [INFO   ] [KB-000084] [mayo] CONVERTING
+[2026-08-15 05:57:00] [INFO   ] [KB-000084] [mayo] VALIDATING
+[2026-08-15 05:57:00] [INFO   ] [KB-000084] [mayo] COMPLETED — v1 (1133 words)
+[2026-08-15 05:57:00] [INFO   ] [KB-000085] [ada] RESOLVING — Topic: Diabetic Skin Conditions
+[2026-08-15 05:57:00] [INFO   ] [KB-000085] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/complications
+[2026-08-15 05:57:02] [INFO   ] [KB-000085] [ada] EXTRACTING
+[2026-08-15 05:57:02] [INFO   ] [KB-000085] [ada] CONVERTING
+[2026-08-15 05:57:02] [INFO   ] [KB-000085] [ada] VALIDATING
+[2026-08-15 05:57:02] [INFO   ] [KB-000085] [ada] COMPLETED — v1 (610 words)
+[2026-08-15 05:57:02] [INFO   ] [KB-000085] [mayo] RESOLVING — Topic: Diabetic Skin Conditions
+[2026-08-15 05:57:02] [INFO   ] [KB-000085] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-skin/art-20045111
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [cleveland] RESOLVING — Topic: Diabetic Skin Conditions
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [cleveland] EXTRACTING
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [cleveland] CONVERTING
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [cleveland] VALIDATING
+[2026-08-15 05:57:06] [INFO   ] [KB-000085] [cleveland] COMPLETED — v1 (1279 words)
+[2026-08-15 05:57:06] [INFO   ] [KB-000086] [ada] RESOLVING — Topic: Diabetes and Dental Health
+[2026-08-15 05:57:06] [INFO   ] [KB-000086] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/keeping-your-mouth-healthy
+[2026-08-15 05:57:07] [INFO   ] [KB-000086] [ada] EXTRACTING
+[2026-08-15 05:57:07] [INFO   ] [KB-000086] [ada] CONVERTING
+[2026-08-15 05:57:07] [INFO   ] [KB-000086] [ada] VALIDATING
+[2026-08-15 05:57:07] [INFO   ] [KB-000086] [ada] COMPLETED — v1 (717 words)
+[2026-08-15 05:57:07] [INFO   ] [KB-000086] [cdc] RESOLVING — Topic: Diabetes and Dental Health
+[2026-08-15 05:57:07] [INFO   ] [KB-000086] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-gum-disease.html
+[2026-08-15 05:57:09] [INFO   ] [KB-000086] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:09] [INFO   ] [KB-000086] [mayo] RESOLVING — Topic: Diabetes and Dental Health
+[2026-08-15 05:57:09] [INFO   ] [KB-000086] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-and-dental-health/art-20046557
+[2026-08-15 05:57:10] [INFO   ] [KB-000086] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [niddk] SKIPPED — Already scraped
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [mayo] RESOLVING — Topic: Gastroparesis
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/gastroparesis/symptoms-causes/syc-20355787
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [mayo] EXTRACTING
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [mayo] CONVERTING
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [mayo] VALIDATING
+[2026-08-15 05:57:10] [INFO   ] [KB-000087] [mayo] COMPLETED — v1 (688 words)
+[2026-08-15 05:57:11] [INFO   ] [KB-000087] [cleveland] RESOLVING — Topic: Gastroparesis
+[2026-08-15 05:57:11] [INFO   ] [KB-000087] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/15522-gastroparesis
+[2026-08-15 05:57:11] [INFO   ] [KB-000087] [cleveland] EXTRACTING
+[2026-08-15 05:57:11] [INFO   ] [KB-000087] [cleveland] CONVERTING
+[2026-08-15 05:57:11] [INFO   ] [KB-000087] [cleveland] VALIDATING
+[2026-08-15 05:57:11] [INFO   ] [KB-000087] [cleveland] COMPLETED — v1 (1746 words)
+[2026-08-15 05:57:11] [INFO   ] [KB-000088] [niddk] RESOLVING — Topic: Diabetes and Sexual Health
+[2026-08-15 05:57:11] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction
+[2026-08-15 05:57:12] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-15 05:57:12] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-15 05:57:12] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-15 05:57:12] [INFO   ] [KB-000088] [niddk] COMPLETED — v1 (367 words)
+[2026-08-15 05:57:12] [INFO   ] [KB-000088] [mayo] RESOLVING — Topic: Diabetes and Sexual Health
+[2026-08-15 05:57:12] [INFO   ] [KB-000088] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/erectile-dysfunction/symptoms-causes/syc-20355776
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [mayo] EXTRACTING
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [mayo] CONVERTING
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [mayo] VALIDATING
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [mayo] COMPLETED — v1 (734 words)
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [cleveland] RESOLVING — Topic: Diabetes and Sexual Health
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/10035-erectile-dysfunction
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [cleveland] EXTRACTING
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [cleveland] CONVERTING
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [cleveland] VALIDATING
+[2026-08-15 05:57:14] [INFO   ] [KB-000088] [cleveland] COMPLETED — v1 (1005 words)
+[2026-08-15 05:57:14] [INFO   ] [KB-000089] [ada] RESOLVING — Topic: Diabetes and Infections
+[2026-08-15 05:57:14] [INFO   ] [KB-000089] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/complications
+[2026-08-15 05:57:15] [INFO   ] [KB-000089] [ada] EXTRACTING
+[2026-08-15 05:57:15] [INFO   ] [KB-000089] [ada] CONVERTING
+[2026-08-15 05:57:15] [INFO   ] [KB-000089] [ada] VALIDATING
+[2026-08-15 05:57:15] [INFO   ] [KB-000089] [ada] COMPLETED — v1 (610 words)
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [cleveland] RESOLVING — Topic: Diabetes and Infections
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [cleveland] EXTRACTING
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [cleveland] CONVERTING
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [cleveland] VALIDATING
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [cleveland] COMPLETED — v1 (1279 words)
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [mayo] RESOLVING — Topic: Diabetes and Infections
+[2026-08-15 05:57:16] [INFO   ] [KB-000089] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+[2026-08-15 05:57:17] [INFO   ] [KB-000089] [mayo] EXTRACTING
+[2026-08-15 05:57:17] [INFO   ] [KB-000089] [mayo] CONVERTING
+[2026-08-15 05:57:17] [INFO   ] [KB-000089] [mayo] VALIDATING
+[2026-08-15 05:57:17] [INFO   ] [KB-000089] [mayo] COMPLETED — v1 (1492 words)
+[2026-08-15 05:57:17] [INFO   ] [KB-000090] [ada] RESOLVING — Topic: Healthy Eating for Diabetes
+[2026-08-15 05:57:17] [INFO   ] [KB-000090] [ada] DOWNLOADING — URL: https://diabetes.org/food-nutrition
+[2026-08-15 05:57:18] [INFO   ] [KB-000090] [ada] EXTRACTING
+[2026-08-15 05:57:18] [INFO   ] [KB-000090] [ada] CONVERTING
+[2026-08-15 05:57:18] [INFO   ] [KB-000090] [ada] VALIDATING
+[2026-08-15 05:57:18] [INFO   ] [KB-000090] [ada] COMPLETED — v1 (427 words)
+[2026-08-15 05:57:18] [INFO   ] [KB-000090] [cdc] RESOLVING — Topic: Healthy Eating for Diabetes
+[2026-08-15 05:57:18] [INFO   ] [KB-000090] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/healthy-eating/index.html
+[2026-08-15 05:57:19] [INFO   ] [KB-000090] [cdc] EXTRACTING
+[2026-08-15 05:57:19] [INFO   ] [KB-000090] [cdc] CONVERTING
+[2026-08-15 05:57:19] [INFO   ] [KB-000090] [cdc] VALIDATING
+[2026-08-15 05:57:19] [INFO   ] [KB-000090] [cdc] COMPLETED — v1 (283 words)
+[2026-08-15 05:57:20] [INFO   ] [KB-000090] [mayo] RESOLVING — Topic: Healthy Eating for Diabetes
+[2026-08-15 05:57:20] [INFO   ] [KB-000090] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-diet/art-20044295
+[2026-08-15 05:57:20] [INFO   ] [KB-000090] [mayo] EXTRACTING
+[2026-08-15 05:57:20] [INFO   ] [KB-000090] [mayo] CONVERTING
+[2026-08-15 05:57:20] [INFO   ] [KB-000090] [mayo] VALIDATING
+[2026-08-15 05:57:20] [INFO   ] [KB-000090] [mayo] COMPLETED — v1 (1311 words)
+[2026-08-15 05:57:20] [INFO   ] [KB-000091] [ada] RESOLVING — Topic: Carbohydrate Counting
+[2026-08-15 05:57:20] [INFO   ] [KB-000091] [ada] DOWNLOADING — URL: https://diabetes.org/food-nutrition/understanding-carbs
+[2026-08-15 05:57:21] [INFO   ] [KB-000091] [ada] EXTRACTING
+[2026-08-15 05:57:21] [INFO   ] [KB-000091] [ada] CONVERTING
+[2026-08-15 05:57:21] [INFO   ] [KB-000091] [ada] VALIDATING
+[2026-08-15 05:57:21] [INFO   ] [KB-000091] [ada] COMPLETED — v1 (437 words)
+[2026-08-15 05:57:21] [INFO   ] [KB-000091] [cdc] RESOLVING — Topic: Carbohydrate Counting
+[2026-08-15 05:57:21] [INFO   ] [KB-000091] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/healthy-eating/carbohydrate-counting-and-diabetes.html
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [mayo] RESOLVING — Topic: Carbohydrate Counting
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-diet/art-20044295
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [mayo] EXTRACTING
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [mayo] CONVERTING
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [mayo] VALIDATING
+[2026-08-15 05:57:22] [INFO   ] [KB-000091] [mayo] COMPLETED — v1 (1311 words)
+[2026-08-15 05:57:22] [INFO   ] [KB-000092] [ada] RESOLVING — Topic: Glycemic Index and Glycemic Load
+[2026-08-15 05:57:22] [INFO   ] [KB-000092] [ada] DOWNLOADING — URL: https://diabetes.org/food-nutrition/understanding-carbs
+[2026-08-15 05:57:23] [INFO   ] [KB-000092] [ada] EXTRACTING
+[2026-08-15 05:57:23] [INFO   ] [KB-000092] [ada] CONVERTING
+[2026-08-15 05:57:23] [INFO   ] [KB-000092] [ada] VALIDATING
+[2026-08-15 05:57:23] [INFO   ] [KB-000092] [ada] COMPLETED — v1 (437 words)
+[2026-08-15 05:57:23] [INFO   ] [KB-000092] [mayo] RESOLVING — Topic: Glycemic Index and Glycemic Load
+[2026-08-15 05:57:23] [INFO   ] [KB-000092] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/glycemic-index-diet/art-20048478
+[2026-08-15 05:57:25] [INFO   ] [KB-000092] [mayo] EXTRACTING
+[2026-08-15 05:57:25] [INFO   ] [KB-000092] [mayo] CONVERTING
+[2026-08-15 05:57:25] [INFO   ] [KB-000092] [mayo] VALIDATING
+[2026-08-15 05:57:25] [INFO   ] [KB-000092] [mayo] COMPLETED — v1 (1229 words)
+[2026-08-15 05:57:26] [INFO   ] [KB-000092] [medlineplus] RESOLVING — Topic: Glycemic Index and Glycemic Load
+[2026-08-15 05:57:26] [INFO   ] [KB-000092] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000941.htm
+[2026-08-15 05:57:27] [INFO   ] [KB-000092] [medlineplus] EXTRACTING
+[2026-08-15 05:57:27] [INFO   ] [KB-000092] [medlineplus] CONVERTING
+[2026-08-15 05:57:27] [INFO   ] [KB-000092] [medlineplus] VALIDATING
+[2026-08-15 05:57:27] [INFO   ] [KB-000092] [medlineplus] COMPLETED — v1 (791 words)
+[2026-08-15 05:57:27] [INFO   ] [KB-000093] [cdc] RESOLVING — Topic: Exercise and Physical Activity
+[2026-08-15 05:57:27] [INFO   ] [KB-000093] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/physical-activity/index.html
+[2026-08-15 05:57:27] [INFO   ] [KB-000093] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:27] [INFO   ] [KB-000093] [ada] RESOLVING — Topic: Exercise and Physical Activity
+[2026-08-15 05:57:27] [INFO   ] [KB-000093] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/fitness
+[2026-08-15 05:57:28] [INFO   ] [KB-000093] [ada] EXTRACTING
+[2026-08-15 05:57:28] [INFO   ] [KB-000093] [ada] CONVERTING
+[2026-08-15 05:57:28] [INFO   ] [KB-000093] [ada] VALIDATING
+[2026-08-15 05:57:28] [INFO   ] [KB-000093] [ada] COMPLETED — v1 (300 words)
+[2026-08-15 05:57:28] [INFO   ] [KB-000093] [mayo] RESOLVING — Topic: Exercise and Physical Activity
+[2026-08-15 05:57:28] [INFO   ] [KB-000093] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-and-exercise/art-20045697
+[2026-08-15 05:57:29] [INFO   ] [KB-000093] [mayo] EXTRACTING
+[2026-08-15 05:57:29] [INFO   ] [KB-000093] [mayo] CONVERTING
+[2026-08-15 05:57:29] [INFO   ] [KB-000093] [mayo] VALIDATING
+[2026-08-15 05:57:29] [INFO   ] [KB-000093] [mayo] COMPLETED — v1 (1387 words)
+[2026-08-15 05:57:29] [INFO   ] [KB-000094] [cdc] RESOLVING — Topic: Weight Management
+[2026-08-15 05:57:29] [INFO   ] [KB-000094] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/prevention-type-2/preventing-type-2-diabetes.html
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [mayo] RESOLVING — Topic: Weight Management
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/weight-loss/art-20047752
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [mayo] EXTRACTING
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [mayo] CONVERTING
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [mayo] VALIDATING
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [mayo] COMPLETED — v1 (1288 words)
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [ada] RESOLVING — Topic: Weight Management
+[2026-08-15 05:57:30] [INFO   ] [KB-000094] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/weight-management
+[2026-08-15 05:57:31] [INFO   ] [KB-000094] [ada] EXTRACTING
+[2026-08-15 05:57:31] [INFO   ] [KB-000094] [ada] CONVERTING
+[2026-08-15 05:57:31] [INFO   ] [KB-000094] [ada] VALIDATING
+[2026-08-15 05:57:31] [INFO   ] [KB-000094] [ada] COMPLETED — v1 (159 words)
+[2026-08-15 05:57:31] [INFO   ] [KB-000095] [cdc] RESOLVING — Topic: Sleep and Diabetes
+[2026-08-15 05:57:31] [INFO   ] [KB-000095] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-sleep.html
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [mayo] RESOLVING — Topic: Sleep and Diabetes
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/expert-answers/diabetes-and-sleep/faq-20058474
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [mayo] EXTRACTING
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [mayo] CONVERTING
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [mayo] VALIDATING
+[2026-08-15 05:57:32] [INFO   ] [KB-000095] [mayo] COMPLETED — v1 (460 words)
+[2026-08-15 05:57:33] [INFO   ] [KB-000095] [cleveland] RESOLVING — Topic: Sleep and Diabetes
+[2026-08-15 05:57:33] [INFO   ] [KB-000095] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diseases/12115-insomnia
+[2026-08-15 05:57:33] [INFO   ] [KB-000095] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:33] [INFO   ] [KB-000096] [cdc] RESOLVING — Topic: Smoking and Diabetes
+[2026-08-15 05:57:33] [INFO   ] [KB-000096] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/risk-factors/smoking-and-diabetes.html
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [ada] RESOLVING — Topic: Smoking and Diabetes
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/substance-use
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [ada] EXTRACTING
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [ada] CONVERTING
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [ada] VALIDATING
+[2026-08-15 05:57:34] [INFO   ] [KB-000096] [ada] COMPLETED — v1 (210 words)
+[2026-08-15 05:57:35] [INFO   ] [KB-000096] [mayo] RESOLVING — Topic: Smoking and Diabetes
+[2026-08-15 05:57:35] [INFO   ] [KB-000096] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/healthy-lifestyle/quit-smoking/in-depth/smoking-and-diabetes/art-20046464
+[2026-08-15 05:57:39] [INFO   ] [KB-000096] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:39] [INFO   ] [KB-000097] [cdc] RESOLVING — Topic: Alcohol and Diabetes
+[2026-08-15 05:57:39] [INFO   ] [KB-000097] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/treatment/alcohol-and-diabetes.html
+[2026-08-15 05:57:39] [INFO   ] [KB-000097] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:39] [INFO   ] [KB-000097] [ada] RESOLVING — Topic: Alcohol and Diabetes
+[2026-08-15 05:57:39] [INFO   ] [KB-000097] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/substance-use
+[2026-08-15 05:57:40] [INFO   ] [KB-000097] [ada] EXTRACTING
+[2026-08-15 05:57:40] [INFO   ] [KB-000097] [ada] CONVERTING
+[2026-08-15 05:57:40] [INFO   ] [KB-000097] [ada] VALIDATING
+[2026-08-15 05:57:40] [INFO   ] [KB-000097] [ada] COMPLETED — v1 (210 words)
+[2026-08-15 05:57:40] [INFO   ] [KB-000097] [mayo] RESOLVING — Topic: Alcohol and Diabetes
+[2026-08-15 05:57:40] [INFO   ] [KB-000097] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-and-alcohol/art-20046830
+[2026-08-15 05:57:43] [INFO   ] [KB-000097] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:43] [INFO   ] [KB-000098] [cdc] RESOLVING — Topic: Stress Management
+[2026-08-15 05:57:43] [INFO   ] [KB-000098] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-mental-health.html
+[2026-08-15 05:57:43] [INFO   ] [KB-000098] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:43] [INFO   ] [KB-000098] [mayo] RESOLVING — Topic: Stress Management
+[2026-08-15 05:57:43] [INFO   ] [KB-000098] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/stress-and-diabetes/art-20046037
+[2026-08-15 05:57:44] [INFO   ] [KB-000098] [mayo] EXTRACTING
+[2026-08-15 05:57:44] [INFO   ] [KB-000098] [mayo] CONVERTING
+[2026-08-15 05:57:44] [INFO   ] [KB-000098] [mayo] VALIDATING
+[2026-08-15 05:57:44] [INFO   ] [KB-000098] [mayo] COMPLETED — v1 (1751 words)
+[2026-08-15 05:57:44] [INFO   ] [KB-000098] [ada] RESOLVING — Topic: Stress Management
+[2026-08-15 05:57:44] [INFO   ] [KB-000098] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/mental-health
+[2026-08-15 05:57:45] [INFO   ] [KB-000098] [ada] EXTRACTING
+[2026-08-15 05:57:45] [INFO   ] [KB-000098] [ada] CONVERTING
+[2026-08-15 05:57:45] [INFO   ] [KB-000098] [ada] VALIDATING
+[2026-08-15 05:57:45] [INFO   ] [KB-000098] [ada] COMPLETED — v1 (356 words)
+[2026-08-15 05:57:45] [INFO   ] [KB-000099] [ada] RESOLVING — Topic: Mental Health and Diabetes
+[2026-08-15 05:57:45] [INFO   ] [KB-000099] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/mental-health
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [ada] EXTRACTING
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [ada] CONVERTING
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [ada] VALIDATING
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [ada] COMPLETED — v1 (356 words)
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [cdc] RESOLVING — Topic: Mental Health and Diabetes
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-mental-health.html
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [cdc] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [mayo] RESOLVING — Topic: Mental Health and Diabetes
+[2026-08-15 05:57:46] [INFO   ] [KB-000099] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-and-depression/art-20046643
+[2026-08-15 05:57:51] [INFO   ] [KB-000099] [mayo] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:51] [INFO   ] [KB-000100] [ada] RESOLVING — Topic: Hydration and Diabetes
+[2026-08-15 05:57:51] [INFO   ] [KB-000100] [ada] DOWNLOADING — URL: https://diabetes.org/food-nutrition
+[2026-08-15 05:57:52] [INFO   ] [KB-000100] [ada] EXTRACTING
+[2026-08-15 05:57:52] [INFO   ] [KB-000100] [ada] CONVERTING
+[2026-08-15 05:57:52] [INFO   ] [KB-000100] [ada] VALIDATING
+[2026-08-15 05:57:52] [INFO   ] [KB-000100] [ada] COMPLETED — v1 (427 words)
+[2026-08-15 05:57:52] [INFO   ] [KB-000100] [mayo] RESOLVING — Topic: Hydration and Diabetes
+[2026-08-15 05:57:52] [INFO   ] [KB-000100] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [mayo] EXTRACTING
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [mayo] CONVERTING
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [mayo] VALIDATING
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [mayo] COMPLETED — v1 (994 words)
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [cleveland] RESOLVING — Topic: Hydration and Diabetes
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/treatments/9013-dehydration
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [cleveland] EXTRACTING
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [cleveland] CONVERTING
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [cleveland] VALIDATING
+[2026-08-15 05:57:53] [INFO   ] [KB-000100] [cleveland] COMPLETED — v1 (1525 words)
+[2026-08-15 05:57:54] [INFO   ] [KB-000101] [medlineplus] RESOLVING — Topic: Metformin
+[2026-08-15 05:57:54] [INFO   ] [KB-000101] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000086.htm
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [medlineplus] EXTRACTING
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [medlineplus] CONVERTING
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [medlineplus] VALIDATING
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [medlineplus] COMPLETED — v1 (1434 words)
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [mayo] RESOLVING — Topic: Metformin
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/drugs-supplements/metformin-oral-route/description/drg-20067074
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [mayo] EXTRACTING
+[2026-08-15 05:57:55] [INFO   ] [KB-000101] [mayo] CONVERTING
+[2026-08-15 05:57:56] [INFO   ] [KB-000101] [mayo] VALIDATING
+[2026-08-15 05:57:56] [INFO   ] [KB-000101] [mayo] COMPLETED — v1 (3226 words)
+[2026-08-15 05:57:56] [INFO   ] [KB-000101] [cleveland] RESOLVING — Topic: Metformin
+[2026-08-15 05:57:56] [INFO   ] [KB-000101] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/drugs/21008-metformin-tablets
+[2026-08-15 05:57:57] [INFO   ] [KB-000101] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:57:57] [INFO   ] [KB-000102] [ada] RESOLVING — Topic: Insulin Therapy
+[2026-08-15 05:57:57] [INFO   ] [KB-000102] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/medication-treatments
+[2026-08-15 05:57:57] [INFO   ] [KB-000102] [ada] EXTRACTING
+[2026-08-15 05:57:57] [INFO   ] [KB-000102] [ada] CONVERTING
+[2026-08-15 05:57:57] [INFO   ] [KB-000102] [ada] VALIDATING
+[2026-08-15 05:57:57] [INFO   ] [KB-000102] [ada] COMPLETED — v1 (367 words)
+[2026-08-15 05:57:58] [INFO   ] [KB-000102] [mayo] RESOLVING — Topic: Insulin Therapy
+[2026-08-15 05:57:58] [INFO   ] [KB-000102] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/insulin-and-diabetes/art-20046974
+[2026-08-15 05:57:58] [INFO   ] [KB-000102] [mayo] EXTRACTING
+[2026-08-15 05:57:58] [INFO   ] [KB-000102] [mayo] CONVERTING
+[2026-08-15 05:57:58] [INFO   ] [KB-000102] [mayo] VALIDATING
+[2026-08-15 05:57:58] [INFO   ] [KB-000102] [mayo] COMPLETED — v1 (1331 words)
+[2026-08-15 05:57:59] [INFO   ] [KB-000102] [medlineplus] RESOLVING — Topic: Insulin Therapy
+[2026-08-15 05:57:59] [INFO   ] [KB-000102] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000082.htm
+[2026-08-15 05:58:00] [INFO   ] [KB-000102] [medlineplus] EXTRACTING
+[2026-08-15 05:58:00] [INFO   ] [KB-000102] [medlineplus] CONVERTING
+[2026-08-15 05:58:00] [INFO   ] [KB-000102] [medlineplus] VALIDATING
+[2026-08-15 05:58:00] [INFO   ] [KB-000102] [medlineplus] COMPLETED — v1 (638 words)
+[2026-08-15 05:58:00] [INFO   ] [KB-000103] [ada] RESOLVING — Topic: GLP-1 Receptor Agonists
+[2026-08-15 05:58:00] [INFO   ] [KB-000103] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/medication-treatments
+[2026-08-15 05:58:01] [INFO   ] [KB-000103] [ada] EXTRACTING
+[2026-08-15 05:58:01] [INFO   ] [KB-000103] [ada] CONVERTING
+[2026-08-15 05:58:01] [INFO   ] [KB-000103] [ada] VALIDATING
+[2026-08-15 05:58:01] [INFO   ] [KB-000103] [ada] COMPLETED — v1 (367 words)
+[2026-08-15 05:58:01] [INFO   ] [KB-000103] [mayo] RESOLVING — Topic: GLP-1 Receptor Agonists
+[2026-08-15 05:58:01] [INFO   ] [KB-000103] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/expert-answers/byetta/faq-20057955
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [mayo] EXTRACTING
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [mayo] CONVERTING
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [mayo] VALIDATING
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [mayo] COMPLETED — v1 (967 words)
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [cleveland] RESOLVING — Topic: GLP-1 Receptor Agonists
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/treatments/13901-glp-1-agonists
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [cleveland] EXTRACTING
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [cleveland] CONVERTING
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [cleveland] VALIDATING
+[2026-08-15 05:58:02] [INFO   ] [KB-000103] [cleveland] COMPLETED — v1 (1192 words)
+[2026-08-15 05:58:03] [INFO   ] [KB-000104] [ada] RESOLVING — Topic: SGLT2 Inhibitors
+[2026-08-15 05:58:03] [INFO   ] [KB-000104] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/medication-treatments
+[2026-08-15 05:58:03] [INFO   ] [KB-000104] [ada] EXTRACTING
+[2026-08-15 05:58:03] [INFO   ] [KB-000104] [ada] CONVERTING
+[2026-08-15 05:58:03] [INFO   ] [KB-000104] [ada] VALIDATING
+[2026-08-15 05:58:03] [INFO   ] [KB-000104] [ada] COMPLETED — v1 (367 words)
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [mayo] RESOLVING — Topic: SGLT2 Inhibitors
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [mayo] EXTRACTING
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [mayo] CONVERTING
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [mayo] VALIDATING
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [mayo] COMPLETED — v1 (930 words)
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [cleveland] RESOLVING — Topic: SGLT2 Inhibitors
+[2026-08-15 05:58:04] [INFO   ] [KB-000104] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/drugs/21008-metformin-tablets
+[2026-08-15 05:58:05] [INFO   ] [KB-000104] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:58:05] [INFO   ] [KB-000105] [ada] RESOLVING — Topic: DPP-4 Inhibitors
+[2026-08-15 05:58:05] [INFO   ] [KB-000105] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/medication-treatments
+[2026-08-15 05:58:05] [INFO   ] [KB-000105] [ada] EXTRACTING
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [ada] CONVERTING
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [ada] VALIDATING
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [ada] COMPLETED — v1 (367 words)
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [mayo] RESOLVING — Topic: DPP-4 Inhibitors
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [mayo] EXTRACTING
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [mayo] CONVERTING
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [mayo] VALIDATING
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [mayo] COMPLETED — v1 (930 words)
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [medlineplus] RESOLVING — Topic: DPP-4 Inhibitors
+[2026-08-15 05:58:06] [INFO   ] [KB-000105] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000086.htm
+[2026-08-15 05:58:07] [INFO   ] [KB-000105] [medlineplus] EXTRACTING
+[2026-08-15 05:58:07] [INFO   ] [KB-000105] [medlineplus] CONVERTING
+[2026-08-15 05:58:07] [INFO   ] [KB-000105] [medlineplus] VALIDATING
+[2026-08-15 05:58:08] [INFO   ] [KB-000105] [medlineplus] COMPLETED — v1 (1434 words)
+[2026-08-15 05:58:08] [INFO   ] [KB-000106] [medlineplus] RESOLVING — Topic: Sulfonylureas
+[2026-08-15 05:58:08] [INFO   ] [KB-000106] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000086.htm
+[2026-08-15 05:58:09] [INFO   ] [KB-000106] [medlineplus] EXTRACTING
+[2026-08-15 05:58:09] [INFO   ] [KB-000106] [medlineplus] CONVERTING
+[2026-08-15 05:58:09] [INFO   ] [KB-000106] [medlineplus] VALIDATING
+[2026-08-15 05:58:09] [INFO   ] [KB-000106] [medlineplus] COMPLETED — v1 (1434 words)
+[2026-08-15 05:58:09] [INFO   ] [KB-000106] [mayo] RESOLVING — Topic: Sulfonylureas
+[2026-08-15 05:58:09] [INFO   ] [KB-000106] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [mayo] EXTRACTING
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [mayo] CONVERTING
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [mayo] VALIDATING
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [mayo] COMPLETED — v1 (930 words)
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [cleveland] RESOLVING — Topic: Sulfonylureas
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/drugs/21008-metformin-tablets
+[2026-08-15 05:58:10] [INFO   ] [KB-000106] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:58:10] [INFO   ] [KB-000107] [medlineplus] RESOLVING — Topic: Thiazolidinediones (TZDs)
+[2026-08-15 05:58:10] [INFO   ] [KB-000107] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000086.htm
+[2026-08-15 05:58:11] [INFO   ] [KB-000107] [medlineplus] EXTRACTING
+[2026-08-15 05:58:11] [INFO   ] [KB-000107] [medlineplus] CONVERTING
+[2026-08-15 05:58:11] [INFO   ] [KB-000107] [medlineplus] VALIDATING
+[2026-08-15 05:58:11] [INFO   ] [KB-000107] [medlineplus] COMPLETED — v1 (1434 words)
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [mayo] RESOLVING — Topic: Thiazolidinediones (TZDs)
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [mayo] EXTRACTING
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [mayo] CONVERTING
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [mayo] VALIDATING
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [mayo] COMPLETED — v1 (930 words)
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [cleveland] RESOLVING — Topic: Thiazolidinediones (TZDs)
+[2026-08-15 05:58:12] [INFO   ] [KB-000107] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/drugs/21008-metformin-tablets
+[2026-08-15 05:58:13] [INFO   ] [KB-000107] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [mayo] RESOLVING — Topic: Statins (Cholesterol Medications)
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statins/art-20045772
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [mayo] EXTRACTING
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [mayo] CONVERTING
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [mayo] VALIDATING
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [mayo] COMPLETED — v1 (1374 words)
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [medlineplus] RESOLVING — Topic: Statins (Cholesterol Medications)
+[2026-08-15 05:58:13] [INFO   ] [KB-000108] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/statins.html
+[2026-08-15 05:58:14] [INFO   ] [KB-000108] [medlineplus] EXTRACTING
+[2026-08-15 05:58:14] [INFO   ] [KB-000108] [medlineplus] CONVERTING
+[2026-08-15 05:58:14] [INFO   ] [KB-000108] [medlineplus] VALIDATING
+[2026-08-15 05:58:14] [INFO   ] [KB-000108] [medlineplus] COMPLETED — v1 (765 words)
+[2026-08-15 05:58:15] [INFO   ] [KB-000108] [ada] RESOLVING — Topic: Statins (Cholesterol Medications)
+[2026-08-15 05:58:15] [INFO   ] [KB-000108] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:58:16] [INFO   ] [KB-000108] [ada] EXTRACTING
+[2026-08-15 05:58:16] [INFO   ] [KB-000108] [ada] CONVERTING
+[2026-08-15 05:58:16] [INFO   ] [KB-000108] [ada] VALIDATING
+[2026-08-15 05:58:16] [INFO   ] [KB-000108] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:58:16] [INFO   ] [KB-000109] [mayo] RESOLVING — Topic: ACE Inhibitors and ARBs
+[2026-08-15 05:58:16] [INFO   ] [KB-000109] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/ace-inhibitors/art-20047480
+[2026-08-15 05:58:17] [INFO   ] [KB-000109] [mayo] EXTRACTING
+[2026-08-15 05:58:17] [INFO   ] [KB-000109] [mayo] CONVERTING
+[2026-08-15 05:58:17] [INFO   ] [KB-000109] [mayo] VALIDATING
+[2026-08-15 05:58:17] [INFO   ] [KB-000109] [mayo] COMPLETED — v1 (386 words)
+[2026-08-15 05:58:18] [INFO   ] [KB-000109] [medlineplus] RESOLVING — Topic: ACE Inhibitors and ARBs
+[2026-08-15 05:58:18] [INFO   ] [KB-000109] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/ency/patientinstructions/000099.htm
+[2026-08-15 05:58:19] [INFO   ] [KB-000109] [medlineplus] EXTRACTING
+[2026-08-15 05:58:19] [INFO   ] [KB-000109] [medlineplus] CONVERTING
+[2026-08-15 05:58:19] [INFO   ] [KB-000109] [medlineplus] VALIDATING
+[2026-08-15 05:58:19] [INFO   ] [KB-000109] [medlineplus] COMPLETED — v1 (879 words)
+[2026-08-15 05:58:19] [INFO   ] [KB-000109] [ada] RESOLVING — Topic: ACE Inhibitors and ARBs
+[2026-08-15 05:58:19] [INFO   ] [KB-000109] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:58:20] [INFO   ] [KB-000109] [ada] EXTRACTING
+[2026-08-15 05:58:20] [INFO   ] [KB-000109] [ada] CONVERTING
+[2026-08-15 05:58:20] [INFO   ] [KB-000109] [ada] VALIDATING
+[2026-08-15 05:58:20] [INFO   ] [KB-000109] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:58:20] [INFO   ] [KB-000110] [ada] RESOLVING — Topic: Aspirin and Antiplatelet Therapy
+[2026-08-15 05:58:20] [INFO   ] [KB-000110] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/diabetes-and-your-heart
+[2026-08-15 05:58:21] [INFO   ] [KB-000110] [ada] EXTRACTING
+[2026-08-15 05:58:21] [INFO   ] [KB-000110] [ada] CONVERTING
+[2026-08-15 05:58:21] [INFO   ] [KB-000110] [ada] VALIDATING
+[2026-08-15 05:58:21] [INFO   ] [KB-000110] [ada] COMPLETED — v1 (827 words)
+[2026-08-15 05:58:22] [INFO   ] [KB-000110] [mayo] RESOLVING — Topic: Aspirin and Antiplatelet Therapy
+[2026-08-15 05:58:22] [INFO   ] [KB-000110] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/heart-disease/in-depth/daily-aspirin-therapy/art-20046797
+[2026-08-15 05:58:23] [INFO   ] [KB-000110] [mayo] EXTRACTING
+[2026-08-15 05:58:23] [INFO   ] [KB-000110] [mayo] CONVERTING
+[2026-08-15 05:58:23] [INFO   ] [KB-000110] [mayo] VALIDATING
+[2026-08-15 05:58:23] [INFO   ] [KB-000110] [mayo] COMPLETED — v1 (1635 words)
+[2026-08-15 05:58:23] [INFO   ] [KB-000110] [cleveland] RESOLVING — Topic: Aspirin and Antiplatelet Therapy
+[2026-08-15 05:58:23] [INFO   ] [KB-000110] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/drugs/18260-aspirin
+[2026-08-15 05:58:24] [INFO   ] [KB-000110] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 05:58:24] [INFO   ] =========================================
+[2026-08-15 05:58:24] [INFO   ] Scraping Run Completed in 254.4 seconds
+[2026-08-15 05:58:24] [INFO   ] Total Jobs: 329 | Scraped: 206 | Skipped: 68 | Failed: 55
+[2026-08-15 05:58:24] [INFO   ] =========================================
+[2026-08-15 05:58:24] [INFO   ] ======================================================================
+[2026-08-15 05:58:24] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-15 05:58:24] [INFO   ]   Total jobs:   329
+[2026-08-15 05:58:24] [INFO   ]   Scraped:      206
+[2026-08-15 05:58:24] [INFO   ]   Skipped:      68
+[2026-08-15 05:58:24] [INFO   ]   Failed:       55
+[2026-08-15 05:58:24] [INFO   ]   Duration:     254.4s
+[2026-08-15 05:58:24] [INFO   ] ======================================================================

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000085",
+  "topic": "diabetic_skin_conditions",
+  "topic_title": "Diabetic Skin Conditions",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes",
+  "scraped_at": "2026-08-15T06:05:45.520103+00:00",
+  "word_count": 1279,
+  "content_hash": "sha256:aaa1dddecf2768d3d7144aed5c2a99b8fb5f79352e09cde7c5f71b69f1a6972a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

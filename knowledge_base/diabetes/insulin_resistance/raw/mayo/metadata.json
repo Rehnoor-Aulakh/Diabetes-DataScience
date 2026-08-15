@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000007",
+  "topic": "insulin_resistance",
+  "topic_title": "Insulin Resistance",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/metabolic-syndrome/symptoms-causes/syc-20351916",
+  "scraped_at": "2026-08-15T05:54:23.492114+00:00",
+  "word_count": 558,
+  "content_hash": "sha256:29afda2155444a4a9fc2502081eed3872626695a49dd43ba7cd0ea859141b08d",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"u9ai4d4mapqwbb\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000093",
+  "topic": "exercise",
+  "topic_title": "Exercise and Physical Activity",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/fitness",
+  "scraped_at": "2026-08-15T05:57:28.540413+00:00",
+  "word_count": 300,
+  "content_hash": "sha256:bee3e393dea15abcd99a82e6a91354d5a3115b379f336ce8d7e2f98bb9a3d2ae",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:05:45 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000043",
+  "topic": "vldl",
+  "topic_title": "VLDL Cholesterol",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/articles/24540-vldl-cholesterol",
+  "scraped_at": "2026-08-15T06:05:01.867050+00:00",
+  "word_count": 1052,
+  "content_hash": "sha256:ba38cf94718d655de540d2ddafa1acecd32254188c60e9bb7eefc9444590ce38",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

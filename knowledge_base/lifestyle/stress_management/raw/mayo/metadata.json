@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000098",
+  "topic": "stress_management",
+  "topic_title": "Stress Management",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/stress-and-diabetes/art-20046037",
+  "scraped_at": "2026-08-15T05:57:44.201212+00:00",
+  "word_count": 1751,
+  "content_hash": "sha256:8a2968cacbe0166cc042ef58e2e0bffc9aad5f7683d5c25916d651cd7ec7e7d2",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"bbhccooluvr1tn\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

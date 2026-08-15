@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000001",
+  "topic": "diabetes_overview",
+  "topic_title": "What is Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+  "scraped_at": "2026-08-15T05:54:11.364207+00:00",
+  "word_count": 1492,
+  "content_hash": "sha256:c201ef741a6ed8516a0807fd341cb997d69bf19d1355ee304f944c08ada82d6c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

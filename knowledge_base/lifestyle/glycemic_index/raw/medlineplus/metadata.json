@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000092",
+  "topic": "glycemic_index",
+  "topic_title": "Glycemic Index and Glycemic Load",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/patientinstructions/000941.htm",
+  "scraped_at": "2026-08-15T05:57:27.169535+00:00",
+  "word_count": 791,
+  "content_hash": "sha256:409ba713548fa0618689a343c6adec0671c6c97782a0dc9ef21ba2b43c09f15d",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"93aa33680419dc912652ff166e38ed56\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:12 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

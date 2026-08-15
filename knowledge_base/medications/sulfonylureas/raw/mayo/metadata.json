@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000106",
+  "topic": "sulfonylureas",
+  "topic_title": "Sulfonylureas",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+  "scraped_at": "2026-08-15T05:58:10.305734+00:00",
+  "word_count": 930,
+  "content_hash": "sha256:87c6d250ed49c55215b71dc4c378edaa52a5bf34a776adb0e551b021d2220f60",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"yg2i47dwtxr0ya\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

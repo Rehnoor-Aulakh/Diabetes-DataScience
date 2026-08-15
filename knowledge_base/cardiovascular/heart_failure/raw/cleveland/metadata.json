@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000075",
+  "topic": "heart_failure",
+  "topic_title": "Heart Failure and Diabetes",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/21494-right-sided-heart-failure",
+  "scraped_at": "2026-08-15T06:05:32.729903+00:00",
+  "word_count": 1026,
+  "content_hash": "sha256:7672b08e6e0a1c1d9bd8d646bb02e22b12702fd5164c1066d559b1566491525b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

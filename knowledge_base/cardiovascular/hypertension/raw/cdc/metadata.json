@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000071",
+  "topic": "hypertension",
+  "topic_title": "Hypertension (High Blood Pressure)",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/high-blood-pressure/about/index.html",
+  "scraped_at": "2026-08-15T05:56:24.132756+00:00",
+  "word_count": 966,
+  "content_hash": "sha256:d922d1dbafa37f6d9b6b9319ad8a511a369a7a523c9d0817dfa762ae4bd27d25",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

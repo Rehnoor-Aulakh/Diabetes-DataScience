@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000066",
+  "topic": "thyroid_antibodies",
+  "topic_title": "Thyroid Antibodies (TPO, TgAb)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/thyroid-antibodies",
+  "scraped_at": "2026-08-15T06:05:25.902999+00:00",
+  "word_count": 832,
+  "content_hash": "sha256:9e9eb7186526495cabad8aa7bc0b01541ec26cfa55ac81ee825c9c915892233c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000103",
+  "topic": "glp1_agonists",
+  "topic_title": "GLP-1 Receptor Agonists",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/medication-treatments",
+  "scraped_at": "2026-08-15T06:06:27.355638+00:00",
+  "word_count": 367,
+  "content_hash": "sha256:5e391c58ebf7d8c80831734005de1a3cbbec5be239825d55379eb920f1aa5253",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:04 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

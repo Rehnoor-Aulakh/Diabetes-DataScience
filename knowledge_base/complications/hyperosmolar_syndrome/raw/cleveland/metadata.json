@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000082",
+  "topic": "hyperosmolar_syndrome",
+  "topic_title": "Hyperosmolar Hyperglycemic Syndrome (HHS)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes",
+  "scraped_at": "2026-08-15T05:56:55.386005+00:00",
+  "word_count": 1279,
+  "content_hash": "sha256:0edf1f7e4e8572f5b320400ce9e476118525ed42462f060355c4409815a5f07c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

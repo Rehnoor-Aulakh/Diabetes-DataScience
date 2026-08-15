@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000105",
+  "topic": "dpp4_inhibitors",
+  "topic_title": "DPP-4 Inhibitors",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/patientinstructions/000086.htm",
+  "scraped_at": "2026-08-15T06:06:31.605888+00:00",
+  "word_count": 1434,
+  "content_hash": "sha256:50a400c4203c511e856d0e904d845907ec2c96a9ad728d1bdd1da1972df425f0",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"fe3e0540d734131231e22932903ad672\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:26:15 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000016",
+  "topic": "glucose_monitoring",
+  "topic_title": "Blood Glucose Monitoring",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/living-with-diabetes/treatment-care/checking-your-blood-sugar",
+  "scraped_at": "2026-08-15T05:54:42.101498+00:00",
+  "word_count": 726,
+  "content_hash": "sha256:8e7380df315f3deba68117bf37f04e67534ce4002cd450581c713dd1b0c6626b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:10:26 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

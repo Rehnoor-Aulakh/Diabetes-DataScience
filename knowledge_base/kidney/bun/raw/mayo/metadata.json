@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000020",
+  "topic": "bun",
+  "topic_title": "BUN (Blood Urea Nitrogen)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 2,
+  "url": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
+  "scraped_at": "2026-08-15T06:08:54.688868+00:00",
+  "word_count": 855,
+  "content_hash": "sha256:b5ceb924c131680e3f17a9b4198d24383c16d849af385a7739be537f7188dcbe",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

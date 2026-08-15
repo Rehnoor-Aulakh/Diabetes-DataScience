@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000063",
+  "topic": "tsh",
+  "topic_title": "TSH (Thyroid Stimulating Hormone)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/articles/23524-thyroid-stimulating-hormone-tsh-levels",
+  "scraped_at": "2026-08-15T06:05:21.034167+00:00",
+  "word_count": 1095,
+  "content_hash": "sha256:fa8882797c076c0a9cbdf36d11bd981943f5091e138c57e596d23547ef95c323",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

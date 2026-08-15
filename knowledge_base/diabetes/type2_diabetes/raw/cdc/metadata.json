@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000003",
+  "topic": "type2_diabetes",
+  "topic_title": "Type 2 Diabetes",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/about/about-type-2-diabetes.html",
+  "scraped_at": "2026-08-15T05:54:12.957187+00:00",
+  "word_count": 620,
+  "content_hash": "sha256:6926461557b38ba66f8adf72b5a5e45af1e31e3bd21efcd351a593a803aa1c83",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

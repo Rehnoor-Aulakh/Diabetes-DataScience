@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000079",
+  "topic": "diabetic_foot",
+  "topic_title": "Diabetic Foot",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/diabetes-and-your-feet",
+  "scraped_at": "2026-08-15T05:56:44.791530+00:00",
+  "word_count": 1110,
+  "content_hash": "sha256:ebf9d0192dee270682bca3cd0ff698d98b070b1bea9093a92c8a19784c1a5c17",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

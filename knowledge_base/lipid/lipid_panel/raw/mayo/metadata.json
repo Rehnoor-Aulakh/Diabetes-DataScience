@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000047",
+  "topic": "lipid_panel",
+  "topic_title": "Complete Lipid Panel",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601",
+  "scraped_at": "2026-08-15T05:55:41.748732+00:00",
+  "word_count": 1295,
+  "content_hash": "sha256:d4ff3f5c39620790d70adbf3c2475c162f7db804cd7650a7c4f8bb0c4016924f",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

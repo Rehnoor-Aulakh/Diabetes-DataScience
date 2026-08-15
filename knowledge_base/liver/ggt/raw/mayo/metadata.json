@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000032",
+  "topic": "ggt",
+  "topic_title": "GGT (Gamma-Glutamyl Transferase)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+  "scraped_at": "2026-08-15T05:55:11.116574+00:00",
+  "word_count": 902,
+  "content_hash": "sha256:69e1fc02c45046b9ee1101d514f4c7db62840b23c01933463893581e2a898433",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

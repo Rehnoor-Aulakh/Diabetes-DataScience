@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000044",
+  "topic": "apoa1",
+  "topic_title": "Apolipoprotein A1",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+  "scraped_at": "2026-08-15T06:05:02.836998+00:00",
+  "word_count": 2063,
+  "content_hash": "sha256:b7f60375c7378cd4736a0599368dc821fe57bdc90f128021a18cc15fdafa44c6",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"5b2005604b4314b2d63b30f865821774\"",
+  "http_last_modified": "Sat, 15 Aug 2026 04:16:13 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

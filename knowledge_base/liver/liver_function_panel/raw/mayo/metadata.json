@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000038",
+  "topic": "liver_function_panel",
+  "topic_title": "Liver Function Test Panel",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+  "scraped_at": "2026-08-15T05:55:20.260203+00:00",
+  "word_count": 902,
+  "content_hash": "sha256:b1ae51d063c9a38d7775f2d6a1d3cceab0927d1e71c4d31a36208635729f0b4a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

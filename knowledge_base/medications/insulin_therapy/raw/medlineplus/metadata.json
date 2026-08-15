@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000102",
+  "topic": "insulin_therapy",
+  "topic_title": "Insulin Therapy",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/patientinstructions/000082.htm",
+  "scraped_at": "2026-08-15T06:06:26.367128+00:00",
+  "word_count": 638,
+  "content_hash": "sha256:6d263d9e1610b7f419fb76e089e41e4f83c4b3c23a7149f6c79760b276ee512e",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"85d884f3ee697907be4fd59571f50f73\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

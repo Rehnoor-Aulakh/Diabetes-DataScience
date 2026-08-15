@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000109",
+  "topic": "ace_inhibitors_arbs",
+  "topic_title": "ACE Inhibitors and ARBs",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:06:39.081989+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:02879058c3a0137ef99ae818cbb7a0328fed259bedf9a5fa04511dcd92336303",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

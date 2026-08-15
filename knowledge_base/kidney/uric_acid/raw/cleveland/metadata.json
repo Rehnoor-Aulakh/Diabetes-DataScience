@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000026",
+  "topic": "uric_acid",
+  "topic_title": "Uric Acid",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/17808-hyperuricemia-high-uric-acid-level",
+  "scraped_at": "2026-08-15T06:04:43.051040+00:00",
+  "word_count": 1138,
+  "content_hash": "sha256:72142f6b9b2311cca5e9fbd37e87e3e8884b72a28253533f93a59f465b28e1aa",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

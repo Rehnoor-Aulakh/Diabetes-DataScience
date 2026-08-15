@@ -4,24 +4,23 @@
   "topic_title": "Insulin Resistance",
   "source": "ada",
   "source_name": "American Diabetes Association",
-  "version": 1,
-  "url": "https://professional.diabetes.org/",
-  "scraped_at": "2026-08-10T06:48:00.558063+00:00",
-  "word_count": 552,
-  "content_hash": "sha256:0d875f7f66e0f6e2d7f5ec81b45b64e8bea3dca7ec564e5829611fbac42f7eac",
+  "version": 2,
+  "url": "https://diabetes.org/health-wellness/medication-treatments",
+  "scraped_at": "2026-08-15T06:10:32.379193+00:00",
+  "word_count": 367,
+  "content_hash": "sha256:7c6b3efb8e17b2c13010e767b6b6f60fa91a2f00cd6d51e3cb1b2ed0987e3b69",
   "extractor": "trafilatura/bs4",
   "language": "en",
   "http_etag": null,
-  "http_last_modified": "Sun, 09 Aug 2026 05:03:11 GMT",
-  "status": "failed",
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:04 GMT",
+  "status": "scraped",
   "quality_checks": {
     "min_words": true,
-    "has_keywords": false,
+    "has_keywords": true,
     "has_headings": false,
     "is_english": true,
-    "passed": false,
+    "passed": true,
     "reasons": [
-      "No topic keywords found in text",
       "No markdown headings found"
     ]
   }

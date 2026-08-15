@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000095",
+  "topic": "sleep",
+  "topic_title": "Sleep and Diabetes",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/8718-sleep-apnea",
+  "scraped_at": "2026-08-15T06:06:04.149593+00:00",
+  "word_count": 1022,
+  "content_hash": "sha256:1253514063c17b06d09d27e2674beaffbb7d0cded8799729674fd476f123b07b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

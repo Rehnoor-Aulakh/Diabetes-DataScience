@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000041",
+  "topic": "total_cholesterol",
+  "topic_title": "Total Cholesterol",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601",
+  "scraped_at": "2026-08-15T05:55:27.844751+00:00",
+  "word_count": 1295,
+  "content_hash": "sha256:f5d210aa78e0383e1bde87c3c8f2afa025783658b52d3250d6697c930c148df7",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

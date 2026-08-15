@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000012",
+  "topic": "fasting_blood_glucose",
+  "topic_title": "Fasting Blood Sugar",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/about-diabetes/diagnosis",
+  "scraped_at": "2026-08-15T05:54:32.352677+00:00",
+  "word_count": 589,
+  "content_hash": "sha256:8d1338a703bc668c5ddefc2e9dda3e81999fe5676aac4085de0bcccb435831c4",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:04:47 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000063",
+  "topic": "tsh",
+  "topic_title": "TSH (Thyroid Stimulating Hormone)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202",
+  "scraped_at": "2026-08-15T05:56:10.678069+00:00",
+  "word_count": 233,
+  "content_hash": "sha256:645001da1ddc6033a8525caf62424bd806b5fa2563073f1b482ba3754743c119",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

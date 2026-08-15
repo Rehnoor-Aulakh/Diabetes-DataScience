@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000094",
+  "topic": "weight_management",
+  "topic_title": "Weight Management",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/living-with/healthy-weight.html",
+  "scraped_at": "2026-08-15T06:05:57.360031+00:00",
+  "word_count": 1220,
+  "content_hash": "sha256:771256e98a6a72a71e73b0de4bd618ffc523638fcc104a1cd53fb0765d16de81",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

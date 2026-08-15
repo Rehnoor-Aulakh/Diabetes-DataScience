@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000042",
+  "topic": "triglycerides",
+  "topic_title": "Triglycerides",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/triglycerides/art-20048186",
+  "scraped_at": "2026-08-15T05:55:28.961603+00:00",
+  "word_count": 1044,
+  "content_hash": "sha256:8628c13a94a927655f75e733f1e4f53988f74164f897dcc214d2f287d4a97c5a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"n1phsfgfncquxv\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

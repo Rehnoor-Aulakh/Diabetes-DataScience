@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000010",
+  "topic": "hba1c",
+  "topic_title": "HbA1c",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/hba1c-test/about/pac-20384643",
+  "scraped_at": "2026-08-15T05:54:28.370480+00:00",
+  "word_count": 896,
+  "content_hash": "sha256:56515394e69d2eb72202082d5a3b972a01e964aa353894af9895b6d948fa9ae0",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

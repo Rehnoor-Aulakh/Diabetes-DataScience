@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000109",
+  "topic": "ace_inhibitors_arbs",
+  "topic_title": "ACE Inhibitors and ARBs",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/ency/patientinstructions/000099.htm",
+  "scraped_at": "2026-08-15T06:06:37.955617+00:00",
+  "word_count": 879,
+  "content_hash": "sha256:f5e301ff9b2de2b0b0696799e12553bc02153979b2f0d9b02416d982256fee8a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"ecafef1075138e00c12c366de626116d\"",
+  "http_last_modified": "Thu, 06 Aug 2026 18:25:51 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

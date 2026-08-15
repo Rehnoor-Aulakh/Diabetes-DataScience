@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000045",
+  "topic": "apob",
+  "topic_title": "Apolipoprotein B",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/24992-apolipoprotein-b-test",
+  "scraped_at": "2026-08-15T06:05:06.097779+00:00",
+  "word_count": 924,
+  "content_hash": "sha256:9505afed110a4c5d2eeb22020fd6d5d467af0acee9ab94f6ce84af0821e4364e",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

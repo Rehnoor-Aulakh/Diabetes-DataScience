@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000095",
+  "topic": "sleep",
+  "topic_title": "Sleep and Diabetes",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/php/toolkits/new-beginnings-sleep-health.html",
+  "scraped_at": "2026-08-15T06:06:02.261740+00:00",
+  "word_count": 822,
+  "content_hash": "sha256:3be33f9fe0e93b8f5767836988775106f3b81ebf3fbc6a0591b4430b940a47ba",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

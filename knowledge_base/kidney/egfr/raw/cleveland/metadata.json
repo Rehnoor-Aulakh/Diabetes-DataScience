@@ -4,24 +4,23 @@
   "topic_title": "eGFR",
   "source": "cleveland",
   "source_name": "Cleveland Clinic",
-  "version": 1,
-  "url": "https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis",
-  "scraped_at": "2026-08-10T11:01:34.171101+00:00",
-  "word_count": 872,
-  "content_hash": "sha256:d016739f19606dc65189f2dbfa35dcf1c788f15fddfcf148833bf0178710f69a",
+  "version": 2,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio",
+  "scraped_at": "2026-08-15T06:10:43.711214+00:00",
+  "word_count": 844,
+  "content_hash": "sha256:d32ff5e7bee32ab5aeb8126a9003a79b2caff2db0e260519ecd4fe5e049ccd32",
   "extractor": "trafilatura/bs4",
   "language": "en",
   "http_etag": null,
   "http_last_modified": null,
-  "status": "failed",
+  "status": "scraped",
   "quality_checks": {
     "min_words": true,
-    "has_keywords": false,
+    "has_keywords": true,
     "has_headings": false,
     "is_english": true,
-    "passed": false,
+    "passed": true,
     "reasons": [
-      "No topic keywords found in text",
       "No markdown headings found"
     ]
   }

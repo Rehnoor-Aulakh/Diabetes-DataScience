@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000017",
+  "topic": "postprandial_glucose",
+  "topic_title": "Postprandial Blood Glucose",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/articles/continuous-glucose-monitoring-cgm",
+  "scraped_at": "2026-08-15T06:04:29.350380+00:00",
+  "word_count": 1289,
+  "content_hash": "sha256:3d3c93998bd2acdd5d1e8b9aa470dff8ee29cfd8dbce5691b16c94b777a1527c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000040",
+  "topic": "ldl",
+  "topic_title": "LDL Cholesterol",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:04:59.846154+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:4fbea454e21900c184fd3b5a260b0a3d400e81e7bb607c49f4ace698e11e8ae4",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

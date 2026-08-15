@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000078",
+  "topic": "diabetic_nephropathy",
+  "topic_title": "Diabetic Nephropathy",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556",
+  "scraped_at": "2026-08-15T05:56:42.168766+00:00",
+  "word_count": 1040,
+  "content_hash": "sha256:a61494d0d9203280e37b1d4c79cc69986ba4bcfc785ccfd74c1969ea4e12bef2",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

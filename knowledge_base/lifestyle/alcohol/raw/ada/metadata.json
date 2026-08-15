@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000097",
+  "topic": "alcohol",
+  "topic_title": "Alcohol and Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/substance-use",
+  "scraped_at": "2026-08-15T06:09:34.334835+00:00",
+  "word_count": 210,
+  "content_hash": "sha256:05994072a6d88dbf09f8beb9a096c79ce7963e334947aa51ece4a395104973d1",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:06:05 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

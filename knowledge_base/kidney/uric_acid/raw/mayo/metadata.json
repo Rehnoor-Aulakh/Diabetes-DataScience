@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000026",
+  "topic": "uric_acid",
+  "topic_title": "Uric Acid",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 3,
+  "url": "https://www.mayoclinic.org/diseases-conditions/gout/diagnosis-treatment/drc-20372867",
+  "scraped_at": "2026-08-15T06:10:44.518685+00:00",
+  "word_count": 834,
+  "content_hash": "sha256:9e173fb9daa261e4fe041c56d2d127ca1097b53f8fedba27ea55fcb3af78fabd",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

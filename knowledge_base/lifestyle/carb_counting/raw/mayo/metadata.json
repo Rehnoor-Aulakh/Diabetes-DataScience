@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000091",
+  "topic": "carb_counting",
+  "topic_title": "Carbohydrate Counting",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-diet/art-20044295",
+  "scraped_at": "2026-08-15T06:05:56.295370+00:00",
+  "word_count": 1311,
+  "content_hash": "sha256:a5e2934c7102124f4651be810d48ff2bd3aa4408cce34b7f4a5e1f462642f1d6",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"byj3adtsudri7r\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000097",
+  "topic": "alcohol",
+  "topic_title": "Alcohol and Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder/symptoms-causes/syc-20369243",
+  "scraped_at": "2026-08-15T06:06:13.057495+00:00",
+  "word_count": 1884,
+  "content_hash": "sha256:24a4f33f010eea1ec5799dbb55f2f1a0a9d212e5a256be779b7a75886fb805fc",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

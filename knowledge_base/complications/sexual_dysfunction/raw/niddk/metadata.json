@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000088",
+  "topic": "sexual_dysfunction",
+  "topic_title": "Diabetes and Sexual Health",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction",
+  "scraped_at": "2026-08-15T06:09:28.534433+00:00",
+  "word_count": 367,
+  "content_hash": "sha256:1c084f132f62d81f78e1faa7f2f690ee5adc4d47f98f26eaa6742ddc37afcf9b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000084",
+  "topic": "hyperglycemia",
+  "topic_title": "Hyperglycemia (High Blood Sugar)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631",
+  "scraped_at": "2026-08-15T05:57:00.786404+00:00",
+  "word_count": 1133,
+  "content_hash": "sha256:6e4ab62b981a871be40cbe233d3ba09682afa5f7267ffaaa0f3109ade3bfb55a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"xstehido5urb99\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

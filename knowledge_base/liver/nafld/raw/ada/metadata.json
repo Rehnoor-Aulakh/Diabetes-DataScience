@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000037",
+  "topic": "nafld",
+  "topic_title": "NAFLD / MASLD and Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-health",
+  "scraped_at": "2026-08-15T06:04:53.020846+00:00",
+  "word_count": 292,
+  "content_hash": "sha256:a6617e2ae10107138d5005745ae1a2e3ebeddc9324f518d96685708d6d7402d1",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:49 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

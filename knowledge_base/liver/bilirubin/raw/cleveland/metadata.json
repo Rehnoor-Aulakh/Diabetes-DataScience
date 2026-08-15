@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000030",
+  "topic": "bilirubin",
+  "topic_title": "Bilirubin",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/17845-bilirubin",
+  "scraped_at": "2026-08-15T05:55:08.365823+00:00",
+  "word_count": 1690,
+  "content_hash": "sha256:773d3ba165dfaad7a3f334d9d938571503cdf0f4ac32df5351c2849b122c1b88",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

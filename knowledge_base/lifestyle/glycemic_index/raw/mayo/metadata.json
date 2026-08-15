@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000092",
+  "topic": "glycemic_index",
+  "topic_title": "Glycemic Index and Glycemic Load",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/glycemic-index-diet/art-20048478",
+  "scraped_at": "2026-08-15T05:57:25.813406+00:00",
+  "word_count": 1229,
+  "content_hash": "sha256:bb203006fb5a4eb8ba0b4bbdca47c226e19a96640da103944883d3dcabac502a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"3m3379w7fbquj6\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

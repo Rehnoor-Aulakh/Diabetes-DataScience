@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000004",
+  "topic": "prediabetes",
+  "topic_title": "Prediabetes",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/prevention-type-2/prediabetes-prevent-type-2.html",
+  "scraped_at": "2026-08-15T06:08:38.353808+00:00",
+  "word_count": 480,
+  "content_hash": "sha256:187a1bf478fabc41228954597af806f90ea10ac12b2fcbdd9172898fcb516ba7",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

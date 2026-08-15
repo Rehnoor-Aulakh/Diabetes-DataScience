@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000051",
+  "topic": "folate",
+  "topic_title": "Folate (Vitamin B9)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/22831-vitamin-b12-deficiency",
+  "scraped_at": "2026-08-15T06:05:14.697767+00:00",
+  "word_count": 855,
+  "content_hash": "sha256:a9397f082638e405fe40c055a9e79f14f458fdb61a71d7cee0baaab0a83ce036",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

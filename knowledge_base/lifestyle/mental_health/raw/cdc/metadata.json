@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000099",
+  "topic": "mental_health",
+  "topic_title": "Mental Health and Diabetes",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/living-with/mental-health.html",
+  "scraped_at": "2026-08-15T06:06:16.409472+00:00",
+  "word_count": 923,
+  "content_hash": "sha256:9b94deb5c037ca958960a5d34e2865f9dfcb38e302a2352f7367e084534f8e4b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

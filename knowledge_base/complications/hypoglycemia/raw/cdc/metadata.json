@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000083",
+  "topic": "hypoglycemia",
+  "topic_title": "Hypoglycemia (Low Blood Sugar)",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/signs-symptoms/index.html",
+  "scraped_at": "2026-08-15T06:09:07.135833+00:00",
+  "word_count": 344,
+  "content_hash": "sha256:e5b7aad437529c9e8d4dc268b64eb3ab4d5a84e48451f9de23c82e30eb074014",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

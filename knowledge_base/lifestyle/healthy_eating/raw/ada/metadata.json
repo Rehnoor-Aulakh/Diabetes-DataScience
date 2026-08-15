@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000090",
+  "topic": "healthy_eating",
+  "topic_title": "Healthy Eating for Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/food-nutrition",
+  "scraped_at": "2026-08-15T05:57:18.166700+00:00",
+  "word_count": 427,
+  "content_hash": "sha256:38c42d84c6081a2153cc68623af6caad7293073041900746e7b6dde2ac30d9c7",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:05:23 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

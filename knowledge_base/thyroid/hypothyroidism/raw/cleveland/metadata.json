@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000067",
+  "topic": "hypothyroidism",
+  "topic_title": "Hypothyroidism",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/12120-hypothyroidism",
+  "scraped_at": "2026-08-15T05:56:16.313336+00:00",
+  "word_count": 1167,
+  "content_hash": "sha256:96aabf11db5e83e76497e0f32ac7f38bf1b7685b7da29d4b4f9e0bad6f5136bb",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

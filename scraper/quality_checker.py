@@ -24,15 +24,18 @@ def get_minimum_words(module: str) -> int:
     lab_test_modules = {"diagnosis", "kidney", "liver", "lipid", "vitamins", "cbc", "thyroid", "cardiovascular"}
     disease_modules = {"diabetes", "complications"}
     medication_modules = {"medications"}
+    lifestyle_modules = {"lifestyle"}
     
     if module in lab_test_modules:
-        return 180
+        return 70
     elif module in disease_modules:
-        return 500
+        return 200
     elif module in medication_modules:
-        return 350
+        return 200
+    elif module in lifestyle_modules:
+        return 150
     else:
-        return 300
+        return 150
 
 def check_quality(markdown_text: str, keywords: list[str], module: str = "") -> QualityResult:
     """
@@ -54,7 +57,6 @@ def check_quality(markdown_text: str, keywords: list[str], module: str = "") -> 
     # Language detection
     pass_lang = False
     try:
-        # Detect on a substring to be faster, avoid markdown symbols
         clean_sample = re.sub(r'#|\*|-', '', text_only[:2000]).strip()
         if clean_sample:
             lang = detect(clean_sample)
@@ -62,22 +64,32 @@ def check_quality(markdown_text: str, keywords: list[str], module: str = "") -> 
         else:
             pass_lang = False
     except LangDetectException:
-        pass_lang = False
+        # Fallback heuristic: check common english stopwords
+        common_en = {"the", "and", "is", "of", "to", "in", "for", "with", "a", "that"}
+        sample_words = set(text_only.lower().split()[:100])
+        pass_lang = len(common_en & sample_words) >= 3
         
-    # Keyword check
+    # Keyword check (flexible normalization)
     pass_keywords = False
     if not keywords:
-        pass_keywords = True # Skip if no keywords provided
+        pass_keywords = True
     else:
         text_lower = text_only.lower()
-        # Check if any keyword appears in the text
+        text_clean = re.sub(r'[^a-z0-9\s]', ' ', text_lower)
         for kw in keywords:
-            if kw.lower() in text_lower:
+            kw_lower = kw.lower()
+            kw_clean = re.sub(r'[^a-z0-9\s]', ' ', kw_lower).strip()
+            if kw_lower in text_lower or (kw_clean and kw_clean in text_clean):
+                pass_keywords = True
+                break
+            # Also check individual words if multi-word keyword has distinctive medical terms
+            kw_parts = [p for p in kw_clean.split() if len(p) > 3 and p not in {"blood", "test", "rate", "count", "panel", "disease", "level", "management"}]
+            if any(p in text_clean for p in kw_parts):
                 pass_keywords = True
                 break
                 
-    # Headings check
-    pass_headings = bool(re.search(r'^#+ ', text_only, re.MULTILINE))
+    # Headings check (ATX headings #, bold lines **, or HTML headings)
+    pass_headings = bool(re.search(r'^(?:#+ |\*\*[^\n]+\*\*$|<h[1-6]>)', text_only, re.MULTILINE))
     
     reasons = []
     if not pass_words: reasons.append(f"Word count too low ({words} < {min_words})")

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000099",
+  "topic": "mental_health",
+  "topic_title": "Mental Health and Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/depression/symptoms-causes/syc-20356007",
+  "scraped_at": "2026-08-15T06:06:17.096273+00:00",
+  "word_count": 653,
+  "content_hash": "sha256:1c513f44684aaec676f43f3d88214db8001e5d66c7ba85150fe171dabb86218a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

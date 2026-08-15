@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000060",
+  "topic": "anemia",
+  "topic_title": "Anemia",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/anemia.html",
+  "scraped_at": "2026-08-15T05:56:06.608749+00:00",
+  "word_count": 1015,
+  "content_hash": "sha256:ce5b1f6933a927ae774c9679ba6f9dcbc18af29bc6cb68552d94464f9ff5c245",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"027aaebf82aeee32ac9b90cac804d0cb\"",
+  "http_last_modified": "Sat, 15 Aug 2026 04:16:18 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

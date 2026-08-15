@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000043",
+  "topic": "vldl",
+  "topic_title": "VLDL Cholesterol",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/vldl-cholesterol/faq-20058275",
+  "scraped_at": "2026-08-15T05:55:31.636551+00:00",
+  "word_count": 274,
+  "content_hash": "sha256:097aa49e6cfe4a22104c71e5a1c52e55fcc0f55d69bad82f6941ccb7545fd014",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"rugrm7agkppyvy\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

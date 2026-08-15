@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000074",
+  "topic": "atherosclerosis",
+  "topic_title": "Atherosclerosis",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569",
+  "scraped_at": "2026-08-15T05:56:32.642851+00:00",
+  "word_count": 955,
+  "content_hash": "sha256:ac109839e483f0954f260fa5c4fc4eb16d300a2aa1212822bab777b0f04fa39b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

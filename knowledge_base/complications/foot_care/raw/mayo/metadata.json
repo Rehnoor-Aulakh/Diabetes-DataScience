@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000080",
+  "topic": "foot_care",
+  "topic_title": "Diabetic Foot Care",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/amputation-and-diabetes/art-20045762",
+  "scraped_at": "2026-08-15T06:05:37.480533+00:00",
+  "word_count": 797,
+  "content_hash": "sha256:5fc3e42901bbab1f4aa8aa625d485141e2bea3b593e2bb4e5dbeea6a0ee6bf75",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"7bmuxh6a10qkng\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

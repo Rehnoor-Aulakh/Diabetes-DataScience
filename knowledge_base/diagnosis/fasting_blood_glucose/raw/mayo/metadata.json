@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000012",
+  "topic": "fasting_blood_glucose",
+  "topic_title": "Fasting Blood Sugar",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 2,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451",
+  "scraped_at": "2026-08-15T06:10:37.586336+00:00",
+  "word_count": 4787,
+  "content_hash": "sha256:345930d59fb167b61673b6ad2c05fce44b75172a8f1ceacc803e5737698149b3",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

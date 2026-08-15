@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000068",
+  "topic": "hyperthyroidism",
+  "topic_title": "Hyperthyroidism",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/hyperthyroidism/symptoms-causes/syc-20373659",
+  "scraped_at": "2026-08-15T05:56:17.282050+00:00",
+  "word_count": 889,
+  "content_hash": "sha256:b1020af89f1b287d463fbf7b107feba8b4f7722d14ddd8486d7931785b0555f5",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

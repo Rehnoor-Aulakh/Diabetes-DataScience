@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000030",
+  "topic": "bilirubin",
+  "topic_title": "Bilirubin",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/bilirubin/about/pac-20393041",
+  "scraped_at": "2026-08-15T05:55:07.636506+00:00",
+  "word_count": 1373,
+  "content_hash": "sha256:ca17779b2f5b1eff6560121330ca8618e3655776b333747dc3a999828f607a81",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

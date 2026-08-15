@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000105",
+  "topic": "dpp4_inhibitors",
+  "topic_title": "DPP-4 Inhibitors",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+  "scraped_at": "2026-08-15T05:58:06.766729+00:00",
+  "word_count": 930,
+  "content_hash": "sha256:cfcccca788bef0ed2ab830957230a75bbb9e3d30053374d5291efdd8c4f229d3",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"yg2i47dwtxr0ya\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

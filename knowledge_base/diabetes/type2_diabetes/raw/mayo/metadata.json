@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000003",
+  "topic": "type2_diabetes",
+  "topic_title": "Type 2 Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/symptoms-causes/syc-20351193",
+  "scraped_at": "2026-08-15T05:54:13.819295+00:00",
+  "word_count": 1395,
+  "content_hash": "sha256:82b39f1cc2d937669eaeee9022f1250838f9698a2ff6f0f69cc04cd36f9ecf1b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

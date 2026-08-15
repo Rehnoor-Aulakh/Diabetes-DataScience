@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000080",
+  "topic": "foot_care",
+  "topic_title": "Diabetic Foot Care",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
+  "scraped_at": "2026-08-15T06:05:36.565597+00:00",
+  "word_count": 878,
+  "content_hash": "sha256:81db4ebb140f6881940b235cba4f27f9d34400a0177249f11fbd3b8ad89aec25",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000095",
+  "topic": "sleep",
+  "topic_title": "Sleep and Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/expert-answers/diabetes-and-sleep/faq-20058474",
+  "scraped_at": "2026-08-15T06:10:54.641731+00:00",
+  "word_count": 460,
+  "content_hash": "sha256:082f9179d4b6b575b0936bcb9280f282888dd78b30eb91a2d7818f241b100516",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"vi3b614o0oqs7u\"",
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

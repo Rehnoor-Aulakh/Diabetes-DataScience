@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000006",
+  "topic": "insulin",
+  "topic_title": "Insulin",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 2,
+  "url": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+  "scraped_at": "2026-08-15T06:10:29.697014+00:00",
+  "word_count": 930,
+  "content_hash": "sha256:530232a84e45ae2f0366afcf1c2925823453a870ca846665181ce81d4873a07c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"yg2i47dwtxr0ya\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

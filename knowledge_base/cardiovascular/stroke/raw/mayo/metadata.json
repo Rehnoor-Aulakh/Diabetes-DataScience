@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000072",
+  "topic": "stroke",
+  "topic_title": "Stroke and Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+  "scraped_at": "2026-08-15T05:56:27.831056+00:00",
+  "word_count": 768,
+  "content_hash": "sha256:3b82626b239cb816766c44e26a9c14747c3b7bad4c60aed6cdf18a87f1a78683",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

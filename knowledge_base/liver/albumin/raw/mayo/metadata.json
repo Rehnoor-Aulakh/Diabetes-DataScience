@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000033",
+  "topic": "albumin",
+  "topic_title": "Albumin (Serum)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+  "scraped_at": "2026-08-15T05:55:11.768779+00:00",
+  "word_count": 902,
+  "content_hash": "sha256:00c3f16ba5bd694783b51a966a6a0208364e34c8a47a0f9231400e48e1a46884",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

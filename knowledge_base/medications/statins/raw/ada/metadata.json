@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000108",
+  "topic": "statins",
+  "topic_title": "Statins (Cholesterol Medications)",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:06:37.121043+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:5bb3af253b5ae2b7bea7e6f4306f15c679307c3b9d2661e21af3d8f20bb990df",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

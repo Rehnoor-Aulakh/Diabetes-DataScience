@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000057",
+  "topic": "rbc",
+  "topic_title": "Red Blood Cell Count",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919",
+  "scraped_at": "2026-08-15T05:56:01.423842+00:00",
+  "word_count": 1371,
+  "content_hash": "sha256:15c0eb6e50d4a7cb46d5db53878f34bdc63855ec38408a3d54878713cb4ab1c8",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000091",
+  "topic": "carb_counting",
+  "topic_title": "Carbohydrate Counting",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/food-nutrition/understanding-carbs",
+  "scraped_at": "2026-08-15T06:05:55.009092+00:00",
+  "word_count": 437,
+  "content_hash": "sha256:5f3f3aa39523b63f1fa886ca151e5390bd94986a7f846d40fa1192fee409b172",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:05 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

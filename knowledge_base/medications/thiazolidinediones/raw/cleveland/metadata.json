@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000107",
+  "topic": "thiazolidinediones",
+  "topic_title": "Thiazolidinediones (TZDs)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/drugs/19069-pioglitazone-tablets",
+  "scraped_at": "2026-08-15T06:06:35.898710+00:00",
+  "word_count": 819,
+  "content_hash": "sha256:ca4fcd4d05de89fb6f386d4160f0379fb09268ac192f7c74fe5117014becb61c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

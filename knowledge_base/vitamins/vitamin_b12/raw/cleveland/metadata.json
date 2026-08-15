@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000050",
+  "topic": "vitamin_b12",
+  "topic_title": "Vitamin B12",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/22831-vitamin-b12-deficiency",
+  "scraped_at": "2026-08-15T06:05:13.583546+00:00",
+  "word_count": 855,
+  "content_hash": "sha256:5c0832f9364d6379f699525be868dd175d90eed7693d987d7c8a49c6adbc7c09",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

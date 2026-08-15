@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000108",
+  "topic": "statins",
+  "topic_title": "Statins (Cholesterol Medications)",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/statins.html",
+  "scraped_at": "2026-08-15T05:58:14.962540+00:00",
+  "word_count": 765,
+  "content_hash": "sha256:3a3d90dda3cfe069180664d68c6b2db478b01d053c1309dd9eb6134afb0cf2ff",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"6bd127421a009b65465dc37290e97e3f\"",
+  "http_last_modified": "Sat, 15 Aug 2026 04:16:19 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

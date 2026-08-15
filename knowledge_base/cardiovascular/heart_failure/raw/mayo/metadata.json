@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000075",
+  "topic": "heart_failure",
+  "topic_title": "Heart Failure and Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/heart-failure/symptoms-causes/syc-20373142",
+  "scraped_at": "2026-08-15T05:56:34.626411+00:00",
+  "word_count": 1819,
+  "content_hash": "sha256:779213c181edc8d9c432d2c59ca3d34c10ad90368d96425ac5f5a10d4d3aaa31",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

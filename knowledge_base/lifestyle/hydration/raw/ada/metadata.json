@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000100",
+  "topic": "hydration",
+  "topic_title": "Hydration and Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/food-nutrition",
+  "scraped_at": "2026-08-15T06:06:18.094349+00:00",
+  "word_count": 427,
+  "content_hash": "sha256:ad573619c3e9b2395f40809876b47ccd1b912d0a6ebc06f72ef46d7cd589f1ac",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:03 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

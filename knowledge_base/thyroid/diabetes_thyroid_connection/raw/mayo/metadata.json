@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000069",
+  "topic": "diabetes_thyroid_connection",
+  "topic_title": "Diabetes and Thyroid Disease",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+  "scraped_at": "2026-08-15T06:05:27.751714+00:00",
+  "word_count": 1492,
+  "content_hash": "sha256:fd2e53db3b4bffa07774686ebfcae7a22535c767bc70734233c1710b4dd4487f",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

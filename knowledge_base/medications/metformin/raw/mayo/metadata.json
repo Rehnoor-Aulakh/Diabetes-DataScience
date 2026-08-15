@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000101",
+  "topic": "metformin",
+  "topic_title": "Metformin",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/drugs-supplements/metformin-oral-route/description/drg-20067074",
+  "scraped_at": "2026-08-15T05:57:56.060192+00:00",
+  "word_count": 3226,
+  "content_hash": "sha256:c2ed9f2e8fc218497a5b39df8e5f3efc1330c424bee30e9be26c5b9f09ec18d0",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"1wqzhpd4fspgeg\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000079",
+  "topic": "diabetic_foot",
+  "topic_title": "Diabetic Foot",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
+  "scraped_at": "2026-08-15T05:56:42.754061+00:00",
+  "word_count": 878,
+  "content_hash": "sha256:bacaaf98b4ef97af0f4c85367166ec5d0e824267eb2145b1fe29c7d57b7d2625",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

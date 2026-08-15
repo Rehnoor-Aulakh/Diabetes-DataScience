@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000049",
+  "topic": "vitamin_d",
+  "topic_title": "Vitamin D",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-d/art-20363792",
+  "scraped_at": "2026-08-15T05:55:46.213464+00:00",
+  "word_count": 1093,
+  "content_hash": "sha256:26b77461e82f3a98a866bc3decb283b268277a83687e59cca3dec3fdde3be949",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"jhk28wurzoqowv\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

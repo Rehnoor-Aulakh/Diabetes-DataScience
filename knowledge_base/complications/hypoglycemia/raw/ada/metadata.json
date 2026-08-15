@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000083",
+  "topic": "hypoglycemia",
+  "topic_title": "Hypoglycemia (Low Blood Sugar)",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/living-with-diabetes/hypoglycemia-low-blood-glucose",
+  "scraped_at": "2026-08-15T06:09:06.594496+00:00",
+  "word_count": 355,
+  "content_hash": "sha256:f4e1d9b0bc41b046e5d6f1720e700c9515b07dc0f1e35499181749475f537cef",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:05:08 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

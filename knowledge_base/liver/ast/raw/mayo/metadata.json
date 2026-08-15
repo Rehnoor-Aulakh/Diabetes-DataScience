@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000029",
+  "topic": "ast",
+  "topic_title": "AST (SGOT)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+  "scraped_at": "2026-08-15T05:55:06.235386+00:00",
+  "word_count": 902,
+  "content_hash": "sha256:f0d2bdda15da7ab1e6d279dc0a105c32755cfb710ca18e663b29c8f2d9e41c43",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

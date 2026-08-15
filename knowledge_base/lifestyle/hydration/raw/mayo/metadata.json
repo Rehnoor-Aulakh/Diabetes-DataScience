@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000100",
+  "topic": "hydration",
+  "topic_title": "Hydration and Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256",
+  "scraped_at": "2026-08-15T06:06:18.822145+00:00",
+  "word_count": 994,
+  "content_hash": "sha256:a6b969295b4dc83d0909c89facedbf8cb77d0e70b9fb7632b614b09140a97811",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"2kby7vs845qyud\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

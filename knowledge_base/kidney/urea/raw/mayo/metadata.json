@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000021",
+  "topic": "urea",
+  "topic_title": "Urea",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 2,
+  "url": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
+  "scraped_at": "2026-08-15T06:08:55.353803+00:00",
+  "word_count": 855,
+  "content_hash": "sha256:0fa9dac0ea5b2c0579b7a214903120886c6558d5f26a80f7c8a60f0ab9371308",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

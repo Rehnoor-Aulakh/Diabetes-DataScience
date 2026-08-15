@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000017",
+  "topic": "postprandial_glucose",
+  "topic_title": "Postprandial Blood Glucose",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/living-with-diabetes/treatment-care/checking-your-blood-sugar",
+  "scraped_at": "2026-08-15T06:04:27.779767+00:00",
+  "word_count": 726,
+  "content_hash": "sha256:9b1b5881020b6b6c8027244c00a449054cf4fb668ee0319ad38a5cd015b91208",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:26 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

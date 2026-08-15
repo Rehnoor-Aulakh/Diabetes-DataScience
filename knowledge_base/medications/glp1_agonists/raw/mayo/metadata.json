@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000103",
+  "topic": "glp1_agonists",
+  "topic_title": "GLP-1 Receptor Agonists",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/expert-answers/byetta/faq-20057955",
+  "scraped_at": "2026-08-15T05:58:02.170801+00:00",
+  "word_count": 967,
+  "content_hash": "sha256:2adfd88cddea28f3a1f8a8bbe6dbe0b870b9ba7940c7e7d9b899707e6c857fcc",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"h1z25w31n6qh4l\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

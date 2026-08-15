@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000051",
+  "topic": "folate",
+  "topic_title": "Folate (Vitamin B9)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/drugs-supplements-folate/art-20364625",
+  "scraped_at": "2026-08-15T05:55:48.804356+00:00",
+  "word_count": 780,
+  "content_hash": "sha256:5af73a3ed35dc81a84126c1e5318b841de8987a7a39bac20f448a474d68803a8",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"izlqeg06ksqj0d\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000008",
+  "topic": "pancreas",
+  "topic_title": "Pancreas and Beta Cells",
+  "source": "medlineplus",
+  "source_name": "MedlinePlus",
+  "version": 1,
+  "url": "https://medlineplus.gov/pancreaticdiseases.html",
+  "scraped_at": "2026-08-15T06:08:44.232116+00:00",
+  "word_count": 469,
+  "content_hash": "sha256:791cfc08b0f8da9e010c1b53a952919fed05efe9051b5f4f25750a0fcbcae304",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "W/\"fb25a9b712ad67d6bf0d67bb7eff669a\"",
+  "http_last_modified": "Sat, 15 Aug 2026 04:16:18 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

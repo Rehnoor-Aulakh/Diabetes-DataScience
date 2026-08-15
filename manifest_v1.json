@@ -1,7 +1,7 @@
 {
   "manifest_version": "1.1",
   "project": "Certus Diagnostics Medical Knowledge Base",
-  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic — all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
+  "description": "Master manifest for medical corpus generation. Every row tells the scraper: go to this source and fetch the page for this medical topic. The scraper reads this manifest and remains completely generic \u2014 all search behavior lives here. This manifest also serves as a medical knowledge graph specification, mapping topics to blood tests, clinical domains, related conditions, and patient questions.",
   "created": "2024-01-01",
   "last_updated": "2024-01-15",
   "defaults": {
@@ -58,7 +58,7 @@
     "description": "After all sources are scraped for a topic, generate a merged summary.md that synthesizes the best information from all sources. This becomes the Layer 2 canonical knowledge document and the primary retrieval target for RAG.",
     "layers": {
       "layer_1_raw": "Raw scraped documents. Never modify. Ground truth.",
-      "layer_2_canonical": "summary.md — generated from all sources. Primary retrieval document.",
+      "layer_2_canonical": "summary.md \u2014 generated from all sources. Primary retrieval document.",
       "layer_3_vectors": "Chunked and embedded from Layer 2. Stored in vector database."
     }
   },
@@ -89,7 +89,7 @@
       "search_url_template": "https://www.niddk.nih.gov/search?q={query}",
       "enabled": true,
       "evidence_tier": 1,
-      "notes": "NIH institute — authoritative on diabetes, kidney, liver, and digestive diseases."
+      "notes": "NIH institute \u2014 authoritative on diabetes, kidney, liver, and digestive diseases."
     },
     "mayo": {
       "name": "Mayo Clinic",
@@ -128,7 +128,7 @@
     {
       "module": "diabetes",
       "folder": "diabetes",
-      "description": "Diabetes fundamentals — types, pathophysiology, and core concepts.",
+      "description": "Diabetes fundamentals \u2014 types, pathophysiology, and core concepts.",
       "topics": [
         {
           "id": "diabetes_overview",
@@ -182,7 +182,9 @@
           "output_directory": "knowledge_base/diabetes/diabetes_overview",
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes",
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+            "cdc": "https://www.cdc.gov/diabetes/about/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444"
           }
         },
         {
@@ -238,7 +240,8 @@
           "output_directory": "knowledge_base/diabetes/type1_diabetes",
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes/type-1",
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-1-diabetes/symptoms-causes/syc-20353011"
           }
         },
         {
@@ -294,7 +297,9 @@
           "output_directory": "knowledge_base/diabetes/type2_diabetes",
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes/type-2",
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes",
+            "cdc": "https://www.cdc.gov/diabetes/about/about-type-2-diabetes.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/symptoms-causes/syc-20351193"
           }
         },
         {
@@ -348,7 +353,9 @@
           "output_directory": "knowledge_base/diabetes/prediabetes",
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes/prediabetes",
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance",
+            "cdc": "https://www.cdc.gov/diabetes/prevention-type-2/prediabetes-prevent-type-2.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/prediabetes/symptoms-causes/syc-20355278"
           }
         },
         {
@@ -396,7 +403,12 @@
             "ada": "Gestational diabetes mellitus",
             "mayo": "Gestational diabetes symptoms causes"
           },
-          "output_directory": "knowledge_base/diabetes/gestational_diabetes"
+          "output_directory": "knowledge_base/diabetes/gestational_diabetes",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/about/gestational-diabetes.html",
+            "ada": "https://diabetes.org/living-with-diabetes/pregnancy/gestational-diabetes",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/gestational-diabetes/symptoms-causes/syc-20355339"
+          }
         },
         {
           "id": "insulin",
@@ -447,7 +459,8 @@
           },
           "output_directory": "knowledge_base/diabetes/insulin",
           "direct_urls": {
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004"
           }
         },
         {
@@ -500,7 +513,9 @@
           },
           "output_directory": "knowledge_base/diabetes/insulin_resistance",
           "direct_urls": {
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance",
+            "ada": "https://diabetes.org/health-wellness/medication-treatments",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/metabolic-syndrome/symptoms-causes/syc-20351916"
           }
         },
         {
@@ -551,7 +566,11 @@
             "medlineplus": "Pancreas diseases and conditions",
             "cleveland": "Pancreas function beta cells"
           },
-          "output_directory": "knowledge_base/diabetes/pancreas"
+          "output_directory": "knowledge_base/diabetes/pancreas",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/pancreaticdiseases.html",
+            "cleveland": "https://my.clevelandclinic.org/health/body/21743-pancreas"
+          }
         },
         {
           "id": "glucose_metabolism",
@@ -602,14 +621,19 @@
             "ada": "Blood glucose management",
             "mayo": "Blood sugar regulation glucose metabolism"
           },
-          "output_directory": "knowledge_base/diabetes/glucose_metabolism"
+          "output_directory": "knowledge_base/diabetes/glucose_metabolism",
+          "direct_urls": {
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+            "ada": "https://diabetes.org/about-diabetes",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444"
+          }
         }
       ]
     },
     {
       "module": "diagnosis",
       "folder": "diagnosis",
-      "description": "Diabetes diagnostic tests — blood glucose, HbA1c, and supporting biomarkers.",
+      "description": "Diabetes diagnostic tests \u2014 blood glucose, HbA1c, and supporting biomarkers.",
       "topics": [
         {
           "id": "hba1c",
@@ -663,7 +687,8 @@
           "direct_urls": {
             "ada": "https://diabetes.org/about-diabetes/a1c",
             "niddk": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
-            "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/hba1c-test/about/pac-20384643"
           }
         },
         {
@@ -709,7 +734,11 @@
             "ada": "Estimated average glucose eAG",
             "mayo": "Blood glucose test average glucose"
           },
-          "output_directory": "knowledge_base/diagnosis/average_blood_glucose"
+          "output_directory": "knowledge_base/diagnosis/average_blood_glucose",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/a1c",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451"
+          }
         },
         {
           "id": "fasting_blood_glucose",
@@ -760,7 +789,10 @@
           },
           "output_directory": "knowledge_base/diagnosis/fasting_blood_glucose",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/blood-glucose-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+            "ada": "https://diabetes.org/about-diabetes/diagnosis",
+            "cdc": "https://www.cdc.gov/diabetes/diabetes-testing/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451"
           }
         },
         {
@@ -807,7 +839,9 @@
           },
           "output_directory": "knowledge_base/diagnosis/random_blood_glucose",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/blood-glucose-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+            "ada": "https://diabetes.org/about-diabetes/diagnosis",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451"
           }
         },
         {
@@ -856,7 +890,10 @@
             "medlineplus": "OGTT oral glucose tolerance test"
           },
           "output_directory": "knowledge_base/diagnosis/ogtt",
-          "direct_urls": {}
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/diagnosis",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/glucose-tolerance-test/about/pac-20394296"
+          }
         },
         {
           "id": "c_peptide",
@@ -901,7 +938,11 @@
             "cleveland": "C-peptide blood test",
             "mayo": "C-peptide test insulin"
           },
-          "output_directory": "knowledge_base/diagnosis/c_peptide"
+          "output_directory": "knowledge_base/diagnosis/c_peptide",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/24242-c-peptide-test",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/c-peptide-test/about/pac-20384646"
+          }
         },
         {
           "id": "glucose_monitoring",
@@ -952,7 +993,12 @@
             "cdc": "Monitoring your blood sugar diabetes",
             "mayo": "Blood sugar testing glucose monitor"
           },
-          "output_directory": "knowledge_base/diagnosis/glucose_monitoring"
+          "output_directory": "knowledge_base/diagnosis/glucose_monitoring",
+          "direct_urls": {
+            "ada": "https://diabetes.org/living-with-diabetes/treatment-care/checking-your-blood-sugar",
+            "cdc": "https://www.cdc.gov/diabetes/diabetes-testing/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628"
+          }
         },
         {
           "id": "postprandial_glucose",
@@ -999,14 +1045,19 @@
             "mayo": "Blood sugar after eating postprandial glucose",
             "cleveland": "Postprandial blood sugar test"
           },
-          "output_directory": "knowledge_base/diagnosis/postprandial_glucose"
+          "output_directory": "knowledge_base/diagnosis/postprandial_glucose",
+          "direct_urls": {
+            "ada": "https://diabetes.org/living-with-diabetes/treatment-care/checking-your-blood-sugar",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150",
+            "cleveland": "https://my.clevelandclinic.org/health/articles/continuous-glucose-monitoring-cgm"
+          }
         }
       ]
     },
     {
       "module": "kidney",
       "folder": "kidney",
-      "description": "Kidney health biomarkers — renal function tests critical for diabetes management.",
+      "description": "Kidney health biomarkers \u2014 renal function tests critical for diabetes management.",
       "topics": [
         {
           "id": "creatinine",
@@ -1059,7 +1110,10 @@
           },
           "output_directory": "knowledge_base/kidney/creatinine",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/creatinine-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/creatinine-test/",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio",
+            "niddk": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/tests-diagnosis"
           }
         },
         {
@@ -1110,7 +1164,10 @@
           },
           "output_directory": "knowledge_base/kidney/egfr",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/estimated-glomerular-filtration-rate-egfr/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/estimated-glomerular-filtration-rate-egfr/",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
+            "niddk": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/tests-diagnosis"
           }
         },
         {
@@ -1160,7 +1217,9 @@
           },
           "output_directory": "knowledge_base/kidney/bun",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17684-blood-urea-nitrogen-bun-test",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646"
           }
         },
         {
@@ -1205,7 +1264,11 @@
             "mayo": "Urea nitrogen blood test",
             "cleveland": "Urea test kidney"
           },
-          "output_directory": "knowledge_base/kidney/urea"
+          "output_directory": "knowledge_base/kidney/urea",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17684-blood-urea-nitrogen-bun-test"
+          }
         },
         {
           "id": "urine_creatinine",
@@ -1251,7 +1314,11 @@
             "cleveland": "Urine creatinine test creatinine clearance",
             "mayo": "Creatinine clearance test urine"
           },
-          "output_directory": "knowledge_base/kidney/urine_creatinine"
+          "output_directory": "knowledge_base/kidney/urine_creatinine",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646"
+          }
         },
         {
           "id": "microalbumin",
@@ -1303,7 +1370,9 @@
           },
           "output_directory": "knowledge_base/kidney/microalbumin",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/",
+            "ada": "https://diabetes.org/health-wellness/kidney-care",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/diagnosis-treatment/drc-20354562"
           }
         },
         {
@@ -1355,7 +1424,9 @@
           },
           "output_directory": "knowledge_base/kidney/albumin_creatinine_ratio",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/diagnosis-treatment/drc-20354562",
+            "ada": "https://diabetes.org/health-wellness/kidney-care"
           }
         },
         {
@@ -1412,7 +1483,9 @@
           },
           "output_directory": "knowledge_base/kidney/diabetic_kidney_disease",
           "direct_urls": {
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/diabetic-kidney-disease",
+            "ada": "https://diabetes.org/health-wellness/kidney-care",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556"
           }
         },
         {
@@ -1460,7 +1533,11 @@
             "mayo": "Uric acid test",
             "cleveland": "Uric acid test hyperuricemia"
           },
-          "output_directory": "knowledge_base/kidney/uric_acid"
+          "output_directory": "knowledge_base/kidney/uric_acid",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/gout/diagnosis-treatment/drc-20372867",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/17808-hyperuricemia-high-uric-acid-level"
+          }
         },
         {
           "id": "electrolytes",
@@ -1512,14 +1589,18 @@
             "mayo": "Electrolyte test sodium potassium",
             "cleveland": "Basic metabolic panel electrolytes"
           },
-          "output_directory": "knowledge_base/kidney/electrolytes"
+          "output_directory": "knowledge_base/kidney/electrolytes",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/comprehensive-metabolic-panel/about/pac-20385006",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22020-basic-metabolic-panel-bmp"
+          }
         }
       ]
     },
     {
       "module": "liver",
       "folder": "liver",
-      "description": "Liver health biomarkers — liver function tests and associated conditions relevant to metabolic disease.",
+      "description": "Liver health biomarkers \u2014 liver function tests and associated conditions relevant to metabolic disease.",
       "topics": [
         {
           "id": "alt",
@@ -1568,7 +1649,11 @@
             "medlineplus": "ALT blood test SGPT",
             "cleveland": "Alanine aminotransferase ALT test"
           },
-          "output_directory": "knowledge_base/liver/alt"
+          "output_directory": "knowledge_base/liver/alt",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22028-alanine-transaminase-alt"
+          }
         },
         {
           "id": "ast",
@@ -1617,7 +1702,11 @@
             "cleveland": "AST blood test SGOT liver",
             "medlineplus": "AST SGOT blood test"
           },
-          "output_directory": "knowledge_base/liver/ast"
+          "output_directory": "knowledge_base/liver/ast",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22147-aspartate-transferase-ast"
+          }
         },
         {
           "id": "bilirubin",
@@ -1668,7 +1757,11 @@
             "mayo": "Bilirubin test",
             "cleveland": "Bilirubin test total direct indirect"
           },
-          "output_directory": "knowledge_base/liver/bilirubin"
+          "output_directory": "knowledge_base/liver/bilirubin",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/bilirubin/about/pac-20393041",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17845-bilirubin"
+          }
         },
         {
           "id": "alp",
@@ -1715,7 +1808,11 @@
             "cleveland": "ALP alkaline phosphatase test",
             "mayo": "Alkaline phosphatase test"
           },
-          "output_directory": "knowledge_base/liver/alp"
+          "output_directory": "knowledge_base/liver/alp",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22029-alkaline-phosphatase-alp",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595"
+          }
         },
         {
           "id": "ggt",
@@ -1763,7 +1860,11 @@
             "mayo": "Gamma-glutamyl transferase GGT test",
             "medlineplus": "GGT blood test gamma-glutamyl"
           },
-          "output_directory": "knowledge_base/liver/ggt"
+          "output_directory": "knowledge_base/liver/ggt",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22055-gamma-glutamyl-transferase-ggt-test",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595"
+          }
         },
         {
           "id": "albumin",
@@ -1810,7 +1911,11 @@
             "mayo": "Albumin serum test liver",
             "cleveland": "Serum albumin test"
           },
-          "output_directory": "knowledge_base/liver/albumin"
+          "output_directory": "knowledge_base/liver/albumin",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test"
+          }
         },
         {
           "id": "globulin",
@@ -1857,7 +1962,11 @@
             "mayo": "Total protein test globulin albumin",
             "cleveland": "Globulin test A/G ratio"
           },
-          "output_directory": "knowledge_base/liver/globulin"
+          "output_directory": "knowledge_base/liver/globulin",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test"
+          }
         },
         {
           "id": "total_protein",
@@ -1902,7 +2011,11 @@
             "mayo": "Total protein test",
             "cleveland": "Serum total protein test"
           },
-          "output_directory": "knowledge_base/liver/total_protein"
+          "output_directory": "knowledge_base/liver/total_protein",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test"
+          }
         },
         {
           "id": "fatty_liver",
@@ -1952,7 +2065,11 @@
             "niddk": "Fatty liver disease NAFLD",
             "cleveland": "Fatty liver disease symptoms causes"
           },
-          "output_directory": "knowledge_base/liver/fatty_liver"
+          "output_directory": "knowledge_base/liver/fatty_liver",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/15831-fatty-liver-disease"
+          }
         },
         {
           "id": "nafld",
@@ -2008,7 +2125,11 @@
             "mayo": "Nonalcoholic steatohepatitis NASH",
             "ada": "Diabetes and liver disease NAFLD"
           },
-          "output_directory": "knowledge_base/liver/nafld"
+          "output_directory": "knowledge_base/liver/nafld",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-health"
+          }
         },
         {
           "id": "liver_function_panel",
@@ -2063,14 +2184,18 @@
             "mayo": "Liver function tests",
             "cleveland": "Liver panel liver function test"
           },
-          "output_directory": "knowledge_base/liver/liver_function_panel"
+          "output_directory": "knowledge_base/liver/liver_function_panel",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/liver-function-tests/about/pac-20394595",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17662-liver-function-tests"
+          }
         }
       ]
     },
     {
       "module": "lipid",
       "folder": "lipid",
-      "description": "Lipid profile — cholesterol, triglycerides, and cardiovascular risk biomarkers.",
+      "description": "Lipid profile \u2014 cholesterol, triglycerides, and cardiovascular risk biomarkers.",
       "topics": [
         {
           "id": "hdl",
@@ -2120,7 +2245,9 @@
           },
           "output_directory": "knowledge_base/lipid/hdl",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/hdl-cholesterol/art-20046388",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
           }
         },
         {
@@ -2173,7 +2300,9 @@
           },
           "output_directory": "knowledge_base/lipid/ldl",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/cholesterol/art-20045192",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
           }
         },
         {
@@ -2222,7 +2351,9 @@
           },
           "output_directory": "knowledge_base/lipid/total_cholesterol",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+            "cdc": "https://www.cdc.gov/cholesterol/about/index.html",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601"
           }
         },
         {
@@ -2275,7 +2406,9 @@
           },
           "output_directory": "knowledge_base/lipid/triglycerides",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/triglycerides-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/triglycerides-test/",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/triglycerides/art-20048186",
+            "cleveland": "https://my.clevelandclinic.org/health/articles/11117-triglycerides"
           }
         },
         {
@@ -2320,7 +2453,11 @@
             "cleveland": "VLDL very low-density lipoprotein",
             "mayo": "VLDL cholesterol"
           },
-          "output_directory": "knowledge_base/lipid/vldl"
+          "output_directory": "knowledge_base/lipid/vldl",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/articles/24540-vldl-cholesterol",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/vldl-cholesterol/faq-20058275"
+          }
         },
         {
           "id": "apoa1",
@@ -2365,7 +2502,12 @@
             "cleveland": "Apolipoprotein A1 test",
             "mayo": "Apolipoprotein A cardiovascular risk"
           },
-          "output_directory": "knowledge_base/lipid/apoa1"
+          "output_directory": "knowledge_base/lipid/apoa1",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+            "cleveland": "https://my.clevelandclinic.org/health/articles/apolipoprotein-a1",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601"
+          }
         },
         {
           "id": "apob",
@@ -2412,7 +2554,11 @@
             "cleveland": "Apolipoprotein B ApoB test",
             "mayo": "Apolipoprotein B cardiovascular"
           },
-          "output_directory": "knowledge_base/lipid/apob"
+          "output_directory": "knowledge_base/lipid/apob",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/24992-apolipoprotein-b-test",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601"
+          }
         },
         {
           "id": "lipoprotein_a",
@@ -2458,7 +2604,11 @@
             "mayo": "Lipoprotein(a) heart disease risk",
             "medlineplus": "Lipoprotein a blood test"
           },
-          "output_directory": "knowledge_base/lipid/lipoprotein_a"
+          "output_directory": "knowledge_base/lipid/lipoprotein_a",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/21980-lipoprotein-a-test",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601"
+          }
         },
         {
           "id": "lipid_panel",
@@ -2511,7 +2661,11 @@
             "mayo": "Cholesterol test lipid panel",
             "cdc": "Getting your cholesterol checked lipid panel"
           },
-          "output_directory": "knowledge_base/lipid/lipid_panel"
+          "output_directory": "knowledge_base/lipid/lipid_panel",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601",
+            "cdc": "https://www.cdc.gov/cholesterol/about/index.html"
+          }
         },
         {
           "id": "cholesterol_ratio",
@@ -2560,7 +2714,12 @@
             "cleveland": "Non-HDL cholesterol ratio",
             "ada": "Cholesterol management diabetes targets"
           },
-          "output_directory": "knowledge_base/lipid/cholesterol_ratio"
+          "output_directory": "knowledge_base/lipid/cholesterol_ratio",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/cholesterol-ratio/faq-20058006",
+            "cleveland": "https://my.clevelandclinic.org/health/articles/11920-cholesterol-numbers-what-do-they-mean",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
+          }
         }
       ]
     },
@@ -2617,7 +2776,9 @@
           },
           "output_directory": "knowledge_base/vitamins/vitamin_d",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/vitamin-d-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/vitamin-d-test/",
+            "mayo": "https://www.mayoclinic.org/drugs-supplements-vitamin-d/art-20363792",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/21112-vitamin-d-deficiency"
           }
         },
         {
@@ -2670,7 +2831,9 @@
           },
           "output_directory": "knowledge_base/vitamins/vitamin_b12",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/vitamin-b-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/vitamin-b-test/",
+            "mayo": "https://www.mayoclinic.org/drugs-supplements-vitamin-b12/art-20363663",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/22831-vitamin-b12-deficiency"
           }
         },
         {
@@ -2716,7 +2879,11 @@
             "mayo": "Folate deficiency vitamin B9",
             "cleveland": "Folate blood test folic acid"
           },
-          "output_directory": "knowledge_base/vitamins/folate"
+          "output_directory": "knowledge_base/vitamins/folate",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/drugs-supplements-folate/art-20364625",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/22831-vitamin-b12-deficiency"
+          }
         },
         {
           "id": "iron_studies",
@@ -2768,7 +2935,11 @@
             "mayo": "Iron deficiency anemia ferritin test",
             "cleveland": "Iron studies ferritin TIBC transferrin"
           },
-          "output_directory": "knowledge_base/vitamins/iron_studies"
+          "output_directory": "knowledge_base/vitamins/iron_studies",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/ferritin-test/about/pac-20384928",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17820-ferritin-test"
+          }
         },
         {
           "id": "magnesium",
@@ -2814,14 +2985,18 @@
             "mayo": "Magnesium supplement deficiency",
             "cleveland": "Magnesium test hypomagnesemia"
           },
-          "output_directory": "knowledge_base/vitamins/magnesium"
+          "output_directory": "knowledge_base/vitamins/magnesium",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/comprehensive-metabolic-panel/about/pac-20385006",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22020-basic-metabolic-panel-bmp"
+          }
         }
       ]
     },
     {
       "module": "cbc",
       "folder": "cbc",
-      "description": "Complete Blood Count — hematology markers relevant to diabetes management and complications.",
+      "description": "Complete Blood Count \u2014 hematology markers relevant to diabetes management and complications.",
       "topics": [
         {
           "id": "cbc_overview",
@@ -2879,7 +3054,9 @@
           },
           "output_directory": "knowledge_base/cbc/cbc_overview",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count"
           }
         },
         {
@@ -2932,7 +3109,9 @@
           },
           "output_directory": "knowledge_base/cbc/hemoglobin",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/hemoglobin-test/about/pac-20385075",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count"
           }
         },
         {
@@ -2979,7 +3158,11 @@
             "mayo": "Hematocrit test",
             "cleveland": "Hematocrit blood test PCV"
           },
-          "output_directory": "knowledge_base/cbc/hematocrit"
+          "output_directory": "knowledge_base/cbc/hematocrit",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/hematocrit/about/pac-20385282",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count"
+          }
         },
         {
           "id": "rbc",
@@ -3029,7 +3212,9 @@
           },
           "output_directory": "knowledge_base/cbc/rbc",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919"
           }
         },
         {
@@ -3082,7 +3267,10 @@
             "mayo": "White blood cell count test"
           },
           "output_directory": "knowledge_base/cbc/wbc",
-          "direct_urls": {}
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919"
+          }
         },
         {
           "id": "platelets",
@@ -3128,7 +3316,10 @@
             "cleveland": "Platelet count test PLT"
           },
           "output_directory": "knowledge_base/cbc/platelets",
-          "direct_urls": {}
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count"
+          }
         },
         {
           "id": "anemia",
@@ -3185,7 +3376,11 @@
             "medlineplus": "Anemia blood disorder",
             "niddk": "Anemia in chronic kidney disease diabetes"
           },
-          "output_directory": "knowledge_base/cbc/anemia"
+          "output_directory": "knowledge_base/cbc/anemia",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/anemia/symptoms-causes/syc-20351360",
+            "medlineplus": "https://medlineplus.gov/anemia.html"
+          }
         },
         {
           "id": "esr",
@@ -3229,7 +3424,11 @@
             "mayo": "Sed rate erythrocyte sedimentation rate",
             "cleveland": "ESR test inflammation"
           },
-          "output_directory": "knowledge_base/cbc/esr"
+          "output_directory": "knowledge_base/cbc/esr",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/sed-rate/about/pac-20384797",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17747-sed-rate-erythrocyte-sedimentation-rate-or-esr-test"
+          }
         },
         {
           "id": "crp",
@@ -3277,14 +3476,18 @@
             "mayo": "C-reactive protein test inflammation",
             "cleveland": "High-sensitivity CRP hs-CRP test cardiovascular"
           },
-          "output_directory": "knowledge_base/cbc/crp"
+          "output_directory": "knowledge_base/cbc/crp",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/c-reactive-protein-test/about/pac-20385228",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/23056-c-reactive-protein-crp-test"
+          }
         }
       ]
     },
     {
       "module": "thyroid",
       "folder": "thyroid",
-      "description": "Thyroid function — hormone tests and the thyroid-diabetes connection.",
+      "description": "Thyroid function \u2014 hormone tests and the thyroid-diabetes connection.",
       "topics": [
         {
           "id": "tsh",
@@ -3334,7 +3537,9 @@
           },
           "output_directory": "knowledge_base/thyroid/tsh",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202",
+            "cleveland": "https://my.clevelandclinic.org/health/articles/23524-thyroid-stimulating-hormone-tsh-levels"
           }
         },
         {
@@ -3383,7 +3588,10 @@
             "cleveland": "T3 blood test thyroid hormone"
           },
           "output_directory": "knowledge_base/thyroid/t3",
-          "direct_urls": {}
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/22425-triiodothyronine-t3"
+          }
         },
         {
           "id": "t4",
@@ -3432,7 +3640,9 @@
           },
           "output_directory": "knowledge_base/thyroid/t4",
           "direct_urls": {
-            "medlineplus": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/"
+            "medlineplus": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+            "mayo": "https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/17556-thyroid-blood-tests"
           }
         },
         {
@@ -3482,7 +3692,11 @@
             "mayo": "Thyroid peroxidase antibodies TPO test",
             "cleveland": "Thyroid antibodies Hashimoto autoimmune"
           },
-          "output_directory": "knowledge_base/thyroid/thyroid_antibodies"
+          "output_directory": "knowledge_base/thyroid/thyroid_antibodies",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202",
+            "cleveland": "https://my.clevelandclinic.org/health/diagnostics/thyroid-antibodies"
+          }
         },
         {
           "id": "hypothyroidism",
@@ -3532,7 +3746,11 @@
             "medlineplus": "Hypothyroidism",
             "cleveland": "Hypothyroidism underactive thyroid disease"
           },
-          "output_directory": "knowledge_base/thyroid/hypothyroidism"
+          "output_directory": "knowledge_base/thyroid/hypothyroidism",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/hypothyroidism/symptoms-causes/syc-20350284",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/12120-hypothyroidism"
+          }
         },
         {
           "id": "hyperthyroidism",
@@ -3580,7 +3798,11 @@
             "medlineplus": "Hyperthyroidism",
             "cleveland": "Hyperthyroidism overactive thyroid Graves"
           },
-          "output_directory": "knowledge_base/thyroid/hyperthyroidism"
+          "output_directory": "knowledge_base/thyroid/hyperthyroidism",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/hyperthyroidism/symptoms-causes/syc-20373659",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/14129-hyperthyroidism"
+          }
         },
         {
           "id": "diabetes_thyroid_connection",
@@ -3630,14 +3852,19 @@
             "mayo": "Diabetes and thyroid problems",
             "cleveland": "Thyroid disease diabetes connection"
           },
-          "output_directory": "knowledge_base/thyroid/diabetes_thyroid_connection"
+          "output_directory": "knowledge_base/thyroid/diabetes_thyroid_connection",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-health",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/12120-hypothyroidism"
+          }
         }
       ]
     },
     {
       "module": "cardiovascular",
       "folder": "cardiovascular",
-      "description": "Cardiovascular health — heart disease, hypertension, and vascular conditions linked to diabetes.",
+      "description": "Cardiovascular health \u2014 heart disease, hypertension, and vascular conditions linked to diabetes.",
       "topics": [
         {
           "id": "heart_disease",
@@ -3691,7 +3918,10 @@
           },
           "output_directory": "knowledge_base/cardiovascular/heart_disease",
           "direct_urls": {
-            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/heart-disease-stroke"
+            "niddk": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/heart-disease-stroke",
+            "cdc": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-heart.html",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart/diabetes-affect-your-heart",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118"
           }
         },
         {
@@ -3742,7 +3972,11 @@
             "ada": "High blood pressure diabetes"
           },
           "output_directory": "knowledge_base/cardiovascular/hypertension",
-          "direct_urls": {}
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/high-blood-pressure/about/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/symptoms-causes/syc-20373410",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
+          }
         },
         {
           "id": "stroke",
@@ -3790,7 +4024,12 @@
             "mayo": "Stroke symptoms causes risk factors",
             "ada": "Diabetes and stroke risk"
           },
-          "output_directory": "knowledge_base/cardiovascular/stroke"
+          "output_directory": "knowledge_base/cardiovascular/stroke",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/stroke/about/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
+          }
         },
         {
           "id": "peripheral_artery_disease",
@@ -3838,7 +4077,12 @@
             "ada": "Peripheral arterial disease diabetes",
             "mayo": "Peripheral artery disease symptoms"
           },
-          "output_directory": "knowledge_base/cardiovascular/peripheral_artery_disease"
+          "output_directory": "knowledge_base/cardiovascular/peripheral_artery_disease",
+          "direct_urls": {
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/17357-peripheral-artery-disease-pad",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/peripheral-artery-disease/symptoms-causes/syc-20350557"
+          }
         },
         {
           "id": "atherosclerosis",
@@ -3888,7 +4132,11 @@
             "cleveland": "Atherosclerosis causes symptoms",
             "medlineplus": "Atherosclerosis"
           },
-          "output_directory": "knowledge_base/cardiovascular/atherosclerosis"
+          "output_directory": "knowledge_base/cardiovascular/atherosclerosis",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/16753-atherosclerosis-arterial-disease"
+          }
         },
         {
           "id": "heart_failure",
@@ -3935,14 +4183,19 @@
             "cleveland": "Heart failure diabetes connection",
             "ada": "Diabetes and heart failure"
           },
-          "output_directory": "knowledge_base/cardiovascular/heart_failure"
+          "output_directory": "knowledge_base/cardiovascular/heart_failure",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/heart-failure/symptoms-causes/syc-20373142",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/21494-right-sided-heart-failure",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
+          }
         }
       ]
     },
     {
       "module": "complications",
       "folder": "complications",
-      "description": "Diabetes complications — microvascular, macrovascular, and acute metabolic emergencies.",
+      "description": "Diabetes complications \u2014 microvascular, macrovascular, and acute metabolic emergencies.",
       "topics": [
         {
           "id": "diabetic_neuropathy",
@@ -3991,7 +4244,11 @@
             "mayo": "Diabetic neuropathy types symptoms",
             "niddk": "Diabetic neuropathies nerve damage"
           },
-          "output_directory": "knowledge_base/complications/diabetic_neuropathy"
+          "output_directory": "knowledge_base/complications/diabetic_neuropathy",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/complications",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-neuropathy/symptoms-causes/syc-20371580"
+          }
         },
         {
           "id": "diabetic_retinopathy",
@@ -4040,7 +4297,11 @@
             "mayo": "Diabetic retinopathy symptoms",
             "niddk": "Diabetic eye disease retinopathy"
           },
-          "output_directory": "knowledge_base/complications/diabetic_retinopathy"
+          "output_directory": "knowledge_base/complications/diabetic_retinopathy",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/eye-health",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-retinopathy/symptoms-causes/syc-20371611"
+          }
         },
         {
           "id": "diabetic_nephropathy",
@@ -4092,7 +4353,11 @@
             "niddk": "Diabetic kidney disease nephropathy",
             "mayo": "Diabetic nephropathy symptoms causes"
           },
-          "output_directory": "knowledge_base/complications/diabetic_nephropathy"
+          "output_directory": "knowledge_base/complications/diabetic_nephropathy",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/kidney-care",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556"
+          }
         },
         {
           "id": "diabetic_foot",
@@ -4140,7 +4405,12 @@
             "ada": "Foot complications diabetes",
             "mayo": "Diabetic foot care ulcers"
           },
-          "output_directory": "knowledge_base/complications/diabetic_foot"
+          "output_directory": "knowledge_base/complications/diabetic_foot",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
+            "ada": "https://diabetes.org/diabetes-and-your-feet",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/amputation-and-diabetes/art-20045762"
+          }
         },
         {
           "id": "foot_care",
@@ -4186,7 +4456,12 @@
             "cdc": "Diabetes foot care tips",
             "mayo": "Diabetes foot care daily routine"
           },
-          "output_directory": "knowledge_base/complications/foot_care"
+          "output_directory": "knowledge_base/complications/foot_care",
+          "direct_urls": {
+            "ada": "https://diabetes.org/diabetes-and-your-feet",
+            "cdc": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/amputation-and-diabetes/art-20045762"
+          }
         },
         {
           "id": "diabetic_ketoacidosis",
@@ -4237,7 +4512,11 @@
             "mayo": "Diabetic ketoacidosis symptoms causes",
             "medlineplus": "Diabetic ketoacidosis DKA"
           },
-          "output_directory": "knowledge_base/complications/diabetic_ketoacidosis"
+          "output_directory": "knowledge_base/complications/diabetic_ketoacidosis",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/complications",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/symptoms-causes/syc-20371551"
+          }
         },
         {
           "id": "hyperosmolar_syndrome",
@@ -4286,7 +4565,12 @@
             "mayo": "Diabetic hyperosmolar syndrome",
             "cleveland": "Hyperosmolar hyperglycemic state HHS"
           },
-          "output_directory": "knowledge_base/complications/hyperosmolar_syndrome"
+          "output_directory": "knowledge_base/complications/hyperosmolar_syndrome",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/complications",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes"
+          }
         },
         {
           "id": "hypoglycemia",
@@ -4336,7 +4620,12 @@
             "cdc": "Low blood sugar hypoglycemia diabetes",
             "mayo": "Hypoglycemia symptoms causes treatment"
           },
-          "output_directory": "knowledge_base/complications/hypoglycemia"
+          "output_directory": "knowledge_base/complications/hypoglycemia",
+          "direct_urls": {
+            "ada": "https://diabetes.org/living-with-diabetes/hypoglycemia-low-blood-glucose",
+            "cdc": "https://www.cdc.gov/diabetes/signs-symptoms/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/hypoglycemia/symptoms-causes/syc-20373685"
+          }
         },
         {
           "id": "hyperglycemia",
@@ -4384,7 +4673,12 @@
             "cdc": "High blood sugar hyperglycemia diabetes",
             "mayo": "Hyperglycemia in diabetes symptoms"
           },
-          "output_directory": "knowledge_base/complications/hyperglycemia"
+          "output_directory": "knowledge_base/complications/hyperglycemia",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/complications",
+            "cdc": "https://www.cdc.gov/diabetes/signs-symptoms/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631"
+          }
         },
         {
           "id": "diabetic_skin_conditions",
@@ -4430,7 +4724,12 @@
             "mayo": "Diabetes skin conditions symptoms",
             "cleveland": "Diabetic skin problems conditions"
           },
-          "output_directory": "knowledge_base/complications/diabetic_skin_conditions"
+          "output_directory": "knowledge_base/complications/diabetic_skin_conditions",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/complications",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes"
+          }
         },
         {
           "id": "dental_health",
@@ -4473,7 +4772,12 @@
             "cdc": "Diabetes gum disease dental health",
             "mayo": "Diabetes and dental care oral health"
           },
-          "output_directory": "knowledge_base/complications/dental_health"
+          "output_directory": "knowledge_base/complications/dental_health",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/keeping-your-mouth-healthy",
+            "cdc": "https://www.cdc.gov/oral-health/about/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/periodontitis/symptoms-causes/syc-20354473"
+          }
         },
         {
           "id": "gastroparesis",
@@ -4519,7 +4823,11 @@
             "mayo": "Gastroparesis symptoms causes",
             "cleveland": "Diabetic gastroparesis stomach"
           },
-          "output_directory": "knowledge_base/complications/gastroparesis"
+          "output_directory": "knowledge_base/complications/gastroparesis",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/gastroparesis/symptoms-causes/syc-20355787",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/15522-gastroparesis"
+          }
         },
         {
           "id": "sexual_dysfunction",
@@ -4563,7 +4871,12 @@
             "mayo": "Erectile dysfunction diabetes",
             "cleveland": "Diabetes sexual dysfunction"
           },
-          "output_directory": "knowledge_base/complications/sexual_dysfunction"
+          "output_directory": "knowledge_base/complications/sexual_dysfunction",
+          "direct_urls": {
+            "niddk": "https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/erectile-dysfunction/symptoms-causes/syc-20355776",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/10035-erectile-dysfunction"
+          }
         },
         {
           "id": "infections",
@@ -4612,14 +4925,19 @@
             "cleveland": "Diabetes risk infections",
             "mayo": "Diabetes and wound healing infections"
           },
-          "output_directory": "knowledge_base/complications/infections"
+          "output_directory": "knowledge_base/complications/infections",
+          "direct_urls": {
+            "ada": "https://diabetes.org/about-diabetes/complications",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/21501-type-2-diabetes",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444"
+          }
         }
       ]
     },
     {
       "module": "lifestyle",
       "folder": "lifestyle",
-      "description": "Lifestyle management — diet, exercise, sleep, and behavioral factors for diabetes care.",
+      "description": "Lifestyle management \u2014 diet, exercise, sleep, and behavioral factors for diabetes care.",
       "topics": [
         {
           "id": "healthy_eating",
@@ -4670,7 +4988,12 @@
             "cdc": "Diabetes meal planning eating well",
             "mayo": "Diabetes diet create healthy eating plan"
           },
-          "output_directory": "knowledge_base/lifestyle/healthy_eating"
+          "output_directory": "knowledge_base/lifestyle/healthy_eating",
+          "direct_urls": {
+            "ada": "https://diabetes.org/food-nutrition",
+            "cdc": "https://www.cdc.gov/diabetes/healthy-eating/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-diet/art-20044295"
+          }
         },
         {
           "id": "carb_counting",
@@ -4716,7 +5039,12 @@
             "cdc": "Carbohydrate counting diabetes food",
             "mayo": "Carb counting diabetes meal planning"
           },
-          "output_directory": "knowledge_base/lifestyle/carb_counting"
+          "output_directory": "knowledge_base/lifestyle/carb_counting",
+          "direct_urls": {
+            "ada": "https://diabetes.org/food-nutrition/understanding-carbs",
+            "cdc": "https://www.cdc.gov/diabetes/healthy-eating/index.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-diet/art-20044295"
+          }
         },
         {
           "id": "glycemic_index",
@@ -4762,7 +5090,12 @@
             "mayo": "Glycemic index diet",
             "medlineplus": "Glycemic index food list"
           },
-          "output_directory": "knowledge_base/lifestyle/glycemic_index"
+          "output_directory": "knowledge_base/lifestyle/glycemic_index",
+          "direct_urls": {
+            "ada": "https://diabetes.org/food-nutrition/understanding-carbs",
+            "mayo": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/glycemic-index-diet/art-20048478",
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000941.htm"
+          }
         },
         {
           "id": "exercise",
@@ -4812,7 +5145,12 @@
             "ada": "Fitness and exercise diabetes",
             "mayo": "Diabetes and exercise blood sugar"
           },
-          "output_directory": "knowledge_base/lifestyle/exercise"
+          "output_directory": "knowledge_base/lifestyle/exercise",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/living-with/physical-activity.html",
+            "ada": "https://diabetes.org/health-wellness/fitness",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-and-exercise/art-20045697"
+          }
         },
         {
           "id": "weight_management",
@@ -4863,7 +5201,12 @@
             "mayo": "Diabetes and weight loss management",
             "ada": "Weight management diabetes obesity"
           },
-          "output_directory": "knowledge_base/lifestyle/weight_management"
+          "output_directory": "knowledge_base/lifestyle/weight_management",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/living-with/healthy-weight.html",
+            "mayo": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/weight-loss/art-20047752",
+            "ada": "https://diabetes.org/health-wellness/weight-management"
+          }
         },
         {
           "id": "sleep",
@@ -4909,7 +5252,12 @@
             "mayo": "Sleep and blood sugar diabetes",
             "cleveland": "Diabetes and sleep problems"
           },
-          "output_directory": "knowledge_base/lifestyle/sleep"
+          "output_directory": "knowledge_base/lifestyle/sleep",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/php/toolkits/new-beginnings-sleep-health.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/expert-answers/diabetes-and-sleep/faq-20058474",
+            "cleveland": "https://my.clevelandclinic.org/health/diseases/8718-sleep-apnea"
+          }
         },
         {
           "id": "smoking",
@@ -4954,7 +5302,12 @@
             "ada": "Smoking and diabetes risk",
             "mayo": "Quit smoking diabetes benefits"
           },
-          "output_directory": "knowledge_base/lifestyle/smoking"
+          "output_directory": "knowledge_base/lifestyle/smoking",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/risk-factors/diabetes-and-smoking.html",
+            "ada": "https://diabetes.org/health-wellness/substance-use",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/nicotine-dependence/symptoms-causes/syc-20351584"
+          }
         },
         {
           "id": "alcohol",
@@ -5002,7 +5355,12 @@
             "ada": "Alcohol and diabetes what you need to know",
             "mayo": "Diabetes and alcohol effects blood sugar"
           },
-          "output_directory": "knowledge_base/lifestyle/alcohol"
+          "output_directory": "knowledge_base/lifestyle/alcohol",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/alcohol/about-alcohol-use/index.html",
+            "ada": "https://diabetes.org/health-wellness/substance-use",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder/symptoms-causes/syc-20369243"
+          }
         },
         {
           "id": "stress_management",
@@ -5050,7 +5408,12 @@
             "mayo": "Stress and blood sugar diabetes",
             "ada": "Mental health stress diabetes"
           },
-          "output_directory": "knowledge_base/lifestyle/stress_management"
+          "output_directory": "knowledge_base/lifestyle/stress_management",
+          "direct_urls": {
+            "cdc": "https://www.cdc.gov/diabetes/articles/10-tips-coping-diabetes-distress.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/stress-and-diabetes/art-20046037",
+            "ada": "https://diabetes.org/health-wellness/mental-health"
+          }
         },
         {
           "id": "mental_health",
@@ -5096,7 +5459,12 @@
             "cdc": "Diabetes and mental health",
             "mayo": "Diabetes and depression mental health"
           },
-          "output_directory": "knowledge_base/lifestyle/mental_health"
+          "output_directory": "knowledge_base/lifestyle/mental_health",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/mental-health",
+            "cdc": "https://www.cdc.gov/diabetes/living-with/mental-health.html",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/depression/symptoms-causes/syc-20356007"
+          }
         },
         {
           "id": "hydration",
@@ -5143,14 +5511,19 @@
             "mayo": "Dehydration and diabetes symptoms",
             "cleveland": "Diabetes hydration water intake"
           },
-          "output_directory": "knowledge_base/lifestyle/hydration"
+          "output_directory": "knowledge_base/lifestyle/hydration",
+          "direct_urls": {
+            "ada": "https://diabetes.org/food-nutrition",
+            "mayo": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256",
+            "cleveland": "https://my.clevelandclinic.org/health/treatments/9013-dehydration"
+          }
         }
       ]
     },
     {
       "module": "medications",
       "folder": "medications",
-      "description": "Diabetes medications — drug classes, mechanisms, and treatment approaches. Marked as future priority for corpus expansion.",
+      "description": "Diabetes medications \u2014 drug classes, mechanisms, and treatment approaches. Marked as future priority for corpus expansion.",
       "topics": [
         {
           "id": "metformin",
@@ -5200,7 +5573,12 @@
             "mayo": "Metformin oral route",
             "cleveland": "Metformin diabetes medication"
           },
-          "output_directory": "knowledge_base/medications/metformin"
+          "output_directory": "knowledge_base/medications/metformin",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000086.htm",
+            "mayo": "https://www.mayoclinic.org/drugs-supplements/metformin-oral-route/description/drg-20067074",
+            "cleveland": "https://my.clevelandclinic.org/health/drugs/20805-pioglitazone-metformin-extended-release-tablets"
+          }
         },
         {
           "id": "insulin_therapy",
@@ -5251,7 +5629,12 @@
             "mayo": "Insulin therapy types and delivery",
             "medlineplus": "Insulin injection diabetes"
           },
-          "output_directory": "knowledge_base/medications/insulin_therapy"
+          "output_directory": "knowledge_base/medications/insulin_therapy",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/medication-treatments",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/insulin-and-diabetes/art-20046974",
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000082.htm"
+          }
         },
         {
           "id": "glp1_agonists",
@@ -5303,7 +5686,12 @@
             "mayo": "GLP-1 agonist medications diabetes",
             "cleveland": "GLP-1 receptor agonist diabetes weight loss"
           },
-          "output_directory": "knowledge_base/medications/glp1_agonists"
+          "output_directory": "knowledge_base/medications/glp1_agonists",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/medication-treatments",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/expert-answers/byetta/faq-20057955",
+            "cleveland": "https://my.clevelandclinic.org/health/treatments/13901-glp-1-agonists"
+          }
         },
         {
           "id": "sglt2_inhibitors",
@@ -5355,7 +5743,12 @@
             "mayo": "SGLT2 inhibitors diabetes kidney heart",
             "cleveland": "SGLT2 inhibitors diabetes medication"
           },
-          "output_directory": "knowledge_base/medications/sglt2_inhibitors"
+          "output_directory": "knowledge_base/medications/sglt2_inhibitors",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/medication-treatments",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+            "cleveland": "https://my.clevelandclinic.org/health/treatments/sglt2-inhibitors"
+          }
         },
         {
           "id": "dpp4_inhibitors",
@@ -5402,7 +5795,12 @@
             "mayo": "DPP-4 inhibitors diabetes treatment",
             "medlineplus": "Sitagliptin DPP-4 inhibitor"
           },
-          "output_directory": "knowledge_base/medications/dpp4_inhibitors"
+          "output_directory": "knowledge_base/medications/dpp4_inhibitors",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/medication-treatments",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000086.htm"
+          }
         },
         {
           "id": "sulfonylureas",
@@ -5449,7 +5847,12 @@
             "mayo": "Sulfonylureas diabetes medication",
             "cleveland": "Sulfonylurea diabetes oral medication"
           },
-          "output_directory": "knowledge_base/medications/sulfonylureas"
+          "output_directory": "knowledge_base/medications/sulfonylureas",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000086.htm",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+            "cleveland": "https://my.clevelandclinic.org/health/treatments/sulfonylureas"
+          }
         },
         {
           "id": "thiazolidinediones",
@@ -5497,7 +5900,12 @@
             "mayo": "Thiazolidinediones diabetes TZD",
             "cleveland": "Pioglitazone Actos diabetes medication"
           },
-          "output_directory": "knowledge_base/medications/thiazolidinediones"
+          "output_directory": "knowledge_base/medications/thiazolidinediones",
+          "direct_urls": {
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000086.htm",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+            "cleveland": "https://my.clevelandclinic.org/health/drugs/19069-pioglitazone-tablets"
+          }
         },
         {
           "id": "statins",
@@ -5547,7 +5955,12 @@
             "medlineplus": "Statins for cholesterol",
             "ada": "Statin therapy diabetes cardiovascular"
           },
-          "output_directory": "knowledge_base/medications/statins"
+          "output_directory": "knowledge_base/medications/statins",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statins/art-20045772",
+            "medlineplus": "https://medlineplus.gov/statins.html",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
+          }
         },
         {
           "id": "ace_inhibitors_arbs",
@@ -5597,7 +6010,12 @@
             "medlineplus": "ACE inhibitors angiotensin",
             "ada": "ACE inhibitors ARBs diabetes kidney protection"
           },
-          "output_directory": "knowledge_base/medications/ace_inhibitors_arbs"
+          "output_directory": "knowledge_base/medications/ace_inhibitors_arbs",
+          "direct_urls": {
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/ace-inhibitors/art-20047480",
+            "medlineplus": "https://medlineplus.gov/ency/patientinstructions/000099.htm",
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart"
+          }
         },
         {
           "id": "aspirin_antiplatelet",
@@ -5643,7 +6061,12 @@
             "mayo": "Daily aspirin therapy benefits risks",
             "cleveland": "Aspirin antiplatelet diabetes heart"
           },
-          "output_directory": "knowledge_base/medications/aspirin_antiplatelet"
+          "output_directory": "knowledge_base/medications/aspirin_antiplatelet",
+          "direct_urls": {
+            "ada": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+            "mayo": "https://www.mayoclinic.org/diseases-conditions/heart-disease/in-depth/daily-aspirin-therapy/art-20046797",
+            "cleveland": "https://my.clevelandclinic.org/health/treatments/22282-statins"
+          }
         }
       ]
     }
@@ -5665,20 +6088,20 @@
     "Priority 1 = must-have for Certus Diagnostics MVP. Scrape first.",
     "Priority 2 = important for comprehensive coverage. Scrape second pass.",
     "Priority 3 = future expansion or medication module. Scrape when ready.",
-    "Status stages: pending → scraped → cleaned → chunked → embedded → verified → ready.",
+    "Status stages: pending \u2192 scraped \u2192 cleaned \u2192 chunked \u2192 embedded \u2192 verified \u2192 ready.",
     "Each topic folder contains one .md file per source (e.g., ada_v1.md, mayo_v1.md, niddk_v1.md).",
     "Each topic folder also contains metadata.json tracking url, scraped_on, word_count, content_hash, and version.",
     "After all sources are scraped, a summary.md (Layer 2) is generated from all sources for each topic.",
     "The queries object maps source keys to site-specific search strings because each site titles pages differently.",
-    "The medications module is marked as 'future' — not for the current assignment but structurally ready.",
+    "The medications module is marked as 'future' \u2014 not for the current assignment but structurally ready.",
     "Sources were selected for each topic based on which organization is the recognized authority for that domain.",
     "related_tests maps topics to actual blood test parameter names as they appear in lab reports for direct report-to-knowledge lookup.",
     "related_topics creates a knowledge graph enabling traversal from any concept to clinically related concepts.",
-    "clinical_tags enable fast filtering without embeddings — e.g., filter(tag=='kidney') returns all renal content.",
+    "clinical_tags enable fast filtering without embeddings \u2014 e.g., filter(tag=='kidney') returns all renal content.",
     "patient_questions drive future QA pair generation and inform chatbot prompt engineering.",
-    "source_priority defines evidence hierarchy — if sources disagree, higher-ranked sources are trusted first.",
+    "source_priority defines evidence hierarchy \u2014 if sources disagree, higher-ranked sources are trusted first.",
     "reading_level starts at 'patient' and can later be expanded to 'medical_student' and 'doctor' for multi-audience content.",
-    "refresh_interval guides re-scraping schedule — fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
+    "refresh_interval guides re-scraping schedule \u2014 fast-changing topics (GLP-1: 6 months) vs stable topics (anatomy: 5 years).",
     "document_id (KB-XXXXXX) provides a stable identifier for traceability from vector database chunks back to source documents."
   ]
 }

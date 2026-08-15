@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000061",
+  "topic": "esr",
+  "topic_title": "ESR (Erythrocyte Sedimentation Rate)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/17747-sed-rate-erythrocyte-sedimentation-rate-or-esr-test",
+  "scraped_at": "2026-08-15T06:05:19.313824+00:00",
+  "word_count": 1197,
+  "content_hash": "sha256:c1ab2bd5f17977c83a870643d8688aa74afcde468f97a0a807368a042ae19004",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

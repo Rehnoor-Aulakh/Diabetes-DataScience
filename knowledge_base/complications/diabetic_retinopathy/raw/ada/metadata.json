@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000077",
+  "topic": "diabetic_retinopathy",
+  "topic_title": "Diabetic Retinopathy",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/eye-health",
+  "scraped_at": "2026-08-15T06:05:35.038086+00:00",
+  "word_count": 927,
+  "content_hash": "sha256:502701a229d471e39d83fc0b875ba20d6202b79f2b87af69640e833ba9e5fc96",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:46 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000057",
+  "topic": "rbc",
+  "topic_title": "Red Blood Cell Count",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/4053-complete-blood-count",
+  "scraped_at": "2026-08-15T05:56:00.555608+00:00",
+  "word_count": 1509,
+  "content_hash": "sha256:70b46b6f8d0b341a0f3333c8045998e2f8a09780473955feaa7ad1ea1fc4c502",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

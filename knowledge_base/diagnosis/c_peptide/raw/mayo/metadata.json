@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000015",
+  "topic": "c_peptide",
+  "topic_title": "C-Peptide",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/c-peptide-test/about/pac-20384646",
+  "scraped_at": "2026-08-15T06:04:25.523817+00:00",
+  "word_count": 855,
+  "content_hash": "sha256:76d064cbab303633c944b48b0aef9aa69ad19107b9d4638bcb61cedf4b640d90",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

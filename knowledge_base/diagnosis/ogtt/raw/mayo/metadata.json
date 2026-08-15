@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000014",
+  "topic": "ogtt",
+  "topic_title": "Oral Glucose Tolerance Test",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/glucose-tolerance-test/about/pac-20394296",
+  "scraped_at": "2026-08-15T05:54:39.055367+00:00",
+  "word_count": 1244,
+  "content_hash": "sha256:7279036fb7dcdcf1e6688298c76393cf71f4f161a8663ecc5ab97ca2354fd8d5",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

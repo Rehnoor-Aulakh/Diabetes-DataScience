@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000086",
+  "topic": "dental_health",
+  "topic_title": "Diabetes and Dental Health",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/oral-health/about/index.html",
+  "scraped_at": "2026-08-15T06:05:46.905406+00:00",
+  "word_count": 1282,
+  "content_hash": "sha256:4a5b3030b9c73b864ffc4d874ed03aff7627a5350139cd7e437c05862ed5b6ab",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

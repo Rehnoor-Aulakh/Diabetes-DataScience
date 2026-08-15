@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000009",
+  "topic": "glucose_metabolism",
+  "topic_title": "Blood Glucose Regulation",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/about-diabetes",
+  "scraped_at": "2026-08-15T06:04:16.795861+00:00",
+  "word_count": 559,
+  "content_hash": "sha256:9eb9a59ff35ec559339c4b0c9f403fde2f63a696ea108b189d56f9f5b27de064",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:12 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000081",
+  "topic": "diabetic_ketoacidosis",
+  "topic_title": "Diabetic Ketoacidosis (DKA)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-ketoacidosis/symptoms-causes/syc-20371551",
+  "scraped_at": "2026-08-15T05:56:50.614218+00:00",
+  "word_count": 1127,
+  "content_hash": "sha256:84bd045152109555a4da246c29e68d8a73b706c207a2a55b6ea0a7c8d68f06ef",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"153z5i6u960qo14\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

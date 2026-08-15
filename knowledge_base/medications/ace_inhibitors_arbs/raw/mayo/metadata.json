@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000109",
+  "topic": "ace_inhibitors_arbs",
+  "topic_title": "ACE Inhibitors and ARBs",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/ace-inhibitors/art-20047480",
+  "scraped_at": "2026-08-15T05:58:17.792784+00:00",
+  "word_count": 386,
+  "content_hash": "sha256:e056e6ecae2b858c3031a9c95801efd4d5e985ba2f9c32b18990a65119d644f7",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"16a6jc6dby0r3v1\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

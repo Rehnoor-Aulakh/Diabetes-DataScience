@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000031",
+  "topic": "alp",
+  "topic_title": "ALP (Alkaline Phosphatase)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/22029-alkaline-phosphatase-alp",
+  "scraped_at": "2026-08-15T05:55:09.021229+00:00",
+  "word_count": 1545,
+  "content_hash": "sha256:2a9592b80c97535d4dc6453b86c2f8a06cfaf0738b301e512be490f6e0c3ce28",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

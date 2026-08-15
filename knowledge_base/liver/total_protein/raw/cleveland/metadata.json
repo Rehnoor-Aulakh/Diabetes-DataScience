@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000035",
+  "topic": "total_protein",
+  "topic_title": "Total Protein",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/22390-albumin-blood-test",
+  "scraped_at": "2026-08-15T06:04:48.979548+00:00",
+  "word_count": 596,
+  "content_hash": "sha256:54ce7eb2105c8c6cd62ce4a329736aa56e95f92ba6dbdbee467efd1ff460cff8",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

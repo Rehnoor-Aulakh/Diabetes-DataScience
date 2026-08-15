@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000104",
+  "topic": "sglt2_inhibitors",
+  "topic_title": "SGLT2 Inhibitors",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/treatments/sglt2-inhibitors",
+  "scraped_at": "2026-08-15T06:06:29.432868+00:00",
+  "word_count": 790,
+  "content_hash": "sha256:90d8fe87d07037e4aa4d130adfb3bc1c0b919e5d85ac8bd6a01370becb964d11",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

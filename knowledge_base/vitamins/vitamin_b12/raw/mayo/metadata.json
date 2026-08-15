@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000050",
+  "topic": "vitamin_b12",
+  "topic_title": "Vitamin B12",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-b12/art-20363663",
+  "scraped_at": "2026-08-15T05:55:47.755525+00:00",
+  "word_count": 731,
+  "content_hash": "sha256:eb2c25fe71973ed7bea84fb68e9af75166d6f38431509491b87581eba4679066",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"3pme1xuh4kqjkp\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000022",
+  "topic": "urine_creatinine",
+  "topic_title": "Urine Creatinine",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio",
+  "scraped_at": "2026-08-15T06:04:36.196325+00:00",
+  "word_count": 844,
+  "content_hash": "sha256:e6a63283f376bb095e848d424890fa144a32519b0a49fa1cfef9b50c6da517a1",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

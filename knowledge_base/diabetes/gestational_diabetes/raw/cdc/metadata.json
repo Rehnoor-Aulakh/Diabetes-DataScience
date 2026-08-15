@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000005",
+  "topic": "gestational_diabetes",
+  "topic_title": "Gestational Diabetes",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/about/gestational-diabetes.html",
+  "scraped_at": "2026-08-15T05:54:17.946106+00:00",
+  "word_count": 549,
+  "content_hash": "sha256:286fa7ed5d8ebde2dac7a3726927fc287383fa5553f732d02c0e03af766931f9",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

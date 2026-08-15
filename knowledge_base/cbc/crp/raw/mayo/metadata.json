@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000062",
+  "topic": "crp",
+  "topic_title": "CRP / hs-CRP (C-Reactive Protein)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/c-reactive-protein-test/about/pac-20385228",
+  "scraped_at": "2026-08-15T05:56:08.799847+00:00",
+  "word_count": 747,
+  "content_hash": "sha256:873e0cd9e6192d5837341f1a1cc1bc36bc90618c1cd3c78cdd38cd942bf1651f",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

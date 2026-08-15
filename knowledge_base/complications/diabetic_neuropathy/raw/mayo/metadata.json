@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000076",
+  "topic": "diabetic_neuropathy",
+  "topic_title": "Diabetic Neuropathy",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetic-neuropathy/symptoms-causes/syc-20371580",
+  "scraped_at": "2026-08-15T05:56:38.356234+00:00",
+  "word_count": 1926,
+  "content_hash": "sha256:7e8b0ddb269c64b4423f8c156e7f687bced8f943de391ca1b5befefe181da14a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"mhw12nuwcvrgt4\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

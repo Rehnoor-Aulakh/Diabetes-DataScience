@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000041",
+  "topic": "total_cholesterol",
+  "topic_title": "Total Cholesterol",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/cholesterol/about/index.html",
+  "scraped_at": "2026-08-15T05:55:27.100042+00:00",
+  "word_count": 758,
+  "content_hash": "sha256:86daae5a8681e276bb92ed93a61cebd918b58328d51726152913d0766245ce88",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

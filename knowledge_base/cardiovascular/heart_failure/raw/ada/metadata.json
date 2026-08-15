@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000075",
+  "topic": "heart_failure",
+  "topic_title": "Heart Failure and Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T05:56:36.530504+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:6311c784751fe8154d7b6636e484f5a774d02f05d1fd43c0e2fc6d0472eee044",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:17:21 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

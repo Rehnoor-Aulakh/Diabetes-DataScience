@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000086",
+  "topic": "dental_health",
+  "topic_title": "Diabetes and Dental Health",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/keeping-your-mouth-healthy",
+  "scraped_at": "2026-08-15T05:57:07.711967+00:00",
+  "word_count": 717,
+  "content_hash": "sha256:eec5bc6e685868771d93cb27c891a99579cf643f27f6c6247c71dc5b1fcce467",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:18:28 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

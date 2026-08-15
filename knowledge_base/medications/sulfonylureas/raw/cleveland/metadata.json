@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000106",
+  "topic": "sulfonylureas",
+  "topic_title": "Sulfonylureas",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/treatments/sulfonylureas",
+  "scraped_at": "2026-08-15T06:06:33.642549+00:00",
+  "word_count": 718,
+  "content_hash": "sha256:91f06d0819c95ce8295c7618ed2b956d66e44c6edc387eef7cd653eff2986611",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

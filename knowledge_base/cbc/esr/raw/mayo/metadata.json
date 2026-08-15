@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000061",
+  "topic": "esr",
+  "topic_title": "ESR (Erythrocyte Sedimentation Rate)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/sed-rate/about/pac-20384797",
+  "scraped_at": "2026-08-15T05:56:07.487855+00:00",
+  "word_count": 487,
+  "content_hash": "sha256:2d051020cb9fecc0b7bfd28d088b96c95bb473af6ebc1c014a2d8c36deaec1c1",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

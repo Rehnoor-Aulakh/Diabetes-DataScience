@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000110",
+  "topic": "aspirin_antiplatelet",
+  "topic_title": "Aspirin and Antiplatelet Therapy",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:06:40.268606+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:80fc2ec9e3190714981defca66be6ae97974a757054f9a20e235d8226c0a7890",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

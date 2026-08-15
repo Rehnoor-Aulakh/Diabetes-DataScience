@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000108",
+  "topic": "statins",
+  "topic_title": "Statins (Cholesterol Medications)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/statins/art-20045772",
+  "scraped_at": "2026-08-15T05:58:13.680169+00:00",
+  "word_count": 1374,
+  "content_hash": "sha256:2a99b2d0f2d694932b22dbf5c309a6bdc68673e7647fb29a619c3fabc7f95104",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"vs5s59iucbr6hb\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

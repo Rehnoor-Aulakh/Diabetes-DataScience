@@ -4,24 +4,23 @@
   "topic_title": "Creatinine",
   "source": "cleveland",
   "source_name": "Cleveland Clinic",
-  "version": 1,
-  "url": "https://my.clevelandclinic.org/health/diseases/17957-cyclosporiasis",
-  "scraped_at": "2026-08-10T11:01:28.177209+00:00",
-  "word_count": 872,
-  "content_hash": "sha256:ab1090281e0f34462a9e6070f6369ce618b971022eefb7ea614416450dcb1fbb",
+  "version": 2,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio",
+  "scraped_at": "2026-08-15T06:10:41.566583+00:00",
+  "word_count": 844,
+  "content_hash": "sha256:4fbb28640deaab013ee4e301f5d1364f18e7312a710afa472ca38bf418c457f1",
   "extractor": "trafilatura/bs4",
   "language": "en",
   "http_etag": null,
   "http_last_modified": null,
-  "status": "failed",
+  "status": "scraped",
   "quality_checks": {
     "min_words": true,
-    "has_keywords": false,
+    "has_keywords": true,
     "has_headings": false,
     "is_english": true,
-    "passed": false,
+    "passed": true,
     "reasons": [
-      "No topic keywords found in text",
       "No markdown headings found"
     ]
   }

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000024",
+  "topic": "albumin_creatinine_ratio",
+  "topic_title": "Albumin-to-Creatinine Ratio (ACR)",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/kidney-care",
+  "scraped_at": "2026-08-15T05:54:59.040885+00:00",
+  "word_count": 1062,
+  "content_hash": "sha256:6ee302f0d9b892099b561a4dc72d0d1d3200c8afc998fd56ed63298d2703112e",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:11:39 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

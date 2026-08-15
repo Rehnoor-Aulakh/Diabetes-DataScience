@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000069",
+  "topic": "diabetes_thyroid_connection",
+  "topic_title": "Diabetes and Thyroid Disease",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-health",
+  "scraped_at": "2026-08-15T06:05:26.984772+00:00",
+  "word_count": 292,
+  "content_hash": "sha256:4a8d4a0a425109f98b45a40c79d284e5b48fccf40443139d97d01f47ba674b40",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:49 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

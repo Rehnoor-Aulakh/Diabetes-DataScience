@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000062",
+  "topic": "crp",
+  "topic_title": "CRP / hs-CRP (C-Reactive Protein)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/23056-c-reactive-protein-crp-test",
+  "scraped_at": "2026-08-15T06:05:20.429603+00:00",
+  "word_count": 1100,
+  "content_hash": "sha256:4702bedf1180ab62c22e5b987331c3c04808975f6bc0340d2580cae2729eebbc",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

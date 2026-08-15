@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000064",
+  "topic": "t3",
+  "topic_title": "T3 (Triiodothyronine)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/22425-triiodothyronine-t3",
+  "scraped_at": "2026-08-15T06:05:22.574163+00:00",
+  "word_count": 1085,
+  "content_hash": "sha256:62cef542bbc0e4cf8d0487742be4099142dc14fe9df1f2dbeeb15b3918b0fdc8",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

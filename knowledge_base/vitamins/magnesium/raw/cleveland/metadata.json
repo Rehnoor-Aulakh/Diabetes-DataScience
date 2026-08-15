@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000053",
+  "topic": "magnesium",
+  "topic_title": "Magnesium",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/22020-basic-metabolic-panel-bmp",
+  "scraped_at": "2026-08-15T06:05:17.437272+00:00",
+  "word_count": 759,
+  "content_hash": "sha256:b43618e5ed0090c5334362abf9749cf59f1748f92c62aea34fcb98e2985145df",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000088",
+  "topic": "sexual_dysfunction",
+  "topic_title": "Diabetes and Sexual Health",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/erectile-dysfunction/symptoms-causes/syc-20355776",
+  "scraped_at": "2026-08-15T06:05:49.911411+00:00",
+  "word_count": 734,
+  "content_hash": "sha256:4f206340b95915dd5bb516128a8486f19a2d04091ac3a6e96e26638f53b75bce",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

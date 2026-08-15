@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000029",
+  "topic": "ast",
+  "topic_title": "AST (SGOT)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diagnostics/22147-aspartate-transferase-ast",
+  "scraped_at": "2026-08-15T06:04:47.364909+00:00",
+  "word_count": 1593,
+  "content_hash": "sha256:6742f8c64f2be69343f6170c06bde06b82dc21bb4c87343fdf8dae87029e416b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

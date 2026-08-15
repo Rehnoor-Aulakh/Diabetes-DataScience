@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000036",
+  "topic": "fatty_liver",
+  "topic_title": "Fatty Liver Disease",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567",
+  "scraped_at": "2026-08-15T05:55:16.781541+00:00",
+  "word_count": 1001,
+  "content_hash": "sha256:9819f4bb086d0c7a29464d9eba64612437f13f02fe2bdc789add9a6085dacf5f",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

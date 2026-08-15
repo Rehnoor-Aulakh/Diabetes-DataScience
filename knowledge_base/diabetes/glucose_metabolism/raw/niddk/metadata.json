@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000009",
+  "topic": "glucose_metabolism",
+  "topic_title": "Blood Glucose Regulation",
+  "source": "niddk",
+  "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
+  "version": 1,
+  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes",
+  "scraped_at": "2026-08-15T06:04:11.542422+00:00",
+  "word_count": 738,
+  "content_hash": "sha256:83df147d523aafe6c34cd7707e2186e013495cef87a4bfda0c13fd946a1ca54b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

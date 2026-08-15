@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000082",
+  "topic": "hyperosmolar_syndrome",
+  "topic_title": "Hyperosmolar Hyperglycemic Syndrome (HHS)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444",
+  "scraped_at": "2026-08-15T06:05:39.243376+00:00",
+  "word_count": 1492,
+  "content_hash": "sha256:7a28e4f474cc0ab50ca03e4fb1586a0f0658c021c19df3da6312338f98355800",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

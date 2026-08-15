@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000090",
+  "topic": "healthy_eating",
+  "topic_title": "Healthy Eating for Diabetes",
+  "source": "cdc",
+  "source_name": "Centers for Disease Control and Prevention",
+  "version": 1,
+  "url": "https://www.cdc.gov/diabetes/healthy-eating/index.html",
+  "scraped_at": "2026-08-15T06:09:29.229795+00:00",
+  "word_count": 283,
+  "content_hash": "sha256:52b986cb6903d5b436299500222202506c1da1fa3648fad8937eaa66d5fb89ab",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

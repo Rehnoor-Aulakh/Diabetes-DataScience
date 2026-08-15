@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000110",
+  "topic": "aspirin_antiplatelet",
+  "topic_title": "Aspirin and Antiplatelet Therapy",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/treatments/22282-statins",
+  "scraped_at": "2026-08-15T06:06:41.199300+00:00",
+  "word_count": 1214,
+  "content_hash": "sha256:c71c305dc58cfe22ecee837a4796db70e4cc4daaa40a41dac9cca4d00be05515",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

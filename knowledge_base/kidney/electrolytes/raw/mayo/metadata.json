@@ -1,0 +1,28 @@
+{
+  "document_id": "KB-000027",
+  "topic": "electrolytes",
+  "topic_title": "Electrolytes (Sodium, Potassium, Chloride)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/comprehensive-metabolic-panel/about/pac-20385006",
+  "scraped_at": "2026-08-15T06:10:46.225004+00:00",
+  "word_count": 656,
+  "content_hash": "sha256:04a5db388cef194f5929011143b7180826165c5d8cd4d7ed5cf8b743fb07132b",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "failed",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": false,
+    "has_headings": false,
+    "is_english": true,
+    "passed": false,
+    "reasons": [
+      "No topic keywords found in text",
+      "No markdown headings found"
+    ]
+  }
+}

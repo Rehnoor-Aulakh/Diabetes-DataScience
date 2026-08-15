@@ -3,6 +3,12 @@ Search Provider — Uses the site's own search template to find the article.
 """
 
 from urllib.parse import urlparse, quote_plus, urljoin, parse_qs
+try:
+    import primp
+    _HAS_PRIMP = True
+except ImportError:
+    _HAS_PRIMP = False
+
 import requests
 from bs4 import BeautifulSoup
 from scraper.logger import get_logger
@@ -142,17 +148,30 @@ def search_article_urls(query: str, base_url: str, search_url_template: str, key
     search_url = search_url_template.replace("{query}", encoded_query)
     
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
     }
     
     candidate_urls = []
     
     try:
-        response = requests.get(search_url, headers=headers, timeout=15)
-        response.raise_for_status()
+        html_text = ""
+        if _HAS_PRIMP:
+            try:
+                client = primp.Client(impersonate_os="macos", timeout=20)
+                resp = client.get(search_url, headers=headers)
+                if resp.status_code == 200:
+                    html_text = resp.text
+            except Exception as e:
+                logger.debug("primp search failed: %s, trying requests", str(e))
+                
+        if not html_text:
+            response = requests.get(search_url, headers=headers, timeout=15)
+            response.raise_for_status()
+            html_text = response.text
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSoup(html_text, 'html.parser')
         
         main_content = soup.find('main') or soup.find('div', id=lambda x: x and 'main' in x.lower()) or soup.find('div', id=lambda x: x and 'content' in x.lower()) or soup
         

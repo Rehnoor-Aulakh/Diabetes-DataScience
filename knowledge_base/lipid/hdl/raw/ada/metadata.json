@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000039",
+  "topic": "hdl",
+  "topic_title": "HDL Cholesterol",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:04:58.620416+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:ec70ed5b7a7058ea783a8ea110780efa868403bcd34ea4b850d574e7d32d501c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

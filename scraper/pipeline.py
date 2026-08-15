@@ -15,8 +15,8 @@ from scraper.metadata_writer import write_metadata
 from scraper.health_tracker import SourceHealthTracker
 
 SOURCE_CAPABILITIES = {
-    "mayo": {"search": False},
-    "cleveland": {"search": False},
+    "mayo": {"search": True},
+    "cleveland": {"search": True},
     "medlineplus": {"search": True},
     "niddk": {"search": True},
     "ada": {"search": True},

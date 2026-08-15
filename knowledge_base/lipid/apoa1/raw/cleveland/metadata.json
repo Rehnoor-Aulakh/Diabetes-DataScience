@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000044",
+  "topic": "apoa1",
+  "topic_title": "Apolipoprotein A1",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/articles/apolipoprotein-a1",
+  "scraped_at": "2026-08-15T06:05:03.940432+00:00",
+  "word_count": 656,
+  "content_hash": "sha256:b145e8a44ea8557863da6c40e7f084d75aad4a28a72d9171096bc234223907ad",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

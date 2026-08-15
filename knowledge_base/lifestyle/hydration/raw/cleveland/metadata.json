@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000100",
+  "topic": "hydration",
+  "topic_title": "Hydration and Diabetes",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/treatments/9013-dehydration",
+  "scraped_at": "2026-08-15T06:06:20.213958+00:00",
+  "word_count": 1525,
+  "content_hash": "sha256:464438edae494d926ba5ce3efb46ead77837e9f768b3858beabdcaf36d0d3383",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

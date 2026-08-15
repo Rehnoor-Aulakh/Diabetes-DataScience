@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000058",
+  "topic": "wbc",
+  "topic_title": "White Blood Cell Count",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/tests-procedures/complete-blood-count/about/pac-20384919",
+  "scraped_at": "2026-08-15T05:56:02.780264+00:00",
+  "word_count": 1371,
+  "content_hash": "sha256:609ce925f7a574e2051edeb3cc70c183f78ca63150713d9e55527ef018b5036c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

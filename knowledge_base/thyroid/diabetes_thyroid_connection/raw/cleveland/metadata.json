@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000069",
+  "topic": "diabetes_thyroid_connection",
+  "topic_title": "Diabetes and Thyroid Disease",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/12120-hypothyroidism",
+  "scraped_at": "2026-08-15T06:05:28.710763+00:00",
+  "word_count": 1167,
+  "content_hash": "sha256:b2293bbc17499d164f2992c891c196cf3846a9ac168cad876c62ae287a8b9736",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

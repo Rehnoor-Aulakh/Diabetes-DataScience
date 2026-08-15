@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000071",
+  "topic": "hypertension",
+  "topic_title": "Hypertension (High Blood Pressure)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/symptoms-causes/syc-20373410",
+  "scraped_at": "2026-08-15T05:56:25.131223+00:00",
+  "word_count": 1476,
+  "content_hash": "sha256:35704687208fe5a6de42fbc9d8a1e76abbdd2ca08bd677f4b1ceb3b06f6579ec",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"kz84coaltvs7rf\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

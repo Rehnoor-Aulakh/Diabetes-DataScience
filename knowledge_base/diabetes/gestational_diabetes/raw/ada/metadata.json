@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000005",
+  "topic": "gestational_diabetes",
+  "topic_title": "Gestational Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/living-with-diabetes/pregnancy/gestational-diabetes",
+  "scraped_at": "2026-08-15T05:54:19.008175+00:00",
+  "word_count": 635,
+  "content_hash": "sha256:b627b81dfbc27629bdac9768b3dd130a83098116bd92fec41741690feea3bee3",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:05:13 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

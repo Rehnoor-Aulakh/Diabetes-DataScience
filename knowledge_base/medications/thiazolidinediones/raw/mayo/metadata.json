@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000107",
+  "topic": "thiazolidinediones",
+  "topic_title": "Thiazolidinediones (TZDs)",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-treatment/art-20051004",
+  "scraped_at": "2026-08-15T05:58:12.662732+00:00",
+  "word_count": 930,
+  "content_hash": "sha256:83bd56d06ff6f7915a1917401559c771253f93f7179272dce49a29e453297aaf",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"yg2i47dwtxr0ya\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

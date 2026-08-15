@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000104",
+  "topic": "sglt2_inhibitors",
+  "topic_title": "SGLT2 Inhibitors",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/medication-treatments",
+  "scraped_at": "2026-08-15T06:06:28.401456+00:00",
+  "word_count": 367,
+  "content_hash": "sha256:0779e18ed92576038a376a508f901c708afe8ab86d1bd06dff2d47e1bf7d72b4",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:04 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

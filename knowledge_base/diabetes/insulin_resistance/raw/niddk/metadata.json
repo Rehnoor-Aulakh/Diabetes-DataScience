@@ -6,7 +6,7 @@
   "source_name": "National Institute of Diabetes and Digestive and Kidney Diseases",
   "version": 3,
   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance",
-  "scraped_at": "2026-08-10T12:13:55.811127+00:00",
+  "scraped_at": "2026-08-15T06:10:30.498927+00:00",
   "word_count": 2008,
   "content_hash": "sha256:6c06b9da62c049ac6520fa3b82b9e0119b3f7c334afd834b02aedb0ba8952b60",
   "extractor": "trafilatura/bs4",

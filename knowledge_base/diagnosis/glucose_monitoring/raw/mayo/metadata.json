@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000016",
+  "topic": "glucose_monitoring",
+  "topic_title": "Blood Glucose Monitoring",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628",
+  "scraped_at": "2026-08-15T05:54:44.314955+00:00",
+  "word_count": 1664,
+  "content_hash": "sha256:c6678074b8726899ff4dbad35f60d25ba34fd0b87d8dbc167d19da5fe984f4a3",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"ar0h48bq1rrq6t\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

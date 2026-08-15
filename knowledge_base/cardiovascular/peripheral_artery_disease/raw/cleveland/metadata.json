@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000073",
+  "topic": "peripheral_artery_disease",
+  "topic_title": "Peripheral Artery Disease (PAD)",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/17357-peripheral-artery-disease-pad",
+  "scraped_at": "2026-08-15T05:56:29.890442+00:00",
+  "word_count": 1291,
+  "content_hash": "sha256:ec26d03d6bf5849412a65de3e598ddcb871200de0301e71ef85ddce73e015b48",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

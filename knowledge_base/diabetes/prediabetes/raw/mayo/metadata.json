@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000004",
+  "topic": "prediabetes",
+  "topic_title": "Prediabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/prediabetes/symptoms-causes/syc-20355278",
+  "scraped_at": "2026-08-15T05:54:17.389262+00:00",
+  "word_count": 625,
+  "content_hash": "sha256:0a2b856cc7acbf9a9821710c74c6b9cdb5624c20ff45a3f5a94dcb54c6a2ebdb",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

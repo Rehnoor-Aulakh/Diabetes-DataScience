@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000110",
+  "topic": "aspirin_antiplatelet",
+  "topic_title": "Aspirin and Antiplatelet Therapy",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/heart-disease/in-depth/daily-aspirin-therapy/art-20046797",
+  "scraped_at": "2026-08-15T05:58:23.460062+00:00",
+  "word_count": 1635,
+  "content_hash": "sha256:360f32dff3c70aff5cc8d5ad917b189ac69c19d4ce8b28e5670762e7dfa98926",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"zqtzrhuk3vrngb\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

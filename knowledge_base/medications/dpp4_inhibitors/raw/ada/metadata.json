@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000105",
+  "topic": "dpp4_inhibitors",
+  "topic_title": "DPP-4 Inhibitors",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/medication-treatments",
+  "scraped_at": "2026-08-15T06:06:30.428943+00:00",
+  "word_count": 367,
+  "content_hash": "sha256:0ee163be3eb70c196a8b4ebc65f246d05440f9d495ed5b5488f352da95d2341d",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:04 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

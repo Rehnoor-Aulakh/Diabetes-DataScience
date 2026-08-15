@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000080",
+  "topic": "foot_care",
+  "topic_title": "Diabetic Foot Care",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/diabetes-and-your-feet",
+  "scraped_at": "2026-08-15T05:56:47.495266+00:00",
+  "word_count": 1110,
+  "content_hash": "sha256:0032eceb572957bc93247d051de3081aa21005eb6545b5005c7e644f42d8b18f",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

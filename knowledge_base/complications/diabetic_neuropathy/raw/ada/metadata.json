@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000076",
+  "topic": "diabetic_neuropathy",
+  "topic_title": "Diabetic Neuropathy",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/about-diabetes/complications",
+  "scraped_at": "2026-08-15T06:05:33.746902+00:00",
+  "word_count": 610,
+  "content_hash": "sha256:f4442cc9e0b3d09fb53579b1799556ef059edcb358fd0db2f9a1dde34be9a2e9",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:03:53 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

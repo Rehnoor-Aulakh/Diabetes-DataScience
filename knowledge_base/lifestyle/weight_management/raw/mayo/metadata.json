@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000094",
+  "topic": "weight_management",
+  "topic_title": "Weight Management",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/weight-loss/art-20047752",
+  "scraped_at": "2026-08-15T06:05:58.119299+00:00",
+  "word_count": 1288,
+  "content_hash": "sha256:17e0ef6cd79e40231473ae0aa9ab03a696e1e41629675895d4fe97e97dd26460",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"x2h1kh5kqzqovc\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

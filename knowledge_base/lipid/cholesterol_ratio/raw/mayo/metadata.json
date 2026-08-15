@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000048",
+  "topic": "cholesterol_ratio",
+  "topic_title": "Cholesterol Ratios",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/expert-answers/cholesterol-ratio/faq-20058006",
+  "scraped_at": "2026-08-15T05:55:43.615186+00:00",
+  "word_count": 281,
+  "content_hash": "sha256:54d0a5cba01edf3bbbdf19c22f760f7045015b5c90d88f05539b3c5651706d95",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"a2cqw37ijsq10x\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

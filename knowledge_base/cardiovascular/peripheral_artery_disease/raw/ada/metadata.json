@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000073",
+  "topic": "peripheral_artery_disease",
+  "topic_title": "Peripheral Artery Disease (PAD)",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:05:30.157906+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:1c87260c6a29240712af409fb887392415a478f18d4401dac9235eb479e9157a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

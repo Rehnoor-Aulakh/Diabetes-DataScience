@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000092",
+  "topic": "glycemic_index",
+  "topic_title": "Glycemic Index and Glycemic Load",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/food-nutrition/understanding-carbs",
+  "scraped_at": "2026-08-15T05:57:23.750110+00:00",
+  "word_count": 437,
+  "content_hash": "sha256:5da632374bddf3a098e77567936672891a5531966fe957ff905d1a895cdc4b4c",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:04:46 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

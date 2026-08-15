@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000048",
+  "topic": "cholesterol_ratio",
+  "topic_title": "Cholesterol Ratios",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/diabetes-and-your-heart",
+  "scraped_at": "2026-08-15T06:05:10.833233+00:00",
+  "word_count": 827,
+  "content_hash": "sha256:dfab3c8c1c1e748db3c61d019218887e633e164600ef5ae8d9c151fe8a84a703",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:55 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

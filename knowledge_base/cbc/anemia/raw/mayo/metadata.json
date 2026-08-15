@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000060",
+  "topic": "anemia",
+  "topic_title": "Anemia",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/anemia/symptoms-causes/syc-20351360",
+  "scraped_at": "2026-08-15T05:56:05.217350+00:00",
+  "word_count": 1298,
+  "content_hash": "sha256:f82258180a351349a0f79a4dbc415d092256ff0078adb0399df52cc9b5b81170",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

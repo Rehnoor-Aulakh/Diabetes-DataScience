@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000005",
+  "topic": "gestational_diabetes",
+  "topic_title": "Gestational Diabetes",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/gestational-diabetes/symptoms-causes/syc-20355339",
+  "scraped_at": "2026-08-15T05:54:19.771255+00:00",
+  "word_count": 976,
+  "content_hash": "sha256:9851bfe12bcf8abd32d4123ff555332bb6a4bb91cfde7b879ffcc99dd2613bcb",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": "\"lsum30t8lgqy81\"",
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

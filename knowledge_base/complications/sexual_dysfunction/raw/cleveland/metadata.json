@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000088",
+  "topic": "sexual_dysfunction",
+  "topic_title": "Diabetes and Sexual Health",
+  "source": "cleveland",
+  "source_name": "Cleveland Clinic",
+  "version": 1,
+  "url": "https://my.clevelandclinic.org/health/diseases/10035-erectile-dysfunction",
+  "scraped_at": "2026-08-15T06:05:51.040700+00:00",
+  "word_count": 1005,
+  "content_hash": "sha256:8cf1e0b3d0d81d95e6b56344a9e99151929dc92d90aba391211bf617e4c7858a",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

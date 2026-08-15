@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000086",
+  "topic": "dental_health",
+  "topic_title": "Diabetes and Dental Health",
+  "source": "mayo",
+  "source_name": "Mayo Clinic",
+  "version": 1,
+  "url": "https://www.mayoclinic.org/diseases-conditions/periodontitis/symptoms-causes/syc-20354473",
+  "scraped_at": "2026-08-15T06:05:48.340994+00:00",
+  "word_count": 1451,
+  "content_hash": "sha256:0f464e302a5830a0a64f25394063451ad0620dc944cc100ac50b1f8aa43596b0",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": null,
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

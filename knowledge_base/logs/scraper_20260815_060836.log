@@ -1,0 +1,526 @@
+[2026-08-15 06:08:36] [INFO   ] Logger initialized → knowledge_base/logs/scraper_20260815_060836.log
+[2026-08-15 06:08:36] [INFO   ] Starting Full Medical Knowledge Base Corpus Scraper
+[2026-08-15 06:08:36] [INFO   ] [KB-000001] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:36] [INFO   ] [KB-000001] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:08:36] [INFO   ] [KB-000001] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:36] [INFO   ] [KB-000002] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:36] [INFO   ] [KB-000002] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:36] [INFO   ] [KB-000002] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:36] [INFO   ] [KB-000003] [ada] RESOLVING — Topic: Type 2 Diabetes
+[2026-08-15 06:08:36] [INFO   ] [KB-000003] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/type-2
+[2026-08-15 06:08:37] [INFO   ] [KB-000003] [ada] EXTRACTING
+[2026-08-15 06:08:37] [INFO   ] [KB-000003] [ada] CONVERTING
+[2026-08-15 06:08:37] [INFO   ] [KB-000003] [ada] VALIDATING
+[2026-08-15 06:08:37] [INFO   ] [KB-000003] [ada] COMPLETED — v2 (362 words)
+[2026-08-15 06:08:38] [INFO   ] [KB-000003] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:08:38] [INFO   ] [KB-000003] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [cdc] RESOLVING — Topic: Prediabetes
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/prevention-type-2/prediabetes-prevent-type-2.html
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [cdc] EXTRACTING
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [cdc] CONVERTING
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [cdc] VALIDATING
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [cdc] COMPLETED — v1 (480 words)
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [ada] RESOLVING — Topic: Prediabetes
+[2026-08-15 06:08:38] [INFO   ] [KB-000004] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/prediabetes
+[2026-08-15 06:08:39] [INFO   ] [KB-000004] [ada] EXTRACTING
+[2026-08-15 06:08:39] [INFO   ] [KB-000004] [ada] CONVERTING
+[2026-08-15 06:08:39] [INFO   ] [KB-000004] [ada] VALIDATING
+[2026-08-15 06:08:39] [INFO   ] [KB-000004] [ada] COMPLETED — v1 (243 words)
+[2026-08-15 06:08:39] [INFO   ] [KB-000004] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:39] [INFO   ] [KB-000005] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:08:39] [INFO   ] [KB-000005] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:39] [INFO   ] [KB-000005] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:39] [INFO   ] [KB-000006] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:39] [INFO   ] [KB-000006] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:39] [INFO   ] [KB-000006] [mayo] RESOLVING — Topic: Insulin
+[2026-08-15 06:08:39] [INFO   ] [KB-000006] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/insulin-and-diabetes/art-20046974
+[2026-08-15 06:08:40] [INFO   ] [KB-000006] [mayo] EXTRACTING
+[2026-08-15 06:08:40] [INFO   ] [KB-000006] [mayo] CONVERTING
+[2026-08-15 06:08:40] [INFO   ] [KB-000006] [mayo] VALIDATING
+[2026-08-15 06:08:40] [INFO   ] [KB-000006] [mayo] COMPLETED — v1 (1331 words)
+[2026-08-15 06:08:41] [INFO   ] [KB-000007] [niddk] RESOLVING — Topic: Insulin Resistance
+[2026-08-15 06:08:41] [INFO   ] [KB-000007] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance
+[2026-08-15 06:08:41] [INFO   ] [KB-000007] [niddk] EXTRACTING
+[2026-08-15 06:08:41] [INFO   ] [KB-000007] [niddk] CONVERTING
+[2026-08-15 06:08:41] [INFO   ] [KB-000007] [niddk] VALIDATING
+[2026-08-15 06:08:41] [INFO   ] [KB-000007] [niddk] COMPLETED — v3 (2008 words)
+[2026-08-15 06:08:42] [INFO   ] [KB-000007] [ada] RESOLVING — Topic: Insulin Resistance
+[2026-08-15 06:08:42] [INFO   ] [KB-000007] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/medication-treatments
+[2026-08-15 06:08:42] [INFO   ] [KB-000007] [ada] EXTRACTING
+[2026-08-15 06:08:42] [INFO   ] [KB-000007] [ada] CONVERTING
+[2026-08-15 06:08:42] [INFO   ] [KB-000007] [ada] VALIDATING
+[2026-08-15 06:08:42] [INFO   ] [KB-000007] [ada] COMPLETED — v2 (367 words)
+[2026-08-15 06:08:43] [INFO   ] [KB-000007] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:43] [INFO   ] [KB-000008] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:43] [INFO   ] [KB-000008] [medlineplus] RESOLVING — Topic: Pancreas and Beta Cells
+[2026-08-15 06:08:43] [INFO   ] [KB-000008] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/pancreaticdiseases.html
+[2026-08-15 06:08:44] [INFO   ] [KB-000008] [medlineplus] EXTRACTING
+[2026-08-15 06:08:44] [INFO   ] [KB-000008] [medlineplus] CONVERTING
+[2026-08-15 06:08:44] [INFO   ] [KB-000008] [medlineplus] VALIDATING
+[2026-08-15 06:08:44] [INFO   ] [KB-000008] [medlineplus] COMPLETED — v1 (469 words)
+[2026-08-15 06:08:44] [INFO   ] [KB-000008] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:44] [INFO   ] [KB-000009] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:44] [INFO   ] [KB-000009] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:44] [INFO   ] [KB-000009] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:44] [INFO   ] [KB-000010] [ada] RESOLVING — Topic: HbA1c
+[2026-08-15 06:08:44] [INFO   ] [KB-000010] [ada] DOWNLOADING — URL: https://diabetes.org/about-diabetes/a1c
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [ada] EXTRACTING
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [ada] CONVERTING
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [ada] VALIDATING
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [ada] COMPLETED — v5 (836 words)
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [medlineplus] RESOLVING — Topic: HbA1c
+[2026-08-15 06:08:45] [INFO   ] [KB-000010] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/
+[2026-08-15 06:08:46] [INFO   ] [KB-000010] [medlineplus] EXTRACTING
+[2026-08-15 06:08:46] [INFO   ] [KB-000010] [medlineplus] CONVERTING
+[2026-08-15 06:08:46] [INFO   ] [KB-000010] [medlineplus] VALIDATING
+[2026-08-15 06:08:46] [INFO   ] [KB-000010] [medlineplus] COMPLETED — v5 (1542 words)
+[2026-08-15 06:08:46] [INFO   ] [KB-000011] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:46] [INFO   ] [KB-000011] [mayo] RESOLVING — Topic: Average Blood Glucose
+[2026-08-15 06:08:46] [INFO   ] [KB-000011] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 06:08:47] [INFO   ] [KB-000011] [mayo] EXTRACTING
+[2026-08-15 06:08:47] [INFO   ] [KB-000011] [mayo] CONVERTING
+[2026-08-15 06:08:47] [INFO   ] [KB-000011] [mayo] VALIDATING
+[2026-08-15 06:08:47] [INFO   ] [KB-000011] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 06:08:47] [INFO   ] [KB-000012] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:47] [INFO   ] [KB-000012] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:08:47] [INFO   ] [KB-000012] [mayo] RESOLVING — Topic: Fasting Blood Sugar
+[2026-08-15 06:08:47] [INFO   ] [KB-000012] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 06:08:48] [INFO   ] [KB-000012] [mayo] EXTRACTING
+[2026-08-15 06:08:48] [INFO   ] [KB-000012] [mayo] CONVERTING
+[2026-08-15 06:08:48] [INFO   ] [KB-000012] [mayo] VALIDATING
+[2026-08-15 06:08:48] [INFO   ] [KB-000012] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 06:08:48] [INFO   ] [KB-000013] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:48] [INFO   ] [KB-000013] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:48] [INFO   ] [KB-000013] [mayo] RESOLVING — Topic: Random Blood Sugar
+[2026-08-15 06:08:48] [INFO   ] [KB-000013] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/blood-sugar-test/about/pac-20385150
+[2026-08-15 06:08:49] [INFO   ] [KB-000013] [mayo] EXTRACTING
+[2026-08-15 06:08:49] [INFO   ] [KB-000013] [mayo] CONVERTING
+[2026-08-15 06:08:49] [INFO   ] [KB-000013] [mayo] VALIDATING
+[2026-08-15 06:08:49] [INFO   ] [KB-000013] [mayo] COMPLETED — v1 (532 words)
+[2026-08-15 06:08:49] [INFO   ] [KB-000014] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000014] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000014] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000015] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000015] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000015] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000016] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000016] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000016] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000017] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000017] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000017] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:49] [INFO   ] [KB-000018] [niddk] RESOLVING — Topic: Creatinine
+[2026-08-15 06:08:49] [INFO   ] [KB-000018] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/tests-diagnosis
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [niddk] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [cleveland] RESOLVING — Topic: Creatinine
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [cleveland] EXTRACTING
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [cleveland] CONVERTING
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [cleveland] VALIDATING
+[2026-08-15 06:08:51] [INFO   ] [KB-000018] [cleveland] COMPLETED — v2 (844 words)
+[2026-08-15 06:08:51] [INFO   ] [KB-000019] [niddk] RESOLVING — Topic: eGFR
+[2026-08-15 06:08:51] [INFO   ] [KB-000019] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/tests-diagnosis
+[2026-08-15 06:08:53] [INFO   ] [KB-000019] [niddk] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 06:08:53] [INFO   ] [KB-000019] [cleveland] RESOLVING — Topic: eGFR
+[2026-08-15 06:08:53] [INFO   ] [KB-000019] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/urine-albumin-creatinine-ratio
+[2026-08-15 06:08:53] [INFO   ] [KB-000019] [cleveland] EXTRACTING
+[2026-08-15 06:08:54] [INFO   ] [KB-000019] [cleveland] CONVERTING
+[2026-08-15 06:08:54] [INFO   ] [KB-000019] [cleveland] VALIDATING
+[2026-08-15 06:08:54] [INFO   ] [KB-000019] [cleveland] COMPLETED — v2 (844 words)
+[2026-08-15 06:08:54] [INFO   ] [KB-000019] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [mayo] RESOLVING — Topic: BUN (Blood Urea Nitrogen)
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [mayo] EXTRACTING
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [mayo] CONVERTING
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [mayo] VALIDATING
+[2026-08-15 06:08:54] [INFO   ] [KB-000020] [mayo] COMPLETED — v2 (855 words)
+[2026-08-15 06:08:54] [INFO   ] [KB-000021] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:54] [INFO   ] [KB-000021] [mayo] RESOLVING — Topic: Urea
+[2026-08-15 06:08:54] [INFO   ] [KB-000021] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/creatinine-test/about/pac-20384646
+[2026-08-15 06:08:55] [INFO   ] [KB-000021] [mayo] EXTRACTING
+[2026-08-15 06:08:55] [INFO   ] [KB-000021] [mayo] CONVERTING
+[2026-08-15 06:08:55] [INFO   ] [KB-000021] [mayo] VALIDATING
+[2026-08-15 06:08:55] [INFO   ] [KB-000021] [mayo] COMPLETED — v2 (855 words)
+[2026-08-15 06:08:55] [INFO   ] [KB-000021] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:55] [INFO   ] [KB-000022] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:55] [INFO   ] [KB-000022] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:55] [INFO   ] [KB-000022] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:55] [INFO   ] [KB-000023] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:55] [INFO   ] [KB-000023] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:55] [INFO   ] [KB-000023] [mayo] RESOLVING — Topic: Microalbumin (Urine Albumin)
+[2026-08-15 06:08:55] [INFO   ] [KB-000023] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/diagnosis-treatment/drc-20354562
+[2026-08-15 06:08:56] [INFO   ] [KB-000023] [mayo] EXTRACTING
+[2026-08-15 06:08:56] [INFO   ] [KB-000023] [mayo] CONVERTING
+[2026-08-15 06:08:56] [INFO   ] [KB-000023] [mayo] VALIDATING
+[2026-08-15 06:08:56] [INFO   ] [KB-000023] [mayo] COMPLETED — v2 (1747 words)
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [mayo] RESOLVING — Topic: Albumin-to-Creatinine Ratio (ACR)
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/diagnosis-treatment/drc-20354562
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [mayo] EXTRACTING
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [mayo] CONVERTING
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [mayo] VALIDATING
+[2026-08-15 06:08:56] [INFO   ] [KB-000024] [mayo] COMPLETED — v2 (1747 words)
+[2026-08-15 06:08:57] [INFO   ] [KB-000024] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:57] [INFO   ] [KB-000025] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:57] [INFO   ] [KB-000025] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:57] [INFO   ] [KB-000025] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:57] [INFO   ] [KB-000026] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:57] [INFO   ] [KB-000026] [mayo] RESOLVING — Topic: Uric Acid
+[2026-08-15 06:08:57] [INFO   ] [KB-000026] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372861
+[2026-08-15 06:08:58] [INFO   ] [KB-000026] [mayo] EXTRACTING
+[2026-08-15 06:08:58] [INFO   ] [KB-000026] [mayo] CONVERTING
+[2026-08-15 06:08:58] [INFO   ] [KB-000026] [mayo] VALIDATING
+[2026-08-15 06:08:58] [INFO   ] [KB-000026] [mayo] COMPLETED — v2 (75 words)
+[2026-08-15 06:08:58] [INFO   ] [KB-000026] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:58] [INFO   ] [KB-000027] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:58] [INFO   ] [KB-000027] [mayo] RESOLVING — Topic: Electrolytes (Sodium, Potassium, Chloride)
+[2026-08-15 06:08:58] [INFO   ] [KB-000027] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/comprehensive-metabolic-panel/about/pac-20385006
+[2026-08-15 06:08:59] [INFO   ] [KB-000027] [mayo] EXTRACTING
+[2026-08-15 06:08:59] [INFO   ] [KB-000027] [mayo] CONVERTING
+[2026-08-15 06:08:59] [INFO   ] [KB-000027] [mayo] VALIDATING
+[2026-08-15 06:08:59] [INFO   ] [KB-000027] [mayo] COMPLETED — v1 (656 words)
+[2026-08-15 06:08:59] [INFO   ] [KB-000027] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000028] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000028] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000028] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000029] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000029] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000029] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000030] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000030] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000030] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000031] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000031] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000031] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000032] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000032] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000032] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000033] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000033] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000033] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000034] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000034] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000034] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000035] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000035] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000035] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000036] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000036] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000036] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000037] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000037] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000037] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000038] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000038] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000038] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000039] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000039] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000039] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000040] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000040] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000040] [ada] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000041] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000041] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000041] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000042] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000042] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000042] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000043] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000043] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000043] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000044] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000044] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000044] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000045] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000045] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000045] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:08:59] [INFO   ] [KB-000046] [cleveland] RESOLVING — Topic: Lipoprotein(a)
+[2026-08-15 06:08:59] [INFO   ] [KB-000046] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21980-lipoprotein-a-test
+[2026-08-15 06:09:00] [INFO   ] [KB-000046] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 06:09:00] [INFO   ] [KB-000046] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000046] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000047] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000047] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000047] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000048] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000048] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000048] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000049] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:00] [INFO   ] [KB-000049] [medlineplus] RESOLVING — Topic: Vitamin D
+[2026-08-15 06:09:00] [INFO   ] [KB-000049] [medlineplus] DOWNLOADING — URL: https://medlineplus.gov/lab-tests/vitamin-d-test/
+[2026-08-15 06:09:01] [INFO   ] [KB-000049] [medlineplus] EXTRACTING
+[2026-08-15 06:09:01] [INFO   ] [KB-000049] [medlineplus] CONVERTING
+[2026-08-15 06:09:01] [INFO   ] [KB-000049] [medlineplus] VALIDATING
+[2026-08-15 06:09:01] [INFO   ] [KB-000049] [medlineplus] COMPLETED — v4 (1597 words)
+[2026-08-15 06:09:01] [INFO   ] [KB-000049] [cleveland] RESOLVING — Topic: Vitamin D
+[2026-08-15 06:09:01] [INFO   ] [KB-000049] [cleveland] DOWNLOADING — URL: https://my.clevelandclinic.org/health/diagnostics/21112-vitamin-d-deficiency
+[2026-08-15 06:09:02] [INFO   ] [KB-000049] [cleveland] FAILED — Download error: NOT_FOUND_404
+[2026-08-15 06:09:02] [INFO   ] [KB-000050] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000050] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000050] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000051] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000051] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000051] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000052] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000052] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000052] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [mayo] RESOLVING — Topic: Magnesium
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/comprehensive-metabolic-panel/about/pac-20385006
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [mayo] EXTRACTING
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [mayo] CONVERTING
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [mayo] VALIDATING
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [mayo] COMPLETED — v1 (656 words)
+[2026-08-15 06:09:02] [INFO   ] [KB-000053] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000054] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000054] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000054] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000055] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000055] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000055] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000056] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000056] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000056] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000057] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000057] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000057] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000058] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000058] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000058] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000059] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000059] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:02] [INFO   ] [KB-000059] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000060] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000060] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000060] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000061] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000061] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000061] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000062] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000062] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000062] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000063] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000063] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000063] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [mayo] RESOLVING — Topic: T3 (Triiodothyronine)
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [mayo] EXTRACTING
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [mayo] CONVERTING
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [mayo] VALIDATING
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 06:09:03] [INFO   ] [KB-000064] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000065] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:03] [INFO   ] [KB-000065] [mayo] RESOLVING — Topic: T4 (Thyroxine)
+[2026-08-15 06:09:03] [INFO   ] [KB-000065] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 06:09:04] [INFO   ] [KB-000065] [mayo] EXTRACTING
+[2026-08-15 06:09:04] [INFO   ] [KB-000065] [mayo] CONVERTING
+[2026-08-15 06:09:04] [INFO   ] [KB-000065] [mayo] VALIDATING
+[2026-08-15 06:09:04] [INFO   ] [KB-000065] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 06:09:04] [INFO   ] [KB-000065] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:04] [INFO   ] [KB-000066] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:04] [INFO   ] [KB-000066] [mayo] RESOLVING — Topic: Thyroid Antibodies (TPO, TgAb)
+[2026-08-15 06:09:04] [INFO   ] [KB-000066] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/tests-procedures/thyroid-scan/about/pac-20385202
+[2026-08-15 06:09:05] [INFO   ] [KB-000066] [mayo] EXTRACTING
+[2026-08-15 06:09:05] [INFO   ] [KB-000066] [mayo] CONVERTING
+[2026-08-15 06:09:05] [INFO   ] [KB-000066] [mayo] VALIDATING
+[2026-08-15 06:09:05] [INFO   ] [KB-000066] [mayo] COMPLETED — v1 (233 words)
+[2026-08-15 06:09:05] [INFO   ] [KB-000066] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000067] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000067] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000067] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000068] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000068] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000068] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000069] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000069] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000069] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000070] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000070] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000070] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000071] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000071] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000071] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000072] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000072] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000072] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000073] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000073] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000073] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000074] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000074] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000074] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000075] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000075] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000075] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000076] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000076] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000076] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000077] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000077] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000077] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000078] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000078] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000078] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000079] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000079] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000079] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000080] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000080] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000080] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000081] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000081] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000081] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000082] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000082] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000082] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:05] [INFO   ] [KB-000083] [ada] RESOLVING — Topic: Hypoglycemia (Low Blood Sugar)
+[2026-08-15 06:09:05] [INFO   ] [KB-000083] [ada] DOWNLOADING — URL: https://diabetes.org/living-with-diabetes/hypoglycemia-low-blood-glucose
+[2026-08-15 06:09:06] [INFO   ] [KB-000083] [ada] EXTRACTING
+[2026-08-15 06:09:06] [INFO   ] [KB-000083] [ada] CONVERTING
+[2026-08-15 06:09:06] [INFO   ] [KB-000083] [ada] VALIDATING
+[2026-08-15 06:09:06] [INFO   ] [KB-000083] [ada] COMPLETED — v1 (355 words)
+[2026-08-15 06:09:06] [INFO   ] [KB-000083] [cdc] RESOLVING — Topic: Hypoglycemia (Low Blood Sugar)
+[2026-08-15 06:09:06] [INFO   ] [KB-000083] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/signs-symptoms/index.html
+[2026-08-15 06:09:07] [INFO   ] [KB-000083] [cdc] EXTRACTING
+[2026-08-15 06:09:07] [INFO   ] [KB-000083] [cdc] CONVERTING
+[2026-08-15 06:09:07] [INFO   ] [KB-000083] [cdc] VALIDATING
+[2026-08-15 06:09:07] [INFO   ] [KB-000083] [cdc] COMPLETED — v1 (344 words)
+[2026-08-15 06:09:07] [INFO   ] [KB-000083] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [cdc] RESOLVING — Topic: Hyperglycemia (High Blood Sugar)
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/signs-symptoms/index.html
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [cdc] EXTRACTING
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [cdc] CONVERTING
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [cdc] VALIDATING
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [cdc] COMPLETED — v1 (344 words)
+[2026-08-15 06:09:07] [INFO   ] [KB-000084] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000085] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000085] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000085] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000086] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000086] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000086] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000087] [niddk] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000087] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000087] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:07] [INFO   ] [KB-000088] [niddk] RESOLVING — Topic: Diabetes and Sexual Health
+[2026-08-15 06:09:07] [INFO   ] [KB-000088] [niddk] DOWNLOADING — URL: https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction
+[2026-08-15 06:09:28] [INFO   ] [KB-000088] [niddk] EXTRACTING
+[2026-08-15 06:09:28] [INFO   ] [KB-000088] [niddk] CONVERTING
+[2026-08-15 06:09:28] [INFO   ] [KB-000088] [niddk] VALIDATING
+[2026-08-15 06:09:28] [INFO   ] [KB-000088] [niddk] COMPLETED — v1 (367 words)
+[2026-08-15 06:09:28] [INFO   ] [KB-000088] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:28] [INFO   ] [KB-000088] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:28] [INFO   ] [KB-000089] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:28] [INFO   ] [KB-000089] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:28] [INFO   ] [KB-000089] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:28] [INFO   ] [KB-000090] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:28] [INFO   ] [KB-000090] [cdc] RESOLVING — Topic: Healthy Eating for Diabetes
+[2026-08-15 06:09:28] [INFO   ] [KB-000090] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/healthy-eating/index.html
+[2026-08-15 06:09:29] [INFO   ] [KB-000090] [cdc] EXTRACTING
+[2026-08-15 06:09:29] [INFO   ] [KB-000090] [cdc] CONVERTING
+[2026-08-15 06:09:29] [INFO   ] [KB-000090] [cdc] VALIDATING
+[2026-08-15 06:09:29] [INFO   ] [KB-000090] [cdc] COMPLETED — v1 (283 words)
+[2026-08-15 06:09:29] [INFO   ] [KB-000090] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [cdc] RESOLVING — Topic: Carbohydrate Counting
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [cdc] DOWNLOADING — URL: https://www.cdc.gov/diabetes/healthy-eating/index.html
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [cdc] EXTRACTING
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [cdc] CONVERTING
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [cdc] VALIDATING
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [cdc] COMPLETED — v1 (283 words)
+[2026-08-15 06:09:29] [INFO   ] [KB-000091] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000092] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000092] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000092] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000093] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000093] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000093] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000094] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000094] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:29] [INFO   ] [KB-000094] [ada] RESOLVING — Topic: Weight Management
+[2026-08-15 06:09:29] [INFO   ] [KB-000094] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/weight-management
+[2026-08-15 06:09:30] [INFO   ] [KB-000094] [ada] EXTRACTING
+[2026-08-15 06:09:30] [INFO   ] [KB-000094] [ada] CONVERTING
+[2026-08-15 06:09:30] [INFO   ] [KB-000094] [ada] VALIDATING
+[2026-08-15 06:09:30] [INFO   ] [KB-000094] [ada] COMPLETED — v1 (159 words)
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [mayo] RESOLVING — Topic: Sleep and Diabetes
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [mayo] DOWNLOADING — URL: https://www.mayoclinic.org/diseases-conditions/diabetes/expert-answers/diabetes-and-sleep/faq-20058474
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [mayo] EXTRACTING
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [mayo] CONVERTING
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [mayo] VALIDATING
+[2026-08-15 06:09:31] [INFO   ] [KB-000095] [mayo] COMPLETED — v1 (460 words)
+[2026-08-15 06:09:32] [INFO   ] [KB-000095] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:32] [INFO   ] [KB-000096] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:32] [INFO   ] [KB-000096] [ada] RESOLVING — Topic: Smoking and Diabetes
+[2026-08-15 06:09:32] [INFO   ] [KB-000096] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/substance-use
+[2026-08-15 06:09:33] [INFO   ] [KB-000096] [ada] EXTRACTING
+[2026-08-15 06:09:33] [INFO   ] [KB-000096] [ada] CONVERTING
+[2026-08-15 06:09:33] [INFO   ] [KB-000096] [ada] VALIDATING
+[2026-08-15 06:09:33] [INFO   ] [KB-000096] [ada] COMPLETED — v1 (210 words)
+[2026-08-15 06:09:33] [INFO   ] [KB-000096] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:33] [INFO   ] [KB-000097] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:33] [INFO   ] [KB-000097] [ada] RESOLVING — Topic: Alcohol and Diabetes
+[2026-08-15 06:09:33] [INFO   ] [KB-000097] [ada] DOWNLOADING — URL: https://diabetes.org/health-wellness/substance-use
+[2026-08-15 06:09:34] [INFO   ] [KB-000097] [ada] EXTRACTING
+[2026-08-15 06:09:34] [INFO   ] [KB-000097] [ada] CONVERTING
+[2026-08-15 06:09:34] [INFO   ] [KB-000097] [ada] VALIDATING
+[2026-08-15 06:09:34] [INFO   ] [KB-000097] [ada] COMPLETED — v1 (210 words)
+[2026-08-15 06:09:34] [INFO   ] [KB-000097] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000098] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000098] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000098] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000099] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000099] [cdc] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000099] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000100] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000100] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000100] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000101] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000101] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000101] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000102] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000102] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000102] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000103] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000103] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000103] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000104] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000104] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000104] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000105] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000105] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000105] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000106] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000106] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000106] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000107] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000107] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000107] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000108] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000108] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000108] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000109] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000109] [medlineplus] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000109] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000110] [ada] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000110] [mayo] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] [KB-000110] [cleveland] SKIPPED — Already scraped
+[2026-08-15 06:09:34] [INFO   ] =========================================
+[2026-08-15 06:09:34] [INFO   ] Scraping Run Completed in 57.8 seconds
+[2026-08-15 06:09:34] [INFO   ] Total Jobs: 329 | Scraped: 35 | Skipped: 290 | Failed: 4
+[2026-08-15 06:09:34] [INFO   ] =========================================
+[2026-08-15 06:09:34] [INFO   ] ======================================================================
+[2026-08-15 06:09:34] [INFO   ] SCRAPER RUN COMPLETE
+[2026-08-15 06:09:34] [INFO   ]   Total jobs:   329
+[2026-08-15 06:09:34] [INFO   ]   Scraped:      35
+[2026-08-15 06:09:34] [INFO   ]   Skipped:      290
+[2026-08-15 06:09:34] [INFO   ]   Failed:       4
+[2026-08-15 06:09:34] [INFO   ]   Duration:     57.8s
+[2026-08-15 06:09:34] [INFO   ] ======================================================================

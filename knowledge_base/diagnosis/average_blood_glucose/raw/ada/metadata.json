@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000011",
+  "topic": "average_blood_glucose",
+  "topic_title": "Average Blood Glucose",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/about-diabetes/a1c",
+  "scraped_at": "2026-08-15T05:54:29.260286+00:00",
+  "word_count": 836,
+  "content_hash": "sha256:50890a2c5f2b085b9f04ed89f3d60f5f0b1cbed3a582abc33f148e363ec4e916",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 05:05:33 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}

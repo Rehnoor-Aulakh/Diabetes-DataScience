@@ -1,0 +1,27 @@
+{
+  "document_id": "KB-000099",
+  "topic": "mental_health",
+  "topic_title": "Mental Health and Diabetes",
+  "source": "ada",
+  "source_name": "American Diabetes Association",
+  "version": 1,
+  "url": "https://diabetes.org/health-wellness/mental-health",
+  "scraped_at": "2026-08-15T06:06:15.714586+00:00",
+  "word_count": 356,
+  "content_hash": "sha256:497a03a50b9dd15fbaccde62cd02f8789ee5a8f024bfbc60b301a4075ca78b51",
+  "extractor": "trafilatura/bs4",
+  "language": "en",
+  "http_etag": null,
+  "http_last_modified": "Sat, 15 Aug 2026 06:04:47 GMT",
+  "status": "scraped",
+  "quality_checks": {
+    "min_words": true,
+    "has_keywords": true,
+    "has_headings": false,
+    "is_english": true,
+    "passed": true,
+    "reasons": [
+      "No markdown headings found"
+    ]
+  }
+}
